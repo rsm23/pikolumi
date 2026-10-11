@@ -1,0 +1,49 @@
+name: pikolumi
+description: Offline coloring, creativity, and learning adventures for children.
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: '>=3.13.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^3.4.3
+  drift: ^2.35.2
+  sqlite3: ^3.4.0
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  path_drawing: ^1.0.1
+  audioplayers: ^6.5.1
+  google_mobile_ads: ^9.1.0
+  share_plus: ^12.0.0
+  url_launcher: ^6.3.2
+  intl: any
+  crypto: ^3.0.7
+  web: ^1.1.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/content/
+    - assets/art/
+    - assets/audio/
+    - assets/audio/en/
+    - assets/audio/fr/
+    - assets/audio/es/
+    - assets/audio/pt/
+    - assets/audio/ar/
+    - assets/fonts/
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito.ttf
+    - family: NotoSansArabic
+      fonts:
+        - asset: assets/fonts/NotoSansArabic.ttf

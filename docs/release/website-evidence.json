@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-11",
+  "repository": "https://github.com/rsm23/rsem",
+  "commit": "4e1d1a10568f0008205c8c00e25355e5ec0c2dfb",
+  "deployment": "built",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "ar"
+  ],
+  "supportURL": "https://seifelmoulouk.com/pikolumi/en.html",
+  "privacyURL": "https://seifelmoulouk.com/pikolumi/en.html#privacy",
+  "supportEmail": "rahmani@seifelmoulouk.com",
+  "appAdsURL": "https://seifelmoulouk.com/app-ads.txt",
+  "publisherLineVerified": true
+}

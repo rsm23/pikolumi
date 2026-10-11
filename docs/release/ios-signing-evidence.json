@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "bundleIdentifier": "com.seifelmoulouk.pikolumi",
+  "version": "1.0.0",
+  "build": "1",
+  "profileName": "Pikolumi App Store 1.0",
+  "team": "WQ983X3Y8P",
+  "distributionCertificateSHA1": "A70DC6A9F07CBCB89CD2EFABF8A45CD17F8ABB7E",
+  "profileExpiration": "2027-09-01 23:35:31",
+  "debugEntitlement": false,
+  "signedArtifact": "output/qa/Pikolumi-1.0.0-QA.ipa",
+  "testAdsOnly": true,
+  "uploaded": false
+}

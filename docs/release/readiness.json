@@ -1,0 +1,23 @@
+{
+  "catalogValidated": true,
+  "contentReviewed": false,
+  "pronunciationReviewed": false,
+  "assetRightsVerified": false,
+  "physicalAndroidQA": false,
+  "physicalIOSQA": false,
+  "phoneTabletQA": false,
+  "privacyDeclarationsReviewed": false,
+  "supportPagesPublished": true,
+  "adDismissalVerified": false,
+  "appleKidsAdExceptionVerified": false,
+  "iosSigningReady": true,
+  "supportURL": "https://seifelmoulouk.com/pikolumi/en.html",
+  "androidSubmission": "not_submitted",
+  "iosSubmission": "not_submitted",
+  "androidApproval": "not_reviewed",
+  "iosApproval": "not_reviewed",
+  "androidPublicAvailability": false,
+  "iosPublicAvailability": false,
+  "physicalAndroidSmoke": true,
+  "freshAndroidOfflineQA": true
+}

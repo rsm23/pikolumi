@@ -1,0 +1,16 @@
+{
+  "device": "Pixel 9 Pro XL",
+  "androidAPI": 37,
+  "connection": "USB",
+  "package": "com.seifelmoulouk.pikolumi.qa",
+  "freshInstall": true,
+  "airplaneModeDuringTest": "enabled",
+  "wifiDuringTest": 0,
+  "nativeSmokePassed": true,
+  "durationSeconds": 20,
+  "audioMuted": true,
+  "postTestAirplaneMode": 0,
+  "postTestWifi": 1,
+  "completePhysicalAcceptance": false,
+  "cleanupNote": "Flutter default cleanup removed earlier test package; --no-uninstall is now required. Normal entry-point QA installation restored afterward."
+}

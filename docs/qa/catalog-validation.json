@@ -1,0 +1,34 @@
+{
+  "catalogVersion": 1,
+  "activities": 2400,
+  "sections": {
+    "coloring": 360,
+    "drawing": 120,
+    "tracing": 160,
+    "letters": 160,
+    "words": 180,
+    "counting": 160,
+    "math": 220,
+    "shapes": 120,
+    "sorting": 120,
+    "memory": 100,
+    "jigsaw": 120,
+    "patterns": 160,
+    "mazes": 120,
+    "nature": 120,
+    "everyday": 100,
+    "music": 80
+  },
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "ar"
+  ],
+  "vectors": 456,
+  "speechClips": 541,
+  "errors": [],
+  "passed": true,
+  "manualReview": "pending; automated validation does not certify educational accuracy or pronunciation"
+}
