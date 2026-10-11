@@ -55,3 +55,5 @@ Flutter integration tests default to uninstalling their initial application pack
 ## Build workflow
 
 Android APK/AAB and local App Store-signed iOS IPA are built from `lib/main.dart` with production ads disabled; the simulator ZIP also uses the normal entry point. Build platforms sequentially in this workspace: simultaneous Flutter invocations can overwrite shared generated plugin registration and cause an integration-test plugin reference in a release compile. The initial concurrent Android rebuild failed for this reason and was rerun sequentially.
+
+Final artifact checks passed: Android APK v2 signature, AAB JAR signature, Google bundletool 1.18.3 structural validation, exported IPA deep/strict signature and every SHA-256 in `docs/release/qa-artifacts.json`. Jarsigner reports the expected self-signed upload certificate and a sequential-reader/ZIP ordering warning; bundletool accepts the AAB. No store upload occurred.

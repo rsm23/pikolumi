@@ -1,0 +1,10 @@
+{
+  "androidApkSignature": "verified_v2",
+  "androidBundleJarSignature": "verified",
+  "bundletoolVersion": "1.18.3",
+  "bundletoolValidation": "passed",
+  "iosExportedIpaSignature": "verified_deep_strict",
+  "artifactSha256": "verified",
+  "productionGate": "refused_as_expected",
+  "uploaded": false
+}
