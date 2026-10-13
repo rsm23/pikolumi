@@ -1,0 +1,13 @@
+{
+  "locale": "ar",
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "bundledOriginalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "originalSha256": "7e5fd3f9d3d745b95f45bbed33c214b1d1edf5040ff2b8bf60b275e6383ab1ec",
+      "note": "Restore short kasra /i/ after emphatic ص /sˤ/; user hears only Ssss in round7. Increased synthesis duration; same approved emphatic references."
+    }
+  ],
+  "round": "2026-10-13-round8"
+}

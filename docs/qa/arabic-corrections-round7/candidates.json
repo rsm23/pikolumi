@@ -1,0 +1,52 @@
+{
+  "source": {
+    "model": [
+      "silma-ai/silma-tts",
+      "226dd7a65cadf51f9a6dbe3953fc89003b3844d5"
+    ],
+    "modelSha256": "f43256d0b78b8803c638aed0875da5a4b372b4a784690a0156e5baff14f7336c",
+    "vocoder": [
+      "charactr/vocos-mel-24khz",
+      "0feb3fdd929bcd6649e0e7c5a688cf7dd012ef21"
+    ],
+    "vocoderSha256": "97ec976ad1fd67a33ab2682d29c0ac7df85234fae875aefcc5fb215681a91b2a",
+    "reference": [
+      {
+        "file": "syllable_38.mp3",
+        "sha256": "ce4f60b49216958db2dcf24e1b39049d2cc3f6a99e96deac00045b29812bcc06",
+        "text": "صُ",
+        "origin": "existing AI-synthesized project audio; not a human reference"
+      },
+      {
+        "file": "word_rocket.mp3",
+        "sha256": "9485e9a1d1560cf7426e515d92f0e21aee233289806a73abb2440464affd3d5b",
+        "text": "صَارُوخ",
+        "origin": "existing AI-synthesized project audio; not a human reference"
+      }
+    ],
+    "referenceText": "صُ صَارُوخ",
+    "steps": 48,
+    "cfgStrength": 2,
+    "device": "mps",
+    "generatorSha256": "cb0a8fbc6abda4ad0ffba36ca6353bd41d6e977fa40ca64aa2d8cda083b03a57",
+    "normalization": "explicit Arabic text; no phonemizer; preserves consonants and vowel marks"
+  },
+  "pronunciationApproval": false,
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "originalSha256": "e1e7c961cd12b0f82e6dba3fc0d2aca6afe14ad68c60d68bc2e020c4210158cf",
+      "bundledOriginalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "correction": "Preserve emphatic ص /sˤ/, clearly distinct from س; short kasra /i/. User says previous attempts sound like س.",
+      "synthesisText": "صِ",
+      "targetSeconds": 0.4,
+      "extraction": "direct vowel-marked sound; trimmed outer silence",
+      "durationSeconds": 0.3446666666666667,
+      "seed": 2622105037,
+      "sha256": "7e5fd3f9d3d745b95f45bbed33c214b1d1edf5040ff2b8bf60b275e6383ab1ec",
+      "status": "replacement candidate; native pronunciation approval pending",
+      "note": "Preserve emphatic ص /sˤ/, clearly distinct from س; short kasra /i/. User says previous attempts sound like س."
+    }
+  ]
+}

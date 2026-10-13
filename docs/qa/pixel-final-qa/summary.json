@@ -1,0 +1,91 @@
+{
+  "verifiedAtUTC": "2026-10-13T11:05:36.312086+00:00",
+  "catalogSha256": "dac9bfdb118cec18d980d2effc15dbfbc060d86624b121f29c03fda85e37f323",
+  "appSourceChangedInThisTurn": false,
+  "physicalPixel": {
+    "model": "Pixel 9 Pro XL",
+    "curriculumCompleted": 168,
+    "planned": 320,
+    "status": "partial",
+    "nextStartCase": 168,
+    "finalReportAndTeardown": false,
+    "testAdCallbackPass": true,
+    "adCloseControlWithinFiveSecondsVerified": false,
+    "screenSettingsRestored": true
+  },
+  "landscapeTablet": {
+    "type": "owned Android API 36 emulator; Pixel Tablet profile",
+    "allCasesPassed": true,
+    "cases": 320,
+    "sections": 16,
+    "languages": [
+      "en",
+      "fr",
+      "es",
+      "pt",
+      "ar"
+    ],
+    "screenshots": 32,
+    "nativeSQLite": "data read and compared through a second connection; not process-termination proof",
+    "siblingIsolation": true,
+    "ownedEmulatorClosed": true,
+    "representativeImagesInspected": [
+      "ar-tracing-band-0.png",
+      "en-drawing-band-0.png"
+    ]
+  },
+  "sound": "muted app and test SDK; no host volume changes or playback",
+  "normalUserData": {
+    "artworkAndProgressPreserved": true,
+    "profileIdsPreserved": true,
+    "otherAppSettingsPreserved": true,
+    "observedChanges": [
+      "ad state",
+      "profile learningLanguage"
+    ],
+    "userChangesOverwritten": false,
+    "normalAppReinstalled": false,
+    "dataCleared": false
+  },
+  "arabic": {
+    "rounds5through8Rejected": true,
+    "round6Reason": "\u0635 sounds like \u0633",
+    "round7Reason": "Ssss; missing vowel",
+    "round8Reason": "sis",
+    "approvedReplacementsRemainBundled": 54,
+    "syllable37Unresolved": true,
+    "bundledClipSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+    "newTakesPromoted": 0
+  },
+  "checks": {
+    "flutterAnalysis": "pass",
+    "pythonTests": 21
+  },
+  "storeSubmission": {
+    "android": false,
+    "ios": false,
+    "publicAvailability": false
+  },
+  "sourceHashes": {
+    "integration_test/android_acceptance_test.dart": "7d436dfd11e90b9ca8b98eac8fcb0275ed6ef3a7fef0d7fd7626ab8bc67d4b7e",
+    "integration_test/ad_test.dart": "1b3ad1e539a9450935bf47647f49400cb118f6d11034eca7bf1b6dab8d4f2595",
+    "docs/qa/pixel-final-qa/tablet-curriculum/integration_response_data.json": "ed2ad431797d484311e334137dee1ef5cfb6871adfd9a33d5bd59b2f2d102764",
+    "docs/qa/pixel-final-qa/ad-dismissal/integration_response_data.json": "82ea0683d3b52c209d331b5cd0478405da2f582b49ef3b04a367fd70c70afda9"
+  },
+  "executedQAArtifacts": {
+    "Curriculum-Isolated-QA.apk": "3b05cce1469c9588158742abfff6bdf923bd6a669c5cd5f106a265403c22556c",
+    "Curriculum-Continuation-Isolated-QA.apk": "41347be32b12b50ba72e7b076508b2556a3d95cbe4072405a0bf2bed69ba22a8"
+  },
+  "harnessSubsequentChange": "Added a start-offset range assertion after the captured runs; product source and case selection unchanged.",
+  "consoleRecheck": {
+    "googlePlay": "Changes not yet submitted for review; Send app for review disabled",
+    "appStoreConnect": "Signed out; previous saved draft not newly verified",
+    "atUTC": "2026-10-13T11:08:23.130153+00:00"
+  },
+  "iosEvidenceSources": [
+    "https://developer.apple.com/app-store/review/guidelines/#kids-category",
+    "https://developers.google.com/admob/ios/privacy/data-disclosure",
+    "https://developers.google.com/admob/ios/targeting",
+    "https://support.google.com/admob/answer/3480906?hl=en"
+  ]
+}

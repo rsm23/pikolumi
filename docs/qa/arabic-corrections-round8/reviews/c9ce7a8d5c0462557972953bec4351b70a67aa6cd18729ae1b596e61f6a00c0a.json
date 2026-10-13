@@ -1,0 +1,15 @@
+{
+  "locale": "ar",
+  "round": "2026-10-13-round8",
+  "exportedAt": "2026-10-13T11:02:29.828964+00:00",
+  "source": "Direct user reply: incorrect, now it says sis",
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "sha256": "dcdf2a5911f7c4d853ae04b2477bdfd14b0269c7e5c5575f8ee18d0dd2b83972",
+      "decision": "wrong",
+      "notes": "User hears sis rather than the intended emphatic صِ."
+    }
+  ]
+}

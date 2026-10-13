@@ -1,0 +1,17 @@
+{
+  "changedNamespaces": [
+    "ads",
+    "settings"
+  ],
+  "nonAdRecordsIdentical": false,
+  "dataPrinted": false,
+  "profileFieldChanges": [
+    "learningLanguage"
+  ],
+  "profileCountPreserved": true,
+  "profileIdsPreserved": true,
+  "artworkAndProgressPreserved": true,
+  "otherAppSettingsPreserved": true,
+  "learningLanguageWasMissing": false,
+  "userSettingsRestoredFromBackup": false
+}

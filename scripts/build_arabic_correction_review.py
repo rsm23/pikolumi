@@ -4,6 +4,7 @@ import csv
 import hashlib
 import html
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,23 +26,36 @@ if summary.exists():
     imported = json.loads(summary.read_text())
     data['importedReview'] = json.loads((ROOT / imported['reviewFile']).read_text())
     notice = f"This round: {len(imported['approvedAndBundled'])} takes approved and {len(imported['rejectedAndNotBundled'])} rejected. Your exact imported decisions are shown here. {approved_total} approved replacements are now bundled across all rounds."
-    next_name = 'arabic-corrections-round2' if FOLDER.name == 'arabic-corrections' else f'arabic-corrections-round{int(FOLDER.name.rsplit("round", 1)[1]) + 1}'
+    round_number = re.fullmatch(r'arabic-corrections-round(\d+)(?:-[a-z]+)?', FOLDER.name)
+    next_name = 'arabic-corrections-round2' if FOLDER.name == 'arabic-corrections' else f'arabic-corrections-round{int(round_number[1]) + 1}' if round_number else 'next-review'
     next_folder = FOLDER.parent / next_name
     if (next_folder / 'candidates.json').exists():
         count = len(json.loads((next_folder / 'candidates.json').read_text())['recordings'])
         notice += f" <a href='../{next_name}/index.html'>Open the next review round ({count} takes)</a>."
 else:
     notice += f' The {approved_total} previously approved replacements are already bundled.'
+alternate_name = FOLDER.name + '-alternative'
+if (FOLDER.parent / alternate_name / 'candidates.json').exists():
+    notice += f" <a href='../{html.escape(alternate_name)}/index.html'>Compare the other new take</a>."
+elif FOLDER.name.endswith('-alternative'):
+    primary_name = FOLDER.name.removesuffix('-alternative')
+    if (FOLDER.parent / primary_name / 'candidates.json').exists():
+        notice += f" <a href='../{html.escape(primary_name)}/index.html'>Compare the first new take</a>."
 cards = []
 for row in data['recordings']:
     file = row['file']
     for directory, expected in [('originals', row['originalSha256']), ('candidates', row['sha256'])]:
         assert hashlib.sha256((FOLDER / directory / file).read_bytes()).hexdigest() == expected
+    context_player = ''
+    if row.get('contextualSource'):
+        context = row['contextualSource']
+        assert hashlib.sha256((FOLDER / context['file']).read_bytes()).hexdigest() == context['sha256']
+        context_player = f'''<label class="context-source">Source word: <span lang="ar" dir="rtl">{html.escape(row['synthesisText'])}</span><audio controls preload="none" aria-label="Source word for {file}" src="{html.escape(context['file'])}?v={context['sha256']}"></audio></label>'''
     cards.append(f'''<article data-file="{html.escape(file)}">
 <h2>{html.escape(file)}</h2><p class="arabic" lang="ar" dir="rtl">{html.escape(row['text'])}</p>
 <p>Your note: {html.escape(row['note'])}</p>
 <div class="comparison"><label>Original<audio controls preload="none" aria-label="Original {file}" src="originals/{file}?v={row['originalSha256']}"></audio></label>
-<label>New candidate<audio controls preload="none" aria-label="New recording {file}" src="candidates/{file}?v={row['sha256']}"></audio></label></div>
+<label>New candidate<audio controls preload="none" aria-label="New recording {file}" src="candidates/{file}?v={row['sha256']}"></audio></label>{context_player}</div>
 <fieldset><legend>New recording</legend><label><input type="radio" name="{file}" value="correct"> Sounds correct</label>
 <label><input type="radio" name="{file}" value="wrong"> Still wrong</label></fieldset>
 <label class="notes">Further correction (optional)<textarea dir="auto" maxlength="5000"></textarea></label>
@@ -53,7 +67,7 @@ page = '''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewp
 *{box-sizing:border-box}body{margin:0;background:#fbf7ee;color:#344850;font:17px/1.5 Nunito,system-ui}main{max-width:1000px;margin:auto;padding:28px 20px}
 h1{font-size:32px;line-height:1.2}h2{font-size:19px;overflow-wrap:anywhere;margin:0}.arabic{font:32px/1.7 Arabic; margin:10px 0}
 a{color:#12606a}article{background:white;border:1px solid #c8d5d4;border-radius:18px;margin:20px 0;padding:22px}
-.comparison{display:grid;grid-template-columns:1fr 1fr;gap:20px}.comparison label{min-width:0}audio{display:block;width:100%;margin-top:8px}
+.comparison{display:grid;grid-template-columns:1fr 1fr;gap:20px}.comparison label{min-width:0}.context-source{grid-column:1/-1}audio{display:block;width:100%;margin-top:8px}
 fieldset{border:0;padding:0;margin:18px 0}legend{font-weight:800;margin-bottom:6px}fieldset label{display:inline-flex;align-items:center;gap:10px;min-height:48px;margin-right:20px}
 input[type=radio]{width:22px;height:22px;accent-color:#12606a}.notes{display:block}textarea{display:block;width:100%;min-height:70px;padding:10px;font:inherit;border:1px solid #849c9f;border-radius:8px}
 .tools{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:22px 0}input[type=search],select,button{font:inherit;padding:12px;border-radius:10px;min-height:48px;border:1px solid #849c9f;background:white;color:#344850}

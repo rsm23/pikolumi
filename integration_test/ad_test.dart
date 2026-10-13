@@ -36,6 +36,11 @@ void main() {
       );
       await ads.initialize();
       await tester.pumpAndSettle();
+      if (!ads.ready) {
+        debugPrint('PIKOLUMI_AD_QA_RETRY_CONSENT');
+        await ads.privacyOptions(canPresent: () => false);
+        await tester.pumpAndSettle();
+      }
       expect(
         ads.production,
         isFalse,

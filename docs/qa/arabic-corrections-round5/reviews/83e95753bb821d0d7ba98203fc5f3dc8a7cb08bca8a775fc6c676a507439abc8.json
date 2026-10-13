@@ -1,0 +1,15 @@
+{
+  "locale": "ar",
+  "round": "2026-10-13-round5",
+  "exportedAt": "2026-10-13T09:54:51.727594+00:00",
+  "source": "Direct user reply to the round-five review question: It is still incorrect",
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "sha256": "c62d34d037d34a5b2205f120f302f324f203428b6ce6407e67b648fc20ca2aa4",
+      "decision": "wrong",
+      "notes": "User confirmed the round-five replacement is still incorrect."
+    }
+  ]
+}

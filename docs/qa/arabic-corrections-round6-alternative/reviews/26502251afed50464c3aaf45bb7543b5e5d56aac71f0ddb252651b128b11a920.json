@@ -1,0 +1,15 @@
+{
+  "locale": "ar",
+  "round": "2026-10-13-round6-alternative",
+  "exportedAt": "2026-10-13T10:54:07.976664+00:00",
+  "source": "Direct user reply: Neither is correct. Follow-up: ص sounds like س.",
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "sha256": "0fca89384dbcc2bb91a8b86f8b1d19f9e83343ded3a777bc852cbe1ffd2db57b",
+      "decision": "wrong",
+      "notes": "User rejected this candidate: ص sounds like س; emphatic consonant contrast is missing."
+    }
+  ]
+}

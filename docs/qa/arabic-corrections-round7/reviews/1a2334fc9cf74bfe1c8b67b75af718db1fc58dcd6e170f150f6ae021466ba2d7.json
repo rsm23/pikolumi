@@ -1,0 +1,15 @@
+{
+  "locale": "ar",
+  "round": "2026-10-13-round7",
+  "exportedAt": "2026-10-13T10:59:01.062803+00:00",
+  "source": "Direct user replies: Another pronunciation problem; now the clip says Ssss",
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "sha256": "7e5fd3f9d3d745b95f45bbed33c214b1d1edf5040ff2b8bf60b275e6383ab1ec",
+      "decision": "wrong",
+      "notes": "User hears only Ssss; missing the short kasra vowel."
+    }
+  ]
+}

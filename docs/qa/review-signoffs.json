@@ -14,7 +14,7 @@
   "otherLocaleReviewPackets": "ready; human reviewers not yet assigned",
   "reviewPacketScope": "648 speech recordings; 2,400 activities and 204 interface texts in each of five localized views",
   "arabicCorrectionsPacket": "docs/qa/arabic-corrections/index.html",
-  "arabicReplacementReview": "docs/qa/arabic-corrections-round4/reviews/99bfe7ec30a11130cf3262704e5199de55f290c96710bbd1291d074c24bc88b8.json",
+  "arabicReplacementReview": "docs/qa/arabic-corrections-round8/reviews/c9ce7a8d5c0462557972953bec4351b70a67aa6cd18729ae1b596e61f6a00c0a.json",
   "arabicRemainingCorrectionsPacket": "docs/qa/arabic-corrections-round5/index.html",
   "arabicTracingCorrections": "80 corrected smooth guides; app/trace models share geometry, uniform scaling, explicit body/dot/vowel order. Native editorial review pending; completed results unchanged.",
   "latinTracingCorrections": "320 English, French, Spanish and Portuguese letter/sequence guides plus 40 numerals: original smooth manuscript paths, shared model/canvas geometry, uniform scaling and versioned checkpoint migration. Native editorial review pending.",

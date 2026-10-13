@@ -46,7 +46,7 @@ def middle_sound(samples):
 
 
 def initial_cv(samples):
-    """Keep initial صِ before the unvoiced ف boundary in صِفْر."""
+    """Keep initial صِ before an unvoiced ف or ح boundary."""
     window, hop = 960, 240
     voiced = []
     for start in range(0, len(samples) - window, hop):
@@ -80,6 +80,7 @@ def main():
     parser.add_argument('--short-duration', type=float)
     parser.add_argument('--direct', action='store_true')
     parser.add_argument('--contextual-cv', action='store_true')
+    parser.add_argument('--context-word', choices=['صِفْر.', 'صِفَة.', 'صِحَّة.'], default='صِفْر.')
     args = parser.parse_args()
     folder = (ROOT / args.folder).resolve()
     source_folder = (ROOT / args.source_folder).resolve()
@@ -140,7 +141,7 @@ def main():
         if args.contextual_cv:
             if filename != 'syllable_37.mp3':
                 raise ValueError('Contextual extraction is defined only for صِ')
-            text, duration = 'صِفْر.', 1.05
+            text, duration = args.context_word, 1.05
         elif short_sound and not args.direct:
             anchor = 'بِ' if 'ِ' in text else 'بَ'
             text = '. '.join([anchor, text, anchor] if args.anchored else [text]*3)+'.'
@@ -188,7 +189,7 @@ def main():
             samples, boundary = initial_cv(samples)
             context_record = {'file': 'contextual/' + filename,
                               'sha256': digest(context_path), **boundary}
-            extraction = 'initial صِ extracted from صِفْر; vowel-boundary detection, 10 ms fade'
+            extraction = f'initial صِ extracted from {text}; vowel-boundary detection, 10 ms fade'
         path = output / filename
         encode(samples, path)
         decoded, rate = sf.read(path, dtype='float32')

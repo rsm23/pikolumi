@@ -1,0 +1,12 @@
+{
+  "bannerLoaded": true,
+  "interstitialShown": true,
+  "dismissalCallback": true,
+  "frequencyApplied": true,
+  "soundRestoredMuted": true,
+  "libraryBannerRestored": true,
+  "testAdsOnly": true,
+  "catalogVersion": 3,
+  "store": "isolated memory; user progress and ad budget untouched",
+  "screenshots": []
+}

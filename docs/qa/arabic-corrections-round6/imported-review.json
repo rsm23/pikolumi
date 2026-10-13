@@ -1,0 +1,13 @@
+{
+  "reviewFile": "docs/qa/arabic-corrections-round6/reviews/e57cbd375606bd0d4371bb59b443475652153a71ed4337c170c7052a6b51dc83.json",
+  "reviewFileSha256": "e57cbd375606bd0d4371bb59b443475652153a71ed4337c170c7052a6b51dc83",
+  "exportedAt": "2026-10-13T10:54:07.975957+00:00",
+  "reviewer": "user",
+  "approvedAndBundled": [],
+  "rejectedAndNotBundled": [
+    "syllable_37.mp3"
+  ],
+  "totalApprovedArabicRecordings": 54,
+  "allArabicPronunciationApproved": false,
+  "audioPlayback": false
+}

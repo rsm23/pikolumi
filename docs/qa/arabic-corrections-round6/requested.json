@@ -1,0 +1,14 @@
+{
+  "locale": "ar",
+  "round": "2026-10-13-round6",
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "originalSha256": "c62d34d037d34a5b2205f120f302f324f203428b6ce6407e67b648fc20ca2aa4",
+      "bundledOriginalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "note": "Must be the distinct emphatic ص followed by short kasra i. Round-five replacement was rejected again by the user.",
+      "previousReviewDecision": "wrong"
+    }
+  ]
+}

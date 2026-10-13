@@ -1,0 +1,12 @@
+{
+  "checkedAtUTC": "2026-10-13T10:10:55.076437+00:00",
+  "passed": true,
+  "audioControls": 3,
+  "autoplay": false,
+  "allAudioHashesVerified": true,
+  "format": "MP3 mono 24kHz",
+  "humanPronunciationApproval": false,
+  "browserRendered": false,
+  "browserLimitation": "CUA URL policy rejects file URLs; no alternate browser or localhost workaround attempted",
+  "audioPlayback": false
+}

@@ -40,5 +40,7 @@
   "playDataSafetySaved": true,
   "appleAgeRatingSaved": true,
   "applePrivacyDraftSaved": true,
-  "playAdvertisingIdSaved": true
+  "playAdvertisingIdSaved": true,
+  "androidPhysicalAdCallbackQA": true,
+  "androidTabletCurriculumQA": true
 }

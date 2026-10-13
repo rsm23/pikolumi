@@ -694,11 +694,16 @@ ar,syllable_33.mp3,شَ,,,,,6e7e71263f6651a54df0f8635b31b63dcfeb7e72657a640434e1
 ar,syllable_34.mp3,شِ,,,,,71c4addf7b8f7c6b7c10fde09a05e8c94bb58dd4b1f2cadaa3eef8aef83115ac
 ar,syllable_35.mp3,شُ,,,,,0a03618661ab12085778650f1338eb3eb6f94df959f15c2d575be99171b0d2a9
 ar,syllable_36.mp3,صَ,,,,,9133bee953b6686056419114a45e0c4122a56965a1ea35970da8208779362617
-ar,syllable_37.mp3,صِ,no,user,2026-10-12,"si
+ar,syllable_37.mp3,صِ,no,user,2026-10-13,"si
 Replacement review 496b0f02dda5: wrong; candidate SHA-256 778d51c48ba4f0778bfe8cb37a4c61823c326df3a5b92465ba1c94d2a9d296b2. Si
 Replacement review d1bbed5e65bc: wrong; candidate SHA-256 45f22c01ebe6ed08421664cd919c36eb8631e4c1b70fa5827359ae2283865542. Si
 Replacement review 895845e856b9: wrong; candidate SHA-256 c6748e3a9735ad25a4d9256c712fe009136c0156856cda87dcb29ba8514ad4a6.
-Replacement review 99bfe7ec30a1: wrong; candidate SHA-256 9fed7d95bf8c38c7ddb43f8176536eda60053e013f60bcb40959ec873cebf6a7. the sound should be like ""Si""",5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612
+Replacement review 99bfe7ec30a1: wrong; candidate SHA-256 9fed7d95bf8c38c7ddb43f8176536eda60053e013f60bcb40959ec873cebf6a7. the sound should be like ""Si""
+Replacement review 83e95753bb82: wrong; candidate SHA-256 c62d34d037d34a5b2205f120f302f324f203428b6ce6407e67b648fc20ca2aa4. User confirmed the round-five replacement is still incorrect.
+Replacement review e57cbd375606: wrong; candidate SHA-256 e1e7c961cd12b0f82e6dba3fc0d2aca6afe14ad68c60d68bc2e020c4210158cf. User rejected this candidate: ص sounds like س; emphatic consonant contrast is missing.
+Replacement review 26502251afed: wrong; candidate SHA-256 0fca89384dbcc2bb91a8b86f8b1d19f9e83343ded3a777bc852cbe1ffd2db57b. User rejected this candidate: ص sounds like س; emphatic consonant contrast is missing.
+Replacement review 1a2334fc9cf7: wrong; candidate SHA-256 7e5fd3f9d3d745b95f45bbed33c214b1d1edf5040ff2b8bf60b275e6383ab1ec. User hears only Ssss; missing the short kasra vowel.
+Replacement review c9ce7a8d5c04: wrong; candidate SHA-256 dcdf2a5911f7c4d853ae04b2477bdfd14b0269c7e5c5575f8ee18d0dd2b83972. User hears sis rather than the intended emphatic صِ.",5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612
 ar,syllable_38.mp3,صُ,yes,user,2026-10-12,"so
 Replacement review 496b0f02dda5: correct; candidate SHA-256 ce4f60b49216958db2dcf24e1b39049d2cc3f6a99e96deac00045b29812bcc06.",ce4f60b49216958db2dcf24e1b39049d2cc3f6a99e96deac00045b29812bcc06
 ar,syllable_39.mp3,ضَ,,,,,8b74196195c0a63ee6740851161d87010a0b18ee79dbe31deea72b4f6397dc5e

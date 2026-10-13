@@ -1,0 +1,14 @@
+{
+  "locale": "ar",
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "originalSha256": "e1e7c961cd12b0f82e6dba3fc0d2aca6afe14ad68c60d68bc2e020c4210158cf",
+      "bundledOriginalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "correction": "Preserve emphatic ص /sˤ/, clearly distinct from س; short kasra /i/. User says previous attempts sound like س.",
+      "note": "Preserve emphatic ص /sˤ/, clearly distinct from س; short kasra /i/. User says previous attempts sound like س."
+    }
+  ],
+  "round": "2026-10-13-round7"
+}
