@@ -1,0 +1,67 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "en-library"
+    },
+    {
+      "screenshotName": "en-coloring-outline"
+    },
+    {
+      "screenshotName": "en-coloring"
+    },
+    {
+      "screenshotName": "en-puzzle"
+    },
+    {
+      "screenshotName": "en-math"
+    },
+    {
+      "screenshotName": "fr-library"
+    },
+    {
+      "screenshotName": "fr-coloring"
+    },
+    {
+      "screenshotName": "fr-puzzle"
+    },
+    {
+      "screenshotName": "fr-math"
+    },
+    {
+      "screenshotName": "es-library"
+    },
+    {
+      "screenshotName": "es-coloring"
+    },
+    {
+      "screenshotName": "es-puzzle"
+    },
+    {
+      "screenshotName": "es-math"
+    },
+    {
+      "screenshotName": "pt-library"
+    },
+    {
+      "screenshotName": "pt-coloring"
+    },
+    {
+      "screenshotName": "pt-puzzle"
+    },
+    {
+      "screenshotName": "pt-math"
+    },
+    {
+      "screenshotName": "ar-library"
+    },
+    {
+      "screenshotName": "ar-coloring"
+    },
+    {
+      "screenshotName": "ar-puzzle"
+    },
+    {
+      "screenshotName": "ar-math"
+    }
+  ]
+}

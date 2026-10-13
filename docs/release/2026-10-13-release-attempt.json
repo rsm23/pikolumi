@@ -1,5 +1,5 @@
 {
-  "verifiedAtUTC": "2026-10-13T00:39:00.663509+00:00",
+  "verifiedAtUTC": "2026-10-13T01:36:15.966745+00:00",
   "version": "1.0.0",
   "build": 1,
   "package": "com.seifelmoulouk.pikolumi",
@@ -100,20 +100,46 @@
         "androidPrivacyDeclarationsReviewed",
         "androidAdDismissalVerified"
       ],
-      "playAppRecord": "not created; no Pikolumi search result",
+      "playAppRecord": "created",
       "packageNameAvailable": true,
       "creationFormPrepared": true,
-      "creationDeclarationsAccepted": false,
-      "blockingFormDeclaration": "US export-law agreement requires action-time confirmation under browser-use rules",
+      "creationDeclarationsAccepted": true,
       "uploaded": false,
       "submitted": false,
       "approved": false,
-      "publiclyAvailable": false
+      "publiclyAvailable": false,
+      "playAppId": "4975864234191950633",
+      "consoleURL": "https://play.google.com/console/u/0/developers/7865573294164372045/app/4975864234191950633/app-dashboard",
+      "exportCertificationAuthorization": "User confirmed: Yes, accept the certification and create the app",
+      "privacyPolicyURL": "https://seifelmoulouk.com/pikolumi/en.html#privacy",
+      "privacyPolicySaved": true,
+      "supportWebsite": "https://seifelmoulouk.com",
+      "supportEmail": "rahmani@seifelmoulouk.com",
+      "category": "Education",
+      "savedDeclarations": {
+        "signInRequired": false,
+        "containsAds": true,
+        "governmentApp": false,
+        "financialFeatures": false,
+        "healthFeatures": false
+      },
+      "iarcTermsAccepted": false,
+      "iarcLegalConfirmation": "Requested separately at acceptance time under browser confirmation policy; no answer received yet",
+      "audienceDeclaration": "Pending IARC rating; under-13 choices disabled until rating exists",
+      "dataSafetyDeclaration": "Not submitted; exact-build data review pending",
+      "listingAssetsManifest": "docs/release/screenshots/google/manifest.json",
+      "fiveLocalizedTextsAndFortyScreenshotsVerifiedAfterReload": true,
+      "listingIcon": "docs/release/play-icon.png",
+      "listingFeatureGraphic": "docs/release/play-feature.png",
+      "listingState": "Ready to send for review",
+      "listingSavedToPublishingOverview": true,
+      "aiAssistedVisualsDeclared": 42,
+      "proof": "output/release-verification/play-listing-ready.png"
     },
     "ios": {
       "storeId": "6821776826",
       "storeVersion": "1.0.0",
-      "liveState": "À finaliser avant soumission",
+      "liveState": "\u00c0 finaliser avant soumission",
       "reviewContactSavedAndVerifiedAfterReload": true,
       "loginRequired": false,
       "productionBuildAttempt": "refused by evidence gate; signed test-ad IPA built instead",
@@ -131,8 +157,8 @@
         "calculated": "9+",
         "wellnessAnswer": true,
         "reason": "Everyday lesson explicitly teaches handwashing before eating; conservatively treated as self-care guidance",
-        "kidsBandAvailable": "9–11 only",
-        "scopePreserved": "Cancelled without narrowing the agreed ages 2–11 audience; rating review pending"
+        "kidsBandAvailable": "9\u201311 only",
+        "scopePreserved": "Cancelled without narrowing the agreed ages 2\u201311 audience; rating review pending"
       },
       "uploaded": false,
       "submitted": false,
@@ -155,6 +181,8 @@
     "https://support.google.com/googleplay/android-developer/answer/12955712?hl=en",
     "https://developers.google.com/admob/android/privacy/play-data-disclosure",
     "https://developers.google.com/admob/ios/privacy/data-disclosure",
-    "https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions"
+    "https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions",
+    "https://support.google.com/googleplay/android-developer/answer/17262077?hl=en",
+    "https://web.iarcservices.com/terms"
   ]
 }
