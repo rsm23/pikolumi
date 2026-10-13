@@ -22,7 +22,7 @@
   "freshAndroidOfflineQA": true,
   "androidPhoneTabletQA": false,
   "iosPhoneTabletQA": false,
-  "androidPrivacyDeclarationsReviewed": false,
+  "androidPrivacyDeclarationsReviewed": true,
   "iosPrivacyDeclarationsReviewed": false,
   "androidAdDismissalVerified": false,
   "iosAdDismissalVerified": false,
@@ -34,7 +34,11 @@
   "androidSDKPrivacySettingsVerified": true,
   "iosSDKInventoryReviewed": true,
   "androidPrivacyAnswersReviewed": true,
-  "playChildAudienceSaved": false,
+  "playChildAudienceSaved": true,
   "playDataSafetyDraftSaved": true,
-  "admobPrivacyConfigurationPublished": true
+  "admobPrivacyConfigurationPublished": true,
+  "playDataSafetySaved": true,
+  "appleAgeRatingSaved": true,
+  "applePrivacyDraftSaved": true,
+  "playAdvertisingIdSaved": true
 }

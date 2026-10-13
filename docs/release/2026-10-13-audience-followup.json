@@ -1,0 +1,52 @@
+{
+  "checkedAtUTC": "2026-10-13T07:01:18.166216+00:00",
+  "goal": "Resolve audience workflow, continue Android publishing and iOS blockers",
+  "androidAudienceSaved": true,
+  "androidDataSafetySaved": true,
+  "androidAdvertisingIdSaved": true,
+  "appleKidsAgeRatingSaved": true,
+  "applePrivacyDraftHandlingCards": 6,
+  "applePrivacyDeviceIdUnresolved": true,
+  "changedActivityIds": [
+    "everyday-0098"
+  ],
+  "all2400IdsPreserved": true,
+  "sourceCatalogSha256": "dac9bfdb118cec18d980d2effc15dbfbc060d86624b121f29c03fda85e37f323",
+  "validation": {
+    "flutterTests": 89,
+    "pythonTests": 21,
+    "analysis": "No issues found",
+    "catalog": "passed",
+    "languageReviewReferences": "passed",
+    "aabSignature": "verified",
+    "bundletool": "validated",
+    "sdkPackageAudit": "passed",
+    "gitWhitespace": "passed with CR-at-EOL handling for standard CSV files"
+  },
+  "humanApprovalInferred": false,
+  "physicalQAPerformedThisTurn": false,
+  "deviceStateChanged": false,
+  "productionBuildAttemptGateCheck": {
+    "android": [
+      "contentReviewed",
+      "pronunciationReviewed",
+      "physicalAndroidQA",
+      "androidPhoneTabletQA",
+      "androidAdDismissalVerified"
+    ],
+    "ios": [
+      "contentReviewed",
+      "pronunciationReviewed",
+      "physicalIOSQA",
+      "iosPhoneTabletQA",
+      "iosPrivacyDeclarationsReviewed",
+      "iosAdDismissalVerified",
+      "appleKidsAdExceptionVerified"
+    ]
+  },
+  "binaryUploaded": false,
+  "reviewSubmitted": false,
+  "publicAvailability": false,
+  "googleSupportReplyFound": false,
+  "signingSecretsPrinted": false
+}

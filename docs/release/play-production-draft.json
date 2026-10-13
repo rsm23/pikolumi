@@ -1,0 +1,26 @@
+{
+  "verifiedAtUTC": "2026-10-13T06:59:37.271525+00:00",
+  "playAppId": "4975864234191950633",
+  "trackId": "4697289075710497413",
+  "releaseId": "1",
+  "releaseName": "1.0.0 (1)",
+  "status": "draft",
+  "fiveLanguageNotesSaved": true,
+  "countryAvailabilitySaved": 178,
+  "countryBreakdown": "177 named countries/regions plus rest of world",
+  "bundleUploaded": false,
+  "signingEnrollmentVerified": false,
+  "reviewSubmitted": false,
+  "public": false,
+  "previewErrors": [
+    "No APK or AAB uploaded",
+    "Empty release cannot upgrade existing users",
+    "No app bundles added or removed"
+  ],
+  "advertisingIDDeclarationCompleted": true,
+  "advertisingIDUsed": false,
+  "advertisingIDVerifiedAfterReload": true,
+  "rationale": "Child-directed GMA configuration, publisher first-party ID disabled, no AD_ID permission in exact AAB. Residual other SDK identifiers disclosed in Data Safety.",
+  "reviewURL": "https://play.google.com/console/u/0/developers/7865573294164372045/app/4975864234191950633/tracks/4697289075710497413/releases/1/review",
+  "proof": "output/release-verification/play-publishing-saved.png"
+}

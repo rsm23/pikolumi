@@ -6,7 +6,7 @@
   "arabicPronunciationApproval": "partial; full approval pending",
   "otherLocaleReviewers": "not yet assigned",
   "computerTests": "silent; user review offer does not authorize audible test playback",
-  "catalogSha256": "64019dca7035bffd32b9a39851ebdc47ab2832e9edc45ca47e700209e57df849",
+  "catalogSha256": "dac9bfdb118cec18d980d2effc15dbfbc060d86624b121f29c03fda85e37f323",
   "audioProvenanceSha256": "d53abf83c9990ebcef714fbf43744565e595781d035e01dea5bef7b1ce146ff1",
   "scope": "Arabic literacy: 240 lessons; Arabic narration: 214 recordings. Other sections/locales also require editorial review.",
   "arabicPronunciationIssues": "54 hash-bound replacements approved by user and bundled; 1 rejected replacements in this round need another review. Other Arabic recordings and educational content are not covered by this approval.",
@@ -17,5 +17,6 @@
   "arabicReplacementReview": "docs/qa/arabic-corrections-round4/reviews/99bfe7ec30a11130cf3262704e5199de55f290c96710bbd1291d074c24bc88b8.json",
   "arabicRemainingCorrectionsPacket": "docs/qa/arabic-corrections-round5/index.html",
   "arabicTracingCorrections": "80 corrected smooth guides; app/trace models share geometry, uniform scaling, explicit body/dot/vowel order. Native editorial review pending; completed results unchanged.",
-  "latinTracingCorrections": "320 English, French, Spanish and Portuguese letter/sequence guides plus 40 numerals: original smooth manuscript paths, shared model/canvas geometry, uniform scaling and versioned checkpoint migration. Native editorial review pending."
+  "latinTracingCorrections": "320 English, French, Spanish and Portuguese letter/sequence guides plus 40 numerals: original smooth manuscript paths, shared model/canvas geometry, uniform scaling and versioned checkpoint migration. Native editorial review pending.",
+  "latestContentChange": "2026-10-13: everyday-0098 tidying routine replaces handwashing in five locales; review packets refreshed; no human approvals inferred."
 }

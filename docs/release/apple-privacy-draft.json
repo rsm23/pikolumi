@@ -1,0 +1,83 @@
+{
+  "verifiedAtUTC": "2026-10-13T06:59:37.271525+00:00",
+  "appId": "6821776826",
+  "inventorySaved": true,
+  "dataTypesCount": 7,
+  "handlingSavedAndReloadVerified": [
+    {
+      "type": "coarse_location",
+      "linked": true,
+      "tracking": false,
+      "purposes": [
+        "third_party_advertising",
+        "developer_advertising",
+        "analytics",
+        "app_functionality"
+      ]
+    },
+    {
+      "type": "product_interaction",
+      "linked": true,
+      "tracking": false,
+      "purposes": [
+        "third_party_advertising",
+        "developer_advertising",
+        "analytics",
+        "app_functionality"
+      ]
+    },
+    {
+      "type": "advertising_data",
+      "linked": true,
+      "tracking": false,
+      "purposes": [
+        "third_party_advertising",
+        "developer_advertising",
+        "analytics"
+      ]
+    },
+    {
+      "type": "crash_data",
+      "linked": false,
+      "tracking": false,
+      "purposes": [
+        "analytics"
+      ]
+    },
+    {
+      "type": "performance_data",
+      "linked": false,
+      "tracking": false,
+      "purposes": [
+        "third_party_advertising",
+        "developer_advertising",
+        "analytics",
+        "app_functionality"
+      ]
+    },
+    {
+      "type": "other_diagnostics",
+      "linked": false,
+      "tracking": false,
+      "purposes": [
+        "third_party_advertising",
+        "developer_advertising",
+        "analytics"
+      ]
+    }
+  ],
+  "unconfigured": [
+    "device_identifiers"
+  ],
+  "published": false,
+  "submissionSent": false,
+  "blocker": "Google must clarify residual device identifiers/linkage/tracking in child-directed mode. Generic GoogleMobileAds 13.11 manifest declares linked tracking identifiers; do not claim they are absent because IDFA is disabled. Apple Kids creative-review and data-handling exception also remains unsupported.",
+  "finalPrivacyReviewComplete": false,
+  "manifestEvidence": "audience-package-audit.json",
+  "handlingRationale": "Draft entries follow exact GMA 13.11 and UMP 3.1 privacy manifests. No IDFA request or personalized ads. Performance linkage differs between the exact manifest (false) and generic SDK disclosure; clarify before publishing.",
+  "sources": [
+    "https://developers.google.com/admob/ios/privacy/data-disclosure",
+    "https://developer.apple.com/app-store/app-privacy-details/"
+  ],
+  "proof": "output/release-verification/apple-privacy-draft.png"
+}

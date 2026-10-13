@@ -81,7 +81,7 @@ progress,fr,Progression,,,,,3b3a0cf16b57ede310c109d9229b08b5a12f6c2fa4f294f6e0cd
 completed,fr,terminées,,,,,f6a3d63ed8eec6a2f42b8b31222f7ba65653a9b70449b5f353a836697e5befee
 privacy,fr,Confidentialité,,,,,7337a799214ccaa6d291fd1f68c9d2051a25a2fe103b243b0397845410bd2378
 export,fr,Exporter le dessin,,,,,381cfe1532ce9353b792cac0b24add122447d8e123adbba9b9c42f4052131920
-localPrivacy,fr,"Profils, progression et dessins restent sur cet appareil. Les annonces utilisent Google Mobile Ads avec protection des enfants. Aucun achat, compte ou outil de suivi. Les voix sont synthétisées et disponibles hors ligne.",,,,,cab40df2b7baf05d54885ef271a64c65cc2c0cf4c837886e1af68a24ee03e8c4
+localPrivacy,fr,"Profils, progression et dessins restent sur cet appareil. Les annonces utilisent Google Mobile Ads avec protection des enfants. Aucun achat ni compte cloud. La politique de confidentialité décrit les mesures publicitaires et diagnostics de Google. Les voix sont synthétisées et disponibles hors ligne.",,,,,cda210cdb1e2ef0537a2bd634eb5e3fdbd6a7b8708fce11129c66eb20564bab9
 privacyOptions,fr,Choix de confidentialité publicitaire,,,,,96cdba2dbeeb7c35f048a0af1a9c92c819f24fbdf79fcc2f8919a25169332f9f
 support,fr,Assistance et confidentialité,,,,,49d06906179b6bbc735b229ae98ea2db9882f828d3a357c79dd8bc5c2a0466da
 changePin,fr,Changer le code parent,,,,,b0f826f665df2deb84bd06467237d385e3092b983c97be8d4099d01e802c3e82

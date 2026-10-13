@@ -1,5 +1,5 @@
 {
-  "verifiedAtUTC": "2026-10-13T06:08:00.775376+00:00",
+  "verifiedAtUTC": "2026-10-13T06:23:30.887164+00:00",
   "playAppId": "4975864234191950633",
   "package": "com.seifelmoulouk.pikolumi",
   "selectedBands": [
@@ -10,10 +10,19 @@
   "userAuthorization": "Finish SDK privacy review, complete child audience certification and publish both stores.",
   "sdkPrivacyReview": "SDK-PRIVACY-REVIEW.md",
   "certificationChecked": true,
-  "certificationSaved": false,
-  "workflowComplete": false,
-  "currentStep": "2 of 5, App details",
-  "blocker": "Next remains on App details with checkbox checked; no visible validation error. Confirmed after pointer/keyboard activation, control refresh and re-entering the step.",
-  "proof": "output/release-verification/play-child-certification-pending.png",
-  "reviewSubmitted": false
+  "certificationSaved": true,
+  "workflowComplete": true,
+  "currentStep": "5 of 5, Summary",
+  "blocker": null,
+  "proof": "output/release-verification/play-child-audience-saved.png",
+  "reviewSubmitted": false,
+  "advertisingCertificationChecked": true,
+  "certificationVerifiedAfterReload": true,
+  "teacherApprovedProgramRequested": true,
+  "teacherApprovedBadgeGranted": false,
+  "diagnosis": "Stale unsaved client form state. Full reload and re-entry resolved Step 2; returning to earlier steps and toggling the checkbox in the stale draft did not.",
+  "reproductionProbe": {
+    "beforeReload": "Step 2 remains selected; pass=false",
+    "afterReloadAndFreshEntry": "Step 3 Ads selected; pass=true"
+  }
 }

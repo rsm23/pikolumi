@@ -1,8 +1,8 @@
 {
-  "verifiedAtUTC": "2026-10-13T06:08:00.775376+00:00",
+  "verifiedAtUTC": "2026-10-13T06:23:30.887164+00:00",
   "playAppId": "4975864234191950633",
   "package": "com.seifelmoulouk.pikolumi",
-  "status": "draft_saved; audience completion required before final save",
+  "status": "saved; ready to send for review",
   "answersReviewed": true,
   "dataCollectedAndShared": true,
   "encryptedInTransit": true,
@@ -36,10 +36,12 @@
     "https://support.google.com/googleplay/android-developer/answer/10787469?hl=en"
   ],
   "savedUIMessage": "Change saved. Send for review in Publishing overview.",
-  "finalSaveEnabled": false,
-  "blocker": "Target audience and content must be completed first. Its checked child certification does not advance to Ads; no visible validation error.",
-  "proof": "output/release-verification/play-data-safety-draft.png",
+  "finalSaveEnabled": true,
+  "blocker": null,
+  "proof": "output/release-verification/play-data-safety-saved.png",
   "storeReviewSubmitted": false,
   "persistedDraftVerifiedInIndependentTab": true,
-  "verification": "Reopened exact Data Safety URL in a separate tab; security/account answers, six completed handling rows and final collected/shared preview persisted."
+  "verification": "Reopened exact Data Safety URL in a separate tab; security/account answers, six completed handling rows and final collected/shared preview persisted.",
+  "finalSaveCompleted": true,
+  "familiesPolicyCommitmentShown": true
 }

@@ -1,0 +1,15 @@
+<en-US>
+Welcome to Pikolumi! Explore 2,400 offline coloring, drawing and learning activities in five languages. Choose separate interface and learning languages, save your artwork, and use separate profiles for siblings.
+</en-US>
+<ar>
+مرحبًا بكم في بيكولومي! استكشفوا ٢٤٠٠ نشاط للتلوين والرسم والتعلّم دون إنترنت بخمس لغات. اختاروا لغة للواجهة وأخرى للتعلّم، واحفظوا الرسومات، واستخدموا ملفات منفصلة للإخوة.
+</ar>
+<es-ES>
+¡Bienvenidos a Pikolumi! Explora 2.400 actividades de colorear, dibujar y aprender sin conexión en cinco idiomas. Elige idiomas distintos para la interfaz y el aprendizaje, guarda tus dibujos y usa perfiles separados para hermanos.
+</es-ES>
+<fr-FR>
+Bienvenue dans Pikolumi ! Découvre 2 400 activités de coloriage, de dessin et d’apprentissage hors ligne dans cinq langues. Choisis une langue pour l’interface et une autre pour apprendre, conserve tes dessins et utilise des profils séparés pour chaque enfant.
+</fr-FR>
+<pt-BR>
+Boas-vindas ao Pikolumi! Explore 2.400 atividades de colorir, desenhar e aprender offline em cinco idiomas. Escolha idiomas diferentes para a interface e a aprendizagem, salve seus desenhos e use perfis separados para irmãos.
+</pt-BR>
