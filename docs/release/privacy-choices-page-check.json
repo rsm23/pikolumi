@@ -45,18 +45,27 @@
       "pt"
     ],
     "observedAfterReload": [
-      "en"
-    ],
-    "remainingPersistenceChecks": [
+      "en",
       "ar",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ],
-    "proofCaptureSucceeded": false,
-    "interruption": "App Store Connect tab/session ended during screenshot and locale verification; reopened same app privacy URL at sign-in",
+    "remainingPersistenceChecks": [],
+    "proofCaptureSucceeded": true,
+    "interruption": "Earlier browser timeout/reset changed numeric browser-profile IDs. The original Rahmani Chrome profile was still signed in; verification resumed there. The duplicate unauthenticated login tab was closed.",
     "sdkPrivacyAnswersChanged": false,
     "privacyLabelPublished": false,
     "buildUploaded": false,
-    "submitted": false
+    "submitted": false,
+    "verifiedAtUTC": "2026-10-13T16:31:50.911742+00:00",
+    "proof": [
+      "store-proof/privacy-choices-en.png",
+      "store-proof/privacy-choices-ar.png",
+      "store-proof/privacy-choices-es.png",
+      "store-proof/privacy-choices-fr.png",
+      "store-proof/privacy-choices-pt.png"
+    ],
+    "verificationComplete": true
   }
 }

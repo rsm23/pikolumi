@@ -37,4 +37,4 @@ After those answers, implement any necessary SDK changes, rebuild/audit the exac
 
 ## Latest store metadata continuation
 
-Optional Privacy Choices URLs now point to each existing localized public page’s `#privacy` section. All five were entered and saved together; Portuguese after-save and English after-reload values were observed. Remaining Arabic/Spanish/French persistence checks and screenshot proof await sign-in after the browser/session ended. No identifier/performance answers or release gates were overridden. See `privacy-choices-page-check.json`.
+Optional Privacy Choices URLs now point to each existing localized public page’s `#privacy` section. All five were entered and saved together; Portuguese after-save and English after-reload values were observed. All five saved values and their screenshot proof are now verified in the original authenticated Chrome profile. The earlier apparent sign-out came from a browser-profile mapping mistake after a timeout/reset; the original tab remained authenticated. No identifier/performance answers or release gates were overridden. See `privacy-choices-page-check.json`.
