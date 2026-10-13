@@ -1,0 +1,62 @@
+{
+  "checkedAtUTC": "2026-10-13T16:21:56.182218+00:00",
+  "pages": [
+    {
+      "locale": "en",
+      "url": "https://seifelmoulouk.com/pikolumi/en.html#privacy",
+      "httpStatus": 200,
+      "privacyAnchorPresent": true,
+      "sha256": "4862d829d125b35544d8b3e07d025d0686a61d8ab49f93ff845a1e949d824b0e"
+    },
+    {
+      "locale": "fr",
+      "url": "https://seifelmoulouk.com/pikolumi/fr.html#privacy",
+      "httpStatus": 200,
+      "privacyAnchorPresent": true,
+      "sha256": "648e084c63c69c5244b5b878ea43f3c8bf0d629d8d78957e225612d07da2960e"
+    },
+    {
+      "locale": "es",
+      "url": "https://seifelmoulouk.com/pikolumi/es.html#privacy",
+      "httpStatus": 200,
+      "privacyAnchorPresent": true,
+      "sha256": "7912279921f4e98a07a62253295ce568859a8af36da0261ebed5a12dbbc257d4"
+    },
+    {
+      "locale": "pt",
+      "url": "https://seifelmoulouk.com/pikolumi/pt.html#privacy",
+      "httpStatus": 200,
+      "privacyAnchorPresent": true,
+      "sha256": "47fad7759098d443c46f1756f9f17d70b61089e9cf640a34108185bccf3640cf"
+    },
+    {
+      "locale": "ar",
+      "url": "https://seifelmoulouk.com/pikolumi/ar.html#privacy",
+      "httpStatus": 200,
+      "privacyAnchorPresent": true,
+      "sha256": "160c423c9731678fac833acd46152d557e0f1a64d0010f1fd652293c4daa1d4c"
+    }
+  ],
+  "purpose": "Optional App Store Privacy Choices links: parent controls, local save deletion, and SDK privacy details on existing owner website",
+  "appStoreOperation": {
+    "appId": "6821776826",
+    "savedAllFiveInSingleLocalizationDialog": true,
+    "observedAfterSave": [
+      "pt"
+    ],
+    "observedAfterReload": [
+      "en"
+    ],
+    "remainingPersistenceChecks": [
+      "ar",
+      "es",
+      "fr"
+    ],
+    "proofCaptureSucceeded": false,
+    "interruption": "App Store Connect tab/session ended during screenshot and locale verification; reopened same app privacy URL at sign-in",
+    "sdkPrivacyAnswersChanged": false,
+    "privacyLabelPublished": false,
+    "buildUploaded": false,
+    "submitted": false
+  }
+}

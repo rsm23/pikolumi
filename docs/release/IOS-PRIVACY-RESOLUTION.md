@@ -34,3 +34,7 @@ To resolve the hold, a substantive response must establish:
 4. Supported Kids external-navigation and age-appropriate dismissal safeguards. A callback observed after an ad click is not proof of a parent gate before external navigation.
 
 After those answers, implement any necessary SDK changes, rebuild/audit the exact production IPA, finish physical iPhone/iPad QA, complete the store privacy forms and select/upload the eligible build. The owner restored App Store Connect sign-in; release, privacy and free-pricing drafts are freshly verified in `apple-draft-rechecked-20261013.json`. The device-identifier card is still unconfigured, performance is currently unlinked in the draft and Publish is disabled. No unsupported answer was supplied. Native 320-case iPhone and 320-case landscape iPad curriculum acceptance is complete; physical iOS acceptance remains unavailable. No ad removal, audience change, unsupported privacy assertion or production-gate override is authorized by an automated acknowledgement.
+
+## Latest store metadata continuation
+
+Optional Privacy Choices URLs now point to each existing localized public page’s `#privacy` section. All five were entered and saved together; Portuguese after-save and English after-reload values were observed. Remaining Arabic/Spanish/French persistence checks and screenshot proof await sign-in after the browser/session ended. No identifier/performance answers or release gates were overridden. See `privacy-choices-page-check.json`.
