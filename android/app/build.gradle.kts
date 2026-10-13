@@ -70,3 +70,8 @@ kotlin {
 flutter {
     source = "../.."
 }
+
+dependencies {
+    // Keep the packaged SDK aligned with the reviewed Google data disclosure.
+    implementation("com.google.android.gms:play-services-ads:25.5.0")
+}

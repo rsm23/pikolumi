@@ -1,0 +1,31 @@
+{
+  "verifiedAtUTC": "2026-10-13T06:08:00.775376+00:00",
+  "publisher": "pub-3316613733634147",
+  "name": "Pikolumi Parent Privacy",
+  "status": "Published",
+  "apps": [
+    "ca-app-pub-3316613733634147~3372582372",
+    "ca-app-pub-3316613733634147~3616124950"
+  ],
+  "privacyURLs": [
+    "https://seifelmoulouk.com/pikolumi/en.html#privacy"
+  ],
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "pt-PT"
+  ],
+  "unavailableMessageLocales": [
+    "ar",
+    "pt-BR"
+  ],
+  "doNotConsentEnabledAllRegions": true,
+  "closeAsRejection": true,
+  "childUnderAgeFlag": true,
+  "parentPrivacyEntryPoint": true,
+  "otherAppsOrGlobalSettingsChanged": false,
+  "proof": "output/release-verification/admob-pikolumi-privacy-published.png",
+  "nativeErrorBeforeConfiguration": "UMP error 3: no forms configured for Android Pikolumi app ID",
+  "nativeProductionEligibilityWithTestUnitsAfterConfiguration": "passed"
+}

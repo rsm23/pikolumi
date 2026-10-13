@@ -188,5 +188,18 @@
     "https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions",
     "https://support.google.com/googleplay/android-developer/answer/17262077?hl=en",
     "https://web.iarcservices.com/terms"
-  ]
+  ],
+  "sdkPrivacyFollowUp": {
+    "checkedAtUTC": "2026-10-13T06:09:38.103163+00:00",
+    "review": "SDK-PRIVACY-REVIEW.md",
+    "exactFreshPackages": "sdk-privacy-package-audit.json",
+    "androidGoogleMobileAds": "25.5.0",
+    "nativeCheck": "../qa/sdk-privacy/android-native-validation.json",
+    "playDataSafety": "play-data-safety.json",
+    "playAudience": "play-child-audience.json",
+    "admobMessage": "admob-privacy-configuration.json",
+    "productionBuildsStillHeld": true,
+    "storeUploads": false,
+    "storeSubmissions": false
+  }
 }

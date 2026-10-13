@@ -51,7 +51,8 @@
     "saved": false,
     "certificationChecked": false,
     "blocker": "Step 2 requires certification of compliance with all applicable children's laws for the app, APIs, SDKs and ads. Exact SDK data handling and privacy declarations remain unverified; the certificate was not checked. Clicking Next confirms this declaration is required.",
-    "proof": "output/release-verification/play-child-certification-blocker.png"
+    "proof": "output/release-verification/play-child-certification-blocker.png",
+    "supersededBy": "play-child-audience.json"
   },
   "appReviewSubmitted": false,
   "appPubliclyAvailable": false

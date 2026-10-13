@@ -29,5 +29,12 @@
   "androidFamiliesSDKVerified": true,
   "iosPhoneSimulatorAdQA": true,
   "iosTabletSimulatorAdQA": true,
-  "androidNativeAdPrivacyQA": true
+  "androidNativeAdPrivacyQA": true,
+  "sdkPrivacyReviewCompleted": true,
+  "androidSDKPrivacySettingsVerified": true,
+  "iosSDKInventoryReviewed": true,
+  "androidPrivacyAnswersReviewed": true,
+  "playChildAudienceSaved": false,
+  "playDataSafetyDraftSaved": true,
+  "admobPrivacyConfigurationPublished": true
 }

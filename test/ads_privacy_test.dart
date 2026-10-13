@@ -531,6 +531,63 @@ void main() {
     },
   );
 
+  for (final platform in [TargetPlatform.android, TargetPlatform.iOS]) {
+    test(
+      'failed privacy update rejects cached eligibility on $platform',
+      () async {
+        debugDefaultTargetPlatformOverride = platform;
+        updateFails = true;
+        eligible = true;
+        await ads.initialize();
+        expect(ads.ready, isFalse);
+        expect(ads.needsPrivacyAction, isTrue);
+        expect(calls.where((c) => c.method == 'MobileAds#initialize'), isEmpty);
+        expect(calls.where((c) => c.method == 'loadInterstitialAd'), isEmpty);
+        await ads.privacyOptions();
+        expect(ads.ready, isFalse);
+        expect(
+          calls.where((c) => c.method.startsWith('UserMessagingPlatform#')),
+          isEmpty,
+        );
+        updateFails = false;
+        await ads.privacyOptions();
+        expect(ads.ready, isTrue);
+        expect(
+          calls.where((c) => c.method == 'MobileAds#initialize').length,
+          1,
+        );
+      },
+    );
+
+    test('failed refresh suspends existing ads on $platform', () async {
+      debugDefaultTargetPlatformOverride = platform;
+      await ads.initialize();
+      final load = calls.firstWhere((c) => c.method == 'loadInterstitialAd');
+      final ad =
+          instanceManager.adFor(load.arguments['adId'])! as InterstitialAd;
+      ad.adLoadCallback.onAdLoaded(ad);
+      final requests = calls
+          .where((c) => c.method == 'loadInterstitialAd')
+          .length;
+      updateFails = true;
+      await ads.privacyOptions();
+      expect(ads.ready, isFalse);
+      expect(ads.hasLoadedInterstitial, isFalse);
+      expect(
+        calls.where((c) => c.method == 'loadInterstitialAd').length,
+        requests,
+      );
+      expect(calls.where((c) => c.method == 'showAdWithoutView'), isEmpty);
+      updateFails = false;
+      await ads.privacyOptions();
+      expect(ads.ready, isTrue);
+      expect(
+        calls.where((c) => c.method == 'loadInterstitialAd').length,
+        requests + 1,
+      );
+    });
+  }
+
   test(
     'revocation rejects an in-flight interstitial even if it loads later',
     () async {

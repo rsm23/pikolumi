@@ -7,20 +7,38 @@ import 'package:pikolumi/services/ads.dart';
 
 import '../test/app_test.dart' show MemoryStore, SilentAudio;
 
+class PrivacyEligibilityAds extends AdsService {
+  PrivacyEligibilityAds()
+    : super(MemoryStore(), SilentAudio()..enabled = false);
+  @override
+  bool get production => true;
+  @override
+  String get bannerId => 'ca-app-pub-3940256099942544/6300978111';
+  @override
+  String get interstitialId => 'ca-app-pub-3940256099942544/1033173712';
+}
+
 void main() {
   final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
   testWidgets(
     'Android SDK accepts publisher ID disablement before ad loading',
     (tester) async {
-      final audio = SilentAudio()..enabled = false;
-      final ads = AdsService(MemoryStore(), audio);
+      final ads = PrivacyEligibilityAds();
+      final audio = ads.audio;
       addTearDown(ads.dispose);
       runApp(
         const MaterialApp(home: Scaffold(body: Text('Silent privacy check'))),
       );
       await ads.initialize();
-      expect(ads.production, isFalse);
+      expect(ads.production, isTrue);
       expect(ads.ready, isTrue);
+      expect(await ConsentInformation.instance.canRequestAds(), isTrue);
+      final consentStatus = await ConsentInformation.instance
+          .getConsentStatus();
+      expect(consentStatus, isNot(ConsentStatus.required));
+      expect(ads.consentFormRequired, isFalse);
+      final version = await MobileAds.instance.getVersionString();
+      expect(version, contains('25.5.0'));
       final configuration = await MobileAds.instance.getRequestConfiguration();
       expect(
         configuration.ageRestrictedTreatment,
@@ -37,6 +55,11 @@ void main() {
         'nativeChildTreatment': true,
         'nativeMaximumRatingG': true,
         'testAdsOnly': true,
+        'productionEligibilityPath': true,
+        'nativeSDKVersion': version,
+        'umpCanRequestAds': true,
+        'umpConsentStatus': consentStatus.name,
+        'childConsentFormNotRequired': true,
         'audioPlayback': false,
         'store': 'isolated memory; user profiles and artwork untouched',
         'runtimeTrafficInspection': false,

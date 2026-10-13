@@ -1,0 +1,45 @@
+{
+  "verifiedAtUTC": "2026-10-13T06:08:00.775376+00:00",
+  "playAppId": "4975864234191950633",
+  "package": "com.seifelmoulouk.pikolumi",
+  "status": "draft_saved; audience completion required before final save",
+  "answersReviewed": true,
+  "dataCollectedAndShared": true,
+  "encryptedInTransit": true,
+  "cloudAccountCreation": false,
+  "externalLogin": false,
+  "sdkDataDeletionRequestProvided": false,
+  "unverified90DayDeletionClaim": false,
+  "independentSecurityBadgeClaimed": false,
+  "types": [
+    "Approximate location",
+    "App interactions",
+    "Crash logs",
+    "Diagnostics",
+    "Other app performance data",
+    "Device or other IDs"
+  ],
+  "handling": {
+    "collected": true,
+    "shared": true,
+    "ephemeral": false,
+    "required": true,
+    "purposes": [
+      "Analytics",
+      "Advertising or marketing",
+      "Fraud prevention, security, and compliance"
+    ]
+  },
+  "rationale": "Official Google Mobile Ads 25.5.0 disclosure and exact signed-package audit. Removal of AAID does not establish absence of every other SDK identifier. Local profiles, progress and artwork do not leave the device through an application backend.",
+  "sources": [
+    "https://developers.google.com/admob/android/privacy/play-data-disclosure",
+    "https://support.google.com/googleplay/android-developer/answer/10787469?hl=en"
+  ],
+  "savedUIMessage": "Change saved. Send for review in Publishing overview.",
+  "finalSaveEnabled": false,
+  "blocker": "Target audience and content must be completed first. Its checked child certification does not advance to Ads; no visible validation error.",
+  "proof": "output/release-verification/play-data-safety-draft.png",
+  "storeReviewSubmitted": false,
+  "persistedDraftVerifiedInIndependentTab": true,
+  "verification": "Reopened exact Data Safety URL in a separate tab; security/account answers, six completed handling rows and final collected/shared preview persisted."
+}

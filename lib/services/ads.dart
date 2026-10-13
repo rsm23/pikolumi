@@ -156,6 +156,10 @@ class AdsService extends ChangeNotifier with WidgetsBindingObserver {
 
   Future<void> _reconcileEligibility() async {
     if (!_canUseAds) return;
+    if (_privacyUpdateFailed) {
+      _suspendAds();
+      return;
+    }
     final allowed =
         !production ||
         (!consentFormRequired &&
@@ -310,6 +314,10 @@ class AdsService extends ChangeNotifier with WidgetsBindingObserver {
     try {
       await _applyChildProtections();
       await _updateConsent();
+      if (_privacyUpdateFailed) {
+        _suspendAds();
+        return;
+      }
       FormError? formError;
       if (!_disposed && canPresent()) {
         if (consentFormRequired) {

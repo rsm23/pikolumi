@@ -1,0 +1,19 @@
+{
+  "verifiedAtUTC": "2026-10-13T06:08:00.775376+00:00",
+  "playAppId": "4975864234191950633",
+  "package": "com.seifelmoulouk.pikolumi",
+  "selectedBands": [
+    "5 and under",
+    "6-8",
+    "9-12"
+  ],
+  "userAuthorization": "Finish SDK privacy review, complete child audience certification and publish both stores.",
+  "sdkPrivacyReview": "SDK-PRIVACY-REVIEW.md",
+  "certificationChecked": true,
+  "certificationSaved": false,
+  "workflowComplete": false,
+  "currentStep": "2 of 5, App details",
+  "blocker": "Next remains on App details with checkbox checked; no visible validation error. Confirmed after pointer/keyboard activation, control refresh and re-entering the step.",
+  "proof": "output/release-verification/play-child-certification-pending.png",
+  "reviewSubmitted": false
+}
