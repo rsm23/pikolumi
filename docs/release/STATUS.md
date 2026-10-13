@@ -14,7 +14,17 @@
 
 ## Current iOS blockers
 
-Apple Kids guideline 1.3's publicly documented human creative-review and restricted child-data practices are still unestablished. No resolving support reply was found in the verified publisher mailbox today. Exact residual identifier handling and the generic-performance linkage discrepancy versus the GMA 13.11.0 manifest remain unresolved. Physical iPhone/iPad QA is unavailable; simulator checks do not satisfy that agreed requirement. App Store Connect is signed out; previous saved metadata/privacy drafts remain, with no binary uploaded or review submitted. The latest Arabic replacement has not been incorporated into a new iOS artifact. Production iOS ads remain disabled, and neither audience nor ad requirements were changed. See `ios-blockers-20261013.json`.
+Apple Kids guideline 1.3's publicly documented human creative-review and restricted child-data practices are still unestablished. Exact residual identifier handling and the generic-performance linkage discrepancy versus the GMA 13.11.0 manifest remain unresolved. Physical iPhone/iPad QA is unavailable; simulator checks do not satisfy that agreed requirement. Existing App Store Connect tabs are at login; previous saved metadata/privacy drafts remain, with no binary uploaded or review submitted. Production iOS ads remain disabled, and neither audience nor ad requirements were changed. See `ios-blockers-20261013.json`.
+
+## iOS support escalation and current QA artifact
+
+The owner's October 13 request explicitly authorized a Google AdMob support follow-up. A search including Spam found Google's October 12 automated response, authenticated for the verified publisher mailbox, with case **0-5962000041930**. Earlier searches excluded Spam and missed this response. It only supplies generic integration guidance and requires a reply for human assistance; it does not resolve the release questions.
+
+The human escalation was sent as a reply in that existing case and verified in Sent mail: `google-admob-ios-followup-20261013.json`. The exact message is `GOOGLE-ADMOB-IOS-FOLLOWUP-20261013.md`. It requests published Kids creative-review evidence, precise child-mode identifiers/recipients/linkage/tracking, the GMA 13.11.0 performance-linkage discrepancy and Kids ad navigation/dismissal safeguards. No attachments, signing credentials or child data were sent. A final search including Spam found no new substantive response. No support migration/new case number is claimed yet.
+
+A fresh, distribution-signed **test-ad** iOS 1.0.0 (1) IPA now includes the approved صِ recording and all 687 current source assets. Signature/entitlements, iOS GMA 13.11.0/UMP 3.1.0, six unmodified privacy manifests, delayed measurement initialization, absence of ATT usage text and test-unit strings verified; `ios-followup-package-audit.json`. It is held locally, not uploaded or eligible for production submission.
+
+The exact clip also decoded through the native audio player on the iPhone 18 Pro and iPad Pro 13-inch (M5) iOS 27 simulators, both with volume 0 and no playback or ad requests. Both test bodies and teardown passed; the normal main entry point was rebuilt/reinstalled and verified afterward without uninstall/clear or launching it. The original XcodeBuildMCP defaults were restored. No physical iOS device was found. See `../qa/ios-followup/summary.json`. These checks establish packaging/native decoding, not physical acceptance or fresh human pronunciation review.
 
 ## Historical preparation and interrupted attempts
 

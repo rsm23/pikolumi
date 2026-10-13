@@ -1,0 +1,11 @@
+{
+  "platform": "ios",
+  "arabicReferenceClipSha256": "62c636f483a3fe0f9a091a15cb8ed67f19c9774f6aa203117a8101ea25df90be",
+  "nativeDurationMs": 816,
+  "playback": false,
+  "playerVolume": 0,
+  "adsRequested": false,
+  "appPersistenceOpened": false,
+  "scope": "Native codec preparation on Simulator; not pronunciation or physical-device acceptance.",
+  "screenshots": []
+}

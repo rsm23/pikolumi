@@ -6,7 +6,7 @@
   "platformRouting": "iOS SDK",
   "appStoreId": "6821776826",
   "subject": "Pikolumi: public Kids advertising practices and child-mode SDK data disclosures",
-  "body": "Pikolumi (com.seifelmoulouk.pikolumi), ages 2–11; banners/interstitials; production held, test ads only. Flutter google_mobile_ads 9.1.0: Android GMA25.4.0/UMP4.0.0, iOS GMA13.11.0/UMP3.1.0; no mediation. Child/G before init, non-personalized requests, UMP under-age=true; no AD_ID/AdServices permissions or ATT. Publisher ID disabled: Android after init (required), iOS before.\nPlease provide:\n1) Public Kids practices proving human age review of creatives before serving, for Apple §1.3.\n2) Exact init/request data, purposes/recipients: IP/location, ads/interactions/diagnostics, AAID/IDFA, IDFV, Android/AppSet/SDK instance IDs.\n3) Is Android publisher ID generated/sent before disabling on fresh install? Protections on older Android?\n4) Apple Privacy/Play Data Safety linkage/tracking/sharing disclosures for these versions; Android docs describe 25.5, not 25.4.\n5) Kids ad click-through/external-navigation safeguards.\nContact: rahmani@seifelmoulouk.com. Full details available.",
+  "body": "Pikolumi (com.seifelmoulouk.pikolumi), ages 2\u201311; banners/interstitials; production held, test ads only. Flutter google_mobile_ads 9.1.0: Android GMA25.4.0/UMP4.0.0, iOS GMA13.11.0/UMP3.1.0; no mediation. Child/G before init, non-personalized requests, UMP under-age=true; no AD_ID/AdServices permissions or ATT. Publisher ID disabled: Android after init (required), iOS before.\nPlease provide:\n1) Public Kids practices proving human age review of creatives before serving, for Apple \u00a71.3.\n2) Exact init/request data, purposes/recipients: IP/location, ads/interactions/diagnostics, AAID/IDFA, IDFV, Android/AppSet/SDK instance IDs.\n3) Is Android publisher ID generated/sent before disabling on fresh install? Protections on older Android?\n4) Apple Privacy/Play Data Safety linkage/tracking/sharing disclosures for these versions; Android docs describe 25.5, not 25.4.\n5) Kids ad click-through/external-navigation safeguards.\nContact: rahmani@seifelmoulouk.com. Full details available.",
   "bodyCharacters": 984,
   "fullDraft": "docs/release/GOOGLE-ADMOB-SUPPORT-DRAFT.md",
   "adaptedForFormCharacterLimit": 1000,
@@ -16,5 +16,8 @@
   "attachments": [],
   "proof": "docs/release/store-proof/admob-support-sent.png",
   "replyDestination": "Signed-in AdMob login email; public contact supplied in request body",
-  "releaseRequirementsApproved": false
+  "releaseRequirementsApproved": false,
+  "discoveredCaseId": "0-5962000041930",
+  "caseIdDiscoveredFrom": "Authenticated Google automated reply found in Spam on October 13",
+  "latestFollowUp": "docs/release/google-admob-ios-followup-20261013.json"
 }

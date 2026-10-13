@@ -1,5 +1,5 @@
 {
-  "checkedAtUTC": "2026-10-13T12:22:36.485141+00:00",
+  "checkedAtUTC": "2026-10-13T14:20:53.159400+00:00",
   "platform": "ios",
   "productionEnabled": false,
   "submitted": false,
@@ -9,26 +9,33 @@
   "googleSupportRequest": "docs/release/google-admob-support-request.json",
   "publisherMailboxVerified": true,
   "publisherMailbox": "cool2309@gmail.com",
-  "supportReplyFound": false,
+  "supportReplyFound": true,
   "queries": [
-    "after:2026/10/12 (\"Pikolumi\" OR \"3316613733634147\")",
-    "after:2026/10/12 (AdMob OR \"Google Mobile Ads\" OR \"creative review\") -in:trash -in:spam"
+    "in:anywhere after:2026/10/11 (AdMob OR Pikolumi OR \"Google Mobile Ads\")"
   ],
   "unresolved": [
     "Public human age-appropriate review of creatives before serving and restricted child-data practices for Apple Kids exception",
     "Exact residual iOS identifiers and generic performance-linkage disclosure versus GMA 13.11.0 manifest",
     "Physical iPhone/iPad acceptance and ad dismissal QA"
   ],
-  "ascSession": "signed out",
+  "ascSession": "Existing App Store Connect tabs are at login; previous draft not freshly verified",
   "previousDraft": "docs/release/apple-privacy-draft.json",
-  "newIOSArtifactBuilt": false,
-  "latestArabicReplacementInNewIOSArtifact": false,
-  "outboundFollowUpSent": false,
+  "newIOSArtifactBuilt": true,
+  "latestArabicReplacementInNewIOSArtifact": true,
+  "outboundFollowUpSent": true,
   "adsRemovedOrAudienceChanged": false,
   "sources": [
     "https://developer.apple.com/app-store/review/guidelines/#kids-category",
     "https://developers.google.com/admob/ios/privacy/data-disclosure",
     "https://developers.google.com/admob/ios/targeting",
     "https://support.google.com/admob/answer/3480906?hl=en"
-  ]
+  ],
+  "substantiveSupportReplyFound": false,
+  "supportCaseId": "0-5962000041930",
+  "supportReplyFolder": "SPAM",
+  "followUpEvidence": "docs/release/google-admob-ios-followup-20261013.json",
+  "newIOSArtifactTestAdsOnly": true,
+  "packageAudit": "docs/release/ios-followup-package-audit.json",
+  "nativeSilentAudioQA": "docs/qa/ios-followup/summary.json",
+  "historicalSearchNote": "Earlier searches excluded Spam and missed Google automated response from October 12. Response contains no substantive Kids/privacy clarification."
 }

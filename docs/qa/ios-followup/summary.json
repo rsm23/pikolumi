@@ -1,0 +1,43 @@
+{
+  "checkedAtUTC": "2026-10-13T14:20:53.159400+00:00",
+  "devices": [
+    "iPhone 18 Pro simulator iOS 27.0",
+    "iPad Pro 13-inch (M5) simulator iOS 27.0"
+  ],
+  "reports": {
+    "iphone": {
+      "platform": "ios",
+      "arabicReferenceClipSha256": "62c636f483a3fe0f9a091a15cb8ed67f19c9774f6aa203117a8101ea25df90be",
+      "nativeDurationMs": 816,
+      "playback": false,
+      "playerVolume": 0,
+      "adsRequested": false,
+      "appPersistenceOpened": false,
+      "scope": "Native codec preparation on Simulator; not pronunciation or physical-device acceptance.",
+      "screenshots": []
+    },
+    "ipad": {
+      "platform": "ios",
+      "arabicReferenceClipSha256": "62c636f483a3fe0f9a091a15cb8ed67f19c9774f6aa203117a8101ea25df90be",
+      "nativeDurationMs": 816,
+      "playback": false,
+      "playerVolume": 0,
+      "adsRequested": false,
+      "appPersistenceOpened": false,
+      "scope": "Native codec preparation on Simulator; not pronunciation or physical-device acceptance.",
+      "screenshots": []
+    }
+  },
+  "bodyAndTeardownPassed": true,
+  "normalEntryPointRestoredOnBoth": true,
+  "installedReferenceBytesMatch": true,
+  "normalAppLaunchedAfterRestore": false,
+  "normalAppUninstalledOrDataCleared": false,
+  "appAlreadyStoppedAtCleanup": true,
+  "hostVolumeChanged": false,
+  "physicalIOSDevicesFound": 0,
+  "physicalDeviceQAComplete": false,
+  "pronunciationJudgedByThisTest": false,
+  "sdkNetworkTrafficInspected": false,
+  "testSourceSha256": "72628595c6f61a93c06617083c19690a21dd5f72bfbe18a11f1828587ed7a552"
+}

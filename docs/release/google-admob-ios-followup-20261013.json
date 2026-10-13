@@ -1,0 +1,19 @@
+{
+  "status": "sent",
+  "userAuthorization": "Keep working on the iOS blockers and follow up with Google AdMob support",
+  "caseId": "0-5962000041930",
+  "recipient": "admob-publisher-support@google.com",
+  "sender": "cool2309@gmail.com",
+  "messageId": "1a1359c54a21ae17",
+  "threadId": "1a12e65c8ab920c0",
+  "sentHeader": "Tue, 13 Oct 2026 14:13:20 +0000",
+  "subject": "Re: [0-5962000041930] Pikolumi iOS Kids release: human review and exact SDK privacy clarification",
+  "bodyFile": "docs/release/GOOGLE-ADMOB-IOS-FOLLOWUP-20261013.md",
+  "replyToMessage": "1a12e65c8ab920c0",
+  "sentLabelVerified": true,
+  "sourceReplyFolder": "SPAM",
+  "humanSupportEscalationRequested": true,
+  "attachments": [],
+  "requirementsResolved": false,
+  "mailURL": "https://mail.google.com/mail/u/?authuser=cool2309%40gmail.com#all/1a12e65c8ab920c0"
+}

@@ -1,5 +1,13 @@
 # SDK privacy review — 2026-10-13
 
+## iOS support escalation and refreshed package
+
+A mailbox search **including Spam** found Google's automated case response `0-5962000041930`; previous searches excluded it. The owner authorized a follow-up, which was sent and verified in the same thread. See `google-admob-ios-followup-20261013.json` and the exact body in `GOOGLE-ADMOB-IOS-FOLLOWUP-20261013.md`. The escalation requests a human SDK/privacy specialist, published pre-serving Kids human creative-review practices, residual identifiers/recipients/linkage/tracking, performance-linkage clarification and child-safe navigation/dismissal. The automated response is not substantive evidence; no new resolving answer was found before this handoff.
+
+The refreshed distribution-signed **iOS test-ad** IPA includes all 687 exact current source assets and the owner-authorized صِ replacement. All six privacy manifests are preserved; GMA 13.11.0 and UMP 3.1.0 match the earlier inventory. Signature, non-debuggable entitlement, delayed measurement initialization, no ATT usage-description key and official test-ad strings verified. See `ios-followup-package-audit.json`. The clip decoded at native duration 816 ms on both iPhone/iPad simulators with volume 0, no playback, no ad requests and no application-persistence access. Tests/teardown passed and normal entry points were restored. No physical iOS device was available.
+
+Fresh official sources still do not establish the Kids exception for this exact setup. [Apple's Kids guidance](https://developer.apple.com/kids/) separately requires human age review of displayed ads; [Google's Families article](https://support.google.com/admob/answer/6223431?hl=en) describes child-serving controls for Google Play. Those controls do not by themselves establish Apple's exception. [Google's current iOS disclosure](https://developers.google.com/admob/ios/privacy/data-disclosure) still describes user-associated performance and possible app/developer-bounded identifiers. Final iOS App Privacy answers remain held for exact-configuration clarification; no SDK manifest was edited, no unsupported absence-of-data claim was made, and no production iOS ads or store submission were enabled.
+
 ## Latest Android acceptance and production audit
 
 The physical continuation passed all remaining 152 cases and teardown, covering all 320 planned cases with the earlier prefix. The landscape Android tablet passed 320/320. Owner-level whole-library review completion and commercial permission for the supplied صِ clip are recorded; all 55 flagged Arabic corrections are resolved. Native decoding verified the replacement with playback disabled.
