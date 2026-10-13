@@ -9,6 +9,7 @@ import '../core/models.dart';
 import '../services/ads.dart';
 import 'activity_screen.dart';
 import 'parent_area.dart';
+import 'piko_mascot.dart';
 import 'vector_art.dart';
 
 const avatars = ['🐦', '🐱', '🐰', '🦊', '🐢', '🐼', '🦁', '🐸'];
@@ -144,6 +145,7 @@ class _LibraryHomeState extends ConsumerState<LibraryHome> {
         ],
       ),
       body: SafeArea(
+        bottom: false,
         child: Column(
           children: [
             Expanded(
@@ -236,12 +238,20 @@ class _LibraryHomeState extends ConsumerState<LibraryHome> {
                       ],
                     ),
                   ),
-                  SizedBox(
-                    width: c.maxWidth < 350 ? 100 : 150,
-                    child: Image.asset(
-                      'assets/art/piko.png',
-                      excludeFromSemantics: true,
-                    ),
+                  PikoMascot(
+                    key: const ValueKey('library-piko'),
+                    size: c.maxWidth < 350 ? 100 : 150,
+                    semanticLabel: app.t('pikoPlay'),
+                    invitations: [
+                      for (final key in [
+                        'pikoInviteColor',
+                        'pikoInviteMemory',
+                        'pikoInvitePuzzle',
+                        'pikoInviteNumbers',
+                        'pikoInviteDraw',
+                      ])
+                        app.t(key),
+                    ],
                   ),
                 ],
               ),
@@ -403,14 +413,14 @@ class _LibraryHomeState extends ConsumerState<LibraryHome> {
                   children: [
                     Expanded(
                       child: Opacity(
-                        opacity: app.completed > i * 5 ? 1 : .18,
+                        opacity: app.earnedCompletions > i * 5 ? 1 : .18,
                         child: ArtThumbnail(
                           scene: sceneFor(app.catalog.art, id),
                         ),
                       ),
                     ),
                     Text(
-                      app.completed > i * 5 ? '★' : '${i * 5 + 1}',
+                      app.earnedCompletions > i * 5 ? '★' : '${i * 5 + 1}',
                       style: const TextStyle(
                         fontSize: 20,
                         color: Color(0xFFBA8C2C),
@@ -564,7 +574,7 @@ class _SectionLibraryState extends ConsumerState<SectionLibrary> {
                                       ),
                                     ),
                                   ),
-                                  if (app.results[a.id]?['completed'] == true)
+                                  if (app.isCompleted(a))
                                     const PositionedDirectional(
                                       top: 12,
                                       start: 12,
@@ -581,13 +591,23 @@ class _SectionLibraryState extends ConsumerState<SectionLibrary> {
                               child: Column(
                                 children: [
                                   Text(
-                                    a.title(app.language),
+                                    app.activityTitle(a),
+                                    textDirection: a.languageLesson
+                                        ? (app.learningLanguage == 'ar'
+                                              ? TextDirection.rtl
+                                              : TextDirection.ltr)
+                                        : null,
                                     maxLines: 2,
                                     overflow: TextOverflow.ellipsis,
                                     textAlign: TextAlign.center,
-                                    style: const TextStyle(
+                                    style: TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.w800,
+                                      fontFamily: a.languageLesson
+                                          ? (app.learningLanguage == 'ar'
+                                                ? 'NotoSansArabic'
+                                                : 'Nunito')
+                                          : null,
                                     ),
                                   ),
                                   Text(
@@ -674,7 +694,11 @@ class GalleryView extends StatelessWidget {
                         builder: (context, s) => CustomPaint(
                           painter: VectorPainter(
                             scene: sceneFor(
-                              app.catalog.art,
+                              app.catalog.artForRevision(
+                                s.data?['artRevision'] ??
+                                    app.gallery[id]['artRevision'] ??
+                                    2,
+                              ),
                               app.gallery[id]['scene'],
                             ),
                             outlineOnly: true,
@@ -688,10 +712,22 @@ class GalleryView extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(10),
                     child: Text(
-                      a.title(app.language),
+                      app.activityTitle(a),
+                      textDirection: a.languageLesson
+                          ? (app.learningLanguage == 'ar'
+                                ? TextDirection.rtl
+                                : TextDirection.ltr)
+                          : null,
                       maxLines: 2,
                       textAlign: TextAlign.center,
-                      style: const TextStyle(fontWeight: FontWeight.w800),
+                      style: TextStyle(
+                        fontWeight: FontWeight.w800,
+                        fontFamily: a.languageLesson
+                            ? (app.learningLanguage == 'ar'
+                                  ? 'NotoSansArabic'
+                                  : 'Nunito')
+                            : null,
+                      ),
                     ),
                   ),
                 ],
@@ -714,8 +750,10 @@ class LibraryBanner extends StatefulWidget {
 
 class _LibraryBannerState extends State<LibraryBanner> {
   BannerAd? banner;
+  AdSize? renderedSize;
   bool loaded = false;
   int width = 0;
+  Orientation? orientation;
   int generation = 0;
   @override
   void initState() {
@@ -724,32 +762,72 @@ class _LibraryBannerState extends State<LibraryBanner> {
   }
 
   void changed() {
+    if (!widget.ads.ready) {
+      generation++;
+      banner?.dispose();
+      banner = null;
+      loaded = false;
+      renderedSize = null;
+      width = 0;
+      orientation = null;
+    }
     if (mounted) setState(() {});
   }
 
-  Future<void> load(int w) async {
-    width = w;
+  Future<void> load(int w, Orientation direction) async {
+    if (!widget.ads.ready || !mounted) return;
     final g = ++generation;
     banner?.dispose();
-    banner = null;
-    loaded = false;
-    final size = await AdSize.getLargeAnchoredAdaptiveBannerAdSize(w);
-    if (!mounted || g != generation || size == null) return;
+    setState(() {
+      width = w;
+      orientation = direction;
+      banner = null;
+      loaded = false;
+      renderedSize = null;
+    });
+    // Keep the library footer compact; the large format reserves video space.
+    // ignore: deprecated_member_use
+    final size = await AdSize.getAnchoredAdaptiveBannerAdSize(direction, w);
+    if (!mounted || !widget.ads.ready || g != generation || size == null) {
+      return;
+    }
     final ad = BannerAd(
       size: size,
       adUnitId: widget.ads.bannerId,
       request: const AdRequest(nonPersonalizedAds: true),
       listener: BannerAdListener(
-        onAdLoaded: (ad) {
-          if (!mounted || g != generation) {
+        onAdLoaded: (ad) async {
+          if (!mounted || !widget.ads.ready || g != generation) {
             ad.dispose();
             return;
           }
-          setState(() => loaded = true);
+          AdSize? actualSize;
+          try {
+            actualSize = await (ad as BannerAd).getPlatformAdSize();
+          } catch (_) {
+            actualSize = null;
+          }
+          if (!mounted || !widget.ads.ready || g != generation) return;
+          final fitted =
+              actualSize != null &&
+                  actualSize.width > 0 &&
+                  actualSize.width <= w &&
+                  actualSize.height > 0
+              ? actualSize
+              : size;
+          setState(() {
+            renderedSize = fitted;
+            loaded = true;
+          });
         },
         onAdFailedToLoad: (ad, error) {
           ad.dispose();
-          if (mounted && g == generation) setState(() => loaded = false);
+          if (mounted && g == generation) {
+            setState(() {
+              loaded = false;
+              renderedSize = null;
+            });
+          }
         },
       ),
     );
@@ -776,28 +854,34 @@ class _LibraryBannerState extends State<LibraryBanner> {
     return LayoutBuilder(
       builder: (context, c) {
         final w = c.maxWidth.floor();
-        if (w != width) {
+        final direction = MediaQuery.orientationOf(context);
+        if (w != width || direction != orientation) {
           WidgetsBinding.instance.addPostFrameCallback((_) {
-            if (mounted) unawaited(load(w));
+            if (mounted) unawaited(load(w, direction));
           });
         }
-        if (!loaded || banner == null) return const SizedBox.shrink();
+        if (!loaded || banner == null || renderedSize == null) {
+          return const SizedBox.shrink();
+        }
         return Container(
-          padding: const EdgeInsets.only(top: 10, bottom: 18),
+          key: const ValueKey('library-banner'),
+          padding: const EdgeInsets.only(top: 8, bottom: 12),
           decoration: const BoxDecoration(
             border: Border(top: BorderSide(color: Color(0xFFDDD8D0))),
           ),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               Text(
                 widget.label,
                 style: const TextStyle(fontSize: 11, color: Color(0xFF667582)),
               ),
-              const SizedBox(height: 6),
+              const SizedBox(height: 4),
               SizedBox(
-                width: banner!.size.width.toDouble(),
-                height: banner!.size.height.toDouble(),
-                child: AdWidget(ad: banner!),
+                key: const ValueKey('library-banner-slot'),
+                width: renderedSize!.width.toDouble(),
+                height: renderedSize!.height.toDouble(),
+                child: AdWidget(key: ObjectKey(banner), ad: banner!),
               ),
             ],
           ),

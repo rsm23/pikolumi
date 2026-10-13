@@ -1,0 +1,468 @@
+{
+  "passed": true,
+  "clips": [
+    {
+      "file": "letter_7.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.58,
+      "peak": 0.7589685320854187,
+      "sha256": "4b3be4b2237f9e8846b6b703b86c410b6aca0129181f67951c0656db1336e316",
+      "passed": true
+    },
+    {
+      "file": "letter_8.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.551,
+      "peak": 0.5262631177902222,
+      "sha256": "ab17b3b54d8ec3aecc164b524bfcc5e5956a0fecdaa1809e7e87afe61a5e1370",
+      "passed": true
+    },
+    {
+      "file": "letter_10.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.571,
+      "peak": 0.6715681552886963,
+      "sha256": "a59475ebc8eadd29fc47993627e30b864aa6c51543adf1e47d6d6d9fa93a6a4b",
+      "passed": true
+    },
+    {
+      "file": "long_alif.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 1.909,
+      "peak": 0.74781733751297,
+      "sha256": "2f9bd74e225eacabfbea2344859616845ece61d8fe1685025602b3731dbe85a8",
+      "passed": true
+    },
+    {
+      "file": "syllable_6.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.389,
+      "peak": 0.3638237416744232,
+      "sha256": "8fb53d5eaa600b2317ff50e7f3d2b40dae54d461ed3391f6d9a7f3f0699aeb1f",
+      "passed": true
+    },
+    {
+      "file": "syllable_10.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.47,
+      "peak": 0.2404405027627945,
+      "sha256": "0e0f9edc4cd86c3e2e49eb995162c263b925b8f95bb0b546d7f61b2867a8b96a",
+      "passed": true
+    },
+    {
+      "file": "syllable_12.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.44,
+      "peak": 0.5021142363548279,
+      "sha256": "55f6d338b6ea318ba445cff30c365272222133ab80ee79bce4411737b6d1a99b",
+      "passed": true
+    },
+    {
+      "file": "syllable_13.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.599,
+      "peak": 0.02782255969941616,
+      "sha256": "ae78dd43083bb297dd3e2401bc436a7981e1041d5409763468a2f0aa5f00aee1",
+      "passed": true
+    },
+    {
+      "file": "syllable_14.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.44,
+      "peak": 0.3556259572505951,
+      "sha256": "4a73fb84ec05bf8fd74e47d5453469ab6d18e253f4487011c836385d78109441",
+      "passed": true
+    },
+    {
+      "file": "syllable_16.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.609,
+      "peak": 0.08256961405277252,
+      "sha256": "6de06bab4a7259f791d13148cb319ae6a246ee70d1fef2dc9c42f9d9333b086f",
+      "passed": true
+    },
+    {
+      "file": "syllable_21.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.569,
+      "peak": 0.5763037204742432,
+      "sha256": "8d24f040a0d4cfd373337d039b6487ca90685a9c39f675be518a506aef62d148",
+      "passed": true
+    },
+    {
+      "file": "syllable_24.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.589,
+      "peak": 0.09214751422405243,
+      "sha256": "ddca2ac71f56a45b6c3ba5e16aede8ab27df24e5157adad92aa1edc3f79748ff",
+      "passed": true
+    },
+    {
+      "file": "syllable_37.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.53,
+      "peak": 0.4563450515270233,
+      "sha256": "778d51c48ba4f0778bfe8cb37a4c61823c326df3a5b92465ba1c94d2a9d296b2",
+      "passed": true
+    },
+    {
+      "file": "syllable_38.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.55,
+      "peak": 0.3379104733467102,
+      "sha256": "ce4f60b49216958db2dcf24e1b39049d2cc3f6a99e96deac00045b29812bcc06",
+      "passed": true
+    },
+    {
+      "file": "syllable_43.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.41,
+      "peak": 0.36992841958999634,
+      "sha256": "30a728c46ad3ba9337e982dc5fc5ca6e99cc196ece3534b35215c3c31ed74c37",
+      "passed": true
+    },
+    {
+      "file": "syllable_45.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.479,
+      "peak": 0.6801531910896301,
+      "sha256": "34f8c0b97b298f478fa59047e1f002b6df03aa4fd8b3c4124895819ec69bf35d",
+      "passed": true
+    },
+    {
+      "file": "syllable_46.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.539,
+      "peak": 0.39950793981552124,
+      "sha256": "762043b7144c6d7d511c39fc26dfe83f332c732be6249c56de6f6ec886dc8fa5",
+      "passed": true
+    },
+    {
+      "file": "syllable_47.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.49,
+      "peak": 0.39258915185928345,
+      "sha256": "50dcd3fab4820c40d85603d9b33e3dc8f50a7dfcb7f8afcbf3d45096ea6604d3",
+      "passed": true
+    },
+    {
+      "file": "syllable_49.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.489,
+      "peak": 0.48682668805122375,
+      "sha256": "42c22d7c06777972aeeac49a548ef587aeaee89ac5432311c0cb6aaf4994a06a",
+      "passed": true
+    },
+    {
+      "file": "syllable_50.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.479,
+      "peak": 0.3960224986076355,
+      "sha256": "8dce2be15820ad5cee9d8aecab0698a84fb7ffe82df56c6f22e7731bc9d0a7ae",
+      "passed": true
+    },
+    {
+      "file": "syllable_52.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.579,
+      "peak": 0.2810010612010956,
+      "sha256": "ad8daaf6927f255a7a5202b523a55a4960e8f0c94eaf900c5e7f2e8e9028f528",
+      "passed": true
+    },
+    {
+      "file": "syllable_53.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.489,
+      "peak": 0.3824741244316101,
+      "sha256": "2bd3c8802f886d4bf9d2aa9359c18f6299145a199d93cddad62720c4a1daf4b7",
+      "passed": true
+    },
+    {
+      "file": "syllable_55.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.439,
+      "peak": 0.4304834008216858,
+      "sha256": "6780e8f2752c5c177d1617a4e40f44ea368100be7e35a3758932e6d668ebc355",
+      "passed": true
+    },
+    {
+      "file": "syllable_56.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.38,
+      "peak": 0.43252936005592346,
+      "sha256": "54d3f52321e8c49ce87b02c5ba0071a3be532a188ffec3b341395ca0b64dbf0f",
+      "passed": true
+    },
+    {
+      "file": "syllable_61.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.44,
+      "peak": 0.3383881747722626,
+      "sha256": "ff23a91ee4a046909227826969789e02d872b5acdf0dd13ac85e302ce86ef24b",
+      "passed": true
+    },
+    {
+      "file": "syllable_62.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.35,
+      "peak": 0.5051327347755432,
+      "sha256": "bad5c254392fe26abc7b85a9bb5113e9fbc64aff032e40ed6ebe7a05af8a57ba",
+      "passed": true
+    },
+    {
+      "file": "syllable_68.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.46,
+      "peak": 0.3749403953552246,
+      "sha256": "1ef932813b0b0f6a10a0cc47410e75bbb5f7071b83c3c76853897b3359e0c148",
+      "passed": true
+    },
+    {
+      "file": "syllable_69.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.489,
+      "peak": 0.5039286017417908,
+      "sha256": "254c16cd529592e7e20d72ecb5042d44497661505d62e9b2bffd982a99fa196e",
+      "passed": true
+    },
+    {
+      "file": "syllable_71.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.44,
+      "peak": 0.3702152967453003,
+      "sha256": "3944c43691f55ecae0d2818f0563dc6ab6cb91d5bff76c5181fe10770aece4dd",
+      "passed": true
+    },
+    {
+      "file": "syllable_72.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.579,
+      "peak": 0.27976322174072266,
+      "sha256": "0bf36c927df8071952a07a2da3b2c147dfdacc8a7ede91cf16b6fc035c0f76fb",
+      "passed": true
+    },
+    {
+      "file": "syllable_73.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.429,
+      "peak": 0.03805600851774216,
+      "sha256": "911fed8482b12fcdb3dc21f2122e1fa5c2564b2aec7a9408da4ed05d5afd7566",
+      "passed": true
+    },
+    {
+      "file": "syllable_77.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.449,
+      "peak": 0.35542377829551697,
+      "sha256": "0ae6cd86c5f7ff74fef58bad878e4fae5ab54e09627470ce1609867a1a9b4745",
+      "passed": true
+    },
+    {
+      "file": "word_bear.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.549,
+      "peak": 0.53127121925354,
+      "sha256": "58f81846aee6a00f48415a147b40dfcac551719c5263c67e75a3f013fefbdb96",
+      "passed": true
+    },
+    {
+      "file": "word_bee.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.59,
+      "peak": 0.517691433429718,
+      "sha256": "83c855b810a0ca47c1f3efd7bf6f58508c513c5666d5022cc3aaefa1cf2dd7c8",
+      "passed": true
+    },
+    {
+      "file": "word_cake.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.61,
+      "peak": 0.4957708716392517,
+      "sha256": "53d4a9db677cca846472cd5d89b48be96f3fb5554c7d53d2c1206b410951088d",
+      "passed": true
+    },
+    {
+      "file": "word_cat.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.55,
+      "peak": 0.48956429958343506,
+      "sha256": "a732bb7b8bd89481276fc5e40595ee16cdd0cb2470f213e585748646ff13b595",
+      "passed": true
+    },
+    {
+      "file": "word_dog.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.38,
+      "peak": 0.39090222120285034,
+      "sha256": "e2ac1f17574b0d962c8f55f095689e44921c7253c3896448d1a93d04648b7c21",
+      "passed": true
+    },
+    {
+      "file": "word_drum.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.55,
+      "peak": 0.5302654504776001,
+      "sha256": "a3a84f510f86e68fb8f035ff6e8845725aa97a099953a4383bed4ce715348ef4",
+      "passed": true
+    },
+    {
+      "file": "word_elephant.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.49,
+      "peak": 0.4624321460723877,
+      "sha256": "cadc1f968d633f3539d9020c08d695b5883dd73d0f1263b3b50b8231f4819e83",
+      "passed": true
+    },
+    {
+      "file": "word_frog.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.619,
+      "peak": 0.7038831114768982,
+      "sha256": "b5f79022ee30da7face7cf65c50ab356e42b0fdf837832102e4edc76221c936e",
+      "passed": true
+    },
+    {
+      "file": "word_moon.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.549,
+      "peak": 0.5413187742233276,
+      "sha256": "80355c5685ebad99571f9b43f5eaed39cb690933f5ffcd2c25c788364094561f",
+      "passed": true
+    },
+    {
+      "file": "word_mountain.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.589,
+      "peak": 0.5810984969139099,
+      "sha256": "b97bf0b11e56f3bbd6bc8b6dd593c057f860b7a3445eaa45cbded2be5f8ce709",
+      "passed": true
+    },
+    {
+      "file": "word_mushroom.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.439,
+      "peak": 0.40732213854789734,
+      "sha256": "b4df175261ee625adc2f867cab35f8f2db92ba015bef1b733a605b73f28f9971",
+      "passed": true
+    },
+    {
+      "file": "word_pear.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.75,
+      "peak": 0.6167212128639221,
+      "sha256": "82bee1d25259c9507ba518025136739c5a7b2f52ce0aa525e822177180b5493b",
+      "passed": true
+    },
+    {
+      "file": "word_rocket.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.722,
+      "peak": 0.6839618682861328,
+      "sha256": "9485e9a1d1560cf7426e515d92f0e21aee233289806a73abb2440464affd3d5b",
+      "passed": true
+    },
+    {
+      "file": "word_whale.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.619,
+      "peak": 0.4428257644176483,
+      "sha256": "16a0207350c50a664c5482b9572ae0f4947f3ce1c089d20c959a789eacff282f",
+      "passed": true
+    },
+    {
+      "file": "trace_word_5.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.47,
+      "peak": 0.4850452244281769,
+      "sha256": "960d93c2daf5786b45d8639618fb72116be3f42a30b1b1bb68ebd84e098bd5f4",
+      "passed": true
+    },
+    {
+      "file": "trace_word_8.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.619,
+      "peak": 0.4183538556098938,
+      "sha256": "bdabea03c43f8f7a85b7fdcb547730ff43e3e87ebc28054c10ad0deb20403284",
+      "passed": true
+    },
+    {
+      "file": "trace_word_10.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.45,
+      "peak": 0.5233750343322754,
+      "sha256": "b7865f8b67b404157e2b95151176eb41a01ca318af36f4444efffc7ee4d8ac47",
+      "passed": true
+    },
+    {
+      "file": "trace_word_13.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.619,
+      "peak": 0.6094260215759277,
+      "sha256": "b6e2f38d2461489b7eeb082a995e274a56f0689f581f6411d688f643bb06501c",
+      "passed": true
+    },
+    {
+      "file": "trace_word_23.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 0.62,
+      "peak": 0.5168651938438416,
+      "sha256": "473403caf3b1c24096f60e804ad0b115c2f6929b7b02501d7e8faee8446469f9",
+      "passed": true
+    },
+    {
+      "file": "mazes.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 4.1,
+      "peak": 0.6162378787994385,
+      "sha256": "71e939e7a8d330ad852c9ceccf60cef65394f50e76dd7d874fa47e828f108ef9",
+      "passed": true
+    },
+    {
+      "file": "memory.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 4.92,
+      "peak": 0.7873838543891907,
+      "sha256": "8d61ce4d0b6f6d67bc753894c626dfa72ebc2d0f2798ed0d6a1a4c0b6c2a9a4b",
+      "passed": true
+    },
+    {
+      "file": "shapes.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 3.85,
+      "peak": 0.5491757392883301,
+      "sha256": "14603f7d8cb316d16bd840928da4e97d811623d835a272a3e51e5d9303cad881",
+      "passed": true
+    },
+    {
+      "file": "words.mp3",
+      "sampleRate": 24000,
+      "durationSeconds": 2.55,
+      "peak": 0.5836229920387268,
+      "sha256": "6a1fa836278bb0202d4205e89ade71df336115b6df9deb49698229c97f56f31d",
+      "passed": true
+    }
+  ],
+  "requested": 55,
+  "generated": 55,
+  "unflaggedAppRecordingsChanged": false,
+  "appRecordingsReplaced": false,
+  "computerPlayback": false,
+  "nativePronunciationApproval": false,
+  "locale": "Modern Standard Arabic confirmed by user",
+  "sourceSha256": "7e8de709b3b1307b59196da63bbd7c25399f866d0451b01c337ba655e6fae2c7",
+  "reviewUiSha256": "1f57d19e506242922b7ec4ebe9ec95a09c87e4558127c3d759e0a0a22b3d4a26",
+  "generatorArchive": "docs/release/voice-licenses/generators/7e8de709b3b1307b59196da63bbd7c25399f866d0451b01c337ba655e6fae2c7.py",
+  "reviewUiChecks": {
+    "passed": true,
+    "recordings": 55,
+    "comparisonPlayers": 110,
+    "approvalRequiresExplicitSelection": true,
+    "staleApprovalCleared": true,
+    "notesRetained": true,
+    "filtersAndExportVerified": true,
+    "playbackCalls": 0,
+    "networkCalls": 0
+  },
+  "currentGeneratorSha256": "2dc27271194d0e865bce12666aa56dc7eb5ca3a98d25e1dadb64459d6aa10e97",
+  "candidatesManifestSha256": "6e25f3aed4e27f2761f969ce2e4a01da29ce145d18a0260de03340ff9b725683"
+}

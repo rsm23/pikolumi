@@ -1,0 +1,230 @@
+{
+  "verifiedAt": "2026-10-12T18:31:28.327454+00:00",
+  "sourceHashes": {
+    "lib/ui/piko_mascot.dart": "ed97d805caac115bfee2c39bc2dfef08b28a893f79f00c290ccc34a1bc83ebe1",
+    "lib/ui/memory_card.dart": "79b3f8b0d95f90a295dc33d9192642c0a914ba6c6fe23ef7190b01fc8875551e",
+    "lib/ui/library.dart": "d24f5b46b3724c6becd21be55913cd7fce57db6ab3f8d5b58bc3289dda762650",
+    "lib/ui/activity_screen.dart": "ebe16cabea0c663624295400a70f17368e87e7f92d9fdfb976ccfd2aec20afaa",
+    "lib/activities/learning.dart": "a941b85f9efbb20d28f0a749c4d0f7ccfaf5ae20c2ec91f63f88c6ed9292648f",
+    "lib/main.dart": "6c230c62cb1f121219a9a24c1895b9eaf61435401fe0e24e63e3fca5cd54d844",
+    "scripts/build_piko_3d.py": "c4f9cd2ebed0deb691562df00dbcef1a698e1514b7f793e992b64b85ca916d34",
+    "scripts/pack_piko.py": "0a93ac8e260adefdb0d6830d5e1ae9a7a611c1d9926a3f5728ee437eefb0c867",
+    "scripts/validate_piko.py": "b0ee66d95bb77b4917028e3d4349dc29a263b88347c25e6e92a8760a85aba808",
+    "scripts/validate_piko_source.py": "34ed37b79977ced823f1af7f87356da4ca23ba6d8c529e027cae51dd87bfa8e4",
+    "scripts/content_source.py": "2c65acb766183a10d10fdbbed988123b0dde60b01bdcf7a30582b8512d500f4e",
+    "assets/content/strings.json": "89f5733b96d2128b756c4fc13bf106a8b68217ee9360435d1df0b3a0324df373",
+    "integration_test/playful_interactions_test.dart": "237edfeb9b91399493a06be6c4e7d8f286b4c598a5bd3cf6b58984aac0bf5189",
+    "integration_test/capture.dart": "be0ae12a53ba66000849584dd783ee815072ca5ea44dfbc58eeeac16edf4d328",
+    "integration_test/memory_turn_visual_test.dart": "fd8af8a9a46001e2b36a6ea2381c8ee87817d2711c9fc29c5c298b8311e08375",
+    "test/playful_interactions_test.dart": "afc000eade57381caca187fba316fe55c79a03bc78cea27d4bddc996d73920b8",
+    "test/piko_mascot_test.dart": "263668d61f30cd122834f4975ee8a14ea236db2e9104a80dc675f86637434320",
+    "assets/art/piko.png": "080c6d916890f5bb96d96f2339a80bdb01c74473f25801dad33054d3be477dde",
+    "assets/art/app-icon.png": "0b56e8aa0ef45809ea7d7464d72587280d6f707c1b2c0fec8f0474c6f08ff4a2",
+    "assets/art/piko_3d/poster.webp": "a4c090e5c4330f13ff4363065e206ec9673cc39f5746a9ccaba8de6d6c424a0d",
+    "assets/art/piko_3d/hop_0.webp": "6201e78c31aafe2befd2fea06ca751ac0699f19ba936be850c6ac5d174b67af1",
+    "assets/art/piko_3d/flutter_0.webp": "e2ca1065933bbae916c21993044b44847e51727ce5fae532f4b63672f863c189",
+    "assets/art/piko_3d/nod_0.webp": "49ae43b47c23b1a420b49dafd5cfd36b70312ac53a46133a9265bb20eb8c513e",
+    "assets/art/piko_3d/idle_1.webp": "f24fc5ee5296191f113e4302bce4cac7aa935a97c7d0f1dec3c2d50970401ca2",
+    "assets/art/piko_3d/idle_0.webp": "72ab77744e77a673d1a6eb78defdda38013d8efab52d414a81348e64b7b1d256",
+    "assets/art/piko_3d/manifest.json": "c4a215a495e50a55961fd81bf7ab48d2c24a462fa8a2f3a0d50f69dfcf97e58c",
+    "assets/art/piko_3d/crayon_0.webp": "27fead89a2e3e47434f0f220b55d4e17878796ac7c6281240e9998ad5faffb17",
+    "assets/art/piko_3d/wink_0.webp": "d80d2e4fbc28cc83ef4f436223ba634e1e143444d93660e8cf3c13f506cb329f",
+    "assets/art/piko_3d/bow_0.webp": "1a8ed81e4d9e466def0f8fc146461bc110a062df8da19b138afd1bec0d55eb19",
+    "assets/art/piko_3d/celebrate_0.webp": "f4be82058d625acbac8556d681333de156b83bf85f3895537942f56593c5b650",
+    "assets/art/piko_3d/wiggle_0.webp": "7791e779a55e5085ca85f437e754b598848398360312e32da7a295606eb03eea",
+    "assets/art/piko_3d/peek_0.webp": "035b53a33a0c201a268a83313241c17a75f938e331604ca4d3f4cdca77e48193",
+    "assets/art/piko_3d/stretch_0.webp": "1cd70440f3bd89e12b035dd8c799516496170822caeb87c89adc2626f6d421e2",
+    "assets/art/piko_3d/wave_0.webp": "e643268d029bef02cbc53f7fef5d45154ef048ea1077112e27e61364ee486201",
+    "assets/art/piko_3d/celebrate_1.webp": "0e0788fc76dc90cf6d7c1d1c79d35b4c9704db23c815e848cc33c79df61a0608"
+  },
+  "native": {
+    "android-emulator": {
+      "passed": true,
+      "report": "docs/qa/piko-playful/android-emulator/integration_response_data.json",
+      "sha256": "ee4b53f5e5bc6fab314828d77fa22407eccbc3349d6d21c46b45f986eb5111c9",
+      "captures": {
+        "docs/qa/piko-playful/android-emulator/activity-header-reaction.png": "c04e72c7a607c65b8b3cee84a16c040305bbbd74991a547960c5cf1fbd10b9a8",
+        "docs/qa/piko-playful/android-emulator/ar-localized-invitation.png": "1d9e768727742a5d08792d5bca33707c5b137ecbdab54c0c3ef03d39d73a9335",
+        "docs/qa/piko-playful/android-emulator/ar-memory-completion.png": "48bdae587d69937d5001d053e7022aa35517f314137be28471b11bfcca218f6b",
+        "docs/qa/piko-playful/android-emulator/ar-memory-turn.png": "0a7b30fd5e7964ce51fd48369b73bdc95e623b4e070fa3877e8f598778e6e397",
+        "docs/qa/piko-playful/android-emulator/automatic-idle-invitation-fr.png": "8c81924e8a72b93851abe85b06e9a56203be846c7f4152d021c640c37829c824",
+        "docs/qa/piko-playful/android-emulator/en-localized-invitation.png": "81f892b0fd12e62ae8c849891cdf1bc2f002dc431591599bf13ef756fa6340f1",
+        "docs/qa/piko-playful/android-emulator/en-memory-completion.png": "5d219f1a5d0a94a524f5e69dda9704fab83cf36346ad46a8b7c7387113064d63",
+        "docs/qa/piko-playful/android-emulator/en-memory-turn.png": "0b01e9a27841b60723aee4ad0384c45b3d035badedafe6eb1ceebc59c6dd9a6c",
+        "docs/qa/piko-playful/android-emulator/es-localized-invitation.png": "c892866e2343167401076006ec8d0ef0db89689582714ef4ad7efaea97847b36",
+        "docs/qa/piko-playful/android-emulator/es-memory-completion.png": "1e1c34831030539f5d6b7168eaae27e6ed423b53deb144e8bd913f9370c6abab",
+        "docs/qa/piko-playful/android-emulator/es-memory-turn.png": "5e83b583a0c87cc06a87695786b3504fc6f91946cf2da0d59e5477ddde2f3bd3",
+        "docs/qa/piko-playful/android-emulator/fr-localized-invitation.png": "60e6ce45718ef26995091eb6228ec279e5bf5ec481ded90782076057cd6cddcb",
+        "docs/qa/piko-playful/android-emulator/fr-memory-completion.png": "978763f68cbbae5f18cff9d10e317728eb10ec270d4998a02fffe1c790955316",
+        "docs/qa/piko-playful/android-emulator/fr-memory-turn.png": "969bfdf9f4106ef9e6c1925a26bbb4b894471658e92d04b4ca9a19c9808e8d3f",
+        "docs/qa/piko-playful/android-emulator/gesture-bow.png": "6f78575ee30cef4dbe242b77fc3f24c8951ae3068b2f17a4ba1ad478ebbdb451",
+        "docs/qa/piko-playful/android-emulator/gesture-crayon.png": "e8d11e944f454ce91877a7a190a94a982c829d94d2a1d8ff530bc9f5207fb38d",
+        "docs/qa/piko-playful/android-emulator/gesture-flutter.png": "b17c0e73e6a86a4654da0a3f089fe37b3f790c091780a684ff4dcfe572b2a29a",
+        "docs/qa/piko-playful/android-emulator/gesture-hop.png": "378238bd8672a8753564ba27ae431f7f3e0e815c28bab182e5f7289d3cc6c3fe",
+        "docs/qa/piko-playful/android-emulator/gesture-nod.png": "e2f834d6be4ef5ca4df4b050e0f5b6c3ecec0a905b59f782f0a70998e960ffe2",
+        "docs/qa/piko-playful/android-emulator/gesture-peek.png": "cda5f320e6342945ce10475faccda61b5b53a75a82247566c87b8ccd4d03d3bb",
+        "docs/qa/piko-playful/android-emulator/gesture-stretch.png": "2348a55ee3bf132cf66cd45074b2a92e544ad0bc0affa3b16854bda506597d13",
+        "docs/qa/piko-playful/android-emulator/gesture-wave.png": "1c7217d1306073fb7f3cd9ce4f69360da8e61108e2bef3220239301691436c78",
+        "docs/qa/piko-playful/android-emulator/gesture-wiggle.png": "54b0447763f19ffec11e42277cb79b82aa68e35920bed2c367d9abea6d67c324",
+        "docs/qa/piko-playful/android-emulator/gesture-wink.png": "732eb7efc7cc4bf5c98bc6dbf5741b819637443b374d92297f8d1867f278ef7b",
+        "docs/qa/piko-playful/android-emulator/library-piko.png": "591c88d3e854fe26cbc7ff14d69b19e5644f9824ebb6c4c3462e957b815f56f7",
+        "docs/qa/piko-playful/android-emulator/pt-localized-invitation.png": "5f540df2d8694cdd12ab5d9b777c8365a4d1d14c7497601ff1b20cd9da8df211",
+        "docs/qa/piko-playful/android-emulator/pt-memory-completion.png": "84a7a25b0001e94390081fd31ff95b520ade96e7d4af59423dbd37afcae80a5a",
+        "docs/qa/piko-playful/android-emulator/pt-memory-turn.png": "ec4acccaf7c4a03370a91e172f0c24896664a330fa1327dd5055d5fdca821e66"
+      },
+      "normalEntryPointRestored": true
+    },
+    "ios-phone": {
+      "passed": true,
+      "report": "docs/qa/piko-playful/ios-phone/integration_response_data.json",
+      "sha256": "6eccbfccbde750ce3d9f804257e3263bec42d826b5b25f585d8a18dfbbccf6ff",
+      "captures": {
+        "docs/qa/piko-playful/ios-phone/activity-header-reaction.png": "18e8e172601d369a686898a4e0f28208fbf9b49e99bed6d1ab88a133a29fff1d",
+        "docs/qa/piko-playful/ios-phone/ar-localized-invitation.png": "51edead7f94c0789832221237d074acf2297761f1498b0522f04d72dece6e2c4",
+        "docs/qa/piko-playful/ios-phone/ar-memory-completion.png": "4eea4531383a00e98fc74e158b6a6d6782c148c7b76bed8b5e3cdaa141fce542",
+        "docs/qa/piko-playful/ios-phone/ar-memory-turn.png": "bdfecd342e35316719eb5a7c3e35089ef882a6de0a91d48845e4ce6751a5ae53",
+        "docs/qa/piko-playful/ios-phone/automatic-idle-invitation-fr.png": "23410f99c5114abdf62c263858e44a3731702fde9e040b83cf0455dc63425769",
+        "docs/qa/piko-playful/ios-phone/en-localized-invitation.png": "a1c843eae46c2bb6417861e9b210aedd140b4417e70355e101bef7e785c6cbe1",
+        "docs/qa/piko-playful/ios-phone/en-memory-completion.png": "877ff7a0eabbef164d12e24d514fdcc55f1b897c83a04df3585621c484b15ee8",
+        "docs/qa/piko-playful/ios-phone/en-memory-turn.png": "b973a73aa5d69c10fb36f12b9850184288a180fb01db7f092a5d62e038e2de16",
+        "docs/qa/piko-playful/ios-phone/es-localized-invitation.png": "5f81761b2e0cb4f6bd7f4e6c4bebcefc8a901fb88b51647343a5778ecbf08cd0",
+        "docs/qa/piko-playful/ios-phone/es-memory-completion.png": "b3160ef2fc05ba55f856614968a559e665cfacc23710aa728436b36e5cf519c4",
+        "docs/qa/piko-playful/ios-phone/es-memory-turn.png": "22fef6a731251dae6c2adfd8e1d38534dd7940884648e7eece8ba4be6494bba6",
+        "docs/qa/piko-playful/ios-phone/fr-localized-invitation.png": "2a67075af94af6c3214e7ee722f64a3a4fc670d7a705092748156cf8246c5018",
+        "docs/qa/piko-playful/ios-phone/fr-memory-completion.png": "daa2c244a84e476a17544ed700f12eac1c7e739480d943e3f481c4826b7cafdd",
+        "docs/qa/piko-playful/ios-phone/fr-memory-turn.png": "110e9295d2dcaa7a243c55d0e958b328a3c4c3df6b5c16e05d88dc29de550a5b",
+        "docs/qa/piko-playful/ios-phone/gesture-bow.png": "4125f495bb20b9b3598d351c02a576e10cc24cf8c8c9fef949f3f04128bf29cb",
+        "docs/qa/piko-playful/ios-phone/gesture-crayon.png": "23f5091b29ed0225c74da2d714441635040aa831bac7cf1d192ef738d4f2e7c6",
+        "docs/qa/piko-playful/ios-phone/gesture-flutter.png": "152c1c5d0d45d8753d277cdddb98c1b5d36578b5b1c93acdcc6325bed0590828",
+        "docs/qa/piko-playful/ios-phone/gesture-hop.png": "23f5091b29ed0225c74da2d714441635040aa831bac7cf1d192ef738d4f2e7c6",
+        "docs/qa/piko-playful/ios-phone/gesture-nod.png": "abf92f7cb219eba5aacaf6c586e8095105282441df95d45a99db0a142707c51b",
+        "docs/qa/piko-playful/ios-phone/gesture-peek.png": "23f5091b29ed0225c74da2d714441635040aa831bac7cf1d192ef738d4f2e7c6",
+        "docs/qa/piko-playful/ios-phone/gesture-stretch.png": "152c1c5d0d45d8753d277cdddb98c1b5d36578b5b1c93acdcc6325bed0590828",
+        "docs/qa/piko-playful/ios-phone/gesture-wave.png": "152c1c5d0d45d8753d277cdddb98c1b5d36578b5b1c93acdcc6325bed0590828",
+        "docs/qa/piko-playful/ios-phone/gesture-wiggle.png": "152c1c5d0d45d8753d277cdddb98c1b5d36578b5b1c93acdcc6325bed0590828",
+        "docs/qa/piko-playful/ios-phone/gesture-wink.png": "152c1c5d0d45d8753d277cdddb98c1b5d36578b5b1c93acdcc6325bed0590828",
+        "docs/qa/piko-playful/ios-phone/library-piko.png": "ec37ce98026c0385da91a26b4982d99f9958be9c9e619cc2dd70c7d75d11fef6",
+        "docs/qa/piko-playful/ios-phone/pt-localized-invitation.png": "cb52f43ca77773cd8668672f5c9d19920006a1e3238c8cd243aa18000d7f3e84",
+        "docs/qa/piko-playful/ios-phone/pt-memory-completion.png": "8f29fff1216f4a32e696c11d4510f6a9b5fb53452ce40b5586b35fa3ba61057b",
+        "docs/qa/piko-playful/ios-phone/pt-memory-turn.png": "bb8547d416e64cf9514ffdbb463aa729ffa257f942563940437154660c5d7ef0"
+      },
+      "normalEntryPointRestored": true
+    },
+    "ios-tablet": {
+      "passed": true,
+      "report": "docs/qa/piko-playful/ios-tablet/integration_response_data.json",
+      "sha256": "1c803da1b6e22533b0e37cbe9a7478e421422a15bd5eeb92ece72b1980455636",
+      "captures": {
+        "docs/qa/piko-playful/ios-tablet/activity-header-reaction.png": "715d3f2ab37a1f69bd20881bb96803f01ede65195482fedcb68638b44916d21b",
+        "docs/qa/piko-playful/ios-tablet/ar-localized-invitation.png": "424f2ee17af70d0178ecb86b51f49f03ad370633eb3bc4d94a60185af4d5d37e",
+        "docs/qa/piko-playful/ios-tablet/ar-memory-completion.png": "db9afaf64aea3d69f77b4fa846d894e4029a483733afafc90ad97bed33cdc444",
+        "docs/qa/piko-playful/ios-tablet/ar-memory-turn.png": "dd0161260d230840a4457b40bd8f7eef29cbd1de7717bcf5f227de2b44c70289",
+        "docs/qa/piko-playful/ios-tablet/automatic-idle-invitation-fr.png": "1a039a8dc15cb0a9a0e04a247a55a901a42d9da72827311ac3d1ea592b8e0bd1",
+        "docs/qa/piko-playful/ios-tablet/en-localized-invitation.png": "ff283d5a61121536a509677cccd2a32d8105ac1e93ef4dd7b9b29a893936838f",
+        "docs/qa/piko-playful/ios-tablet/en-memory-completion.png": "734a6226e084a88debf50f85cd257af6e5e2dcb0bf82ac65e3c1bbde1b63bca4",
+        "docs/qa/piko-playful/ios-tablet/en-memory-turn.png": "3c1e73f8a6642ed7566ab7d556a3c5d7e5edf53d9b4433ee2086f8176839d177",
+        "docs/qa/piko-playful/ios-tablet/es-localized-invitation.png": "cca4ae0f2a39f5be9f0e3d4e8c9e8d2b92ab09676876e2a4c648695786e63577",
+        "docs/qa/piko-playful/ios-tablet/es-memory-completion.png": "00333fbeb8565163bcdb63b0eb12c831c35b536fb97304119ce4cfbbf7c81dd5",
+        "docs/qa/piko-playful/ios-tablet/es-memory-turn.png": "99685fb606768178ed60798f3a7803d72699afdff330791fbf340585381e3a12",
+        "docs/qa/piko-playful/ios-tablet/fr-localized-invitation.png": "ec505f02bbdbc857ddbe75aa412f426cc7f3a55993618360ace3e96f817c3638",
+        "docs/qa/piko-playful/ios-tablet/fr-memory-completion.png": "d7d9858aec9fe3b99e5ce5c97da4076f5989f9822a534a6a8202217ba5b68536",
+        "docs/qa/piko-playful/ios-tablet/fr-memory-turn.png": "5944f67f218fe5ad8f0f53449059380ea3b4a49c1853abb40777fb369bedd14a",
+        "docs/qa/piko-playful/ios-tablet/gesture-bow.png": "7830af49d7548b8bddefa3f40b4eec3d00701de1103a15a362194e50aa0416b8",
+        "docs/qa/piko-playful/ios-tablet/gesture-crayon.png": "7830af49d7548b8bddefa3f40b4eec3d00701de1103a15a362194e50aa0416b8",
+        "docs/qa/piko-playful/ios-tablet/gesture-flutter.png": "ece99027f7b026f1245dd4147379d56392d6aa7baceb8036299853f10f7b3a16",
+        "docs/qa/piko-playful/ios-tablet/gesture-hop.png": "93b0a3b9153ef92181629a061223eb0a8291d0c32b039f174cf52e766a9acfb3",
+        "docs/qa/piko-playful/ios-tablet/gesture-nod.png": "93b0a3b9153ef92181629a061223eb0a8291d0c32b039f174cf52e766a9acfb3",
+        "docs/qa/piko-playful/ios-tablet/gesture-peek.png": "7830af49d7548b8bddefa3f40b4eec3d00701de1103a15a362194e50aa0416b8",
+        "docs/qa/piko-playful/ios-tablet/gesture-stretch.png": "442d368219a3752b6b44324aac4c0af99b83dec1dc145f0e870bfbb9df7d22da",
+        "docs/qa/piko-playful/ios-tablet/gesture-wave.png": "ece99027f7b026f1245dd4147379d56392d6aa7baceb8036299853f10f7b3a16",
+        "docs/qa/piko-playful/ios-tablet/gesture-wiggle.png": "ee9915f5f52593114aefa71512d3ae8738579b970f8c7805d9d16c5a5d522ad5",
+        "docs/qa/piko-playful/ios-tablet/gesture-wink.png": "93b0a3b9153ef92181629a061223eb0a8291d0c32b039f174cf52e766a9acfb3",
+        "docs/qa/piko-playful/ios-tablet/library-piko.png": "d32c70b96ac949b866ffb061c535b20b03b5ccc65ae01831fb302a4bb7409c6b",
+        "docs/qa/piko-playful/ios-tablet/pt-localized-invitation.png": "96a71cc7b861956e9e6c49823d8ac73c827b2c6916604c50ce0a0a205658d7ab",
+        "docs/qa/piko-playful/ios-tablet/pt-memory-completion.png": "7c159b609c356b648092c5355fb65c5b700423f82c1a4d02192e7820bce5473a",
+        "docs/qa/piko-playful/ios-tablet/pt-memory-turn.png": "74048d310af785775c8af2490e021971d97dbc172c23b6ec37900d274ec8f95f"
+      },
+      "normalEntryPointRestored": true
+    }
+  },
+  "packages": {
+    "output/qa/Pikolumi-Playful-Piko-QA.apk": "3462ecdb99038ece201e65820ddf0f53164142a19d93817ec5e5fd2849867a42",
+    "output/qa/Pikolumi-Playful-Piko-Simulator.zip": "e95e191ab9db32ab8433c6091a9d9620c4d1c777ede29025449c13919b2401af"
+  },
+  "sourceAssetsMatchedInBothPackages": 687,
+  "flutterTests": 67,
+  "pythonTests": 8,
+  "analyzer": "clean",
+  "physicalTesting": "Deferred by user; physical iOS unavailable",
+  "audio": "SilentAudio, muted before mounting; emulator -no-audio; no system-volume or normal sound-preference changes",
+  "storeActionsPerformed": false,
+  "pixelInstallation": {
+    "installed": true,
+    "apkSha256": "3462ecdb99038ece201e65820ddf0f53164142a19d93817ec5e5fd2849867a42",
+    "installedApkMatches": true,
+    "compatibleDevelopmentCertificate": true,
+    "before": {
+      "fileHashes": {
+        "pikolumi.sqlite": "752c679ac2011acd81bb6618128d298fcd381aaaa606adbdfd3f2efb5095cb1e"
+      },
+      "savedRecordsSha256": "60c83c3022f4ec540b8a2568e2a40529414fdaddc1d588002b37e06300968451",
+      "recordCounts": {
+        "ads": 1,
+        "artwork:explorer-1": 5,
+        "gallery:explorer-1": 5,
+        "results:explorer-1": 37,
+        "settings": 1
+      }
+    },
+    "after": {
+      "fileHashes": {
+        "pikolumi.sqlite": "752c679ac2011acd81bb6618128d298fcd381aaaa606adbdfd3f2efb5095cb1e"
+      },
+      "savedRecordsSha256": "60c83c3022f4ec540b8a2568e2a40529414fdaddc1d588002b37e06300968451",
+      "recordCounts": {
+        "ads": 1,
+        "artwork:explorer-1": 5,
+        "gallery:explorer-1": 5,
+        "results:explorer-1": 37,
+        "settings": 1
+      }
+    },
+    "savedRecordsAndDatabaseFilesUnchanged": true,
+    "uninstalled": false,
+    "dataCleared": false,
+    "normalEntryPoint": "lib/main.dart",
+    "launchedForPlayback": false,
+    "physicalQA": "deferred by user",
+    "soundPreferenceChanged": false,
+    "phoneWakeSettingsChanged": false,
+    "systemVolumeChanged": false,
+    "storeActionsPerformed": false
+  },
+  "visualRegression": {
+    "report": "docs/qa/piko-playful/android-card-visual/integration_response_data.json",
+    "sha256": "2b3d61566615af9a144734b40e8400f510e80352f6a939e42554c560ec5f1ecb",
+    "backgroundDifferences": {
+      "en": 1,
+      "ar": 2
+    },
+    "captures": {
+      "docs/qa/piko-playful/android-card-visual/ar-card-turn-final.png": "8d9e2b9a70575358ffd54803a03c810478d8484b2354db75b8f947a11a705993",
+      "docs/qa/piko-playful/android-card-visual/en-card-turn-final.png": "ed65a14e60376e6d1b03ebde89dfcc091ad60606f25d7c11cc915f5a2a5ff679"
+    }
+  },
+  "assetValidation": {
+    "valid": true,
+    "frames": 780,
+    "decodedAllClipsMiB": 59.5,
+    "normalResidentMiB": 23.5,
+    "transparentUnclippedFrames": true,
+    "sourceHashesMatch": true
+  },
+  "modelValidationSha256": "d1ccb4070c7f0a40249a3ecad2b0003c8892458f77d6f6632c088f2c638d61ba",
+  "reviewArtifacts": {
+    "docs/qa/piko-playful/reactions-preview.gif": "cccff4d6b8f7563ae7b037cc072f33fa67ee00313f7c6b969789a42c0d02dc4b",
+    "docs/qa/piko-playful/README.md": "9b7777450a2047512d3796512ad8d22d339ba08ab94ddf4ed01be60dd0791b2e",
+    "docs/qa/piko-playful/reactions.png": "54715329a5d41323bc0173583307996aea4721eb5eb055c49de413f32bc13d30"
+  },
+  "capturePolicy": "Native viewport is unchanged; QA PNGs above 1200 px wide are resized for bounded report transfer. Original/capture dimensions are recorded."
+}

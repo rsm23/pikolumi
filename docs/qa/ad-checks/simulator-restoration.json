@@ -1,0 +1,20 @@
+{
+  "checkedAtUTC": "2026-10-12T00:32:30.951096+00:00",
+  "normalArchive": "output/qa/Pikolumi-1.0.0-Simulator.zip",
+  "checks": [
+    {
+      "device": "iPhone 18 Pro",
+      "normalRunnerAndKernelMatchArchive": true,
+      "originalInputFlagRestored": 1,
+      "appDataCleared": false
+    },
+    {
+      "device": "iPad Pro 13 M5",
+      "normalRunnerAndKernelMatchArchive": true,
+      "originalInputFlagRestored": 1,
+      "appDataCleared": false
+    }
+  ],
+  "generatedSimulatorBuildRestored": true,
+  "audioPlayback": false
+}

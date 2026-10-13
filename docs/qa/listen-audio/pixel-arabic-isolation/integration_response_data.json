@@ -1,0 +1,46 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "en-ui-ar-learn-letters-0030"
+    },
+    {
+      "screenshotName": "en-ui-ar-learn-letters-0057"
+    },
+    {
+      "screenshotName": "en-ui-ar-learn-letters-0079"
+    },
+    {
+      "screenshotName": "en-ui-ar-learn-letters-0080"
+    },
+    {
+      "screenshotName": "en-ui-ar-learn-letters-0119"
+    },
+    {
+      "screenshotName": "en-ui-ar-learn-tracing-0056"
+    },
+    {
+      "screenshotName": "en-ui-ar-learn-tracing-0058"
+    },
+    {
+      "screenshotName": "en-ui-ar-learn-tracing-0066"
+    },
+    {
+      "screenshotName": "en-ui-ar-learn-tracing-0080"
+    },
+    {
+      "screenshotName": "ar-ui-es-learn-vocabulary"
+    }
+  ],
+  "arabicChoiceActivities": 5,
+  "tracesCompleted": 4,
+  "nativeResumeRecovery": true,
+  "soundEnabled": false,
+  "store": "isolated temporary SQLite; user preferences and artwork untouched",
+  "catalogVersion": 3,
+  "mixedLanguagePairs": [
+    "en interface/ar learning",
+    "ar interface/es learning"
+  ],
+  "educatorApproval": false,
+  "pronunciationApproval": false
+}

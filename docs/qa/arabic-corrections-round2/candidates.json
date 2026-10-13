@@ -1,0 +1,208 @@
+{
+  "source": {
+    "model": [
+      "silma-ai/silma-tts",
+      "226dd7a65cadf51f9a6dbe3953fc89003b3844d5"
+    ],
+    "modelSha256": "f43256d0b78b8803c638aed0875da5a4b372b4a784690a0156e5baff14f7336c",
+    "vocoder": [
+      "charactr/vocos-mel-24khz",
+      "0feb3fdd929bcd6649e0e7c5a688cf7dd012ef21"
+    ],
+    "vocoderSha256": "97ec976ad1fd67a33ab2682d29c0ac7df85234fae875aefcc5fb215681a91b2a",
+    "reference": [
+      {
+        "file": "word_elephant.mp3",
+        "sha256": "cadc1f968d633f3539d9020c08d695b5883dd73d0f1263b3b50b8231f4819e83",
+        "text": "فِيل",
+        "origin": "existing AI-synthesized project audio; not a human reference"
+      },
+      {
+        "file": "trace_word_8.mp3",
+        "sha256": "bdabea03c43f8f7a85b7fdcb547730ff43e3e87ebc28054c10ad0deb20403284",
+        "text": "كَتَبَ",
+        "origin": "existing AI-synthesized project audio; not a human reference"
+      },
+      {
+        "file": "counting.mp3",
+        "sha256": "03795c7f433280105a8659bdbb43cd2c787b7cdc1d935bf3651057590060c97d",
+        "text": "عُدَّ الأَشْيَاءَ، ثُمَّ اخْتَرِ العَدَد.",
+        "origin": "existing AI-synthesized project audio; not a human reference"
+      }
+    ],
+    "referenceText": "فِيل كَتَبَ عُدَّ الأَشْيَاءَ، ثُمَّ اخْتَرِ العَدَد.",
+    "steps": 48,
+    "cfgStrength": 2,
+    "device": "mps",
+    "generatorSha256": "e50dee33ffe6a2fd7e5d72a7aea20652cc78c977c849c19731c75e83521fdf55",
+    "normalization": "explicit Arabic text; no phonemizer; preserves consonants and vowel marks"
+  },
+  "pronunciationApproval": false,
+  "recordings": [
+    {
+      "file": "syllable_10.mp3",
+      "text": "جِ",
+      "originalSha256": "0e0f9edc4cd86c3e2e49eb995162c263b925b8f95bb0b546d7f61b2867a8b96a",
+      "bundledOriginalSha256": "a739663b604385f98307704580eaf7149bb9bbba83b055fa1c710409f7837c99",
+      "note": "Ji",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "جِ",
+      "targetSeconds": 0.65,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "durationSeconds": 0.47,
+      "seed": 1625279475,
+      "sha256": "84ab2dbcc640f6f03385d7c5d08cbf11ce5e622fe06dcd753929308786ab55c5",
+      "status": "replacement candidate; native pronunciation approval pending"
+    },
+    {
+      "file": "syllable_13.mp3",
+      "text": "حِ",
+      "originalSha256": "ae78dd43083bb297dd3e2401bc436a7981e1041d5409763468a2f0aa5f00aee1",
+      "bundledOriginalSha256": "311abd3e011ba1099430efeea1f5c1532522492dcc9ece69e1a9d6269569ba5a",
+      "note": "Hi",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "حِ",
+      "targetSeconds": 0.65,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "durationSeconds": 0.44,
+      "seed": 2694753392,
+      "sha256": "f01c5a0396123f5762cdc73f1e12de5139dae1ca914cd717415404256fe08dd9",
+      "status": "replacement candidate; native pronunciation approval pending"
+    },
+    {
+      "file": "syllable_16.mp3",
+      "text": "خِ",
+      "originalSha256": "6de06bab4a7259f791d13148cb319ae6a246ee70d1fef2dc9c42f9d9333b086f",
+      "bundledOriginalSha256": "10d24e4133f47be165dd1271729239f9c5ffde3fc7d2e979ddbcb8a72e80605b",
+      "note": "Khi",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "خِ",
+      "targetSeconds": 0.65,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "durationSeconds": 0.49,
+      "seed": 2437645974,
+      "sha256": "cc9111b42cce5ac71008dc4137c905fb3b918fc246174efe83be6bbfeb2f7b75",
+      "status": "replacement candidate; native pronunciation approval pending"
+    },
+    {
+      "file": "syllable_24.mp3",
+      "text": "رَ",
+      "originalSha256": "ddca2ac71f56a45b6c3ba5e16aede8ab27df24e5157adad92aa1edc3f79748ff",
+      "bundledOriginalSha256": "0fea3ea8e435a3b390d6aaeb53a5c4f035194dd9dcf5910f62011a7fa27100a7",
+      "note": "Ra",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "رَ",
+      "targetSeconds": 0.65,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "durationSeconds": 0.43,
+      "seed": 1747738985,
+      "sha256": "ca627096ff9a879ed62db87c9d64d6d1909fab21b567151006b770aa2f61be30",
+      "status": "replacement candidate; native pronunciation approval pending"
+    },
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "originalSha256": "778d51c48ba4f0778bfe8cb37a4c61823c326df3a5b92465ba1c94d2a9d296b2",
+      "bundledOriginalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "note": "Si",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "صِ",
+      "targetSeconds": 0.65,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "durationSeconds": 0.5,
+      "seed": 2212791442,
+      "sha256": "45f22c01ebe6ed08421664cd919c36eb8631e4c1b70fa5827359ae2283865542",
+      "status": "replacement candidate; native pronunciation approval pending"
+    },
+    {
+      "file": "syllable_43.mp3",
+      "text": "طِ",
+      "originalSha256": "30a728c46ad3ba9337e982dc5fc5ca6e99cc196ece3534b35215c3c31ed74c37",
+      "bundledOriginalSha256": "d8873ee700244c92384c390928e50689a2c04f1f4ce0f85de04eabec2500b3de",
+      "note": "Ti",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "طِ",
+      "targetSeconds": 0.65,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "durationSeconds": 0.36,
+      "seed": 252612553,
+      "sha256": "269adcbce4b3e09f0975052645b5b0568dbac9943e9e51fda74fa4d5f55137dc",
+      "status": "replacement candidate; native pronunciation approval pending"
+    },
+    {
+      "file": "syllable_46.mp3",
+      "text": "ظِ",
+      "originalSha256": "762043b7144c6d7d511c39fc26dfe83f332c732be6249c56de6f6ec886dc8fa5",
+      "bundledOriginalSha256": "6cd05116245a4118faa92951b7108b7c60d31df445322724b36c343050ef3d17",
+      "note": "Thi",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "ظِ",
+      "targetSeconds": 0.65,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "durationSeconds": 0.54,
+      "seed": 1236166807,
+      "sha256": "1cec05542365597f45df5f7b1cd0d1d581f2ef40dbf083bf21b95f9bc3f62038",
+      "status": "replacement candidate; native pronunciation approval pending"
+    },
+    {
+      "file": "syllable_49.mp3",
+      "text": "عِ",
+      "originalSha256": "42c22d7c06777972aeeac49a548ef587aeaee89ac5432311c0cb6aaf4994a06a",
+      "bundledOriginalSha256": "be57a2a4aba9b7fb3f82d31d13705669363b079d76ad509e8ae08f956f957db5",
+      "note": "Needs pronunciation correction.",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "عِ",
+      "targetSeconds": 0.65,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "durationSeconds": 0.51,
+      "seed": 8775512,
+      "sha256": "acca46f381421afde2a59406b692f1f95fedaf225d8e314c011a3c4cb7f06988",
+      "status": "replacement candidate; native pronunciation approval pending"
+    },
+    {
+      "file": "syllable_52.mp3",
+      "text": "غِ",
+      "originalSha256": "ad8daaf6927f255a7a5202b523a55a4960e8f0c94eaf900c5e7f2e8e9028f528",
+      "bundledOriginalSha256": "07735a4b9ed1e1d823e6ef85602aaedea31bd8efea0f6d5a9859ad1d9e612acd",
+      "note": "Needs pronunciation correction.",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "غِ",
+      "targetSeconds": 0.65,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "durationSeconds": 0.41,
+      "seed": 3470023668,
+      "sha256": "1eea630264eb3d07f4bec3d048c62bb226c320b170c165c479e229e73ad930d6",
+      "status": "replacement candidate; native pronunciation approval pending"
+    },
+    {
+      "file": "syllable_72.mp3",
+      "text": "هَ",
+      "originalSha256": "0bf36c927df8071952a07a2da3b2c147dfdacc8a7ede91cf16b6fc035c0f76fb",
+      "bundledOriginalSha256": "a91cb87907f510508105e62fd1ae148ec68df670fb80382fcb03663deb314e32",
+      "note": "Needs pronunciation correction.",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "هَ",
+      "targetSeconds": 0.65,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "durationSeconds": 0.32,
+      "seed": 898161914,
+      "sha256": "149d4daf23d86cbe31a883fcb2ed0c0c73e8a343e57014ed054127002cc68d47",
+      "status": "replacement candidate; native pronunciation approval pending"
+    },
+    {
+      "file": "syllable_73.mp3",
+      "text": "هِ",
+      "originalSha256": "911fed8482b12fcdb3dc21f2122e1fa5c2564b2aec7a9408da4ed05d5afd7566",
+      "bundledOriginalSha256": "c6e860baff534b41c12a0fd58e13a647b8a2c8275ee41ce5d1f7ca73607db57d",
+      "note": "Needs pronunciation correction.",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "هِ",
+      "targetSeconds": 0.65,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "durationSeconds": 0.35,
+      "seed": 2886050192,
+      "sha256": "e1f1fffcd70b8028f89e51cab03f52d03358d264f4e4d7268e963a37433564eb",
+      "status": "replacement candidate; native pronunciation approval pending"
+    }
+  ]
+}

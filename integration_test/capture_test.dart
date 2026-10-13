@@ -10,18 +10,31 @@ import 'package:pikolumi/core/controller.dart';
 import 'package:pikolumi/ui/library.dart';
 import 'package:pikolumi/ui/activity_screen.dart';
 import 'package:pikolumi/activities/canvas_activity.dart';
+import 'package:pikolumi/core/models.dart';
+import 'package:pikolumi/services/ads.dart';
+
+import '../test/app_test.dart' show MemoryStore, SilentAudio;
 
 void main() {
   final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
   testWidgets(
     'localized native screenshots and interactive performance sample',
     (tester) async {
-      await production.main();
-      await tester.pumpAndSettle();
-      final state = tester.state<ConsumerState>(find.byType(LibraryHome));
-      final app = state.ref.read(appProvider);
+      final app = AppController(
+        catalog: await Catalog.load(),
+        store: MemoryStore(),
+        audio: SilentAudio(),
+      );
+      await app.initialize();
       await app.setSound(false);
-      final ads = tester.widget<LibraryHome>(find.byType(LibraryHome)).ads;
+      final ads = AdsService(app.store, app.audio);
+      runApp(
+        ProviderScope(
+          overrides: [appProvider.overrideWith((ref) => app)],
+          child: production.PikolumiApp(ads: ads),
+        ),
+      );
+      await tester.pumpAndSettle();
       await ads.synchronizeSound();
       // Store screenshot fixtures depict the UI when no banner is available.
       // This suppression exists only in the test harness, never in the shipped app.
@@ -57,22 +70,34 @@ void main() {
         final drawing = tester.state<CanvasActivityState>(
           find.byType(CanvasActivity),
         );
-        final colors = [
-          0xFF30B7AF,
-          0xFFFFCE54,
-          0xFFFF7790,
-          0xFF9B88E3,
-          0xFF83BE80,
-        ];
+        if (locale == 'en') await capture(locale, 'coloring-outline');
         // Populate artwork only in this screenshot fixture.
         // ignore: invalid_use_of_protected_member
         drawing.setState(() {
-          for (final (i, shape) in drawing.scene!.shapes.indexed) {
-            drawing.drawing['fills'][shape.id] = colors[i % colors.length];
+          for (final shape in drawing.scene!.shapes) {
+            if (shape.fillable) {
+              final original = shape.color.toARGB32();
+              int distance(int candidate) {
+                final red =
+                    ((original >> 16) & 255) - ((candidate >> 16) & 255);
+                final green =
+                    ((original >> 8) & 255) - ((candidate >> 8) & 255);
+                final blue = (original & 255) - (candidate & 255);
+                return red * red + green * green + blue * blue;
+              }
+
+              drawing.drawing['fills'][shape.id] = CanvasActivityState.colors
+                  .reduce(
+                    (left, right) =>
+                        distance(left) <= distance(right) ? left : right,
+                  );
+            }
           }
         });
         await capture(locale, 'coloring');
-        if (locale == 'en') {
+        if (locale == 'en' &&
+            !const bool.fromEnvironment('CAPTURE_SKIP_PERFORMANCE')) {
+          await tester.ensureVisible(find.text(app.t('brush')));
           await tester.tap(find.text(app.t('brush')));
           final rect = tester.getRect(find.byKey(const ValueKey('art-canvas')));
           await binding.watchPerformance(() async {
@@ -101,7 +126,8 @@ void main() {
       }
       await app.setLanguage('en');
       await tester.pumpAndSettle();
-      if (!const bool.fromEnvironment('CAPTURE_LIBRARY_ONLY')) {
+      if (!const bool.fromEnvironment('CAPTURE_LIBRARY_ONLY') &&
+          !const bool.fromEnvironment('CAPTURE_SKIP_PERFORMANCE')) {
         await binding.watchPerformance(() async {
           for (var i = 0; i < 8; i++) {
             await tester.drag(

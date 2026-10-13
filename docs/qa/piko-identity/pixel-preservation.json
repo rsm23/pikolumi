@@ -1,0 +1,13 @@
+{
+  "fixtureStarted": false,
+  "physicalCheck": "waiting for unlock",
+  "normalEntryPointRestored": true,
+  "wakeSettingsRestored": true,
+  "originalStayAwake": "0",
+  "originalScreenTimeout": "60000",
+  "savedRecordsComparison": null,
+  "systemVolumeChanged": false,
+  "userSoundSettingChanged": false,
+  "uninstalled": false,
+  "dataCleared": false
+}

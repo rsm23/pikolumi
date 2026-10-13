@@ -1,0 +1,850 @@
+{
+  "catalogVersion": 3,
+  "puzzles": 120,
+  "tiles": 1620,
+  "errors": [],
+  "passed": true,
+  "method": "Pixel hashes identify duplicate tiles; per-tile RGB variation detects flat-color tiles. This is not human art approval.",
+  "puzzleResults": [
+    {
+      "activity": "jigsaw-0001",
+      "scene": "puzzle_000",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0002",
+      "scene": "puzzle_001",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0003",
+      "scene": "puzzle_002",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0004",
+      "scene": "puzzle_003",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0005",
+      "scene": "puzzle_004",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0006",
+      "scene": "puzzle_005",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0007",
+      "scene": "puzzle_006",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0008",
+      "scene": "puzzle_007",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0009",
+      "scene": "puzzle_008",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0010",
+      "scene": "puzzle_009",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0011",
+      "scene": "puzzle_010",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0012",
+      "scene": "puzzle_011",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0013",
+      "scene": "puzzle_012",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0014",
+      "scene": "puzzle_013",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0015",
+      "scene": "puzzle_014",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0016",
+      "scene": "puzzle_015",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0017",
+      "scene": "puzzle_016",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0018",
+      "scene": "puzzle_017",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0019",
+      "scene": "puzzle_018",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0020",
+      "scene": "puzzle_019",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0021",
+      "scene": "puzzle_020",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0022",
+      "scene": "puzzle_021",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0023",
+      "scene": "puzzle_022",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0024",
+      "scene": "puzzle_023",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0025",
+      "scene": "puzzle_024",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0026",
+      "scene": "puzzle_025",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0027",
+      "scene": "puzzle_026",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0028",
+      "scene": "puzzle_027",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0029",
+      "scene": "puzzle_028",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0030",
+      "scene": "puzzle_029",
+      "grid": 2,
+      "distinctTiles": 4,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0031",
+      "scene": "puzzle_030",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0032",
+      "scene": "puzzle_031",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0033",
+      "scene": "puzzle_032",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0034",
+      "scene": "puzzle_033",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0035",
+      "scene": "puzzle_034",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0036",
+      "scene": "puzzle_035",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0037",
+      "scene": "puzzle_036",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0038",
+      "scene": "puzzle_037",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0039",
+      "scene": "puzzle_038",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0040",
+      "scene": "puzzle_039",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0041",
+      "scene": "puzzle_040",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0042",
+      "scene": "puzzle_041",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0043",
+      "scene": "puzzle_042",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0044",
+      "scene": "puzzle_043",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0045",
+      "scene": "puzzle_044",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0046",
+      "scene": "puzzle_045",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0047",
+      "scene": "puzzle_046",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0048",
+      "scene": "puzzle_047",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0049",
+      "scene": "puzzle_048",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0050",
+      "scene": "puzzle_049",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0051",
+      "scene": "puzzle_050",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0052",
+      "scene": "puzzle_051",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0053",
+      "scene": "puzzle_052",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0054",
+      "scene": "puzzle_053",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0055",
+      "scene": "puzzle_054",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0056",
+      "scene": "puzzle_055",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0057",
+      "scene": "puzzle_056",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0058",
+      "scene": "puzzle_057",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0059",
+      "scene": "puzzle_058",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0060",
+      "scene": "puzzle_059",
+      "grid": 3,
+      "distinctTiles": 9,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0061",
+      "scene": "puzzle_060",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0062",
+      "scene": "puzzle_061",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0063",
+      "scene": "puzzle_062",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0064",
+      "scene": "puzzle_063",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0065",
+      "scene": "puzzle_064",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0066",
+      "scene": "puzzle_065",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0067",
+      "scene": "puzzle_066",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0068",
+      "scene": "puzzle_067",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0069",
+      "scene": "puzzle_068",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0070",
+      "scene": "puzzle_069",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0071",
+      "scene": "puzzle_070",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0072",
+      "scene": "puzzle_071",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0073",
+      "scene": "puzzle_072",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0074",
+      "scene": "puzzle_073",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0075",
+      "scene": "puzzle_074",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0076",
+      "scene": "puzzle_075",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0077",
+      "scene": "puzzle_076",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0078",
+      "scene": "puzzle_077",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0079",
+      "scene": "puzzle_078",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0080",
+      "scene": "puzzle_079",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0081",
+      "scene": "puzzle_080",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0082",
+      "scene": "puzzle_081",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0083",
+      "scene": "puzzle_082",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0084",
+      "scene": "puzzle_083",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0085",
+      "scene": "puzzle_084",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0086",
+      "scene": "puzzle_085",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0087",
+      "scene": "puzzle_086",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0088",
+      "scene": "puzzle_087",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0089",
+      "scene": "puzzle_088",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0090",
+      "scene": "puzzle_089",
+      "grid": 4,
+      "distinctTiles": 16,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0091",
+      "scene": "puzzle_090",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0092",
+      "scene": "puzzle_091",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0093",
+      "scene": "puzzle_092",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0094",
+      "scene": "puzzle_093",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0095",
+      "scene": "puzzle_094",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0096",
+      "scene": "puzzle_095",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0097",
+      "scene": "puzzle_096",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0098",
+      "scene": "puzzle_097",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0099",
+      "scene": "puzzle_098",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0100",
+      "scene": "puzzle_099",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0101",
+      "scene": "puzzle_100",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0102",
+      "scene": "puzzle_101",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0103",
+      "scene": "puzzle_102",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0104",
+      "scene": "puzzle_103",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0105",
+      "scene": "puzzle_104",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0106",
+      "scene": "puzzle_105",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0107",
+      "scene": "puzzle_106",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0108",
+      "scene": "puzzle_107",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0109",
+      "scene": "puzzle_108",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0110",
+      "scene": "puzzle_109",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0111",
+      "scene": "puzzle_110",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0112",
+      "scene": "puzzle_111",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0113",
+      "scene": "puzzle_112",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0114",
+      "scene": "puzzle_113",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0115",
+      "scene": "puzzle_114",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0116",
+      "scene": "puzzle_115",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0117",
+      "scene": "puzzle_116",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0118",
+      "scene": "puzzle_117",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0119",
+      "scene": "puzzle_118",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    },
+    {
+      "activity": "jigsaw-0120",
+      "scene": "puzzle_119",
+      "grid": 5,
+      "distinctTiles": 25,
+      "lowDetailTiles": []
+    }
+  ]
+}

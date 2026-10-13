@@ -1,0 +1,392 @@
+{
+  "locale": "ar",
+  "round": "2026-10-12",
+  "exportedAt": "2026-10-12T21:46:44.898Z",
+  "recordings": [
+    {
+      "file": "letter_7.mp3",
+      "text": "دَال",
+      "sha256": "4b3be4b2237f9e8846b6b703b86c410b6aca0129181f67951c0656db1336e316",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "letter_8.mp3",
+      "text": "ذَال",
+      "sha256": "ab17b3b54d8ec3aecc164b524bfcc5e5956a0fecdaa1809e7e87afe61a5e1370",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "letter_10.mp3",
+      "text": "زَاي",
+      "sha256": "a59475ebc8eadd29fc47993627e30b864aa6c51543adf1e47d6d6d9fa93a6a4b",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "long_alif.mp3",
+      "text": "أَلِف مَدّ. آ.",
+      "sha256": "2f9bd74e225eacabfbea2344859616845ece61d8fe1685025602b3731dbe85a8",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_6.mp3",
+      "text": "ثَ",
+      "sha256": "8fb53d5eaa600b2317ff50e7f3d2b40dae54d461ed3391f6d9a7f3f0699aeb1f",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_10.mp3",
+      "text": "جِ",
+      "sha256": "0e0f9edc4cd86c3e2e49eb995162c263b925b8f95bb0b546d7f61b2867a8b96a",
+      "decision": "wrong",
+      "notes": ""
+    },
+    {
+      "file": "syllable_12.mp3",
+      "text": "حَ",
+      "sha256": "55f6d338b6ea318ba445cff30c365272222133ab80ee79bce4411737b6d1a99b",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_13.mp3",
+      "text": "حِ",
+      "sha256": "ae78dd43083bb297dd3e2401bc436a7981e1041d5409763468a2f0aa5f00aee1",
+      "decision": "wrong",
+      "notes": "Hi"
+    },
+    {
+      "file": "syllable_14.mp3",
+      "text": "حُ",
+      "sha256": "4a73fb84ec05bf8fd74e47d5453469ab6d18e253f4487011c836385d78109441",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_16.mp3",
+      "text": "خِ",
+      "sha256": "6de06bab4a7259f791d13148cb319ae6a246ee70d1fef2dc9c42f9d9333b086f",
+      "decision": "wrong",
+      "notes": "Khi"
+    },
+    {
+      "file": "syllable_21.mp3",
+      "text": "ذَ",
+      "sha256": "8d24f040a0d4cfd373337d039b6487ca90685a9c39f675be518a506aef62d148",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_24.mp3",
+      "text": "رَ",
+      "sha256": "ddca2ac71f56a45b6c3ba5e16aede8ab27df24e5157adad92aa1edc3f79748ff",
+      "decision": "wrong",
+      "notes": "Ra"
+    },
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "sha256": "778d51c48ba4f0778bfe8cb37a4c61823c326df3a5b92465ba1c94d2a9d296b2",
+      "decision": "wrong",
+      "notes": "Si"
+    },
+    {
+      "file": "syllable_38.mp3",
+      "text": "صُ",
+      "sha256": "ce4f60b49216958db2dcf24e1b39049d2cc3f6a99e96deac00045b29812bcc06",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_43.mp3",
+      "text": "طِ",
+      "sha256": "30a728c46ad3ba9337e982dc5fc5ca6e99cc196ece3534b35215c3c31ed74c37",
+      "decision": "wrong",
+      "notes": "Ti"
+    },
+    {
+      "file": "syllable_45.mp3",
+      "text": "ظَ",
+      "sha256": "34f8c0b97b298f478fa59047e1f002b6df03aa4fd8b3c4124895819ec69bf35d",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_46.mp3",
+      "text": "ظِ",
+      "sha256": "762043b7144c6d7d511c39fc26dfe83f332c732be6249c56de6f6ec886dc8fa5",
+      "decision": "wrong",
+      "notes": ""
+    },
+    {
+      "file": "syllable_47.mp3",
+      "text": "ظُ",
+      "sha256": "50dcd3fab4820c40d85603d9b33e3dc8f50a7dfcb7f8afcbf3d45096ea6604d3",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_49.mp3",
+      "text": "عِ",
+      "sha256": "42c22d7c06777972aeeac49a548ef587aeaee89ac5432311c0cb6aaf4994a06a",
+      "decision": "wrong",
+      "notes": ""
+    },
+    {
+      "file": "syllable_50.mp3",
+      "text": "عُ",
+      "sha256": "8dce2be15820ad5cee9d8aecab0698a84fb7ffe82df56c6f22e7731bc9d0a7ae",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_52.mp3",
+      "text": "غِ",
+      "sha256": "ad8daaf6927f255a7a5202b523a55a4960e8f0c94eaf900c5e7f2e8e9028f528",
+      "decision": "wrong",
+      "notes": ""
+    },
+    {
+      "file": "syllable_53.mp3",
+      "text": "غُ",
+      "sha256": "2bd3c8802f886d4bf9d2aa9359c18f6299145a199d93cddad62720c4a1daf4b7",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_55.mp3",
+      "text": "فِ",
+      "sha256": "6780e8f2752c5c177d1617a4e40f44ea368100be7e35a3758932e6d668ebc355",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_56.mp3",
+      "text": "فُ",
+      "sha256": "54d3f52321e8c49ce87b02c5ba0071a3be532a188ffec3b341395ca0b64dbf0f",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_61.mp3",
+      "text": "كِ",
+      "sha256": "ff23a91ee4a046909227826969789e02d872b5acdf0dd13ac85e302ce86ef24b",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_62.mp3",
+      "text": "كُ",
+      "sha256": "bad5c254392fe26abc7b85a9bb5113e9fbc64aff032e40ed6ebe7a05af8a57ba",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_68.mp3",
+      "text": "مُ",
+      "sha256": "1ef932813b0b0f6a10a0cc47410e75bbb5f7071b83c3c76853897b3359e0c148",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_69.mp3",
+      "text": "نَ",
+      "sha256": "254c16cd529592e7e20d72ecb5042d44497661505d62e9b2bffd982a99fa196e",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_71.mp3",
+      "text": "نُ",
+      "sha256": "3944c43691f55ecae0d2818f0563dc6ab6cb91d5bff76c5181fe10770aece4dd",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_72.mp3",
+      "text": "هَ",
+      "sha256": "0bf36c927df8071952a07a2da3b2c147dfdacc8a7ede91cf16b6fc035c0f76fb",
+      "decision": "wrong",
+      "notes": ""
+    },
+    {
+      "file": "syllable_73.mp3",
+      "text": "هِ",
+      "sha256": "911fed8482b12fcdb3dc21f2122e1fa5c2564b2aec7a9408da4ed05d5afd7566",
+      "decision": "wrong",
+      "notes": ""
+    },
+    {
+      "file": "syllable_77.mp3",
+      "text": "وُ",
+      "sha256": "0ae6cd86c5f7ff74fef58bad878e4fae5ab54e09627470ce1609867a1a9b4745",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "word_bear.mp3",
+      "text": "دُبّ",
+      "sha256": "58f81846aee6a00f48415a147b40dfcac551719c5263c67e75a3f013fefbdb96",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "word_bee.mp3",
+      "text": "نَحْلَة",
+      "sha256": "83c855b810a0ca47c1f3efd7bf6f58508c513c5666d5022cc3aaefa1cf2dd7c8",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "word_cake.mp3",
+      "text": "كَعْكَة",
+      "sha256": "53d4a9db677cca846472cd5d89b48be96f3fb5554c7d53d2c1206b410951088d",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "word_cat.mp3",
+      "text": "قِطَّة",
+      "sha256": "a732bb7b8bd89481276fc5e40595ee16cdd0cb2470f213e585748646ff13b595",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "word_dog.mp3",
+      "text": "كَلْب",
+      "sha256": "e2ac1f17574b0d962c8f55f095689e44921c7253c3896448d1a93d04648b7c21",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "word_drum.mp3",
+      "text": "طَبْل",
+      "sha256": "a3a84f510f86e68fb8f035ff6e8845725aa97a099953a4383bed4ce715348ef4",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "word_elephant.mp3",
+      "text": "فِيل",
+      "sha256": "cadc1f968d633f3539d9020c08d695b5883dd73d0f1263b3b50b8231f4819e83",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "word_frog.mp3",
+      "text": "ضِفْدَع",
+      "sha256": "b5f79022ee30da7face7cf65c50ab356e42b0fdf837832102e4edc76221c936e",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "word_moon.mp3",
+      "text": "قَمَر",
+      "sha256": "80355c5685ebad99571f9b43f5eaed39cb690933f5ffcd2c25c788364094561f",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "word_mountain.mp3",
+      "text": "جَبَل",
+      "sha256": "b97bf0b11e56f3bbd6bc8b6dd593c057f860b7a3445eaa45cbded2be5f8ce709",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "word_mushroom.mp3",
+      "text": "فِطْر",
+      "sha256": "b4df175261ee625adc2f867cab35f8f2db92ba015bef1b733a605b73f28f9971",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "word_pear.mp3",
+      "text": "كُمَّثْرَى",
+      "sha256": "82bee1d25259c9507ba518025136739c5a7b2f52ce0aa525e822177180b5493b",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "word_rocket.mp3",
+      "text": "صَارُوخ",
+      "sha256": "9485e9a1d1560cf7426e515d92f0e21aee233289806a73abb2440464affd3d5b",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "word_whale.mp3",
+      "text": "حُوت",
+      "sha256": "16a0207350c50a664c5482b9572ae0f4947f3ce1c089d20c959a789eacff282f",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "trace_word_5.mp3",
+      "text": "ثَوْب",
+      "sha256": "960d93c2daf5786b45d8639618fb72116be3f42a30b1b1bb68ebd84e098bd5f4",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "trace_word_8.mp3",
+      "text": "كَتَبَ",
+      "sha256": "bdabea03c43f8f7a85b7fdcb547730ff43e3e87ebc28054c10ad0deb20403284",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "trace_word_10.mp3",
+      "text": "كَلْب",
+      "sha256": "b7865f8b67b404157e2b95151176eb41a01ca318af36f4444efffc7ee4d8ac47",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "trace_word_13.mp3",
+      "text": "مَال",
+      "sha256": "b6e2f38d2461489b7eeb082a995e274a56f0689f581f6411d688f643bb06501c",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "trace_word_23.mp3",
+      "text": "سَمَك",
+      "sha256": "473403caf3b1c24096f60e804ad0b115c2f6929b7b02501d7e8faee8446469f9",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "mazes.mp3",
+      "text": "سَاعِدْ بِيكُو فِي الوُصُولِ إِلَى النَّجْمَةِ دُونَ عُبُورِ الجُدْرَان.",
+      "sha256": "71e939e7a8d330ad852c9ceccf60cef65394f50e76dd7d874fa47e828f108ef9",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "memory.mp3",
+      "text": "اِقْلِبْ بِطَاقَتَيْنِ، وَاعْثُرْ عَلَى جَمِيعِ الأَزْوَاجِ المُتَطَابِقَة.",
+      "sha256": "8d61ce4d0b6f6d67bc753894c626dfa72ebc2d0f2798ed0d6a1a4c0b6c2a9a4b",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "shapes.mp3",
+      "text": "اُنْظُرْ جَيِّدًا، وَاخْتَرِ الشَّكْلَ أَوِ اللَّوْنَ المُنَاسِب.",
+      "sha256": "14603f7d8cb316d16bd840928da4e97d811623d835a272a3e51e5d9303cad881",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "words.mp3",
+      "text": "اُنْظُرْ إِلَى الصُّورَةِ وَتَعَلَّمِ اسْمَهَا.",
+      "sha256": "6a1fa836278bb0202d4205e89ade71df336115b6df9deb49698229c97f56f31d",
+      "decision": "correct",
+      "notes": ""
+    }
+  ]
+}

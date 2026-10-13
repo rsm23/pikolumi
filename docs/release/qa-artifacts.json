@@ -1,36 +1,36 @@
 {
-  "builtAtUTC": "2026-10-11T21:33:18.034259+00:00",
+  "builtAtUTC": "2026-10-12T04:22:41.404637+00:00",
   "bundleIdentifier": "com.seifelmoulouk.pikolumi",
   "version": "1.0.0",
   "build": 1,
   "testAdsOnly": true,
   "submitted": false,
-  "sourceDigest": "c3e190e3b68d3c648f1bd83713bab65e614c29ee1f3c625a8664e324d9786fe9",
+  "sourceDigest": "332c7181c78b1e08f4c076a9abc0766628887d1ad8d2655c8d16cd90c9894949",
   "artifacts": [
     {
       "path": "output/qa/Pikolumi-1.0.0-QA.apk",
-      "bytes": 71661742,
-      "sha256": "d0003232512ae6dd063c405dbd075748344d8ed28834639c68004a6a28e0d61b"
+      "bytes": 75203278,
+      "sha256": "da8888c75e94ba2cc40a671419ebb94311b916e3f7de978c4706d517c43949b8"
     },
     {
       "path": "output/qa/Pikolumi-1.0.0-QA.aab",
-      "bytes": 72203201,
-      "sha256": "19fb1c3194fcb923d28459da0f7026e4196ef3a7d5945006304c8a940f76779b"
+      "bytes": 75689803,
+      "sha256": "b3bfaa2ce6ab79847cbd6f0b4fa93e6e4dae56090973935edebfbe811070e7f0"
     },
     {
       "path": "output/qa/Pikolumi-1.0.0-QA.ipa",
-      "bytes": 38278013,
-      "sha256": "cef801729a84c5538c43719f09f57a19f9dac8cb78344e17154267a8dccda415"
+      "bytes": 41301311,
+      "sha256": "030d17fc7045609dacd0ec5cf868fee57c964feed0c1beed85dc7a436fa3e000"
     },
     {
       "path": "output/qa/Pikolumi-1.0.0-Simulator.zip",
-      "bytes": 77585108,
-      "sha256": "90910a436fd0486e6d19cf90f350f1519168ed1f9e433edbd54db8f7acc8306b"
+      "bytes": 80485851,
+      "sha256": "b6ae5423624822042ff7ac73f94d228df15f49b0dda12ab355ed0c8559190d6a"
     },
     {
       "path": "output/qa/Pikolumi-1.0.0-Pixel-QA.apk",
-      "bytes": 183802576,
-      "sha256": "3f2917da2fad7f7cf01d79f868c964f764951735576ac0ad1b1d48c140b443b3"
+      "bytes": 114028853,
+      "sha256": "0af00e0d33157458761aedc8f32ac2ba618a2d9924bf14f7dc442920575f422c"
     }
   ]
 }

@@ -1,0 +1,11 @@
+Pikolumi does not require an account or login. All 2,400 activities in 16 sections are bundled and accessible immediately. No purchases or subscriptions are offered.
+
+Parent area: tap the lock icon. On a fresh install, answer the adult multiplication question, then choose and confirm your own six-digit PIN. There is no fixed reviewer PIN. The parent session locks when the app goes into the background.
+
+In the parent area, choose the interface/question language and an explorer's learning language separately. For example, choose an English interface with Arabic learning, then open Letters, Word garden or Trace & Write. English, French, Spanish, Brazilian Portuguese and Arabic are supported. Sound and reduced-motion settings are also in the parent area.
+
+Coloring and Drawing studio support fills, brushes, undo/redo, zoom, full-screen canvas and reset. Leave a page and reopen it to verify saved artwork. Each avatar profile has separate artwork, favorites and progress. Trace & Write preserves its letter proportions and partial stroke progress when rotating the device.
+
+Activities and essential spoken guidance work in airplane mode immediately after installation. Ads require connectivity; missing or failed ads never prevent access. Banners appear on library screens and are hidden inside activities. Interstitials can appear after eligible completions, with limits shared across profiles and launches: at least five minutes of foreground use, four completed activities, five minutes between interstitials and at most six per rolling hour.
+
+Privacy controls, artwork export and external support links are behind the parent gate. Support and privacy: https://seifelmoulouk.com/pikolumi/en.html and https://seifelmoulouk.com/pikolumi/en.html#privacy. Support email: rahmani@seifelmoulouk.com.

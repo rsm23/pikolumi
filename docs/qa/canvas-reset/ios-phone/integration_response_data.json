@@ -1,0 +1,100 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "en-drawing-guide"
+    },
+    {
+      "screenshotName": "en-fullscreen"
+    },
+    {
+      "screenshotName": "en-fullscreen-zoom"
+    },
+    {
+      "screenshotName": "en-all-colors"
+    },
+    {
+      "screenshotName": "en-brush-menu"
+    },
+    {
+      "screenshotName": "en-four-brush-strokes"
+    },
+    {
+      "screenshotName": "en-reset-confirmation"
+    },
+    {
+      "screenshotName": "en-reset-drawing"
+    },
+    {
+      "screenshotName": "fr-drawing-guide"
+    },
+    {
+      "screenshotName": "fr-fullscreen"
+    },
+    {
+      "screenshotName": "fr-reset-confirmation"
+    },
+    {
+      "screenshotName": "fr-reset-drawing"
+    },
+    {
+      "screenshotName": "es-drawing-guide"
+    },
+    {
+      "screenshotName": "es-fullscreen"
+    },
+    {
+      "screenshotName": "es-reset-confirmation"
+    },
+    {
+      "screenshotName": "es-reset-drawing"
+    },
+    {
+      "screenshotName": "pt-drawing-guide"
+    },
+    {
+      "screenshotName": "pt-fullscreen"
+    },
+    {
+      "screenshotName": "pt-reset-confirmation"
+    },
+    {
+      "screenshotName": "pt-reset-drawing"
+    },
+    {
+      "screenshotName": "ar-drawing-guide"
+    },
+    {
+      "screenshotName": "ar-fullscreen"
+    },
+    {
+      "screenshotName": "ar-reset-confirmation"
+    },
+    {
+      "screenshotName": "ar-reset-drawing"
+    }
+  ],
+  "drawingActivity": "drawing-0002",
+  "locales": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "ar"
+  ],
+  "paletteColors": 36,
+  "fullscreenToggle": true,
+  "zoomButtonsAndPinch": true,
+  "pinchCreatesNoStrokes": true,
+  "brushStyles": [
+    "round",
+    "pencil",
+    "marker",
+    "crayon"
+  ],
+  "guideAndStrokeRecovery": true,
+  "resetCancelConfirmUndoAndReopen": true,
+  "store": "isolated memory; existing profiles and artwork untouched",
+  "audio": "SilentAudio; disabled before runApp",
+  "adSDKInitialized": false,
+  "testAdsOnly": true
+}

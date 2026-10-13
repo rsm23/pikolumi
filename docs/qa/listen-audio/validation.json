@@ -1,0 +1,125 @@
+{
+  "checkedAtUTC": "2026-10-12T10:56:16.255561+00:00",
+  "sourceSha256": {
+    "lib/ui/listen.dart": "908b394eb21a9e744a30367df9e63d6a02e11efc394a31c7eaebeb2ed9302d5a",
+    "lib/ui/activity_screen.dart": "3406a6e5db27ecbc27cb6832a18037c20e8c2b94c070e61bffcc472f045d244f",
+    "lib/activities/learning.dart": "18fe43c10f5743ab025df09d99f6ab40e783dca7de518a74816e1b7487b21242",
+    "lib/services/audio.dart": "54959cbd6713a42042f48ebcc4c3066afdc836c3407e1874b1b56802c632cc4e",
+    "lib/core/controller.dart": "1dbb78cd0eb203bb70f5e1201b2a88749c2ee23a04e43139dd6de2faeeb4f8ba",
+    "scripts/content_source.py": "102088557196d76825c4d07da4398b713a48ff03c034cf2098204a548064b11a",
+    "assets/content/strings.json": "277f6964bb372468c0f327907ba1f47bca4f6ec0ab585f19afa1520605dd8f12",
+    "test/listen_test.dart": "d8199438fd8bf099d68c12551a32a348862bc391a664275c602c315039875ee1",
+    "integration_test/listen_audio_test.dart": "59cc5f807bc062d29d4e38e7c30165b2b1b804be073e1521c845b03003802599",
+    "integration_test/device_smoke_test.dart": "195b28f409889a290000b1752a2a61d0c883a1bf0fed15e77108ee5af8b998f0",
+    "integration_test/arabic_literacy_test.dart": "81b5aeb171a2b75ca49b0e5b496f71c946cefda337db41ebfb01ff14c80fc139"
+  },
+  "flutterTests": 54,
+  "pythonTests": 8,
+  "staticAnalysis": "no issues",
+  "redRegressionLog": "tmp/listen-red.log",
+  "mutedFeedbackAndEnabledPlaybackVerified": true,
+  "interfaceAndLearningLanguageSeparationPreserved": true,
+  "interfaceStringsPerLocale": 94,
+  "native": {
+    "pixel": {
+      "bodyAndTeardownPassed": true,
+      "requestedRecordingsDecoded": 15,
+      "playerVolume": 0,
+      "adSDKInitialized": false,
+      "report": "docs/qa/listen-audio/pixel/integration_response_data.json",
+      "fixtureSha256": "59f1adc25e1859dcf3534b3d8aa8f596b0daff45442226d53e00f8849641e942",
+      "screenshots": [
+        {
+          "path": "docs/qa/listen-audio/pixel/ar-muted-listen-feedback.png",
+          "sha256": "cd8ca83c8f4eecceb12d141ef63e93f89802d7e1927b76750a8eb9237635ea48"
+        },
+        {
+          "path": "docs/qa/listen-audio/pixel/en-muted-listen-feedback.png",
+          "sha256": "62017c05590f0045d694ff61683f493749f51e0eeb72ebf5ecfcd9c7d26e3008"
+        }
+      ]
+    },
+    "ios-phone": {
+      "bodyAndTeardownPassed": true,
+      "requestedRecordingsDecoded": 15,
+      "playerVolume": 0,
+      "adSDKInitialized": false,
+      "report": "docs/qa/listen-audio/ios-phone/integration_response_data.json",
+      "fixtureSha256": "59cc5f807bc062d29d4e38e7c30165b2b1b804be073e1521c845b03003802599",
+      "screenshots": [
+        {
+          "path": "docs/qa/listen-audio/ios-phone/ar-muted-listen-feedback.png",
+          "sha256": "a935a070e29584f8e63b83ecee67d6286a9526af28b256c7e2a6035587d9e607"
+        },
+        {
+          "path": "docs/qa/listen-audio/ios-phone/en-muted-listen-feedback.png",
+          "sha256": "1e4ef8ba9a484960e62eb8a8aad137be066a72e4170d9a5454969531020bea44"
+        }
+      ]
+    }
+  },
+  "pixelPreferenceRepair": {
+    "previousSavedSound": false,
+    "restoredSavedSound": true,
+    "otherSettingsPreserved": true,
+    "allOtherRecordsPreserved": true,
+    "uninstalled": false,
+    "dataCleared": false,
+    "systemVolumeChanged": false
+  },
+  "qaIsolation": {
+    "normalDatabaseUnchangedByBothNativeFixtures": true,
+    "databaseSha256": "afb977437509ac2685be1cf6a9e9f8f4714dc2f18bcb7df4db87dc2dfddbaa77",
+    "arabicSQLiteBodyAndCleanup": "passed",
+    "smokeSQLiteBodyAndCleanup": "passed",
+    "previousMuteLeakPrevented": true
+  },
+  "artifacts": [
+    {
+      "path": "output/qa/Pikolumi-Listen-Audio-QA.apk",
+      "sha256": "3389ffaf7422929a76b34dcaeb08320fa51dbdddb1f0cbaa44ad6443a4d34a35",
+      "bundledAssetsVerified": 671,
+      "entryPoint": "lib/main.dart",
+      "testAdsOnly": true
+    },
+    {
+      "path": "output/qa/Pikolumi-Listen-Audio-Simulator.zip",
+      "sha256": "b92d4b2138d4363808ad8c61ba5aa7d56c746786e6a111f48494bf00f1260d85",
+      "bundledAssetsVerified": 671,
+      "entryPoint": "lib/main.dart",
+      "testAdsOnly": true
+    }
+  ],
+  "androidDevelopmentCertificateMatchesPreviousQA": true,
+  "pixelInstallation": {
+    "status": "Success",
+    "method": "adb install -r",
+    "savedSoundVerifiedAfterUpdate": true,
+    "dataCleared": false,
+    "uninstalled": false,
+    "log": "tmp/listen-pixel-install.log",
+    "databaseFingerprintScope": "unchanged through isolated QA; normal app use may update settings, results and ad budget afterwards"
+  },
+  "normalSimulatorRestoration": {
+    "308EF94F-8915-492D-A5EE-28BDD262C199": {
+      "normalAppRestored": true,
+      "binaryKernelAndStringsMatch": true,
+      "launchedForPlayback": false,
+      "dataCleared": false
+    },
+    "CEB65F35-4EC0-4272-B32A-2197F48DC60B": {
+      "normalAppRestored": true,
+      "binaryKernelAndStringsMatch": true,
+      "launchedForPlayback": false,
+      "dataCleared": false
+    }
+  },
+  "systemVolumeChanged": false,
+  "computerAudiblePlayback": false,
+  "pixelScreenTimeoutRestored": true,
+  "humanPronunciationApproval": false,
+  "storeBuildUploads": false,
+  "storeReviewSubmissions": false,
+  "storePublications": false,
+  "releaseHeldUntilExplicitUserInstruction": true
+}

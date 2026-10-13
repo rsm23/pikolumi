@@ -1,0 +1,202 @@
+{
+  "checkedAtUTC": "2026-10-12T09:32:31.179711+00:00",
+  "sourceSha256": {
+    "lib/activities/canvas_activity.dart": "1465516db6a24a3462b1ffcc5ae49696ad258d5022e2cbc0d9e19ceb0ed6eef2",
+    "lib/ui/activity_screen.dart": "b851d79b22de78d3882e72d730334e167a1a474c41cbbe31d11ea3d5d8e0879c",
+    "lib/ui/vector_art.dart": "92011bf2df05e7ec7167b5f936ace871faac87186ad070eea3194de9546bcd9a",
+    "lib/ui/brush_stroke.dart": "51c3cd4f9079042d12ac569f84792d9118999db94f790f69accaae2e2ee5acb6",
+    "assets/content/strings.json": "da3d7bcff956b1bb25c76a04296de73443b85c9e4efe038924cb5442cb575380",
+    "scripts/content_source.py": "4f869a8699a3d40b072e3b9b23dc5e57172c5475c8a7bdd43d2efeb47570549a",
+    "integration_test/drawing_studio_test.dart": "ecb584e320cf435558654ea4ebc9e50674a2529f1512b340d31e29b5693727d4",
+    "test/drawing_studio_test.dart": "c7c0ef7b26eb18c0683ca6143c797ce8fabca92b414b4709a1b30ba6244a8d7a"
+  },
+  "flutterTests": 50,
+  "pythonTests": 8,
+  "staticAnalysis": "no issues",
+  "fullscreenToggle": true,
+  "zoomRange": [
+    1,
+    4
+  ],
+  "buttonsAndOutwardInwardPinchVerified": true,
+  "rotationAndBackVerified": true,
+  "undoRedoAndArtworkPreserved": true,
+  "undoAtSixtyStrokeLimitVerified": true,
+  "interfaceStringsPerLocale": 89,
+  "native": {
+    "ios-phone": {
+      "bodyAndTeardownPassed": true,
+      "report": "docs/qa/canvas-zoom/ios-phone/integration_response_data.json",
+      "screenshots": [
+        {
+          "path": "docs/qa/canvas-zoom/ios-phone/en-drawing-guide.png",
+          "sha256": "952ba1f733bb59ba9e8f826d1aaf31d810139c237980d431a50a65cde7afd287"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-phone/en-fullscreen.png",
+          "sha256": "eaab7ec82b2937f15b5f046b038b9a95099a081d94d9e48fe57beab681635112"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-phone/en-fullscreen-zoom.png",
+          "sha256": "fdc1775e39569f2653a95a2c6829ccda29df91da26368485738ec890e8a90549"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-phone/en-all-colors.png",
+          "sha256": "156d3d924e525e00854f1d34debcd32d6c6296337c2683766542e97c47c78ffa"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-phone/en-brush-menu.png",
+          "sha256": "1514935263495c0de71e10ebad1d6c495aa02a427aa3a366468a8d2d30cd395e"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-phone/en-four-brush-strokes.png",
+          "sha256": "092e22b3cd4388fe6d78bb13626827362b8630d4dec6983698aac16cb27abeaf"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-phone/fr-drawing-guide.png",
+          "sha256": "265d6e6f5da19b1e49aae185992ac2944ec6c28fbc70b7009c472c1ea3d221f9"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-phone/fr-fullscreen.png",
+          "sha256": "eaab7ec82b2937f15b5f046b038b9a95099a081d94d9e48fe57beab681635112"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-phone/es-drawing-guide.png",
+          "sha256": "d7954180c15bcf9e354cba29897c4b89d375d06b690a138ca504bb58042865e6"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-phone/es-fullscreen.png",
+          "sha256": "eaab7ec82b2937f15b5f046b038b9a95099a081d94d9e48fe57beab681635112"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-phone/pt-drawing-guide.png",
+          "sha256": "ddec59d302ee3c64ab17e02dcc35608af118dbfa79bbd26671f03b311e39d80d"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-phone/pt-fullscreen.png",
+          "sha256": "eaab7ec82b2937f15b5f046b038b9a95099a081d94d9e48fe57beab681635112"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-phone/ar-drawing-guide.png",
+          "sha256": "13eec5f23a212c8ef0f2bad559c7d456a15d5c73adeb9a9683fab52fcabe5e92"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-phone/ar-fullscreen.png",
+          "sha256": "cbc74c6310d3ca98b09d08a687b78fb18f82d150fcaa335ff93ed56a6ada975b"
+        }
+      ]
+    },
+    "ios-tablet": {
+      "bodyAndTeardownPassed": true,
+      "report": "docs/qa/canvas-zoom/ios-tablet/integration_response_data.json",
+      "screenshots": [
+        {
+          "path": "docs/qa/canvas-zoom/ios-tablet/en-drawing-guide.png",
+          "sha256": "01220ad3733f3d0a27d69eebaf72154cfedcbe72b50659c4698ce96ad5deca34"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-tablet/en-fullscreen.png",
+          "sha256": "30f5428b1d0520c8cc6d154ebf3b65996a2ff9023f8287960bba3296bc6ae0c6"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-tablet/en-fullscreen-zoom.png",
+          "sha256": "1049cc5d6df230e5000b13d899c1ce7c55b899a1600956caba0f6d2dd5b716de"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-tablet/en-all-colors.png",
+          "sha256": "7e755107b0e12fea9c9752bf009e8a32c1663ce4486f5dff1af42f26b09829f4"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-tablet/en-brush-menu.png",
+          "sha256": "1d6d815e90ef32d9e0f98d8d038881d5210cafed523ab56bfbac447c19db9e43"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-tablet/en-four-brush-strokes.png",
+          "sha256": "740a11b83b2fe13e98a8dcc134fc1fa8477c3def05a0636eb4a05efb79fa9113"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-tablet/fr-drawing-guide.png",
+          "sha256": "367d3899d620845cc828406817ef6d9b123ec36ba7c1144098a014ce1c5089f0"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-tablet/fr-fullscreen.png",
+          "sha256": "30f5428b1d0520c8cc6d154ebf3b65996a2ff9023f8287960bba3296bc6ae0c6"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-tablet/es-drawing-guide.png",
+          "sha256": "fb107f835bcfb3f067bacc9789a7bb835b7c04fbf47c64c63a5b1f7b89fc51b1"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-tablet/es-fullscreen.png",
+          "sha256": "30f5428b1d0520c8cc6d154ebf3b65996a2ff9023f8287960bba3296bc6ae0c6"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-tablet/pt-drawing-guide.png",
+          "sha256": "905b4ab61eebb64f6b211a7481210fe2dba01e3249fce65f4a1d439391205fde"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-tablet/pt-fullscreen.png",
+          "sha256": "30f5428b1d0520c8cc6d154ebf3b65996a2ff9023f8287960bba3296bc6ae0c6"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-tablet/ar-drawing-guide.png",
+          "sha256": "c6b8b6b9097e42225761d630bab77c4d1003406bac2fbb5297a78d6920f4ff6e"
+        },
+        {
+          "path": "docs/qa/canvas-zoom/ios-tablet/ar-fullscreen.png",
+          "sha256": "57dead3a634002172cc2548c9ffe4b3c74c8e5f6f9230f6e4032490951b77e89"
+        }
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "output/qa/Pikolumi-Canvas-Zoom-QA.apk",
+      "sha256": "63b2fbabb19c98aab55e4b0e1632e52dd16d26bd4acf133399ce7569d83f564a",
+      "bytes": 114061621,
+      "bundledAssets": 671,
+      "bundledAssetsMatchSource": true,
+      "normalEntryPoint": "lib/main.dart"
+    },
+    {
+      "path": "output/qa/Pikolumi-Canvas-Zoom-Simulator.zip",
+      "sha256": "c003ae3ec0a0bfdc16f6abfdb2ed7e5746b8b4bcb941352968384f54a6f8e7b2",
+      "bytes": 80498208,
+      "bundledAssets": 671,
+      "bundledAssetsMatchSource": true,
+      "normalEntryPoint": "lib/main.dart"
+    }
+  ],
+  "androidAPKSignatureV2Verified": true,
+  "androidUpdateSigningCertificateMatchesPreviousPixelQA": true,
+  "pixelInstall": {
+    "status": "Success",
+    "method": "adb install -r",
+    "dataCleared": false,
+    "uninstalled": false,
+    "normalAppLaunchedForPlayback": false,
+    "physicalGestureAcceptance": "pending; Pixel remained locked"
+  },
+  "normalSimulatorRestoration": {
+    "ios-phone": {
+      "normalAppInstalled": true,
+      "binaryKernelAndStringsMatchBuiltApp": true,
+      "dataCleared": false,
+      "uninstalled": false,
+      "normalAppLaunchedForPlayback": false
+    },
+    "ios-tablet": {
+      "normalAppInstalled": true,
+      "binaryKernelAndStringsMatchBuiltApp": true,
+      "dataCleared": false,
+      "uninstalled": false,
+      "normalAppLaunchedForPlayback": false
+    }
+  },
+  "audioPlayback": false,
+  "testAdsOnly": true,
+  "storeBuildUploads": false,
+  "storeReviewSubmissions": false,
+  "storePublications": false,
+  "releaseAuthorization": "held until explicit user instruction"
+}

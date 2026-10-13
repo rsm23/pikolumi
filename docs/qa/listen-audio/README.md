@@ -1,0 +1,13 @@
+# Listen playback and QA isolation
+
+The active Pixel build had Sound & voice saved as off. Android media volume was unmuted. Two earlier native QA harnesses launched the normal app and saved the silent-test preference into its normal SQLite database. The saved sound preference was restored to on; every other setting and database record was verified unchanged. `pixel-setting-repair.json` records the bounded repair without including private profile or parent-PIN data.
+
+Listen controls now show a muted icon and a localized parent-area instruction when sound is off. Header guidance, letter/word cue buttons and music replay share the same check. They respect the parent sound setting and retain separate interface and learning languages. Turning sound on restores requested playback and persists across reopening; children do not silently override a parent's mute choice.
+
+The regression was first run against the old behavior and failed because a muted Listen tap produced no message. Both new regressions now pass in the complete 54-test Flutter suite, along with eight Python tests and clean static analysis. The five-language review packet has 94 interface strings per locale. Human pronunciation approval is still pending.
+
+The native audio fixture uses real AudioPlayers, sets both player volumes to zero before the app mounts, and leaves system volume unchanged. It checks 15 requested question/letter/word recordings across the five languages, including different interface and learning languages, and verifies positive decoded duration and native playback state. It snapshots the source immediately after preparation: the player's release-on-completion behavior clears the source later. Muted taps show feedback and do not resume the player. The fixture uses isolated memory and never initializes the ad SDK. Device reports and captures are under pixel and ios-phone; validation.json records actual outcomes.
+
+The Arabic and device-smoke QA harnesses now use temporary SQLite files, initialized with sound disabled before displaying UI. The smoke harness sets real player volumes to zero too. Both pass on the Pixel, including teardown, and the normal user database fingerprint stays unchanged. `qa-isolation.json` records the check. The temporary screen timeout used for physical QA was restored.
+
+Local update packages use the normal entry point and test ads. Pixel installation replaces the app without uninstalling or clearing data. Normal builds are restored on the iOS simulators after testing. No store build upload, review submission or publication is authorized; both stores remain held until the user explicitly instructs the relevant action.

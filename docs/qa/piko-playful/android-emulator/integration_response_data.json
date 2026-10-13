@@ -1,0 +1,287 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "library-piko"
+    },
+    {
+      "screenshotName": "gesture-hop"
+    },
+    {
+      "screenshotName": "gesture-wink"
+    },
+    {
+      "screenshotName": "gesture-wave"
+    },
+    {
+      "screenshotName": "gesture-bow"
+    },
+    {
+      "screenshotName": "gesture-wiggle"
+    },
+    {
+      "screenshotName": "gesture-crayon"
+    },
+    {
+      "screenshotName": "gesture-peek"
+    },
+    {
+      "screenshotName": "gesture-flutter"
+    },
+    {
+      "screenshotName": "gesture-nod"
+    },
+    {
+      "screenshotName": "gesture-stretch"
+    },
+    {
+      "screenshotName": "automatic-idle-invitation-fr"
+    },
+    {
+      "screenshotName": "en-localized-invitation"
+    },
+    {
+      "screenshotName": "activity-header-reaction"
+    },
+    {
+      "screenshotName": "en-memory-turn"
+    },
+    {
+      "screenshotName": "en-memory-completion"
+    },
+    {
+      "screenshotName": "fr-localized-invitation"
+    },
+    {
+      "screenshotName": "fr-memory-turn"
+    },
+    {
+      "screenshotName": "fr-memory-completion"
+    },
+    {
+      "screenshotName": "es-localized-invitation"
+    },
+    {
+      "screenshotName": "es-memory-turn"
+    },
+    {
+      "screenshotName": "es-memory-completion"
+    },
+    {
+      "screenshotName": "pt-localized-invitation"
+    },
+    {
+      "screenshotName": "pt-memory-turn"
+    },
+    {
+      "screenshotName": "pt-memory-completion"
+    },
+    {
+      "screenshotName": "ar-localized-invitation"
+    },
+    {
+      "screenshotName": "ar-memory-turn"
+    },
+    {
+      "screenshotName": "ar-memory-completion"
+    }
+  ],
+  "captureSizes": {
+    "library-piko": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "gesture-hop": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "gesture-wink": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "gesture-wave": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "gesture-bow": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "gesture-wiggle": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "gesture-crayon": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "gesture-peek": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "gesture-flutter": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "gesture-nod": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "gesture-stretch": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "automatic-idle-invitation-fr": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "en-localized-invitation": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "activity-header-reaction": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "en-memory-turn": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "en-memory-completion": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "fr-localized-invitation": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "fr-memory-turn": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "fr-memory-completion": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "es-localized-invitation": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "es-memory-turn": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "es-memory-completion": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "pt-localized-invitation": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "pt-memory-turn": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "pt-memory-completion": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "ar-localized-invitation": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "ar-memory-turn": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "ar-memory-completion": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    }
+  },
+  "locales": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "ar"
+  ],
+  "gestures": [
+    "hop",
+    "wink",
+    "wave",
+    "bow",
+    "wiggle",
+    "crayon",
+    "peek",
+    "flutter",
+    "nod",
+    "stretch"
+  ],
+  "memoryTurnVerified": true,
+  "mismatchTapLockVerified": true,
+  "memoryCompletionVerified": true,
+  "automaticInvitationVerified": true,
+  "interfaceLanguageInvitationsVerified": true,
+  "headerTapVerified": true,
+  "reducedMotionVerified": true,
+  "audio": "SilentAudio; sound disabled before mounting",
+  "userPreferencesChanged": false,
+  "adSDKInitialized": false
+}

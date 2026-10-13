@@ -1,0 +1,16 @@
+{
+  "android": {
+    "bundledAssetFiles": 671,
+    "assetsMatchSource": true
+  },
+  "ios": {
+    "bundledAssetFiles": 671,
+    "assetsMatchSource": true,
+    "bundleIdentifier": "com.seifelmoulouk.pikolumi",
+    "trackingUsageDescriptionPresent": false
+  },
+  "androidPixel": {
+    "bundledAssetFiles": 671,
+    "assetsMatchSource": true
+  }
+}

@@ -106,8 +106,10 @@ class PikolumiApp extends ConsumerWidget {
       ],
       localizationsDelegates: GlobalMaterialLocalizations.delegates,
       builder: (context, child) => MediaQuery(
-        data: MediaQuery.of(context)
-            .copyWith(disableAnimations: app.reducedMotion),
+        data: MediaQuery.of(context).copyWith(
+          disableAnimations:
+              app.reducedMotion || MediaQuery.of(context).disableAnimations,
+        ),
         child: child!,
       ),
       home: LibraryHome(ads: ads),

@@ -1,0 +1,239 @@
+{
+  "schema": 2,
+  "identityRevision": 2,
+  "origin": "Local Blender articulated 3D relief, painted with the canonical Piko illustration",
+  "viewScope": "Front view with gentle depth motion; not a full turnaround model",
+  "brandReferences": {
+    "assets/art/piko.png": "080c6d916890f5bb96d96f2339a80bdb01c74473f25801dad33054d3be477dde",
+    "assets/art/app-icon.png": "0b56e8aa0ef45809ea7d7464d72587280d6f707c1b2c0fec8f0474c6f08ff4a2"
+  },
+  "crop": [
+    14,
+    6,
+    246,
+    237
+  ],
+  "decodedTextureBytes": 62390272,
+  "maxResidentTextureBytes": 24641536,
+  "residency": "On-demand shared clips; normal navigation needs at most idle, celebration and one reaction together",
+  "reactions": [
+    "wave",
+    "wink",
+    "nod",
+    "bow",
+    "wiggle",
+    "stretch",
+    "crayon",
+    "peek",
+    "flutter",
+    "hop"
+  ],
+  "clips": {
+    "idle": {
+      "fps": 30,
+      "frames": 90,
+      "tile": 128,
+      "columns": 8,
+      "framesPerSheet": 64,
+      "sheets": [
+        {
+          "asset": "assets/art/piko_3d/idle_0.webp",
+          "width": 1024,
+          "height": 1024,
+          "sha256": "72ab77744e77a673d1a6eb78defdda38013d8efab52d414a81348e64b7b1d256"
+        },
+        {
+          "asset": "assets/art/piko_3d/idle_1.webp",
+          "width": 1024,
+          "height": 512,
+          "sha256": "f24fc5ee5296191f113e4302bce4cac7aa935a97c7d0f1dec3c2d50970401ca2"
+        }
+      ]
+    },
+    "celebrate": {
+      "fps": 30,
+      "frames": 90,
+      "tile": 192,
+      "columns": 8,
+      "framesPerSheet": 64,
+      "sheets": [
+        {
+          "asset": "assets/art/piko_3d/celebrate_0.webp",
+          "width": 1536,
+          "height": 1536,
+          "sha256": "f4be82058d625acbac8556d681333de156b83bf85f3895537942f56593c5b650"
+        },
+        {
+          "asset": "assets/art/piko_3d/celebrate_1.webp",
+          "width": 1536,
+          "height": 768,
+          "sha256": "0e0788fc76dc90cf6d7c1d1c79d35b4c9704db23c815e848cc33c79df61a0608"
+        }
+      ]
+    },
+    "wave": {
+      "fps": 30,
+      "frames": 60,
+      "tile": 128,
+      "columns": 8,
+      "framesPerSheet": 64,
+      "sheets": [
+        {
+          "asset": "assets/art/piko_3d/wave_0.webp",
+          "width": 1024,
+          "height": 1024,
+          "sha256": "e643268d029bef02cbc53f7fef5d45154ef048ea1077112e27e61364ee486201"
+        }
+      ]
+    },
+    "wink": {
+      "fps": 30,
+      "frames": 60,
+      "tile": 128,
+      "columns": 8,
+      "framesPerSheet": 64,
+      "sheets": [
+        {
+          "asset": "assets/art/piko_3d/wink_0.webp",
+          "width": 1024,
+          "height": 1024,
+          "sha256": "d80d2e4fbc28cc83ef4f436223ba634e1e143444d93660e8cf3c13f506cb329f"
+        }
+      ]
+    },
+    "nod": {
+      "fps": 30,
+      "frames": 60,
+      "tile": 128,
+      "columns": 8,
+      "framesPerSheet": 64,
+      "sheets": [
+        {
+          "asset": "assets/art/piko_3d/nod_0.webp",
+          "width": 1024,
+          "height": 1024,
+          "sha256": "49ae43b47c23b1a420b49dafd5cfd36b70312ac53a46133a9265bb20eb8c513e"
+        }
+      ]
+    },
+    "bow": {
+      "fps": 30,
+      "frames": 60,
+      "tile": 128,
+      "columns": 8,
+      "framesPerSheet": 64,
+      "sheets": [
+        {
+          "asset": "assets/art/piko_3d/bow_0.webp",
+          "width": 1024,
+          "height": 1024,
+          "sha256": "1a8ed81e4d9e466def0f8fc146461bc110a062df8da19b138afd1bec0d55eb19"
+        }
+      ]
+    },
+    "wiggle": {
+      "fps": 30,
+      "frames": 60,
+      "tile": 128,
+      "columns": 8,
+      "framesPerSheet": 64,
+      "sheets": [
+        {
+          "asset": "assets/art/piko_3d/wiggle_0.webp",
+          "width": 1024,
+          "height": 1024,
+          "sha256": "7791e779a55e5085ca85f437e754b598848398360312e32da7a295606eb03eea"
+        }
+      ]
+    },
+    "stretch": {
+      "fps": 30,
+      "frames": 60,
+      "tile": 128,
+      "columns": 8,
+      "framesPerSheet": 64,
+      "sheets": [
+        {
+          "asset": "assets/art/piko_3d/stretch_0.webp",
+          "width": 1024,
+          "height": 1024,
+          "sha256": "1cd70440f3bd89e12b035dd8c799516496170822caeb87c89adc2626f6d421e2"
+        }
+      ]
+    },
+    "crayon": {
+      "fps": 30,
+      "frames": 60,
+      "tile": 128,
+      "columns": 8,
+      "framesPerSheet": 64,
+      "sheets": [
+        {
+          "asset": "assets/art/piko_3d/crayon_0.webp",
+          "width": 1024,
+          "height": 1024,
+          "sha256": "27fead89a2e3e47434f0f220b55d4e17878796ac7c6281240e9998ad5faffb17"
+        }
+      ]
+    },
+    "peek": {
+      "fps": 30,
+      "frames": 60,
+      "tile": 128,
+      "columns": 8,
+      "framesPerSheet": 64,
+      "sheets": [
+        {
+          "asset": "assets/art/piko_3d/peek_0.webp",
+          "width": 1024,
+          "height": 1024,
+          "sha256": "035b53a33a0c201a268a83313241c17a75f938e331604ca4d3f4cdca77e48193"
+        }
+      ]
+    },
+    "flutter": {
+      "fps": 30,
+      "frames": 60,
+      "tile": 128,
+      "columns": 8,
+      "framesPerSheet": 64,
+      "sheets": [
+        {
+          "asset": "assets/art/piko_3d/flutter_0.webp",
+          "width": 1024,
+          "height": 1024,
+          "sha256": "e2ca1065933bbae916c21993044b44847e51727ce5fae532f4b63672f863c189"
+        }
+      ]
+    },
+    "hop": {
+      "fps": 30,
+      "frames": 60,
+      "tile": 128,
+      "columns": 8,
+      "framesPerSheet": 64,
+      "sheets": [
+        {
+          "asset": "assets/art/piko_3d/hop_0.webp",
+          "width": 1024,
+          "height": 1024,
+          "sha256": "6201e78c31aafe2befd2fea06ca751ac0699f19ba936be850c6ac5d174b67af1"
+        }
+      ]
+    }
+  },
+  "source": {
+    "art_source/piko/piko-flutter.blend": "e90405687dc047a52c3e711e5669b88993153d49506ece3fa7ea6b29feb9929c",
+    "art_source/piko/piko-idle.blend": "b48d3a8704b438eb5c16840655d0b65006fb51921143dafb87237fd83ebb5d2c",
+    "art_source/piko/piko-stretch.blend": "e45ff90607e473fcecacc68a612f157ebbe8ee6cb3e08921835b7464ecc3d56e",
+    "art_source/piko/piko-wink.blend": "4ef570c4089dc696908f3afa79bcadece665b6b7440bbd725ec1df160ec82eb6",
+    "art_source/piko/piko-wiggle.blend": "5bb4b69934ef65e3c91987215cfd868378d3f468a11f70fcbaa8dad43a508d9f",
+    "art_source/piko/piko-bow.blend": "d8b39593225bbb33355501a9a6fc0bbf08f43d89df6d059e0298f41b03b0d3d2",
+    "art_source/piko/piko-peek.blend": "9df19cc1931ea03c3a8acf069fcb00575d1971eec54390ac8554f20a01b19285",
+    "art_source/piko/piko-hop.blend": "490aeea9aa2d6cce02b0427f3ccc96c10234bb877245f4048555831e40598329",
+    "art_source/piko/piko-nod.blend": "44ff00ed966bd166a4334a1ef9de6b1087a7aa0f697b90215e72c13dab2d97fb",
+    "art_source/piko/piko-celebrate.blend": "db9234f257161cd43980f5a21260f9ef04d7727adebbbb37183c33017135cd11",
+    "art_source/piko/piko-crayon.blend": "998f735efb6921d34e54cd911dde2b7733a5913da4596dd6fc6e90e99f4603af",
+    "art_source/piko/piko-wave.blend": "5ff8075b7a7d1525ce0008e1d61e231fb0b8c1a929f21f5af11e5621d5550e8a"
+  }
+}

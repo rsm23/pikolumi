@@ -1,0 +1,205 @@
+key,locale,text,approved,reviewer,date,notes,sourceSha256
+tagline,ar,لوّن والعب وتعلّم,,,,,55a4b78e08174ce137a5a95fdbe367fc038883473c0cb99961a41f448be2f436
+pikoPlay,ar,العب مع بيكو,,,,,3e01d44ac9fc5680bd8302967692c08d06871551c8423fffd5afbf2afa973c7f
+pikoInviteColor,ar,هيا نلوّن!,,,,,d04e69c2c93871fb7732610da1eb7a863f53f23950437840c7318b0b4566791c
+pikoInviteMemory,ar,هل نجد الأزواج المتطابقة؟,,,,,097d06242feda4c075b80ef5afe0cb11950814352fa42a6b59e2a6305e0ab223
+pikoInvitePuzzle,ar,هيا نحل لغزًا!,,,,,543b446b345f7045e3f3bc624f3900592a5b9c8379b3ae1b6c383464c52f5054
+pikoInviteNumbers,ar,هيا نعدّ معًا!,,,,,775f350dbb7c40dbbb7be1d4f2b8de1f52d02d627d6008cf8442ad6274cdf32e
+pikoInviteDraw,ar,ماذا نرسم؟,,,,,087673aac605195de68ab80897f2fb641df26ebb081b1c4f8dfff3077050b6a1
+pikoTakeTime,ar,خذ وقتك، أنا معك!,,,,,edd6075fd8b8efd92adc4c8b3058c9304716165615b9055c4394c571442458a8
+pikoTryStep,ar,جرّب خطوة صغيرة، أنت تستطيع!,,,,,211e606f5ac1674875a2e59f694dbea228ce926017fea1b05de1ea0e5225c8b7
+pikoTogether,ar,هيا ننظر مرة أخرى ونحاول معًا!,,,,,db13861a0cda47a5e81e2b02292f8b0a8434720c415237f9b30dbedfadc094ca
+pikoCreative,ar,أفكارك تجعل هذه الرسمة مميزة!,,,,,339b61d55e866af637981b81b1286da3372e2d1e081670e18e553f93ce43bc14
+pikoFinished,ar,لقد نجحت! سعدت باللعب معك!,,,,,e43e3edfb8212b5af7f8c6748d62298f4d0b0031f17fa1e8a793ff3024d2d908
+hello,ar,قليل من الدهشة، كل يوم.,,,,,a3cd687e0e50e081a9cdeb11dd8fbf58bb6e2eb79a86867fd2193d31963a5c25
+worlds,ar,استكشف عوالمك,,,,,4cc6f830fc9b355e6a1c13d5ee25f055cc4d1b350c8c2d619a1c1533c7ab44c9
+library,ar,العب,,,,,72894b53f2555da9ef55345b76bd95456f8cf5904b2296abe010a56e4939cfa8
+gallery,ar,رسوماتي,,,,,ae0c2ef727eb89f4f5038e052cb86873921c3937e32b0136287cf54fcf216934
+stickers,ar,الملصقات,,,,,e0c896133cff8b2792bbc898cd5941905e3584222a65959500d693429663afa8
+parents,ar,الوالدان,,,,,28ae90459d302044071e1ff4c02668ec20eefe541298b5525f894271f703b894
+all,ar,كل المغامرات,,,,,cd1ac24e28c575d23201b6ad9ebe4ba592e574eef88a07a1790cf5eeea112f54
+recommended,ar,مناسب لك,,,,,db42543dcf59c9859eff66a4ae232e755c9f90d1dcbaac8743cb03720a20c8ed
+favorites,ar,المفضلة,,,,,c1d9c443dc355060304a43d79fa61fe320f7b04f680aa8e7c6c33fd0aa74d664
+activities,ar,أنشطة,,,,,4c038f345cee7bb76f104bcd96b6f0d5c52cd95846ac138ff175d0729b7744bb
+offline,ar,جاهز للعب دون إنترنت,,,,,b2645199eef9d4cdc298fdc300f7fef563d4d80b6793d9b806e41cbee8acc3cf
+continue,ar,تابع الاستكشاف,,,,,d35fa2b5cf98285280a6ae6155d6cb0ccb10ee392a900e724e9bda405f536e5a
+done,ar,انتهيت!,,,,,c028fd62bd5fe66c288da58f9158c0d4f280cb5fec5eb52364baef86d523a905
+great,ar,أحسنت!,,,,,ae1c764232a4568f9e0a442c21810f483fb6484d84011857b44513838ba96045
+again,ar,جرّب طريقة أخرى,,,,,f672b680dd9e62f41bfe492fc77f9bc8c41fcb8b1f9914208df5412bb7ca6ac3
+hint,ar,تلميح,,,,,b183300e7e94b179b980b42826d60b3969c2f19984766c7b45a8b24b5b656c61
+listen,ar,استمع,,,,,15b375945ed89c01b4c5a7a444833f018338812939249f98222e47c985ff36ff
+back,ar,رجوع,,,,,785cdfb131e391ca21762e50eb61a8520f544cd8390ef289e22d3fe8fe584b20
+choose,ar,اختر مغامرة,,,,,b96abe6c68d4a15e87812fcba36a8df3f8d0c625392940b94886cc20b478df27
+profile,ar,اختر مستكشفك,,,,,3dc6a695478c6f90869ff81d3628926ce040a748843ffb5d6495a668bf671258
+explorer,ar,مستكشف,,,,,bedb9bde83489dcb4e2dced9633e41befda9002c0ad6469cbc6bb98350c7407d
+newProfile,ar,إضافة مستكشف,,,,,841c793e2b09f5acea412b5387508b84b8ea95866d4dc5a7116875dbca528538
+difficulty,ar,مرحلة التعلم,,,,,03efbdb956ae5955e06a55877978fcb85239ba628661d159f1dac648bd744b0b
+stage0,ar,اكتشافات صغيرة · ٢–٤,,,,,7a6e55ce87b415caa2ecf666af74eff1dd3f82831ef6638728df55b6aae9ebc9
+stage1,ar,مستكشفون صغار · ٥–٦,,,,,877d69065247dc94c687be290e0f9239dc400f4d13ef706513985ee7c6c45ca7
+stage2,ar,مفكرون فضوليون · ٧–٨,,,,,a696b7c5006e4a1044340adc039ff48b1d752d02ae0ec3a4e2a57c58124cece2
+stage3,ar,مغامرات كبيرة · ٩–١١,,,,,9a9d81b1f61ef146881708d1272cf7e8ae6c97cf9a69c322a8f7caabae694736
+stage4,ar,تحديات إبداعية,,,,,5d10345f93ad6df63ba1e34da39d99f300043f82e68f1263440950a434f5d6aa
+sound,ar,الصوت والإرشاد,,,,,60b76158596332cb9ed67db336c3e91678cbc5e0d18ec8ad1f7826e939eb9558
+soundOffHelp,ar,الصوت متوقف. اطلب من شخص بالغ تشغيل الصوت والإرشاد في منطقة الوالدين.,,,,,9d9ec51e2e868ec955f6cfbcff105456012456cf75c1033776f7d7f1ae694967
+motion,ar,تقليل الحركة,,,,,b0eb915c626736984dca88cd4e49c6c9c3356a6478936eb1237715557eafd371
+language,ar,اللغة,,,,,c1505517ff46b8bf47442a1f9d4e885f5087b296e22253a2f5b57f1ab7dce1ca
+save,ar,حفظ,,,,,5850e33984415adc587c27e567fb1c2a6742a69c70d766c90025b58cdbc29c5e
+emptyGallery,ar,ستظهر إبداعاتك هنا.,,,,,c8ca6db7ce452d47b63abc17ac4dbcc4de282dee3d8301a448a804ac0574580d
+blank,ar,لوحة فارغة,,,,,f7e265940a7fda1b2bf4258e91f9fb099ef840b541c4a05f8587373c93717101
+fill,ar,ملء,,,,,a4f5e65bbff39b0e4085b887ee66915b1ed0238159f4767f1ce3f51edddfcfd2
+brush,ar,فرشاة,,,,,21bb9f70ac806a84bd7d7a96a5ea3713a249bfe7ea6cc26f7fcf35b783fc0056
+brushType,ar,نوع الفرشاة,,,,,1201a0193c8bcaa1d74ff0e101c3b4dfddf7f2685d1876b454c6796f2f386c23
+brush_round,ar,مستديرة,,,,,5abd69cadf95e01f07ef32e9e49b11a61d4a728911739464b76c6dc08a45c1e6
+brush_pencil,ar,قلم رصاص,,,,,44924f052285268f97eff6d0c5554824ccef286e1672ef5fec57f20f0b53a839
+brush_marker,ar,قلم تلوين,,,,,834cf1920aee9b2d21a7a4f8b608b3f7df5ad2f8ef725eec92b0fd4ea6273600
+brush_crayon,ar,قلم شمعي,,,,,5f70eeb9443c88a9a64c7a2f70caa14dc4cdf0530dbb201073b3f70cdffa72d7
+colors,ar,الألوان,,,,,32a451e15f3379dbc6003120839cc735983412c4a38268079e034cfe0b681ce1
+allColors,ar,كل الألوان,,,,,7fa4ba32ede5f2a8a0b8ff0a62be578a14bf17741fcd1ecc506ded0550f982e7
+previousStep,ar,الخطوة السابقة,,,,,6ce3c9a199696d87f5db173e60ed009dc5bc5904e001c05fe3748edcf0939637
+nextStep,ar,الخطوة التالية,,,,,4aad613b4413959dce49328cf8266c270d1d85a04ab577757dc2cac131e678b4
+fullScreen,ar,لوحة بملء الشاشة,,,,,90c7b1a425a2bd93c64190391badb01d24fbf9c6adc3cfb43d875d3f10b84588
+exitFullScreen,ar,الخروج من ملء الشاشة,,,,,aab63033f627f4ad72e3978ee4142199bf355e652c821a14d3207be13614cd2c
+zoomIn,ar,تكبير,,,,,db25f1068bf8530077e612627a360f8404203ab3fa3ce1a9d7bc81469b25b7c1
+zoomOut,ar,تصغير,,,,,7f2f8c0c2f535d963b4a2e362458b34f31e0c73c15096dfdafdf797482bd9330
+resetDrawing,ar,إعادة الرسم,,,,,7f6d3eb25112f9581f08a49d422e89503ede63127ec6a92bd9902a35cf1371da
+resetDrawingTitle,ar,هل تريد البدء من جديد؟,,,,,a7eb8c9a685f1ebcf2cdf7eac48345d5dc5e071ecec17f6125097287e80630d7
+resetDrawingHelp,ar,امسح الألوان وخطوط الفرشاة وابدأ خطوات الرسم من جديد. يمكنك التراجع قبل مغادرة هذه الصفحة.,,,,,549be6853664438705d148276889545e6c234c476a7f8a4d0d180e6a37485447
+cancel,ar,إلغاء,,,,,1e782daf6e265c209da2509ff882f11ad16729c52c9f64419a2ee6f466161373
+erase,ar,ممحاة,,,,,80e0b688aa9b646813bd640153f3b7561391525d4487eb1bc40e7abb00f7760e
+undo,ar,تراجع,,,,,7494bf8b13132fd4f1bedce42c7cf4eb4ef56b9cd3a324320e22fad178ba2a5c
+redo,ar,إعادة,,,,,b4539abc4532dc64a69e65bb7b5adb43c8dedd14c9c8166144411ff0c9e78cae
+size,ar,حجم الفرشاة,,,,,8cf849bc1a50427459859174b94c34ddf4660b1f1b66bf83fcc3c05d731da162
+resetZoom,ar,ملاءمة الصورة,,,,,17e7920cf620b679fd7db5249f7e33b043ebcd0df1edf7ca6bd1431aef164b21
+gateTitle,ar,لحظة للوالدين,,,,,4f57ab176bc134052373f47753107fb2cb2f626db43037b1cf16f9f2e31999ff
+gateHelp,ar,اطلب من شخص بالغ فتح هذه المنطقة.,,,,,8c9c26b65ab78d93c7fa7125d4296cce7f7504ffec915b3330ebf3f52e87907c
+gateSetup,ar,إنشاء رمز للوالدين,,,,,d1647c48f19b7dac8e16b845cc2c5ebc98b33e83600d4143581169081a0f2a09
+gatePin,ar,رمز الوالدين,,,,,f11c37089cf88eef094f68dcad82790613f7c5d0dfaf49292f8a0be798b377ba
+gateConfirm,ar,تأكيد الرمز,,,,,34d1e8fd8259356bcbe36b8c032be8bdae8109e75554751850364ba7dc9458fa
+gateWrong,ar,الرمز غير صحيح.,,,,,a304e236963cb4d2d2f2501783343de6efdaa3e915b6a83fe1f57bc6e60d2a1d
+gateChallenge,ar,أدخل الإجابة للمتابعة,,,,,e23a9d6209018254311f68203d312b8fe7e5ff78e8d3b2df8d72f1c144a6a59a
+progress,ar,التقدم في التعلم,,,,,f24f1bf87ab3c8afc546726cf4464ca814b221901083fdcaa70be2bfaaa69e90
+completed,ar,مكتملة,,,,,c63a0b3585983bfca70e579c9c1441a7ba3adf2fc3dbb8891c61a9c5a75a887a
+privacy,ar,الخصوصية,,,,,3f98c9f4cc4879f883dde639ffba9c7ca3944325707907581db5e1045d657941
+export,ar,تصدير الرسم,,,,,2f18ab56f5ac3fbec4d85424eea28244acbc1a43224fd0c491f8ac9382c23294
+localPrivacy,ar,تبقى الملفات والتقدم والرسومات على هذا الجهاز. تستخدم الإعلانات Google Mobile Ads مع حماية الأطفال. لا مشتريات ولا حسابات ولا تحليلات. الأصوات مولدة ومضمّنة للعمل دون إنترنت.,,,,,7da797276ecf66f6cc745862f530427d74ded590a27a394db19267553fcc0a35
+privacyOptions,ar,خيارات خصوصية الإعلانات,,,,,1feaf30e461f8ff8c95f5742d634ee15a00aa6bf7906ff0c0bb90b6a91dc75ab
+support,ar,الدعم وسياسة الخصوصية,,,,,e039c6ee168581d80d837ff427ff7d81ccaf483db75792bb1755461d6d40dc5e
+changePin,ar,تغيير رمز الوالدين,,,,,90e5e54884e884b9bccf56abf0b944b6254051523e0ee4ad117d0fb2e0c36b23
+listenAgain,ar,استمع إلى اللحن,,,,,67493987f66f8f5d0637695c76cf610ae33a9ddb796df629f7099221d8cf1997
+step,ar,خطوة,,,,,9fe576fac04c6a33df619d2a675e4379fab2dcb214c5bf9e9276da8d93401514
+ad,ar,إعلان,,,,,749b16ddc14e73524931c087d785ed380216cae69ffaf87efb1637edb2e94e42
+saved,ar,محفوظ على هذا الجهاز,,,,,3145cecfb0014dbf33c38b74814cf7bb5e68300427685c36b8d6f4cea6ae1c23
+chooseExport,ar,اختر رسمًا لتصديره,,,,,53a9db377c013edefe6c3786072aa8fdbbe243f8e53689662fb444b899a2bdb0
+pinNote,ar,احتفظ بالرمز. إذا نسيته، فإن إعادة التثبيت تمسح البيانات المحلية.,,,,,d97e14a2f94b3184b4b66019df183afbe37086faa728282e9853a07e84c54ee5
+interfaceLanguage,ar,لغة الواجهة والأسئلة,,,,,74a7bee4b99cc9416f094febb7295d23c8da954f91748e7c21c41ab4d3971cfd
+learningLanguage,ar,اللغة التي تتعلمها,,,,,8299fc253bd23605b150e51e5208471a15a99291205a5038447b982a91f96cac
+followInterface,ar,مثل لغة الواجهة,,,,,0c154f36e251b7a750e99811a3904dd1629253e426b485e67f6ea725d0e67fad
+learningLanguageHelp,ar,تستخدم دروس الحروف والمفردات والكتابة هذه اللغة لهذا المستكشف. أما التعليمات والأسئلة فتستخدم لغة الواجهة.,,,,,e35b47a8429773936cabc86584bd9a9098105843cf0881fb4f66245027fd2905
+credits,ar,المساهمات والتراخيص,,,,,f5c4c254fb177084bc5e83357b1ec166d24ee3bed7fcdf3d6eac56aef1f3499f
+worldCount,ar,عوالم,,,,,d51919a51234416aca6bfbb829ba44ab96958e391aaf885bb16c64d8df03f7f2
+answer,ar,الإجابة,,,,,b7b7896324bc3a67b26bd0079021938f63ab0d5886141a9c2072952e201fa5b5
+pinLength,ar,استخدم ستة أرقام وأكد الرمز نفسه.,,,,,96eac8dc0b183928ef1a8faf51bfb42aa7cfea6e73c80d1be2119d8600c32f60
+gateWait,ar,انتظر دقيقة ثم حاول مجددًا.,,,,,23c7b9fc463c0a5661ea9263c9b178de72d3db4d6c08348593d69610dfe60a8f
+up,ar,أعلى,,,,,cddf96700a069d384162a82bf3d16fc57a1aab76d68e6a3c07bd7b7dfa3b6080
+down,ar,أسفل,,,,,ffeba7ddb6bbfd27b7fa8347b8060d7b5f3422437ac896ebbb0de536086138c5
+left,ar,يسار,,,,,dcc89773f0a4ea8c8d1219a079a09d6f748b2c3ecebbf84daaaf8e546b5392ec
+right,ar,يمين,,,,,4b731a8bec81291c0c0be04f12207cc46936e3917572430985b3bb66eb2cf92f
+pikoFinished1,ar,أنهيت التحدي! احتفل بما أنجزت.,,,,,b747bf672238e8576526854794e9be37de132527589c4a2e79bd3e1ef494e4e0
+pikoFinished2,ar,انظر إلى ما أنهيته. أحسنت!,,,,,b0dc20fc59e59200396cd9470889a79622948fabcc2b5640192e98b53f1f435f
+pikoFinished3,ar,أنهيت مغامرة صغيرة أخرى!,,,,,978fd61c0d5b5f14e3d657301bb74e88f4673b8a34fc870963aaa49abae12a2e
+pikoFinished4,ar,هذا يستحق رقصة فرح صغيرة!,,,,,fb5400ad8c2ebd85842849f4baa07d17b0a29b36ae3ca0468261bffa88f5d281
+pikoFinished5,ar,وصلت إلى نهاية التحدي. مرحى!,,,,,ffe943cb2363afad57fd481d8611de921c7c9268800a9581a6c0bd643844f1e9
+pikoFinished6,ar,ابتسامة كبيرة لتحديك المكتمل!,,,,,3d64f524401aa174461efabfadd0711a14187180fdb66a63bedbeead1440642b
+pikoFinished7,ar,أحسنت! استمتع بهذه اللحظة.,,,,,bfe43168b6ef1207cf4c5ad5a529697b92f540e6a6379af75708df279d4b90cc
+pikoFinished8,ar,أنهيت التحدي! بيكو يحييك بجناحه!,,,,,aa1d467cf376e6e9282dd33b3552c29bffd891df017dbfa7d705e9b5f48087d1
+pikoFinished9,ar,يا لها من نهاية جميلة لمغامرتنا!,,,,,36166223efa2c9f3a490395c75231a80a3e1b8bf5508527059d789b336c4e5e9
+pikoFinished10,ar,جهدك مهم. أحسنت!,,,,,1b4d860d61ee37f8fddc5e86989274bec77e76abf7d42aeb2c04e61febeb5fd8
+pikoFinished11,ar,المحاولة جزء من التعلم. أنهيت هذه الخطوة!,,,,,2762d4affdf605ce219d1023df7300feb8d0e8923ed23f8e8a5c5740c4a840d4
+pikoFinished12,ar,قد يقود جهد صغير إلى إنجاز جميل!,,,,,8e93585dff9cd6f9b325d354dd842f8d57e752841da133f68771da9e597c59c1
+pikoFinished13,ar,أحسنت بمشاركتك في هذا التحدي!,,,,,dbdb496f2db1af4b5bd90a0940d00a364d2e7e9c2ad8d7b4e7babec302a802ff
+pikoFinished14,ar,خطوة بعد خطوة، نتعلم بطريقة جميلة.,,,,,b856ccddbed14e173d3fd2160f22ef62a7483043e10c4e955e905c2665530caa
+pikoFinished15,ar,جربت هذه المغامرة. هذا يستحق الاحتفال!,,,,,a434c34826a0ce89d0d1d9ef8882db6972d3e0189c1e1e7aac59ef4637b32e24
+pikoFinished16,ar,كل محاولة فرصة للتعلم.,,,,,32671caea9218daf61bbde321b33faef5e06c1792f09334f577ab78ef95bb309
+pikoFinished17,ar,التعلم على مهل يناسبك. أحسنت!,,,,,668e33e022039deb5340b5204a704ba8ed7a6a78ec271c481efacb40bf5a5ab4
+pikoFinished18,ar,خذ لحظة لتتأمل ما أنجزته.,,,,,14fe9abd8eb6d0c8b8d0307016c749beec5826bd7bc778985a054c009bda177e
+pikoFinished19,ar,الخطوات الصغيرة تستحق ابتسامة كبيرة!,,,,,12d74248539fb95e4354f84a198c7b510683a75bac6672cf84464986b5133db8
+pikoFinished20,ar,فضولك مرحب به هنا!,,,,,808e31a79be998bf9ab066923c51ce0cd1f71e753f6c3adf9b62e6a62b597dcb
+pikoFinished21,ar,هناك أشياء جميلة كثيرة تستحق الاكتشاف.,,,,,6c4caa3d5b54ffed63635d1b3e89d667156b6d150f0aafafb99b0fb8e7ec50cf
+pikoFinished22,ar,أسئلتك تساعدك على الاستكشاف. احتفظ بها!,,,,,5158da2493a6a9b4359b4503c1ee3096b2da412794044c25c26d513a63e40276
+pikoFinished23,ar,التساؤل عن كيفية عمل الأشياء بداية جميلة.,,,,,42150fd280cdb543ed5fe479b9d597e3fbea08fa191d9735422c03f32ebc7d4d
+pikoFinished24,ar,مغامرة مكتملة وإمكانات كثيرة!,,,,,a8274bb7f297a8531da4b85b69465decceef5e7b14b2ba50cf8147fdcd7a5e2d
+pikoFinished25,ar,أحب الاستكشاف معك. أحسنت!,,,,,124ad56739d6e78b45ff7ea23196feb8f817d6caf34b9b19668944414b2f3e9f
+pikoFinished26,ar,قد يفتح سؤال صغير باب مغامرة كبيرة.,,,,,d04d8bc65e4b1bc219fecc020050f3c1cd9d8f18985051d77d9277e22673e94d
+pikoFinished27,ar,هناك مساحة لكل أفكارك الجميلة.,,,,,2eea19da7efa21cf086d6ce69f0984a045f62ee2c7da4533d15015e3aeee5b2d
+pikoFinished28,ar,للتعلم طرق كثيرة. يمكنك اكتشاف طريقتك.,,,,,e7395609a352749152c3bf7050165c2ba7002066370223c3ae3d7f8d65058969
+pikoFinished29,ar,انتهت هذه المغامرة، ويمكن لفضولك أن يستمر!,,,,,d87ce55c9ced8d815c45cb47d74bcfb43b184debbbdaf9d9486953fac0c0fcf3
+pikoFinished30,ar,لأفكارك مكان في عالمنا الملون.,,,,,f34a91521dab57920bea275667a265635b13ec6cdedce19f008be7b46b4f1ae4
+pikoFinished31,ar,هنا مساحة لخيالك كي ينطلق!,,,,,41b5c30d1f37e44f4b52c2c59abdf651ed6a92ee7d1737188507f75279f93cfa
+pikoFinished32,ar,يمكنك أن تفخر بما أنهيته.,,,,,69700aad0afcf85dfaca2fb3a7651d6728b2581e9e44659e14a1c26877cc76f9
+pikoFinished33,ar,طريقتك في اللعب مرحب بها هنا.,,,,,02f1b18285081249825e01abef3ca5653522a30abd01ed64eee1e0ddc838207f
+pikoFinished34,ar,يا لها من لحظة جميلة للاحتفال بأفكارك!,,,,,e21838f22fe4d0b927dc824769826e1871985a2cd938ef240b1ecdd3a780ad37
+pikoFinished35,ar,هنا مكان للأفكار الكبيرة والصغيرة.,,,,,9fcca511c427afa2d26dc1f0c7d0f3685031bac188d1dc0ae03fb626d41ae35f
+pikoFinished36,ar,هناك أكثر من طريقة للإبداع.,,,,,9791cc9327ca81a10422977a471e1b50e7465586ca69e55890f6f978da653fc3
+pikoFinished37,ar,تضيف لمستك الخاصة إلى كل مغامرة.,,,,,38269ba8fb4d00777d5fcd0b6714a8d3dc9f9745cc55e5e58e25d7a61210ca00
+pikoFinished38,ar,خيالك مرحب به دائمًا، أيها المستكشف الصغير.,,,,,be0121c1595cfb254c6ecfa2f3c70eff92a71c67a8c83052c289b886eb664020
+pikoFinished39,ar,قد تبدأ الأفكار صغيرة. امنح أفكارك مساحة لتنمو!,,,,,3f7e7188ae2fa7bea495d7fa817103e45b9b08311e8a86d2cd12ba8d8d44a4c2
+pikoFinished40,ar,التعلم واللعب ينسجمان معًا. أحسنت!,,,,,0330e8ee135ae6e61d0c6de52e88af8b2af4d792f06aea1ae1f73ee28bc90bc6
+pikoFinished41,ar,أنهيت جزءًا صغيرًا من رحلتك في التعلم.,,,,,5855c04d95d747350bdd4cb8b34da66564e1332ab0c9f29917d38b5af1d36c21
+pikoFinished42,ar,كل تحد مكتمل لحظة تستحق الاحتفال.,,,,,10f52efd07134587b7146db92d26d85d34bf8200c1eb9a0aabf0f16be4dc4564
+pikoFinished43,ar,أحسنت! يمكنك التعلم دون استعجال.,,,,,de685f10fbead113c0865e8b806d6675864a4c937da28e95babcd574586620d1
+pikoFinished44,ar,هناك دائمًا مجال للتعلم، حتى بعد الانتهاء.,,,,,b6e073ee604662537a81c3c3ac86c0d9101c895ea00e9f3ea71e222afe757ab2
+pikoFinished45,ar,تحد مكتمل وبيكو سعيد!,,,,,e64ddb86d19067b0d658f5f75abbf59041f744c8df8850bf92612d98ef5baed4
+pikoFinished46,ar,يمكن أن نتعلم في لحظات صغيرة كهذه.,,,,,4e1a469ec7efabb51059f7d6beef02ea248779c93e6a1b23b1952a08cf33ffce
+pikoFinished47,ar,خصصت وقتًا لمغامرة. رائع!,,,,,5740530f626066094f6245e510cca4641ab473728682768a69f70713afc9e9a6
+pikoFinished48,ar,خذ ابتسامتك معك بعد هذا التحدي.,,,,,12063a7acba9906bcdcefb82ba49dc833cacef95b55cc37990718a036678a2d5
+pikoFinished49,ar,هذا الإنجاز الصغير يستحق رفرفة فرح!,,,,,c6a99eabc6b2d6a0e38842bec99fb041c013c70109e53c23e38ae87ae3bdb795
+pikoFinished50,ar,لا حاجة للعجلة. أنهيت التحدي على مهل.,,,,,bcbd9c382b798d428abfd3943eb0b84c1fed57971e479346f2d2eb0e69e97c1d
+pikoFinished51,ar,المحاولة بداية صغيرة شجاعة.,,,,,64509bad0985d8efcb0e808317a8234cfa42da32819e37390a1498ed651d0a52
+pikoFinished52,ar,لا تحتاج إلى الكمال كي تستمتع بالتعلم.,,,,,c9b7ccf514e97a4ba6381cd02553c3b954af1631104147907fa28afc7f6f2a2b
+pikoFinished53,ar,قد تساعدنا الأخطاء على اكتشاف طريقة أخرى.,,,,,dea4f90caeb899f277c7a780e1a842995be5ce15129b56606a05ed34368f5980
+pikoFinished54,ar,أحسنت! طلب المساعدة جزء من التعلم أيضًا.,,,,,375c3db32cd0d00813af3be4da50abf9686a9cf8a18779acdd4d2d32275dc692
+pikoFinished55,ar,قد تأتي محاولة جديدة بفكرة جديدة.,,,,,d500adae75d5926520c748a007f93f187ed3c87a3e76136b6497c326ec7909e4
+pikoFinished56,ar,يمكنك الاحتفال بالنهاية، أيًا كانت طريقتك للوصول إليها.,,,,,68f0e256c0eeb833b6030b64fa165fcbe9e2e418ca7efe6d55147c45f9f4369d
+pikoFinished57,ar,التعلم يحتاج إلى تدريب، ولكل محاولة مكانها.,,,,,6335e4afa7a88f0078e4beaee615de67c56c71f82d0d21c99bcffe932c002323
+pikoFinished58,ar,يمكنك التعلم بالسرعة التي تناسبك.,,,,,adebe45e59fdeae40d5cb7de42e89e766131e22a6f992c5bb388e2dd64178a2b
+pikoFinished59,ar,جهدك يستحق الاهتمام، أيها المستكشف الصغير.,,,,,d39fa50c74741a584ceb06bdad7d2e7e7d2e27a3155c55d18851e53e80fa0363
+pikoFinished60,ar,مرحى! وصلنا معًا إلى نهاية هذا التحدي.,,,,,49e726fc1c2c7ae8323594239d2dcffa40a8a90e9e813a46e874e0090b409d68
+pikoFinished61,ar,بيكو يحرك جناحيه فرحًا من أجلك!,,,,,348dd97c00f91d895a4ac7190c68cc6bc7e39ef56758c68675bd33bec1a54618
+pikoFinished62,ar,تحية فرح من طائر صغير لمغامرتك المكتملة!,,,,,700be154f9d3daca354e45fb844ef09eff7a7bd95951c3ba0306dcde01b13dee
+pikoFinished63,ar,أحسنت! ريشاتي ترفرف فرحًا.,,,,,0564ee3241d12a96560d165788294709fc731c1750deafa83628a4bf0706eb07
+pikoFinished64,ar,أنهيت التحدي! بيكو يحتفل إلى جانبك.,,,,,7b47d9aa4bab5a60fb939f81e9b9530da0ceba29900420fc326978a9f5d08a46
+pikoFinished65,ar,لمغامرتنا الصغيرة نهاية سعيدة!,,,,,575e9d5c1798a634457ae94886057af97d320996012c570230969f80f3597e2e
+pikoFinished66,ar,كانت مغامرة جميلة شاركتها معك.,,,,,a4b5e26e9e9cfd7fb30a991dc18bd43aff89181da7c63319c448e1dd075c57ed
+pikoFinished67,ar,زقزقة فرح لتحد أنهيته بنجاح!,,,,,89972e4f8b2ee6e80f6b08875c9c73d06efa32526915fafce795d5f1215b7d85
+pikoFinished68,ar,لك مني ابتسامة طائر كبيرة. أحسنت!,,,,,44b2255abdef32c78370b4c61e7113ad4a32cbf46b7a8ccdc5df8673f55017a4
+pikoFinished69,ar,جناحا بيكو مستعدان للاحتفال!,,,,,c5bb1d68cb2bb1ca87d485d155c3d368fb780de410e1bb6b0e5d4c7d03dcd261
+pikoFinished70,ar,استمتع بتحديك المكتمل. الخيار التالي لك.,,,,,660c6f9cac780fcfede7b6884cad756f1c766398db26dc1d4f396d349e129979
+pikoFinished71,ar,أحسنت! استراحة صغيرة مرحب بها أيضًا.,,,,,6df1463ec3283b0133301614ed9b94ba99eaf6bc9775c75deed12a0e9cfba7ca
+pikoFinished72,ar,يمكنك التوقف قليلًا والاستمتاع بما أنهيته.,,,,,d064b0a0477845bb6a818a9eded0f8e252c70fec60c1cdeefc542cae72bfe409
+pikoFinished73,ar,نهاية سعيدة! اختر الخطوة التالية عندما تكون مستعدًا.,,,,,fabf0828eb4b6285ebd08f3c280bdfbbbecb9e8d60b1ef7f6f1b0e5da5290be0
+pikoFinished74,ar,أنهيت هذه المغامرة. قد يكون التمدد قليلًا مريحًا!,,,,,80782bc478c792e0d70cc06856d40f0c53f075f0cbb6ee7a9c89335cfe690f87
+pikoFinished75,ar,احتفل بطريقتك. هذا الإنجاز لك!,,,,,68bce24e05fb6d9959a8edb231297b82c834a6382ae35123d5af1447e34c289f
+pikoFinished76,ar,يمكنك مشاركة هذه اللحظة السعيدة مع شخص بالغ.,,,,,28fc14e6b01edfdeb6cf918c036f366bc6bb8270471cd6db19d5c90d6addd2ee
+pikoFinished77,ar,أحسنت! يمكنك العودة إلى اللعب في وقت آخر.,,,,,62c7a657a755e1214a573d6dc46daf1e2a1cbc6c7bcdf9ded8c0755c4f408168
+pikoFinished78,ar,انتهت مغامرتك. استمتع باستراحة صغيرة سعيدة.,,,,,783be298298cba83e81bf67bf79e2d3d78619fe7667135557da9aff280ed0c89
+pikoFinished79,ar,أحسنت! اختر ما يسعدك أن تفعله بعد ذلك.,,,,,88b415a928367269bbf4272a8572f550fe632ea8a1aa182c27eb55ca2b77904b
+pikoFinished80,ar,مغامرة صغيرة مكتملة وابتسامة مستحقة!,,,,,1b4d172de6d121dbe26bdea8fe7af8a2fee13bb8f0427046aa56a05514d2385e
+pikoFinished81,ar,أحسنت، أيها المستكشف! إنجازك يستحق تحية فرح.,,,,,26b7fee6894dc248af4783dca1635bc412af2aa1d74fbc0d1b5c5f6330748de4
+pikoFinished82,ar,أنهيت هذا التحدي. هيا نستمتع بهذه اللحظة.,,,,,6493b2cf9f058498f2bc8000815ee3826f81877902b26ef978669cfc133f49ac
+pikoFinished83,ar,مرحى لمغامرتك في التعلم!,,,,,0cab7b33e3babda5e6e35eb710b55df56e8d642bffa534410f44ee40949cc9ba
+pikoFinished84,ar,تحد آخر مكتمل. يمكنك أن تسعد بذلك.,,,,,931f67520520dec1365e205017674e54fcfc9d279f205c6e1b376157a9c8f02d
+pikoFinished85,ar,أكملت هذه المغامرة حتى نهايتها. عمل جميل!,,,,,6f2fdc3ca1eac7eabb36484fed46826b270bac049b29df65df1249a40e1e65ac
+pikoFinished86,ar,احتفال صغير بالجهد الذي بذلته!,,,,,ad5801bb07e13c6e4a84ba89c03231142180f95978e764a229d4d5664693650e
+pikoFinished87,ar,ما أنهيته اليوم يستحق ابتسامة.,,,,,e9b2493361ae2828c56cc037be76dc9b8ee295d466bf42c128470469729ed829
+pikoFinished88,ar,أحسنت! لهذه المغامرة مكان في ذكرياتك السعيدة.,,,,,1dd74a78462694395e0b8108edf566bbce2aebbe1290fa8a1ad343404169a0af
+pikoFinished89,ar,نهاية وابتسامة وبيكو صغير سعيد!,,,,,cedad013e4495bdb21f87aa6319cf607e266369aff6ef2af376f341282205449
+pikoFinished90,ar,أحسنت! هناك مساحة لفكرتك التالية متى أردت.,,,,,c83418faa72d82c0671bae9c67b02d8df28467486533de9439beb8d674f3f638
+pikoFinished91,ar,أفكارك وأسئلتك تجعل الاستكشاف ممتعًا.,,,,,d0e2616aa15726cfd7a14164c0916e27d967314e933d57924e0909fd6c656bb3
+pikoFinished92,ar,أنهيت هذا الجزء. لا داعي للاستعجال في الجزء التالي.,,,,,cab5ff82477c61124d111483e57dcce14c67ef8c54c589d7c7504f43038fccaa
+pikoFinished93,ar,قد تكون المغامرة المكتملة بداية لفكرة جديدة.,,,,,86921a00b0ab8bf784dab30f290bca51a71eca171c5187f5742e3c4e3ea89acd
+pikoFinished94,ar,أحسنت! في التعلم مكان للمرح والاستراحة.,,,,,a13b9dc7640d33f16d38506e865c8e180e55982d818ede0ce1168fd16b66a326
+pikoFinished95,ar,تحديك المكتمل جزء جميل من يومك.,,,,,529bd6bf1d5a1a473b5ac1ac74034d4f04a4f98bfe80cbf46883b6d5c019a774
+pikoFinished96,ar,شكرًا لمشاركتك هذه المغامرة معي. أحسنت!,,,,,6f6eb3685395215575ce81cabe0899e3e7a2bc17b83745f632b9a36a0949e2f4
+pikoFinished97,ar,أنهيت التحدي، أيها المستكشف الصغير. استمتع بلحظتك!,,,,,c70085193792c2b49d2c3c768774683f6f8d5b0b54b02fb41d0acec298a50bf9
+pikoFinished98,ar,تحية فرح دافئة من بيكو لما أنجزته!,,,,,04c3c136d2758c754f77150469eb8443f743301e29eab3426dfdbf34d90d8b62
+pikoFinished99,ar,أنهيت التحدي! استمتع بمغامرتك في التعلم.,,,,,b1cd439a913986b6bf195c9a61ec8365383b5761c8a173961c125f05c425c7d5

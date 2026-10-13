@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pikolumi English pronunciation review</title>
+<style>
+@font-face{font-family:Nunito;src:url(../../../assets/fonts/Nunito.ttf)}
+@font-face{font-family:Arabic;src:url(../../../assets/fonts/NotoSansArabic.ttf)}
+:root{color-scheme:light;--ink:#344850;--teal:#006b75;--paper:#fbf7ee;--line:#c8d3d3;--wrong:#943b34}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 Nunito,system-ui}
+.page{max-width:1400px;margin:auto;padding:28px 24px 60px}header{max-width:820px}h1{font-size:36px;line-height:1.2;margin:0 0 14px}h2{font-size:25px;margin:30px 0 12px}p{margin:12px 0}a{color:var(--teal)}
+button,input,select,textarea{font:inherit}button,.file-button{min-height:48px;padding:10px 16px;border:1px solid var(--teal);border-radius:8px;background:white;color:var(--teal);cursor:pointer;font-weight:800}
+button.primary{background:var(--teal);color:white}button:disabled{cursor:default;opacity:.55}button:hover:enabled,.file-button:hover{filter:brightness(.94)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible,.file-button:focus-within{outline:3px solid #007e91;outline-offset:3px}
+.toolbar{position:sticky;top:0;z-index:2;background:var(--paper);border-block:1px solid var(--line);padding:16px 0;margin:26px 0 20px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.toolbar strong{font-size:21px;margin-right:auto}.file-button{position:relative;display:inline-flex;align-items:center}.file-button input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%}
+.filters{display:flex;flex-wrap:wrap;gap:16px;align-items:end;margin:18px 0}.filters label{display:flex;flex-direction:column;gap:5px;font-weight:800}.filters label.search{flex:1;min-width:220px}
+input[type=search],select,textarea{min-height:48px;border:1px solid #6d8084;border-radius:8px;padding:10px 12px;background:white;color:var(--ink);width:100%}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,290px),1fr));gap:18px}.recording{background:white;border:1px solid var(--line);border-radius:12px;padding:18px;min-width:0;display:flex;flex-direction:column}
+.recording.flagged{border:2px solid var(--wrong);padding:17px}.file-name{font-weight:800;overflow-wrap:anywhere}.category{font-size:14px;color:#50676e}
+.script{font:32px/1.75 Nunito;margin:16px 0;overflow-wrap:anywhere;text-align:left}.script.short{font-size:48px;text-align:center;min-height:92px}
+audio{width:100%;min-width:0;margin:auto 0 14px}.flag-control{display:flex;gap:12px;align-items:center;min-height:48px;cursor:pointer;font-weight:800;color:var(--wrong)}.flag-control input{width:24px;height:24px;accent-color:var(--wrong);flex-shrink:0}
+.note-label{display:block;font-size:15px;font-weight:800;margin:10px 0 5px}textarea{resize:vertical;min-height:110px}.updated{color:var(--wrong);font-weight:800;font-size:15px}
+textarea[data-note]{font-family:Nunito,Arabic,system-ui;line-height:1.8}
+.status{min-height:28px;margin:12px 0;color:#50676e}.status.error{color:var(--wrong)}[hidden]{display:none!important}.empty{border:1px dashed var(--line);padding:28px;font-size:20px}
+.report{margin:20px 0;border:1px solid var(--line);padding:18px;border-radius:8px;background:white}.report textarea{height:220px;direction:ltr}.report button{margin-top:10px}
+details{border-top:1px solid var(--line);padding:20px 0;margin-top:36px}summary{cursor:pointer;font-size:23px;font-weight:800;min-height:48px}details img{max-width:100%;height:auto;margin:16px 0}
+.lesson-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}.lesson-grid article{padding:16px;background:white;border:1px solid var(--line);border-radius:12px;min-width:0}.lesson-grid p[dir=rtl]{font:28px/1.7 Arabic}.lesson-grid audio{margin:10px 0}
+@media(max-width:600px){.page{padding:20px 16px 40px}h1{font-size:29px}.toolbar{position:static}.toolbar strong{flex-basis:100%}.toolbar button,.toolbar .file-button{flex:1;white-space:nowrap}.filters label{width:100%}.filters label.search{min-width:0}.script{font-size:28px}}
+</style>
+<div class="page">
+<header><h1>English pronunciation review</h1>
+<p>Listen when you’re ready. Tick <strong>Wrong pronunciation</strong> beside any recording that needs correcting. Add a note if you want, then copy or download your selected list.</p>
+<p><a href="../PREVIEW.html">App previews</a> · <a href="index.html">All languages</a> · <a href="en-narration-review.csv">Recording checklist</a> · <a href="#lessons">Lesson and handwriting review</a></p></header>
+<div class="toolbar">
+  <strong id="selected-count" aria-live="polite">0 selected</strong>
+  <button class="primary" id="copy-report" disabled>Copy selected list</button>
+  <button id="download-report" disabled>Download selections</button>
+  <label class="file-button">Load selections<input id="import-report" type="file" accept=".json,application/json" aria-label="Load previously downloaded selections"></label>
+  <button id="unselect-all" disabled>Unselect all</button>
+</div>
+<p id="storage-status" class="status"></p>
+<p id="action-status" class="status" role="status" aria-live="polite"></p>
+<div class="filters">
+  <label class="search">Find a recording<input id="search" type="search" placeholder="English text or filename"></label>
+  <label>Category<select id="category"><option value="all">All categories</option><option value="letters">Letters and long vowels</option><option value="syllables">Short vowel sounds</option><option value="words">Vocabulary</option><option value="tracing">Handwriting words</option><option value="instructions">Instructions and feedback</option></select></label>
+  <label>Show<select id="view"><option value="all">All recordings</option><option value="selected">Only selected</option></select></label>
+</div>
+<p id="visible-count"></p>
+<noscript><p>Enable JavaScript to select recordings and save your list. Audio still starts only when you press Play.</p></noscript>
+<main class="grid" id="recordings"><article class="recording" data-file="letter_0.mp3">
+<div class="file-name">letter_0.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter A.</p>
+<audio controls preload="none" aria-label="Listen to letter_0.mp3" src="../../../assets/audio/en/letter_0.mp3?v=c6fc699e774e51cea700aac46b1572d5d60856190b392c37972fdc1d71e9f426"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_0.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-0">Correction or what sounds wrong (optional)</label>
+<textarea id="note-0" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_1.mp3">
+<div class="file-name">letter_1.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter B.</p>
+<audio controls preload="none" aria-label="Listen to letter_1.mp3" src="../../../assets/audio/en/letter_1.mp3?v=1cb769176d667175c9691f3f4e8bfcd046bc7b98cb4260b74b44bd71130c4d2f"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_1.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-1">Correction or what sounds wrong (optional)</label>
+<textarea id="note-1" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_2.mp3">
+<div class="file-name">letter_2.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter C.</p>
+<audio controls preload="none" aria-label="Listen to letter_2.mp3" src="../../../assets/audio/en/letter_2.mp3?v=52c5e2090235a873458bcb6cbdd2ee8c95a87da41554f9dd729fafbd7847a133"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_2.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-2">Correction or what sounds wrong (optional)</label>
+<textarea id="note-2" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_3.mp3">
+<div class="file-name">letter_3.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter D.</p>
+<audio controls preload="none" aria-label="Listen to letter_3.mp3" src="../../../assets/audio/en/letter_3.mp3?v=7862d7dd8590ab64e494f1a5f2c855a42881a92e4d4f9193627f00dcddaac540"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_3.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-3">Correction or what sounds wrong (optional)</label>
+<textarea id="note-3" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_4.mp3">
+<div class="file-name">letter_4.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter E.</p>
+<audio controls preload="none" aria-label="Listen to letter_4.mp3" src="../../../assets/audio/en/letter_4.mp3?v=4d3289449bd8af8220ab6b4d6730a0de76d40f40f7bf6e70186ed7e7f4536ad1"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_4.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-4">Correction or what sounds wrong (optional)</label>
+<textarea id="note-4" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_5.mp3">
+<div class="file-name">letter_5.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter F.</p>
+<audio controls preload="none" aria-label="Listen to letter_5.mp3" src="../../../assets/audio/en/letter_5.mp3?v=aadd9718f5c050cb7a6205128774034cccc44ed3ec2fb1c71578f9c8e6c853c3"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_5.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-5">Correction or what sounds wrong (optional)</label>
+<textarea id="note-5" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_6.mp3">
+<div class="file-name">letter_6.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter G.</p>
+<audio controls preload="none" aria-label="Listen to letter_6.mp3" src="../../../assets/audio/en/letter_6.mp3?v=5415e5ba86f1aaadc4e76e8aad47bbf28393eb7f98c9703e55756b259913829e"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_6.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-6">Correction or what sounds wrong (optional)</label>
+<textarea id="note-6" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_7.mp3">
+<div class="file-name">letter_7.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter H.</p>
+<audio controls preload="none" aria-label="Listen to letter_7.mp3" src="../../../assets/audio/en/letter_7.mp3?v=a91101554f54c8040e7d0feff8ba09ee987d8d00044af942d23afb3b0fc750eb"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_7.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-7">Correction or what sounds wrong (optional)</label>
+<textarea id="note-7" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_8.mp3">
+<div class="file-name">letter_8.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter I.</p>
+<audio controls preload="none" aria-label="Listen to letter_8.mp3" src="../../../assets/audio/en/letter_8.mp3?v=d54e3b39cef82d889792b6fce8bef4c1061a67e9ddf4bd1cb970631cf23adbc6"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_8.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-8">Correction or what sounds wrong (optional)</label>
+<textarea id="note-8" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_9.mp3">
+<div class="file-name">letter_9.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter J.</p>
+<audio controls preload="none" aria-label="Listen to letter_9.mp3" src="../../../assets/audio/en/letter_9.mp3?v=79c31fc4163cc3a32f131125e389a4ab250bae00fab551a3f5e34bad36d01977"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_9.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-9">Correction or what sounds wrong (optional)</label>
+<textarea id="note-9" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_10.mp3">
+<div class="file-name">letter_10.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter K.</p>
+<audio controls preload="none" aria-label="Listen to letter_10.mp3" src="../../../assets/audio/en/letter_10.mp3?v=3bab5726de72c94620aec7cfaeaa24d4751ae5ab7cd17ae109803ba53edd4827"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_10.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-10">Correction or what sounds wrong (optional)</label>
+<textarea id="note-10" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_11.mp3">
+<div class="file-name">letter_11.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter L.</p>
+<audio controls preload="none" aria-label="Listen to letter_11.mp3" src="../../../assets/audio/en/letter_11.mp3?v=1b5b7c268614e87906d6a7bc940689c4608c692eb0adf48f793469a97cd80081"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_11.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-11">Correction or what sounds wrong (optional)</label>
+<textarea id="note-11" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_12.mp3">
+<div class="file-name">letter_12.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter M.</p>
+<audio controls preload="none" aria-label="Listen to letter_12.mp3" src="../../../assets/audio/en/letter_12.mp3?v=90fc20b58d731b0ae6569f9be141f5b73186bbcc2ef0e6eb332b4d6f3d9a1e07"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_12.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-12">Correction or what sounds wrong (optional)</label>
+<textarea id="note-12" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_13.mp3">
+<div class="file-name">letter_13.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter N.</p>
+<audio controls preload="none" aria-label="Listen to letter_13.mp3" src="../../../assets/audio/en/letter_13.mp3?v=35c38f0ad5ba9571d370b1bedf2fbbf9e000d0d97c11f965c74e1a3c428aefc2"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_13.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-13">Correction or what sounds wrong (optional)</label>
+<textarea id="note-13" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_14.mp3">
+<div class="file-name">letter_14.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter O.</p>
+<audio controls preload="none" aria-label="Listen to letter_14.mp3" src="../../../assets/audio/en/letter_14.mp3?v=3bb3c866af79f500ad9f528edca42becd6c04c4c3481c0bd637bb604f27ef22c"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_14.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-14">Correction or what sounds wrong (optional)</label>
+<textarea id="note-14" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_15.mp3">
+<div class="file-name">letter_15.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter P.</p>
+<audio controls preload="none" aria-label="Listen to letter_15.mp3" src="../../../assets/audio/en/letter_15.mp3?v=f9105fb34303a895f29a651f0aaff12bd699ee798b0c94321eaf5b7b8f506a01"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_15.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-15">Correction or what sounds wrong (optional)</label>
+<textarea id="note-15" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_16.mp3">
+<div class="file-name">letter_16.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter Q.</p>
+<audio controls preload="none" aria-label="Listen to letter_16.mp3" src="../../../assets/audio/en/letter_16.mp3?v=e5813e1228c8d50158d3bf4b2910f271de6b163e56928ef1f8707619a84d8c48"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_16.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-16">Correction or what sounds wrong (optional)</label>
+<textarea id="note-16" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_17.mp3">
+<div class="file-name">letter_17.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter R.</p>
+<audio controls preload="none" aria-label="Listen to letter_17.mp3" src="../../../assets/audio/en/letter_17.mp3?v=ab1c5bfc4ca59a2ad52b73cbbe2215d7d0187fcd8b6ca60387e89d6d57e0f8fe"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_17.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-17">Correction or what sounds wrong (optional)</label>
+<textarea id="note-17" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_18.mp3">
+<div class="file-name">letter_18.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter S.</p>
+<audio controls preload="none" aria-label="Listen to letter_18.mp3" src="../../../assets/audio/en/letter_18.mp3?v=d3039ed959d6493fca2f8456aeb707c6a6ca694f83a06f54359ebfb673caf2b7"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_18.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-18">Correction or what sounds wrong (optional)</label>
+<textarea id="note-18" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_19.mp3">
+<div class="file-name">letter_19.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter T.</p>
+<audio controls preload="none" aria-label="Listen to letter_19.mp3" src="../../../assets/audio/en/letter_19.mp3?v=6775146aaa0ecd085884647ef60bbdb1ba2205b0e4517e0626a8ce304e26ebb2"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_19.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-19">Correction or what sounds wrong (optional)</label>
+<textarea id="note-19" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_20.mp3">
+<div class="file-name">letter_20.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter U.</p>
+<audio controls preload="none" aria-label="Listen to letter_20.mp3" src="../../../assets/audio/en/letter_20.mp3?v=f48608d2be23c8f16ef7ddbef5a4006b64c08906c97cb098f7ef2a6b67dac9da"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_20.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-20">Correction or what sounds wrong (optional)</label>
+<textarea id="note-20" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_21.mp3">
+<div class="file-name">letter_21.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter V.</p>
+<audio controls preload="none" aria-label="Listen to letter_21.mp3" src="../../../assets/audio/en/letter_21.mp3?v=c70028cbaa388f4e1c5885d74a6586a4629d97964bde81b97f4484f06c29dc3f"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_21.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-21">Correction or what sounds wrong (optional)</label>
+<textarea id="note-21" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_22.mp3">
+<div class="file-name">letter_22.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter W.</p>
+<audio controls preload="none" aria-label="Listen to letter_22.mp3" src="../../../assets/audio/en/letter_22.mp3?v=adfb72164f66dd85e5fcadf26683bf6adf6df97b88ee7e826f4d117e7fd7eb9f"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_22.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-22">Correction or what sounds wrong (optional)</label>
+<textarea id="note-22" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_23.mp3">
+<div class="file-name">letter_23.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter X.</p>
+<audio controls preload="none" aria-label="Listen to letter_23.mp3" src="../../../assets/audio/en/letter_23.mp3?v=5ed7546ff7209643f258cf188dcab25fc308d1b49338b13d431758fc6649d787"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_23.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-23">Correction or what sounds wrong (optional)</label>
+<textarea id="note-23" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_24.mp3">
+<div class="file-name">letter_24.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter Y.</p>
+<audio controls preload="none" aria-label="Listen to letter_24.mp3" src="../../../assets/audio/en/letter_24.mp3?v=7226021759e64a1a8d1af27b283046047d34768acec503edc1b529495dff90b3"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_24.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-24">Correction or what sounds wrong (optional)</label>
+<textarea id="note-24" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letter_25.mp3">
+<div class="file-name">letter_25.mp3</div><div class="category">Letters and long vowels</div>
+<p class="script" lang="en" dir="ltr">The letter Z.</p>
+<audio controls preload="none" aria-label="Listen to letter_25.mp3" src="../../../assets/audio/en/letter_25.mp3?v=ea6e7cd0052109f7ecf73f0db7b83a102726415f12b335071c0010b1c923f25c"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letter_25.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-25">Correction or what sounds wrong (optional)</label>
+<textarea id="note-25" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_airplane.mp3">
+<div class="file-name">word_airplane.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">airplane</p>
+<audio controls preload="none" aria-label="Listen to word_airplane.mp3" src="../../../assets/audio/en/word_airplane.mp3?v=ae01f4b30b25e8464ff57db5dff5ca40006a66fd265cd8758fe19f5058df2d80"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_airplane.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-26">Correction or what sounds wrong (optional)</label>
+<textarea id="note-26" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_apple.mp3">
+<div class="file-name">word_apple.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">apple</p>
+<audio controls preload="none" aria-label="Listen to word_apple.mp3" src="../../../assets/audio/en/word_apple.mp3?v=db36eb5202f4bd6c8867fa3a4359641586b15529d07b20ace5fdeb40b86cb896"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_apple.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-27">Correction or what sounds wrong (optional)</label>
+<textarea id="note-27" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_ball.mp3">
+<div class="file-name">word_ball.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">ball</p>
+<audio controls preload="none" aria-label="Listen to word_ball.mp3" src="../../../assets/audio/en/word_ball.mp3?v=10814a9f9663b02256cebf6f03aa63a884f98a144171187e368b341b9d6cba25"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_ball.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-28">Correction or what sounds wrong (optional)</label>
+<textarea id="note-28" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_banana.mp3">
+<div class="file-name">word_banana.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">banana</p>
+<audio controls preload="none" aria-label="Listen to word_banana.mp3" src="../../../assets/audio/en/word_banana.mp3?v=871665c222c3e8763c9291dcd3c7df5926e3a93fc34db1f6110631c055dce5c2"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_banana.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-29">Correction or what sounds wrong (optional)</label>
+<textarea id="note-29" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_bear.mp3">
+<div class="file-name">word_bear.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">bear</p>
+<audio controls preload="none" aria-label="Listen to word_bear.mp3" src="../../../assets/audio/en/word_bear.mp3?v=e8cd1f1a8f88d77d7248fb10111370ec68f030e1e0d2f76c1ec7595cd264b849"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_bear.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-30">Correction or what sounds wrong (optional)</label>
+<textarea id="note-30" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_bee.mp3">
+<div class="file-name">word_bee.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">bee</p>
+<audio controls preload="none" aria-label="Listen to word_bee.mp3" src="../../../assets/audio/en/word_bee.mp3?v=7a9a5559c88d4b9b22d74de43355bef044fb9c481e52091d35acaf4de6224ccb"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_bee.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-31">Correction or what sounds wrong (optional)</label>
+<textarea id="note-31" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_bell.mp3">
+<div class="file-name">word_bell.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">bell</p>
+<audio controls preload="none" aria-label="Listen to word_bell.mp3" src="../../../assets/audio/en/word_bell.mp3?v=fbe0e9fc84e7e9385306ebfb95e1cbce11144bcf71ca37bafb2f833ed050ac9a"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_bell.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-32">Correction or what sounds wrong (optional)</label>
+<textarea id="note-32" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_bicycle.mp3">
+<div class="file-name">word_bicycle.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">bicycle</p>
+<audio controls preload="none" aria-label="Listen to word_bicycle.mp3" src="../../../assets/audio/en/word_bicycle.mp3?v=234fcb16be63a216d944b2e9602fd114a196aa064b0a971dfc1cbc0f97013d83"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_bicycle.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-33">Correction or what sounds wrong (optional)</label>
+<textarea id="note-33" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_bird.mp3">
+<div class="file-name">word_bird.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">bird</p>
+<audio controls preload="none" aria-label="Listen to word_bird.mp3" src="../../../assets/audio/en/word_bird.mp3?v=87234089fd69f6811f7511d5984bb16803cf7a240c431260b71eadb7f960cebd"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_bird.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-34">Correction or what sounds wrong (optional)</label>
+<textarea id="note-34" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_boat.mp3">
+<div class="file-name">word_boat.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">boat</p>
+<audio controls preload="none" aria-label="Listen to word_boat.mp3" src="../../../assets/audio/en/word_boat.mp3?v=b380ac0f390d8d1b54737a8af1660038f4bc808afe1c89a867e1d1ba924932c9"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_boat.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-35">Correction or what sounds wrong (optional)</label>
+<textarea id="note-35" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_book.mp3">
+<div class="file-name">word_book.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">book</p>
+<audio controls preload="none" aria-label="Listen to word_book.mp3" src="../../../assets/audio/en/word_book.mp3?v=dae065191835f22cc176a076cf1234d21877b35e42b578ce1862328786333e63"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_book.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-36">Correction or what sounds wrong (optional)</label>
+<textarea id="note-36" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_bread.mp3">
+<div class="file-name">word_bread.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">bread</p>
+<audio controls preload="none" aria-label="Listen to word_bread.mp3" src="../../../assets/audio/en/word_bread.mp3?v=a7421c0f72faa14508401f0fe65603412f5216b574ae8cf1231ba1e1c3706fc2"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_bread.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-37">Correction or what sounds wrong (optional)</label>
+<textarea id="note-37" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_bus.mp3">
+<div class="file-name">word_bus.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">bus</p>
+<audio controls preload="none" aria-label="Listen to word_bus.mp3" src="../../../assets/audio/en/word_bus.mp3?v=5a4dafe0ad6f393a0f6b6ecfa22fd905cd4c7deffff1278390cb04faa8f91fce"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_bus.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-38">Correction or what sounds wrong (optional)</label>
+<textarea id="note-38" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_butterfly.mp3">
+<div class="file-name">word_butterfly.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">butterfly</p>
+<audio controls preload="none" aria-label="Listen to word_butterfly.mp3" src="../../../assets/audio/en/word_butterfly.mp3?v=761fb9cdd604fa1cfc209525a0b2bc96801bf811429c4a64cc3643683d7ee774"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_butterfly.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-39">Correction or what sounds wrong (optional)</label>
+<textarea id="note-39" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_cake.mp3">
+<div class="file-name">word_cake.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">cake</p>
+<audio controls preload="none" aria-label="Listen to word_cake.mp3" src="../../../assets/audio/en/word_cake.mp3?v=c1bb72a5b51b2d4a4d04fb95f2e594c0ca974a8c95a9ce032cdadaf856ea31c8"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_cake.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-40">Correction or what sounds wrong (optional)</label>
+<textarea id="note-40" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_car.mp3">
+<div class="file-name">word_car.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">car</p>
+<audio controls preload="none" aria-label="Listen to word_car.mp3" src="../../../assets/audio/en/word_car.mp3?v=ec84b5d28915b9e5ec0e720b3a2092c17b4b0976c9e77d96103b4c71809aba72"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_car.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-41">Correction or what sounds wrong (optional)</label>
+<textarea id="note-41" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_carrot.mp3">
+<div class="file-name">word_carrot.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">carrot</p>
+<audio controls preload="none" aria-label="Listen to word_carrot.mp3" src="../../../assets/audio/en/word_carrot.mp3?v=c6a3e0283d5aa00e04ac4171609c90f10e3995863af16de248d4960a96975262"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_carrot.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-42">Correction or what sounds wrong (optional)</label>
+<textarea id="note-42" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_cat.mp3">
+<div class="file-name">word_cat.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">cat</p>
+<audio controls preload="none" aria-label="Listen to word_cat.mp3" src="../../../assets/audio/en/word_cat.mp3?v=f0375f3e2ea614382714e8d2a7c4761f3f976b094f168cf0ae9d7dcc2caccd6c"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_cat.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-43">Correction or what sounds wrong (optional)</label>
+<textarea id="note-43" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_clock.mp3">
+<div class="file-name">word_clock.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">clock</p>
+<audio controls preload="none" aria-label="Listen to word_clock.mp3" src="../../../assets/audio/en/word_clock.mp3?v=65b810939910e1fa270dc871b753b29418d75c5fb9ab3d5f3aa75529b48556a6"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_clock.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-44">Correction or what sounds wrong (optional)</label>
+<textarea id="note-44" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_cloud.mp3">
+<div class="file-name">word_cloud.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">cloud</p>
+<audio controls preload="none" aria-label="Listen to word_cloud.mp3" src="../../../assets/audio/en/word_cloud.mp3?v=6fb7bd807235d74d8f93068b3b8e08005151c0ee6328ec6626ee17c839508570"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_cloud.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-45">Correction or what sounds wrong (optional)</label>
+<textarea id="note-45" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_cup.mp3">
+<div class="file-name">word_cup.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">cup</p>
+<audio controls preload="none" aria-label="Listen to word_cup.mp3" src="../../../assets/audio/en/word_cup.mp3?v=d4946cdfa1195faffd1b28779447b595720e73a586ed92fbe54387f650b28c7d"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_cup.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-46">Correction or what sounds wrong (optional)</label>
+<textarea id="note-46" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_dog.mp3">
+<div class="file-name">word_dog.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">dog</p>
+<audio controls preload="none" aria-label="Listen to word_dog.mp3" src="../../../assets/audio/en/word_dog.mp3?v=7d008a68b8a6067c4baf4f1e9b7a1a9e030fff3bd5a5da9c4d97eba7a53061af"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_dog.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-47">Correction or what sounds wrong (optional)</label>
+<textarea id="note-47" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_drum.mp3">
+<div class="file-name">word_drum.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">drum</p>
+<audio controls preload="none" aria-label="Listen to word_drum.mp3" src="../../../assets/audio/en/word_drum.mp3?v=5104366eccfdfe7892ff73af59c1686a7a760a3ab521e622d4708eac83ce03ec"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_drum.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-48">Correction or what sounds wrong (optional)</label>
+<textarea id="note-48" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_elephant.mp3">
+<div class="file-name">word_elephant.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">elephant</p>
+<audio controls preload="none" aria-label="Listen to word_elephant.mp3" src="../../../assets/audio/en/word_elephant.mp3?v=c270bc4d8465010198eb07fd72fae8163b593d6dd9cbc6b01d6f5c29bdabf06c"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_elephant.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-49">Correction or what sounds wrong (optional)</label>
+<textarea id="note-49" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_fish.mp3">
+<div class="file-name">word_fish.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">fish</p>
+<audio controls preload="none" aria-label="Listen to word_fish.mp3" src="../../../assets/audio/en/word_fish.mp3?v=aae5fea9dac5c3dd3a868121cb498744072cff2f173efba2e3eaa6584b3724d1"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_fish.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-50">Correction or what sounds wrong (optional)</label>
+<textarea id="note-50" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_flower.mp3">
+<div class="file-name">word_flower.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">flower</p>
+<audio controls preload="none" aria-label="Listen to word_flower.mp3" src="../../../assets/audio/en/word_flower.mp3?v=f217a0de4f010e1df6091189b644b75674b821deabcbd71447f1211b62cca199"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_flower.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-51">Correction or what sounds wrong (optional)</label>
+<textarea id="note-51" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_fox.mp3">
+<div class="file-name">word_fox.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">fox</p>
+<audio controls preload="none" aria-label="Listen to word_fox.mp3" src="../../../assets/audio/en/word_fox.mp3?v=febeb8717687068b1a3aa860372532d206997d96f9846a849eda1e619817ccf8"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_fox.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-52">Correction or what sounds wrong (optional)</label>
+<textarea id="note-52" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_frog.mp3">
+<div class="file-name">word_frog.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">frog</p>
+<audio controls preload="none" aria-label="Listen to word_frog.mp3" src="../../../assets/audio/en/word_frog.mp3?v=510bbdee828a24abcfe60f930d1ac3fd8ecf7f390b242c344b9906f36e75f467"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_frog.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-53">Correction or what sounds wrong (optional)</label>
+<textarea id="note-53" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_giraffe.mp3">
+<div class="file-name">word_giraffe.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">giraffe</p>
+<audio controls preload="none" aria-label="Listen to word_giraffe.mp3" src="../../../assets/audio/en/word_giraffe.mp3?v=0b331cb9be1e7d1f80e05c8b5052d73a8ab9bf89c412dd3b38e7d1c43b89ea70"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_giraffe.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-54">Correction or what sounds wrong (optional)</label>
+<textarea id="note-54" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_guitar.mp3">
+<div class="file-name">word_guitar.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">guitar</p>
+<audio controls preload="none" aria-label="Listen to word_guitar.mp3" src="../../../assets/audio/en/word_guitar.mp3?v=45531414a8d83abfed9e11b39573849ba21e23afd406cc8dff841dee84a8aaf3"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_guitar.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-55">Correction or what sounds wrong (optional)</label>
+<textarea id="note-55" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_hedgehog.mp3">
+<div class="file-name">word_hedgehog.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">hedgehog</p>
+<audio controls preload="none" aria-label="Listen to word_hedgehog.mp3" src="../../../assets/audio/en/word_hedgehog.mp3?v=8fed49a793b08a3cd53f753fb06f9a94f16b9e19384ded607e53818c6deff0ac"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_hedgehog.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-56">Correction or what sounds wrong (optional)</label>
+<textarea id="note-56" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_house.mp3">
+<div class="file-name">word_house.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">house</p>
+<audio controls preload="none" aria-label="Listen to word_house.mp3" src="../../../assets/audio/en/word_house.mp3?v=b1dd34a4bf94be6499f02d1e80aaa64689a4b6236a817a574f60868dc61e9aad"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_house.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-57">Correction or what sounds wrong (optional)</label>
+<textarea id="note-57" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_key.mp3">
+<div class="file-name">word_key.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">key</p>
+<audio controls preload="none" aria-label="Listen to word_key.mp3" src="../../../assets/audio/en/word_key.mp3?v=eda241ef790d6874c8f16f05cf52ccbd1535deb88fa05006b85b8f56bfd67317"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_key.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-58">Correction or what sounds wrong (optional)</label>
+<textarea id="note-58" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_kite.mp3">
+<div class="file-name">word_kite.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">kite</p>
+<audio controls preload="none" aria-label="Listen to word_kite.mp3" src="../../../assets/audio/en/word_kite.mp3?v=3cd0619f2dc65b813caa432f8273e4e7f47bf2bc63bf5573ba0091354f242753"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_kite.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-59">Correction or what sounds wrong (optional)</label>
+<textarea id="note-59" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_leaf.mp3">
+<div class="file-name">word_leaf.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">leaf</p>
+<audio controls preload="none" aria-label="Listen to word_leaf.mp3" src="../../../assets/audio/en/word_leaf.mp3?v=1c5486e59402675ead4373f51c80386712605f283444030bf7a0b072217139e4"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_leaf.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-60">Correction or what sounds wrong (optional)</label>
+<textarea id="note-60" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_lion.mp3">
+<div class="file-name">word_lion.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">lion</p>
+<audio controls preload="none" aria-label="Listen to word_lion.mp3" src="../../../assets/audio/en/word_lion.mp3?v=aeef28ee63ff5428b699dff4629c208f239fa9d28bffcbf17d1cac10d828ee90"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_lion.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-61">Correction or what sounds wrong (optional)</label>
+<textarea id="note-61" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_moon.mp3">
+<div class="file-name">word_moon.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">moon</p>
+<audio controls preload="none" aria-label="Listen to word_moon.mp3" src="../../../assets/audio/en/word_moon.mp3?v=579f120fb2b9ed5d5f093c7dcb151772ae4c2a144caa6a0dde6801aa4557b7a3"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_moon.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-62">Correction or what sounds wrong (optional)</label>
+<textarea id="note-62" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_mountain.mp3">
+<div class="file-name">word_mountain.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">mountain</p>
+<audio controls preload="none" aria-label="Listen to word_mountain.mp3" src="../../../assets/audio/en/word_mountain.mp3?v=c8764e7d7b73e8e7cf8aa4aa4fc220aba55b1a9f1f280557ee2c50781233a858"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_mountain.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-63">Correction or what sounds wrong (optional)</label>
+<textarea id="note-63" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_mushroom.mp3">
+<div class="file-name">word_mushroom.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">mushroom</p>
+<audio controls preload="none" aria-label="Listen to word_mushroom.mp3" src="../../../assets/audio/en/word_mushroom.mp3?v=2adbef26504f72cd5ceceaeb7122caa4816de50ecb519eb9500457aa7dd7241d"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_mushroom.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-64">Correction or what sounds wrong (optional)</label>
+<textarea id="note-64" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_octopus.mp3">
+<div class="file-name">word_octopus.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">octopus</p>
+<audio controls preload="none" aria-label="Listen to word_octopus.mp3" src="../../../assets/audio/en/word_octopus.mp3?v=4cb84b57cd7684f1784fe0a446124ba242181892dec89d235afc40c10ff9a135"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_octopus.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-65">Correction or what sounds wrong (optional)</label>
+<textarea id="note-65" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_orange.mp3">
+<div class="file-name">word_orange.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">orange</p>
+<audio controls preload="none" aria-label="Listen to word_orange.mp3" src="../../../assets/audio/en/word_orange.mp3?v=a587b4f13827ad967c220667f11d19e8274038926264a7e9cf80d47e6b15ddc4"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_orange.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-66">Correction or what sounds wrong (optional)</label>
+<textarea id="note-66" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_owl.mp3">
+<div class="file-name">word_owl.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">owl</p>
+<audio controls preload="none" aria-label="Listen to word_owl.mp3" src="../../../assets/audio/en/word_owl.mp3?v=263958744e8521476b869fd9c82b9c43773f5a16815cd38f82adc0966688a301"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_owl.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-67">Correction or what sounds wrong (optional)</label>
+<textarea id="note-67" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_pear.mp3">
+<div class="file-name">word_pear.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">pear</p>
+<audio controls preload="none" aria-label="Listen to word_pear.mp3" src="../../../assets/audio/en/word_pear.mp3?v=b06410870069f905154c52def25fbfb4eac6d3f04c52f615cef1d74f217e7c92"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_pear.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-68">Correction or what sounds wrong (optional)</label>
+<textarea id="note-68" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_pencil.mp3">
+<div class="file-name">word_pencil.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">pencil</p>
+<audio controls preload="none" aria-label="Listen to word_pencil.mp3" src="../../../assets/audio/en/word_pencil.mp3?v=0c91270dbbfa1bbe1044b5282a888c34978d99d2f58c92a0a53988585a100313"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_pencil.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-69">Correction or what sounds wrong (optional)</label>
+<textarea id="note-69" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_penguin.mp3">
+<div class="file-name">word_penguin.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">penguin</p>
+<audio controls preload="none" aria-label="Listen to word_penguin.mp3" src="../../../assets/audio/en/word_penguin.mp3?v=8e61162460c13e835de5ac5147230e80b25db4c5a96d2d14b525af619da047af"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_penguin.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-70">Correction or what sounds wrong (optional)</label>
+<textarea id="note-70" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_piano.mp3">
+<div class="file-name">word_piano.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">piano</p>
+<audio controls preload="none" aria-label="Listen to word_piano.mp3" src="../../../assets/audio/en/word_piano.mp3?v=3dc80fee664052259926a5a914c3c1907fad8d4aba2eeb15b8ae7276fef6d8e3"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_piano.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-71">Correction or what sounds wrong (optional)</label>
+<textarea id="note-71" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_rabbit.mp3">
+<div class="file-name">word_rabbit.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">rabbit</p>
+<audio controls preload="none" aria-label="Listen to word_rabbit.mp3" src="../../../assets/audio/en/word_rabbit.mp3?v=764ea35ac6802e2599708998230c2a969b149ec3261fca084e09102a89ccce1f"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_rabbit.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-72">Correction or what sounds wrong (optional)</label>
+<textarea id="note-72" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_rainbow.mp3">
+<div class="file-name">word_rainbow.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">rainbow</p>
+<audio controls preload="none" aria-label="Listen to word_rainbow.mp3" src="../../../assets/audio/en/word_rainbow.mp3?v=cc23ac13da7bb9ea53137628f51436dd91bbb7571c6280ffd373f5b017edd8e7"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_rainbow.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-73">Correction or what sounds wrong (optional)</label>
+<textarea id="note-73" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_rocket.mp3">
+<div class="file-name">word_rocket.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">rocket</p>
+<audio controls preload="none" aria-label="Listen to word_rocket.mp3" src="../../../assets/audio/en/word_rocket.mp3?v=1a4015f13359c03a8fc5c316b228ae05b9b00771c9d2a7088d68eef9504571e5"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_rocket.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-74">Correction or what sounds wrong (optional)</label>
+<textarea id="note-74" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_snail.mp3">
+<div class="file-name">word_snail.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">snail</p>
+<audio controls preload="none" aria-label="Listen to word_snail.mp3" src="../../../assets/audio/en/word_snail.mp3?v=5362f7f56373655b31f0e8b75ccac0ea288d9a7e754871401f5cb1133904bcdc"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_snail.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-75">Correction or what sounds wrong (optional)</label>
+<textarea id="note-75" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_star.mp3">
+<div class="file-name">word_star.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">star</p>
+<audio controls preload="none" aria-label="Listen to word_star.mp3" src="../../../assets/audio/en/word_star.mp3?v=f7cf00aaaa62e2a8a293785f6e94846b7c7a463cd9c7f52e21bb6cae74d7e1e2"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_star.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-76">Correction or what sounds wrong (optional)</label>
+<textarea id="note-76" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_strawberry.mp3">
+<div class="file-name">word_strawberry.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">strawberry</p>
+<audio controls preload="none" aria-label="Listen to word_strawberry.mp3" src="../../../assets/audio/en/word_strawberry.mp3?v=21ac685da58b5a832abc50a9dbfe7733ae9fe1e420da56020bd96a63409389df"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_strawberry.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-77">Correction or what sounds wrong (optional)</label>
+<textarea id="note-77" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_sun.mp3">
+<div class="file-name">word_sun.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">sun</p>
+<audio controls preload="none" aria-label="Listen to word_sun.mp3" src="../../../assets/audio/en/word_sun.mp3?v=2bbbaa4b6f244dd58cd118b543db70e444804a6c0bc2b851625aec984df6fb5d"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_sun.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-78">Correction or what sounds wrong (optional)</label>
+<textarea id="note-78" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_tractor.mp3">
+<div class="file-name">word_tractor.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">tractor</p>
+<audio controls preload="none" aria-label="Listen to word_tractor.mp3" src="../../../assets/audio/en/word_tractor.mp3?v=00432e735f087de247d8a8eddbbfdb7446aab60882c15b75a3715bc7e87654c3"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_tractor.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-79">Correction or what sounds wrong (optional)</label>
+<textarea id="note-79" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_train.mp3">
+<div class="file-name">word_train.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">train</p>
+<audio controls preload="none" aria-label="Listen to word_train.mp3" src="../../../assets/audio/en/word_train.mp3?v=7ad43a162b923cff121797cfdd91df615cbfe5a44d54b472e9fdfd2e2d9c0e1f"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_train.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-80">Correction or what sounds wrong (optional)</label>
+<textarea id="note-80" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_tree.mp3">
+<div class="file-name">word_tree.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">tree</p>
+<audio controls preload="none" aria-label="Listen to word_tree.mp3" src="../../../assets/audio/en/word_tree.mp3?v=0d21f831def57d3209560f4a522ec21f6098f3a30f774dbdc215b76a68d8decd"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_tree.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-81">Correction or what sounds wrong (optional)</label>
+<textarea id="note-81" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_turtle.mp3">
+<div class="file-name">word_turtle.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">turtle</p>
+<audio controls preload="none" aria-label="Listen to word_turtle.mp3" src="../../../assets/audio/en/word_turtle.mp3?v=bc03d7f1d84f67bc61f62277c8505276cd5c378a089abb250999355b9a2b2465"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_turtle.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-82">Correction or what sounds wrong (optional)</label>
+<textarea id="note-82" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_umbrella.mp3">
+<div class="file-name">word_umbrella.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">umbrella</p>
+<audio controls preload="none" aria-label="Listen to word_umbrella.mp3" src="../../../assets/audio/en/word_umbrella.mp3?v=4f08368bbefa0d418274a8676be7a8e71f430c53beca2bc18b473958f3e9b38c"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_umbrella.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-83">Correction or what sounds wrong (optional)</label>
+<textarea id="note-83" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_watermelon.mp3">
+<div class="file-name">word_watermelon.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">watermelon</p>
+<audio controls preload="none" aria-label="Listen to word_watermelon.mp3" src="../../../assets/audio/en/word_watermelon.mp3?v=18dcd32a22a596dee6e244ecc56fda3b1578eb9175953642c6c239159f9a12e3"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_watermelon.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-84">Correction or what sounds wrong (optional)</label>
+<textarea id="note-84" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="word_whale.mp3">
+<div class="file-name">word_whale.mp3</div><div class="category">Vocabulary</div>
+<p class="script short" lang="en" dir="ltr">whale</p>
+<audio controls preload="none" aria-label="Listen to word_whale.mp3" src="../../../assets/audio/en/word_whale.mp3?v=913fad6ef290e4a63c199ef634b75dedbbc4521447fe6e2eb94e483b381cf4a9"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: word_whale.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-85">Correction or what sounds wrong (optional)</label>
+<textarea id="note-85" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="again.mp3">
+<div class="file-name">again.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Try another way</p>
+<audio controls preload="none" aria-label="Listen to again.mp3" src="../../../assets/audio/en/again.mp3?v=d84dee6c922ea5c68d49ddecb16771036c4f281d0a505d5244768d6eff2e9270"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: again.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-86">Correction or what sounds wrong (optional)</label>
+<textarea id="note-86" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="coloring.mp3">
+<div class="file-name">coloring.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Choose a color. Tap a shape or draw with your brush.</p>
+<audio controls preload="none" aria-label="Listen to coloring.mp3" src="../../../assets/audio/en/coloring.mp3?v=94340685500a23d6d413d682efdb1b509a020f77e0a3cc21b84291a4d2ce179d"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: coloring.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-87">Correction or what sounds wrong (optional)</label>
+<textarea id="note-87" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="counting.mp3">
+<div class="file-name">counting.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Count each object, then choose the number.</p>
+<audio controls preload="none" aria-label="Listen to counting.mp3" src="../../../assets/audio/en/counting.mp3?v=f178324edaadec40de6c6b6b989138674cba1c41f2729f3e42c852f09c2b3fc0"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: counting.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-88">Correction or what sounds wrong (optional)</label>
+<textarea id="note-88" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="drawing.mp3">
+<div class="file-name">drawing.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Follow the guide, then make the picture your own.</p>
+<audio controls preload="none" aria-label="Listen to drawing.mp3" src="../../../assets/audio/en/drawing.mp3?v=82b794766f9f8655adf21b662b816e06f0d562fc4535884ab45c7b409f0a7953"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: drawing.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-89">Correction or what sounds wrong (optional)</label>
+<textarea id="note-89" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="everyday.mp3">
+<div class="file-name">everyday.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Look, think, and discover an everyday skill.</p>
+<audio controls preload="none" aria-label="Listen to everyday.mp3" src="../../../assets/audio/en/everyday.mp3?v=e03c22939d52d7270c4a8253da7da248009b3153f21e8c6151b1d6d9e6344e28"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: everyday.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-90">Correction or what sounds wrong (optional)</label>
+<textarea id="note-90" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="great.mp3">
+<div class="file-name">great.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Wonderful work!</p>
+<audio controls preload="none" aria-label="Listen to great.mp3" src="../../../assets/audio/en/great.mp3?v=9d7b6df396418bb384ca49ce1d6dd766f43db08d7496d9052f30138e9cb1bd16"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: great.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-91">Correction or what sounds wrong (optional)</label>
+<textarea id="note-91" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="jigsaw.mp3">
+<div class="file-name">jigsaw.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Move the pieces to rebuild the picture.</p>
+<audio controls preload="none" aria-label="Listen to jigsaw.mp3" src="../../../assets/audio/en/jigsaw.mp3?v=91f9823ae9026153beba8afa9ce55c67070f1ee1109d267df9c6a2da420479eb"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: jigsaw.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-92">Correction or what sounds wrong (optional)</label>
+<textarea id="note-92" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="letters.mp3">
+<div class="file-name">letters.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Listen, look, and choose the matching letter.</p>
+<audio controls preload="none" aria-label="Listen to letters.mp3" src="../../../assets/audio/en/letters.mp3?v=beebd2878f71c64a792a1af9e60f6401759b20857fb73b403b1e0626a04557df"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: letters.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-93">Correction or what sounds wrong (optional)</label>
+<textarea id="note-93" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="math.mp3">
+<div class="file-name">math.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Solve the problem. You can use a hint.</p>
+<audio controls preload="none" aria-label="Listen to math.mp3" src="../../../assets/audio/en/math.mp3?v=9fc58e6de8ec2a9d844be322346067d4fc395bce75aa548659e601cf716c11fa"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: math.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-94">Correction or what sounds wrong (optional)</label>
+<textarea id="note-94" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="mazes.mp3">
+<div class="file-name">mazes.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Guide Piko to the star without crossing the walls.</p>
+<audio controls preload="none" aria-label="Listen to mazes.mp3" src="../../../assets/audio/en/mazes.mp3?v=85bf1fca6bfbacbff0163561c68b5d0875211a928d089c771d1710f6bdfa0c02"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: mazes.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-95">Correction or what sounds wrong (optional)</label>
+<textarea id="note-95" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="memory.mp3">
+<div class="file-name">memory.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Turn over two cards. Find all the matching pairs.</p>
+<audio controls preload="none" aria-label="Listen to memory.mp3" src="../../../assets/audio/en/memory.mp3?v=2f043827efd68350044c22efd643e338048a8a665a3dd7235a2c24a62ee45ce7"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: memory.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-96">Correction or what sounds wrong (optional)</label>
+<textarea id="note-96" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="music.mp3">
+<div class="file-name">music.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Listen to the notes, then play them in the same order.</p>
+<audio controls preload="none" aria-label="Listen to music.mp3" src="../../../assets/audio/en/music.mp3?v=8004c7fde6c7955a63597b8961bb98cbf962436319451b6e20064ce5b7f24ea2"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: music.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-97">Correction or what sounds wrong (optional)</label>
+<textarea id="note-97" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="nature.mp3">
+<div class="file-name">nature.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Explore nature and choose the correct answer.</p>
+<audio controls preload="none" aria-label="Listen to nature.mp3" src="../../../assets/audio/en/nature.mp3?v=c6bcd29b28bc09b17c93a4fc5788a821c080c69baba24c0aaa8e02edff2815bc"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: nature.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-98">Correction or what sounds wrong (optional)</label>
+<textarea id="note-98" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="patterns.mp3">
+<div class="file-name">patterns.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Find what comes next in the pattern.</p>
+<audio controls preload="none" aria-label="Listen to patterns.mp3" src="../../../assets/audio/en/patterns.mp3?v=f84c0138019f01de1dd63466b774cdf3faf25456f6695c5feb8a146bc216b025"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: patterns.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-99">Correction or what sounds wrong (optional)</label>
+<textarea id="note-99" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="shapes.mp3">
+<div class="file-name">shapes.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Look carefully and choose the matching shape or color.</p>
+<audio controls preload="none" aria-label="Listen to shapes.mp3" src="../../../assets/audio/en/shapes.mp3?v=7eeaf9396db075833a21b163729977490be8e257b1b67afd6a6fb68c35a031ae"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: shapes.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-100">Correction or what sounds wrong (optional)</label>
+<textarea id="note-100" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="sorting.mp3">
+<div class="file-name">sorting.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Move each picture to its matching group.</p>
+<audio controls preload="none" aria-label="Listen to sorting.mp3" src="../../../assets/audio/en/sorting.mp3?v=e1e1deb9a951ddb239965c523bc7e68eeea233e167881c4d5aacb788b5db5af1"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: sorting.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-101">Correction or what sounds wrong (optional)</label>
+<textarea id="note-101" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="tracing.mp3">
+<div class="file-name">tracing.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Follow the dots in order, starting at the glowing dot.</p>
+<audio controls preload="none" aria-label="Listen to tracing.mp3" src="../../../assets/audio/en/tracing.mp3?v=bd30f7879169db4ddff4fb4d66191f2d25dafb193ef3bbd55648e5e551e3fe01"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: tracing.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-102">Correction or what sounds wrong (optional)</label>
+<textarea id="note-102" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="welcome.mp3">
+<div class="file-name">welcome.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">A little wonder, every day.</p>
+<audio controls preload="none" aria-label="Listen to welcome.mp3" src="../../../assets/audio/en/welcome.mp3?v=3e37853a2b14d2892b1181c9eb4bc0c8de5a0c538d409aac708a79392a78665b"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: welcome.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-103">Correction or what sounds wrong (optional)</label>
+<textarea id="note-103" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article><article class="recording" data-file="words.mp3">
+<div class="file-name">words.mp3</div><div class="category">Instructions and feedback</div>
+<p class="script" lang="en" dir="ltr">Look at the picture and discover its word.</p>
+<audio controls preload="none" aria-label="Listen to words.mp3" src="../../../assets/audio/en/words.mp3?v=1bb7d12938a1cfc0d21335a90e1f69bc88d12c97a83ae182366818ca10f25a22"></audio>
+<label class="flag-control"><input type="checkbox" data-flag aria-label="Wrong pronunciation: words.mp3">Wrong pronunciation</label>
+<p class="updated" data-updated hidden>Recording updated. Your previous note is retained; listen and select again if needed.</p>
+<div data-note-container hidden><label class="note-label" for="note-104">Correction or what sounds wrong (optional)</label>
+<textarea id="note-104" data-note maxlength="5000" dir="auto" placeholder="Write the correct text or pronunciation"></textarea></div></article></main>
+<p class="empty" id="empty" hidden></p>
+<section class="report" id="report" hidden>
+  <h2>Your selected list</h2><p id="copy-help">Paste this list into our chat. You can also select and copy the text below.</p>
+  <textarea id="report-text" aria-label="Selected pronunciation corrections" readonly></textarea>
+  <button id="close-report">Hide list</button>
+</section>
+<p>Selections record problems. Unselected recordings remain unreviewed; final pronunciation approval is separate.</p>
+<details id="lessons"><summary>Lessons, handwriting and review guidance</summary>
+<p><a href="en-lessons.html">Browse all 2,400 activities</a> or open the <a href="en-activity-review.csv">activity checklist</a>.</p>
+<p>Check the language's letter names, accents, word stress, vocabulary and instruction clarity. Record approvals with your name and review date in the checklist; leaving a recording unselected does not approve it.</p>
+
+</details>
+</div>
+<script type="application/json" id="review-data">{"catalogVersion": 3, "locale": "en", "localeName": "English", "storageKey": "pikolumi-english-pronunciation-review-v1", "exportName": "pikolumi-english-corrections.json", "recordings": [{"file": "letter_0.mp3", "text": "The letter A.", "category": "letters", "sha256": "c6fc699e774e51cea700aac46b1572d5d60856190b392c37972fdc1d71e9f426", "activityIds": ["tracing-0001", "tracing-0027", "tracing-0053", "tracing-0079", "letters-0001", "letters-0027", "letters-0053", "letters-0104", "letters-0106", "letters-0156"]}, {"file": "letter_1.mp3", "text": "The letter B.", "category": "letters", "sha256": "1cb769176d667175c9691f3f4e8bfcd046bc7b98cb4260b74b44bd71130c4d2f", "activityIds": ["tracing-0002", "tracing-0028", "tracing-0054", "tracing-0080", "letters-0002", "letters-0028", "letters-0054", "letters-0079", "letters-0107", "letters-0131"]}, {"file": "letter_2.mp3", "text": "The letter C.", "category": "letters", "sha256": "52c5e2090235a873458bcb6cbdd2ee8c95a87da41554f9dd729fafbd7847a133", "activityIds": ["tracing-0003", "tracing-0029", "tracing-0055", "letters-0003", "letters-0029", "letters-0055", "letters-0080", "letters-0108", "letters-0132", "letters-0157"]}, {"file": "letter_3.mp3", "text": "The letter D.", "category": "letters", "sha256": "7862d7dd8590ab64e494f1a5f2c855a42881a92e4d4f9193627f00dcddaac540", "activityIds": ["tracing-0004", "tracing-0030", "tracing-0056", "letters-0004", "letters-0030", "letters-0056", "letters-0081", "letters-0109", "letters-0133", "letters-0158"]}, {"file": "letter_4.mp3", "text": "The letter E.", "category": "letters", "sha256": "4d3289449bd8af8220ab6b4d6730a0de76d40f40f7bf6e70186ed7e7f4536ad1", "activityIds": ["tracing-0005", "tracing-0031", "tracing-0057", "letters-0005", "letters-0031", "letters-0057", "letters-0082", "letters-0110", "letters-0134", "letters-0159"]}, {"file": "letter_5.mp3", "text": "The letter F.", "category": "letters", "sha256": "aadd9718f5c050cb7a6205128774034cccc44ed3ec2fb1c71578f9c8e6c853c3", "activityIds": ["tracing-0006", "tracing-0032", "tracing-0058", "letters-0006", "letters-0032", "letters-0058", "letters-0083", "letters-0111", "letters-0135", "letters-0160"]}, {"file": "letter_6.mp3", "text": "The letter G.", "category": "letters", "sha256": "5415e5ba86f1aaadc4e76e8aad47bbf28393eb7f98c9703e55756b259913829e", "activityIds": ["tracing-0007", "tracing-0033", "tracing-0059", "letters-0007", "letters-0033", "letters-0059", "letters-0084", "letters-0112", "letters-0136"]}, {"file": "letter_7.mp3", "text": "The letter H.", "category": "letters", "sha256": "a91101554f54c8040e7d0feff8ba09ee987d8d00044af942d23afb3b0fc750eb", "activityIds": ["tracing-0008", "tracing-0034", "tracing-0060", "letters-0008", "letters-0034", "letters-0060", "letters-0085", "letters-0113", "letters-0137"]}, {"file": "letter_8.mp3", "text": "The letter I.", "category": "letters", "sha256": "d54e3b39cef82d889792b6fce8bef4c1061a67e9ddf4bd1cb970631cf23adbc6", "activityIds": ["tracing-0009", "tracing-0035", "tracing-0061", "letters-0009", "letters-0035", "letters-0061", "letters-0086", "letters-0114", "letters-0138"]}, {"file": "letter_9.mp3", "text": "The letter J.", "category": "letters", "sha256": "79c31fc4163cc3a32f131125e389a4ab250bae00fab551a3f5e34bad36d01977", "activityIds": ["tracing-0010", "tracing-0036", "tracing-0062", "letters-0010", "letters-0036", "letters-0062", "letters-0087", "letters-0115", "letters-0139"]}, {"file": "letter_10.mp3", "text": "The letter K.", "category": "letters", "sha256": "3bab5726de72c94620aec7cfaeaa24d4751ae5ab7cd17ae109803ba53edd4827", "activityIds": ["tracing-0011", "tracing-0037", "tracing-0063", "letters-0011", "letters-0037", "letters-0063", "letters-0088", "letters-0116", "letters-0140"]}, {"file": "letter_11.mp3", "text": "The letter L.", "category": "letters", "sha256": "1b5b7c268614e87906d6a7bc940689c4608c692eb0adf48f793469a97cd80081", "activityIds": ["tracing-0012", "tracing-0038", "tracing-0064", "letters-0012", "letters-0038", "letters-0064", "letters-0089", "letters-0117", "letters-0141"]}, {"file": "letter_12.mp3", "text": "The letter M.", "category": "letters", "sha256": "90fc20b58d731b0ae6569f9be141f5b73186bbcc2ef0e6eb332b4d6f3d9a1e07", "activityIds": ["tracing-0013", "tracing-0039", "tracing-0065", "letters-0013", "letters-0039", "letters-0065", "letters-0090", "letters-0118", "letters-0142"]}, {"file": "letter_13.mp3", "text": "The letter N.", "category": "letters", "sha256": "35c38f0ad5ba9571d370b1bedf2fbbf9e000d0d97c11f965c74e1a3c428aefc2", "activityIds": ["tracing-0014", "tracing-0040", "tracing-0066", "letters-0014", "letters-0040", "letters-0066", "letters-0091", "letters-0119", "letters-0143"]}, {"file": "letter_14.mp3", "text": "The letter O.", "category": "letters", "sha256": "3bb3c866af79f500ad9f528edca42becd6c04c4c3481c0bd637bb604f27ef22c", "activityIds": ["tracing-0015", "tracing-0041", "tracing-0067", "letters-0015", "letters-0041", "letters-0067", "letters-0092", "letters-0120", "letters-0144"]}, {"file": "letter_15.mp3", "text": "The letter P.", "category": "letters", "sha256": "f9105fb34303a895f29a651f0aaff12bd699ee798b0c94321eaf5b7b8f506a01", "activityIds": ["tracing-0016", "tracing-0042", "tracing-0068", "letters-0016", "letters-0042", "letters-0068", "letters-0093", "letters-0121", "letters-0145"]}, {"file": "letter_16.mp3", "text": "The letter Q.", "category": "letters", "sha256": "e5813e1228c8d50158d3bf4b2910f271de6b163e56928ef1f8707619a84d8c48", "activityIds": ["tracing-0017", "tracing-0043", "tracing-0069", "letters-0017", "letters-0043", "letters-0069", "letters-0094", "letters-0122", "letters-0146"]}, {"file": "letter_17.mp3", "text": "The letter R.", "category": "letters", "sha256": "ab1c5bfc4ca59a2ad52b73cbbe2215d7d0187fcd8b6ca60387e89d6d57e0f8fe", "activityIds": ["tracing-0018", "tracing-0044", "tracing-0070", "letters-0018", "letters-0044", "letters-0070", "letters-0095", "letters-0123", "letters-0147"]}, {"file": "letter_18.mp3", "text": "The letter S.", "category": "letters", "sha256": "d3039ed959d6493fca2f8456aeb707c6a6ca694f83a06f54359ebfb673caf2b7", "activityIds": ["tracing-0019", "tracing-0045", "tracing-0071", "letters-0019", "letters-0045", "letters-0071", "letters-0096", "letters-0124", "letters-0148"]}, {"file": "letter_19.mp3", "text": "The letter T.", "category": "letters", "sha256": "6775146aaa0ecd085884647ef60bbdb1ba2205b0e4517e0626a8ce304e26ebb2", "activityIds": ["tracing-0020", "tracing-0046", "tracing-0072", "letters-0020", "letters-0046", "letters-0072", "letters-0097", "letters-0125", "letters-0149"]}, {"file": "letter_20.mp3", "text": "The letter U.", "category": "letters", "sha256": "f48608d2be23c8f16ef7ddbef5a4006b64c08906c97cb098f7ef2a6b67dac9da", "activityIds": ["tracing-0021", "tracing-0047", "tracing-0073", "letters-0021", "letters-0047", "letters-0073", "letters-0098", "letters-0126", "letters-0150"]}, {"file": "letter_21.mp3", "text": "The letter V.", "category": "letters", "sha256": "c70028cbaa388f4e1c5885d74a6586a4629d97964bde81b97f4484f06c29dc3f", "activityIds": ["tracing-0022", "tracing-0048", "tracing-0074", "letters-0022", "letters-0048", "letters-0074", "letters-0099", "letters-0127", "letters-0151"]}, {"file": "letter_22.mp3", "text": "The letter W.", "category": "letters", "sha256": "adfb72164f66dd85e5fcadf26683bf6adf6df97b88ee7e826f4d117e7fd7eb9f", "activityIds": ["tracing-0023", "tracing-0049", "tracing-0075", "letters-0023", "letters-0049", "letters-0075", "letters-0100", "letters-0128", "letters-0152"]}, {"file": "letter_23.mp3", "text": "The letter X.", "category": "letters", "sha256": "5ed7546ff7209643f258cf188dcab25fc308d1b49338b13d431758fc6649d787", "activityIds": ["tracing-0024", "tracing-0050", "tracing-0076", "letters-0024", "letters-0050", "letters-0076", "letters-0101", "letters-0129", "letters-0153"]}, {"file": "letter_24.mp3", "text": "The letter Y.", "category": "letters", "sha256": "7226021759e64a1a8d1af27b283046047d34768acec503edc1b529495dff90b3", "activityIds": ["tracing-0025", "tracing-0051", "tracing-0077", "letters-0025", "letters-0051", "letters-0077", "letters-0102", "letters-0130", "letters-0154"]}, {"file": "letter_25.mp3", "text": "The letter Z.", "category": "letters", "sha256": "ea6e7cd0052109f7ecf73f0db7b83a102726415f12b335071c0010b1c923f25c", "activityIds": ["tracing-0026", "tracing-0052", "tracing-0078", "letters-0026", "letters-0052", "letters-0078", "letters-0103", "letters-0105", "letters-0155"]}, {"file": "word_airplane.mp3", "text": "airplane", "category": "words", "sha256": "ae01f4b30b25e8464ff57db5dff5ca40006a66fd265cd8758fe19f5058df2d80", "activityIds": ["words-0106", "words-0107", "words-0108"]}, {"file": "word_apple.mp3", "text": "apple", "category": "words", "sha256": "db36eb5202f4bd6c8867fa3a4359641586b15529d07b20ace5fdeb40b86cb896", "activityIds": ["words-0061", "words-0062", "words-0063"]}, {"file": "word_ball.mp3", "text": "ball", "category": "words", "sha256": "10814a9f9663b02256cebf6f03aa63a884f98a144171187e368b341b9d6cba25", "activityIds": ["words-0154", "words-0155", "words-0156"]}, {"file": "word_banana.mp3", "text": "banana", "category": "words", "sha256": "871665c222c3e8763c9291dcd3c7df5926e3a93fc34db1f6110631c055dce5c2", "activityIds": ["words-0067", "words-0068", "words-0069"]}, {"file": "word_bear.mp3", "text": "bear", "category": "words", "sha256": "e8cd1f1a8f88d77d7248fb10111370ec68f030e1e0d2f76c1ec7595cd264b849", "activityIds": ["words-0013", "words-0014", "words-0015"]}, {"file": "word_bee.mp3", "text": "bee", "category": "words", "sha256": "7a9a5559c88d4b9b22d74de43355bef044fb9c481e52091d35acaf4de6224ccb", "activityIds": ["words-0043", "words-0044", "words-0045"]}, {"file": "word_bell.mp3", "text": "bell", "category": "words", "sha256": "fbe0e9fc84e7e9385306ebfb95e1cbce11144bcf71ca37bafb2f833ed050ac9a", "activityIds": ["words-0178", "words-0179", "words-0180"]}, {"file": "word_bicycle.mp3", "text": "bicycle", "category": "words", "sha256": "234fcb16be63a216d944b2e9602fd114a196aa064b0a971dfc1cbc0f97013d83", "activityIds": ["words-0109", "words-0110", "words-0111"]}, {"file": "word_bird.mp3", "text": "bird", "category": "words", "sha256": "87234089fd69f6811f7511d5984bb16803cf7a240c431260b71eadb7f960cebd", "activityIds": ["words-0031", "words-0032", "words-0033"]}, {"file": "word_boat.mp3", "text": "boat", "category": "words", "sha256": "b380ac0f390d8d1b54737a8af1660038f4bc808afe1c89a867e1d1ba924932c9", "activityIds": ["words-0100", "words-0101", "words-0102"]}, {"file": "word_book.mp3", "text": "book", "category": "words", "sha256": "dae065191835f22cc176a076cf1234d21877b35e42b578ce1862328786333e63", "activityIds": ["words-0148", "words-0149", "words-0150"]}, {"file": "word_bread.mp3", "text": "bread", "category": "words", "sha256": "a7421c0f72faa14508401f0fe65603412f5216b574ae8cf1231ba1e1c3706fc2", "activityIds": ["words-0082", "words-0083", "words-0084"]}, {"file": "word_bus.mp3", "text": "bus", "category": "words", "sha256": "5a4dafe0ad6f393a0f6b6ecfa22fd905cd4c7deffff1278390cb04faa8f91fce", "activityIds": ["words-0094", "words-0095", "words-0096"]}, {"file": "word_butterfly.mp3", "text": "butterfly", "category": "words", "sha256": "761fb9cdd604fa1cfc209525a0b2bc96801bf811429c4a64cc3643683d7ee774", "activityIds": ["words-0040", "words-0041", "words-0042"]}, {"file": "word_cake.mp3", "text": "cake", "category": "words", "sha256": "c1bb72a5b51b2d4a4d04fb95f2e594c0ca974a8c95a9ce032cdadaf856ea31c8", "activityIds": ["words-0085", "words-0086", "words-0087"]}, {"file": "word_car.mp3", "text": "car", "category": "words", "sha256": "ec84b5d28915b9e5ec0e720b3a2092c17b4b0976c9e77d96103b4c71809aba72", "activityIds": ["words-0091", "words-0092", "words-0093"]}, {"file": "word_carrot.mp3", "text": "carrot", "category": "words", "sha256": "c6a3e0283d5aa00e04ac4171609c90f10e3995863af16de248d4960a96975262", "activityIds": ["words-0073", "words-0074", "words-0075"]}, {"file": "word_cat.mp3", "text": "cat", "category": "words", "sha256": "f0375f3e2ea614382714e8d2a7c4761f3f976b094f168cf0ae9d7dcc2caccd6c", "activityIds": ["words-0001", "words-0002", "words-0003"]}, {"file": "word_clock.mp3", "text": "clock", "category": "words", "sha256": "65b810939910e1fa270dc871b753b29418d75c5fb9ab3d5f3aa75529b48556a6", "activityIds": ["words-0163", "words-0164", "words-0165"]}, {"file": "word_cloud.mp3", "text": "cloud", "category": "words", "sha256": "6fb7bd807235d74d8f93068b3b8e08005151c0ee6328ec6626ee17c839508570", "activityIds": ["words-0130", "words-0131", "words-0132"]}, {"file": "word_cup.mp3", "text": "cup", "category": "words", "sha256": "d4946cdfa1195faffd1b28779447b595720e73a586ed92fbe54387f650b28c7d", "activityIds": ["words-0088", "words-0089", "words-0090"]}, {"file": "word_dog.mp3", "text": "dog", "category": "words", "sha256": "7d008a68b8a6067c4baf4f1e9b7a1a9e030fff3bd5a5da9c4d97eba7a53061af", "activityIds": ["words-0004", "words-0005", "words-0006"]}, {"file": "word_drum.mp3", "text": "drum", "category": "words", "sha256": "5104366eccfdfe7892ff73af59c1686a7a760a3ab521e622d4708eac83ce03ec", "activityIds": ["words-0172", "words-0173", "words-0174"]}, {"file": "word_elephant.mp3", "text": "elephant", "category": "words", "sha256": "c270bc4d8465010198eb07fd72fae8163b593d6dd9cbc6b01d6f5c29bdabf06c", "activityIds": ["words-0019", "words-0020", "words-0021"]}, {"file": "word_fish.mp3", "text": "fish", "category": "words", "sha256": "aae5fea9dac5c3dd3a868121cb498744072cff2f173efba2e3eaa6584b3724d1", "activityIds": ["words-0028", "words-0029", "words-0030"]}, {"file": "word_flower.mp3", "text": "flower", "category": "words", "sha256": "f217a0de4f010e1df6091189b644b75674b821deabcbd71447f1211b62cca199", "activityIds": ["words-0118", "words-0119", "words-0120"]}, {"file": "word_fox.mp3", "text": "fox", "category": "words", "sha256": "febeb8717687068b1a3aa860372532d206997d96f9846a849eda1e619817ccf8", "activityIds": ["words-0010", "words-0011", "words-0012"]}, {"file": "word_frog.mp3", "text": "frog", "category": "words", "sha256": "510bbdee828a24abcfe60f930d1ac3fd8ecf7f390b242c344b9906f36e75f467", "activityIds": ["words-0055", "words-0056", "words-0057"]}, {"file": "word_giraffe.mp3", "text": "giraffe", "category": "words", "sha256": "0b331cb9be1e7d1f80e05c8b5052d73a8ab9bf89c412dd3b38e7d1c43b89ea70", "activityIds": ["words-0022", "words-0023", "words-0024"]}, {"file": "word_guitar.mp3", "text": "guitar", "category": "words", "sha256": "45531414a8d83abfed9e11b39573849ba21e23afd406cc8dff841dee84a8aaf3", "activityIds": ["words-0169", "words-0170", "words-0171"]}, {"file": "word_hedgehog.mp3", "text": "hedgehog", "category": "words", "sha256": "8fed49a793b08a3cd53f753fb06f9a94f16b9e19384ded607e53818c6deff0ac", "activityIds": ["words-0058", "words-0059", "words-0060"]}, {"file": "word_house.mp3", "text": "house", "category": "words", "sha256": "b1dd34a4bf94be6499f02d1e80aaa64689a4b6236a817a574f60868dc61e9aad", "activityIds": ["words-0145", "words-0146", "words-0147"]}, {"file": "word_key.mp3", "text": "key", "category": "words", "sha256": "eda241ef790d6874c8f16f05cf52ccbd1535deb88fa05006b85b8f56bfd67317", "activityIds": ["words-0166", "words-0167", "words-0168"]}, {"file": "word_kite.mp3", "text": "kite", "category": "words", "sha256": "3cd0619f2dc65b813caa432f8273e4e7f47bf2bc63bf5573ba0091354f242753", "activityIds": ["words-0157", "words-0158", "words-0159"]}, {"file": "word_leaf.mp3", "text": "leaf", "category": "words", "sha256": "1c5486e59402675ead4373f51c80386712605f283444030bf7a0b072217139e4", "activityIds": ["words-0136", "words-0137", "words-0138"]}, {"file": "word_lion.mp3", "text": "lion", "category": "words", "sha256": "aeef28ee63ff5428b699dff4629c208f239fa9d28bffcbf17d1cac10d828ee90", "activityIds": ["words-0016", "words-0017", "words-0018"]}, {"file": "word_moon.mp3", "text": "moon", "category": "words", "sha256": "579f120fb2b9ed5d5f093c7dcb151772ae4c2a144caa6a0dde6801aa4557b7a3", "activityIds": ["words-0124", "words-0125", "words-0126"]}, {"file": "word_mountain.mp3", "text": "mountain", "category": "words", "sha256": "c8764e7d7b73e8e7cf8aa4aa4fc220aba55b1a9f1f280557ee2c50781233a858", "activityIds": ["words-0139", "words-0140", "words-0141"]}, {"file": "word_mushroom.mp3", "text": "mushroom", "category": "words", "sha256": "2adbef26504f72cd5ceceaeb7122caa4816de50ecb519eb9500457aa7dd7241d", "activityIds": ["words-0142", "words-0143", "words-0144"]}, {"file": "word_octopus.mp3", "text": "octopus", "category": "words", "sha256": "4cb84b57cd7684f1784fe0a446124ba242181892dec89d235afc40c10ff9a135", "activityIds": ["words-0049", "words-0050", "words-0051"]}, {"file": "word_orange.mp3", "text": "orange", "category": "words", "sha256": "a587b4f13827ad967c220667f11d19e8274038926264a7e9cf80d47e6b15ddc4", "activityIds": ["words-0076", "words-0077", "words-0078"]}, {"file": "word_owl.mp3", "text": "owl", "category": "words", "sha256": "263958744e8521476b869fd9c82b9c43773f5a16815cd38f82adc0966688a301", "activityIds": ["words-0034", "words-0035", "words-0036"]}, {"file": "word_pear.mp3", "text": "pear", "category": "words", "sha256": "b06410870069f905154c52def25fbfb4eac6d3f04c52f615cef1d74f217e7c92", "activityIds": ["words-0064", "words-0065", "words-0066"]}, {"file": "word_pencil.mp3", "text": "pencil", "category": "words", "sha256": "0c91270dbbfa1bbe1044b5282a888c34978d99d2f58c92a0a53988585a100313", "activityIds": ["words-0151", "words-0152", "words-0153"]}, {"file": "word_penguin.mp3", "text": "penguin", "category": "words", "sha256": "8e61162460c13e835de5ac5147230e80b25db4c5a96d2d14b525af619da047af", "activityIds": ["words-0037", "words-0038", "words-0039"]}, {"file": "word_piano.mp3", "text": "piano", "category": "words", "sha256": "3dc80fee664052259926a5a914c3c1907fad8d4aba2eeb15b8ae7276fef6d8e3", "activityIds": ["words-0175", "words-0176", "words-0177"]}, {"file": "word_rabbit.mp3", "text": "rabbit", "category": "words", "sha256": "764ea35ac6802e2599708998230c2a969b149ec3261fca084e09102a89ccce1f", "activityIds": ["words-0007", "words-0008", "words-0009"]}, {"file": "word_rainbow.mp3", "text": "rainbow", "category": "words", "sha256": "cc23ac13da7bb9ea53137628f51436dd91bbb7571c6280ffd373f5b017edd8e7", "activityIds": ["words-0133", "words-0134", "words-0135"]}, {"file": "word_rocket.mp3", "text": "rocket", "category": "words", "sha256": "1a4015f13359c03a8fc5c316b228ae05b9b00771c9d2a7088d68eef9504571e5", "activityIds": ["words-0103", "words-0104", "words-0105"]}, {"file": "word_snail.mp3", "text": "snail", "category": "words", "sha256": "5362f7f56373655b31f0e8b75ccac0ea288d9a7e754871401f5cb1133904bcdc", "activityIds": ["words-0046", "words-0047", "words-0048"]}, {"file": "word_star.mp3", "text": "star", "category": "words", "sha256": "f7cf00aaaa62e2a8a293785f6e94846b7c7a463cd9c7f52e21bb6cae74d7e1e2", "activityIds": ["words-0127", "words-0128", "words-0129"]}, {"file": "word_strawberry.mp3", "text": "strawberry", "category": "words", "sha256": "21ac685da58b5a832abc50a9dbfe7733ae9fe1e420da56020bd96a63409389df", "activityIds": ["words-0070", "words-0071", "words-0072"]}, {"file": "word_sun.mp3", "text": "sun", "category": "words", "sha256": "2bbbaa4b6f244dd58cd118b543db70e444804a6c0bc2b851625aec984df6fb5d", "activityIds": ["words-0121", "words-0122", "words-0123"]}, {"file": "word_tractor.mp3", "text": "tractor", "category": "words", "sha256": "00432e735f087de247d8a8eddbbfdb7446aab60882c15b75a3715bc7e87654c3", "activityIds": ["words-0112", "words-0113", "words-0114"]}, {"file": "word_train.mp3", "text": "train", "category": "words", "sha256": "7ad43a162b923cff121797cfdd91df615cbfe5a44d54b472e9fdfd2e2d9c0e1f", "activityIds": ["words-0097", "words-0098", "words-0099"]}, {"file": "word_tree.mp3", "text": "tree", "category": "words", "sha256": "0d21f831def57d3209560f4a522ec21f6098f3a30f774dbdc215b76a68d8decd", "activityIds": ["words-0115", "words-0116", "words-0117"]}, {"file": "word_turtle.mp3", "text": "turtle", "category": "words", "sha256": "bc03d7f1d84f67bc61f62277c8505276cd5c378a089abb250999355b9a2b2465", "activityIds": ["words-0025", "words-0026", "words-0027"]}, {"file": "word_umbrella.mp3", "text": "umbrella", "category": "words", "sha256": "4f08368bbefa0d418274a8676be7a8e71f430c53beca2bc18b473958f3e9b38c", "activityIds": ["words-0160", "words-0161", "words-0162"]}, {"file": "word_watermelon.mp3", "text": "watermelon", "category": "words", "sha256": "18dcd32a22a596dee6e244ecc56fda3b1578eb9175953642c6c239159f9a12e3", "activityIds": ["words-0079", "words-0080", "words-0081"]}, {"file": "word_whale.mp3", "text": "whale", "category": "words", "sha256": "913fad6ef290e4a63c199ef634b75dedbbc4521447fe6e2eb94e483b381cf4a9", "activityIds": ["words-0052", "words-0053", "words-0054"]}, {"file": "again.mp3", "text": "Try another way", "category": "instructions", "sha256": "d84dee6c922ea5c68d49ddecb16771036c4f281d0a505d5244768d6eff2e9270", "activityIds": []}, {"file": "coloring.mp3", "text": "Choose a color. Tap a shape or draw with your brush.", "category": "instructions", "sha256": "94340685500a23d6d413d682efdb1b509a020f77e0a3cc21b84291a4d2ce179d", "activityIds": ["coloring-0001", "coloring-0002", "coloring-0003", "coloring-0004", "coloring-0005", "coloring-0006", "coloring-0007", "coloring-0008", "coloring-0009", "coloring-0010", "coloring-0011", "coloring-0012", "coloring-0013", "coloring-0014", "coloring-0015", "coloring-0016", "coloring-0017", "coloring-0018", "coloring-0019", "coloring-0020", "coloring-0021", "coloring-0022", "coloring-0023", "coloring-0024", "coloring-0025", "coloring-0026", "coloring-0027", "coloring-0028", "coloring-0029", "coloring-0030", "coloring-0031", "coloring-0032", "coloring-0033", "coloring-0034", "coloring-0035", "coloring-0036", "coloring-0037", "coloring-0038", "coloring-0039", "coloring-0040", "coloring-0041", "coloring-0042", "coloring-0043", "coloring-0044", "coloring-0045", "coloring-0046", "coloring-0047", "coloring-0048", "coloring-0049", "coloring-0050", "coloring-0051", "coloring-0052", "coloring-0053", "coloring-0054", "coloring-0055", "coloring-0056", "coloring-0057", "coloring-0058", "coloring-0059", "coloring-0060", "coloring-0061", "coloring-0062", "coloring-0063", "coloring-0064", "coloring-0065", "coloring-0066", "coloring-0067", "coloring-0068", "coloring-0069", "coloring-0070", "coloring-0071", "coloring-0072", "coloring-0073", "coloring-0074", "coloring-0075", "coloring-0076", "coloring-0077", "coloring-0078", "coloring-0079", "coloring-0080", "coloring-0081", "coloring-0082", "coloring-0083", "coloring-0084", "coloring-0085", "coloring-0086", "coloring-0087", "coloring-0088", "coloring-0089", "coloring-0090", "coloring-0091", "coloring-0092", "coloring-0093", "coloring-0094", "coloring-0095", "coloring-0096", "coloring-0097", "coloring-0098", "coloring-0099", "coloring-0100", "coloring-0101", "coloring-0102", "coloring-0103", "coloring-0104", "coloring-0105", "coloring-0106", "coloring-0107", "coloring-0108", "coloring-0109", "coloring-0110", "coloring-0111", "coloring-0112", "coloring-0113", "coloring-0114", "coloring-0115", "coloring-0116", "coloring-0117", "coloring-0118", "coloring-0119", "coloring-0120", "coloring-0121", "coloring-0122", "coloring-0123", "coloring-0124", "coloring-0125", "coloring-0126", "coloring-0127", "coloring-0128", "coloring-0129", "coloring-0130", "coloring-0131", "coloring-0132", "coloring-0133", "coloring-0134", "coloring-0135", "coloring-0136", "coloring-0137", "coloring-0138", "coloring-0139", "coloring-0140", "coloring-0141", "coloring-0142", "coloring-0143", "coloring-0144", "coloring-0145", "coloring-0146", "coloring-0147", "coloring-0148", "coloring-0149", "coloring-0150", "coloring-0151", "coloring-0152", "coloring-0153", "coloring-0154", "coloring-0155", "coloring-0156", "coloring-0157", "coloring-0158", "coloring-0159", "coloring-0160", "coloring-0161", "coloring-0162", "coloring-0163", "coloring-0164", "coloring-0165", "coloring-0166", "coloring-0167", "coloring-0168", "coloring-0169", "coloring-0170", "coloring-0171", "coloring-0172", "coloring-0173", "coloring-0174", "coloring-0175", "coloring-0176", "coloring-0177", "coloring-0178", "coloring-0179", "coloring-0180", "coloring-0181", "coloring-0182", "coloring-0183", "coloring-0184", "coloring-0185", "coloring-0186", "coloring-0187", "coloring-0188", "coloring-0189", "coloring-0190", "coloring-0191", "coloring-0192", "coloring-0193", "coloring-0194", "coloring-0195", "coloring-0196", "coloring-0197", "coloring-0198", "coloring-0199", "coloring-0200", "coloring-0201", "coloring-0202", "coloring-0203", "coloring-0204", "coloring-0205", "coloring-0206", "coloring-0207", "coloring-0208", "coloring-0209", "coloring-0210", "coloring-0211", "coloring-0212", "coloring-0213", "coloring-0214", "coloring-0215", "coloring-0216", "coloring-0217", "coloring-0218", "coloring-0219", "coloring-0220", "coloring-0221", "coloring-0222", "coloring-0223", "coloring-0224", "coloring-0225", "coloring-0226", "coloring-0227", "coloring-0228", "coloring-0229", "coloring-0230", "coloring-0231", "coloring-0232", "coloring-0233", "coloring-0234", "coloring-0235", "coloring-0236", "coloring-0237", "coloring-0238", "coloring-0239", "coloring-0240", "coloring-0241", "coloring-0242", "coloring-0243", "coloring-0244", "coloring-0245", "coloring-0246", "coloring-0247", "coloring-0248", "coloring-0249", "coloring-0250", "coloring-0251", "coloring-0252", "coloring-0253", "coloring-0254", "coloring-0255", "coloring-0256", "coloring-0257", "coloring-0258", "coloring-0259", "coloring-0260", "coloring-0261", "coloring-0262", "coloring-0263", "coloring-0264", "coloring-0265", "coloring-0266", "coloring-0267", "coloring-0268", "coloring-0269", "coloring-0270", "coloring-0271", "coloring-0272", "coloring-0273", "coloring-0274", "coloring-0275", "coloring-0276", "coloring-0277", "coloring-0278", "coloring-0279", "coloring-0280", "coloring-0281", "coloring-0282", "coloring-0283", "coloring-0284", "coloring-0285", "coloring-0286", "coloring-0287", "coloring-0288", "coloring-0289", "coloring-0290", "coloring-0291", "coloring-0292", "coloring-0293", "coloring-0294", "coloring-0295", "coloring-0296", "coloring-0297", "coloring-0298", "coloring-0299", "coloring-0300", "coloring-0301", "coloring-0302", "coloring-0303", "coloring-0304", "coloring-0305", "coloring-0306", "coloring-0307", "coloring-0308", "coloring-0309", "coloring-0310", "coloring-0311", "coloring-0312", "coloring-0313", "coloring-0314", "coloring-0315", "coloring-0316", "coloring-0317", "coloring-0318", "coloring-0319", "coloring-0320", "coloring-0321", "coloring-0322", "coloring-0323", "coloring-0324", "coloring-0325", "coloring-0326", "coloring-0327", "coloring-0328", "coloring-0329", "coloring-0330", "coloring-0331", "coloring-0332", "coloring-0333", "coloring-0334", "coloring-0335", "coloring-0336", "coloring-0337", "coloring-0338", "coloring-0339", "coloring-0340", "coloring-0341", "coloring-0342", "coloring-0343", "coloring-0344", "coloring-0345", "coloring-0346", "coloring-0347", "coloring-0348", "coloring-0349", "coloring-0350", "coloring-0351", "coloring-0352", "coloring-0353", "coloring-0354", "coloring-0355", "coloring-0356", "coloring-0357", "coloring-0358", "coloring-0359", "coloring-0360"]}, {"file": "counting.mp3", "text": "Count each object, then choose the number.", "category": "instructions", "sha256": "f178324edaadec40de6c6b6b989138674cba1c41f2729f3e42c852f09c2b3fc0", "activityIds": ["counting-0001", "counting-0002", "counting-0003", "counting-0004", "counting-0005", "counting-0006", "counting-0007", "counting-0008", "counting-0009", "counting-0010", "counting-0011", "counting-0012", "counting-0013", "counting-0014", "counting-0015", "counting-0016", "counting-0017", "counting-0018", "counting-0019", "counting-0020", "counting-0021", "counting-0022", "counting-0023", "counting-0024", "counting-0025", "counting-0026", "counting-0027", "counting-0028", "counting-0029", "counting-0030", "counting-0031", "counting-0032", "counting-0033", "counting-0034", "counting-0035", "counting-0036", "counting-0037", "counting-0038", "counting-0039", "counting-0040", "counting-0041", "counting-0042", "counting-0043", "counting-0044", "counting-0045", "counting-0046", "counting-0047", "counting-0048", "counting-0049", "counting-0050", "counting-0051", "counting-0052", "counting-0053", "counting-0054", "counting-0055", "counting-0056", "counting-0057", "counting-0058", "counting-0059", "counting-0060", "counting-0061", "counting-0062", "counting-0063", "counting-0064", "counting-0065", "counting-0066", "counting-0067", "counting-0068", "counting-0069", "counting-0070", "counting-0071", "counting-0072", "counting-0073", "counting-0074", "counting-0075", "counting-0076", "counting-0077", "counting-0078", "counting-0079", "counting-0080", "counting-0081", "counting-0082", "counting-0083", "counting-0084", "counting-0085", "counting-0086", "counting-0087", "counting-0088", "counting-0089", "counting-0090", "counting-0091", "counting-0092", "counting-0093", "counting-0094", "counting-0095", "counting-0096", "counting-0097", "counting-0098", "counting-0099", "counting-0100", "counting-0101", "counting-0102", "counting-0103", "counting-0104", "counting-0105", "counting-0106", "counting-0107", "counting-0108", "counting-0109", "counting-0110", "counting-0111", "counting-0112", "counting-0113", "counting-0114", "counting-0115", "counting-0116", "counting-0117", "counting-0118", "counting-0119", "counting-0120", "counting-0121", "counting-0122", "counting-0123", "counting-0124", "counting-0125", "counting-0126", "counting-0127", "counting-0128", "counting-0129", "counting-0130", "counting-0131", "counting-0132", "counting-0133", "counting-0134", "counting-0135", "counting-0136", "counting-0137", "counting-0138", "counting-0139", "counting-0140", "counting-0141", "counting-0142", "counting-0143", "counting-0144", "counting-0145", "counting-0146", "counting-0147", "counting-0148", "counting-0149", "counting-0150", "counting-0151", "counting-0152", "counting-0153", "counting-0154", "counting-0155", "counting-0156", "counting-0157", "counting-0158", "counting-0159", "counting-0160"]}, {"file": "drawing.mp3", "text": "Follow the guide, then make the picture your own.", "category": "instructions", "sha256": "82b794766f9f8655adf21b662b816e06f0d562fc4535884ab45c7b409f0a7953", "activityIds": ["drawing-0001", "drawing-0002", "drawing-0003", "drawing-0004", "drawing-0005", "drawing-0006", "drawing-0007", "drawing-0008", "drawing-0009", "drawing-0010", "drawing-0011", "drawing-0012", "drawing-0013", "drawing-0014", "drawing-0015", "drawing-0016", "drawing-0017", "drawing-0018", "drawing-0019", "drawing-0020", "drawing-0021", "drawing-0022", "drawing-0023", "drawing-0024", "drawing-0025", "drawing-0026", "drawing-0027", "drawing-0028", "drawing-0029", "drawing-0030", "drawing-0031", "drawing-0032", "drawing-0033", "drawing-0034", "drawing-0035", "drawing-0036", "drawing-0037", "drawing-0038", "drawing-0039", "drawing-0040", "drawing-0041", "drawing-0042", "drawing-0043", "drawing-0044", "drawing-0045", "drawing-0046", "drawing-0047", "drawing-0048", "drawing-0049", "drawing-0050", "drawing-0051", "drawing-0052", "drawing-0053", "drawing-0054", "drawing-0055", "drawing-0056", "drawing-0057", "drawing-0058", "drawing-0059", "drawing-0060", "drawing-0061", "drawing-0062", "drawing-0063", "drawing-0064", "drawing-0065", "drawing-0066", "drawing-0067", "drawing-0068", "drawing-0069", "drawing-0070", "drawing-0071", "drawing-0072", "drawing-0073", "drawing-0074", "drawing-0075", "drawing-0076", "drawing-0077", "drawing-0078", "drawing-0079", "drawing-0080", "drawing-0081", "drawing-0082", "drawing-0083", "drawing-0084", "drawing-0085", "drawing-0086", "drawing-0087", "drawing-0088", "drawing-0089", "drawing-0090", "drawing-0091", "drawing-0092", "drawing-0093", "drawing-0094", "drawing-0095", "drawing-0096", "drawing-0097", "drawing-0098", "drawing-0099", "drawing-0100", "drawing-0101", "drawing-0102", "drawing-0103", "drawing-0104", "drawing-0105", "drawing-0106", "drawing-0107", "drawing-0108", "drawing-0109", "drawing-0110", "drawing-0111", "drawing-0112", "drawing-0113", "drawing-0114", "drawing-0115", "drawing-0116", "drawing-0117", "drawing-0118", "drawing-0119", "drawing-0120"]}, {"file": "everyday.mp3", "text": "Look, think, and discover an everyday skill.", "category": "instructions", "sha256": "e03c22939d52d7270c4a8253da7da248009b3153f21e8c6151b1d6d9e6344e28", "activityIds": ["everyday-0001", "everyday-0002", "everyday-0003", "everyday-0004", "everyday-0005", "everyday-0006", "everyday-0007", "everyday-0008", "everyday-0009", "everyday-0010", "everyday-0011", "everyday-0012", "everyday-0013", "everyday-0014", "everyday-0015", "everyday-0016", "everyday-0017", "everyday-0018", "everyday-0019", "everyday-0020", "everyday-0021", "everyday-0022", "everyday-0023", "everyday-0024", "everyday-0025", "everyday-0026", "everyday-0027", "everyday-0028", "everyday-0029", "everyday-0030", "everyday-0031", "everyday-0032", "everyday-0033", "everyday-0034", "everyday-0035", "everyday-0036", "everyday-0037", "everyday-0038", "everyday-0039", "everyday-0040", "everyday-0041", "everyday-0042", "everyday-0043", "everyday-0044", "everyday-0045", "everyday-0046", "everyday-0047", "everyday-0048", "everyday-0049", "everyday-0050", "everyday-0051", "everyday-0052", "everyday-0053", "everyday-0054", "everyday-0055", "everyday-0056", "everyday-0057", "everyday-0058", "everyday-0059", "everyday-0060", "everyday-0061", "everyday-0062", "everyday-0063", "everyday-0064", "everyday-0065", "everyday-0066", "everyday-0067", "everyday-0068", "everyday-0069", "everyday-0070", "everyday-0071", "everyday-0072", "everyday-0073", "everyday-0074", "everyday-0075", "everyday-0076", "everyday-0077", "everyday-0078", "everyday-0079", "everyday-0080", "everyday-0081", "everyday-0082", "everyday-0083", "everyday-0084", "everyday-0085", "everyday-0086", "everyday-0087", "everyday-0088", "everyday-0089", "everyday-0090", "everyday-0091", "everyday-0092", "everyday-0093", "everyday-0094", "everyday-0095", "everyday-0096", "everyday-0097", "everyday-0098", "everyday-0099", "everyday-0100"]}, {"file": "great.mp3", "text": "Wonderful work!", "category": "instructions", "sha256": "9d7b6df396418bb384ca49ce1d6dd766f43db08d7496d9052f30138e9cb1bd16", "activityIds": []}, {"file": "jigsaw.mp3", "text": "Move the pieces to rebuild the picture.", "category": "instructions", "sha256": "91f9823ae9026153beba8afa9ce55c67070f1ee1109d267df9c6a2da420479eb", "activityIds": ["jigsaw-0001", "jigsaw-0002", "jigsaw-0003", "jigsaw-0004", "jigsaw-0005", "jigsaw-0006", "jigsaw-0007", "jigsaw-0008", "jigsaw-0009", "jigsaw-0010", "jigsaw-0011", "jigsaw-0012", "jigsaw-0013", "jigsaw-0014", "jigsaw-0015", "jigsaw-0016", "jigsaw-0017", "jigsaw-0018", "jigsaw-0019", "jigsaw-0020", "jigsaw-0021", "jigsaw-0022", "jigsaw-0023", "jigsaw-0024", "jigsaw-0025", "jigsaw-0026", "jigsaw-0027", "jigsaw-0028", "jigsaw-0029", "jigsaw-0030", "jigsaw-0031", "jigsaw-0032", "jigsaw-0033", "jigsaw-0034", "jigsaw-0035", "jigsaw-0036", "jigsaw-0037", "jigsaw-0038", "jigsaw-0039", "jigsaw-0040", "jigsaw-0041", "jigsaw-0042", "jigsaw-0043", "jigsaw-0044", "jigsaw-0045", "jigsaw-0046", "jigsaw-0047", "jigsaw-0048", "jigsaw-0049", "jigsaw-0050", "jigsaw-0051", "jigsaw-0052", "jigsaw-0053", "jigsaw-0054", "jigsaw-0055", "jigsaw-0056", "jigsaw-0057", "jigsaw-0058", "jigsaw-0059", "jigsaw-0060", "jigsaw-0061", "jigsaw-0062", "jigsaw-0063", "jigsaw-0064", "jigsaw-0065", "jigsaw-0066", "jigsaw-0067", "jigsaw-0068", "jigsaw-0069", "jigsaw-0070", "jigsaw-0071", "jigsaw-0072", "jigsaw-0073", "jigsaw-0074", "jigsaw-0075", "jigsaw-0076", "jigsaw-0077", "jigsaw-0078", "jigsaw-0079", "jigsaw-0080", "jigsaw-0081", "jigsaw-0082", "jigsaw-0083", "jigsaw-0084", "jigsaw-0085", "jigsaw-0086", "jigsaw-0087", "jigsaw-0088", "jigsaw-0089", "jigsaw-0090", "jigsaw-0091", "jigsaw-0092", "jigsaw-0093", "jigsaw-0094", "jigsaw-0095", "jigsaw-0096", "jigsaw-0097", "jigsaw-0098", "jigsaw-0099", "jigsaw-0100", "jigsaw-0101", "jigsaw-0102", "jigsaw-0103", "jigsaw-0104", "jigsaw-0105", "jigsaw-0106", "jigsaw-0107", "jigsaw-0108", "jigsaw-0109", "jigsaw-0110", "jigsaw-0111", "jigsaw-0112", "jigsaw-0113", "jigsaw-0114", "jigsaw-0115", "jigsaw-0116", "jigsaw-0117", "jigsaw-0118", "jigsaw-0119", "jigsaw-0120"]}, {"file": "letters.mp3", "text": "Listen, look, and choose the matching letter.", "category": "instructions", "sha256": "beebd2878f71c64a792a1af9e60f6401759b20857fb73b403b1e0626a04557df", "activityIds": ["letters-0001", "letters-0002", "letters-0003", "letters-0004", "letters-0005", "letters-0006", "letters-0007", "letters-0008", "letters-0009", "letters-0010", "letters-0011", "letters-0012", "letters-0013", "letters-0014", "letters-0015", "letters-0016", "letters-0017", "letters-0018", "letters-0019", "letters-0020", "letters-0021", "letters-0022", "letters-0023", "letters-0024", "letters-0025", "letters-0026", "letters-0027", "letters-0028", "letters-0029", "letters-0030", "letters-0031", "letters-0032", "letters-0033", "letters-0034", "letters-0035", "letters-0036", "letters-0037", "letters-0038", "letters-0039", "letters-0040", "letters-0041", "letters-0042", "letters-0043", "letters-0044", "letters-0045", "letters-0046", "letters-0047", "letters-0048", "letters-0049", "letters-0050", "letters-0051", "letters-0052", "letters-0053", "letters-0054", "letters-0055", "letters-0056", "letters-0057", "letters-0058", "letters-0059", "letters-0060", "letters-0061", "letters-0062", "letters-0063", "letters-0064", "letters-0065", "letters-0066", "letters-0067", "letters-0068", "letters-0069", "letters-0070", "letters-0071", "letters-0072", "letters-0073", "letters-0074", "letters-0075", "letters-0076", "letters-0077", "letters-0078", "letters-0079", "letters-0080", "letters-0081", "letters-0082", "letters-0083", "letters-0084", "letters-0085", "letters-0086", "letters-0087", "letters-0088", "letters-0089", "letters-0090", "letters-0091", "letters-0092", "letters-0093", "letters-0094", "letters-0095", "letters-0096", "letters-0097", "letters-0098", "letters-0099", "letters-0100", "letters-0101", "letters-0102", "letters-0103", "letters-0104", "letters-0105", "letters-0106", "letters-0107", "letters-0108", "letters-0109", "letters-0110", "letters-0111", "letters-0112", "letters-0113", "letters-0114", "letters-0115", "letters-0116", "letters-0117", "letters-0118", "letters-0119", "letters-0120", "letters-0121", "letters-0122", "letters-0123", "letters-0124", "letters-0125", "letters-0126", "letters-0127", "letters-0128", "letters-0129", "letters-0130", "letters-0131", "letters-0132", "letters-0133", "letters-0134", "letters-0135", "letters-0136", "letters-0137", "letters-0138", "letters-0139", "letters-0140", "letters-0141", "letters-0142", "letters-0143", "letters-0144", "letters-0145", "letters-0146", "letters-0147", "letters-0148", "letters-0149", "letters-0150", "letters-0151", "letters-0152", "letters-0153", "letters-0154", "letters-0155", "letters-0156", "letters-0157", "letters-0158", "letters-0159", "letters-0160"]}, {"file": "math.mp3", "text": "Solve the problem. You can use a hint.", "category": "instructions", "sha256": "9fc58e6de8ec2a9d844be322346067d4fc395bce75aa548659e601cf716c11fa", "activityIds": ["math-0001", "math-0002", "math-0003", "math-0004", "math-0005", "math-0006", "math-0007", "math-0008", "math-0009", "math-0010", "math-0011", "math-0012", "math-0013", "math-0014", "math-0015", "math-0016", "math-0017", "math-0018", "math-0019", "math-0020", "math-0021", "math-0022", "math-0023", "math-0024", "math-0025", "math-0026", "math-0027", "math-0028", "math-0029", "math-0030", "math-0031", "math-0032", "math-0033", "math-0034", "math-0035", "math-0036", "math-0037", "math-0038", "math-0039", "math-0040", "math-0041", "math-0042", "math-0043", "math-0044", "math-0045", "math-0046", "math-0047", "math-0048", "math-0049", "math-0050", "math-0051", "math-0052", "math-0053", "math-0054", "math-0055", "math-0056", "math-0057", "math-0058", "math-0059", "math-0060", "math-0061", "math-0062", "math-0063", "math-0064", "math-0065", "math-0066", "math-0067", "math-0068", "math-0069", "math-0070", "math-0071", "math-0072", "math-0073", "math-0074", "math-0075", "math-0076", "math-0077", "math-0078", "math-0079", "math-0080", "math-0081", "math-0082", "math-0083", "math-0084", "math-0085", "math-0086", "math-0087", "math-0088", "math-0089", "math-0090", "math-0091", "math-0092", "math-0093", "math-0094", "math-0095", "math-0096", "math-0097", "math-0098", "math-0099", "math-0100", "math-0101", "math-0102", "math-0103", "math-0104", "math-0105", "math-0106", "math-0107", "math-0108", "math-0109", "math-0110", "math-0111", "math-0112", "math-0113", "math-0114", "math-0115", "math-0116", "math-0117", "math-0118", "math-0119", "math-0120", "math-0121", "math-0122", "math-0123", "math-0124", "math-0125", "math-0126", "math-0127", "math-0128", "math-0129", "math-0130", "math-0131", "math-0132", "math-0133", "math-0134", "math-0135", "math-0136", "math-0137", "math-0138", "math-0139", "math-0140", "math-0141", "math-0142", "math-0143", "math-0144", "math-0145", "math-0146", "math-0147", "math-0148", "math-0149", "math-0150", "math-0151", "math-0152", "math-0153", "math-0154", "math-0155", "math-0156", "math-0157", "math-0158", "math-0159", "math-0160", "math-0161", "math-0162", "math-0163", "math-0164", "math-0165", "math-0166", "math-0167", "math-0168", "math-0169", "math-0170", "math-0171", "math-0172", "math-0173", "math-0174", "math-0175", "math-0176", "math-0177", "math-0178", "math-0179", "math-0180", "math-0181", "math-0182", "math-0183", "math-0184", "math-0185", "math-0186", "math-0187", "math-0188", "math-0189", "math-0190", "math-0191", "math-0192", "math-0193", "math-0194", "math-0195", "math-0196", "math-0197", "math-0198", "math-0199", "math-0200", "math-0201", "math-0202", "math-0203", "math-0204", "math-0205", "math-0206", "math-0207", "math-0208", "math-0209", "math-0210", "math-0211", "math-0212", "math-0213", "math-0214", "math-0215", "math-0216", "math-0217", "math-0218", "math-0219", "math-0220"]}, {"file": "mazes.mp3", "text": "Guide Piko to the star without crossing the walls.", "category": "instructions", "sha256": "85bf1fca6bfbacbff0163561c68b5d0875211a928d089c771d1710f6bdfa0c02", "activityIds": ["mazes-0001", "mazes-0002", "mazes-0003", "mazes-0004", "mazes-0005", "mazes-0006", "mazes-0007", "mazes-0008", "mazes-0009", "mazes-0010", "mazes-0011", "mazes-0012", "mazes-0013", "mazes-0014", "mazes-0015", "mazes-0016", "mazes-0017", "mazes-0018", "mazes-0019", "mazes-0020", "mazes-0021", "mazes-0022", "mazes-0023", "mazes-0024", "mazes-0025", "mazes-0026", "mazes-0027", "mazes-0028", "mazes-0029", "mazes-0030", "mazes-0031", "mazes-0032", "mazes-0033", "mazes-0034", "mazes-0035", "mazes-0036", "mazes-0037", "mazes-0038", "mazes-0039", "mazes-0040", "mazes-0041", "mazes-0042", "mazes-0043", "mazes-0044", "mazes-0045", "mazes-0046", "mazes-0047", "mazes-0048", "mazes-0049", "mazes-0050", "mazes-0051", "mazes-0052", "mazes-0053", "mazes-0054", "mazes-0055", "mazes-0056", "mazes-0057", "mazes-0058", "mazes-0059", "mazes-0060", "mazes-0061", "mazes-0062", "mazes-0063", "mazes-0064", "mazes-0065", "mazes-0066", "mazes-0067", "mazes-0068", "mazes-0069", "mazes-0070", "mazes-0071", "mazes-0072", "mazes-0073", "mazes-0074", "mazes-0075", "mazes-0076", "mazes-0077", "mazes-0078", "mazes-0079", "mazes-0080", "mazes-0081", "mazes-0082", "mazes-0083", "mazes-0084", "mazes-0085", "mazes-0086", "mazes-0087", "mazes-0088", "mazes-0089", "mazes-0090", "mazes-0091", "mazes-0092", "mazes-0093", "mazes-0094", "mazes-0095", "mazes-0096", "mazes-0097", "mazes-0098", "mazes-0099", "mazes-0100", "mazes-0101", "mazes-0102", "mazes-0103", "mazes-0104", "mazes-0105", "mazes-0106", "mazes-0107", "mazes-0108", "mazes-0109", "mazes-0110", "mazes-0111", "mazes-0112", "mazes-0113", "mazes-0114", "mazes-0115", "mazes-0116", "mazes-0117", "mazes-0118", "mazes-0119", "mazes-0120"]}, {"file": "memory.mp3", "text": "Turn over two cards. Find all the matching pairs.", "category": "instructions", "sha256": "2f043827efd68350044c22efd643e338048a8a665a3dd7235a2c24a62ee45ce7", "activityIds": ["memory-0001", "memory-0002", "memory-0003", "memory-0004", "memory-0005", "memory-0006", "memory-0007", "memory-0008", "memory-0009", "memory-0010", "memory-0011", "memory-0012", "memory-0013", "memory-0014", "memory-0015", "memory-0016", "memory-0017", "memory-0018", "memory-0019", "memory-0020", "memory-0021", "memory-0022", "memory-0023", "memory-0024", "memory-0025", "memory-0026", "memory-0027", "memory-0028", "memory-0029", "memory-0030", "memory-0031", "memory-0032", "memory-0033", "memory-0034", "memory-0035", "memory-0036", "memory-0037", "memory-0038", "memory-0039", "memory-0040", "memory-0041", "memory-0042", "memory-0043", "memory-0044", "memory-0045", "memory-0046", "memory-0047", "memory-0048", "memory-0049", "memory-0050", "memory-0051", "memory-0052", "memory-0053", "memory-0054", "memory-0055", "memory-0056", "memory-0057", "memory-0058", "memory-0059", "memory-0060", "memory-0061", "memory-0062", "memory-0063", "memory-0064", "memory-0065", "memory-0066", "memory-0067", "memory-0068", "memory-0069", "memory-0070", "memory-0071", "memory-0072", "memory-0073", "memory-0074", "memory-0075", "memory-0076", "memory-0077", "memory-0078", "memory-0079", "memory-0080", "memory-0081", "memory-0082", "memory-0083", "memory-0084", "memory-0085", "memory-0086", "memory-0087", "memory-0088", "memory-0089", "memory-0090", "memory-0091", "memory-0092", "memory-0093", "memory-0094", "memory-0095", "memory-0096", "memory-0097", "memory-0098", "memory-0099", "memory-0100"]}, {"file": "music.mp3", "text": "Listen to the notes, then play them in the same order.", "category": "instructions", "sha256": "8004c7fde6c7955a63597b8961bb98cbf962436319451b6e20064ce5b7f24ea2", "activityIds": ["music-0001", "music-0002", "music-0003", "music-0004", "music-0005", "music-0006", "music-0007", "music-0008", "music-0009", "music-0010", "music-0011", "music-0012", "music-0013", "music-0014", "music-0015", "music-0016", "music-0017", "music-0018", "music-0019", "music-0020", "music-0021", "music-0022", "music-0023", "music-0024", "music-0025", "music-0026", "music-0027", "music-0028", "music-0029", "music-0030", "music-0031", "music-0032", "music-0033", "music-0034", "music-0035", "music-0036", "music-0037", "music-0038", "music-0039", "music-0040", "music-0041", "music-0042", "music-0043", "music-0044", "music-0045", "music-0046", "music-0047", "music-0048", "music-0049", "music-0050", "music-0051", "music-0052", "music-0053", "music-0054", "music-0055", "music-0056", "music-0057", "music-0058", "music-0059", "music-0060", "music-0061", "music-0062", "music-0063", "music-0064", "music-0065", "music-0066", "music-0067", "music-0068", "music-0069", "music-0070", "music-0071", "music-0072", "music-0073", "music-0074", "music-0075", "music-0076", "music-0077", "music-0078", "music-0079", "music-0080"]}, {"file": "nature.mp3", "text": "Explore nature and choose the correct answer.", "category": "instructions", "sha256": "c6bcd29b28bc09b17c93a4fc5788a821c080c69baba24c0aaa8e02edff2815bc", "activityIds": ["nature-0001", "nature-0002", "nature-0003", "nature-0004", "nature-0005", "nature-0006", "nature-0007", "nature-0008", "nature-0009", "nature-0010", "nature-0011", "nature-0012", "nature-0013", "nature-0014", "nature-0015", "nature-0016", "nature-0017", "nature-0018", "nature-0019", "nature-0020", "nature-0021", "nature-0022", "nature-0023", "nature-0024", "nature-0025", "nature-0026", "nature-0027", "nature-0028", "nature-0029", "nature-0030", "nature-0031", "nature-0032", "nature-0033", "nature-0034", "nature-0035", "nature-0036", "nature-0037", "nature-0038", "nature-0039", "nature-0040", "nature-0041", "nature-0042", "nature-0043", "nature-0044", "nature-0045", "nature-0046", "nature-0047", "nature-0048", "nature-0049", "nature-0050", "nature-0051", "nature-0052", "nature-0053", "nature-0054", "nature-0055", "nature-0056", "nature-0057", "nature-0058", "nature-0059", "nature-0060", "nature-0061", "nature-0062", "nature-0063", "nature-0064", "nature-0065", "nature-0066", "nature-0067", "nature-0068", "nature-0069", "nature-0070", "nature-0071", "nature-0072", "nature-0073", "nature-0074", "nature-0075", "nature-0076", "nature-0077", "nature-0078", "nature-0079", "nature-0080", "nature-0081", "nature-0082", "nature-0083", "nature-0084", "nature-0085", "nature-0086", "nature-0087", "nature-0088", "nature-0089", "nature-0090", "nature-0091", "nature-0092", "nature-0093", "nature-0094", "nature-0095", "nature-0096", "nature-0097", "nature-0098", "nature-0099", "nature-0100", "nature-0101", "nature-0102", "nature-0103", "nature-0104", "nature-0105", "nature-0106", "nature-0107", "nature-0108", "nature-0109", "nature-0110", "nature-0111", "nature-0112", "nature-0113", "nature-0114", "nature-0115", "nature-0116", "nature-0117", "nature-0118", "nature-0119", "nature-0120"]}, {"file": "patterns.mp3", "text": "Find what comes next in the pattern.", "category": "instructions", "sha256": "f84c0138019f01de1dd63466b774cdf3faf25456f6695c5feb8a146bc216b025", "activityIds": ["patterns-0001", "patterns-0002", "patterns-0003", "patterns-0004", "patterns-0005", "patterns-0006", "patterns-0007", "patterns-0008", "patterns-0009", "patterns-0010", "patterns-0011", "patterns-0012", "patterns-0013", "patterns-0014", "patterns-0015", "patterns-0016", "patterns-0017", "patterns-0018", "patterns-0019", "patterns-0020", "patterns-0021", "patterns-0022", "patterns-0023", "patterns-0024", "patterns-0025", "patterns-0026", "patterns-0027", "patterns-0028", "patterns-0029", "patterns-0030", "patterns-0031", "patterns-0032", "patterns-0033", "patterns-0034", "patterns-0035", "patterns-0036", "patterns-0037", "patterns-0038", "patterns-0039", "patterns-0040", "patterns-0041", "patterns-0042", "patterns-0043", "patterns-0044", "patterns-0045", "patterns-0046", "patterns-0047", "patterns-0048", "patterns-0049", "patterns-0050", "patterns-0051", "patterns-0052", "patterns-0053", "patterns-0054", "patterns-0055", "patterns-0056", "patterns-0057", "patterns-0058", "patterns-0059", "patterns-0060", "patterns-0061", "patterns-0062", "patterns-0063", "patterns-0064", "patterns-0065", "patterns-0066", "patterns-0067", "patterns-0068", "patterns-0069", "patterns-0070", "patterns-0071", "patterns-0072", "patterns-0073", "patterns-0074", "patterns-0075", "patterns-0076", "patterns-0077", "patterns-0078", "patterns-0079", "patterns-0080", "patterns-0081", "patterns-0082", "patterns-0083", "patterns-0084", "patterns-0085", "patterns-0086", "patterns-0087", "patterns-0088", "patterns-0089", "patterns-0090", "patterns-0091", "patterns-0092", "patterns-0093", "patterns-0094", "patterns-0095", "patterns-0096", "patterns-0097", "patterns-0098", "patterns-0099", "patterns-0100", "patterns-0101", "patterns-0102", "patterns-0103", "patterns-0104", "patterns-0105", "patterns-0106", "patterns-0107", "patterns-0108", "patterns-0109", "patterns-0110", "patterns-0111", "patterns-0112", "patterns-0113", "patterns-0114", "patterns-0115", "patterns-0116", "patterns-0117", "patterns-0118", "patterns-0119", "patterns-0120", "patterns-0121", "patterns-0122", "patterns-0123", "patterns-0124", "patterns-0125", "patterns-0126", "patterns-0127", "patterns-0128", "patterns-0129", "patterns-0130", "patterns-0131", "patterns-0132", "patterns-0133", "patterns-0134", "patterns-0135", "patterns-0136", "patterns-0137", "patterns-0138", "patterns-0139", "patterns-0140", "patterns-0141", "patterns-0142", "patterns-0143", "patterns-0144", "patterns-0145", "patterns-0146", "patterns-0147", "patterns-0148", "patterns-0149", "patterns-0150", "patterns-0151", "patterns-0152", "patterns-0153", "patterns-0154", "patterns-0155", "patterns-0156", "patterns-0157", "patterns-0158", "patterns-0159", "patterns-0160"]}, {"file": "shapes.mp3", "text": "Look carefully and choose the matching shape or color.", "category": "instructions", "sha256": "7eeaf9396db075833a21b163729977490be8e257b1b67afd6a6fb68c35a031ae", "activityIds": ["shapes-0001", "shapes-0002", "shapes-0003", "shapes-0004", "shapes-0005", "shapes-0006", "shapes-0007", "shapes-0008", "shapes-0009", "shapes-0010", "shapes-0011", "shapes-0012", "shapes-0013", "shapes-0014", "shapes-0015", "shapes-0016", "shapes-0017", "shapes-0018", "shapes-0019", "shapes-0020", "shapes-0021", "shapes-0022", "shapes-0023", "shapes-0024", "shapes-0025", "shapes-0026", "shapes-0027", "shapes-0028", "shapes-0029", "shapes-0030", "shapes-0031", "shapes-0032", "shapes-0033", "shapes-0034", "shapes-0035", "shapes-0036", "shapes-0037", "shapes-0038", "shapes-0039", "shapes-0040", "shapes-0041", "shapes-0042", "shapes-0043", "shapes-0044", "shapes-0045", "shapes-0046", "shapes-0047", "shapes-0048", "shapes-0049", "shapes-0050", "shapes-0051", "shapes-0052", "shapes-0053", "shapes-0054", "shapes-0055", "shapes-0056", "shapes-0057", "shapes-0058", "shapes-0059", "shapes-0060", "shapes-0061", "shapes-0062", "shapes-0063", "shapes-0064", "shapes-0065", "shapes-0066", "shapes-0067", "shapes-0068", "shapes-0069", "shapes-0070", "shapes-0071", "shapes-0072", "shapes-0073", "shapes-0074", "shapes-0075", "shapes-0076", "shapes-0077", "shapes-0078", "shapes-0079", "shapes-0080", "shapes-0081", "shapes-0082", "shapes-0083", "shapes-0084", "shapes-0085", "shapes-0086", "shapes-0087", "shapes-0088", "shapes-0089", "shapes-0090", "shapes-0091", "shapes-0092", "shapes-0093", "shapes-0094", "shapes-0095", "shapes-0096", "shapes-0097", "shapes-0098", "shapes-0099", "shapes-0100", "shapes-0101", "shapes-0102", "shapes-0103", "shapes-0104", "shapes-0105", "shapes-0106", "shapes-0107", "shapes-0108", "shapes-0109", "shapes-0110", "shapes-0111", "shapes-0112", "shapes-0113", "shapes-0114", "shapes-0115", "shapes-0116", "shapes-0117", "shapes-0118", "shapes-0119", "shapes-0120"]}, {"file": "sorting.mp3", "text": "Move each picture to its matching group.", "category": "instructions", "sha256": "e1e1deb9a951ddb239965c523bc7e68eeea233e167881c4d5aacb788b5db5af1", "activityIds": ["sorting-0001", "sorting-0002", "sorting-0003", "sorting-0004", "sorting-0005", "sorting-0006", "sorting-0007", "sorting-0008", "sorting-0009", "sorting-0010", "sorting-0011", "sorting-0012", "sorting-0013", "sorting-0014", "sorting-0015", "sorting-0016", "sorting-0017", "sorting-0018", "sorting-0019", "sorting-0020", "sorting-0021", "sorting-0022", "sorting-0023", "sorting-0024", "sorting-0025", "sorting-0026", "sorting-0027", "sorting-0028", "sorting-0029", "sorting-0030", "sorting-0031", "sorting-0032", "sorting-0033", "sorting-0034", "sorting-0035", "sorting-0036", "sorting-0037", "sorting-0038", "sorting-0039", "sorting-0040", "sorting-0041", "sorting-0042", "sorting-0043", "sorting-0044", "sorting-0045", "sorting-0046", "sorting-0047", "sorting-0048", "sorting-0049", "sorting-0050", "sorting-0051", "sorting-0052", "sorting-0053", "sorting-0054", "sorting-0055", "sorting-0056", "sorting-0057", "sorting-0058", "sorting-0059", "sorting-0060", "sorting-0061", "sorting-0062", "sorting-0063", "sorting-0064", "sorting-0065", "sorting-0066", "sorting-0067", "sorting-0068", "sorting-0069", "sorting-0070", "sorting-0071", "sorting-0072", "sorting-0073", "sorting-0074", "sorting-0075", "sorting-0076", "sorting-0077", "sorting-0078", "sorting-0079", "sorting-0080", "sorting-0081", "sorting-0082", "sorting-0083", "sorting-0084", "sorting-0085", "sorting-0086", "sorting-0087", "sorting-0088", "sorting-0089", "sorting-0090", "sorting-0091", "sorting-0092", "sorting-0093", "sorting-0094", "sorting-0095", "sorting-0096", "sorting-0097", "sorting-0098", "sorting-0099", "sorting-0100", "sorting-0101", "sorting-0102", "sorting-0103", "sorting-0104", "sorting-0105", "sorting-0106", "sorting-0107", "sorting-0108", "sorting-0109", "sorting-0110", "sorting-0111", "sorting-0112", "sorting-0113", "sorting-0114", "sorting-0115", "sorting-0116", "sorting-0117", "sorting-0118", "sorting-0119", "sorting-0120"]}, {"file": "tracing.mp3", "text": "Follow the dots in order, starting at the glowing dot.", "category": "instructions", "sha256": "bd30f7879169db4ddff4fb4d66191f2d25dafb193ef3bbd55648e5e551e3fe01", "activityIds": ["tracing-0001", "tracing-0002", "tracing-0003", "tracing-0004", "tracing-0005", "tracing-0006", "tracing-0007", "tracing-0008", "tracing-0009", "tracing-0010", "tracing-0011", "tracing-0012", "tracing-0013", "tracing-0014", "tracing-0015", "tracing-0016", "tracing-0017", "tracing-0018", "tracing-0019", "tracing-0020", "tracing-0021", "tracing-0022", "tracing-0023", "tracing-0024", "tracing-0025", "tracing-0026", "tracing-0027", "tracing-0028", "tracing-0029", "tracing-0030", "tracing-0031", "tracing-0032", "tracing-0033", "tracing-0034", "tracing-0035", "tracing-0036", "tracing-0037", "tracing-0038", "tracing-0039", "tracing-0040", "tracing-0041", "tracing-0042", "tracing-0043", "tracing-0044", "tracing-0045", "tracing-0046", "tracing-0047", "tracing-0048", "tracing-0049", "tracing-0050", "tracing-0051", "tracing-0052", "tracing-0053", "tracing-0054", "tracing-0055", "tracing-0056", "tracing-0057", "tracing-0058", "tracing-0059", "tracing-0060", "tracing-0061", "tracing-0062", "tracing-0063", "tracing-0064", "tracing-0065", "tracing-0066", "tracing-0067", "tracing-0068", "tracing-0069", "tracing-0070", "tracing-0071", "tracing-0072", "tracing-0073", "tracing-0074", "tracing-0075", "tracing-0076", "tracing-0077", "tracing-0078", "tracing-0079", "tracing-0080", "tracing-0081", "tracing-0082", "tracing-0083", "tracing-0084", "tracing-0085", "tracing-0086", "tracing-0087", "tracing-0088", "tracing-0089", "tracing-0090", "tracing-0091", "tracing-0092", "tracing-0093", "tracing-0094", "tracing-0095", "tracing-0096", "tracing-0097", "tracing-0098", "tracing-0099", "tracing-0100", "tracing-0101", "tracing-0102", "tracing-0103", "tracing-0104", "tracing-0105", "tracing-0106", "tracing-0107", "tracing-0108", "tracing-0109", "tracing-0110", "tracing-0111", "tracing-0112", "tracing-0113", "tracing-0114", "tracing-0115", "tracing-0116", "tracing-0117", "tracing-0118", "tracing-0119", "tracing-0120", "tracing-0121", "tracing-0122", "tracing-0123", "tracing-0124", "tracing-0125", "tracing-0126", "tracing-0127", "tracing-0128", "tracing-0129", "tracing-0130", "tracing-0131", "tracing-0132", "tracing-0133", "tracing-0134", "tracing-0135", "tracing-0136", "tracing-0137", "tracing-0138", "tracing-0139", "tracing-0140", "tracing-0141", "tracing-0142", "tracing-0143", "tracing-0144", "tracing-0145", "tracing-0146", "tracing-0147", "tracing-0148", "tracing-0149", "tracing-0150", "tracing-0151", "tracing-0152", "tracing-0153", "tracing-0154", "tracing-0155", "tracing-0156", "tracing-0157", "tracing-0158", "tracing-0159", "tracing-0160"]}, {"file": "welcome.mp3", "text": "A little wonder, every day.", "category": "instructions", "sha256": "3e37853a2b14d2892b1181c9eb4bc0c8de5a0c538d409aac708a79392a78665b", "activityIds": []}, {"file": "words.mp3", "text": "Look at the picture and discover its word.", "category": "instructions", "sha256": "1bb7d12938a1cfc0d21335a90e1f69bc88d12c97a83ae182366818ca10f25a22", "activityIds": ["words-0001", "words-0002", "words-0003", "words-0004", "words-0005", "words-0006", "words-0007", "words-0008", "words-0009", "words-0010", "words-0011", "words-0012", "words-0013", "words-0014", "words-0015", "words-0016", "words-0017", "words-0018", "words-0019", "words-0020", "words-0021", "words-0022", "words-0023", "words-0024", "words-0025", "words-0026", "words-0027", "words-0028", "words-0029", "words-0030", "words-0031", "words-0032", "words-0033", "words-0034", "words-0035", "words-0036", "words-0037", "words-0038", "words-0039", "words-0040", "words-0041", "words-0042", "words-0043", "words-0044", "words-0045", "words-0046", "words-0047", "words-0048", "words-0049", "words-0050", "words-0051", "words-0052", "words-0053", "words-0054", "words-0055", "words-0056", "words-0057", "words-0058", "words-0059", "words-0060", "words-0061", "words-0062", "words-0063", "words-0064", "words-0065", "words-0066", "words-0067", "words-0068", "words-0069", "words-0070", "words-0071", "words-0072", "words-0073", "words-0074", "words-0075", "words-0076", "words-0077", "words-0078", "words-0079", "words-0080", "words-0081", "words-0082", "words-0083", "words-0084", "words-0085", "words-0086", "words-0087", "words-0088", "words-0089", "words-0090", "words-0091", "words-0092", "words-0093", "words-0094", "words-0095", "words-0096", "words-0097", "words-0098", "words-0099", "words-0100", "words-0101", "words-0102", "words-0103", "words-0104", "words-0105", "words-0106", "words-0107", "words-0108", "words-0109", "words-0110", "words-0111", "words-0112", "words-0113", "words-0114", "words-0115", "words-0116", "words-0117", "words-0118", "words-0119", "words-0120", "words-0121", "words-0122", "words-0123", "words-0124", "words-0125", "words-0126", "words-0127", "words-0128", "words-0129", "words-0130", "words-0131", "words-0132", "words-0133", "words-0134", "words-0135", "words-0136", "words-0137", "words-0138", "words-0139", "words-0140", "words-0141", "words-0142", "words-0143", "words-0144", "words-0145", "words-0146", "words-0147", "words-0148", "words-0149", "words-0150", "words-0151", "words-0152", "words-0153", "words-0154", "words-0155", "words-0156", "words-0157", "words-0158", "words-0159", "words-0160", "words-0161", "words-0162", "words-0163", "words-0164", "words-0165", "words-0166", "words-0167", "words-0168", "words-0169", "words-0170", "words-0171", "words-0172", "words-0173", "words-0174", "words-0175", "words-0176", "words-0177", "words-0178", "words-0179", "words-0180"]}]}</script>
+<script>
+(() => {
+  'use strict';
+  const data = JSON.parse(document.getElementById('review-data').textContent);
+  const clips = new Map(data.recordings.map(clip => [clip.file, clip]));
+  const locale = data.locale || 'ar';
+  const localeName = data.localeName || 'Arabic';
+  const storageKey = data.storageKey || 'pikolumi-arabic-pronunciation-review-v1';
+  const selections = new Map();
+  const cards = [...document.querySelectorAll('.recording')];
+  const byId = id => document.getElementById(id);
+  const storageStatus = byId('storage-status');
+  const actionStatus = byId('action-status');
+  const normalize = text => text.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
+  let storageAvailable = true;
+  function announce(message, error = false) {
+    actionStatus.textContent = message;
+    actionStatus.classList.toggle('error', error);
+  }
+  function save() {
+    try {
+      localStorage.setItem(storageKey, JSON.stringify({schema: 1, selections: Object.fromEntries(selections)}));
+      storageAvailable = true;
+      storageStatus.textContent = 'Choices are saved in this browser. Download the selected list and its notes to keep a copy elsewhere.';
+    } catch {
+      storageAvailable = false;
+      storageStatus.textContent = 'Browser storage is unavailable. Copy or download your selections before closing this page.';
+    }
+  }
+  function accept(file, value) {
+    const clip = clips.get(file);
+    if (!clip || !value || typeof value !== 'object') return;
+    const changed = value.sha256 !== clip.sha256;
+    selections.set(file, {
+      flagged: value.flagged === true && !changed,
+      notes: typeof value.notes === 'string' ? value.notes.slice(0, 5000) : '',
+      sha256: clip.sha256,
+      updated: changed || value.updated === true,
+    });
+  }
+  try {
+    const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');
+    if (saved.schema === 1 && saved.selections && typeof saved.selections === 'object') {
+      for (const [file, value] of Object.entries(saved.selections)) accept(file, value);
+    }
+  } catch {
+    storageAvailable = false;
+    storageStatus.textContent = 'Saved selections could not be read. Load a downloaded copy or start a new selection.';
+  }
+  for (const clip of data.recordings) {
+    if (!selections.has(clip.file) && clip.initialReview) accept(clip.file, clip.initialReview);
+  }
+  function selected() {
+    return data.recordings.filter(clip => selections.get(clip.file)?.flagged);
+  }
+  function reportText() {
+    return [`Pikolumi ${localeName} pronunciation corrections`, '', ...selected().map(clip => {
+      const note = selections.get(clip.file).notes.trim();
+      return `${clip.file}\nExpected text: ${clip.text}${note ? '\nCorrection: ' + note : '\nNeeds pronunciation correction.'}`;
+    })].join('\n\n');
+  }
+  function exportData() {
+    return {schema: 1, locale, reviewMode: 'corrections_only', catalogVersion: data.catalogVersion,
+      exportedAt: new Date().toISOString(), recordings: selected().map(clip => ({
+        file: clip.file, text: clip.text, sha256: clip.sha256, activityIds: clip.activityIds,
+        notes: selections.get(clip.file).notes,
+      }))};
+  }
+  function render() {
+    const count = selected().length;
+    byId('selected-count').textContent = `${count} selected`;
+    for (const id of ['copy-report', 'download-report', 'unselect-all']) byId(id).disabled = count === 0;
+    const query = normalize(byId('search').value.trim());
+    const category = byId('category').value;
+    const onlySelected = byId('view').value === 'selected';
+    let visible = 0;
+    for (const card of cards) {
+      const clip = clips.get(card.dataset.file);
+      const state = selections.get(clip.file) || {flagged: false, notes: '', updated: false};
+      card.querySelector('[data-flag]').checked = state.flagged;
+      card.classList.toggle('flagged', state.flagged);
+      card.querySelector('[data-note]').value = state.notes;
+      card.querySelector('[data-note-container]').hidden = !state.flagged && !state.updated;
+      card.querySelector('[data-updated]').hidden = !state.updated;
+      card.hidden = !(category === 'all' || clip.category === category)
+        || (onlySelected && !state.flagged)
+        || !normalize(clip.file + ' ' + clip.text).includes(query);
+      if (!card.hidden) visible++;
+    }
+    byId('visible-count').textContent = `${visible} of ${data.recordings.length} recordings shown`;
+    byId('empty').hidden = visible !== 0;
+    byId('empty').textContent = onlySelected && count === 0
+      ? 'No recordings selected yet. Switch to All recordings and tick the ones that sound wrong.'
+      : 'No recordings match these filters. Try another category or search.';
+    if (!byId('report').hidden) byId('report-text').value = reportText();
+  }
+  for (const card of cards) {
+    const file = card.dataset.file;
+    card.querySelector('[data-flag]').addEventListener('change', event => {
+      const old = selections.get(file) || {notes: ''};
+      selections.set(file, {flagged: event.target.checked, notes: old.notes, sha256: clips.get(file).sha256, updated: false});
+      save(); render();
+    });
+    card.querySelector('[data-note]').addEventListener('input', event => {
+      const old = selections.get(file);
+      selections.set(file, {...old, notes: event.target.value.slice(0, 5000)});
+      save();
+      if (!byId('report').hidden) byId('report-text').value = reportText();
+    });
+  }
+  for (const id of ['search', 'category', 'view']) byId(id).addEventListener(id === 'search' ? 'input' : 'change', render);
+  byId('copy-report').addEventListener('click', async () => {
+    const text = reportText();
+    byId('report').hidden = false;
+    byId('report-text').value = text;
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(text);
+      announce('Selected list copied. Paste it into our chat.');
+    } catch {
+      byId('report-text').focus(); byId('report-text').select();
+      announce('The list is selected below. Press Command+C or Ctrl+C, then paste it into our chat.');
+    }
+  });
+  byId('close-report').addEventListener('click', () => {
+    byId('report').hidden = true; byId('copy-report').focus();
+  });
+  byId('download-report').addEventListener('click', () => {
+    const blob = new Blob([JSON.stringify(exportData(), null, 2)], {type: 'application/json'});
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url; link.download = data.exportName || 'pikolumi-arabic-corrections.json';
+    document.body.append(link); link.click(); link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    announce('Selections exported. Keep this file to reload your choices later.');
+  });
+  byId('unselect-all').addEventListener('click', () => {
+    for (const [file, state] of selections) selections.set(file, {...state, flagged: false});
+    save(); render(); announce('All recordings unselected. Your notes are retained.');
+  });
+  byId('import-report').addEventListener('change', event => {
+    const file = event.target.files[0];
+    if (!file) return;
+    if (file.size > Math.max(1024 * 1024, clips.size * 32 * 1024)) { announce('This selection file is too large.', true); event.target.value = ''; return; }
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const report = JSON.parse(reader.result);
+        if (report.schema !== 1 || report.locale !== locale || report.reviewMode !== 'corrections_only'
+          || !Array.isArray(report.recordings) || report.recordings.length > clips.size) throw new Error('format');
+        const seen = new Set();
+        for (const value of report.recordings) {
+          if (!value || !clips.has(value.file) || seen.has(value.file) || typeof value.sha256 !== 'string'
+            || (value.notes !== undefined && typeof value.notes !== 'string')) throw new Error('recording');
+          seen.add(value.file);
+        }
+        let changed = 0;
+        for (const value of report.recordings) {
+          if (value.sha256 !== clips.get(value.file).sha256) changed++;
+          accept(value.file, {...value, flagged: true});
+        }
+        save(); render();
+        announce(changed ? `${changed} recordings have changed. Notes are retained; listen and select them again.`
+          : `${report.recordings.length} saved selections loaded.`);
+      } catch { announce(`This is not a valid Pikolumi ${localeName} selection file. Your current choices are unchanged.`, true); }
+      event.target.value = '';
+    };
+    reader.onerror = () => { announce('The selection file could not be read.', true); event.target.value = ''; };
+    reader.readAsText(file);
+  });
+  document.addEventListener('play', event => {
+    if (event.target instanceof HTMLMediaElement) {
+      for (const audio of document.querySelectorAll('audio')) if (audio !== event.target && !audio.paused) audio.pause();
+    }
+  }, true);
+  render();
+  if (storageAvailable) save();
+})();
+</script>
+</html>

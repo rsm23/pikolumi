@@ -1,0 +1,41 @@
+{
+  "pixel": {
+    "passed": true,
+    "screens": 21,
+    "transport": "wireless",
+    "audio": "SilentAudio fixture; sound disabled",
+    "stayAwakePrior": 0,
+    "stayAwakeRestored": 0,
+    "performance": "not sampled; VM timeline could not connect on wireless transport",
+    "centeredBoardVerified": true,
+    "finalRunSeconds": 98,
+    "interruption": "Screen locked during capture; resumed after the user unlocked it. Final run passed."
+  },
+  "iosPhone": {
+    "passed": true,
+    "screens": 21,
+    "device": "iPhone 18 Pro simulator",
+    "audio": "SilentAudio fixture; sound disabled",
+    "performance": "not sampled",
+    "centeredBoardVerified": true
+  },
+  "iosTablet": {
+    "passed": true,
+    "screens": 21,
+    "device": "iPad Pro 13-inch simulator",
+    "audio": "SilentAudio fixture; sound disabled",
+    "performance": "not sampled",
+    "centeredBoardVerified": true
+  },
+  "catalogVersion": 3,
+  "artSha256": "c8eeea0e7a6469ae6e97b71d6ba02c45cc12cdceb98bf9c46d276e0377d538cb",
+  "checkedAtUTC": "2026-10-11T23:15:27.058137+00:00",
+  "totalScreens": 63,
+  "normalAppRestored": {
+    "pixel": "profile main entry point installed with adb install -r; existing app data retained",
+    "iosPhone": "normal simulator build installed without uninstalling",
+    "iosTablet": "normal simulator build installed without uninstalling"
+  },
+  "qaPackagesValidated": true,
+  "sourceDigest": "3bb56a0c5c4733539604ffeb793b597ece472e793ac3aba0e9df9461857672f9"
+}

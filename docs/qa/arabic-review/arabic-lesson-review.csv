@@ -1,0 +1,241 @@
+activityId,lesson,questionArabic,display,correctChoice,approved,reviewer,date,notes,sourceSha256
+tracing-0001,isolated,,ا,,,,,,da0ce34894ff4f2d51f0949cf56eafad1498a89903673958f3540550e2900cc7
+tracing-0002,isolated,,ب,,,,,,2c82e64db880c23d6b2536d1dd8a49b6d61b33d2ba4c46a2bd15192684088e7e
+tracing-0003,isolated,,ت,,,,,,d70222282ea59306ff07f84fae4b235d0c3580bc9628b1472051b39cfd747254
+tracing-0004,isolated,,ث,,,,,,608e553523cd1288b1cbbc8ddf0853a7c1ee2a6c9e3fc98bddb687c104f9bf79
+tracing-0005,isolated,,ج,,,,,,619636e11e53b4f3aa2dbbf41f908c4cb6916e2dca7f16f5b55a59145aad0b34
+tracing-0006,isolated,,ح,,,,,,7bf01d5552212b702e296e48c8ba07852748696a71eb34f3edd99fedfee3de6d
+tracing-0007,isolated,,خ,,,,,,bcf417a2cce9dbdca845add964d217348c0f42054cba3c09b881f99435daff28
+tracing-0008,isolated,,د,,,,,,21131d7c0042151b477d67407a28bab1816deddccbd62d270c33f479bcb18fef
+tracing-0009,isolated,,ذ,,,,,,27a686c6747553eaa90dc9e0d3d43ce939d564c455b824ae1c6ce6b8224fb2ef
+tracing-0010,isolated,,ر,,,,,,c4eb9bc8ea61d01ba20f9aacd875b99800521961708d404247a1df33c1e5cc9f
+tracing-0011,isolated,,ز,,,,,,f5bd00bff4fa950b198de695052afe8ba7fee8a1651700f7cdbed5d9ad052597
+tracing-0012,isolated,,س,,,,,,62c2da219aca99c00e65497da68620689a26181e8c462211e33af09312e625be
+tracing-0013,isolated,,ش,,,,,,3414accff811a59ce4d9d4b7b0c952e194c09376f3e69009677ae82aca91d161
+tracing-0014,isolated,,ص,,,,,,0ce5f500e4d5760d35adeeb74afab70c59e6b82e47380ac05389cee58f4fd737
+tracing-0015,isolated,,ض,,,,,,6d9d692475131f6393e30d6d5b7e4b30f29f9e9df095ca454243dfe8f490b737
+tracing-0016,isolated,,ط,,,,,,e4d8f37723bf7f7280e8a7aeb8267756827284522352f95ee0961066988d11e2
+tracing-0017,isolated,,ظ,,,,,,55d0cde897726ae2a0d0ac0b1302e4d679bf1a1b2feb82e9f527379d3c088b49
+tracing-0018,isolated,,ع,,,,,,dfee29730dbfcc63c873f247ed1aaef27f156b1deeb441315243796afb06924f
+tracing-0019,isolated,,غ,,,,,,2fd92c554ffbd6742edfc06ffbcfa8b43fb26bdb0f27cc4f645b4668e2da93ec
+tracing-0020,isolated,,ف,,,,,,1dba2410d6216ddf9779705dc5bf929b2b1e768f4f88a4807c1fc5c064ce91d2
+tracing-0021,isolated,,ق,,,,,,9ee3fc223462abd49f2ac592670adb890d2909dddb4cbba59d10f4d6c5b984d8
+tracing-0022,isolated,,ك,,,,,,473879319e7bb59c9ea70a1ab066e5b623959c478c377a5c989f587b4f4737c8
+tracing-0023,isolated,,ل,,,,,,a07ede36481c521d467e5f6d94a831847e3f3b01ababc24a0a2bf93a010e1d6b
+tracing-0024,isolated,,م,,,,,,b31fb5ab771658e6d6b06394765def8cb3c08780c9d44f2803bf70f464390e34
+tracing-0025,isolated,,ن,,,,,,dcf87300170c4924a43a19d563083b01d57c55f4dcdba0a6646b9de16749617c
+tracing-0026,isolated,,ه,,,,,,43a551a8ed28a591e0abd38dde4b6c5536a09bae32cf23e4638accb4e67510c0
+tracing-0027,isolated,,و,,,,,,ab9122ac22e5f9082ce5431ae3c76cb5c94181003708a6c086a004151711c305
+tracing-0028,isolated,,ي,,,,,,ff97e2998825c7a1f0dbc3cb1df152aac240993c02a653d8a517fd3281f74bb0
+tracing-0029,fatha,,بَ,,,,,,810c4fc759dcbf9345f2ccb41a83be8300b1b15bcbfa1ae2f278430aff6c7cbb
+tracing-0030,fatha,,تَ,,,,,,68180d9679d43806fed06b01b1bc75b5327667f48053f0ecf416960d40aee397
+tracing-0031,fatha,,ثَ,,,,,,afebc4d42a7dddf5dce26fa888c54319d8ee5e9f99b4afafaa12b3905db5c77e
+tracing-0032,fatha,,جَ,,,,,,b281c3da0ce44deb75902421e8f03842f289246d5cb437fdc980033d7f36e556
+tracing-0033,fatha,,حَ,,,,,,ca42551cccae0b2ab35270267883892791cc966d021e66d5eb284528a70c686b
+tracing-0034,fatha,,خَ,,,,,,69eb22c77db6bd5f2e227cb5043e0516bc7e3bee2ace540a9706a87205e2e5ac
+tracing-0035,fatha,,دَ,,,,,,5c13122c3f6966404948f555a35222958c3f9fa9b4ff80b072e782dbee336ae3
+tracing-0036,fatha,,ذَ,,,,,,8764fdb2347de86ed0cffadf5b9e1a631838a46c3cd46e4b4ceff4341f3aa1fe
+tracing-0037,fatha,,رَ,,,,,,162f45fd68ee19bdeefa15d67763d95066863a676f0abbbfbe3bf3379fbaba7f
+tracing-0038,fatha,,زَ,,,,,,e3795100e77340b6f9653b4bfce6577a876b6f49f0344d26b4c2a54c2d2a8235
+tracing-0039,fatha,,سَ,,,,,,046a2efc9e38ae1c490a4c3a6309cbe2005db75754900304b1e4f41c7f0f3c71
+tracing-0040,fatha,,شَ,,,,,,b352dc6a5266cada24fff9e3090b8946f7ba1d5543549ad3716ca496e4ccc74c
+tracing-0041,fatha,,صَ,,,,,,c68824a542c91577520e8fc061423b28fbca605974aea80bbe66ac1a831c90c4
+tracing-0042,fatha,,ضَ,,,,,,094d4fa8b8da61984ec1299e7639a42fe0bc5c394f95743d9a1ac7856eda163c
+tracing-0043,fatha,,طَ,,,,,,4a04eaf9acd43377ea3e4ca42997c0ea2349dc9b745c620c03a4607530bf5061
+tracing-0044,fatha,,ظَ,,,,,,f9251185797b8c90155bf08b57b91d8ec38e21061e0e7a480f3633512f603dee
+tracing-0045,fatha,,عَ,,,,,,e5b5709d9e230cce6ba0938ce4ad444912018b18f395f4c21d4bed0f166c417e
+tracing-0046,fatha,,غَ,,,,,,79e1ab37bf24e41a843989103db536f9471b003b78bed795b4e726fd2230487d
+tracing-0047,fatha,,فَ,,,,,,d89cd07a917c8337e536a9c8bcdcb679476cdd96bcd7a42267956b9726e2706d
+tracing-0048,fatha,,قَ,,,,,,4bbc301efb526a10d25164da4224f7b0128b957cd90cdab93d55cd01834f0b50
+tracing-0049,fatha,,كَ,,,,,,a8e874a8665bb9962b2f79e86dd25d5dea7c35bb3ce81d9742410889d5991dfe
+tracing-0050,fatha,,لَ,,,,,,8ce9f232bc5dab60d17728d5660cd47d2728b38328eb5544b0f784ecb03fcaec
+tracing-0051,fatha,,مَ,,,,,,40de3777c0b9d3eadef9a5d2c8d8e19644bbfa6d8ca18332584d1eae195444d6
+tracing-0052,fatha,,نَ,,,,,,6fa24282aa6c9ea5393fcd30976e714a2a517918d46330f3e2dd56aad3f752e0
+tracing-0053,fatha,,هَ,,,,,,8bd395e15154b58cb279617bfdb14522519c1f2680c7fed838e4248e4c7928c4
+tracing-0054,fatha,,وَ,,,,,,08b4b8a52d0c61416e5b0616916c86e5b33439f048660c59db44c5fe63e094f3
+tracing-0055,fatha,,يَ,,,,,,4276131db99a376e32f647a9d8534456867ce6977a1d0733e810223868528144
+tracing-0056,long-alif,,آ,,,,,,06d5d178c72feb4a64994e29660a2d4b1f13599bf1a0b2d88cfb57376d98d09d
+tracing-0057,word,,باب,,,,,,0f66a6d9ddf46db1f1a8878602f69b2a5cf43d17c2d38a480fc572d38933f917
+tracing-0058,word,,بيت,,,,,,14c1c892dc46863c7abde1ef3807f29727fd2a6f8faeb03040618df9b49e3c1d
+tracing-0059,word,,بنت,,,,,,85eabf44158db36b1c943786c09dde0fdf7ae40d4fc4fc2cea274ac4cc257232
+tracing-0060,word,,بنات,,,,,,f6175cb523f2326f79f919b36769d2b9d201a5cf5043e86b7fda5302ee23addb
+tracing-0061,word,,نبات,,,,,,3be91bd32f2bc9a5d59a1cc09b5db83f3458106830a2bb536ca8ac7ad8279d33
+tracing-0062,word,,ثوب,,,,,,aff7436709e7737f8ad96012c76b4c4592c3255d7c1fdfdeb29ab88e9d283b0f
+tracing-0063,word,,توت,,,,,,95b989d40bded07a2aae687fbb23b9c8679df8517d69b8cad9075df27770451d
+tracing-0064,word,,تين,,,,,,1782a6f5833bc5843461bc663235df3b2abed50894dca44d4788bee12457bff3
+tracing-0065,word,,كتب,,,,,,3307a30e651b347ad944c5edce4d6bc20244ba84b7d8571e8cfa5498c7e96819
+tracing-0066,word,,كتاب,,,,,,9b852b7f2f304ef3be05209bf4f4410c598969e19754be44fe3766a683cf5c64
+tracing-0067,word,,كلب,,,,,,b280d5c04953b6fab07dd1a853e8cb7d703f24671db45513cf1ca919d3bac606
+tracing-0068,word,,لبن,,,,,,5dee0531e40cc6531730f5028621acd365cd83a30dd25e35ec8f7d2a251b5303
+tracing-0069,word,,ليل,,,,,,43ac147978804f34da70bfc4d78964566854fbbd76220bb1f4b981eb244bee7f
+tracing-0070,word,,مال,,,,,,8925c2507e9bacc3898d27270e0113c7b031f4ab16ee02d01ea915f3d6c99f03
+tracing-0071,word,,نمل,,,,,,217ef4e2ece945506fa5b2f7a708b189674b4d901a95ee40f69927346d4b10cc
+tracing-0072,word,,نور,,,,,,e1cf335612583ae40f175ed9c4565d63c031e192235f0f5aed00f20d624f8da9
+tracing-0073,word,,نوم,,,,,,bc4cad47834218b8abf4e8e90d1e89198df81279ee4b8c2c6556d1dfbbf83f82
+tracing-0074,word,,ولد,,,,,,715cd2ea452d11cf99c8357dd7c8e68876ae37f98911ffe14c380b5d64657f78
+tracing-0075,word,,ورد,,,,,,dda749b45a74784e6734b0f68abedf1d3be28e295932433eeb3d3a6ffc10d3e3
+tracing-0076,word,,درس,,,,,,acb5ff991460375974b9163218e6f711daca5bac5b31d459dba54a6ab70fda22
+tracing-0077,word,,برد,,,,,,a038a5d9da1abca0ebf95227b27600f21938e8c21d4e43c9e265680509f6fe3e
+tracing-0078,word,,بدل,,,,,,60599f815cc1602e2dd2b709c73928f52b1d4c37d4642b02b1299a1113794e9c
+tracing-0079,word,,تمر,,,,,,8991419fdbbc13363150376110e757ec633ac7d1c7a4062a6e19e8744216bb0b
+tracing-0080,word,,سمك,,,,,,4911cf885d06bc5bfb01057e0d04fef6a42b823fa5479c54f64257c856bb0e61
+letters-0001,name,استمع إلى اسم الحرف واختره.,,ا,,,,,a0248f3ef5f41f7f4c7fc7ec0216a21153804958894399bee86007a5e071cc01
+letters-0002,name,استمع إلى اسم الحرف واختره.,,ب,,,,,8f756819f861ec5b5bb4739e100e180389d39079e0f1d0d6bee8c6030fc64f74
+letters-0003,name,استمع إلى اسم الحرف واختره.,,ت,,,,,ca3f38e02746b890af550df00e7687ba31bdca34a8c7f11724d0bd47230dd4e0
+letters-0004,name,استمع إلى اسم الحرف واختره.,,ث,,,,,b7f454dde4edbd29a8ab908b6efc0b052bfd1821d62e372b3e18685fbcb7f75e
+letters-0005,name,استمع إلى اسم الحرف واختره.,,ج,,,,,2238add902266b6d46d37b45add3073920dc46af568406ae0eccbaef893d5feb
+letters-0006,name,استمع إلى اسم الحرف واختره.,,ح,,,,,b41daea0187787b8a852bfe01737c65b74b05fb5ad2803f98ce418b8e68581d0
+letters-0007,name,استمع إلى اسم الحرف واختره.,,خ,,,,,531d953ba82f91198c4084935f81e6b113e1b6a88ce9b25a2e444def74a003d1
+letters-0008,name,استمع إلى اسم الحرف واختره.,,د,,,,,64f44c98f71848d2a2582499b7c5e72fefc9fc6bbe74ed9ba90c1a78b15a96f6
+letters-0009,name,استمع إلى اسم الحرف واختره.,,ذ,,,,,777840bd472c0ab6102348328219a663f0de4dbd45556d17c675debc6c3d1deb
+letters-0010,name,استمع إلى اسم الحرف واختره.,,ر,,,,,05999255e0a825b928a85373e83255502e377f4dc33ccba43da1af35fdb4eb07
+letters-0011,name,استمع إلى اسم الحرف واختره.,,ز,,,,,3f2dacd662a503d0f5d90e504fd0e0d4288649339bbb3116b38feb737e50b21e
+letters-0012,name,استمع إلى اسم الحرف واختره.,,س,,,,,b9b794f2a29fb7f33d83d1effc254aa6f13e843e932daf10844c59c55b02031c
+letters-0013,name,استمع إلى اسم الحرف واختره.,,ش,,,,,4546b6171681a42eab754de567366cdd2a23b2f40b9de2f9a4317df4611fbc06
+letters-0014,name,استمع إلى اسم الحرف واختره.,,ص,,,,,35db523550c1ee3733e05800b148e87f166b1e80aca54b669692c4661c69f853
+letters-0015,name,استمع إلى اسم الحرف واختره.,,ض,,,,,75494c8a375370a98400f3c101bdeacd9ba5f637ba0ce21751e7a804b009d343
+letters-0016,name,استمع إلى اسم الحرف واختره.,,ط,,,,,a4e105b8c8ab231a11e968cc04cc8c75fa209c2657a2d7aceff5bec50efae3bc
+letters-0017,name,استمع إلى اسم الحرف واختره.,,ظ,,,,,aafb71b56f3843539073291c541fde435314b1e9a6c2cb37c41839bf4bdc3a51
+letters-0018,name,استمع إلى اسم الحرف واختره.,,ع,,,,,6ad57776ea4441d785fe1f658d787a1bf048a78cb79350192cea2de2ca034b0e
+letters-0019,name,استمع إلى اسم الحرف واختره.,,غ,,,,,26c6e60a2e546aa6ccfb5beddf5466247bbfaa176c75590935348255d5991a48
+letters-0020,name,استمع إلى اسم الحرف واختره.,,ف,,,,,8e1538e4c840a64fea402b23ce8ddfc8d9116d9ccf0eb073b3311cfbcd166f89
+letters-0021,name,استمع إلى اسم الحرف واختره.,,ق,,,,,8186457080b7a3a37adf95fb8591d0b4477fa748c22b92a038817e644d7c76a5
+letters-0022,name,استمع إلى اسم الحرف واختره.,,ك,,,,,c3d8290a96c1afb862a744a4baac41b035478728b3e80f1c3edc6db3d4cd981b
+letters-0023,name,استمع إلى اسم الحرف واختره.,,ل,,,,,386c9997301af9737b5494e4c67b4122ac84f702d4fa07be4098cc54835d7141
+letters-0024,name,استمع إلى اسم الحرف واختره.,,م,,,,,03e668a0506faede3609f2d473d64db87aad1459e379817c085f5822c25741c5
+letters-0025,name,استمع إلى اسم الحرف واختره.,,ن,,,,,a7dafe4e51eca08677688a3d2208bf1d0aa57ead5bb21e2bc640a380920cbf36
+letters-0026,name,استمع إلى اسم الحرف واختره.,,ه,,,,,915f854c2cb606d20715d2928e98b735705f6cd7680bd892ca39bc6922461028
+letters-0027,name,استمع إلى اسم الحرف واختره.,,و,,,,,3de0c29fe03b493a751fff2b8757b71bcdad43c629d5ef25172ac20f3848d7a1
+letters-0028,name,استمع إلى اسم الحرف واختره.,,ي,,,,,68f92c054e81cadb5f984eaa09a2828f9931ce09cdfb22bf04394c09265f32c9
+letters-0029,forms,ما الحرف الذي تراه في هذه الأشكال؟,ا   ‍ا,ا,,,,,ab58058c308458bf0a3d2fa7feed1c142cfa1a4cf3fa7702480204455e716c1f
+letters-0030,forms,ما الحرف الذي تراه في هذه الأشكال؟,ب‍   ‍ب‍   ‍ب,ب,,,,,e6519d22db5fcd1750e03c4d1700d8d3c5f89eade07da1f717ee6d47d8023683
+letters-0031,forms,ما الحرف الذي تراه في هذه الأشكال؟,ت‍   ‍ت‍   ‍ت,ت,,,,,d2640890f9ed9db64c5d034bac3d71e3514430540b945716a55a1b7daf19deec
+letters-0032,forms,ما الحرف الذي تراه في هذه الأشكال؟,ث‍   ‍ث‍   ‍ث,ث,,,,,4d360ee3baff7cacb2c0caa1075c2fe48fcfd5b4670953711cb16685701fd016
+letters-0033,forms,ما الحرف الذي تراه في هذه الأشكال؟,ج‍   ‍ج‍   ‍ج,ج,,,,,2ee98478ed81bf13c9b010b4e2a5624c45dfb7ddfb099ccb544bd774ca158c35
+letters-0034,forms,ما الحرف الذي تراه في هذه الأشكال؟,ح‍   ‍ح‍   ‍ح,ح,,,,,d57f98cd2b9dfb10eee2914f26c1ef1541e349c3e4bc7cdcc5604b46a582bde7
+letters-0035,forms,ما الحرف الذي تراه في هذه الأشكال؟,خ‍   ‍خ‍   ‍خ,خ,,,,,8d7647c5dc4bafebd75dc9a8bcef38a831231b164b122d8f1f69795b4663ea54
+letters-0036,forms,ما الحرف الذي تراه في هذه الأشكال؟,د   ‍د,د,,,,,ceed372ed924b2a525fac06f9af06909fd2e48adbbeb65b13706cc6fd54ba13b
+letters-0037,forms,ما الحرف الذي تراه في هذه الأشكال؟,ذ   ‍ذ,ذ,,,,,0acdeb2c9d0bf9730df9a1053f69d6d8116e7e2036ad7d2bbbbfdb361eaad43f
+letters-0038,forms,ما الحرف الذي تراه في هذه الأشكال؟,ر   ‍ر,ر,,,,,5d5268c523b1dbfa613ca3b5b1eee1dbd90b2dd8edc2741a918a74227c5b38ec
+letters-0039,forms,ما الحرف الذي تراه في هذه الأشكال؟,ز   ‍ز,ز,,,,,1d5ba8dfd37f27f754951aeca6a44f173f831882e76e291c9b6bbf1efa6df7ac
+letters-0040,forms,ما الحرف الذي تراه في هذه الأشكال؟,س‍   ‍س‍   ‍س,س,,,,,aa2d50c0cd9af143a3b0b064be621d71572205ad16f85032ee6106dbe3f88fc1
+letters-0041,forms,ما الحرف الذي تراه في هذه الأشكال؟,ش‍   ‍ش‍   ‍ش,ش,,,,,c2ef6b5c391aafa71efcfae411f2191a5ab19a5acc9cd834e022409c56569f94
+letters-0042,forms,ما الحرف الذي تراه في هذه الأشكال؟,ص‍   ‍ص‍   ‍ص,ص,,,,,3412321dcb735b1d68d294266a44a260f04ef2f0c1766ffb4cce5ad9734e1d06
+letters-0043,forms,ما الحرف الذي تراه في هذه الأشكال؟,ض‍   ‍ض‍   ‍ض,ض,,,,,3b42f0ed44832dee43ea0fb097faa3430b8bad19f6d30ac16e5db88c9ba88568
+letters-0044,forms,ما الحرف الذي تراه في هذه الأشكال؟,ط‍   ‍ط‍   ‍ط,ط,,,,,ea89f106af9633005f41640b0c8c84b366895dd2f6d784aee650d9a6810bb4d4
+letters-0045,forms,ما الحرف الذي تراه في هذه الأشكال؟,ظ‍   ‍ظ‍   ‍ظ,ظ,,,,,007c3f745dbb31b2b162e3fe968aff639f9dbc621f5ddc634194e65183806ee4
+letters-0046,forms,ما الحرف الذي تراه في هذه الأشكال؟,ع‍   ‍ع‍   ‍ع,ع,,,,,7126721baab56ac8b88d785cc9734ea1180c75ae756709469beea63767921ebf
+letters-0047,forms,ما الحرف الذي تراه في هذه الأشكال؟,غ‍   ‍غ‍   ‍غ,غ,,,,,a2d2b3b42e5a6f1bf703caddf0675599197a0d3b219460cd735f8e1e76ca62a5
+letters-0048,forms,ما الحرف الذي تراه في هذه الأشكال؟,ف‍   ‍ف‍   ‍ف,ف,,,,,a6402cdeca573160ad71aff1fa75619d12d1a7005956184e20dd1a0442343b6b
+letters-0049,forms,ما الحرف الذي تراه في هذه الأشكال؟,ق‍   ‍ق‍   ‍ق,ق,,,,,dcfd6bfbf637cde53b71a1a610dd276d286109150a1dce1274ba13defca5bfe8
+letters-0050,forms,ما الحرف الذي تراه في هذه الأشكال؟,ك‍   ‍ك‍   ‍ك,ك,,,,,094488c3fbc9710cd01c4e2f9843f498c1fe7ab2e5e35f9f5a43e20d8e979f05
+letters-0051,forms,ما الحرف الذي تراه في هذه الأشكال؟,ل‍   ‍ل‍   ‍ل,ل,,,,,4de4a5173ead1d4e574c5bfe4c0d7b581d83ac0852c6defb28ac62a5313fb63a
+letters-0052,forms,ما الحرف الذي تراه في هذه الأشكال؟,م‍   ‍م‍   ‍م,م,,,,,d20d30a9c2d656ac8744b4ade46d8c0b2fbf8b20b6d44af89a192dab6c3e219e
+letters-0053,forms,ما الحرف الذي تراه في هذه الأشكال؟,ن‍   ‍ن‍   ‍ن,ن,,,,,046de9bcc540cdedd00e46308e4183aa9dfe18f22028b09824f9dd95ee91a989
+letters-0054,forms,ما الحرف الذي تراه في هذه الأشكال؟,ه‍   ‍ه‍   ‍ه,ه,,,,,ff15cf447894b4901237f24f16562a4887480c3a9c4257b504fbf6ba5463101c
+letters-0055,forms,ما الحرف الذي تراه في هذه الأشكال؟,و   ‍و,و,,,,,e9f57e7876c695fb591e9f11d2e51845b9be7e7336f25c982e3c49a8564fae5c
+letters-0056,forms,ما الحرف الذي تراه في هذه الأشكال؟,ي‍   ‍ي‍   ‍ي,ي,,,,,b0ec1173f671984755e2fa712148bb27acc9a9c99752e307bc12e28bdcb43cce
+letters-0057,medial,ما الحرف في وسط هذا المقطع؟,ببت   ‍ب‍,ب,,,,,b1a6a0ad801d6607c2804c3f200856a94bc2e21f1ee304adf9b73e2ede5ad865
+letters-0058,medial,ما الحرف في وسط هذا المقطع؟,بتت   ‍ت‍,ت,,,,,c06ba199f4003a015d5ef42738f6b3756dcf3ae9f150a128c90f00bb33e94903
+letters-0059,medial,ما الحرف في وسط هذا المقطع؟,بثت   ‍ث‍,ث,,,,,291a55ae911154dfd7f313e08f0bc14f1d0c7f5179b1d868f6dec35e3a2a80bb
+letters-0060,medial,ما الحرف في وسط هذا المقطع؟,بجت   ‍ج‍,ج,,,,,b30c25c7025701e91121d4f206a7b119e0d8c97bf6afbff00a43f33c6a47854a
+letters-0061,medial,ما الحرف في وسط هذا المقطع؟,بحت   ‍ح‍,ح,,,,,7261ac0b71f50f5bd451e8fcb9bec3a5ea0083d3da5a25a9989cababaf70f937
+letters-0062,medial,ما الحرف في وسط هذا المقطع؟,بخت   ‍خ‍,خ,,,,,20d6128d181df1b3a7115969295c2f1004614acb9ee17c57bff4183179fa0063
+letters-0063,medial,ما الحرف في وسط هذا المقطع؟,بست   ‍س‍,س,,,,,fea7ad897564634a03b95bc7f00b0a46f3cfffe1bd63c9aebaed733a74956f8a
+letters-0064,medial,ما الحرف في وسط هذا المقطع؟,بشت   ‍ش‍,ش,,,,,193d9c42f6e784aff10f86a5e5c70476f5e55181c624a6530731cf647f8fda01
+letters-0065,medial,ما الحرف في وسط هذا المقطع؟,بصت   ‍ص‍,ص,,,,,c9700d7923f855cee305d85ee1d4bd166e572d93dfa5d188690836e66521b31d
+letters-0066,medial,ما الحرف في وسط هذا المقطع؟,بضت   ‍ض‍,ض,,,,,7e533629352c65f69f9a899a40025cfa2f95fe856b0a753bfce75fdf033bcd05
+letters-0067,medial,ما الحرف في وسط هذا المقطع؟,بطت   ‍ط‍,ط,,,,,2707caa6f163f3cdb50f4103133ec026928f42bc7e3fd139049ca356f6483550
+letters-0068,medial,ما الحرف في وسط هذا المقطع؟,بظت   ‍ظ‍,ظ,,,,,4821315acde252457945f6164a26a85bf2faaf78c388092638b2be6606491055
+letters-0069,medial,ما الحرف في وسط هذا المقطع؟,بعت   ‍ع‍,ع,,,,,8a6d6062bbded916ff456dd7762945b1bb37d5c99346ad8395b47efd1b2681f1
+letters-0070,medial,ما الحرف في وسط هذا المقطع؟,بغت   ‍غ‍,غ,,,,,ec2014fef8a915df203d9b7ad69ca0839c3404bfa2e2fa96cd18dc4fed76aed4
+letters-0071,medial,ما الحرف في وسط هذا المقطع؟,بفت   ‍ف‍,ف,,,,,2702692694db5e5a08a12c5c063e534960d5846bf69ac487d719d7b84776e9b2
+letters-0072,medial,ما الحرف في وسط هذا المقطع؟,بقت   ‍ق‍,ق,,,,,748f623ae6dde6e052802618238431359c2915bf6c1a0ed332722755c2bcd608
+letters-0073,medial,ما الحرف في وسط هذا المقطع؟,بكت   ‍ك‍,ك,,,,,540e94198300dc504f131874d8de1842596853c57acc2aaabe20847d44ecdac1
+letters-0074,medial,ما الحرف في وسط هذا المقطع؟,بلت   ‍ل‍,ل,,,,,eef4c8503bc15193b78f984213dd4700f4b558a0471a199d284a1dc8b22f6377
+letters-0075,medial,ما الحرف في وسط هذا المقطع؟,بمت   ‍م‍,م,,,,,2d5c3a684013863a94cec5b9cfb18d02ed30375d3db02832618a0a26ce5fb4dd
+letters-0076,medial,ما الحرف في وسط هذا المقطع؟,بنت   ‍ن‍,ن,,,,,4804c19c9d652cd86b7c462015359c78a260c6792704fe6718c97224cffc3d49
+letters-0077,medial,ما الحرف في وسط هذا المقطع؟,بهت   ‍ه‍,ه,,,,,5701ba832d851a6078cd3ef70c9058f313410c13780923a3478c072ab1a128f1
+letters-0078,medial,ما الحرف في وسط هذا المقطع؟,بيت   ‍ي‍,ي,,,,,05853ef2aab7456a1b44144731dd2609fd5fbb297f0f4eb58f0bde4f6714fb78
+letters-0079,ligature,اختر شكل اللام والألف معًا.,ل + ا = ؟,لا,,,,,e2edf6ce000d2df53efdd37c240803c099a77b6f054028703ecc92f7042de6b3
+letters-0080,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,بَ,,,,,7270bf6dc7d0c98c34e5de45d04e43a7fa086f1ef0a8da91f1e8482549aa24bd
+letters-0081,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,بِ,,,,,abc54372e84e71f26efa8f4766643d22797eb265c19f14db0c7c9ec83ed1542c
+letters-0082,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,بُ,,,,,befe4161ca6b34bc4b76a2f1a649cbc61cc05f6902c2f9f4b5f2220a57f14871
+letters-0083,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,تَ,,,,,e07826abc85e0390ff0b7e9c827087428c3cdfdbcd0a087e85dcf991f7126289
+letters-0084,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,تِ,,,,,e007ad7e108177f88da27524c4b83a929c2bd875c11574b896bf284f7113604b
+letters-0085,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,تُ,,,,,d43acffdcd6f56cc38dfb2e98906531c305e2bcba66f8226dc0b1303b5e4b63e
+letters-0086,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,ثَ,,,,,01d9c603c54fe38812b9320869c8c7e1ede980c7060bfc757deadbd4b9a9cf95
+letters-0087,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,ثِ,,,,,c4229af9178b2d47b5de951cdbe663ec8ccba9c52e20fc4b1cc0ebfbf6b4fcac
+letters-0088,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,ثُ,,,,,8bb1b15c3140e38e45e60ea6519c7d708cf5c4c8d0a55c9bb4e4d30fe067e292
+letters-0089,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,جَ,,,,,e6cbecf3da175255a133c92de24993afb56d8425eed05dc7d96240302af8c22c
+letters-0090,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,جِ,,,,,d3754e75a4f2cead7bd6e303deda87c5f5aba593d564586b983027df82d9a3cc
+letters-0091,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,جُ,,,,,b03d84ac573e9a955db5fb1391dfbc215a79d2e08d628278dfb033b68b3e6655
+letters-0092,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,حَ,,,,,a49deeb462ce95059fbb3a74a1db18a1cc078104b7abb497f351664144ace37e
+letters-0093,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,حِ,,,,,172d2603eca9d57cfe16c6332cc24be5b0e8c9b0cb020cba75bb6e23ac87a978
+letters-0094,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,حُ,,,,,44c283e226f40b83d5063f8393c6488834793439f9c4c51b682d3dd06f86d983
+letters-0095,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,خَ,,,,,9d54a998b43306e1dede41c7fbbe526f3ca83f760ebb678b164c34add77d09f8
+letters-0096,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,خِ,,,,,f704ab3f1d102fcddd335006cdeda3f4b26e5466250e170ddb706a6f63703648
+letters-0097,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,خُ,,,,,d1915554d46feaa51131497d4c186bf749cd61d8bc9424a63688882e360fb945
+letters-0098,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,دَ,,,,,2e26068db0563a7b9ca5290e95daba93edbc8f752041e3f1698deacdfbb07112
+letters-0099,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,دِ,,,,,247cc65e7aea9c209d200a0098464658e6fa73ba565de4a257bb8d970654cc0b
+letters-0100,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,دُ,,,,,f7021a7fd151d666812756269699750dea987379acb77d26e1335453cc14d4f3
+letters-0101,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,ذَ,,,,,c04a4d622644329ef1f7ab1aee32a44fee2c79b1256865b678b067723f153328
+letters-0102,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,ذِ,,,,,70c7a3c691fb9d1b13946f60b238409c3f3f450972dd01ac9c197a959b21f3fe
+letters-0103,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,ذُ,,,,,2d6acfb6a0f0b3f4826466a599e8a34dff439dd6e8dbfb80c54ec343872fa40a
+letters-0104,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,رَ,,,,,812508ac95c1f2180933c33a24b750944c56b7606661e6a5199e300202bb0098
+letters-0105,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,رِ,,,,,50ba6f8928b8eaaae1b1402023fd36a4248beb4a0ab46b204e61b813a178b9bd
+letters-0106,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,رُ,,,,,a5d34441fa0bda92f6ba287ffd00bb27ab3f87b176b197a97f4c4da15de0889f
+letters-0107,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,زَ,,,,,08c39d4e178e1d3505ca444883adf1a25893f9a85a6bfd3e4a20d44e001155d1
+letters-0108,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,زِ,,,,,e2fd5af191400ef056da7c8a0bafbcea06e15baa94a795f7e8956ed7976675e2
+letters-0109,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,زُ,,,,,1444a476a4a48d401f44ff3d8a0b4f3990535a93eaa0793750e9e8ed6e6187be
+letters-0110,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,سَ,,,,,edb2172112d639098c3957f23f6a163ee98df26409e20e441020b3ad0caa3881
+letters-0111,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,سِ,,,,,bc5ec3d66435b5e979cc4e7bf0e7026302e7030e0d57a32d3da3b2bb2630885c
+letters-0112,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,سُ,,,,,2870baaa1dc7e5f369bf5ca2d6cfce8e145be80110ca540fb531b6a5fd9569f8
+letters-0113,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,شَ,,,,,069fa94dc20ee858343a4cd7fe2b7113c9dfc745c68b3fbbf8b5508f950f1ded
+letters-0114,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,شِ,,,,,dcb3527930e57df0e126c9802645e2645a4ca4157430726b98362d0e3570340c
+letters-0115,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,شُ,,,,,763adc2d6639a71693f98355b4a62ae7ac9cd757e6ff2d3c6390fac9393a9c53
+letters-0116,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,صَ,,,,,08ce25c42cd0ba03525604d4d9f617d3517fb862ce2af2504d4a0228d8b5747b
+letters-0117,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,صِ,,,,,1acee837f4469d637b3dcb4c8107faf10fbc5d6fdabcb23ce9a182fccea706f1
+letters-0118,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,صُ,,,,,9bbfc03d7f3e35bccf607c4674790dca03af67ed9152285b3afa44c2a080244f
+letters-0119,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,ضَ,,,,,d606bdc27043203ccb3e821fd14405f0535b30aeeb8815e838397381c9db99ed
+letters-0120,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,ضِ,,,,,e9e7f44c4e0b51f44a67cf1da95bf591b245cb7d0922083b22a805c54808ae4d
+letters-0121,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,ضُ,,,,,cfd353370abcb76453e21f26c2d5563d3aac9369d475b92afb895a1eee3344e9
+letters-0122,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,طَ,,,,,2804666b817161b25ca2abd0faced939ce13f746f3f10ab3af21636d469565d4
+letters-0123,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,طِ,,,,,5366c37b9dab0c9b8579c3a282186878ce51a2dc67568984dabb0c6e5b6c6d3e
+letters-0124,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,طُ,,,,,8c8aef05bc056df8900f0952b3cdf2f07815100477bd3a4692cccb604da264c1
+letters-0125,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,ظَ,,,,,13b1c36783e4e4ef7fa9b27681703eab58abd66347bd6bca578b5a90ff410f53
+letters-0126,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,ظِ,,,,,d7ed4525c6c1d46b6d43b83a54ff5cc2f31e849e5b7e0dbd471d3df5a75b60ab
+letters-0127,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,ظُ,,,,,9fc2b28e61cc6a70cedce4c7fb0195fa11a51d40774a3f7fbde343bc3c413554
+letters-0128,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,عَ,,,,,603475fdfc319180589ce01d5be008a652b4468a7ada18f4087a2410293f941b
+letters-0129,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,عِ,,,,,81fa4bd23b4302f8ebdc711b792095455e2e63c70c9f428b16dd3b7e263587ef
+letters-0130,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,عُ,,,,,7e6771b59ee87ed3449fd1af547aca9f96d75056c81fce097f38b6b1a7b6a6a8
+letters-0131,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,غَ,,,,,f4a3df3c50b83c2971fd2cd50aa516f5df34d00572efd8485a50cb69e84800ba
+letters-0132,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,غِ,,,,,2cbce823df1bcca40b2ed7291e4800a56b495531c4870d2a70f79e27e29142c3
+letters-0133,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,غُ,,,,,2feed750556d4cfe87028afc9a35463e1af285a0f08176df2b4fb30b7dbcea97
+letters-0134,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,فَ,,,,,9087610343527d5b110032809abe6112a7ccd4a5f4b2eccf78c5a35b953eb11c
+letters-0135,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,فِ,,,,,337b6e0fb0bdf4327e0027371b3645b0946c7fecd4247a9e50093c329a925b6a
+letters-0136,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,فُ,,,,,eff0908968072a815c469c16bec13e6f82afc312454d2773713fde30436e3419
+letters-0137,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,قَ,,,,,452aea5d4c0f8a370885f20891f58fefe64d495e52f73dafe04d21a99521423b
+letters-0138,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,قِ,,,,,6d53c9657467fc4a081160068ddf3e3e270c7680d0c3b4a190082071b7438d66
+letters-0139,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,قُ,,,,,bafb2625d68991ac87492b30ecdbe17f29c832500e1b245037b4341f6a3e7143
+letters-0140,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,كَ,,,,,d90a4332fb9449f6d7851ce5fe3a6de012ac2e3d22b7bc7afa837a2b6916a85a
+letters-0141,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,كِ,,,,,47a78d6f432e995d34c6955147678cca4bae5aed91f3e6d68e37c929a9fbcf9a
+letters-0142,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,كُ,,,,,2df5a0a2f562ed28dc32896716538466ff93fc9cb428c190114719e417ae1716
+letters-0143,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,لَ,,,,,f6eb77875da1b7cbf61b28384f3703e9ede95c7692bf7d17c9f25476c731e4eb
+letters-0144,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,لِ,,,,,a464771f5ff272acfa69a0841ce630f5b0cbb184b37ce33c792bcc248311508b
+letters-0145,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,لُ,,,,,31ffa0604cd33d993260622a0314d702b8cbb736ed996f65ab42be49575c801c
+letters-0146,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,مَ,,,,,322178776419c430a3051855e3d666d75178cd7149cdd869d1e90c34d48a122e
+letters-0147,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,مِ,,,,,550de2c81bc0f6e2a0a34759d73122ae6c78bd944c84e7adc55e194c43199e6d
+letters-0148,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,مُ,,,,,ba364a9b2596e253f7722916acf863140a05b5f298297d088d18e5bebb677cc7
+letters-0149,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,نَ,,,,,ae01dd8b417a90d47a3872b7aac448d8a4ff9de74e86cfd15bcfa4f9a21c7b19
+letters-0150,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,نِ,,,,,903316f735cfa754c1575368e0da43f9c3395e1edba7579fb1ccab0b37e75664
+letters-0151,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,نُ,,,,,19c217786684bf0f650e6b10ff66d9ae7897f9f8054e64d096538b462a0b1ba8
+letters-0152,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,هَ,,,,,d3cf2659d55f45bcb6fe1d019f62bf539ccdc15742e9fb858d489aa10614a7a7
+letters-0153,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,هِ,,,,,7f1d6611421322392cbc798f792ba09933ec5fe99d5ee0e658d754a317693c2d
+letters-0154,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,هُ,,,,,6c35e08788f9a23b4f02e9b56333348297be29bc2995e504ffec901b1f2ac279
+letters-0155,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,وَ,,,,,c79e37dd04fdfc6fcac8d2cb1f3ea8973ec7b75dc757f9786228d9970ec30742
+letters-0156,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,وِ,,,,,01e679eaa85495941cffb233bf73351cb30c12ea9be645d5595f06d910b1afaa
+letters-0157,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,وُ,,,,,67aa6b028f91f1c362cc3014a91f98cfa7ec48815266076cd1e714efdb385db7
+letters-0158,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,يَ,,,,,b8d21bcf1a30df65d68dcd5c5fb88788085e7f0e153ec165864695b40006639c
+letters-0159,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,يِ,,,,,79821f8a5a4465cca53c8d578f53ae2a333b89e732145e3cac2d3977bd913e79
+letters-0160,short-vowel,استمع إلى صوت الحرف مع الحركة، ثم اختره.,,يُ,,,,,1d8547b2fa5c3b118ed957f8c428b5f670e69c9e1be8de3ecc1bff67ae231012

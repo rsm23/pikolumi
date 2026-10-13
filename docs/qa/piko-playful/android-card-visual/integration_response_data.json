@@ -1,0 +1,35 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "en-card-turn-final"
+    },
+    {
+      "screenshotName": "ar-card-turn-final"
+    }
+  ],
+  "captureSizes": {
+    "en-card-turn-final": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "ar-card-turn-final": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    }
+  },
+  "locales": [
+    "en",
+    "ar"
+  ],
+  "clearExposedSlotVerified": true,
+  "backgroundDifferences": {
+    "en": 1,
+    "ar": 2
+  },
+  "audio": "SilentAudio",
+  "userPreferencesChanged": false
+}

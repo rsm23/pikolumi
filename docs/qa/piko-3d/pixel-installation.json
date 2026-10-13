@@ -1,0 +1,13 @@
+{
+  "compatibleDevelopmentCertificate": true,
+  "pixelInstall": "Success",
+  "uninstalled": false,
+  "dataCleared": false,
+  "userDatabaseUnchanged": true,
+  "userSoundPreferencePreserved": true,
+  "normalEntryPoint": "lib/main.dart",
+  "phoneWakeSettingsChanged": false,
+  "physicalAnimationQA": "passed in all five locales",
+  "sha256": "44fdeea91870d30c4eaf2e455aae370962fd3429b49e4c682060d1a674890df7",
+  "temporaryWakeSettingsRestored": true
+}

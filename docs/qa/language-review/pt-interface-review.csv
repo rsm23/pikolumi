@@ -1,0 +1,205 @@
+key,locale,text,approved,reviewer,date,notes,sourceSha256
+tagline,pt,"Colorir, brincar e aprender",,,,,4514861de8252fc69d83ccf7626855b7eca1ea51f8974af6508bc09cd3d3f2f7
+pikoPlay,pt,Brinque com Piko,,,,,2c84a3916e990f7f12d1270edc30bba81bd4db0b5e534a1c4a0cf0d09c9c481b
+pikoInviteColor,pt,Vamos colorir!,,,,,1a2c5095f9d3371e50081cfc1ada41879681cdf38c207cc7a30ef79ae4fc1321
+pikoInviteMemory,pt,Vamos encontrar pares!,,,,,5a4830b08c8fc9abf5ba1af9a23059411c9b003eac5ff08ba36708447c815158
+pikoInvitePuzzle,pt,Vamos montar um quebra-cabeça!,,,,,81491474c6d598dfbd536222044780ad1fba0b22c8374da599ff921d6b6c4e9b
+pikoInviteNumbers,pt,Vamos contar juntos!,,,,,420a260ba686160740ab2af9dbbe9147953264159578aee698363f6087f134d8
+pikoInviteDraw,pt,O que vamos desenhar?,,,,,a64b802b07489ee82d1cdaa0923571fca45d9eb7b3583ab65919ae947b70c395
+pikoTakeTime,pt,Vá com calma. Estou com você!,,,,,344a65f904184d883a3a4899c4afb83bd4d5f9a7b87a87b4813f5c5cbbfcc586
+pikoTryStep,pt,Tente um pequeno passo. Você consegue!,,,,,3507c214c050322a9c258c3020f5da5c62605e9bdbed693fcd831dd1dd3ab845
+pikoTogether,pt,Vamos olhar de novo e tentar juntos!,,,,,ea11f8dde76b746bd598ba126e8f5f9b721e2b5c51ee092822bfc7124ea5cb01
+pikoCreative,pt,Suas ideias tornam este desenho especial!,,,,,106fe617438c8ba3b1ae3943c5814f022f881a150ef1fa6dc640154bd6e0c038
+pikoFinished,pt,Você conseguiu! Adorei brincar com você!,,,,,733315bebeaa3c3dfbea0b357529c4be5a7e1dc084983f5270ba80db238d2f52
+hello,pt,Um pouco de magia todos os dias.,,,,,a2387b0e74f9cdc265e463c860786e48c13d5074dae000f0f531d6a98998483c
+worlds,pt,Explore seus mundos,,,,,c8b855275822219bfa90ebe335120e399c40f4be3dedbf97fd5bd660391450dc
+library,pt,Brincar,,,,,cebf0853ca4222a0e29bbda6c5f5402659d3c52e796aa53f2e75c7f9f06481bd
+gallery,pt,Minha arte,,,,,1764be4644898ea477e6db6f0b45bf160c1ad329eb15acde70a5112e5a842a8f
+stickers,pt,Adesivos,,,,,0d3050fea6d260bfa7c8552e92d9fd1197e13d7a65743656225c8e8a5bb9cfef
+parents,pt,Famílias,,,,,25981fde871cd8843ace2730edbb42b133f17d62352f436e288959a65a37c1c6
+all,pt,Todas as aventuras,,,,,7a644dbff09fc4234c08816e443db70208bed090593bc3360282c3444a8677aa
+recommended,pt,Para você,,,,,e105ab6d1fb03201920506f35949de8d588291f5ab616ee878e84fb1f967270d
+favorites,pt,Favoritos,,,,,86dfaf57a2434b4113a01e0f274bd2022ab66b485a57bff50eeb5406c263350b
+activities,pt,atividades,,,,,722afd922c2e08ac9b889c1f43d0e03e3ef3147accd301a7ad73bbc0b373365a
+offline,pt,Pronto para brincar sem internet,,,,,8c37689544257694a5900089e66452a786897c246363b90f9b12a66f6accd2b9
+continue,pt,Continuar,,,,,637c66b8b47f2481e93ab6aa5a70cee537b9c32425763fa96831c4a17f64ccce
+done,pt,Terminei!,,,,,19f91bf78922a0bd11ee83d07a9497d913ed64a41439021fd4582a310f7e8422
+great,pt,Muito bem!,,,,,984f2f2fa058ede31aa3d5f4e9f05b044e44e2f591eb6301c264bef3f1ddb4e2
+again,pt,Tente de novo,,,,,78e877123d906b8dec68557bc589050b8c78aa5709b9a1e80b5c9ac786579507
+hint,pt,Dica,,,,,57c6638e1d06c71144d246d0f08eb8e9a8f7febd0d9474a05c61c44aa37c4c8e
+listen,pt,Ouvir,,,,,f4b0335db7d6142a2b81e547951e03766437fd7fda588e4c7c4999a26dab11ec
+back,pt,Voltar,,,,,f026cfc3af9994b044f0a0a356499e50b31c37a81abb26a51bfaaeb261de479f
+choose,pt,Escolha uma aventura,,,,,dcc74d32a773c70777a90518081f1c02a4f968e8c4f94976a43b0a138cedaff5
+profile,pt,Escolha seu explorador,,,,,e6076acb56ecb3a91dd6bf45207167612e8f4ce7b94831821c720a494d4e6b9d
+explorer,pt,Explorador,,,,,2d9ed1d4c40b2847af3d3c2e686356180f73d625fbbeb2ea11cf948560ef1f9d
+newProfile,pt,Adicionar explorador,,,,,756643c2c426620e961e6114a55a915b527ade21cf1a7cfe0eb0a70de91dacac
+difficulty,pt,Etapa de aprendizagem,,,,,7866c158f495a29913ba589820afe542672a28a0d917a8472fbd73e56b23a6c4
+stage0,pt,Pequenas descobertas · 2–4,,,,,582bd5416a0fb1a34bb806ef98e3215a8a9e58902f1cd4c3159f9e2c1730e8ea
+stage1,pt,Exploradores · 5–6,,,,,710183830354fd49874be6b9dddeeac3ac6938a81594afe238d1166f7fe3eb33
+stage2,pt,Mentes curiosas · 7–8,,,,,885713148877c4b706adec14cd18e7d5a6e6778f4640ba4e1d9f80912c8f8572
+stage3,pt,Grandes aventuras · 9–11,,,,,9ed17ab1757dd08e3a6cd40b573fa1fdff5bf4f85804bf57341f013c201071ce
+stage4,pt,Desafios criativos,,,,,77cdd5292d8fa0c38459c50f68bd641094c928b298668122f30076e3f61ff1b7
+sound,pt,Som e voz,,,,,940d7fb0be41e55b4e735773f4f8fc165c6600546f5055558a693bc78d295ae4
+soundOffHelp,pt,O som está desligado. Peça a um adulto para ativar Som e voz na área dos pais.,,,,,3e73369f3bad9080969f82c7e66ff333ebc8787c721f99e21255bd394416cd0a
+motion,pt,Reduzir animações,,,,,1e74046082785d1ea2910332b4c093d2d1354c3d3ac689a5add8d00f69784e8a
+language,pt,Idioma,,,,,0a18de90354ccf8d5a22679e792e25175f4d81dcbbcfd1460bf403a5484667f9
+save,pt,Salvar,,,,,412a08c703009a854a976df6dbcc6038f4a8ec7a15a15a34bf5a3317f3f500f6
+emptyGallery,pt,Suas obras vão aparecer aqui.,,,,,b1b5fa582dc8e3e372239e704440417172bca916b34573639a91f95564ac1640
+blank,pt,Uma tela em branco,,,,,2addb3577dc2df521ccfd6c58a226c855ce1cf496161ebf63900017407db0b08
+fill,pt,Preencher,,,,,f8392c92f2249a0a619ae0c4ab5e1c1ab7258e5a452c42875450dc8430a4a3fd
+brush,pt,Pincel,,,,,28df09c4b0cfca2a6870f576188fe8c070b5767aa1f52f5fd31ed7765a5ef57f
+brushType,pt,Tipo de pincel,,,,,94d12edf6e34e3bf4a1b546ae85ec2edf6c346930d4112ab89d429164525e2dd
+brush_round,pt,Redondo,,,,,af188a1502a55261c5bbc2c81ec600996fa7924594a2f58b73f92eb390088ade
+brush_pencil,pt,Lápis,,,,,0f0634a1deb28d8c21aa5b1627f06c14bb7f774f82719f6ea56f3ce2f4827e10
+brush_marker,pt,Marcador,,,,,2f6eed1761c52eec89bf13d10ef7813a4d3933a4dddd5f145210ae61f199f996
+brush_crayon,pt,Giz de cera,,,,,3cadb30acda04999957a8de486ab6dbb8d3bc08f5a4f6fdac4d6dbc2479dd07c
+colors,pt,Cores,,,,,0f441d37cdef20f7af3eef01d858b263338c4af86d6f8f26232dd8aae55a7fee
+allColors,pt,Todas as cores,,,,,a1d0bca12b989543fd3d4ade3546e9b83521398646b25cba0d5c3ad3661619a7
+previousStep,pt,Passo anterior,,,,,d430ccdc69749966d72596563f0048395f94ef022fcb44cb9878ed6601f9ff9b
+nextStep,pt,Próximo passo,,,,,0531452f1c4722900a5fb02b84799b17a37106013571198fa52acfc76d528bba
+fullScreen,pt,Tela de desenho cheia,,,,,82ff4dfe5ddbfd47cdc1036986c84751d9cf49d9d91eee431a0c08658935cc32
+exitFullScreen,pt,Sair da tela cheia,,,,,7367f750bfa9788cede13d688bbd01d9124693dfecbe6a80849f4c0bf37d91c4
+zoomIn,pt,Ampliar,,,,,935699f94cb2b209776f7c93bb450e46c22f7d23958d59aa607040b01ecfd5c5
+zoomOut,pt,Reduzir,,,,,6065b9732b7f6725c30e1291db4ee1695dab41414bf0319252fc93bad8ade7b4
+resetDrawing,pt,Recomeçar desenho,,,,,151fbd6a725954cdee7037706ca474bb3d714f549e9ff0c3eff49e099f2d4491
+resetDrawingTitle,pt,Começar de novo?,,,,,88ce7e06e7b3b14146d999327bc30db42fc6594e7a4d171b0a0679db645ab0a6
+resetDrawingHelp,pt,Apague suas cores e traços e recomece as etapas do desenho. Você pode desfazer antes de sair desta página.,,,,,1cef8e3f664828e11ece11a5979f8adb29b19ff116ea89859967c1d06ded8a9b
+cancel,pt,Cancelar,,,,,09d3039331d14bc0cf3e48366ad7eb1ebb32ecd600c0588decbd3c670eea605b
+erase,pt,Borracha,,,,,c1300371f7f0b1d6e8480929942e9fc5a2a6dcb3c8fd77046b956c48a81b7cef
+undo,pt,Desfazer,,,,,e4fa37d46b2a0113da1b02a87abafeb141fb0637cae830e96dca8bc1d4a3b6fc
+redo,pt,Refazer,,,,,64eeb4742db65e8af72b8e10773a3099e0253885117f6ffff752df300b69d246
+size,pt,Tamanho do pincel,,,,,4bb5e4b7709a887f7ae90b63c14808c4c1dc3ad83f9f2e2325dbba8bab0eec71
+resetZoom,pt,Ajustar imagem,,,,,8814b8902784de989b9a3ebb4ee6c9dff226fbbcf7fa92f0291dbf42ce57d49b
+gateTitle,pt,Um momento para adultos,,,,,b0179aeee30ed2456a40352c450653b0b7f5709a5c4b5618e5bec2c707910f19
+gateHelp,pt,Peça a um adulto para abrir esta área.,,,,,16db4d5a8f555046765cd98cc929f88227cb11403b888d3d4019804dbd665f70
+gateSetup,pt,Criar PIN dos pais,,,,,d976b0139c04c43c6f03c14f7b1ee41fb3ee2e8312f0c9fa0b2de2680ab128ac
+gatePin,pt,PIN dos pais,,,,,7266706abd18a1c1ab84583cff542e7369234cf5a6025d73ecbe09dd3ee03ceb
+gateConfirm,pt,Confirmar PIN,,,,,3b30450b70ee610aecef08c25025c73e38e2a7efc2107714a26c5fdffd4b21ff
+gateWrong,pt,O código não corresponde.,,,,,c5b8482ea9e069580bd9e3751000b1657cd5c15d8edafcc3417c89affa4121e3
+gateChallenge,pt,Digite a resposta para continuar,,,,,6926ed1bb5737485fa56f1fbbc90bc98aa2b8e5f6d82340e73d30f98222ab1ad
+progress,pt,Progresso,,,,,e310dd3198e7cc1adf60f4727bb25a7d2540d74f970a71056aaa1891edccee59
+completed,pt,concluídas,,,,,84cb446eb4850865f74f71f3c47f7a739b4c248aa1172fe8d339755293803350
+privacy,pt,Privacidade,,,,,efeed0b70666f41180b8fb8993e0b6db17798ccc0892d425cad86dbf6b9cf13b
+export,pt,Exportar desenho,,,,,3c3e95a65638b807cf9d40ce515ecef2ea7ba724df6634f7fd1a8a92e8251a4c
+localPrivacy,pt,"Perfis, progresso e desenhos ficam neste aparelho. Os anúncios usam Google Mobile Ads com proteção infantil. Sem compras, contas ou análise de uso. As vozes são sintetizadas e disponíveis sem internet.",,,,,f5f99324cfb71d7350f7ac645b6014852acae722d0e2f434cf6e515017a62184
+privacyOptions,pt,Privacidade dos anúncios,,,,,7385ba9b1d461e8aef3dbfd6eb8943a1712ec05da3286c194862b08a7a0c6ac9
+support,pt,Suporte e privacidade,,,,,ec277510de3f1e3cad1d1f6c09e55b0bf1f1383e7a9439ecb58cfe8cb94bba53
+changePin,pt,Alterar PIN dos pais,,,,,c48c4c663fa49c09001ac9d95243b8241f2c33f1329a89a9f2abf1430035fffb
+listenAgain,pt,Ouvir melodia,,,,,1f778d360c9deef74361f91a063bcb4d1bd4edf748efeb8bc73ae30b7587a3ba
+step,pt,Passo,,,,,4f51a61530ef5ea5b49e307f7c824457d599aa3faee5307a488eba36cc799eb1
+ad,pt,Publicidade,,,,,3303e2610a82449fee34c58ee57fb09067d90050fa56d67ac64b4fac1f9d6d63
+saved,pt,Salvo neste aparelho,,,,,db765363884b926be77c663016ab2935fb6dbf8ea8f1ff7fd49ad4cee9edfe02
+chooseExport,pt,Escolha um desenho para exportar,,,,,bcb03e4930d7f26490dade3ca329b84dd65bfdd38b512198d9c42e706aef2014
+pinNote,pt,"Guarde este PIN. Se esquecer, reinstalar apaga os dados locais.",,,,,ac11174e5df0052ac678954bed63ba54258e189b1d7afc27411a53819568c915
+interfaceLanguage,pt,Interface e perguntas,,,,,456524d964fe21096e4f0298b821acc9b81ff47d74897c8961f2f9391a0b8cd3
+learningLanguage,pt,Idioma para aprender,,,,,6b2c0c4ff401a3fa707fa08db893a51326f867851530d77b2d5cdbdb41de01b8
+followInterface,pt,Igual à interface,,,,,367ade4091ee45f67505bd23bb1c52e7495815b90c481a62b3e197a65a801bab
+learningLanguageHelp,pt,"Letras, vocabulário e escrita usam este idioma para este explorador. As instruções e perguntas usam o idioma da interface.",,,,,e188107d1f0dbe1c07d485aedf2add0a396a106bcf26240b0da9630a02b11663
+credits,pt,Créditos e licenças,,,,,e83d470aaa1271ec6ee01d20548a6e7c1a9393a96cb1d6d60dd49b333ee1ec87
+worldCount,pt,mundos,,,,,68957c3f4f4ba58f8ec6dbe4548a253e663ef2be6559fafb37e2b7ce09e4d456
+answer,pt,Resposta,,,,,ef7e78a4f21371af2f4e979c6aae602b4a22c5ef85398a569e37d351b6ea1e8e
+pinLength,pt,Use seis dígitos e confirme o mesmo PIN.,,,,,5eb199f8505156c11cfc68f10ef17eb59cc524f0257ce203ce80d381277cc3c7
+gateWait,pt,Espere um minuto antes de tentar novamente.,,,,,f3012407c1a48e845f3be78f3f5a9913967d774b33a631962d921c7148baafcd
+up,pt,Cima,,,,,135b08ef8671041f8a45886662b2bbafdc54bf35de38a263752f2ae5733f60cb
+down,pt,Baixo,,,,,5528c169f3517a15cb7d191f93a1f2a1c17f0d4a3f326caf9feb1835dc16fbe4
+left,pt,Esquerda,,,,,b567bd2fc817519a4b849de290a170d5680b9b96631d8526936eb3257ecaf33d
+right,pt,Direita,,,,,6805fac65772988f927f4e4f525e0b29650d3982aea3bc850a9f8be06e81adb2
+pikoFinished1,pt,Desafio concluído! Comemore o que você fez.,,,,,802853975de06e5cf3dd19980100b11d0a7545c0048298326a461f36a0dd8127
+pikoFinished2,pt,Olha o que você terminou. Muito bem!,,,,,3802be99ae03570557dc0ddb556c152b58a7f15a414c2954ba1ff92b3c9282fe
+pikoFinished3,pt,Mais uma pequena aventura concluída!,,,,,c9ed2f32d8617d1abce0d3bec902d5eef37568048da3d89431b1b81d0d6e9308
+pikoFinished4,pt,Isso merece uma dancinha de alegria!,,,,,9af4c24abf4e5892ddcb1579d9ff5497f863c4700f117066c6d4032105d16569
+pikoFinished5,pt,Você chegou ao final. Viva!,,,,,fca21e03446955c30a94e2ea63bfc13230c6cc1f1201eb3293343d4059beca5f
+pikoFinished6,pt,Um sorrisão pelo seu desafio concluído!,,,,,b1efe12dc0eb572d03700ab76835a7ec5e62b4acfe8cd802bac8b76d2672c1e7
+pikoFinished7,pt,Muito bem! Aproveite este momento.,,,,,166fe9864c2be8258b2ae11e6fe88d196f77703a81cb4b2b39b760908d168ba4
+pikoFinished8,pt,Terminou! Um toque de asa do Piko para comemorar!,,,,,7b3a52359c842c00d1c48d4adc7c3c9b7569b95a70a167c44b1c18b9bdf24a4c
+pikoFinished9,pt,Que jeito bonito de terminar nossa aventura!,,,,,2bd47137a357958b50c511c238d5287079713d99e832dd7d7101131e07fe7880
+pikoFinished10,pt,Seu esforço conta. Muito bem!,,,,,52fd581d81df2a25c9a93b811bac65bb20f083072e05488ec84c123bb928b26e
+pikoFinished11,pt,Tentar faz parte de aprender. Você terminou esta etapa!,,,,,d6fe6cdf9db1bac17b305eb49c8f31b3d6669f7d0136bfec3b4972b37af43050
+pikoFinished12,pt,Um pequeno esforço pode levar a uma bela conclusão!,,,,,a9e23857aea243d10f41897b4fce4079126cc377b88ba724e25b8bd617bae6fa
+pikoFinished13,pt,Muito bem por participar deste desafio!,,,,,3d1ed8cd1823d702a426b8884c00a3f815e260a21489814c201f58ba21108130
+pikoFinished14,pt,Um passo de cada vez é um bom jeito de aprender.,,,,,9351ae011e6840774e90850cf93be9366861837be27d4695716d2c0d19cf99cf
+pikoFinished15,pt,Você experimentou esta aventura. Isso merece comemoração!,,,,,c934f6695d5a06197f1581bf408465898e3670fcc07bdad4f88386d74255a1da
+pikoFinished16,pt,Cada tentativa é uma chance de aprender.,,,,,19da3ba9c9bc665f01697404ddeb21453461fab85eca7d0c537f51f01f3aa7db
+pikoFinished17,pt,Seu próprio ritmo está ótimo. Muito bem!,,,,,647de5018662ef19f24b422fb92f4f54262baedced8fb312fdf7c75837a707cf
+pikoFinished18,pt,Reserve um instante para ver o que você realizou.,,,,,3a67704063a7667b5371cff1c0b06ecd4f6b0b10c3412b34d50accaab06c5235
+pikoFinished19,pt,Pequenos passos merecem um grande sorriso!,,,,,f6f78d2e7ce0b1400f53d29e444b7e3ea8e39eb7bc894a7b72df83b5e5a0fc30
+pikoFinished20,pt,Sua curiosidade é bem-vinda aqui!,,,,,d91ffb93211bf0f37cd1ec203c3584794af794afe511bf400a41141442df5b73
+pikoFinished21,pt,Há tantas coisas bonitas para descobrir.,,,,,f9f4b8755e2d83136977bc9e26c9a549b89cf50612fb053b984dc694168a6633
+pikoFinished22,pt,Suas perguntas ajudam você a explorar. Guarde-as!,,,,,20c49f287fbdd06a623fd766a80f8cfaffb7de931a5943a2d7acc51ea885bc57
+pikoFinished23,pt,Pensar em como as coisas funcionam é um bom começo.,,,,,da655bb9c8bcb0d15647060eb53a1ff2e243b9495e7e225b8885c1d5affc2015
+pikoFinished24,pt,Uma aventura concluída e tantas possibilidades!,,,,,cfad85e597e146920719750b758954524143161d35274e7fd13246ae16e94739
+pikoFinished25,pt,Gosto de explorar com você. Muito bem!,,,,,088e2fbd3757f49afebda1a676ec429f9e84152a7835c4dce06f1b8aa2c744c6
+pikoFinished26,pt,Uma pequena pergunta pode abrir uma grande aventura.,,,,,0715af4269f08aa6b73c0aa138eba73d4a67d275acde8ff4b68a0c0d9375f10b
+pikoFinished27,pt,Há espaço para todas as suas boas ideias.,,,,,4d13db6632f2e2aead01049e0e269d336d26c410b3ddb90c417d2e33d627ea1b
+pikoFinished28,pt,Há muitos jeitos de aprender. Você pode explorar o seu.,,,,,a2c80314bb39faba26d6faf0a8bd6ab4a2196e75bb0c9ce377d16f0a179d3284
+pikoFinished29,pt,Esta aventura terminou. Sua curiosidade pode continuar!,,,,,b2fe1e1eb656c76c947a80a34f7c5b74001481ec76f68a2a662463183a017e48
+pikoFinished30,pt,Suas ideias têm lugar no nosso mundo colorido.,,,,,2d6343d963e7813e4c8277b4b97a5095535f83585a73dd0c721140bcbdd20a92
+pikoFinished31,pt,Aqui sua imaginação tem espaço para crescer!,,,,,627114dee625d9451e12b78ee55e8c9f3869ae7bb15c340de246bfb3a7336907
+pikoFinished32,pt,Você pode se orgulhar do que terminou.,,,,,1039c91541c227941e52c384c82f04d2129d8fcf12a631778c2239ec88673f5a
+pikoFinished33,pt,Seu jeito de brincar é bem-vindo aqui.,,,,,6b56089b07488f12591c3e81a5b0f7c2e94709374f69e74998728b8778881c16
+pikoFinished34,pt,Que belo momento para celebrar suas ideias!,,,,,0023ddc8643ff93feb147f51a10c984b1a4babb75e5db66df8dae5e35d44e3ff
+pikoFinished35,pt,Ideias grandes e pequenas têm lugar aqui.,,,,,6f094d0c3326362bf48cd12065c328f2f6abb0805bf663e18d72b002838ce3cb
+pikoFinished36,pt,Há mais de um jeito de criar.,,,,,e8cbe18c4b0cd327ec062e046842f55c67a99383b8facd66008a1e208a147db4
+pikoFinished37,pt,Você dá seu próprio toque a cada aventura.,,,,,0fd68f20ebb0f25d3c3afe3131412770dd1ab7f53797c483a339f405130c7c71
+pikoFinished38,pt,"Sua imaginação é sempre bem-vinda, pequeno explorador.",,,,,a9b46f996583b6c75a1b628613450a182bf9a0b6e663261e8512a18b377e9d44
+pikoFinished39,pt,Ideias podem começar pequenas. Deixe as suas crescerem!,,,,,9591009d39f67a9618a91730898e2b0ce00b03a5a712dddf65c57f623a502741
+pikoFinished40,pt,Aprender e brincar combinam. Muito bem!,,,,,0f51fd283e46f6ca921a0ea657f808e9a373d5b5c112fcbf4f023ddbb874237b
+pikoFinished41,pt,Você terminou uma pequena parte do seu caminho de aprendizagem.,,,,,24533f105942621c0bafc9e8e1a25f4ef1d5188b9c0bb24942c47cd0d39167a0
+pikoFinished42,pt,Cada desafio concluído é um momento para comemorar.,,,,,0e66bfcc6d0160da8eadc267f5ad31b3faa058385e067543fd045d0ff24e0299
+pikoFinished43,pt,Muito bem! Você pode aprender sem pressa.,,,,,58ff5a1afa8e6b9365f73c916c72a25271e6d3de3dbd051d228dfbafa179f982
+pikoFinished44,pt,"Sempre há espaço para aprender, mesmo depois de terminar.",,,,,f0a1e5f54afbf65fb28fc2d3f2601a2d4a41b37d12e5bcb9018ee2ede9bf1cfe
+pikoFinished45,pt,Um desafio concluído e um Piko bem contente!,,,,,21096eab8b3f26bacab24c0e36ed43d431341c2f040e0a05b22de916623a8e1e
+pikoFinished46,pt,Podemos aprender em pequenos momentos como este.,,,,,f94eb38ca531dc5cc5d7b2789550dd59b3368ebdbb89719d76943d3860841ce5
+pikoFinished47,pt,Você reservou um tempo para uma aventura. Que legal!,,,,,10d4df6295d56ec4a872501eda55c3e82cb0e93ae7bd4f0de5e290cce53a2c47
+pikoFinished48,pt,Leve seu sorriso ao sair deste desafio.,,,,,8cefac6cd45b30ad88c61bd150cb8827c57045bf24d0a9ca1cace22cda9c27d5
+pikoFinished49,pt,Essa pequena conquista merece uma batida alegre de asas!,,,,,0024833d70ad0c1537bfcb783287b86b563404708dc34b9945514847bd6af85f
+pikoFinished50,pt,Não precisa correr. Você terminou no seu tempo.,,,,,65d2a043afdd008671947cf6bd6b451ca2fa5b017f78050c51eb89148d635745
+pikoFinished51,pt,Experimentar algo é um pequeno começo corajoso.,,,,,4f6f3a59d28c729748d241daa2b634caee4a73205314a60fa2d759ef532fd073
+pikoFinished52,pt,Você não precisa fazer tudo perfeito para gostar de aprender.,,,,,89139736c43f9e661454f8732fbf88115cfa4f3f60d6a6cc343e0de43de4355e
+pikoFinished53,pt,Erros podem ajudar a descobrir outro jeito.,,,,,8152da8348877d4502963b99a962eb8a497365845a0a396826c7c3f75697f5fc
+pikoFinished54,pt,Muito bem! Pedir ajuda também faz parte de aprender.,,,,,e4dca5feae35a43559f7aa99cf659deb40b757dabc654a3d9d21eee1d69402af
+pikoFinished55,pt,Uma nova tentativa pode trazer uma nova ideia.,,,,,bebf38f0d946f9b24ed1c18e89eceacfb8114137c3b06dd4d5eccfd213f4645b
+pikoFinished56,pt,"Você pode comemorar o final, seja qual for seu caminho.",,,,,f940e04e9c7c93767f47701ad92bc7f3b601534be133213fe001bbabd357289a
+pikoFinished57,pt,"Aprender precisa de prática, e cada tentativa tem seu lugar.",,,,,cf34bfbae8e517ced3870519065ef94d9bc7e7265589dae689ce85a80e3e683c
+pikoFinished58,pt,Você pode aprender na velocidade que combina com você.,,,,,0451282d6dc5068c7cf8c10be93f09c7a68177a9e1ea36ca754deb7c11cb0be8
+pikoFinished59,pt,"Seu esforço merece atenção, pequeno explorador.",,,,,61fb415ae3eae2b7ed710f859063322404c73901e8dad2e8532805f6cf6eebdb
+pikoFinished60,pt,Viva! Chegamos juntos ao final deste desafio.,,,,,43086567d767adbb765f9e17bcd84f9e19651f08c2a318c2116f4f369cc3e141
+pikoFinished61,pt,Piko mexe as asas de alegria por você!,,,,,985fd5e764406e804614aa7323e7845c10e39a18385ae8892de438b30eba8041
+pikoFinished62,pt,Uma comemoração de passarinho pela sua aventura concluída!,,,,,bb7032e1c174cdab26b001b0577a5ae1693910983fc396251607c5a85939050c
+pikoFinished63,pt,Muito bem! Minhas penas se agitam de alegria.,,,,,90bc5c3293df46e726eeb1613fd1fae56ed2d007e3e9de8242db2a7291d5b84e
+pikoFinished64,pt,Você terminou! Piko comemora ao seu lado.,,,,,91c91334340fc7ba0e8d34cccf5d375ab6906fa9edd97118e31074e683aeb03e
+pikoFinished65,pt,Nossa pequena aventura tem um final feliz!,,,,,86abf6cb081249202ce0d75cb6e2f38e16b89c8ec92e9de25ac565b8ff900387
+pikoFinished66,pt,Foi uma bela aventura para compartilhar com você.,,,,,6abbfd2bc52076ca308fb052911f88ba0f692be54bc38060ec35f39bc7630ca0
+pikoFinished67,pt,Um piado alegre por um desafio bem concluído!,,,,,edacab434313006a9e7ed8f347766b37363538f03d5f369c8feec8013c682fb6
+pikoFinished68,pt,Tenho um grande sorriso de passarinho para você. Muito bem!,,,,,a892b143e767576fc0361416e3f2e6127f03fada45fcd8d3134ff37eeedfab8c
+pikoFinished69,pt,As asas do Piko estão prontas para comemorar!,,,,,514f72fe04136e0881672db730df711d98fa43341c702b4b9c2099f126fb896a
+pikoFinished70,pt,Aproveite seu desafio concluído. Você escolhe o que vem depois.,,,,,8d651280a84cd8bca707cea3bdfd409af5b08b34b6b844f28accb6c0e0273347
+pikoFinished71,pt,Muito bem! Uma pequena pausa também é bem-vinda.,,,,,ef31b66021d91d7150f8e404b30f54df14692e65052641b5aaf0291b852810a5
+pikoFinished72,pt,Você pode fazer uma pausa e apreciar o que terminou.,,,,,b8590b89fe21aa0f17152f56c86c8c931bbfbe374ebefa5c05195f44fa8e1a2a
+pikoFinished73,pt,Um final feliz! Escolha o próximo passo quando quiser.,,,,,2c17094d5ad39c035ede2c5d925e94b8e462283f69e3fbc05ad8886e68ea354f
+pikoFinished74,pt,Você terminou esta aventura. Um alongamento pode ser gostoso!,,,,,ddc971a535eaf40a9421b9066b968dc6506709c2814fd64f331ef8ba5ab19c44
+pikoFinished75,pt,Comemore do seu jeito. Essa conquista é sua!,,,,,b7f97e534d1ba308f1f0e9a64e11b0b789960587251c0c661a93f64a722ab401
+pikoFinished76,pt,Você pode compartilhar este momento feliz com um adulto.,,,,,64f4ec212a71ac290a9151cb653393559a40ada714362af2d4ef9a1c8b1b12ad
+pikoFinished77,pt,Muito bem! Você pode voltar a brincar outra hora.,,,,,a773e31eab91b6eeab677a10a24b63b5dcf237a2cc864193d0679d85cf3d9437
+pikoFinished78,pt,Sua aventura terminou. Aproveite uma pequena pausa feliz.,,,,,117ad45661d6c277d2b11c6025ab2c35018f466e26fe9251f516e3a5e40b3ce9
+pikoFinished79,pt,Muito bem! Você escolhe o que quer fazer depois.,,,,,e5512aebd521ee1841cca03034a2e4e4fb1e9da1161302e42d0183bac315b2c3
+pikoFinished80,pt,Uma pequena aventura concluída e um sorriso merecido!,,,,,b298c93e4dae853559045a2761bdefc8837991d2d1c7ca5d5e0092fe8b63729d
+pikoFinished81,pt,"Muito bem, explorador! Sua conquista merece comemoração.",,,,,513f0511b878c64f07229278c62200eb556606f1f41311c7d665d99c4ee8d73d
+pikoFinished82,pt,Você concluiu este desafio. Vamos aproveitar o momento.,,,,,0ec9040a2df3354ad29b8eb02dfef16646c212a96a3be9183079f09b37fef43d
+pikoFinished83,pt,Um viva alegre pela sua aventura de aprendizagem!,,,,,2a46c43f0c978736385b6d8cf0174d60c27d863162db3d30bd51d38442633582
+pikoFinished84,pt,Mais um desafio concluído. Você pode ficar feliz com isso.,,,,,efdd7314526f706c5a881ebcbb928bb8779026bd896780af7c7bc6d98361e592
+pikoFinished85,pt,Você levou esta aventura até o fim. Bom trabalho!,,,,,83b7cde907547587abbeadfbd57605cd36be72814b21e63f2f538184d4e8b39c
+pikoFinished86,pt,Uma pequena comemoração pelo seu esforço!,,,,,c1afb19b9dc99db43eb19275f1d9167de93a1c09334f83103aa4300cd5a7042f
+pikoFinished87,pt,O que você terminou hoje merece um sorriso.,,,,,a7c32d66d9c788357ba573573ba8dbe8aa305073ba2bfc8b592cf4bdbac63e46
+pikoFinished88,pt,Muito bem! Essa aventura tem lugar nas suas lembranças felizes.,,,,,8a19474cc68dfc96c327c182c379f7ae564084d9eb4150dc59bf53b9a9c36643
+pikoFinished89,pt,"Um final, um sorriso e um pequeno Piko alegre!",,,,,eb813ee8c108dabce5bb37219de212a519e57849011c51d2488495affa0f204a
+pikoFinished90,pt,Muito bem! Há espaço para sua próxima ideia quando quiser.,,,,,f62ebc231abe7c28d4045a68b90bdacad441a16bb660de6580b78e32e414f3c7
+pikoFinished91,pt,Suas ideias e perguntas tornam a exploração interessante.,,,,,0bd55cc4f47299b33b9e9f8b94e5ecd392035feabc225c5ff4279a086621e693
+pikoFinished92,pt,Você terminou esta parte. Não há pressa para a próxima.,,,,,4cecc375b9575497d27ad40ac8d7f0c51ae6794376597c5dec1375666073a512
+pikoFinished93,pt,Uma aventura concluída pode ser o começo de uma nova ideia.,,,,,1f6ee1fbe371182300679e3ec99130729261441375624ad7c2d6deaaa9b6a2ca
+pikoFinished94,pt,Muito bem! Aprender tem espaço para diversão e pausas.,,,,,b8281ba4b63414066bfcd9c6c10b38fd2766afa74436ee1cde8cd1a138dae8e4
+pikoFinished95,pt,Seu desafio concluído é uma bela parte do seu dia.,,,,,b050dea4aa7cc2be432434c3c6b91abbf917ef2ca8f3671909e5ca796380d9a9
+pikoFinished96,pt,Obrigado por compartilhar esta aventura comigo. Muito bem!,,,,,b27931c91201be50e02c8fbeb88abeab8dc8c28f36a766393f322d50ffda58c7
+pikoFinished97,pt,"Você terminou, pequeno explorador. Aproveite seu momento!",,,,,31aaaa407ba1522b0e8d032d0aff3fdf165e0dd97e004cc03a5676c8684a8df7
+pikoFinished98,pt,Uma comemoração carinhosa do Piko pelo que você realizou!,,,,,83fd03e42cfed275febe40b80e7c8551926b108aad1cdd4c1c51f3b8295eb3be
+pikoFinished99,pt,Desafio concluído! Aproveite sua aventura de aprendizagem.,,,,,7f173523fb51dec8cd81dcc450e5939563604703aedf2287c037d5a8625e3dd9

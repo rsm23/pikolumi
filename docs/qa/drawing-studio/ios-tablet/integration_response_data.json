@@ -1,0 +1,48 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "en-drawing-guide"
+    },
+    {
+      "screenshotName": "en-all-colors"
+    },
+    {
+      "screenshotName": "en-brush-menu"
+    },
+    {
+      "screenshotName": "en-four-brush-strokes"
+    },
+    {
+      "screenshotName": "fr-drawing-guide"
+    },
+    {
+      "screenshotName": "es-drawing-guide"
+    },
+    {
+      "screenshotName": "pt-drawing-guide"
+    },
+    {
+      "screenshotName": "ar-drawing-guide"
+    }
+  ],
+  "drawingActivity": "drawing-0002",
+  "locales": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "ar"
+  ],
+  "paletteColors": 36,
+  "brushStyles": [
+    "round",
+    "pencil",
+    "marker",
+    "crayon"
+  ],
+  "guideAndStrokeRecovery": true,
+  "store": "isolated memory; existing profiles and artwork untouched",
+  "audio": "SilentAudio; disabled before runApp",
+  "adSDKInitialized": false,
+  "testAdsOnly": true
+}

@@ -1,0 +1,94 @@
+{
+  "locale": "ar",
+  "round": "2026-10-13-round2",
+  "recordings": [
+    {
+      "file": "syllable_10.mp3",
+      "text": "جِ",
+      "originalSha256": "0e0f9edc4cd86c3e2e49eb995162c263b925b8f95bb0b546d7f61b2867a8b96a",
+      "bundledOriginalSha256": "a739663b604385f98307704580eaf7149bb9bbba83b055fa1c710409f7837c99",
+      "note": "Ji",
+      "previousReviewDecision": "wrong"
+    },
+    {
+      "file": "syllable_13.mp3",
+      "text": "حِ",
+      "originalSha256": "ae78dd43083bb297dd3e2401bc436a7981e1041d5409763468a2f0aa5f00aee1",
+      "bundledOriginalSha256": "311abd3e011ba1099430efeea1f5c1532522492dcc9ece69e1a9d6269569ba5a",
+      "note": "Hi",
+      "previousReviewDecision": "wrong"
+    },
+    {
+      "file": "syllable_16.mp3",
+      "text": "خِ",
+      "originalSha256": "6de06bab4a7259f791d13148cb319ae6a246ee70d1fef2dc9c42f9d9333b086f",
+      "bundledOriginalSha256": "10d24e4133f47be165dd1271729239f9c5ffde3fc7d2e979ddbcb8a72e80605b",
+      "note": "Khi",
+      "previousReviewDecision": "wrong"
+    },
+    {
+      "file": "syllable_24.mp3",
+      "text": "رَ",
+      "originalSha256": "ddca2ac71f56a45b6c3ba5e16aede8ab27df24e5157adad92aa1edc3f79748ff",
+      "bundledOriginalSha256": "0fea3ea8e435a3b390d6aaeb53a5c4f035194dd9dcf5910f62011a7fa27100a7",
+      "note": "Ra",
+      "previousReviewDecision": "wrong"
+    },
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "originalSha256": "778d51c48ba4f0778bfe8cb37a4c61823c326df3a5b92465ba1c94d2a9d296b2",
+      "bundledOriginalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "note": "Si",
+      "previousReviewDecision": "wrong"
+    },
+    {
+      "file": "syllable_43.mp3",
+      "text": "طِ",
+      "originalSha256": "30a728c46ad3ba9337e982dc5fc5ca6e99cc196ece3534b35215c3c31ed74c37",
+      "bundledOriginalSha256": "d8873ee700244c92384c390928e50689a2c04f1f4ce0f85de04eabec2500b3de",
+      "note": "Ti",
+      "previousReviewDecision": "wrong"
+    },
+    {
+      "file": "syllable_46.mp3",
+      "text": "ظِ",
+      "originalSha256": "762043b7144c6d7d511c39fc26dfe83f332c732be6249c56de6f6ec886dc8fa5",
+      "bundledOriginalSha256": "6cd05116245a4118faa92951b7108b7c60d31df445322724b36c343050ef3d17",
+      "note": "Thi",
+      "previousReviewDecision": "wrong"
+    },
+    {
+      "file": "syllable_49.mp3",
+      "text": "عِ",
+      "originalSha256": "42c22d7c06777972aeeac49a548ef587aeaee89ac5432311c0cb6aaf4994a06a",
+      "bundledOriginalSha256": "be57a2a4aba9b7fb3f82d31d13705669363b079d76ad509e8ae08f956f957db5",
+      "note": "Needs pronunciation correction.",
+      "previousReviewDecision": "wrong"
+    },
+    {
+      "file": "syllable_52.mp3",
+      "text": "غِ",
+      "originalSha256": "ad8daaf6927f255a7a5202b523a55a4960e8f0c94eaf900c5e7f2e8e9028f528",
+      "bundledOriginalSha256": "07735a4b9ed1e1d823e6ef85602aaedea31bd8efea0f6d5a9859ad1d9e612acd",
+      "note": "Needs pronunciation correction.",
+      "previousReviewDecision": "wrong"
+    },
+    {
+      "file": "syllable_72.mp3",
+      "text": "هَ",
+      "originalSha256": "0bf36c927df8071952a07a2da3b2c147dfdacc8a7ede91cf16b6fc035c0f76fb",
+      "bundledOriginalSha256": "a91cb87907f510508105e62fd1ae148ec68df670fb80382fcb03663deb314e32",
+      "note": "Needs pronunciation correction.",
+      "previousReviewDecision": "wrong"
+    },
+    {
+      "file": "syllable_73.mp3",
+      "text": "هِ",
+      "originalSha256": "911fed8482b12fcdb3dc21f2122e1fa5c2564b2aec7a9408da4ed05d5afd7566",
+      "bundledOriginalSha256": "c6e860baff534b41c12a0fd58e13a647b8a2c8275ee41ce5d1f7ca73607db57d",
+      "note": "Needs pronunciation correction.",
+      "previousReviewDecision": "wrong"
+    }
+  ]
+}

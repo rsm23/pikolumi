@@ -1,0 +1,42 @@
+{
+  "installed": true,
+  "apkSha256": "f7e501baddb3f9576392c399f55a037361779d421bb10fc5012cb3060911db21",
+  "installedApkMatches": true,
+  "compatibleDevelopmentCertificate": true,
+  "before": {
+    "fileHashes": {
+      "pikolumi.sqlite": "4a56b52f968343bb36610f5330b0569817d3b2af71303d4dd4715a80af1d8348"
+    },
+    "savedRecordsSha256": "4cef144968cc591a1a044aa289cb1c197b0356f724c49ab6bb6ce988aacd1895",
+    "recordCounts": {
+      "ads": 1,
+      "artwork:explorer-1": 5,
+      "gallery:explorer-1": 5,
+      "results:explorer-1": 37,
+      "settings": 1
+    }
+  },
+  "after": {
+    "fileHashes": {
+      "pikolumi.sqlite": "4a56b52f968343bb36610f5330b0569817d3b2af71303d4dd4715a80af1d8348"
+    },
+    "savedRecordsSha256": "4cef144968cc591a1a044aa289cb1c197b0356f724c49ab6bb6ce988aacd1895",
+    "recordCounts": {
+      "ads": 1,
+      "artwork:explorer-1": 5,
+      "gallery:explorer-1": 5,
+      "results:explorer-1": 37,
+      "settings": 1
+    }
+  },
+  "savedRecordsAndDatabaseFilesUnchanged": true,
+  "uninstalled": false,
+  "dataCleared": false,
+  "normalEntryPoint": "lib/main.dart",
+  "launchedForPlayback": false,
+  "physicalQA": "deferred by user",
+  "soundPreferenceChanged": false,
+  "phoneWakeSettingsChanged": false,
+  "systemVolumeChanged": false,
+  "storeActionsPerformed": false
+}

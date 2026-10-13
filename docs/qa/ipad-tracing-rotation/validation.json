@@ -1,0 +1,96 @@
+{
+  "verifiedAt": "2026-10-13T00:16:40.603655+00:00",
+  "passed": true,
+  "device": "iPad Pro 13-inch (M5) simulator, iPadOS 27.0",
+  "deviceId": "CEB65F35-4EC0-4272-B32A-2197F48DC60B",
+  "rotationMethod": "Device Hub hardware Controls > Rotate Left/Right through native UI automation; no artificial viewport override",
+  "actualHardwareQuarterTurns": 4,
+  "orientationSizes": {
+    "initialPortrait": [
+      2064.0,
+      2752.0
+    ],
+    "LEFT_LANDSCAPE": [
+      2752.0,
+      2064.0
+    ],
+    "RIGHT_PORTRAIT": [
+      2064.0,
+      2752.0
+    ],
+    "RIGHT_LANDSCAPE": [
+      2752.0,
+      2064.0
+    ],
+    "LEFT_PORTRAIT": [
+      2064.0,
+      2752.0
+    ]
+  },
+  "maximumObservedRenderedAspectRatioDrift": 0.0,
+  "proportionMeasurement": "Guide/ink pixel bounding boxes segmented from actual native screenshots inside the canvas; 24 measurements across five languages and numerals",
+  "exactStrokeAndPointIndicesPreserved": true,
+  "sqliteClosedAndReopened": true,
+  "completedInLandscape": [
+    "en-tracing-0015",
+    "fr-tracing-0057",
+    "es-tracing-0041",
+    "pt-tracing-0069",
+    "ar-tracing-0065",
+    "en-tracing-0120"
+  ],
+  "completionResultsPreservedAfterFinalRotation": true,
+  "temporaryTestDatabaseOnly": true,
+  "normalPreferencesChanged": false,
+  "normalMainEntrySimulatorAppRestored": true,
+  "normalPackage": "output/qa/Pikolumi-Latin-Tracing-Simulator.zip",
+  "normalPackageSha256": "0e0aea39872b24dd8d7c5f1e166f5c3c6e792f9f59fde22dd5b6f5af42583ed1",
+  "sourceHashes": {
+    "integration_test/ipad_tracing_rotation_test.dart": "dafa49ba830f51e310826171361bde544c06b6a8e68727ef560332876f7467dd",
+    "lib/activities/tracing_maze.dart": "0be15c305163fac1739ea1bd96f3d815f5326b2c7a953d8c44f45633a6259a09",
+    "lib/activities/trace_geometry.dart": "4b6523ffa08ec77610f9a7c93ac5efc12ef6d8741f0ad730f9cd12893fbd4d79",
+    "lib/core/controller.dart": "1dbb78cd0eb203bb70f5e1201b2a88749c2ee23a04e43139dd6de2faeeb4f8ba",
+    "lib/services/store_native.dart": "3650712afbbd3001ca9f519c92ceb9aad21103b990551b07c13844e09b77aaad",
+    "assets/content/catalog.json": "64019dca7035bffd32b9a39851ebdc47ab2832e9edc45ca47e700209e57df849"
+  },
+  "executedFixture": "docs/qa/ipad-tracing-rotation/executed-fixture.dart.txt",
+  "executedFixtureSha256": "8f62c8bf55594df5dce12a47af2ea5ef0297274a3265ca74f6f570d895ec05d6",
+  "fixtureCleanup": "Removed one redundant import after the passing run; analyzer verifies current source",
+  "reportSha256": "289644a060dd45ac15635167ae812b91cd5fc7b4c5082c8b1bd2bda0424302bb",
+  "captures": {
+    "completed-ar-tracing-0065.png": "ade41be236c6bbb544d3bc082a64a66bcbb75ffedbe733307e50ba7809ee6761",
+    "completed-en-tracing-0015.png": "58e1e302689934d1a53c0b9b324e3e2ccf223bae9e4973ea068014a41cda6fe6",
+    "completed-en-tracing-0120.png": "d5498b2edd98f0fdee1abefd06b0e3f812467957a836bdad0577d53f68285295",
+    "completed-es-tracing-0041.png": "8db040c591d447e3617094b3c3a784273dc6839004cb40d6f42733413c67d451",
+    "completed-fr-tracing-0057.png": "694c510fafd560d18c5dd9daff79705b99d805a524c9f81d9303ddbad92092ab",
+    "completed-pt-tracing-0069.png": "ed68186af89b69b725b15523071e491b9f7e2d1e9019767b1516869cb6fe5eb5",
+    "landscape-left-ar-tracing-0065.png": "722da8f7d1029896084150b21ec3a754ef489ec9e1e90d79e521d0acbeb50e6d",
+    "landscape-left-en-tracing-0015.png": "06c092c5d4c8dabc62f62ff5bcc6999e2ed6c72ec42036f66678c276fd7cf22c",
+    "landscape-left-en-tracing-0120.png": "20ffeb5c75f4afa578b894637c64a602e970a115551f9b154aa9e46a3cc62554",
+    "landscape-left-es-tracing-0041.png": "1f500abaa27ff5f065cb87b60278d5d3af6b6b180deec1bb2db13208cd301161",
+    "landscape-left-fr-tracing-0057.png": "6e07db7a3a7dd7d4cb4591aa7dcec25f2ce7e23197f0e8e473006bc8127eb06d",
+    "landscape-left-pt-tracing-0069.png": "c0831e50f4d1a67d324352aeb11bf6b70657001548be29d6bd7dfddf512955ee",
+    "landscape-right-ar-tracing-0065.png": "b148a6ccb4a726abc1385beb91f5b4c5f11b55b1a2eb958821d0380271be807f",
+    "landscape-right-en-tracing-0015.png": "b937c5c47e20a9a424dee10c2a692485f47f6fcf8c58449e53ca4fc9fecd2094",
+    "landscape-right-en-tracing-0120.png": "50672588c4fe2a418250e207a06b3200e29cd2218e1b289be5243cfd1365c471",
+    "landscape-right-es-tracing-0041.png": "6fe67c52e66531a4137fbec19a6333c1ba5e2d114b3033bd486b8042ed80305f",
+    "landscape-right-fr-tracing-0057.png": "e5670b21fe45594cdb3fbe13a3f3808e6d780d89ed795a92112fe8ee0be7b520",
+    "landscape-right-pt-tracing-0069.png": "253deaab0184700761cfe6e5a25ab01c6c719375d5e613dd2afcae4a9cf173af",
+    "portrait-ar-tracing-0065.png": "35ee74cf2eec6ef7cd5b0dacb01a9bbd688bee11d825ce860b10176d226a1943",
+    "portrait-en-tracing-0015.png": "ac557730f02809cfefb399dba9368cc6efc8a3b0d0f312bd90fc96638bb6d4cd",
+    "portrait-en-tracing-0120.png": "e47c3b87647e267bd464af1dfbe4e0a7657d75adeff15fcd8148bc196ac1ac89",
+    "portrait-es-tracing-0041.png": "d681327f9471cf3343426490fb41af0b16cc93976de859d785899a2a3a012cdb",
+    "portrait-fr-tracing-0057.png": "b35a76ac3adb685bb4218f737c35ebad7ae2b25ab0486e4578f8078f24fe373e",
+    "portrait-pt-tracing-0069.png": "fca5c10ba0adfd4a8afcb9b8c401b6876dd435d917355b0c63658a43bc180516",
+    "portrait-reopened-sqlite-ar-tracing-0065.png": "f4d4a75cecb000984df75e82234b2379d0e5a92155c73b163ed4db4b5201c985",
+    "portrait-reopened-sqlite-en-tracing-0015.png": "d35eb6089ebc95269e6a3951ec46632bbc5b9b005022b269b1a065c52a940d5b",
+    "portrait-reopened-sqlite-en-tracing-0120.png": "761cc3fe616e424d1edeb0843d223607d7634ac4e7b689f8e2cea1eab084257d",
+    "portrait-reopened-sqlite-es-tracing-0041.png": "287bebef82924892d7e28d295ac48ecb3087ea240119472886cc9faada2fe76a",
+    "portrait-reopened-sqlite-fr-tracing-0057.png": "93b5d605563f2130f9fe18e3bcc03ae333516282319212fe3bce1c00d3ac56ab",
+    "portrait-reopened-sqlite-pt-tracing-0069.png": "90bb0d34361fbad0b1a9918af2b8cdeb204de49230faf00bb76114be6fbfd339"
+  },
+  "analyzer": "clean",
+  "audio": "SilentAudio; sound disabled before mounting; normal user sound preference unchanged",
+  "physicalDeviceTesting": "Physical iPad unavailable; this is simulator evidence",
+  "storeActionsPerformed": false
+}

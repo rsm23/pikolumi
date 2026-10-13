@@ -2,7 +2,7 @@
   "catalogValidated": true,
   "contentReviewed": false,
   "pronunciationReviewed": false,
-  "assetRightsVerified": false,
+  "assetRightsVerified": true,
   "physicalAndroidQA": false,
   "physicalIOSQA": false,
   "phoneTabletQA": false,
@@ -19,5 +19,15 @@
   "androidPublicAvailability": false,
   "iosPublicAvailability": false,
   "physicalAndroidSmoke": true,
-  "freshAndroidOfflineQA": true
+  "freshAndroidOfflineQA": true,
+  "androidPhoneTabletQA": false,
+  "iosPhoneTabletQA": false,
+  "androidPrivacyDeclarationsReviewed": false,
+  "iosPrivacyDeclarationsReviewed": false,
+  "androidAdDismissalVerified": false,
+  "iosAdDismissalVerified": false,
+  "androidFamiliesSDKVerified": true,
+  "iosPhoneSimulatorAdQA": true,
+  "iosTabletSimulatorAdQA": true,
+  "androidNativeAdPrivacyQA": true
 }

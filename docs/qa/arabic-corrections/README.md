@@ -1,0 +1,23 @@
+# Arabic pronunciation corrections, 2026-10-12
+
+The user rejected 55 named recordings and confirmed Modern Standard Arabic. `requested.json` preserves every filename, the canonical vowelled script, original SHA-256 and the user's exact correction note. Latin notes are pronunciation hints; they do not replace Arabic letters, make short vowels long, substitute /o/ for ḍamma /u/, or merge distinct consonants.
+
+`index.html` compares the original with a new take for each of the 55 clips. Mark **Sounds correct** or **Still wrong**, add a note when needed, then use **Save review**. Choices persist locally when browser storage permits. Unreviewed recordings remain unapproved; a changed candidate clears its earlier approval while retaining notes. The export binds each decision to the recording's exact hash. No audio autoplays and no network is needed for review.
+
+The user's attached review approved 44 exact candidate hashes and rejected 11. The 44 approved takes are now bundled, with per-clip provenance and the received review retained in `reviews/`. Round 2 subsequently approved eight more takes, bringing the total to 52 at that point. Round 3 approved two more: 54 replacements are now bundled. Only صِ remains rejected; [round 5](../arabic-corrections-round5/index.html) contains a new contextual attempt. Rejected takes remain outside the app. This review covers only these recordings; full Arabic/content approval remains pending. Existing profiles, progress, UI language, learning language and app settings are untouched. Both store holds remain in force.
+
+## Generation and checks
+
+Candidates use the existing pinned Apache-licensed SILMA model and MIT Vocos decoder. Reference speech is the project's previously synthesized Arabic `counting.mp3` and `welcome.mp3`, with their scripts and exact hashes recorded in `candidates.json`. Those reference clips are not claimed as native-approved. No human voice recording, custom speaker identity or paid API is used.
+
+Synthesis consumes Arabic characters and vowel marks directly, with 48 diffusion steps. Letter-name stop forms are explicit, long alif remains long, words and instructions have separate duration estimates. Short-sound candidates use repeated-syllable prompts and silence boundaries when three separate utterances can be identified; otherwise they use a direct isolated-sound fallback. Outer silence is trimmed with consonant padding. This is an attempt to improve generation, not a guarantee of correct phonology. The exact synthesis text, extraction method, seed and duration are recorded per file.
+
+The first very-short generation strategy produced a silent sample, which was rejected automatically and replaced by the repeat/fallback strategy before this packet was built. A duration metadata correction records the fallback's effective 0.95-second generation window; it does not change audio samples. The actual generation source is archived by SHA-256 under `docs/release/voice-licenses/generators/`; the current generator includes the metadata fix for future runs.
+
+`validation.json` verifies all 55 replacement files differ from their originals, decode as finite non-silent mono 24 kHz MP3s, stay within amplitude/duration bounds, and match source hashes. That pre-promotion check bound the original app clips to the request's hashes. Current approved/rejected scope is recorded in `imported-review.json` and the bundled per-clip provenance; the 44 promoted clips now match the user's approved hashes. Format checks do not approve pronunciation.
+
+`review-ui-validation.json` records silent DOM checks: 55 review cards, 110 before/after players, explicit decisions, filters, note persistence, export and stale-approval handling. Playback and network calls remain zero. The full Arabic/five-language packets were regenerated with the user's rejection notes, their local references and source bindings validated, and the existing eight Python checks pass. Automated browser visual verification is unavailable for these local file pages; human review remains required.
+
+Rebuild candidates with `.venv/bin/python scripts/rebuild_arabic_corrections.py`, then run `.venv/bin/python scripts/build_arabic_correction_review.py` and `node tool/test_arabic_corrections.cjs`. Rebuilding can change hashes and invalidate prior candidate approvals; retain exported reviews and the original snapshots.
+
+`import_arabic_review.py` validates every filename, script and hash before copying approved files. Native approvals survive packet rebuilding and protect accepted bytes from bulk synthesis or peak repair. The old originals and rejected candidate files remain available for audit. Importing the same review is idempotent.

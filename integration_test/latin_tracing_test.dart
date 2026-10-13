@@ -1,0 +1,243 @@
+import 'dart:io';
+
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:integration_test/integration_test.dart';
+import 'package:pikolumi/core/controller.dart';
+import 'package:pikolumi/core/models.dart';
+import 'package:pikolumi/main.dart';
+import 'package:pikolumi/services/ads.dart';
+import 'package:pikolumi/activities/trace_geometry.dart';
+import 'package:pikolumi/activities/tracing_maze.dart';
+import 'package:pikolumi/ui/activity_screen.dart';
+
+import '../test/app_test.dart' show MemoryStore, SilentAudio;
+import 'capture.dart';
+
+void main() {
+  final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
+  testWidgets(
+    'silent Latin model, accents, completion, rotation and recovery',
+    (tester) async {
+      final app = AppController(
+        catalog: await Catalog.load(),
+        store: MemoryStore(),
+        audio: SilentAudio(),
+      );
+      await app.initialize();
+      await app.setSound(false);
+      await app.setMotion(true);
+      await app.setLanguage('en');
+      await app.setLearningLanguage('en');
+      final ads = AdsService(app.store, app.audio);
+      final container = ProviderContainer(
+        overrides: [appProvider.overrideWith((ref) => app)],
+      );
+      await tester.pumpWidget(
+        UncontrolledProviderScope(
+          container: container,
+          child: PikolumiApp(ads: ads),
+        ),
+      );
+      await tester.pumpAndSettle();
+      if (Platform.isAndroid) {
+        await binding.convertFlutterSurfaceToImage();
+        await tester.pumpAndSettle();
+      }
+      final navigator = tester.state<NavigatorState>(
+        find.byType(Navigator).first,
+      );
+      Future<void> open(Activity activity) async {
+        navigator.push(
+          MaterialPageRoute<void>(
+            builder: (_) => ActivityScreen(activity: activity, ads: ads),
+          ),
+        );
+        await tester.pumpAndSettle();
+        await tester.pump(const Duration(milliseconds: 300));
+        await tester.pumpAndSettle();
+      }
+
+      TracePainter painter() =>
+          tester
+                  .widget<CustomPaint>(
+                    find.descendant(
+                      of: find.byKey(const ValueKey('trace-canvas')),
+                      matching: find.byType(CustomPaint),
+                    ),
+                  )
+                  .painter!
+              as TracePainter;
+      Future<void> trace(List<Offset> path) async {
+        final area = tester.getRect(find.byKey(const ValueKey('trace-canvas')));
+        final viewport = TraceViewport(area.size);
+        final gesture = await tester.startGesture(
+          area.topLeft + viewport.physical(path.first),
+        );
+        for (var i = 1; i < path.length; i++) {
+          if (i % 3 != 0 && i != path.length - 1) continue;
+          await gesture.moveTo(area.topLeft + viewport.physical(path[i]));
+          await tester.pump(const Duration(milliseconds: 1));
+        }
+        await gesture.up();
+        await tester.pump();
+      }
+
+      final captured = <String>[], completed = <String>[];
+      final cases = {
+        'en': [0, 1, 8, 79],
+        'fr': [26, 27, 28, 29, 56],
+        'es': [14, 40, 56],
+        'pt': [26, 27, 28, 31, 33, 34, 64],
+      };
+      var resumed = false;
+      for (final entry in cases.entries) {
+        final lang = entry.key;
+        await app.setLanguage(lang == 'es' ? 'ar' : 'en');
+        await app.setLearningLanguage(lang);
+        await tester.pumpAndSettle();
+        for (final index in entry.value) {
+          final activity = app.catalog.bySection['tracing']![index];
+          final cfg = activity.config(lang);
+          await open(activity);
+          final model =
+              tester
+                      .widget<CustomPaint>(
+                        find.byKey(const ValueKey('trace-model')),
+                      )
+                      .painter!
+                  as TracePainter;
+          expect(model.strokes, same(painter().strokes));
+          final name = '$lang-${activity.id}';
+          await capture(binding, name);
+          captured.add(name);
+          if (index == entry.value.last) {
+            final paths = tracePoints(cfg['strokes'] as List);
+            if (lang == 'en') {
+              await trace(paths.first.take(paths.first.length ~/ 2).toList());
+              await app.flush();
+              final saved = (await app.resume(activity.id))!;
+              final prior = painter();
+              expect(saved['traceRevision'], 2);
+              navigator.pop();
+              await tester.pumpAndSettle();
+              await open(activity);
+              expect(painter().stroke, prior.stroke);
+              expect(painter().at, prior.at);
+              resumed = true;
+              await capture(binding, 'resumed-$name');
+              final current = painter();
+              await trace(paths[current.stroke].skip(current.at).toList());
+              for (final path in paths.skip(current.stroke + 1)) {
+                await trace(path);
+              }
+            } else {
+              for (final path in paths) {
+                await trace(path);
+              }
+            }
+            await tester.pumpAndSettle();
+            expect(find.byType(AlertDialog), findsOneWidget);
+            expect(app.isCompleted(activity), isTrue);
+            await capture(binding, 'completed-$name');
+            completed.add(name);
+            await tester.tap(find.text(app.t('continue')));
+            await tester.pumpAndSettle();
+          } else {
+            navigator.pop();
+            await tester.pumpAndSettle();
+          }
+          expect(tester.takeException(), isNull, reason: name);
+        }
+      }
+      await app.setLanguage('fr');
+      await app.setLearningLanguage('pt');
+      final activity = app.catalog.bySection['tracing']![27];
+      final cfg = activity.config('pt');
+      final raw = {'stroke': 0, 'at': 7};
+      await app.saveResume(activity.id, raw);
+      await app.flush();
+      final expected = TraceCheckpoint.restore(
+        cfg,
+        tracePoints(cfg['strokes'] as List),
+        raw,
+      );
+      await open(activity);
+      expect(painter().stroke, expected.stroke);
+      expect(painter().at, expected.at);
+      await capture(binding, 'legacy-fr-ui-pt-learning');
+      final oldStroke = painter().stroke, oldAt = painter().at;
+      await SystemChrome.setPreferredOrientations([
+        DeviceOrientation.landscapeLeft,
+      ]);
+      await tester.pump(const Duration(seconds: 2));
+      await tester.pumpAndSettle();
+      expect(painter().stroke, oldStroke);
+      expect(painter().at, oldAt);
+      final landscapeSize = tester.view.physicalSize;
+      final landscapeApplied = landscapeSize.width > landscapeSize.height;
+      final tabletWindow =
+          Platform.isIOS &&
+          landscapeSize.shortestSide / tester.view.devicePixelRatio >= 600;
+      if (!landscapeApplied) expect(tabletWindow, isTrue);
+      expect(
+        tester.getSize(find.byKey(const ValueKey('trace-canvas'))).height,
+        greaterThanOrEqualTo(120),
+      );
+      expect(tester.takeException(), isNull);
+      await capture(
+        binding,
+        landscapeApplied
+            ? 'landscape-fr-ui-pt-learning'
+            : 'tablet-window-fr-ui-pt-learning',
+      );
+      await SystemChrome.setPreferredOrientations([
+        DeviceOrientation.portraitUp,
+      ]);
+      await tester.pump(const Duration(seconds: 2));
+      await tester.pumpAndSettle();
+      expect(painter().stroke, oldStroke);
+      expect(painter().at, oldAt);
+      final portraitSize = tester.view.physicalSize;
+      expect(portraitSize.height, greaterThan(portraitSize.width));
+      expect(tester.takeException(), isNull);
+      navigator.pop();
+      await tester.pumpAndSettle();
+      await app.setLearningLanguage('en');
+      final number = app.catalog.bySection['tracing']![119];
+      await open(number);
+      await capture(binding, 'fr-ui-numeral-39');
+      for (final path in painter().strokes) {
+        await trace(path);
+      }
+      await tester.pumpAndSettle();
+      expect(app.isCompleted(number), isTrue);
+      completed.add('numeral-39');
+      expect(app.sound, isFalse);
+      expect(tester.takeException(), isNull);
+      binding.reportData = {
+        ...?binding.reportData,
+        'capturedLatinGuides': captured,
+        'completedLatinGuides': completed,
+        'modelMatchesPracticeGeometry': true,
+        'newCheckpointRestoredExactly': resumed,
+        'legacyCheckpointMigrated': true,
+        'rotationPreservesCheckpoint': true,
+        'programmaticRotationApplied': landscapeApplied,
+        if (!landscapeApplied) 'rotationLimitation': 'iPad window mode rejects programmatic orientation changes; tablet guides and completion checked in its portrait window. Phone rotation and short-landscape layout are covered separately.',
+        'landscapePixels': [landscapeSize.width, landscapeSize.height],
+        'portraitPixels': [portraitSize.width, portraitSize.height],
+        'independentLanguagesTested': true,
+        'userPreferencesChanged': false,
+        'adSDKInitialized': false,
+        'audio': 'SilentAudio; muted before mounting; in-memory preferences',
+      };
+      await tester.pumpWidget(const SizedBox());
+      await app.flush();
+      ads.dispose();
+      container.dispose();
+    },
+  );
+}

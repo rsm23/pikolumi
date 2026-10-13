@@ -1,25 +1,41 @@
 import 'dart:async';
 
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:integration_test/integration_test.dart';
 import 'package:pikolumi/main.dart' as production;
 import 'package:pikolumi/core/controller.dart';
+import 'package:pikolumi/core/models.dart';
+import 'package:pikolumi/services/ads.dart';
+import 'package:pikolumi/services/audio.dart';
 import 'package:pikolumi/services/ad_budget.dart';
-import 'package:pikolumi/ui/library.dart';
+
+import '../test/app_test.dart' show MemoryStore;
 
 void main() {
   final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
   testWidgets(
     'test banner, interstitial close callback and silent restoration',
     (tester) async {
-      await production.main();
-      await tester.pumpAndSettle();
-      final state = tester.state<ConsumerState>(find.byType(LibraryHome));
-      final app = state.ref.read(appProvider);
-      final ads = tester.widget<LibraryHome>(find.byType(LibraryHome)).ads;
+      final store = MemoryStore();
+      final app = AppController(
+        catalog: await Catalog.load(),
+        store: store,
+        audio: AudioService(),
+      );
+      await app.initialize();
       await app.setSound(false);
+      final ads = AdsService(store, app.audio);
+      runApp(
+        ProviderScope(
+          overrides: [appProvider.overrideWith((ref) => app)],
+          child: production.PikolumiApp(ads: ads),
+        ),
+      );
+      await ads.initialize();
+      await tester.pumpAndSettle();
       expect(
         ads.production,
         isFalse,
@@ -42,11 +58,8 @@ void main() {
       await tester.pump();
       await tester.pump();
       expect(find.byType(AdWidget), findsNothing);
-      final original = AdBudget.fromJson(ads.budget.toJson());
       addTearDown(() async {
-        ads.budget = original;
-        await ads.checkpoint();
-        ads.leaveActivity();
+        ads.dispose();
       });
       ads.budget = AdBudget(foregroundMs: 300000, completions: 4);
       var returned = false;
@@ -55,6 +68,9 @@ void main() {
         () => Future<void>.delayed(const Duration(seconds: 2)),
       );
       expect(ads.presenting, isTrue);
+      debugPrint(
+        'PIKOLUMI_AD_QA_PRESENTING ${DateTime.now().toUtc().toIso8601String()}',
+      );
       // Native ad controls are closed manually through Simulator UI during this QA run.
       await tester.runAsync(() async {
         for (var i = 0; i < 180 && !returned; i++) {
@@ -69,13 +85,21 @@ void main() {
       expect(ads.budget.eligible(DateTime.now()), isFalse);
       expect(app.sound, isFalse);
       expect(app.audio.enabled, isFalse);
+      ads.leaveActivity();
+      await tester.pump();
+      await tester.pumpAndSettle();
+      expect(find.byType(AdWidget), findsOneWidget);
+      expect(tester.takeException(), isNull);
       binding.reportData = {
         'bannerLoaded': true,
         'interstitialShown': true,
         'dismissalCallback': true,
         'frequencyApplied': true,
         'soundRestoredMuted': true,
+        'libraryBannerRestored': true,
         'testAdsOnly': true,
+        'catalogVersion': app.catalog.version,
+        'store': 'isolated memory; user progress and ad budget untouched',
       };
     },
     timeout: const Timeout(Duration(minutes: 6)),

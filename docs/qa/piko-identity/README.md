@@ -1,0 +1,20 @@
+# Piko identity correction, 2026-10-12
+
+The previous animated model reinterpreted the face, crest and proportions too far from the original icon and splash. Identity revision 2 uses the canonical illustration as a painted texture on articulated, closed, curved Blender meshes. The original brown eyes, open smiling beak, broad swept lilac crest, layered turquoise/coral feathers, feathered yellow belly, orange feet and large crayon remain recognizable together. Neither the original mascot PNG nor the app icon was changed.
+
+This is a painted 3D relief for the original front view and gentle rotations, not a complete side/back turnaround model. The app uses transparent rendered frames rather than a real-time 3D engine. Body, head, crest, wings and feet move separately; the face has a small smile deformation and animated painted eyelids. The animation includes breathing, blinks, anticipation, a soft hop, landing squash and delayed follow-through. Gesture size stays small to preserve the illustrated face and prevent joint seams.
+
+`identity-comparison.png` shows the original, previous model and correction at comparable sizes. `celebration-preview.gif` is silent. `animation-contact-sheet.png` shows poses across the celebration. The old `../piko-3d/` captures remain evidence for the previous model and do not validate this revision.
+
+## Checks
+
+- `model-validation.json` verifies eight closed curved meshes per source, real depth, packed texture bytes identical to the canonical artwork, small adjacent joint-rotation steps and return to the initial pose at three seconds.
+- `asset-validation.json` verifies all 180 transparent frames, unclipped bounds, distinct poses, atlas dimensions, source and brand-reference hashes, and the unchanged 19.5 MiB combined decoded texture budget. The four lossless WebP sheets and poster occupy about 3.6 MiB on disk.
+- All 60 Flutter tests pass; static analysis is clean. Runtime behavior remains shared texture ownership, pauses when offstage/inactive, idle rests, one-shot completion, app/OS reduced motion, accessible navigation and preserved completion progress.
+- Android API 36 emulator, iPhone and iPad simulator fixtures pass test body and teardown in English, French, Spanish, Portuguese and Arabic. Each fixture checks actual frame advance, a correct-answer completion and saved progress, the Listen control, full-screen drawing and reduced motion, and records 12 settled screenshots (36 total).
+- Fixtures use `MemoryStore` and `SilentAudio`, mute before mounting, leave normal sound preferences alone and never initialize the ad SDK. Normal app entry points are restored without launching playback; the Android emulator's existing database files remain identical. System volume is unchanged. The headless emulator was started with `-no-audio` and stopped after checking.
+- Local normal Android profile and iOS simulator packages contain all 677 current source assets byte-for-byte. The Android package retains the existing development certificate for a compatible update. `validation.json` records current native outcomes and source/package hashes.
+
+The Pixel reconnected and the corrected normal build was installed; the installed APK SHA-256 matches the verified local package. The screen locked before the fixture began, so its physical animation check remains pending unlock. The original phone wake/timeout settings were restored. No uninstall, data clearing, sound-preference write or system-volume change occurred. A saved-record before/after fixture comparison has not yet run. Physical iOS hardware remains unavailable as previously confirmed by the user. Emulator/simulator results do not establish physical-device performance. Native Android results are under `android-emulator/` and in `validation.json`.
+
+Local packages: `output/qa/Pikolumi-Piko-Identity-QA.apk` and `output/qa/Pikolumi-Piko-Identity-Simulator.zip`. No upload, review submission or publication occurred; all six store-authorization flags remain false. Arabic replacement recordings remain review candidates, and bundled audio is unchanged.

@@ -1,0 +1,28 @@
+{
+  "checkedAtUTC": "2026-10-12T04:31:01.551762+00:00",
+  "sourceDigest": "332c7181c78b1e08f4c076a9abc0766628887d1ad8d2655c8d16cd90c9894949",
+  "simulators": [
+    {
+      "device": "308EF94F-8915-492D-A5EE-28BDD262C199",
+      "normalEntryPointMatchesCurrentBuild": {
+        "Runner": true,
+        "Frameworks/App.framework/flutter_assets/kernel_blob.bin": true
+      },
+      "uninstalled": false,
+      "appDataCleared": false,
+      "launched": false
+    },
+    {
+      "device": "CEB65F35-4EC0-4272-B32A-2197F48DC60B",
+      "normalEntryPointMatchesCurrentBuild": {
+        "Runner": true,
+        "Frameworks/App.framework/flutter_assets/kernel_blob.bin": true
+      },
+      "uninstalled": false,
+      "appDataCleared": false,
+      "launched": false
+    }
+  ],
+  "pixelReplacementInstall": "Success; compiler dependency confirms lib/main.dart; no uninstall",
+  "audioPlayback": false
+}

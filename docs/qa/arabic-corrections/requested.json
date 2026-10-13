@@ -1,0 +1,393 @@
+{
+  "date": "2026-10-12",
+  "locale": "ar",
+  "audience": "Modern Standard Arabic confirmed by user",
+  "reviewer": "user",
+  "recordings": [
+    {
+      "file": "letter_7.mp3",
+      "text": "دَال",
+      "note": "Del",
+      "originalSha256": "fec1c2ef5be1aa42322315bff4448777acc19ae485c9f00fe95967d9a2ce0725",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "letter_8.mp3",
+      "text": "ذَال",
+      "note": "Thel",
+      "originalSha256": "1a37fcfcc15d79e15991a49b4444f9d4654defb246d1ffac74be779a7db39b3e",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "letter_10.mp3",
+      "text": "زَاي",
+      "note": "Zaa",
+      "originalSha256": "beb9551e67d7a98b85fd494377e5e141e4ad1af517765ba18248822e4f854b02",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "long_alif.mp3",
+      "text": "أَلِف مَدّ. آ.",
+      "note": "Alif madd \"Aa\"",
+      "originalSha256": "261f1d8c6b58aa872be37df4e7cb581765a1f351898a7eab48f6ad10c96e98c2",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_6.mp3",
+      "text": "ثَ",
+      "note": "Thaa",
+      "originalSha256": "bb2215e70db0bfbc336aeabae68e50433e5ef666460ab0fa211fae5406d53ce1",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_10.mp3",
+      "text": "جِ",
+      "note": "Ji",
+      "originalSha256": "a739663b604385f98307704580eaf7149bb9bbba83b055fa1c710409f7837c99",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_12.mp3",
+      "text": "حَ",
+      "note": "ha",
+      "originalSha256": "da623c5b0fd292343f56a3f6429f148de63a28cbb089bfcf6d23fc7eb6398326",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_13.mp3",
+      "text": "حِ",
+      "note": "hi",
+      "originalSha256": "311abd3e011ba1099430efeea1f5c1532522492dcc9ece69e1a9d6269569ba5a",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_14.mp3",
+      "text": "حُ",
+      "note": "ho",
+      "originalSha256": "6cc6af0242f61fbedc875b640e88ab46ef882deeacd7421ceabee1fed871c622",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_16.mp3",
+      "text": "خِ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "10d24e4133f47be165dd1271729239f9c5ffde3fc7d2e979ddbcb8a72e80605b",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_21.mp3",
+      "text": "ذَ",
+      "note": "tha",
+      "originalSha256": "caa87ac3c253ed51eb4dc4ab5909f798ec1f426e452b3f29e4fdc40846f2cf56",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_24.mp3",
+      "text": "رَ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "0fea3ea8e435a3b390d6aaeb53a5c4f035194dd9dcf5910f62011a7fa27100a7",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "note": "si",
+      "originalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_38.mp3",
+      "text": "صُ",
+      "note": "so",
+      "originalSha256": "303ddde778f43b540c249591cfebcd5548f51d40917efc81ea610bff911dd3cf",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_43.mp3",
+      "text": "طِ",
+      "note": "Ti",
+      "originalSha256": "d8873ee700244c92384c390928e50689a2c04f1f4ce0f85de04eabec2500b3de",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_45.mp3",
+      "text": "ظَ",
+      "note": "Tha",
+      "originalSha256": "c17cb7b7a3b5dbb6178ad7aea072d7e6ba82cd430efa6c30bd32185b646bf903",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_46.mp3",
+      "text": "ظِ",
+      "note": "Thi",
+      "originalSha256": "6cd05116245a4118faa92951b7108b7c60d31df445322724b36c343050ef3d17",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_47.mp3",
+      "text": "ظُ",
+      "note": "Tho",
+      "originalSha256": "f36e4641f8cb5f165c92d1a0e97f226e0bb2c3494a510811d44c74c4d994747e",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_49.mp3",
+      "text": "عِ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "be57a2a4aba9b7fb3f82d31d13705669363b079d76ad509e8ae08f956f957db5",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_50.mp3",
+      "text": "عُ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "b67316e0674bb22694162a93e76423d868368a0048ac5e6d732edb0f5456486b",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_52.mp3",
+      "text": "غِ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "07735a4b9ed1e1d823e6ef85602aaedea31bd8efea0f6d5a9859ad1d9e612acd",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_53.mp3",
+      "text": "غُ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "dcc0435ca771509bfbd14e6308ff9957fe333469a5c70848f4e7e3539d405058",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_55.mp3",
+      "text": "فِ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "43d161718dc4814e87873a9fbf021f94431f9c9c59bfe3a07430f15b71a36d5f",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_56.mp3",
+      "text": "فُ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "80c92e2ebfd151bb3625ebcd627768438c41c6ef4aaf09901da622102f42fea4",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_61.mp3",
+      "text": "كِ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "1b962ecf469389a30f279bec64f1bd9ef0327916c33f73ada8f226896a47332d",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_62.mp3",
+      "text": "كُ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "a21a91f48b4d130134c68c314e0a1d789965ef964676eee6221aeb96a864a8c8",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_68.mp3",
+      "text": "مُ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "ae229a164ba5a0a4ec0bf0b9a78d9e8e74222ad337fbe6c03329d1a3ed31195b",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_69.mp3",
+      "text": "نَ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "f57359dfe3761813a7955a45b9f1d3578bb8299a369fe510812090e7c4e1ce58",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_71.mp3",
+      "text": "نُ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "fb619ae5fcc21953bfda4a544c062fbe5448bdc91a2754b65b63cfe9e8474f57",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_72.mp3",
+      "text": "هَ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "a91cb87907f510508105e62fd1ae148ec68df670fb80382fcb03663deb314e32",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_73.mp3",
+      "text": "هِ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "c6e860baff534b41c12a0fd58e13a647b8a2c8275ee41ce5d1f7ca73607db57d",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "syllable_77.mp3",
+      "text": "وُ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "94f1a01a0cfdbd11eeba0dbe385410012804baacf1d0c45f6989436dad90c48e",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "word_bear.mp3",
+      "text": "دُبّ",
+      "note": "Dob",
+      "originalSha256": "1d66161bfd5d98f97ed97f320a6a575c62551f637dc6988ae46f03f3bf93ccdc",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "word_bee.mp3",
+      "text": "نَحْلَة",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "4e7b104d1f4192360b50ed206bcaa52413ddd18e4270e047d9573c8e12cf6cdc",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "word_cake.mp3",
+      "text": "كَعْكَة",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "b19cb588654de082d73adb2f753bfefa6686423a61eea0edbfd1f8dcf9999e71",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "word_cat.mp3",
+      "text": "قِطَّة",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "2ea58abe1c12d683be1e5211878da43177b11a8b4e75c51efedb98ad55fb47c9",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "word_dog.mp3",
+      "text": "كَلْب",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "52fb04cc1dec326ea287aaf2c7bc9535eda04f7eefe07c8a7a527b247a82e55b",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "word_drum.mp3",
+      "text": "طَبْل",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "66db7105198cbdcdc7bd81ba3d4b3c380cc9e1ef9a7fe23e784fe203f5ac4615",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "word_elephant.mp3",
+      "text": "فِيل",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "b068cf520d343490b50a1b251a2469515a95d0a60282565650963711fd4590e1",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "word_frog.mp3",
+      "text": "ضِفْدَع",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "d5d19f713db8f72bfa4b21dc4741afd1f8cd3dd66972e4144729b56ca4496316",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "word_moon.mp3",
+      "text": "قَمَر",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "0f01ea80a4ef6472e3e0b11de169e8f661b2210e80944438bdd9a6044e59ae4e",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "word_mountain.mp3",
+      "text": "جَبَل",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "92483a7305334b79277694430616113c63d86ca30d486fdf422b67b2c66fc3de",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "word_mushroom.mp3",
+      "text": "فِطْر",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "e08645dd1dc561c6f073c1d4999dafcc9842490b7b28536220080c0560276fe8",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "word_pear.mp3",
+      "text": "كُمَّثْرَى",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "77ace5d617302eea16d4fdd527e2ce1067e702be4b8cf4a94a04c14666fe9954",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "word_rocket.mp3",
+      "text": "صَارُوخ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "a1cd98af1f1a9679e6c4aa7c87ee6d3452023483eed2f5beb5a983db78280530",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "word_whale.mp3",
+      "text": "حُوت",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "bd73fec3575826c4da09a506e578972c1c91db0b8f229cb67aa62deb4b03088f",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "trace_word_5.mp3",
+      "text": "ثَوْب",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "77ceb06798f69a85cbe284ba8ab036f9c73e4250a6dbb0829ce1358824b38ac4",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "trace_word_8.mp3",
+      "text": "كَتَبَ",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "5bd3e5650d63a2f9beec1aa9971a29b7f02d3be11664e764c17756ea6626ab94",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "trace_word_10.mp3",
+      "text": "كَلْب",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "41882b993d580ee7ef0fe2841ddcaddf9ad71db5aaf6fc1beaffdd5b0ebff32c",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "trace_word_13.mp3",
+      "text": "مَال",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "765ef6fef427b0cedd56b4ff7bf19ba77a00513a69bcb4f62ccf0a9fbcf9b30f",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "trace_word_23.mp3",
+      "text": "سَمَك",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "313d3bd83fcc70a5dcf9fc1f1dfbe83dc2e51937c73498f2e28075209f41a82e",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "mazes.mp3",
+      "text": "سَاعِدْ بِيكُو فِي الوُصُولِ إِلَى النَّجْمَةِ دُونَ عُبُورِ الجُدْرَان.",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "f7354b6dd65bfabf76d18076f2ee83e780d88618a2bfdde66f9c5027e3abe7f8",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "memory.mp3",
+      "text": "اِقْلِبْ بِطَاقَتَيْنِ، وَاعْثُرْ عَلَى جَمِيعِ الأَزْوَاجِ المُتَطَابِقَة.",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "62a9f9a7cb97426e7da381e2fecad7c055199df88082efc4ff3903c8bf64567d",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "shapes.mp3",
+      "text": "اُنْظُرْ جَيِّدًا، وَاخْتَرِ الشَّكْلَ أَوِ اللَّوْنَ المُنَاسِب.",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "902f5dd2b6e080339f4e0fdf096d6bb107dd1329eb3cc0edfdb0580be1c03059",
+      "status": "rejected by user; replacement review pending"
+    },
+    {
+      "file": "words.mp3",
+      "text": "اُنْظُرْ إِلَى الصُّورَةِ وَتَعَلَّمِ اسْمَهَا.",
+      "note": "Needs pronunciation correction.",
+      "originalSha256": "02d3e42cc79f0ce016a95abc998e531af845488c86251ac7c98603745792bb2c",
+      "status": "rejected by user; replacement review pending"
+    }
+  ]
+}

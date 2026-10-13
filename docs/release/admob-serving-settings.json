@@ -1,0 +1,27 @@
+{
+  "checkedAtUTC": "2026-10-12T00:04:26.224689+00:00",
+  "publisher": "pub-3316613733634147",
+  "setting": "High-engagement ads",
+  "apps": [
+    {
+      "platform": "android",
+      "appId": "ca-app-pub-3316613733634147~3372582372",
+      "previousValue": "On",
+      "savedValue": "Off",
+      "savedAndReopened": true,
+      "screenshot": "docs/release/admob-android-high-engagement-off.png"
+    },
+    {
+      "platform": "ios",
+      "appId": "ca-app-pub-3316613733634147~3616124950",
+      "previousValue": "On",
+      "savedValue": "Off",
+      "savedAndReopened": true,
+      "screenshot": "docs/release/admob-ios-high-engagement-off.png"
+    }
+  ],
+  "source": "https://support.google.com/admob/answer/15525707?hl=en-GB",
+  "testAdsOnly": true,
+  "dismissalTimingVerified": false,
+  "appleKidsAdvertisingExceptionVerified": false
+}

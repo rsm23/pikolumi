@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "recordings": [
+    {
+      "file": "syllable_10.mp3",
+      "sha256": "84ab2dbcc640f6f03385d7c5d08cbf11ce5e622fe06dcd753929308786ab55c5",
+      "durationSeconds": 0.47,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "sampleRate": 24000,
+      "passed": true,
+      "bundled": true
+    },
+    {
+      "file": "syllable_13.mp3",
+      "sha256": "f01c5a0396123f5762cdc73f1e12de5139dae1ca914cd717415404256fe08dd9",
+      "durationSeconds": 0.44,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "sampleRate": 24000,
+      "passed": true,
+      "bundled": true
+    },
+    {
+      "file": "syllable_16.mp3",
+      "sha256": "cc9111b42cce5ac71008dc4137c905fb3b918fc246174efe83be6bbfeb2f7b75",
+      "durationSeconds": 0.49,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "sampleRate": 24000,
+      "passed": true,
+      "bundled": true
+    },
+    {
+      "file": "syllable_24.mp3",
+      "sha256": "ca627096ff9a879ed62db87c9d64d6d1909fab21b567151006b770aa2f61be30",
+      "durationSeconds": 0.43,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "sampleRate": 24000,
+      "passed": true,
+      "bundled": true
+    },
+    {
+      "file": "syllable_37.mp3",
+      "sha256": "45f22c01ebe6ed08421664cd919c36eb8631e4c1b70fa5827359ae2283865542",
+      "durationSeconds": 0.5,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "sampleRate": 24000,
+      "passed": true,
+      "bundled": false
+    },
+    {
+      "file": "syllable_43.mp3",
+      "sha256": "269adcbce4b3e09f0975052645b5b0568dbac9943e9e51fda74fa4d5f55137dc",
+      "durationSeconds": 0.36,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "sampleRate": 24000,
+      "passed": true,
+      "bundled": true
+    },
+    {
+      "file": "syllable_46.mp3",
+      "sha256": "1cec05542365597f45df5f7b1cd0d1d581f2ef40dbf083bf21b95f9bc3f62038",
+      "durationSeconds": 0.54,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "sampleRate": 24000,
+      "passed": true,
+      "bundled": false
+    },
+    {
+      "file": "syllable_49.mp3",
+      "sha256": "acca46f381421afde2a59406b692f1f95fedaf225d8e314c011a3c4cb7f06988",
+      "durationSeconds": 0.51,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "sampleRate": 24000,
+      "passed": true,
+      "bundled": true
+    },
+    {
+      "file": "syllable_52.mp3",
+      "sha256": "1eea630264eb3d07f4bec3d048c62bb226c320b170c165c479e229e73ad930d6",
+      "durationSeconds": 0.41,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "sampleRate": 24000,
+      "passed": true,
+      "bundled": true
+    },
+    {
+      "file": "syllable_72.mp3",
+      "sha256": "149d4daf23d86cbe31a883fcb2ed0c0c73e8a343e57014ed054127002cc68d47",
+      "durationSeconds": 0.32,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "sampleRate": 24000,
+      "passed": true,
+      "bundled": false
+    },
+    {
+      "file": "syllable_73.mp3",
+      "sha256": "e1f1fffcd70b8028f89e51cab03f52d03358d264f4e4d7268e963a37433564eb",
+      "durationSeconds": 0.35,
+      "extraction": "direct isolated-sound fallback; no reliable three-utterance boundary",
+      "sampleRate": 24000,
+      "passed": true,
+      "bundled": true
+    }
+  ],
+  "count": 11,
+  "archivedGenerationSourceMatches": true,
+  "nativePronunciationApproval": "see hash-bound imported review",
+  "bundledCount": 8,
+  "playback": false
+}

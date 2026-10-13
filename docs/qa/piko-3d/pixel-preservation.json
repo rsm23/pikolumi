@@ -1,0 +1,12 @@
+{
+  "savedRecordsUnchangedDuringQA": true,
+  "normalEntryPointRestored": true,
+  "wakeSettingsRestored": true,
+  "originalStayAwake": "0",
+  "originalScreenTimeout": "60000",
+  "systemVolumeChanged": false,
+  "userSoundSettingChanged": false,
+  "store": "isolated MemoryStore",
+  "audio": "SilentAudio",
+  "driverExitCode": 0
+}

@@ -3,16 +3,19 @@
 import json, math, hashlib, random, collections
 from pathlib import Path
 from content_source import *
-from illustrations import motif, scene, shape_icon, transformed
+from illustrations import motif, scene, puzzle_scene, shape_icon, transformed
+import arabic_curriculum as arabic
+import latin_handwriting as latin
 ROOT=Path(__file__).resolve().parents[1]
 ART={}
 for row in WORDS:
- ART[row[0]]={'width':200,'height':200,'shapes':motif(row[0])}
+ ART[row[0]]={'width':200,'height':200,'revision':3,'strokeWidth':2.5,'shapes':motif(row[0])}
 for shape in SHAPES:
  for color,(hexcode,_) in COLORS.items(): ART[f'{shape}_{color}']=shape_icon(shape,hexcode)
 for i,row in enumerate(WORDS[:30]):
  for variant in range(12): ART[f'scene_{i}_{variant}']=scene(row[0],variant)
 
+# Retain the original geometry for migrating existing v1 tracing checkpoints.
 LATIN_STROKES={
 'A':[[[35,160],[100,30],[165,160]],[[65,110],[135,110]]], 'B':[[[45,160],[45,30],[110,30],[153,50],[110,92],[45,92]],[[110,92],[160,116],[150,145],[110,160],[45,160]]],
 'C':[[[159,50],[128,28],[68,35],[36,73],[35,119],[66,159],[128,164],[161,143]]], 'D':[[[44,160],[44,30],[105,30],[153,65],[166,104],[143,147],[105,160],[44,160]]],
@@ -70,7 +73,7 @@ AR_STROKES={
 'ل':[[[148,29],[148,142],[126,174],[80,181],[45,160],[40,119]]],
 'م':[[[152,106],[142,76],[116,79],[103,100],[121,116],[150,106],[72,121],[60,182]]],
 'ن':[[[165,98],[166,139],[139,173],[90,184],[45,167],[33,128],[38,103]],[[99,67],[105,67]]],
-'ه':[[[152,142],[164,114],[147,78],[112,60],[71,87],[51,129],[70,153],[113,162],[152,142],[106,112],[83,125],[91,144],[120,144],[133,125],[106,112]]],
+'ه':[[[145,99],[134,70],[107,61],[75,75],[59,105],[65,138],[94,157],[126,150],[145,129],[145,99]]],
 'و':[[[148,102],[156,69],[133,51],[106,71],[109,98],[148,102],[151,135],[112,174],[52,182]]],
 'ي':[[[150,71],[172,88],[170,111],[125,132],[165,155],[135,184],[81,187],[39,167],[28,122]],[[88,205],[94,205]],[[117,205],[123,205]]]
 }
@@ -128,17 +131,22 @@ def sequence_strokes(glyphs,source,rtl=False):
    out.append([[round((x-10)*.86/count+10+pos*200/count,2),round(y*.82+12,2)] for x,y in stroke])
  return out
 for i in range(80):
- cfg={};titles={}
+ cfg={};titles={};cues={}
  for lang in LANGS:
   alphabet=TRACE_ALPHABETS[lang]
   j=i%len(alphabet); mode=i//len(alphabet)
   glyphs=[alphabet[(j+k)%len(alphabet)] for k in range(mode+1)]
   cfg[lang]={'glyph':' '.join(glyphs),'strokes':sequence_strokes(glyphs,AR_STROKES if lang=='ar' else LATIN_STROKES,lang=='ar'),'direction':'rtl' if lang=='ar' else 'ltr'}
+  if lang != 'ar':
+   cfg[lang]=latin.trace(glyphs,cfg[lang]['strokes'])
   titles[lang]=' '.join(glyphs)
- add('tracing','trace',{'locales':cfg},titles,min(2,i//28),cue={lang:f'letter_{i%len(TRACE_ALPHABETS[lang])}.mp3' for lang in LANGS})
+  cues[lang]=f'letter_{i%len(TRACE_ALPHABETS[lang])}.mp3'
+ cfg['ar'],cues['ar']=arabic.tracing(i,AR_STROKES,sequence_strokes)
+ titles['ar']=cfg['ar']['glyph']
+ add('tracing','trace',{'locales':cfg},titles,min(2,i//28),cue=cues)
 for i in range(40):
  digits=str(i)
- add('tracing','trace',{'glyph':digits,'strokes':sequence_strokes(list(digits),LATIN_STROKES)},l(digits,digits,digits,digits,digits),0 if i<10 else 1)
+ add('tracing','trace',latin.trace(list(digits),sequence_strokes(list(digits),LATIN_STROKES)),l(digits,digits,digits,digits,digits),0 if i<10 else 1)
 for i in range(40):
  kind=i%5; phase=i//5; points=[]
  for k in range(25):
@@ -177,13 +185,26 @@ for i in range(160):
   target_index=alphabet.index(target if lang=='ar' else target.upper())
   indices=[target_index]+[(target_index+k)%len(alphabet) for k in [5,11,17]]
   options=[{'value':alphabet[k].lower() if mode==2 and lang!='ar' else alphabet[k],'label':l(*([alphabet[k].lower() if mode==2 and lang!='ar' else alphabet[k]]*5))} for k in indices]
-  cfg[lang]={'question':question,'display':display,'spokenOnly':spoken,'correct':target,'options':options,'direction':'rtl' if lang=='ar' else 'ltr'}
+  cfg[lang]={'question':question,'display':display,'spokenOnly':spoken,'visualCue':target,'correct':target,'options':options,'direction':'rtl' if lang=='ar' else 'ltr'}
   title[lang]=f'{letter} · {mode+1}';cue[lang]=f'letter_{target_index}.mp3'
+ ar=arabic.lesson(i)
+ ar_questions={
+  'name':l('Listen to the letter name and choose it.','Écoute le nom de la lettre et choisis-la.','Escucha el nombre de la letra y elígela.','Escute o nome da letra e escolha-a.',ar['question']),
+  'forms':l('Which letter do these forms show?','Quelle lettre reconnais-tu dans ces formes ?','¿Qué letra muestran estas formas?','Qual letra aparece nestas formas?',ar['question']),
+  'medial':l('Which letter is in the middle of this group?','Quelle lettre est au milieu de ce groupe ?','¿Qué letra está en medio de este grupo?','Qual letra está no meio deste grupo?',ar['question']),
+  'ligature':l('Choose lam and alif joined together.','Choisis le lam et l’alif liés.','Elige lam y alif unidas.','Escolha lam e alif ligadas.',ar['question']),
+  'short-vowel':l('Listen to the letter with its short vowel, then choose it.','Écoute la lettre avec sa voyelle courte, puis choisis-la.','Escucha la letra con su vocal corta y elígela.','Escute a letra com sua vogal curta e escolha-a.',ar['question']),
+ }
+ cfg['ar']={'question':ar_questions[ar['kind']],'display':ar['display'],'spokenOnly':ar['spokenOnly'],
+            'visualCue':ar['target'],'correct':ar['target'],'options':[{'value':v,'label':l(*([v]*5))} for v in ar['choices']],
+            'direction':'rtl','arabicLesson':ar['kind']}
+ if ar['kind']=='short-vowel':cfg['ar'].update(consonant=ar['consonant'],vowel=ar['vowel'])
+ title['ar']=ar['target'];cue['ar']=ar['cue']
  add('letters','quiz',{'locales':cfg},title,min(3,i//40),cue=cue)
 for i,row in enumerate(WORDS):
  for mode in range(3):
   cfg={'subject':row[0],'lesson':mode,'options':word_options(i),'correct':row[0]}
-  if mode==1: cfg['spokenOnly']=True
+  if mode==1: cfg.update(spokenOnly=True,visualCue=WORD_MAP[row[0]])
   if mode==2: cfg={'locales':{lang:{'word':WORD_MAP[row[0]][lang],'subject':row[0]} for lang in LANGS}}
   add('words','sequence' if mode==2 else 'quiz',cfg,WORD_MAP[row[0]],mode,row[0],{lang:f'word_{row[0]}.mp3' for lang in LANGS})
 for i in range(160):
@@ -233,8 +254,10 @@ for i in range(100):
  pairs=[r[0] for r in random.Random(650+i).sample(WORDS,[3,4,6,8,10][i//20])]
  add('memory','memory',{'pairs':pairs,'layout':i},stage=i//20,preview=pairs[0])
 for i in range(120):
- n=2+i//30; sid=f'scene_{i%30}_{(i//30)*3}'
- add('jigsaw','jigsaw',{'scene':sid,'size':n},stage=i//30,preview=sid)
+ n=2+i//30; sid=f'puzzle_{i:03}'
+ ART[sid]=puzzle_scene(WORDS[i%30][0],i//30)
+ add('jigsaw','jigsaw',{'scene':sid,'size':n,'legacyScene':f'scene_{i%30}_{(i//30)*3}'},
+     {lang:f'{WORD_MAP[WORDS[i%30][0]][lang]} · {n}×{n}' for lang in LANGS},stage=i//30,preview=sid)
 for i in range(160):
  if i<80:
   a=i%16+1; delta=i//16+1; seq=[str(a+k*delta) for k in range(4)]; target=a+4*delta
@@ -318,7 +341,6 @@ for i in range(80):
 # Region IDs are stable within a versioned scene, including thumbnail motifs.
 for scene in ART.values():
  for index,shape in enumerate(scene['shapes']):shape.setdefault('id',f'r{index}')
- if scene['width']==600:scene['shapes'].insert(0,{'kind':'rect','v':[0,0,600,600,0],'color':'E8F3F2','id':'background'})
 COUNTS={k:sum(e['section']==k for e in entries) for k,*_ in SECTIONS}
 assert COUNTS=={s[0]:s[1] for s in SECTIONS},COUNTS
 assert len(entries)==2400
@@ -333,11 +355,18 @@ for entry in entries:
  reorder(entry['config'])
 
 out=ROOT/'assets/content';out.mkdir(parents=True,exist_ok=True)
-for name,value in [('catalog.json',{'version':1,'languages':LANGS,'sections':[{'id':a,'count':b,'icon':c,'color':d,'name':e} for a,b,c,d,e in SECTIONS],'activities':entries}),('art.json',ART),('strings.json',UI),('words.json',WORD_MAP)]:
+for name,value in [('catalog.json',{'version':3,'languages':LANGS,'sections':[{'id':a,'count':b,'icon':c,'color':d,'name':e} for a,b,c,d,e in SECTIONS],'activities':entries}),('art.json',ART),('strings.json',UI),('words.json',WORD_MAP)]:
  (out/name).write_text(json.dumps(value,ensure_ascii=False,separators=(',',':')))
 manifest={lang:{**{f'{k}.mp3':v[lang] for k,v in PROMPTS.items()},**{f'word_{k}.mp3':v[lang] for k,v in WORD_MAP.items()},'great.mp3':UI['great'][lang],'again.mp3':UI['again'][lang],'welcome.mp3':UI['hello'][lang]} for lang in LANGS}
 for lang in LANGS:
  letters=ARABIC_NAMES if lang=='ar' else TRACE_ALPHABETS[lang]
- for i,letter in enumerate(letters): manifest[lang][f'letter_{i}.mp3']=letter
+ for i,letter in enumerate(letters):
+  prefix={'en':'The letter ','fr':'La lettre ','es':'La letra ','pt':'A letra ','ar':''}[lang]
+  manifest[lang][f'letter_{i}.mp3']=prefix+letter+('.' if lang!='ar' else '')
+manifest['ar'].update(arabic.audio())
+manifest['ar'].update({f'{k}.mp3':v for k,v in arabic.GUIDANCE.items()})
+assert len(arabic.VOCABULARY)==len(WORDS)
+manifest['ar'].update({f'word_{row[0]}.mp3':spoken for row,spoken in zip(WORDS,arabic.VOCABULARY)})
+(out/'arabic_review.json').write_text(json.dumps({'version':1,'status':'native educator and pronunciation review pending','lessons':{e['id']:{'config':e['config']['locales']['ar'],'cue':e['cue']['ar']} for e in entries if e['section'] in ['letters','tracing'] and 'locales' in e['config']}},ensure_ascii=False,indent=2))
 (out/'audio_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
 print(json.dumps({'activities':len(entries),'sections':COUNTS,'vectorScenes':len(ART),'speechClips':sum(map(len,manifest.values()))},indent=2))

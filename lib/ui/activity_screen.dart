@@ -9,6 +9,10 @@ import '../services/ads.dart';
 import '../activities/canvas_activity.dart';
 import '../activities/learning.dart';
 import '../activities/tracing_maze.dart';
+import 'listen.dart';
+import 'activity_encouragement.dart';
+import 'piko_speech_bubble.dart';
+import 'piko_mascot.dart';
 
 class ActivityScreen extends ConsumerStatefulWidget {
   final Activity activity;
@@ -18,14 +22,50 @@ class ActivityScreen extends ConsumerStatefulWidget {
   ConsumerState<ActivityScreen> createState() => _ActivityScreenState();
 }
 
-class _ActivityScreenState extends ConsumerState<ActivityScreen> {
+class _ActivityScreenState extends ConsumerState<ActivityScreen>
+    with WidgetsBindingObserver {
   late AppController controller;
+  late final ActivityEncouragement encouragement;
+  bool foreground = true, routeVisible = true;
+
+  void updateEncouragement() {
+    if (mounted) setState(() {});
+  }
+
+  void synchronizeEncouragement() => encouragement.setActive(
+    ready && foreground && routeVisible && !finishing && !canvasFullScreen,
+  );
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    routeVisible =
+        TickerMode.valuesOf(context).enabled &&
+        (ModalRoute.isCurrentOf(context) ?? true);
+    synchronizeEncouragement();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    foreground = state == AppLifecycleState.resumed;
+    synchronizeEncouragement();
+  }
+
   bool ready = false, finishing = false;
+  bool canvasFullScreen = false;
+  final canvasKey = GlobalKey<CanvasActivityState>();
   Map<String, dynamic>? resume;
   @override
   void initState() {
     super.initState();
     controller = ref.read(appProvider);
+    encouragement = ActivityEncouragement(
+      creative: widget.activity.engine == 'canvas',
+    )..addListener(updateEncouragement);
+    foreground =
+        WidgetsBinding.instance.lifecycleState == null ||
+        WidgetsBinding.instance.lifecycleState == AppLifecycleState.resumed;
+    WidgetsBinding.instance.addObserver(this);
     widget.ads.enterActivity();
     load();
   }
@@ -38,12 +78,16 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
         resume = saved;
         ready = true;
       });
+      synchronizeEncouragement();
     }
     unawaited(app.audio.play(app.language, widget.activity.audio));
   }
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    encouragement.removeListener(updateEncouragement);
+    encouragement.dispose();
     widget.ads.leaveActivity();
     unawaited(controller.audio.stop());
     super.dispose();
@@ -51,6 +95,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
 
   Future<void> complete() async {
     if (finishing) return;
+    encouragement.finish();
     setState(() => finishing = true);
     final app = ref.read(appProvider);
     await app.flush();
@@ -58,6 +103,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
     await app.clearResume(widget.activity.id);
     await widget.ads.activityCompleted();
     if (!mounted) return;
+    final completionKey = ActivityEncouragement.completions.nextKey();
     unawaited(app.audio.play(app.language, 'great.mp3'));
     await showDialog<void>(
       context: context,
@@ -65,18 +111,21 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
       builder: (context) => PopScope(
         canPop: false,
         child: AlertDialog(
+          scrollable: true,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(32),
           ),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              SizedBox(
-                height: 160,
-                child: Image.asset(
-                  'assets/art/piko.png',
-                  excludeFromSemantics: true,
-                ),
+              PikoSpeechBubble(
+                key: const ValueKey('completion-encouragement'),
+                message: app.t(completionKey),
+              ),
+              PikoMascot(
+                size: 192,
+                pose: PikoPose.celebrate,
+                semanticLabel: app.t('pikoPlay'),
               ),
               Text(
                 app.t('great'),
@@ -110,15 +159,26 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
       app: app,
       complete: complete,
       resume: resume,
-      save: (value) => unawaited(app.saveResume(a.id, value)),
+      onMistake: encouragement.mistake,
+      onProgress: encouragement.progress,
+      save: (value) {
+        unawaited(app.saveResume(a.id, value));
+      },
     );
     final child = !ready
         ? const Center(child: CircularProgressIndicator())
         : switch (a.engine) {
             'canvas' => CanvasActivity(
+              key: canvasKey,
               activity: a,
               app: app,
               onComplete: complete,
+              onFullScreenChanged: (value) {
+                if (mounted) {
+                  setState(() => canvasFullScreen = value);
+                  synchronizeEncouragement();
+                }
+              },
             ),
             'quiz' => QuizActivity(engine: engine),
             'sequence' => WordActivity(engine: engine),
@@ -131,47 +191,80 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
             _ => const SizedBox.shrink(),
           };
     return PopScope(
-      canPop: !finishing,
+      canPop: !finishing && !canvasFullScreen,
       onPopInvokedWithResult: (didPop, result) {
         if (didPop) {
           unawaited(app.flush());
+        } else if (canvasFullScreen && !finishing) {
+          canvasKey.currentState?.setFullScreen(false);
         }
       },
       child: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            a.title(app.language),
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-          ),
-          actions: [
-            IconButton(
-              tooltip: app.t('listen'),
-              onPressed: () =>
-                  app.audio.play(app.language, a.cue(app.language) ?? a.audio),
-              icon: const Icon(Icons.volume_up_outlined),
-            ),
-          ],
-        ),
+        appBar: canvasFullScreen
+            ? null
+            : AppBar(
+                title: Text(
+                  app.activityTitle(a),
+                  textDirection: a.languageLesson
+                      ? (app.learningLanguage == 'ar'
+                            ? TextDirection.rtl
+                            : TextDirection.ltr)
+                      : null,
+                  style: a.languageLesson
+                      ? TextStyle(
+                          fontFamily: app.learningLanguage == 'ar'
+                              ? 'NotoSansArabic'
+                              : 'Nunito',
+                        )
+                      : null,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                actions: [
+                  PikoMascot(
+                    key: const ValueKey('activity-piko'),
+                    semanticLabel: app.t('pikoPlay'),
+                    pose: finishing ? PikoPose.celebrate : PikoPose.idle,
+                  ),
+                  IconButton(
+                    tooltip: app.t('listen'),
+                    onPressed: () => listenToActivity(context, app, a),
+                    icon: Icon(
+                      app.sound
+                          ? Icons.volume_up_outlined
+                          : Icons.volume_off_outlined,
+                    ),
+                  ),
+                ],
+              ),
         body: SafeArea(
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 20,
-                  vertical: 8,
+              if (!canvasFullScreen)
+                ActivityGuidance(
+                  instruction: a.instructions(app.language),
+                  message: encouragement.messageKey == null
+                      ? null
+                      : app.t(encouragement.messageKey!),
+                  possibleMessages: [
+                    for (final key
+                        in encouragement.creative
+                            ? ActivityEncouragement.creativeKeys
+                            : ActivityEncouragement.helpKeys)
+                      app.t(key),
+                  ],
                 ),
-                child: Text(
-                  a.instructions(app.language),
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    fontSize: 17,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-              ),
               Expanded(
-                child: AbsorbPointer(absorbing: finishing, child: child),
+                key: const ValueKey('activity-body'),
+                child: Listener(
+                  onPointerDown: (_) => encouragement.interact(),
+                  onPointerMove: (_) {
+                    if (a.engine == 'canvas' || a.engine == 'trace') {
+                      encouragement.interact();
+                    }
+                  },
+                  child: AbsorbPointer(absorbing: finishing, child: child),
+                ),
               ),
             ],
           ),

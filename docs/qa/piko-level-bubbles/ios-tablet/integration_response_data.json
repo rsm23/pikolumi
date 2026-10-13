@@ -1,0 +1,111 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "en-in-level-encouragement"
+    },
+    {
+      "screenshotName": "en-completion-encouragement"
+    },
+    {
+      "screenshotName": "fr-in-level-encouragement"
+    },
+    {
+      "screenshotName": "fr-completion-encouragement"
+    },
+    {
+      "screenshotName": "es-in-level-encouragement"
+    },
+    {
+      "screenshotName": "es-completion-encouragement"
+    },
+    {
+      "screenshotName": "pt-in-level-encouragement"
+    },
+    {
+      "screenshotName": "pt-completion-encouragement"
+    },
+    {
+      "screenshotName": "ar-in-level-encouragement"
+    },
+    {
+      "screenshotName": "ar-completion-encouragement"
+    }
+  ],
+  "captureSizes": {
+    "en-in-level-encouragement": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "en-completion-encouragement": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "fr-in-level-encouragement": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "fr-completion-encouragement": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "es-in-level-encouragement": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "es-completion-encouragement": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "pt-in-level-encouragement": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "pt-completion-encouragement": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "ar-in-level-encouragement": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "ar-completion-encouragement": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    }
+  },
+  "locales": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "ar"
+  ],
+  "threeUnsuccessfulAttemptsVerified": true,
+  "interfaceLanguageIndependentOfLearningLanguage": true,
+  "stableActivityBounds": true,
+  "completionThroughActualAnswer": true,
+  "reducedMotionVerified": true,
+  "audio": "SilentAudio; muted before mounting",
+  "userPreferencesChanged": false,
+  "adSDKInitialized": false
+}

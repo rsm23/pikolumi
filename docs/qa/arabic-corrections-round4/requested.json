@@ -1,0 +1,14 @@
+{
+  "locale": "ar",
+  "round": "2026-10-13-round4",
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "originalSha256": "c6748e3a9735ad25a4d9256c712fe009136c0156856cda87dcb29ba8514ad4a6",
+      "bundledOriginalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "note": "Si",
+      "previousReviewDecision": "wrong"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "checkedAtUTC": "2026-10-12T00:09:18.096734+00:00",
+  "sourceDigest": "cf663cd394a399a2156deaf9d2ec16ff33297782dc372ad1cf8c0bd75a3bcb65",
+  "testAdsOnly": true,
+  "dataCleared": false,
+  "appsLaunchedForAdditionalQA": false,
+  "audioPlayback": false,
+  "installations": [
+    {
+      "target": "Pixel 9 Pro XL wireless",
+      "artifact": "output/qa/Pikolumi-1.0.0-Pixel-QA.apk",
+      "result": "adb install -r: Success",
+      "packageLastUpdateTimeLocal": "2026-10-12 02:08:36"
+    },
+    {
+      "target": "iPhone 18 Pro simulator",
+      "artifact": "output/qa/Pikolumi-1.0.0-Simulator.zip",
+      "result": "simctl install exit 0"
+    },
+    {
+      "target": "iPad Pro 13 M5 simulator",
+      "artifact": "output/qa/Pikolumi-1.0.0-Simulator.zip",
+      "result": "simctl install exit 0"
+    }
+  ],
+  "additionalNativeAcceptanceVerified": false
+}

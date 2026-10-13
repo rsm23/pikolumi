@@ -1,0 +1,230 @@
+{
+  "verifiedAt": "2026-10-12T14:54:45.216562+00:00",
+  "sourceHashes": {
+    "scripts/build_piko_3d.py": "379059f585d5947e088908d64778f9a7a47f59941cf6168df8c6efc75dced000",
+    "scripts/pack_piko.py": "6ec084ec312f5bf44b6e311786a1e41c535359c35f909f1c0a6df2f7775d85dd",
+    "scripts/validate_piko.py": "3462c4310dc1128fd1be33a4d85a74de2eb8f465706b98c2004e4ca282ae8c16",
+    "scripts/validate_piko_source.py": "d649c1d13f0354f1549975d9bfb6922872eda8cbf5b11a9b94635e62502fb7d6",
+    "lib/ui/piko_mascot.dart": "2fe418598795c48270c1b5bca0bdbc25b9a6dbba14a990dff9950af8796633c6",
+    "lib/ui/activity_screen.dart": "841f74dc27cf55e8cad1fec87c4786a4ec7e63fa7ec5480ee7c06d32e833f82c",
+    "lib/main.dart": "6c230c62cb1f121219a9a24c1895b9eaf61435401fe0e24e63e3fca5cd54d844",
+    "integration_test/piko_mascot_test.dart": "e6539f3e3305631e80910ea304a5955ddef4375c408a5ae3b4ffa1585b7e3666",
+    "test/piko_mascot_test.dart": "9290a44114a42200b446af48280835538907dcffb574cd8d75ef88052a0b3369",
+    "assets/art/piko.png": "080c6d916890f5bb96d96f2339a80bdb01c74473f25801dad33054d3be477dde",
+    "assets/art/app-icon.png": "0b56e8aa0ef45809ea7d7464d72587280d6f707c1b2c0fec8f0474c6f08ff4a2",
+    "assets/art/piko_3d/poster.webp": "a4c090e5c4330f13ff4363065e206ec9673cc39f5746a9ccaba8de6d6c424a0d",
+    "assets/art/piko_3d/idle_1.webp": "f24fc5ee5296191f113e4302bce4cac7aa935a97c7d0f1dec3c2d50970401ca2",
+    "assets/art/piko_3d/idle_0.webp": "72ab77744e77a673d1a6eb78defdda38013d8efab52d414a81348e64b7b1d256",
+    "assets/art/piko_3d/manifest.json": "38370e044676abc2394c86bf0941814d60cafa4614eb80471de2269ad0efdf6d",
+    "assets/art/piko_3d/celebrate_0.webp": "f4be82058d625acbac8556d681333de156b83bf85f3895537942f56593c5b650",
+    "assets/art/piko_3d/celebrate_1.webp": "0e0788fc76dc90cf6d7c1d1c79d35b4c9704db23c815e848cc33c79df61a0608"
+  },
+  "native": {
+    "ios-phone": {
+      "passed": true,
+      "report": "docs/qa/piko-identity/ios-phone/integration_response_data.json",
+      "sha256": "0c742bb85e038ccb24951f273f3762e91e61329eaec31647f9c6f9aac533834d",
+      "captures": {
+        "docs/qa/piko-identity/ios-phone/ar-activity-3d-piko.png": "cbf907604df37f1686b4b70810322e402e4acfc40e5fba2a6c04fa42a7d05628",
+        "docs/qa/piko-identity/ios-phone/ar-completion-3d-piko.png": "fa82c05d500c0b168b5d46418e0bfe910424c3fd6c43b18cd0b6512e9c3aab6c",
+        "docs/qa/piko-identity/ios-phone/en-activity-3d-piko.png": "6e78d54520c476ff2ba80372f1b0c4cb574b4dcb11425e5c887ddc762dba776d",
+        "docs/qa/piko-identity/ios-phone/en-completion-3d-piko.png": "24bc6f39dadddbe55bb9aa05e6b78cf84997460bee16a78943dd8a61ce521075",
+        "docs/qa/piko-identity/ios-phone/es-activity-3d-piko.png": "7089fe5c06033852b01c6d60204373da098fd77d6433e1fd8fad7867a679ad75",
+        "docs/qa/piko-identity/ios-phone/es-completion-3d-piko.png": "9b2990a1c52cbf7ad7c564f8fd5ddd800ec255f26d5567e462d41c7e88419369",
+        "docs/qa/piko-identity/ios-phone/fr-activity-3d-piko.png": "5ace85de0bc6ef3c656d74d286eb940d5c287acc6739da761186cf59f0bc0471",
+        "docs/qa/piko-identity/ios-phone/fr-completion-3d-piko.png": "9876fcaafdfc88617031b5af49c99d3a13ad5761ac3006157c3a4482d90be6cb",
+        "docs/qa/piko-identity/ios-phone/library-3d-piko.png": "7f6b1811c3e4886475dd951f75d84892fa5e4018917644b4b7a205ac79c60d6a",
+        "docs/qa/piko-identity/ios-phone/pt-activity-3d-piko.png": "78606d3606295a020d0c9c95577a3206d4fb49f1ba3ce4b1b9a16c3e5106849c",
+        "docs/qa/piko-identity/ios-phone/pt-completion-3d-piko.png": "2ca8b1441cd1bb87cfc8c683e17a9eac8751512f7ff696b4b3342040c342e21f",
+        "docs/qa/piko-identity/ios-phone/reduced-motion-static-piko.png": "618bfaa39c8e423054d9847f32cc31febc8b09186adb837ba776f07e79f1d281"
+      },
+      "normalEntryPointRestored": true
+    },
+    "ios-tablet": {
+      "passed": true,
+      "report": "docs/qa/piko-identity/ios-tablet/integration_response_data.json",
+      "sha256": "5f2be4c8d89c9f14938774abc4e9f29e26712c5749a3784a0cd712369d8636f7",
+      "captures": {
+        "docs/qa/piko-identity/ios-tablet/ar-activity-3d-piko.png": "1acd17e706a0bd7db46767e9db6033208b39500218c96d0517f7d1b1c092e0b1",
+        "docs/qa/piko-identity/ios-tablet/ar-completion-3d-piko.png": "283a55505e614a222921b6afbb241aa1d15d94ff3a6b91df12ded2293ab57acc",
+        "docs/qa/piko-identity/ios-tablet/en-activity-3d-piko.png": "8eb63ec000573b95879873de14a5b70fe327f211fe410f5f446f1187d2cad2ee",
+        "docs/qa/piko-identity/ios-tablet/en-completion-3d-piko.png": "0bf37f1a350750611a80c26b7dadcdf02f26eac7df3ca8236d76c847182aa15c",
+        "docs/qa/piko-identity/ios-tablet/es-activity-3d-piko.png": "3a63b5868c2342a39bdba2e2ddb73c48bdf7967e5f31f615fdac1397f14c1a45",
+        "docs/qa/piko-identity/ios-tablet/es-completion-3d-piko.png": "edc9d7549079283342f94fbf64b7f293a63225ce153a236e90cf79ed78f7d955",
+        "docs/qa/piko-identity/ios-tablet/fr-activity-3d-piko.png": "0767af4e613c33e9319f9412efd92deb224a88abe8a4ff9d46e9e2dcd7622274",
+        "docs/qa/piko-identity/ios-tablet/fr-completion-3d-piko.png": "88d36bf5766b29d30eb167cddd1bccba4a9488f55417665629a7f45f1316a093",
+        "docs/qa/piko-identity/ios-tablet/library-3d-piko.png": "672c564c488fb05bfe23572907f0d53b87f3726b41d1b3db2066f0f616512f1c",
+        "docs/qa/piko-identity/ios-tablet/pt-activity-3d-piko.png": "bf4530019ed133f03b3c4262bc8b43a8c358e864de50c77d8000dd46473d70d5",
+        "docs/qa/piko-identity/ios-tablet/pt-completion-3d-piko.png": "1292cd287170819e39aa61865859727ebcc872cb0498557e5735a0b672c8b0e2",
+        "docs/qa/piko-identity/ios-tablet/reduced-motion-static-piko.png": "89014b6a9e509f93693f0e1e510b828541d7d78721325082a3f94feaf24da2d6"
+      },
+      "normalEntryPointRestored": true
+    },
+    "android-emulator": {
+      "passed": true,
+      "api": 36,
+      "report": "docs/qa/piko-identity/android-emulator/integration_response_data.json",
+      "sha256": "5d9b71ac53738bbd3234625f0ce2249ee049bbcd57a66ee844c2cdf15b7412e4",
+      "captures": {
+        "docs/qa/piko-identity/android-emulator/ar-activity-3d-piko.png": "a3aa90470455711e47217e311ce6589667dc0e65ede8a336b5bad8c82a4b8205",
+        "docs/qa/piko-identity/android-emulator/ar-completion-3d-piko.png": "998ab57cb93f6441a0e495532e0fea7f3c4fa8470e0c6cf90e913eeaa6dfe3b1",
+        "docs/qa/piko-identity/android-emulator/en-activity-3d-piko.png": "639cf5adf8b033c2eeabe94236592e9023726549d1a3614c6b8949580d631d1e",
+        "docs/qa/piko-identity/android-emulator/en-completion-3d-piko.png": "b92061ede1da1a2d373eceb8d4ba37f67a0989a0b492794c0fc6daab51f66124",
+        "docs/qa/piko-identity/android-emulator/es-activity-3d-piko.png": "778fea50674fb29ddd62a475ad86ffbe9e37854522f6d7b9bd55f8a0bf0c44bd",
+        "docs/qa/piko-identity/android-emulator/es-completion-3d-piko.png": "c244ae168c20649ef6b56af0a8bc81a47392f700259ee76c52ab2637233fd79e",
+        "docs/qa/piko-identity/android-emulator/fr-activity-3d-piko.png": "7996df164e8008ad3c6d408285b5ce48db1a768ac60772b6f179663bb14c5f30",
+        "docs/qa/piko-identity/android-emulator/fr-completion-3d-piko.png": "e8f24b68d5fb5443e7ed9047c9d01c62d9e7331548f4ef2765818cba6fde73a5",
+        "docs/qa/piko-identity/android-emulator/library-3d-piko.png": "ee054e3a24d28f4c4cdccbd924e5e8c09c7ad6fae5544b04adf97afbaf3d6520",
+        "docs/qa/piko-identity/android-emulator/pt-activity-3d-piko.png": "716ee84303c7bddd3aa85698719015204546c96100eff3c8a45888200afa2f40",
+        "docs/qa/piko-identity/android-emulator/pt-completion-3d-piko.png": "c85e7e7054644a4c0a2d8a2d01c1bf610fa86a1289abad06ca03b63e1962e1fc",
+        "docs/qa/piko-identity/android-emulator/reduced-motion-static-piko.png": "9ed4e4330b9567152472c509f72103d3b42682dc9483ad310fde7cafc2c3fefa"
+      },
+      "normalEntryPointRestored": true,
+      "normalDatabaseUnchanged": true,
+      "audio": "SilentAudio; emulator launched with -no-audio"
+    }
+  },
+  "assetsMatchedInBothPackages": 677,
+  "packages": {
+    "output/qa/Pikolumi-Piko-Identity-QA.apk": "20916aa21ce77c7576355914d6b268345e2d79d2d2289fda2c87d84bf43f8799",
+    "output/qa/Pikolumi-Piko-Identity-Simulator.zip": "7a1240e2acb856f3757562dcffb9d239cf66f7f88a595c3ddb665b2b43274af7"
+  },
+  "compatibleAndroidDevelopmentCertificate": true,
+  "flutterTests": {
+    "passed": 60,
+    "logSha256": "6038d7af3f89d34c924f09484338dca9d87d2f318b6d1537d47848283813dd67"
+  },
+  "analyzer": "clean",
+  "physicalAndroid": "corrected normal app installed; silent physical check waiting for unlock",
+  "physicalIOS": "unavailable; user previously confirmed no device",
+  "sound": "SilentAudio; muted before mount; no system volume changes",
+  "storesHeld": true,
+  "reviewArtifacts": {
+    "docs/qa/piko-identity/celebration-preview.gif": "92cfc879f234b806a00ecbf8c904fa13136b60877ac3ddd7d4374dafe59f7025",
+    "docs/qa/piko-identity/piko-after.png": "c531f6ee6c32f44ed93bfe42e1778cb059c6c524ab63f0496e7606a4aeb5725d",
+    "docs/qa/piko-identity/README.md": "a7a98baf2a068da29ada8a5fd89a08079111a8b99b7482a884268bf161b5974a",
+    "docs/qa/piko-identity/identity-comparison.png": "be8f4a1edc46e05513cb5356d7ec77dd1e405df2f0d7c85fbd4f40898b180a84",
+    "docs/qa/piko-identity/animation-contact-sheet.png": "c4cbaaafff1f484597f691f1264e9eb047c5982ce0e7515d5ef2611c85a3662d",
+    "docs/qa/piko-identity/piko-before.png": "0f51162886a0c5e2c4c197e357a6a92d3ee513dcaf58e7117ed67dfc6dd3d68f"
+  },
+  "checks": {
+    "modelValidation": {
+      "brandReferenceSha256": "080c6d916890f5bb96d96f2339a80bdb01c74473f25801dad33054d3be477dde",
+      "clips": {
+        "idle": {
+          "sourceSha256": "0cd239de79309c7ae551bd9060f6932ce32d1ee9a6ee6d4afc380875978fd26c",
+          "packedCanonicalTextureMatches": true,
+          "closedCurvedMeshes": {
+            "Large head \u2022 original eyes, blush and smiling beak": {
+              "vertices": 1256,
+              "closed": true,
+              "depth": 0.6813
+            },
+            "Left wing \u2022 scalloped feathers and coral tips": {
+              "vertices": 971,
+              "closed": true,
+              "depth": 0.29
+            },
+            "Orange foot -1 \u2022 three rounded toes": {
+              "vertices": 344,
+              "closed": true,
+              "depth": 0.24
+            },
+            "Orange foot 1 \u2022 three rounded toes": {
+              "vertices": 344,
+              "closed": true,
+              "depth": 0.24
+            },
+            "Plump body \u2022 feathered yellow belly": {
+              "vertices": 743,
+              "closed": true,
+              "depth": 0.48
+            },
+            "Right wing \u2022 large crayon and feather grip": {
+              "vertices": 1256,
+              "closed": true,
+              "depth": 0.3871
+            },
+            "Tail \u2022 layered turquoise feathers": {
+              "vertices": 629,
+              "closed": true,
+              "depth": 0.31
+            },
+            "Three broad swept lilac crest feathers": {
+              "vertices": 572,
+              "closed": true,
+              "depth": 0.24
+            }
+          },
+          "maxJointRotationStepRadians": 0.0017445921548642218,
+          "initialPoseRestoredAtThreeSeconds": true
+        },
+        "celebrate": {
+          "sourceSha256": "9db4cf5b87590081bbf3e21d3da1b518aecd9435431b5dddad74e84d7ab39a0e",
+          "packedCanonicalTextureMatches": true,
+          "closedCurvedMeshes": {
+            "Large head \u2022 original eyes, blush and smiling beak": {
+              "vertices": 1256,
+              "closed": true,
+              "depth": 0.6813
+            },
+            "Left wing \u2022 scalloped feathers and coral tips": {
+              "vertices": 971,
+              "closed": true,
+              "depth": 0.29
+            },
+            "Orange foot -1 \u2022 three rounded toes": {
+              "vertices": 344,
+              "closed": true,
+              "depth": 0.24
+            },
+            "Orange foot 1 \u2022 three rounded toes": {
+              "vertices": 344,
+              "closed": true,
+              "depth": 0.24
+            },
+            "Plump body \u2022 feathered yellow belly": {
+              "vertices": 743,
+              "closed": true,
+              "depth": 0.48
+            },
+            "Right wing \u2022 large crayon and feather grip": {
+              "vertices": 1256,
+              "closed": true,
+              "depth": 0.3871
+            },
+            "Tail \u2022 layered turquoise feathers": {
+              "vertices": 629,
+              "closed": true,
+              "depth": 0.31
+            },
+            "Three broad swept lilac crest feathers": {
+              "vertices": 572,
+              "closed": true,
+              "depth": 0.24
+            }
+          },
+          "maxJointRotationStepRadians": 0.022301350109046325,
+          "initialPoseRestoredAtThreeSeconds": true
+        }
+      }
+    },
+    "assetValidation": {
+      "valid": true,
+      "frames": 180,
+      "decodedTextureMiB": 19.5,
+      "transparentUnclippedFrames": true,
+      "sourceHashesMatch": true
+    }
+  },
+  "pixelInstallation": {
+    "installedApkSha256MatchesLocalPackage": true,
+    "sha256": "20916aa21ce77c7576355914d6b268345e2d79d2d2289fda2c87d84bf43f8799",
+    "normalEntryPoint": "lib/main.dart",
+    "uninstalled": false,
+    "dataCleared": false,
+    "physicalAnimationQA": "waiting for unlock; first attempt did not start fixture",
+    "dataPreservationAudit": "pending successful fixture before/after snapshots",
+    "wakeSettingsRestored": true
+  }
+}

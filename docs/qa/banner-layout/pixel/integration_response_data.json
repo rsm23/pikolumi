@@ -1,0 +1,64 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "en-library-banner"
+    },
+    {
+      "screenshotName": "fr-library-banner"
+    },
+    {
+      "screenshotName": "es-library-banner"
+    },
+    {
+      "screenshotName": "pt-library-banner"
+    },
+    {
+      "screenshotName": "ar-library-banner"
+    },
+    {
+      "screenshotName": "en-section-banner"
+    }
+  ],
+  "measurements": [
+    {
+      "locale": "en",
+      "width": 448,
+      "height": 68,
+      "navigationGap": 12.0,
+      "footerHeight": 109.0
+    },
+    {
+      "locale": "fr",
+      "width": 448,
+      "height": 68,
+      "navigationGap": 12.0,
+      "footerHeight": 109.0
+    },
+    {
+      "locale": "es",
+      "width": 448,
+      "height": 68,
+      "navigationGap": 12.0,
+      "footerHeight": 109.0
+    },
+    {
+      "locale": "pt",
+      "width": 448,
+      "height": 68,
+      "navigationGap": 12.0,
+      "footerHeight": 109.0
+    },
+    {
+      "locale": "ar",
+      "width": 448,
+      "height": 68,
+      "navigationGap": 12.0,
+      "footerHeight": 109.0
+    }
+  ],
+  "sectionBannerFitsNativeSize": true,
+  "activityHidesBannerAndReservedSpace": true,
+  "testAdsOnly": true,
+  "audio": "SilentAudio; muted before runApp and SDK initialization",
+  "store": "isolated memory; existing sound preferences, profiles and artwork untouched"
+}

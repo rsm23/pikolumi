@@ -1,0 +1,10 @@
+{
+  "installedApkSha256MatchesLocalPackage": true,
+  "sha256": "20916aa21ce77c7576355914d6b268345e2d79d2d2289fda2c87d84bf43f8799",
+  "normalEntryPoint": "lib/main.dart",
+  "uninstalled": false,
+  "dataCleared": false,
+  "physicalAnimationQA": "waiting for unlock; first attempt did not start fixture",
+  "dataPreservationAudit": "pending successful fixture before/after snapshots",
+  "wakeSettingsRestored": true
+}

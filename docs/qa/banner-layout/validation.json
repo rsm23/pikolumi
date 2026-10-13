@@ -1,0 +1,277 @@
+{
+  "checkedAtUTC": "2026-10-12T11:33:30.435961+00:00",
+  "sourceSha256": {
+    "lib/ui/library.dart": "ffa29d2f117cca9ae2e3b04d697789701f7d4e2d2fca50011f40cfa57d82179e",
+    "lib/services/ads.dart": "2634d812bffbbb9309026e477f62d21b626549bf502428b1bceb93a0be3e8e23",
+    "test/ads_privacy_test.dart": "e94a53f0d4d5ca3e43b528fb39a29a57afe797043af74e4703b0d3f88553bab4",
+    "integration_test/banner_layout_test.dart": "7e421787e38e1397731e5c6a021efa912db54a07757ee57b27c7e70a1456ef25"
+  },
+  "flutterTests": 56,
+  "pythonTests": 8,
+  "staticAnalysis": "no issues",
+  "redRegressionLog": "tmp/banner-red.log",
+  "compactAnchoredAdaptiveSizing": true,
+  "nativeSizeUsedAfterLoading": true,
+  "navigationGapLogicalPixels": 12,
+  "homeIndicatorInsetOwnedByNavigationBar": true,
+  "rotationAndPendingPrivacyRevocationVerified": true,
+  "native": {
+    "pixel": {
+      "bodyAndTeardownPassed": true,
+      "measurements": [
+        {
+          "locale": "en",
+          "width": 448,
+          "height": 68,
+          "navigationGap": 12.0,
+          "footerHeight": 109.0
+        },
+        {
+          "locale": "fr",
+          "width": 448,
+          "height": 68,
+          "navigationGap": 12.0,
+          "footerHeight": 109.0
+        },
+        {
+          "locale": "es",
+          "width": 448,
+          "height": 68,
+          "navigationGap": 12.0,
+          "footerHeight": 109.0
+        },
+        {
+          "locale": "pt",
+          "width": 448,
+          "height": 68,
+          "navigationGap": 12.0,
+          "footerHeight": 109.0
+        },
+        {
+          "locale": "ar",
+          "width": 448,
+          "height": 68,
+          "navigationGap": 12.0,
+          "footerHeight": 109.0
+        }
+      ],
+      "report": "docs/qa/banner-layout/pixel/integration_response_data.json",
+      "screenshots": [
+        {
+          "path": "docs/qa/banner-layout/pixel/ar-library-banner.png",
+          "sha256": "0004e8ae2d8275d4916716b51d857dfe9aa267a06dcca4a6eb69ad84dcc08959"
+        },
+        {
+          "path": "docs/qa/banner-layout/pixel/en-library-banner.png",
+          "sha256": "5844e33a799025977896812512beb6c34a2855a5db3421c0c20f7ff3a2e56eef"
+        },
+        {
+          "path": "docs/qa/banner-layout/pixel/en-section-banner.png",
+          "sha256": "3d5af4c410643d66e874e47e6357b3a8c061a1b62a94385d36c80e192c7c20ba"
+        },
+        {
+          "path": "docs/qa/banner-layout/pixel/es-library-banner.png",
+          "sha256": "75570923cefb369be36ef07fad338cecc61c320aacf9a99617373e7076d9b039"
+        },
+        {
+          "path": "docs/qa/banner-layout/pixel/fr-library-banner.png",
+          "sha256": "91f6ec7b6ce04f39cbefd1933fec2c773dab1fa219cba9a9a4d5feef5971a76b"
+        },
+        {
+          "path": "docs/qa/banner-layout/pixel/pt-library-banner.png",
+          "sha256": "c64684694a74d5ae99d28c3b1f41f5e14ee595762d1c28f97e1e4702aa6f9017"
+        }
+      ]
+    },
+    "ios-phone": {
+      "bodyAndTeardownPassed": true,
+      "measurements": [
+        {
+          "locale": "en",
+          "width": 402,
+          "height": 63,
+          "navigationGap": 12.0,
+          "footerHeight": 104.0
+        },
+        {
+          "locale": "fr",
+          "width": 402,
+          "height": 63,
+          "navigationGap": 12.0,
+          "footerHeight": 104.0
+        },
+        {
+          "locale": "es",
+          "width": 402,
+          "height": 63,
+          "navigationGap": 12.0,
+          "footerHeight": 104.0
+        },
+        {
+          "locale": "pt",
+          "width": 402,
+          "height": 63,
+          "navigationGap": 12.0,
+          "footerHeight": 104.0
+        },
+        {
+          "locale": "ar",
+          "width": 402,
+          "height": 63,
+          "navigationGap": 12.0,
+          "footerHeight": 104.0
+        }
+      ],
+      "report": "docs/qa/banner-layout/ios-phone/integration_response_data.json",
+      "screenshots": [
+        {
+          "path": "docs/qa/banner-layout/ios-phone/ar-library-banner.png",
+          "sha256": "6ce9dcd3f6f86ba6fa0d0d5d3e51395cf4f8562d8ace31313f93e5f9566d3ec2"
+        },
+        {
+          "path": "docs/qa/banner-layout/ios-phone/en-library-banner.png",
+          "sha256": "104a377bcade1d5b5df4fa9268b12cb7e943c59e9bb984bb9de169d5b55e5c5a"
+        },
+        {
+          "path": "docs/qa/banner-layout/ios-phone/en-section-banner.png",
+          "sha256": "491fc1ef0922ddc35de4ca3dcde1594a1d324a47c9edc5db3866549ac10c515d"
+        },
+        {
+          "path": "docs/qa/banner-layout/ios-phone/es-library-banner.png",
+          "sha256": "226a45f913bf4e5099b56c3db64f8bb38f26666717ca994a8f4aeab1f66a6127"
+        },
+        {
+          "path": "docs/qa/banner-layout/ios-phone/fr-library-banner.png",
+          "sha256": "432f8f9915940a7c707cf544f94da355ea09f8eae7b980b428d12f4e6a3a3ade"
+        },
+        {
+          "path": "docs/qa/banner-layout/ios-phone/pt-library-banner.png",
+          "sha256": "c6525c685d0c57e8f1f920b97f169e1f2d4afb3b6f05cbcaf89742257b2bd36e"
+        }
+      ]
+    },
+    "ios-tablet": {
+      "bodyAndTeardownPassed": true,
+      "measurements": [
+        {
+          "locale": "en",
+          "width": 1032,
+          "height": 90,
+          "navigationGap": 12.0,
+          "footerHeight": 131.0
+        },
+        {
+          "locale": "fr",
+          "width": 1032,
+          "height": 90,
+          "navigationGap": 12.0,
+          "footerHeight": 131.0
+        },
+        {
+          "locale": "es",
+          "width": 1032,
+          "height": 90,
+          "navigationGap": 12.0,
+          "footerHeight": 131.0
+        },
+        {
+          "locale": "pt",
+          "width": 1032,
+          "height": 90,
+          "navigationGap": 12.0,
+          "footerHeight": 131.0
+        },
+        {
+          "locale": "ar",
+          "width": 1032,
+          "height": 90,
+          "navigationGap": 12.0,
+          "footerHeight": 131.0
+        }
+      ],
+      "report": "docs/qa/banner-layout/ios-tablet/integration_response_data.json",
+      "screenshots": [
+        {
+          "path": "docs/qa/banner-layout/ios-tablet/ar-library-banner.png",
+          "sha256": "028f207a3416b978b73f7491e604ffbce93c0520d1695dca2c483884c4deb02c"
+        },
+        {
+          "path": "docs/qa/banner-layout/ios-tablet/en-library-banner.png",
+          "sha256": "1ae9bf14f732e07a7ca6eaf78efc0f93612a53c59ad99153fba8c0d774e788c8"
+        },
+        {
+          "path": "docs/qa/banner-layout/ios-tablet/en-section-banner.png",
+          "sha256": "cdea3300d98821e0008e3e58332127f8f46d539f729e67a08d57349676d4111b"
+        },
+        {
+          "path": "docs/qa/banner-layout/ios-tablet/es-library-banner.png",
+          "sha256": "3dca0aa63f290a38076fec74522c6019dc886bcc1d7ac16c45a3df5e23c12149"
+        },
+        {
+          "path": "docs/qa/banner-layout/ios-tablet/fr-library-banner.png",
+          "sha256": "9b1542436e3b31fe27814e307692c2cdc29dc065a4b8023977e4580110f3f47f"
+        },
+        {
+          "path": "docs/qa/banner-layout/ios-tablet/pt-library-banner.png",
+          "sha256": "171b95466ccd038bccee90aa581c8d6a3b4335293df1fa73b2e6c48756df20ad"
+        }
+      ]
+    }
+  },
+  "baseline": {
+    "path": "docs/qa/banner-layout/pixel-before.png",
+    "sha256": "53789ee2cb2c4ed5382e69491ee4cd958897bb25427f472a55045ab0b9c372ed"
+  },
+  "androidVisualCaptureScope": "Flutter captures omit the platform-view creative. An additional native display capture was unavailable after restoration because Pixel locked; no visual-after claim is made. Native dimensions and gap passed on the unlocked Pixel.",
+  "profileIsolation": {
+    "normalDatabaseUnchanged": true,
+    "savedSoundPreferencePreserved": true,
+    "store": "isolated memory"
+  },
+  "artifacts": [
+    {
+      "path": "output/qa/Pikolumi-Banner-Layout-QA.apk",
+      "sha256": "3ad7fa7086d20a8370877a29e41828c2e12f0baec8f95dcb0ea0abf6b6fbf776",
+      "bundledAssetsVerified": 671,
+      "entryPoint": "lib/main.dart",
+      "testAdsOnly": true
+    },
+    {
+      "path": "output/qa/Pikolumi-Banner-Layout-Simulator.zip",
+      "sha256": "c628e947cd39f4d8638a09d9c43b4dfd026a46c7210d4ba8f72aea17ac4ddabc",
+      "bundledAssetsVerified": 671,
+      "entryPoint": "lib/main.dart",
+      "testAdsOnly": true
+    }
+  ],
+  "androidDevelopmentCertificateMatchesPreviousQA": true,
+  "pixelInstallation": {
+    "status": "Success",
+    "method": "adb install -r",
+    "dataCleared": false,
+    "uninstalled": false,
+    "normalEntryPointRestored": true,
+    "log": "tmp/banner-pixel-install.log"
+  },
+  "normalSimulatorRestoration": {
+    "308EF94F-8915-492D-A5EE-28BDD262C199": {
+      "normalAppRestored": true,
+      "binaryKernelAndStringsMatch": true,
+      "dataCleared": false,
+      "launchedForPlayback": false
+    },
+    "CEB65F35-4EC0-4272-B32A-2197F48DC60B": {
+      "normalAppRestored": true,
+      "binaryKernelAndStringsMatch": true,
+      "dataCleared": false,
+      "launchedForPlayback": false
+    }
+  },
+  "pixelOriginalTimeoutAndChargingWakeSettingsRestored": true,
+  "computerAudioPlayback": false,
+  "storeBuildUploads": false,
+  "storeReviewSubmissions": false,
+  "storePublications": false,
+  "releaseHeldUntilExplicitUserInstruction": true,
+  "sdkSizingReference": "https://developers.google.com/admob/flutter/banner"
+}

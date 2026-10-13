@@ -1,0 +1,191 @@
+{
+  "sourceHashes": {
+    "lib/ui/piko_mascot.dart": "2fe418598795c48270c1b5bca0bdbc25b9a6dbba14a990dff9950af8796633c6",
+    "lib/ui/activity_screen.dart": "841f74dc27cf55e8cad1fec87c4786a4ec7e63fa7ec5480ee7c06d32e833f82c",
+    "lib/ui/library.dart": "60779d6cf3a0a788a409e2c7a03b448de6044be4efb2f8be255808b306d3bdca",
+    "lib/main.dart": "6c230c62cb1f121219a9a24c1895b9eaf61435401fe0e24e63e3fca5cd54d844",
+    "pubspec.yaml": "2b7766daf3e35e20d49740eb671eaea2316490e04ef705a1214abd1f11af2d90",
+    "scripts/build_piko_3d.py": "7bda14bad0b5deca1b3b70882ee513478771e6483ccf66ed1c02694be50be916",
+    "scripts/pack_piko.py": "b615ed0f20fbd3fb17b92c4e511f73fe202d1f271fb0dec8ea960c904557d052",
+    "scripts/validate_piko.py": "008fffbfca7746fb52f42154c1c238f3531341a89d36a1337027d0dbd26f5d29",
+    "test/piko_mascot_test.dart": "9290a44114a42200b446af48280835538907dcffb574cd8d75ef88052a0b3369",
+    "integration_test/piko_mascot_test.dart": "e6539f3e3305631e80910ea304a5955ddef4375c408a5ae3b4ffa1585b7e3666"
+  },
+  "flutterTests": 60,
+  "pythonTests": 8,
+  "staticAnalysis": "No issues found",
+  "assets": {
+    "valid": true,
+    "frames": 180,
+    "decodedTextureMiB": 19.5,
+    "transparentUnclippedFrames": true,
+    "sourceHashesMatch": true
+  },
+  "sound": "SilentAudio with isolated MemoryStore; no system volume or user preference changes",
+  "release": {
+    "androidUploaded": false,
+    "iosUploaded": false,
+    "submitted": false,
+    "published": false
+  },
+  "native": {
+    "ios-phone": {
+      "status": "passed test body and teardown",
+      "profile": "debug simulator",
+      "report": "docs/qa/piko-3d/ios-phone/integration_response_data.json",
+      "sha256": "67c94fdfa55e0b6bc44928da3601ab1a1682fd29c9af3724fa2c0963b5e91300",
+      "frameTimings": {
+        "samples": 401,
+        "rasterP95Ms": 2.776,
+        "buildP95Ms": 17.918
+      }
+    },
+    "ios-tablet": {
+      "status": "passed test body and teardown",
+      "profile": "debug simulator",
+      "report": "docs/qa/piko-3d/ios-tablet/integration_response_data.json",
+      "sha256": "98d27d75b97d002b9e018d0e14faf74efde724449387f5c0873f971b58da2695",
+      "frameTimings": {
+        "samples": 403,
+        "rasterP95Ms": 3.053,
+        "buildP95Ms": 17.861
+      }
+    },
+    "pixel": {
+      "status": "passed test body and teardown",
+      "tested": true,
+      "profile": "physical Android profile build",
+      "report": "docs/qa/piko-3d/pixel/integration_response_data.json",
+      "sha256": "cbd89c9cac09b710e345016b19d40d7c6d683c1d416c2b8519628c61844fe051",
+      "frameTimings": {
+        "samples": 405,
+        "rasterP95Ms": 9.801,
+        "buildP95Ms": 16.13
+      }
+    }
+  },
+  "captures": {
+    "ios-phone": {
+      "docs/qa/piko-3d/ios-phone/ar-activity-3d-piko.png": "e8ba9fba2a5df55748b25b40b50bd877b35f22babe2448542ec21e14004c460b",
+      "docs/qa/piko-3d/ios-phone/ar-completion-3d-piko.png": "e6a0ba3bc9f7f80e9e8771293de220935d61775b4ad8b2058a496c23a0f503d9",
+      "docs/qa/piko-3d/ios-phone/en-activity-3d-piko.png": "19b749ea6e2a0b4b262f00650559e1c83bbfc566aad88a844ae49f7fbf36da63",
+      "docs/qa/piko-3d/ios-phone/en-completion-3d-piko.png": "5b4adf6ac42d453368f191c21f790ea2d1f46f8fd277d88f503df8cf209ab444",
+      "docs/qa/piko-3d/ios-phone/es-activity-3d-piko.png": "a824d71d71a805bf4d1de2e78db8fbc9139574df421bfcee91589dd2a9d1d8be",
+      "docs/qa/piko-3d/ios-phone/es-completion-3d-piko.png": "2a85bbff0839f53641dfba5b5e5ebd754c639e7857f797dd843d6b47d56405a8",
+      "docs/qa/piko-3d/ios-phone/fr-activity-3d-piko.png": "da5d4b7d58cbd11557a376a38611eee20172ebeb3e705a15b29a20a850b5feed",
+      "docs/qa/piko-3d/ios-phone/fr-completion-3d-piko.png": "4a82fdc84c92948e9cbb3384f586bd87f7c1b6a853cbb56f209d4b368da0fa3a",
+      "docs/qa/piko-3d/ios-phone/library-3d-piko.png": "10ecd74f1155b4845259a6c84afc9413adf6a06b3f9e16f6ee1fe90803b2946b",
+      "docs/qa/piko-3d/ios-phone/pt-activity-3d-piko.png": "9bbeddd5828835c12394f1a9001d908a8dad12f0905fa07015290d393859465d",
+      "docs/qa/piko-3d/ios-phone/pt-completion-3d-piko.png": "7e8855cd4fff1ececad9c4e8dcf6b454483b543189ce733dabecfae2ebfbea4d",
+      "docs/qa/piko-3d/ios-phone/reduced-motion-static-piko.png": "5aa730202a5972ac30cc905037dacfc70b1a2f9c0c97eacc5e7b95cdba92ae45"
+    },
+    "ios-tablet": {
+      "docs/qa/piko-3d/ios-tablet/ar-activity-3d-piko.png": "6961d1222811c072c6080f9f519375f43aa7b10aa780d7d58f07de96582f9613",
+      "docs/qa/piko-3d/ios-tablet/ar-completion-3d-piko.png": "7b62803eb408fda0030b4c638c2eb1ae9cec18bc652a867ddc894fb3475dcde3",
+      "docs/qa/piko-3d/ios-tablet/en-activity-3d-piko.png": "b37d0cdded8139b5d2c6aeab5d1dec7158b7477464005100678f96f5912cdde1",
+      "docs/qa/piko-3d/ios-tablet/en-completion-3d-piko.png": "26a5fac2e0715648b7bdb5c4d263edc1852a57037be62a8304de2a26e20f522a",
+      "docs/qa/piko-3d/ios-tablet/es-activity-3d-piko.png": "4ce02111b6baffdda0addf1a7ef236e4bdaf3e8cadf82e2ddc2aff762225aa08",
+      "docs/qa/piko-3d/ios-tablet/es-completion-3d-piko.png": "3bd67ee1433af0fe0a02665cc2d06b932d3215e6fc1772e519bdbba42adb3a3e",
+      "docs/qa/piko-3d/ios-tablet/fr-activity-3d-piko.png": "f6a4d067aa66dc5a24a9f1f985fca8ef1691fe27020c6a3e6d5d78e4381b60e5",
+      "docs/qa/piko-3d/ios-tablet/fr-completion-3d-piko.png": "9a25461752ad560539acb7d16b7c967fe5d34553f61aa1e40cad9db43d4c2b34",
+      "docs/qa/piko-3d/ios-tablet/library-3d-piko.png": "e6b26a15a9455c411be9711c3cd2f064b732c49b5b01ea14f66973b78ce35dde",
+      "docs/qa/piko-3d/ios-tablet/pt-activity-3d-piko.png": "0c8b6dc61f50273f6b6b1bffd9f5b867efecc29998c68882b9caf26bf67ae515",
+      "docs/qa/piko-3d/ios-tablet/pt-completion-3d-piko.png": "046c9398135dc4560530c0870b1b98a3abea0c40fc18146f6b39b694e0f28111",
+      "docs/qa/piko-3d/ios-tablet/reduced-motion-static-piko.png": "879a926e900ba9bd06e06ba75fba65f362b168bcaac0bea06bfa65940df53ffa"
+    },
+    "pixel": {
+      "docs/qa/piko-3d/pixel/ar-activity-3d-piko.png": "1fa57b8124b58604f8a74cc8be35dfffecd00602139f5b0f258bd32b3ce192a2",
+      "docs/qa/piko-3d/pixel/ar-completion-3d-piko.png": "4c155ca5d409070ce2d0b76a3d72ffb596b3c7640e2d406cb64e286117e5e9e4",
+      "docs/qa/piko-3d/pixel/en-activity-3d-piko.png": "aef9852284d6e3d3f952859281653b7a1dfbebf76ae609036a18de5d7c6fc98a",
+      "docs/qa/piko-3d/pixel/en-completion-3d-piko.png": "67e3d05b0bf8e7d3c9fe2830b7e73b0c8644d4ad5d4ef049cc0a6620ebba2c77",
+      "docs/qa/piko-3d/pixel/es-activity-3d-piko.png": "1e421415be31a6092441a2990bd65347f165ca05d6bca679175bb59d96a6cc07",
+      "docs/qa/piko-3d/pixel/es-completion-3d-piko.png": "ce4aa70d8c84bcb9923345e702bc5c7434d5a6de7ace61bbd83a22ba05755acb",
+      "docs/qa/piko-3d/pixel/fr-activity-3d-piko.png": "d1498e1bdf316dce4e6b22d5eba789d5273080ac3854674e2fba7738638f330c",
+      "docs/qa/piko-3d/pixel/fr-completion-3d-piko.png": "942d54c29caf4ec2790cbd61d3130766f96b8573417caa25ee9d726510a24807",
+      "docs/qa/piko-3d/pixel/library-3d-piko.png": "5d6a9fb96389b8b94b9accdfb12aab2b393f0abb98187457e57477641c3341c0",
+      "docs/qa/piko-3d/pixel/pt-activity-3d-piko.png": "5925bb430aad5bd4894808932423374bf0248b7fd0d4015339771fb5a174d0a3",
+      "docs/qa/piko-3d/pixel/pt-completion-3d-piko.png": "a29288c70a2938b6afccc34de13dc0708c948c58c27f87bec3350ddd3b8f502b",
+      "docs/qa/piko-3d/pixel/reduced-motion-static-piko.png": "5bb3b13465a64759487001ed8a3c046e30114188590d52396e9646a90a5eb929"
+    }
+  },
+  "landscapeDialogRegression": {
+    "viewport": [
+      640,
+      320
+    ],
+    "overflowBeforeFixPixels": 148,
+    "fix": "scrollable AlertDialog",
+    "status": "passed"
+  },
+  "verifiedAt": "2026-10-12T13:24:07.524447+00:00",
+  "packages": {
+    "simulators": [
+      {
+        "device": "308EF94F-8915-492D-A5EE-28BDD262C199",
+        "normalEntryPointRestored": true,
+        "runnerKernelAndStringsMatch": true,
+        "launchedForAudio": false
+      },
+      {
+        "device": "CEB65F35-4EC0-4272-B32A-2197F48DC60B",
+        "normalEntryPointRestored": true,
+        "runnerKernelAndStringsMatch": true,
+        "launchedForAudio": false
+      }
+    ],
+    "sourceAssetsMatchedInBothPackages": 677,
+    "simulatorPackage": {
+      "path": "output/qa/Pikolumi-Animated-Piko-Simulator.zip",
+      "sha256": "4208cf50bfd277c921bdf0faf944db100c37fbf934e19908b59e96f2e5976de0"
+    },
+    "androidPackage": {
+      "path": "output/qa/Pikolumi-Animated-Piko-QA.apk",
+      "sha256": "44fdeea91870d30c4eaf2e455aae370962fd3429b49e4c682060d1a674890df7"
+    },
+    "storeUploaded": false
+  },
+  "pixelInstallation": {
+    "compatibleDevelopmentCertificate": true,
+    "pixelInstall": "Success",
+    "uninstalled": false,
+    "dataCleared": false,
+    "userDatabaseUnchanged": true,
+    "userSoundPreferencePreserved": true,
+    "normalEntryPoint": "lib/main.dart",
+    "phoneWakeSettingsChanged": false,
+    "physicalAnimationQA": "passed in all five locales",
+    "sha256": "44fdeea91870d30c4eaf2e455aae370962fd3429b49e4c682060d1a674890df7",
+    "temporaryWakeSettingsRestored": true
+  },
+  "preview": {
+    "path": "docs/qa/piko-3d/celebration-preview.gif",
+    "sha256": "7b60bb5119615a49f8b8b3865a1a81e6e9b5751baea3a5c3ff881f59c6bd1eaf"
+  },
+  "physicalIOS": "unavailable; user previously confirmed no device",
+  "pixelPreservation": {
+    "savedRecordsUnchangedDuringQA": true,
+    "normalEntryPointRestored": true,
+    "wakeSettingsRestored": true,
+    "originalStayAwake": "0",
+    "originalScreenTimeout": "60000",
+    "systemVolumeChanged": false,
+    "userSoundSettingChanged": false,
+    "store": "isolated MemoryStore",
+    "audio": "SilentAudio",
+    "driverExitCode": 0
+  },
+  "pixelRecordComparison": {
+    "path": "docs/qa/piko-3d/pixel-record-comparison.json",
+    "sha256": "2a2f2945e76e91f3e34368613290db49cecf0ab2011e51d6a3fdc8bb2b920171",
+    "savedRecordsUnchanged": true,
+    "rawDatabaseBytesUnchanged": true,
+    "changedNamespaces": []
+  },
+  "initialPixelByteGuard": {
+    "nativeTestsPassed": true,
+    "rawDatabaseBytesChanged": true,
+    "recordBaselineAvailable": false,
+    "cause": "not established; repeated stable snapshot audit passed",
+    "recordsRepaired": false
+  }
+}

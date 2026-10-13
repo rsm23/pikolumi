@@ -1,0 +1,156 @@
+{
+  "checkedAtUTC": "2026-10-12T08:28:52.649911+00:00",
+  "sourceSha256": {
+    "lib/activities/canvas_activity.dart": "c0eaf68acdf7afb9271f56431f263ca9f7b883fa4ab9f39394ec35b64c974615",
+    "lib/ui/vector_art.dart": "92011bf2df05e7ec7167b5f936ace871faac87186ad070eea3194de9546bcd9a",
+    "lib/ui/brush_stroke.dart": "51c3cd4f9079042d12ac569f84792d9118999db94f790f69accaae2e2ee5acb6",
+    "assets/content/strings.json": "413866bf42fda604ee8d4cd5f19c2c8805db1fba44f08a1b084bb2f5cb91dc32",
+    "scripts/content_source.py": "4fa4c6dd400fa9a73a16e39448874fb6fa64f5d88e66d1f637f75ab84a8d6441",
+    "integration_test/drawing_studio_test.dart": "5522d4e8aa17ff504f2d7a0e2da6cc95ffff066c5e0df9acb2ccfff9d90e5414",
+    "test/drawing_studio_test.dart": "c200779928ea8bf07cb728bc69d26832b90877e0e4449a2585b249cd36c90a15",
+    "test/art_rendering_test.dart": "d907f4e6c47882a51422f19f9d8b7b2682ee94180fd09089993d45d35d666269",
+    "test/engines_test.dart": "24f748b8c6e388e21e0164ebfe3e2e8a5598ba3738af49e3ac62de24da3aef14"
+  },
+  "flutterTests": 48,
+  "pythonTests": 8,
+  "staticAnalysis": "no issues",
+  "drawingGuidesPixelChecked": 120,
+  "paletteColors": 36,
+  "brushStyles": [
+    "round",
+    "pencil",
+    "marker",
+    "crayon"
+  ],
+  "native": {
+    "ios-phone": {
+      "nativeBodyAndTeardownPassed": true,
+      "report": "docs/qa/drawing-studio/ios-phone/integration_response_data.json",
+      "screenshots": [
+        {
+          "path": "docs/qa/drawing-studio/ios-phone/en-drawing-guide.png",
+          "sha256": "05cac0ce14cfc5551b7b877ecb37f17993e6d84cef6956591045f10ab01817b2"
+        },
+        {
+          "path": "docs/qa/drawing-studio/ios-phone/en-all-colors.png",
+          "sha256": "f1f57a8ef1bc6fbdec7717a1abc02960c363edb0dde43ee0c7f20af846e31894"
+        },
+        {
+          "path": "docs/qa/drawing-studio/ios-phone/en-brush-menu.png",
+          "sha256": "dc4a34363cb0cb2d53a4b5c311b2d87229ae71e8b8730f1d55bc3700476c13c1"
+        },
+        {
+          "path": "docs/qa/drawing-studio/ios-phone/en-four-brush-strokes.png",
+          "sha256": "352a370b31fbdaac954401f11cb20c25578eb7a513f19fe2ded192cb761206ff"
+        },
+        {
+          "path": "docs/qa/drawing-studio/ios-phone/fr-drawing-guide.png",
+          "sha256": "e045eab4c2e6ca7de490de7f8d3d5b921956230b9734069f02d0f496eb4a2ac9"
+        },
+        {
+          "path": "docs/qa/drawing-studio/ios-phone/es-drawing-guide.png",
+          "sha256": "1ece047ee2a653ac5cf246ccb47553499f77e3a8ab88220d13ab65609553795e"
+        },
+        {
+          "path": "docs/qa/drawing-studio/ios-phone/pt-drawing-guide.png",
+          "sha256": "9bfd579e2a832f5f5f23fa301093792b210f2b845a8576f6d22f20e4861ec7bc"
+        },
+        {
+          "path": "docs/qa/drawing-studio/ios-phone/ar-drawing-guide.png",
+          "sha256": "e7a673b0aebddf070fce2ba57b4bd1abf17b08c364a1a9c52297fec5256c3dbf"
+        }
+      ]
+    },
+    "ios-tablet": {
+      "nativeBodyAndTeardownPassed": true,
+      "report": "docs/qa/drawing-studio/ios-tablet/integration_response_data.json",
+      "screenshots": [
+        {
+          "path": "docs/qa/drawing-studio/ios-tablet/en-drawing-guide.png",
+          "sha256": "4c703a8a029cd42dcac0f13fa1ddc1e3ca20d1d36308a58c8b98de00409e13d5"
+        },
+        {
+          "path": "docs/qa/drawing-studio/ios-tablet/en-all-colors.png",
+          "sha256": "d84940c2e8fc3e74730ba57ddf3fc0e15f9f38d3963d7ae052c8bab23a1d10d9"
+        },
+        {
+          "path": "docs/qa/drawing-studio/ios-tablet/en-brush-menu.png",
+          "sha256": "81c82dd5c883b21fb49296094276453c9a83f2bee689b864f397c25753478477"
+        },
+        {
+          "path": "docs/qa/drawing-studio/ios-tablet/en-four-brush-strokes.png",
+          "sha256": "c35ab90f1eb4fbd75d4923f2d324c9b9b8704526ff43fe8e81179d9bf9657e69"
+        },
+        {
+          "path": "docs/qa/drawing-studio/ios-tablet/fr-drawing-guide.png",
+          "sha256": "a298c9caf950d9d1fe59f01e6c6595f8529bd0d9b4b6d2533c295e367a7c544c"
+        },
+        {
+          "path": "docs/qa/drawing-studio/ios-tablet/es-drawing-guide.png",
+          "sha256": "3982a87bb4161d9553c72af15594a51a6ae00af394cbea9ff47e742ad174e9f3"
+        },
+        {
+          "path": "docs/qa/drawing-studio/ios-tablet/pt-drawing-guide.png",
+          "sha256": "56c0f4b8e8ec3e8a5db2a6cbd30778ad1d6922056523b6a1d336af5210eb64ce"
+        },
+        {
+          "path": "docs/qa/drawing-studio/ios-tablet/ar-drawing-guide.png",
+          "sha256": "455e96934f0dfb5141a289922cef286e1bdc4f132a56844d1be9017c5527a4f8"
+        }
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "output/qa/Pikolumi-Drawing-Studio-Simulator.zip",
+      "sha256": "11622f0444cb68b2ff49f5a332a2daf6cc334e3752b985178cb98385de66cc92",
+      "bytes": 80492641,
+      "bundledAssets": 671,
+      "bundledAssetsMatchSource": true
+    },
+    {
+      "path": "output/qa/Pikolumi-Drawing-Studio-QA.apk",
+      "mode": "profile; matches existing Pixel development signing key",
+      "sha256": "c142c33b5008e2828d5fb93a122f6e5ed05815671f78f55c4f2c73a164356b51",
+      "bytes": 114045237,
+      "bundledAssets": 671,
+      "bundledAssetsMatchSource": true,
+      "normalEntryPoint": "lib/main.dart"
+    },
+    {
+      "path": "output/qa/Pikolumi-Drawing-Studio-Signed-QA.apk",
+      "mode": "release; local upload signing key, test ads",
+      "sha256": "50cb51c52e86f3a6b7cc72221f19558bffb044607716ccd0592ccb54afd27270",
+      "bytes": 75301958,
+      "bundledAssets": 671,
+      "bundledAssetsMatchSource": true,
+      "normalEntryPoint": "lib/main.dart"
+    }
+  ],
+  "androidAPKSignatureV2Verified": true,
+  "normalSimulatorRestoration": {
+    "ios-phone": {
+      "normalAppInstalled": true,
+      "binaryKernelAndStringsMatchBuiltApp": true,
+      "uninstalled": false,
+      "dataCleared": false,
+      "normalAppLaunchedForPlayback": false
+    },
+    "ios-tablet": {
+      "normalAppInstalled": true,
+      "binaryKernelAndStringsMatchBuiltApp": true,
+      "uninstalled": false,
+      "dataCleared": false,
+      "normalAppLaunchedForPlayback": false
+    }
+  },
+  "normalSimulatorCompilerDependenciesContainNoIntegrationTestTarget": true,
+  "androidPhysicalInstall": "pending; Pixel disconnected",
+  "audioPlayback": false,
+  "testAdsOnly": true,
+  "storeBuildUploads": false,
+  "storeReviewSubmissions": false,
+  "storePublications": false,
+  "releaseAuthorization": "held until explicit user instruction",
+  "androidUpdateSigningCertificateMatchesPreviousPixelQA": true
+}

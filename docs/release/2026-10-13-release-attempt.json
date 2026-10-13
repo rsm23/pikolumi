@@ -1,0 +1,156 @@
+{
+  "verifiedAtUTC": "2026-10-13T00:39:00.663509+00:00",
+  "version": "1.0.0",
+  "build": 1,
+  "package": "com.seifelmoulouk.pikolumi",
+  "authorization": "docs/release/release-authorization.json",
+  "repository": {
+    "url": "https://github.com/rsm23/pikolumi",
+    "private": true,
+    "containsAndroidSigningCredentials": true
+  },
+  "androidSigningBackup": {
+    "directory": "/Users/rahmaniseif/.config/pikolumi/signing/backup-2026-10-13",
+    "format": "JKS, PKCS12, unencrypted private-key PEM, public certificate, plain-text passwords and certificate details",
+    "privateKeyChecked": true,
+    "keptOutsideGit": false,
+    "privateRepositoryCopy": "signing/android",
+    "authorization": "2026-10-13: user explicitly requested everything about the keystore in Git because the repository will stay private"
+  },
+  "validation": {
+    "flutterTests": 85,
+    "pythonTests": 21,
+    "catalogEntries": 2400,
+    "speechClips": 648,
+    "noteClips": 8,
+    "locales": [
+      "en",
+      "fr",
+      "es",
+      "pt-BR",
+      "ar"
+    ],
+    "audioPlayback": false,
+    "pronunciationCertified": false,
+    "analysis": "No issues found",
+    "languageReviewPacketValidation": "passed"
+  },
+  "admob": {
+    "publisher": "pub-3316613733634147",
+    "liveAccountOwnershipVerified": true,
+    "appIdsAndFourDedicatedUnitsMatch": true,
+    "highEngagementAdsAndroid": "Off",
+    "highEngagementAdsIOS": "Off",
+    "appReadinessBoth": "Requires review; limited serving; no published store link",
+    "sdkAndroid": "25.4.0",
+    "familiesListRange": "19.0.0 or later",
+    "familiesListCheckedAtUTC": "2026-10-13T00:39:00.663509+00:00",
+    "appleKidsExceptionEvidence": false,
+    "supportReplySearch": "No AdMob/Pikolumi reply found after 2026-10-11 in the connected Gmail mailbox, verified to match the signed-in AdMob login."
+  },
+  "website": {
+    "supportAndPrivacyAllFiveLocalesHTTP200": true,
+    "supportEmailMatches": true,
+    "publisherAppAdsTxtLineMatches": true
+  },
+  "artifacts": [
+    {
+      "path": "output/release-verification/Pikolumi-1.0.0-TestAds.aab",
+      "bytes": 89318792,
+      "sha256": "be3bfd19037b2d163a6b03b844245f6b922bbd2efed7ad8d5a80837eda4e4df1",
+      "buildMode": "release",
+      "distributionSigned": true,
+      "entryPoint": "lib/main.dart",
+      "testAdsOnly": true,
+      "allBundledAssetsMatchSource": true,
+      "bundledSourceAssetFiles": 687,
+      "uploadEligible": false,
+      "uploaded": false,
+      "uploadCertificateSHA256": "52e5d5ac066139747b91bae9d0ab25d6f2503bd918624ab03dbe94531e1dc134",
+      "uploadCertificateMatchesOriginalBackup": true,
+      "repositoryRelativeSigningBuildVerified": true
+    },
+    {
+      "path": "output/release-verification/Pikolumi-1.0.0-TestAds.ipa",
+      "bytes": 54570305,
+      "sha256": "a929dadc6c172693821f46407271897dcca7b9de896f84cf300327406c613573",
+      "buildMode": "release",
+      "distributionSigned": true,
+      "entryPoint": "lib/main.dart",
+      "testAdsOnly": true,
+      "allBundledAssetsMatchSource": true,
+      "bundledSourceAssetFiles": 687,
+      "uploadEligible": false,
+      "uploaded": false,
+      "exportedIPACodesignDeepStrictVerified": true,
+      "exportedIPAGetTaskAllow": false,
+      "team": "WQ983X3Y8P"
+    }
+  ],
+  "platforms": {
+    "android": {
+      "productionBuildAttempt": "refused by evidence gate; signed test-ad AAB built instead",
+      "missingReleaseEvidence": [
+        "contentReviewed",
+        "pronunciationReviewed",
+        "physicalAndroidQA",
+        "androidPhoneTabletQA",
+        "androidPrivacyDeclarationsReviewed",
+        "androidAdDismissalVerified"
+      ],
+      "playAppRecord": "not created; no Pikolumi search result",
+      "packageNameAvailable": true,
+      "creationFormPrepared": true,
+      "creationDeclarationsAccepted": false,
+      "blockingFormDeclaration": "US export-law agreement requires action-time confirmation under browser-use rules",
+      "uploaded": false,
+      "submitted": false,
+      "approved": false,
+      "publiclyAvailable": false
+    },
+    "ios": {
+      "storeId": "6821776826",
+      "storeVersion": "1.0.0",
+      "liveState": "À finaliser avant soumission",
+      "reviewContactSavedAndVerifiedAfterReload": true,
+      "loginRequired": false,
+      "productionBuildAttempt": "refused by evidence gate; signed test-ad IPA built instead",
+      "missingReleaseEvidence": [
+        "contentReviewed",
+        "pronunciationReviewed",
+        "physicalIOSQA",
+        "iosPhoneTabletQA",
+        "iosPrivacyDeclarationsReviewed",
+        "iosAdDismissalVerified",
+        "appleKidsAdExceptionVerified"
+      ],
+      "ageRatingDraft": {
+        "saved": false,
+        "calculated": "9+",
+        "wellnessAnswer": true,
+        "reason": "Everyday lesson explicitly teaches handwashing before eating; conservatively treated as self-care guidance",
+        "kidsBandAvailable": "9–11 only",
+        "scopePreserved": "Cancelled without narrowing the agreed ages 2–11 audience; rating review pending"
+      },
+      "uploaded": false,
+      "submitted": false,
+      "approved": false,
+      "publiclyAvailable": false,
+      "pricing": {
+        "savedAndVerifiedAfterReload": true,
+        "zeroPricedStorefronts": 175,
+        "territoriesConfiguredForRelease": 175,
+        "macAvailability": false,
+        "visionAvailability": false,
+        "publicAvailabilityStillRequiresApprovedRelease": true
+      }
+    }
+  },
+  "sources": [
+    "https://developer.apple.com/app-store/review/guidelines/#kids-category",
+    "https://support.google.com/googleplay/android-developer/answer/12955712?hl=en",
+    "https://developers.google.com/admob/android/privacy/play-data-disclosure",
+    "https://developers.google.com/admob/ios/privacy/data-disclosure",
+    "https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions"
+  ]
+}

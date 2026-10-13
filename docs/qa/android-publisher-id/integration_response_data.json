@@ -1,0 +1,10 @@
+{
+  "publisherFirstPartyIdDisablementPersisted": true,
+  "nativeChildTreatment": true,
+  "nativeMaximumRatingG": true,
+  "testAdsOnly": true,
+  "audioPlayback": false,
+  "store": "isolated memory; user profiles and artwork untouched",
+  "runtimeTrafficInspection": false,
+  "screenshots": []
+}

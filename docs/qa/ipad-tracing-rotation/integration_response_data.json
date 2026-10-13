@@ -1,0 +1,707 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "portrait-en-tracing-0015"
+    },
+    {
+      "screenshotName": "portrait-fr-tracing-0057"
+    },
+    {
+      "screenshotName": "portrait-es-tracing-0041"
+    },
+    {
+      "screenshotName": "portrait-pt-tracing-0069"
+    },
+    {
+      "screenshotName": "portrait-ar-tracing-0065"
+    },
+    {
+      "screenshotName": "portrait-en-tracing-0120"
+    },
+    {
+      "screenshotName": "landscape-left-en-tracing-0015"
+    },
+    {
+      "screenshotName": "landscape-left-fr-tracing-0057"
+    },
+    {
+      "screenshotName": "landscape-left-es-tracing-0041"
+    },
+    {
+      "screenshotName": "landscape-left-pt-tracing-0069"
+    },
+    {
+      "screenshotName": "landscape-left-ar-tracing-0065"
+    },
+    {
+      "screenshotName": "landscape-left-en-tracing-0120"
+    },
+    {
+      "screenshotName": "portrait-reopened-sqlite-en-tracing-0015"
+    },
+    {
+      "screenshotName": "portrait-reopened-sqlite-fr-tracing-0057"
+    },
+    {
+      "screenshotName": "portrait-reopened-sqlite-es-tracing-0041"
+    },
+    {
+      "screenshotName": "portrait-reopened-sqlite-pt-tracing-0069"
+    },
+    {
+      "screenshotName": "portrait-reopened-sqlite-ar-tracing-0065"
+    },
+    {
+      "screenshotName": "portrait-reopened-sqlite-en-tracing-0120"
+    },
+    {
+      "screenshotName": "landscape-right-en-tracing-0015"
+    },
+    {
+      "screenshotName": "completed-en-tracing-0015"
+    },
+    {
+      "screenshotName": "landscape-right-fr-tracing-0057"
+    },
+    {
+      "screenshotName": "completed-fr-tracing-0057"
+    },
+    {
+      "screenshotName": "landscape-right-es-tracing-0041"
+    },
+    {
+      "screenshotName": "completed-es-tracing-0041"
+    },
+    {
+      "screenshotName": "landscape-right-pt-tracing-0069"
+    },
+    {
+      "screenshotName": "completed-pt-tracing-0069"
+    },
+    {
+      "screenshotName": "landscape-right-ar-tracing-0065"
+    },
+    {
+      "screenshotName": "completed-ar-tracing-0065"
+    },
+    {
+      "screenshotName": "landscape-right-en-tracing-0120"
+    },
+    {
+      "screenshotName": "completed-en-tracing-0120"
+    }
+  ],
+  "captureSizes": {
+    "portrait-en-tracing-0015": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "portrait-fr-tracing-0057": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "portrait-es-tracing-0041": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "portrait-pt-tracing-0069": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "portrait-ar-tracing-0065": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "portrait-en-tracing-0120": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "landscape-left-en-tracing-0015": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "landscape-left-fr-tracing-0057": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "landscape-left-es-tracing-0041": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "landscape-left-pt-tracing-0069": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "landscape-left-ar-tracing-0065": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "landscape-left-en-tracing-0120": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "portrait-reopened-sqlite-en-tracing-0015": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "portrait-reopened-sqlite-fr-tracing-0057": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "portrait-reopened-sqlite-es-tracing-0041": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "portrait-reopened-sqlite-pt-tracing-0069": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "portrait-reopened-sqlite-ar-tracing-0065": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "portrait-reopened-sqlite-en-tracing-0120": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "landscape-right-en-tracing-0015": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "completed-en-tracing-0015": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "landscape-right-fr-tracing-0057": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "completed-fr-tracing-0057": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "landscape-right-es-tracing-0041": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "completed-es-tracing-0041": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "landscape-right-pt-tracing-0069": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "completed-pt-tracing-0069": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "landscape-right-ar-tracing-0065": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "completed-ar-tracing-0065": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "landscape-right-en-tracing-0120": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    },
+    "completed-en-tracing-0120": {
+      "originalWidth": 2752,
+      "originalHeight": 2064,
+      "captureWidth": 1200,
+      "captureHeight": 900
+    }
+  },
+  "orientationSizes": {
+    "initialPortrait": [
+      2064.0,
+      2752.0
+    ],
+    "LEFT_LANDSCAPE": [
+      2752.0,
+      2064.0
+    ],
+    "RIGHT_PORTRAIT": [
+      2064.0,
+      2752.0
+    ],
+    "RIGHT_LANDSCAPE": [
+      2752.0,
+      2064.0
+    ],
+    "LEFT_PORTRAIT": [
+      2064.0,
+      2752.0
+    ]
+  },
+  "renderedMeasurements": {
+    "portrait-en-tracing-0015": {
+      "renderedPixelBounds": [
+        712,
+        1175,
+        1351,
+        1976
+      ],
+      "widthToHeight": 0.7980049875311721,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 87
+    },
+    "portrait-fr-tracing-0057": {
+      "renderedPixelBounds": [
+        514,
+        1177,
+        1549,
+        1974
+      ],
+      "widthToHeight": 1.2982456140350878,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 27
+    },
+    "portrait-es-tracing-0041": {
+      "renderedPixelBounds": [
+        515,
+        1222,
+        1548,
+        1929
+      ],
+      "widthToHeight": 1.46045197740113,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 27
+    },
+    "portrait-pt-tracing-0069": {
+      "renderedPixelBounds": [
+        515,
+        1208,
+        1548,
+        1943
+      ],
+      "widthToHeight": 1.4048913043478262,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 87
+    },
+    "portrait-ar-tracing-0065": {
+      "renderedPixelBounds": [
+        519,
+        1332,
+        1543,
+        1822
+      ],
+      "widthToHeight": 2.0875763747454177,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 43
+    },
+    "portrait-en-tracing-0120": {
+      "renderedPixelBounds": [
+        512,
+        1230,
+        1551,
+        1921
+      ],
+      "widthToHeight": 1.5028901734104045,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 111
+    },
+    "landscape-left-en-tracing-0015": {
+      "renderedPixelBounds": [
+        1056,
+        831,
+        1695,
+        1632
+      ],
+      "widthToHeight": 0.7980049875311721,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 153
+    },
+    "landscape-left-fr-tracing-0057": {
+      "renderedPixelBounds": [
+        858,
+        833,
+        1893,
+        1630
+      ],
+      "widthToHeight": 1.2982456140350878,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 48
+    },
+    "landscape-left-es-tracing-0041": {
+      "renderedPixelBounds": [
+        859,
+        878,
+        1892,
+        1585
+      ],
+      "widthToHeight": 1.46045197740113,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 48
+    },
+    "landscape-left-pt-tracing-0069": {
+      "renderedPixelBounds": [
+        859,
+        864,
+        1892,
+        1599
+      ],
+      "widthToHeight": 1.4048913043478262,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 153
+    },
+    "landscape-left-ar-tracing-0065": {
+      "renderedPixelBounds": [
+        863,
+        988,
+        1887,
+        1478
+      ],
+      "widthToHeight": 2.0875763747454177,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 77
+    },
+    "landscape-left-en-tracing-0120": {
+      "renderedPixelBounds": [
+        856,
+        886,
+        1895,
+        1577
+      ],
+      "widthToHeight": 1.5028901734104045,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 196
+    },
+    "portrait-reopened-sqlite-en-tracing-0015": {
+      "renderedPixelBounds": [
+        712,
+        1175,
+        1351,
+        1976
+      ],
+      "widthToHeight": 0.7980049875311721,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 153
+    },
+    "portrait-reopened-sqlite-fr-tracing-0057": {
+      "renderedPixelBounds": [
+        514,
+        1177,
+        1549,
+        1974
+      ],
+      "widthToHeight": 1.2982456140350878,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 48
+    },
+    "portrait-reopened-sqlite-es-tracing-0041": {
+      "renderedPixelBounds": [
+        515,
+        1222,
+        1548,
+        1929
+      ],
+      "widthToHeight": 1.46045197740113,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 48
+    },
+    "portrait-reopened-sqlite-pt-tracing-0069": {
+      "renderedPixelBounds": [
+        515,
+        1208,
+        1548,
+        1943
+      ],
+      "widthToHeight": 1.4048913043478262,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 153
+    },
+    "portrait-reopened-sqlite-ar-tracing-0065": {
+      "renderedPixelBounds": [
+        519,
+        1332,
+        1543,
+        1822
+      ],
+      "widthToHeight": 2.0875763747454177,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 77
+    },
+    "portrait-reopened-sqlite-en-tracing-0120": {
+      "renderedPixelBounds": [
+        512,
+        1230,
+        1551,
+        1921
+      ],
+      "widthToHeight": 1.5028901734104045,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 196
+    },
+    "landscape-right-en-tracing-0015": {
+      "renderedPixelBounds": [
+        1056,
+        831,
+        1695,
+        1632
+      ],
+      "widthToHeight": 0.7980049875311721,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 153
+    },
+    "landscape-right-fr-tracing-0057": {
+      "renderedPixelBounds": [
+        858,
+        833,
+        1893,
+        1630
+      ],
+      "widthToHeight": 1.2982456140350878,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 48
+    },
+    "landscape-right-es-tracing-0041": {
+      "renderedPixelBounds": [
+        859,
+        878,
+        1892,
+        1585
+      ],
+      "widthToHeight": 1.46045197740113,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 48
+    },
+    "landscape-right-pt-tracing-0069": {
+      "renderedPixelBounds": [
+        859,
+        864,
+        1892,
+        1599
+      ],
+      "widthToHeight": 1.4048913043478262,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 153
+    },
+    "landscape-right-ar-tracing-0065": {
+      "renderedPixelBounds": [
+        863,
+        988,
+        1887,
+        1478
+      ],
+      "widthToHeight": 2.0875763747454177,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 77
+    },
+    "landscape-right-en-tracing-0120": {
+      "renderedPixelBounds": [
+        856,
+        886,
+        1895,
+        1577
+      ],
+      "widthToHeight": 1.5028901734104045,
+      "canvasLogicalSize": [
+        588.0,
+        588.0
+      ],
+      "stroke": 0,
+      "at": 196
+    }
+  },
+  "preservedCheckpoints": {
+    "en-tracing-0015": {
+      "stroke": 0,
+      "at": 153,
+      "traceRevision": 2
+    },
+    "fr-tracing-0057": {
+      "stroke": 0,
+      "at": 48,
+      "traceRevision": 2
+    },
+    "es-tracing-0041": {
+      "stroke": 0,
+      "at": 48,
+      "traceRevision": 2
+    },
+    "pt-tracing-0069": {
+      "stroke": 0,
+      "at": 153,
+      "traceRevision": 2
+    },
+    "ar-tracing-0065": {
+      "stroke": 0,
+      "at": 77,
+      "traceRevision": 3
+    },
+    "en-tracing-0120": {
+      "stroke": 0,
+      "at": 196,
+      "traceRevision": 2
+    }
+  },
+  "completedInLandscape": [
+    "en-tracing-0015",
+    "fr-tracing-0057",
+    "es-tracing-0041",
+    "pt-tracing-0069",
+    "ar-tracing-0065",
+    "en-tracing-0120"
+  ],
+  "actualHardwareQuarterTurns": 4,
+  "allFiveLanguages": true,
+  "letterProportionMaxRelativeDrift": 0.02,
+  "sqliteClosedAndReopened": true,
+  "normalPreferencesChanged": false,
+  "audio": "SilentAudio; sound off before mounting; isolated temporary SQLite database",
+  "storeActionsPerformed": false
+}

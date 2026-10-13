@@ -11,6 +11,21 @@ publisher=html.escape(site_config['publisher'])
 titles=l('Pikolumi: Color & Learn','Pikolumi: Colorie & Apprends','Pikolumi: Colorea y Aprende','Pikolumi: Colorir e Aprender','Pikolumi: لوّن وتعلّم')
 subtitles=l('ABC, Math, Puzzles & Drawing','ABC, Maths, Puzzles & Dessin','ABC, mates, puzles y dibujos','ABC, contas e quebra-cabeças','حروف وحساب وألغاز ورسم')
 play_titles=l('Pikolumi: Kids Learning Games','Pikolumi: Jeux éducatifs','Pikolumi: Juegos educativos','Pikolumi: Jogos educativos','Pikolumi: ألعاب تعليمية')
+keywords=l('coloring,alphabet,letters,numbers,counting,arithmetic,shapes,memory,logic,mazes,rhythm,offline',
+           'coloriage,alphabet,lettres,chiffres,compter,formes,mémoire,logique,labyrinthes,musique,hors ligne',
+           'colorear,alfabeto,letras,números,contar,formas,memoria,lógica,laberintos,música,sin conexión',
+           'colorir,alfabeto,letras,números,contagem,formas,memória,lógica,labirintos,música,offline',
+           'تلوين,أرقام,ذاكرة,متاهة,ألوان,أشكال,كلمات,قراءة,إيقاع')
+learning=l('Learn letters, words and handwriting in one language while the interface and questions use another. Each explorer can have a separate learning language.',
+           'Apprends les lettres, les mots et l’écriture dans une langue, avec l’interface et les questions dans une autre. Chaque explorateur peut choisir sa langue d’apprentissage.',
+           'Aprende letras, palabras y escritura en un idioma mientras la interfaz y las preguntas usan otro. Cada explorador puede tener su propio idioma de aprendizaje.',
+           'Aprenda letras, palavras e escrita em um idioma, com a interface e as perguntas em outro. Cada explorador pode ter seu próprio idioma de aprendizagem.',
+           'تعلّم الحروف والكلمات والكتابة بلغة، بينما تظهر الواجهة والأسئلة بلغة أخرى. يمكن لكل مستكشف اختيار لغة التعلّم الخاصة به.')
+promo=l('360 coloring pages and 2,400 offline activities. Explore letters and words in five languages, with questions in your preferred language.',
+        '360 coloriages et 2 400 activités hors ligne. Découvre lettres et mots dans cinq langues, avec les questions dans ta langue préférée.',
+        '360 dibujos para colorear y 2.400 actividades sin conexión. Aprende letras y palabras en cinco idiomas con preguntas en el idioma que prefieras.',
+        '360 desenhos para colorir e 2.400 atividades offline. Aprenda letras e palavras em cinco idiomas, com perguntas no idioma que você preferir.',
+        '٣٦٠ صفحة تلوين و٢٤٠٠ نشاط دون إنترنت. تعلّم الحروف والكلمات بخمس لغات، مع الأسئلة باللغة التي تفضّلها.')
 intro=l('Color, play and learn with Piko, your cheerful bird friend. Explore 16 sections and 2,400 offline activities, from first discoveries to creative challenges.','Colorie, joue et apprends avec Piko, ton joyeux ami oiseau. Explore 16 univers et 2 400 activités hors ligne, des premières découvertes aux défis créatifs.','Colorea, juega y aprende con Piko, tu alegre amigo pájaro. Explora 16 secciones y 2.400 actividades sin conexión, desde los primeros descubrimientos hasta los retos creativos.','Pinte, brinque e aprenda com Piko, seu alegre amigo passarinho. Explore 16 seções e 2.400 atividades sem internet, das primeiras descobertas aos desafios criativos.','لوّن والعب وتعلّم مع بيكو، صديقك الطائر المرح. استكشف ١٦ قسمًا و٢٤٠٠ نشاط دون إنترنت، من الاكتشافات الأولى إلى التحديات الإبداعية.')
 short=l('Offline coloring, drawing, ABC, math and puzzles. 16 sections, 2,400 activities.','Coloriage, dessin, lettres, maths et puzzles hors ligne. 2 400 activités.','Colorear, dibujar, letras, mates y puzles sin conexión. 2.400 actividades.','Colorir, letras, matemática e quebra-cabeças offline. 2.400 atividades.','تلوين ورسم وحروف وحساب وألغاز دون إنترنت. ١٦ قسمًا و٢٤٠٠ نشاط.')
 features=l('Fill pictures, paint with brushes, undo and redo, zoom in, or draw on a blank canvas. Keep each explorer’s artwork, favorites and progress separate on one device. All activities are available from the start. Stickers celebrate practice without locking content.','Remplis les dessins, utilise les pinceaux, annule, rétablis, zoome ou dessine sur une page blanche. Chaque explorateur garde ses dessins, favoris et progrès sur cet appareil. Toutes les activités sont disponibles dès le départ. Les autocollants encouragent la pratique sans bloquer le contenu.','Rellena dibujos, usa pinceles, deshaz y rehace, amplía o dibuja en un lienzo en blanco. Cada explorador guarda sus dibujos, favoritos y progreso por separado en este dispositivo. Todas las actividades están disponibles desde el principio. Las pegatinas celebran la práctica sin bloquear contenido.','Preencha desenhos, use pincéis, desfaça e refaça, amplie ou desenhe numa tela em branco. Cada explorador tem seus desenhos, favoritos e progresso separados neste aparelho. Todas as atividades estão disponíveis desde o início. Os adesivos celebram a prática sem bloquear conteúdo.','املأ الصور ولوّن بالفرشاة وتراجع وأعد وكبّر الصورة أو ارسم على لوحة فارغة. لكل مستكشف رسوماته ومفضلته وتقدمه على الجهاز نفسه. كل الأنشطة متاحة منذ البداية. تحتفي الملصقات بالتدريب دون قفل المحتوى.')
@@ -23,9 +38,10 @@ site=root/'site';site.mkdir(exist_ok=True);(site/'app-ads.txt').write_text('goog
 listings=root/'docs/release/listings';listings.mkdir(parents=True,exist_ok=True)
 for lang in LANGS:
  sections='\n'.join(f'- {name[lang]}: {count}' for _,count,_,_,name in SECTIONS)
- full='\n\n'.join([intro[lang],sections,features[lang],family[lang],monetization[lang],privacy[lang]])
+ full='\n\n'.join([intro[lang],sections,features[lang],family[lang],learning[lang],monetization[lang],privacy[lang]])
  assert len(titles[lang])<=30 and len(subtitles[lang])<=30 and len(play_titles[lang])<=30 and len(short[lang])<=80,(lang,len(titles[lang]),len(subtitles[lang]),len(play_titles[lang]),len(short[lang]))
- listing={'status':'draft; release gates not yet met','supportURL':site_config['baseURL']+'/'+lang+'.html','privacyURL':site_config['baseURL']+'/'+lang+'.html#privacy','appleTitle':titles[lang],'appleSubtitle':subtitles[lang],'playTitle':play_titles[lang],'playShortDescription':short[lang],'description':full}
+ assert len(keywords[lang].encode('utf-8'))<=100 and len(promo[lang])<=170 and len(full)<=4000,(lang,len(keywords[lang].encode('utf-8')),len(promo[lang]),len(full))
+ listing={'status':'draft; release gates not yet met','supportURL':site_config['baseURL']+'/'+lang+'.html','privacyURL':site_config['baseURL']+'/'+lang+'.html#privacy','appleTitle':titles[lang],'appleSubtitle':subtitles[lang],'appleKeywords':keywords[lang],'applePromotionalText':promo[lang],'playTitle':play_titles[lang],'playShortDescription':short[lang],'description':full}
  (listings/f'{lang}.json').write_text(json.dumps(listing,ensure_ascii=False,indent=2)+'\n')
  text=lambda key:html.escape(UI[key][lang])
  direction='rtl' if lang=='ar' else 'ltr'

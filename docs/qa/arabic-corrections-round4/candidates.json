@@ -1,0 +1,64 @@
+{
+  "source": {
+    "model": [
+      "silma-ai/silma-tts",
+      "226dd7a65cadf51f9a6dbe3953fc89003b3844d5"
+    ],
+    "modelSha256": "f43256d0b78b8803c638aed0875da5a4b372b4a784690a0156e5baff14f7336c",
+    "vocoder": [
+      "charactr/vocos-mel-24khz",
+      "0feb3fdd929bcd6649e0e7c5a688cf7dd012ef21"
+    ],
+    "vocoderSha256": "97ec976ad1fd67a33ab2682d29c0ac7df85234fae875aefcc5fb215681a91b2a",
+    "reference": [
+      {
+        "file": "word_elephant.mp3",
+        "sha256": "cadc1f968d633f3539d9020c08d695b5883dd73d0f1263b3b50b8231f4819e83",
+        "text": "فِيل",
+        "origin": "existing AI-synthesized project audio; not a human reference"
+      },
+      {
+        "file": "trace_word_8.mp3",
+        "sha256": "bdabea03c43f8f7a85b7fdcb547730ff43e3e87ebc28054c10ad0deb20403284",
+        "text": "كَتَبَ",
+        "origin": "existing AI-synthesized project audio; not a human reference"
+      },
+      {
+        "file": "syllable_36.mp3",
+        "sha256": "9133bee953b6686056419114a45e0c4122a56965a1ea35970da8208779362617",
+        "text": "صَ",
+        "origin": "existing AI-synthesized project audio; not a human reference"
+      },
+      {
+        "file": "syllable_38.mp3",
+        "sha256": "ce4f60b49216958db2dcf24e1b39049d2cc3f6a99e96deac00045b29812bcc06",
+        "text": "صُ",
+        "origin": "existing AI-synthesized project audio; not a human reference"
+      }
+    ],
+    "referenceText": "فِيل كَتَبَ صَ صُ",
+    "steps": 48,
+    "cfgStrength": 2,
+    "device": "mps",
+    "generatorSha256": "b095b7c9b0873a465e4596dfcefcfe3a32a72775dc2e23bb09149271955dc474",
+    "normalization": "explicit Arabic text; no phonemizer; preserves consonants and vowel marks"
+  },
+  "pronunciationApproval": false,
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "originalSha256": "c6748e3a9735ad25a4d9256c712fe009136c0156856cda87dcb29ba8514ad4a6",
+      "bundledOriginalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "note": "Si",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "صِ",
+      "targetSeconds": 1.0,
+      "extraction": "direct vowel-marked sound; trimmed outer silence",
+      "durationSeconds": 0.87,
+      "seed": 3046061660,
+      "sha256": "9fed7d95bf8c38c7ddb43f8176536eda60053e013f60bcb40959ec873cebf6a7",
+      "status": "replacement candidate; native pronunciation approval pending"
+    }
+  ]
+}

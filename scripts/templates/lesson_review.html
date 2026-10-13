@@ -1,0 +1,80 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pikolumi @@LOCALE_NAME@@ activity review</title>
+<style>
+@font-face{font-family:Nunito;src:url(../../../assets/fonts/Nunito.ttf)}
+@font-face{font-family:Arabic;src:url(../../../assets/fonts/NotoSansArabic.ttf)}
+*{box-sizing:border-box}body{margin:0;background:#fbf7ee;color:#344850;font:17px/1.6 Nunito,system-ui}.page{max-width:1300px;margin:30px auto;padding:0 20px 50px}h1{font-size:34px;line-height:1.2}header p{max-width:75ch}a{color:#006b75}button,input,select{font:inherit}button,input,select{min-height:48px;padding:10px 14px;border:1px solid #607b80;border-radius:8px;background:white;color:#344850}button{cursor:pointer}button:disabled{opacity:.55;cursor:default}:focus-visible{outline:3px solid #007e91;outline-offset:3px}.filters{display:flex;gap:16px;flex-wrap:wrap;margin:28px 0 16px}.filters label{display:flex;flex-direction:column;gap:5px}.filters .search{flex:1;min-width:230px}.pagination{display:flex;align-items:center;gap:16px;margin:16px 0 24px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:20px}.lesson{background:white;border:1px solid #c8d3d3;border-radius:12px;padding:20px;min-width:0}.lesson h2{margin:8px 0;font-size:24px}.lesson p{overflow-wrap:anywhere}.meta{color:#50676e;font-size:15px}.preview{height:180px;width:100%;object-fit:contain}.display{font-size:30px;font-weight:800}.rtl{font-family:Arabic,system-ui;direction:rtl}.math{direction:ltr;text-align:left}details{border-top:1px solid #c8d3d3;padding-top:12px;margin-top:16px}summary{cursor:pointer;min-height:48px;font-weight:800}pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:460px;overflow:auto;font:15px/1.7 system-ui}.sources{font-size:14px;overflow-wrap:anywhere}[hidden]{display:none!important}.empty{padding:24px;background:white;border:1px dashed #c8d3d3}
+@media(max-width:600px){h1{font-size:29px}.filters label{width:100%}.pagination{flex-wrap:wrap}.pagination p{flex-basis:100%;margin:0}.lesson{padding:16px}}
+</style><div class="page"><header>
+<h1>@@LOCALE_NAME@@ activity review</h1>
+<p>Check the instructions, questions, correct answers and recommended skill band. Use the configurations to review sorting groups, puzzle sizes, paths and patterns. The objective describes the shared curriculum; child-facing text uses the selected language.</p>
+<p><a href="index.html">All languages</a> · <a href="@@PRONUNCIATION_URL@@">Pronunciation selections</a> · <a href="@@LOCALE@@-activity-review.csv">Activity checklist</a> · <a href="@@LOCALE@@-interface-review.csv">Interface checklist</a> · <a href="../art-review/index.html">Artwork library</a></p>
+<p>Record your approval, reviewer name, date and any correction notes in the checklist. Opening this page or browsing a lesson does not approve it. Recordings never play here.</p>
+</header><div class="filters">
+<label class="search">Find an activity<input id="search" type="search" placeholder="Activity ID, title, word or question"></label>
+<label>Section<select id="section"><option value="all">All sections</option></select></label>
+<label>Skill band<select id="stage"><option value="all">All bands</option><option value="0">Ages 2 to 4</option><option value="1">Ages 5 to 6</option><option value="2">Ages 7 to 8</option><option value="3">Ages 9 to 11</option><option value="4">Advanced challenges</option></select></label>
+</div><p id="count" role="status" aria-live="polite"></p>
+<nav class="pagination" aria-label="Activity review pages"><button id="previous">Previous page</button><p id="page-count" aria-live="polite"></p><button id="next">Next page</button></nav>
+<main class="grid" id="lessons"></main><p class="empty" id="empty" hidden>No matching activities. Change the section, skill band or search.</p>
+</div><script id="lesson-data" type="application/json">@@DATA@@</script>
+<script>
+(() => {
+  'use strict';
+  const data = JSON.parse(document.getElementById('lesson-data').textContent);
+  const byId = id => document.getElementById(id);
+  const sections = new Map(data.sections.map(section => [section.id,section.name]));
+  const bands = ['Ages 2 to 4','Ages 5 to 6','Ages 7 to 8','Ages 9 to 11','Advanced challenges'];
+  const normalize = text => text.normalize('NFD').replace(/\p{M}/gu,'').toLowerCase();
+  const indexed = data.activities.map(activity => ({activity, search:normalize(JSON.stringify([activity.id,activity.title,activity.instructions,activity.config]))}));
+  let page=0, filtered=indexed;
+  const pageSize=24;
+  for (const section of data.sections) {
+    const option=document.createElement('option');option.value=section.id;option.textContent=section.name;byId('section').append(option);
+  }
+  function node(tag,text,className) {
+    const element=document.createElement(tag);if(text!==undefined)element.textContent=text;if(className)element.className=className;return element;
+  }
+  function localText(tag,text,className) {
+    const element=node(tag,text,className);element.lang=data.htmlLanguage;element.dir='auto';if(data.locale==='ar')element.classList.add('rtl');return element;
+  }
+  function strokeGuide(activity) {
+    const namespace='http://www.w3.org/2000/svg',svg=document.createElementNS(namespace,'svg');
+    svg.setAttribute('viewBox','0 0 220 220');svg.setAttribute('width','220');svg.setAttribute('height','220');svg.setAttribute('role','img');svg.setAttribute('aria-label',`Ordered strokes for ${activity.title}`);svg.style.maxWidth='100%';
+    const part=(tag,attributes)=>{const element=document.createElementNS(namespace,tag);for(const [key,value] of Object.entries(attributes))element.setAttribute(key,String(value));svg.append(element);return element;};
+    activity.config.strokes.forEach((stroke,index)=>{
+      part('polyline',{points:stroke.map(point=>point.join(',')).join(' '),fill:'none',stroke:'#74bec6','stroke-width':9,'stroke-linecap':'round','stroke-linejoin':'round'});
+      const [x,y]=stroke[0];part('circle',{cx:x,cy:y,r:6,fill:'#f3c65f'});
+      part('text',{x:x+9,y:y-5,fill:'#344850','font-size':12,'font-family':'Nunito'}).textContent=String(index+1);
+    });
+    return svg;
+  }
+  function render() {
+    const pages=Math.ceil(filtered.length/pageSize);page=Math.max(0,Math.min(page,Math.max(0,pages-1)));
+    const first=page*pageSize,last=Math.min(first+pageSize,filtered.length);
+    byId('count').textContent=`${filtered.length} of ${data.activities.length} activities`;
+    byId('page-count').textContent=filtered.length?`Page ${page+1} of ${pages}; activities ${first+1} to ${last}`:'0 pages';
+    byId('previous').disabled=page===0;byId('next').disabled=!pages||page>=pages-1;byId('empty').hidden=filtered.length!==0;
+    const fragment=document.createDocumentFragment();
+    for(const {activity:a} of filtered.slice(first,last)) {
+      const article=node('article',undefined,'lesson');article.dataset.activityId=a.id;
+      article.append(node('div',`${a.id} · ${sections.get(a.section)} · ${bands[a.stage]}`,'meta'),localText('h2',a.title));
+      if(a.preview){const image=node('img',undefined,'preview');image.src=a.preview;image.alt=a.title;image.loading='lazy';article.append(image);}
+      article.append(node('p',a.objective),localText('p',a.instructions));
+      if(a.config.question)article.append(localText('p',a.config.question));
+      const display=a.config.display||a.config.glyph||a.config.visualCue||a.config.word;
+      if(display){const shown=localText('p',String(display),'display');if(a.config.operation){shown.classList.remove('rtl');shown.classList.add('math');shown.dir='ltr';}article.append(shown);}
+      if(a.config.strokes){article.append(strokeGuide(a),node('p','Numbered dots mark where each ordered stroke begins.'));}
+      if(a.config.options){const choices=node('ul');for(const option of a.config.options){const item=localText('li',`${option.label??option.value}${String(option.value)===String(a.config.correct)?' (correct)':''}`);choices.append(item);}article.append(choices);}
+      const details=node('details'),summary=node('summary','Activity configuration and source'),configuration=node('pre',JSON.stringify(a.config,null,2));configuration.tabIndex=0;configuration.dir='ltr';configuration.style.fontFamily='Nunito,Arabic,system-ui';configuration.setAttribute('aria-label',`Configuration for ${a.id}`);details.append(summary,configuration,node('p',`Engine: ${a.engine}`),node('p',`Recordings: ${a.audio.join(', ')}`,'sources'),node('p',`Source SHA-256: ${a.sourceSha256}`,'sources'));article.append(details);fragment.append(article);
+    }
+    byId('lessons').replaceChildren(fragment);
+  }
+  function filter() {
+    const query=normalize(byId('search').value.trim()),section=byId('section').value,stage=byId('stage').value;
+    filtered=indexed.filter(({activity,search})=>(section==='all'||activity.section===section)&&(stage==='all'||String(activity.stage)===stage)&&search.includes(query));page=0;render();
+  }
+  byId('search').addEventListener('input',filter);byId('section').addEventListener('change',filter);byId('stage').addEventListener('change',filter);
+  byId('previous').addEventListener('click',()=>{page--;render();});byId('next').addEventListener('click',()=>{page++;render();});render();
+})();
+</script></html>

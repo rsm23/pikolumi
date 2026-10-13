@@ -1,0 +1,293 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "en-tracing-0001"
+    },
+    {
+      "screenshotName": "en-tracing-0002"
+    },
+    {
+      "screenshotName": "en-tracing-0009"
+    },
+    {
+      "screenshotName": "en-tracing-0080"
+    },
+    {
+      "screenshotName": "resumed-en-tracing-0080"
+    },
+    {
+      "screenshotName": "completed-en-tracing-0080"
+    },
+    {
+      "screenshotName": "fr-tracing-0027"
+    },
+    {
+      "screenshotName": "fr-tracing-0028"
+    },
+    {
+      "screenshotName": "fr-tracing-0029"
+    },
+    {
+      "screenshotName": "fr-tracing-0030"
+    },
+    {
+      "screenshotName": "fr-tracing-0057"
+    },
+    {
+      "screenshotName": "completed-fr-tracing-0057"
+    },
+    {
+      "screenshotName": "es-tracing-0015"
+    },
+    {
+      "screenshotName": "es-tracing-0041"
+    },
+    {
+      "screenshotName": "es-tracing-0057"
+    },
+    {
+      "screenshotName": "completed-es-tracing-0057"
+    },
+    {
+      "screenshotName": "pt-tracing-0027"
+    },
+    {
+      "screenshotName": "pt-tracing-0028"
+    },
+    {
+      "screenshotName": "pt-tracing-0029"
+    },
+    {
+      "screenshotName": "pt-tracing-0032"
+    },
+    {
+      "screenshotName": "pt-tracing-0034"
+    },
+    {
+      "screenshotName": "pt-tracing-0035"
+    },
+    {
+      "screenshotName": "pt-tracing-0065"
+    },
+    {
+      "screenshotName": "completed-pt-tracing-0065"
+    },
+    {
+      "screenshotName": "legacy-fr-ui-pt-learning"
+    },
+    {
+      "screenshotName": "landscape-fr-ui-pt-learning"
+    },
+    {
+      "screenshotName": "fr-ui-numeral-39"
+    }
+  ],
+  "captureSizes": {
+    "en-tracing-0001": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "en-tracing-0002": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "en-tracing-0009": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "en-tracing-0080": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "resumed-en-tracing-0080": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "completed-en-tracing-0080": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "fr-tracing-0027": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "fr-tracing-0028": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "fr-tracing-0029": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "fr-tracing-0030": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "fr-tracing-0057": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "completed-fr-tracing-0057": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "es-tracing-0015": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "es-tracing-0041": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "es-tracing-0057": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "completed-es-tracing-0057": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "pt-tracing-0027": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "pt-tracing-0028": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "pt-tracing-0029": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "pt-tracing-0032": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "pt-tracing-0034": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "pt-tracing-0035": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "pt-tracing-0065": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "completed-pt-tracing-0065": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "legacy-fr-ui-pt-learning": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    },
+    "landscape-fr-ui-pt-learning": {
+      "originalWidth": 2400,
+      "originalHeight": 1080,
+      "captureWidth": 1200,
+      "captureHeight": 540
+    },
+    "fr-ui-numeral-39": {
+      "originalWidth": 1080,
+      "originalHeight": 2400,
+      "captureWidth": 1080,
+      "captureHeight": 2400
+    }
+  },
+  "capturedLatinGuides": [
+    "en-tracing-0001",
+    "en-tracing-0002",
+    "en-tracing-0009",
+    "en-tracing-0080",
+    "fr-tracing-0027",
+    "fr-tracing-0028",
+    "fr-tracing-0029",
+    "fr-tracing-0030",
+    "fr-tracing-0057",
+    "es-tracing-0015",
+    "es-tracing-0041",
+    "es-tracing-0057",
+    "pt-tracing-0027",
+    "pt-tracing-0028",
+    "pt-tracing-0029",
+    "pt-tracing-0032",
+    "pt-tracing-0034",
+    "pt-tracing-0035",
+    "pt-tracing-0065"
+  ],
+  "completedLatinGuides": [
+    "en-tracing-0080",
+    "fr-tracing-0057",
+    "es-tracing-0057",
+    "pt-tracing-0065",
+    "numeral-39"
+  ],
+  "modelMatchesPracticeGeometry": true,
+  "newCheckpointRestoredExactly": true,
+  "legacyCheckpointMigrated": true,
+  "rotationPreservesCheckpoint": true,
+  "landscapePixels": [
+    2400.0,
+    1080.0
+  ],
+  "portraitPixels": [
+    1080.0,
+    2400.0
+  ],
+  "independentLanguagesTested": true,
+  "userPreferencesChanged": false,
+  "adSDKInitialized": false,
+  "audio": "SilentAudio; muted before mounting; in-memory preferences"
+}

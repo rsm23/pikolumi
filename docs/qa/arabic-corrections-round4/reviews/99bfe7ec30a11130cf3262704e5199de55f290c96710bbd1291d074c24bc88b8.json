@@ -1,0 +1,14 @@
+{
+  "locale": "ar",
+  "round": "2026-10-13-round4",
+  "exportedAt": "2026-10-12T22:19:57.377Z",
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "sha256": "9fed7d95bf8c38c7ddb43f8176536eda60053e013f60bcb40959ec873cebf6a7",
+      "decision": "wrong",
+      "notes": "the sound should be like \"Si\""
+    }
+  ]
+}

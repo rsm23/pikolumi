@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
@@ -10,10 +11,20 @@ import 'ad_budget.dart';
 import 'audio.dart';
 
 class AdsService extends ChangeNotifier with WidgetsBindingObserver {
+  static const _androidPrivacy = MethodChannel(
+    'com.seifelmoulouk.pikolumi/ads_privacy',
+  );
   final RecordStore store;
   final AudioService audio;
   AdBudget budget = AdBudget();
-  bool ready = false, presenting = false, _resumed = true, _disposed = false;
+  bool ready = false, presenting = false, _resumed = false, _disposed = false;
+  bool consentFormRequired = false, privacyOptionsRequired = false;
+  bool _privacyUpdateFailed = false, _sdkInitialized = false;
+  Future<void>? _initialization, _privacyFlow;
+  int _loadGeneration = 0;
+  bool get needsPrivacyAction =>
+      _canUseAds &&
+      (consentFormRequired || privacyOptionsRequired || _privacyUpdateFailed);
   int activityDepth = 0;
   void enterActivity() {
     activityDepth++;
@@ -59,73 +70,146 @@ class AdsService extends ChangeNotifier with WidgetsBindingObserver {
       : (ios
             ? 'ca-app-pub-3940256099942544/4411468910'
             : 'ca-app-pub-3940256099942544/1033173712');
-  Future<void> initialize() async {
+  bool get _canUseAds =>
+      !_disposed &&
+      supported &&
+      (!production || productionAllowed) &&
+      bannerId.isNotEmpty &&
+      interstitialId.isNotEmpty;
+  Future<void> initialize() => _initialization ??= _initialize();
+  Future<void> _initialize() async {
     final raw = await store.read('ads', 'budget');
     if (raw != null) {
       try {
         budget = AdBudget.fromJson(Map<String, dynamic>.from(jsonDecode(raw)));
       } catch (_) {}
     }
+    if (_disposed) return;
     WidgetsBinding.instance.addObserver(this);
-    _foreground.start();
+    _resumed =
+        WidgetsBinding.instance.lifecycleState == AppLifecycleState.resumed;
+    audio.active = _resumed;
+    if (_resumed) _foreground.start();
     _checkpoint = Timer.periodic(
       const Duration(seconds: 5),
       (_) => unawaited(checkpoint()),
     );
-    if (!supported ||
-        (production && !productionAllowed) ||
-        bannerId.isEmpty ||
-        interstitialId.isEmpty) {
+    if (!_canUseAds) return;
+    try {
+      await _applyChildProtections();
+      await _updateConsent();
+      await _reconcileEligibility();
+    } catch (_) {
+      _privacyUpdateFailed = true;
+      _suspendAds();
+    }
+  }
+
+  Future<void> _applyChildProtections() async {
+    await MobileAds.instance.updateRequestConfiguration(
+      RequestConfiguration(
+        ageRestrictedTreatment: AgeRestrictedTreatment.child,
+        maxAdContentRating: MaxAdContentRating.g,
+      ),
+    );
+    if (ios) {
+      await MobileAds.instance.setSameAppKeyEnabled(false);
+      await MobileAds.instance.setAppMuted(!audio.enabled);
+    }
+  }
+
+  Future<void> _updateConsent() async {
+    final updated = Completer<bool>();
+    ConsentInformation.instance.requestConsentInfoUpdate(
+      ConsentRequestParameters(tagForUnderAgeOfConsent: true),
+      () {
+        if (!updated.isCompleted) updated.complete(true);
+      },
+      (_) {
+        if (!updated.isCompleted) updated.complete(false);
+      },
+    );
+    _privacyUpdateFailed = !await updated.future.timeout(
+      const Duration(seconds: 8),
+      onTimeout: () => false,
+    );
+    await _readConsentState();
+  }
+
+  Future<void> _readConsentState() async {
+    consentFormRequired =
+        await ConsentInformation.instance.getConsentStatus() ==
+        ConsentStatus.required;
+    privacyOptionsRequired =
+        await ConsentInformation.instance
+            .getPrivacyOptionsRequirementStatus() ==
+        PrivacyOptionsRequirementStatus.required;
+  }
+
+  void _suspendAds() {
+    ready = false;
+    _loadGeneration++;
+    _interstitial?.dispose();
+    _interstitial = null;
+    if (!_disposed) notifyListeners();
+  }
+
+  Future<void> _reconcileEligibility() async {
+    if (!_canUseAds) return;
+    final allowed =
+        !production ||
+        (!consentFormRequired &&
+            await ConsentInformation.instance.canRequestAds());
+    if (!allowed) {
+      _suspendAds();
       return;
     }
-    try {
-      await MobileAds.instance.updateRequestConfiguration(
-        RequestConfiguration(
-          ageRestrictedTreatment: AgeRestrictedTreatment.child,
-          maxAdContentRating: MaxAdContentRating.g,
-        ),
-      );
-      await MobileAds.instance.setSameAppKeyEnabled(false);
-      final updated = Completer<void>();
-      ConsentInformation.instance.requestConsentInfoUpdate(
-        ConsentRequestParameters(tagForUnderAgeOfConsent: true),
-        () => updated.complete(),
-        (_) => updated.complete(),
-      );
-      await updated.future.timeout(
-        const Duration(seconds: 8),
-        onTimeout: () {},
-      );
-      ready = !production || await ConsentInformation.instance.canRequestAds();
-      if (ready) {
-        await MobileAds.instance.initialize();
-        await MobileAds.instance.setAppMuted(!audio.enabled);
-        _load();
-        notifyListeners();
+    if (!_sdkInitialized) {
+      await MobileAds.instance.initialize();
+      _sdkInitialized = true;
+    }
+    if (!ios) {
+      final disabled = await _androidPrivacy
+          .invokeMethod<bool>('disablePublisherFirstPartyId')
+          .timeout(const Duration(seconds: 5), onTimeout: () => false);
+      if (disabled != true) {
+        _privacyUpdateFailed = true;
+        _suspendAds();
+        return;
       }
-    } catch (_) {
-      ready = false;
+    }
+    await MobileAds.instance.setAppMuted(!audio.enabled);
+    if (!_canUseAds) return;
+    if (!ready) {
+      ready = true;
+      _load();
+      notifyListeners();
     }
   }
 
   void _load() {
     if (!ready || _disposed) return;
-    InterstitialAd.load(
-      adUnitId: interstitialId,
-      request: const AdRequest(nonPersonalizedAds: true),
-      adLoadCallback: InterstitialAdLoadCallback(
-        onAdLoaded: (ad) {
-          if (_disposed) {
-            ad.dispose();
-            return;
-          }
-          _interstitial?.dispose();
-          _interstitial = ad;
-        },
-        onAdFailedToLoad: (_) {
-          _interstitial = null;
-        },
-      ),
+    final generation = ++_loadGeneration;
+    unawaited(
+      InterstitialAd.load(
+        adUnitId: interstitialId,
+        request: const AdRequest(nonPersonalizedAds: true),
+        adLoadCallback: InterstitialAdLoadCallback(
+          onAdLoaded: (ad) {
+            if (_disposed || !ready || generation != _loadGeneration) {
+              ad.dispose();
+              return;
+            }
+            _interstitial?.dispose();
+            _interstitial = ad;
+          },
+          onAdFailedToLoad: (_) {
+            if (generation == _loadGeneration) _interstitial = null;
+          },
+        ),
+      ).catchError((Object _) {
+        if (generation == _loadGeneration) _interstitial = null;
+      }),
     );
   }
 
@@ -207,31 +291,54 @@ class AdsService extends ChangeNotifier with WidgetsBindingObserver {
     }
   }
 
-  Future<void> privacyOptions() async {
-    if (!supported || (production && !productionAllowed)) return;
+  Future<void> privacyOptions({bool Function()? canPresent}) async {
+    if (!_canUseAds) return;
+    if (_privacyFlow != null) return _privacyFlow;
+    final flow = _showPrivacyOptions(canPresent ?? () => true);
+    _privacyFlow = flow;
     try {
-      final status = await ConsentInformation.instance
-          .getPrivacyOptionsRequirementStatus();
-      if (status == PrivacyOptionsRequirementStatus.required) {
-        await ConsentForm.showPrivacyOptionsForm((_) {});
-      } else {
-        await ConsentForm.loadAndShowConsentFormIfRequired((_) {});
+      await flow;
+    } finally {
+      _privacyFlow = null;
+    }
+  }
+
+  Future<void> _showPrivacyOptions(bool Function() canPresent) async {
+    await initialize();
+    if (!_canUseAds) return;
+    _suspendAds();
+    try {
+      await _applyChildProtections();
+      await _updateConsent();
+      FormError? formError;
+      if (!_disposed && canPresent()) {
+        if (consentFormRequired) {
+          await ConsentForm.loadAndShowConsentFormIfRequired(
+            (error) => formError = error,
+          );
+        } else if (privacyOptionsRequired) {
+          await ConsentForm.showPrivacyOptionsForm(
+            (error) => formError = error,
+          );
+        }
       }
-      if (!ready && await ConsentInformation.instance.canRequestAds()) {
-        await MobileAds.instance.initialize();
-        await MobileAds.instance.setAppMuted(!audio.enabled);
-        ready = true;
-        _load();
-        notifyListeners();
+      if (formError != null) {
+        _privacyUpdateFailed = true;
+        _suspendAds();
+        return;
       }
+      await _readConsentState();
+      await _reconcileEligibility();
     } catch (_) {
-      /* Privacy failures never block offline activities. */
+      _privacyUpdateFailed = true;
+      _suspendAds();
     }
   }
 
   @override
   void dispose() {
     _disposed = true;
+    _loadGeneration++;
     _checkpoint?.cancel();
     WidgetsBinding.instance.removeObserver(this);
     _foreground.stop();
@@ -239,5 +346,3 @@ class AdsService extends ChangeNotifier with WidgetsBindingObserver {
     super.dispose();
   }
 }
-
-// Encoding stays separate so budget tests do not initialize any ad SDK.

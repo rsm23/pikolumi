@@ -1,0 +1,144 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "quiet-before-tap"
+    },
+    {
+      "screenshotName": "hover-no-effect"
+    },
+    {
+      "screenshotName": "pressed-no-effect"
+    },
+    {
+      "screenshotName": "tap-stretch"
+    },
+    {
+      "screenshotName": "tap-hop"
+    },
+    {
+      "screenshotName": "tap-crayon"
+    },
+    {
+      "screenshotName": "tap-flutter"
+    },
+    {
+      "screenshotName": "tap-nod"
+    },
+    {
+      "screenshotName": "tap-wink"
+    },
+    {
+      "screenshotName": "tap-bow"
+    },
+    {
+      "screenshotName": "tap-peek"
+    },
+    {
+      "screenshotName": "tap-wave"
+    },
+    {
+      "screenshotName": "tap-wiggle"
+    }
+  ],
+  "captureSizes": {
+    "quiet-before-tap": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "hover-no-effect": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "pressed-no-effect": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-stretch": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-hop": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-crayon": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-flutter": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-nod": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-wink": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-bow": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-peek": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-wave": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-wiggle": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    }
+  },
+  "gestures": [
+    "stretch",
+    "hop",
+    "crayon",
+    "flutter",
+    "nod",
+    "wink",
+    "bow",
+    "peek",
+    "wave",
+    "wiggle"
+  ],
+  "assistiveNavigationEnabled": true,
+  "disableAnimations": false,
+  "tenDeliberateAnimationsVerified": true,
+  "hoverPixelsUnchanged": true,
+  "pressedPixelsUnchanged": true,
+  "quietIdleRestored": true,
+  "userPreferencesChanged": false,
+  "adSDKInitialized": false,
+  "audio": "SilentAudio, muted before mounting; in-memory preferences"
+}

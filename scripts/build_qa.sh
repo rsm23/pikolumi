@@ -1,7 +1,9 @@
 #!/bin/sh
 set -eu
 cd "$(dirname "$0")/.."
+.venv/bin/python scripts/validate_audio.py
 .venv/bin/python scripts/validate_content.py
+.venv/bin/python -m unittest discover -s test -p '*_test.py'
 scripts/flutter.sh analyze
 scripts/flutter.sh test
 scripts/flutter.sh build apk --release --dart-define-from-file=config/ads.json
@@ -14,4 +16,5 @@ cp build/app/outputs/bundle/release/app-release.aab output/qa/Pikolumi-1.0.0-QA.
 cp build/ios/ipa/*.ipa output/qa/Pikolumi-1.0.0-QA.ipa
 ditto -c -k --sequesterRsrc --keepParent build/ios/iphonesimulator/Runner.app output/qa/Pikolumi-1.0.0-Simulator.zip
 .venv/bin/python scripts/artifact_manifest.py
+.venv/bin/python scripts/audit_qa_privacy.py
 printf '%s\n' 'QA builds use test ads. They are not authorized production submissions.'

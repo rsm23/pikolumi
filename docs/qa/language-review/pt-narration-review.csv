@@ -1,0 +1,115 @@
+locale,file,script,approved,reviewer,date,notes,sourceSha256
+pt,coloring.mp3,Escolha uma cor. Toque numa forma ou use o pincel.,,,,,70e1e31c54491c77566f4d820ca399c154194d29d5c11973f7305fa2b32251c8
+pt,drawing.mp3,Siga o modelo e depois crie seu desenho.,,,,,65b0393561862c00addeb7b7dc336dd53902baea53898976d7ca28d728a056f8
+pt,tracing.mp3,"Siga os pontos em ordem, começando pelo ponto iluminado.",,,,,c768ce907d241efb4ca7298508101b4388502818daa27d6a6cd6eff95c6d1f3a
+pt,letters.mp3,"Escute, olhe e escolha a letra certa.",,,,,459cd3767c396df94730744fc55dd9c0a307f5303516ac5548a54b122326b690
+pt,words.mp3,Veja a imagem e descubra a palavra.,,,,,3b508ddc543a32489d14918c776b184a5c37c338f3a2df9e7984767d5ad9e6a5
+pt,counting.mp3,Conte os objetos e escolha o número.,,,,,79979d648602cc357929ce2d8b5f6b30125b75aa844f08ef96dd3ec135ade745
+pt,math.mp3,Resolva a conta. Você pode pedir uma dica.,,,,,a15acbb99e4058694526ba052452ba6b227b3fe2588884e097fc274172784f17
+pt,shapes.mp3,Observe e escolha a forma ou a cor certa.,,,,,b2387dd8001166a30f61b5482de19273b0c0470cad9aa129ad730f2e3d508ec3
+pt,sorting.mp3,Mova cada imagem para seu grupo.,,,,,43bb74086d1635d3960de16075856af8c50043f78d3827133d45561eb1e0c8e1
+pt,memory.mp3,Vire duas cartas e encontre todos os pares.,,,,,5ccd30a135694b6a8b53b296cd54d29059a45e21bff096eec77133b2d1db22f6
+pt,jigsaw.mp3,Mova as peças para montar a imagem.,,,,,ae85723b9ce20e6d7cd7a0dbc930478d023544cda452f7e77fbbd3a91647d0c4
+pt,patterns.mp3,Descubra o que vem a seguir no padrão.,,,,,ac8d2958d7af50c8e999e595f995fe84c6e3895629ac9b83fa594496bf7f2baf
+pt,mazes.mp3,Leve Piko até a estrela sem atravessar as paredes.,,,,,73ad61669276fb5ad6363c70b8ec6d01d490db961f6b87b129ab585ece66e74e
+pt,nature.mp3,Explore a natureza e escolha a resposta certa.,,,,,b8eeca04ca5f0f755a43f8563c96bd38b6da4692eaac0162ed57167aac3bf268
+pt,everyday.mp3,"Observe, pense e descubra algo do dia a dia.",,,,,d3237daa22ce4d2400b77f9c1c4954d1dcf563bf2b7d84c19ad280ec8d8b9f42
+pt,music.mp3,Escute as notas e toque na mesma ordem.,,,,,00289015c80b62d08b6f1053ae4890a98ae0d69bc1b4363e12245a6f6e870cb6
+pt,word_cat.mp3,gato,,,,,7d2ce2556908ff1c19c39406ebadae0d5616f800a44b2cc85b9097fcdd061b5d
+pt,word_dog.mp3,cachorro,,,,,e9153a78399874d8259cba3f902df84cc2ca66e1c4b0838c2bd5baee4d0cb833
+pt,word_rabbit.mp3,coelho,,,,,d423bacc9314078a63eac463b3e3eb62ae5a4e468bb92ba3055191c8c7a9de12
+pt,word_fox.mp3,raposa,,,,,c89cee2d1a93be81386d4e3f046c03dd15f0046cc0494b7cf0b44b0256612f70
+pt,word_bear.mp3,urso,,,,,ec7a7fc4f0beb7b51c5a8a724c5b5ba2681acd93ffdcb566bfeaa6839e6c5a42
+pt,word_lion.mp3,leão,,,,,78995e1b65b524c9d7bc3a91ed70ec7e9c17c7c7a227b6472441b7ad89ebabea
+pt,word_elephant.mp3,elefante,,,,,c2bc82b5d65be9180f006e591812eec2e816ab4a01be17faeb9d03aa2644d593
+pt,word_giraffe.mp3,girafa,,,,,68a42d1bbcf3123f2c31660de6f5d786b378be78369d05a578d048a72d6ff32f
+pt,word_turtle.mp3,tartaruga,,,,,5f1ced95b02b3a951f65d902947c92f7c062c56e44e308a80b54e54fa0dede62
+pt,word_fish.mp3,peixe,,,,,9a4b2ff3569573affe20aac175ff2030188343a0e9c9f147f12590dc2d9563bd
+pt,word_bird.mp3,pássaro,,,,,06404e811e400fa0b47a9bd3ce5124cf7f9f71b1e832b012f0747e067d07b28f
+pt,word_owl.mp3,coruja,,,,,c4580ac116cf4dbfd5f183811b1191d9e7d46a1b7bbc23670dd8bf586f7607df
+pt,word_penguin.mp3,pinguim,,,,,90d34d6247b514613ca45bb0fcbe10de4760a8c35a5512b692e4b0d7c6d54eb5
+pt,word_butterfly.mp3,borboleta,,,,,de36786baa581003a880cf64145baddd07d1a07de33f3f6ef2363c7ccd50f10d
+pt,word_bee.mp3,abelha,,,,,fc04458ba9c62f75edcb15970c6529a81b57958793ddbc37655abc79ba593afe
+pt,word_snail.mp3,caracol,,,,,37fc2cb8c8cc4736e1ec99bc9207484c8ab2281d2bed4095a9add7f94371895c
+pt,word_octopus.mp3,polvo,,,,,47b7005ae44d57758d719655cd4bb1f5caccbbd83fed64af1ce2d49e6a19c991
+pt,word_whale.mp3,baleia,,,,,d00e9d382814238d30b0d3fd61eb1d7a5451fc5ef1e88419d88e9e911ceae159
+pt,word_frog.mp3,sapo,,,,,0033fbecb31f10a04b085f85097da1fec7ee8adf819e8203a032e71145f39c9c
+pt,word_hedgehog.mp3,ouriço,,,,,b74b533d5d7b6bb8db61599616c24535733c050db01f77320cd7f8b6b973ef91
+pt,word_apple.mp3,maçã,,,,,59da96ec2387f3db6427e26ae57153dee438007d9816a202bdb67d8d37c2f21b
+pt,word_pear.mp3,pera,,,,,604259d34d5b4d0d10e02f7e3662f611ab881332bbb4da263feded738876c597
+pt,word_banana.mp3,banana,,,,,a1627335cbcbf32ebdb5b23d6c1d29630386d8ce5f042affb9e06b69646945c5
+pt,word_strawberry.mp3,morango,,,,,b0f6e800670360eec1e3d19f3b12e65c35c43f2745704fc29d6056d4299653f9
+pt,word_carrot.mp3,cenoura,,,,,582fefcae4a8dcfefd4fa456ad8c874df3ed3f7a9fbe77f7ab70c96d3c652180
+pt,word_orange.mp3,laranja,,,,,3a513855b3ef6f21705b12d07233dd7d1dde91d47cb5f3a531c9006e2260bb67
+pt,word_watermelon.mp3,melancia,,,,,c5aa77ce14efef3e1087608b9e23861f82af8748afe51e35e45c5976d4167b06
+pt,word_bread.mp3,pão,,,,,2bba043cd0941280834d97a66da3155620228c253cf60598ec8fb2d89ecfc842
+pt,word_cake.mp3,bolo,,,,,7e031a00a5ecf06989db32a448cd442875764feef28bd3ad71cb44fc5b2e8376
+pt,word_cup.mp3,xícara,,,,,f651c3303824041f7d07e5971cb6cb2499fcf7b3aadb30acc900ad0380168a9d
+pt,word_car.mp3,carro,,,,,ce3b9ef927c9509fceebacc9df1df71574fbe6c5e89a1b5fc6cd85206cee90e2
+pt,word_bus.mp3,ônibus,,,,,cf4901ea036d8ebfff05d4ee882ef92471442639f6090775e30f45af02339661
+pt,word_train.mp3,trem,,,,,425e886c248435eb850c700115b8baed6e6994850f8a4d2f410fc96c584bd05b
+pt,word_boat.mp3,barco,,,,,b1cccb7bd891a82f50c0b178ead19f1347a15edf4d9cb6463657872c5991f594
+pt,word_rocket.mp3,foguete,,,,,459a2c7a09e76b3bb981187f48a6bc5264830147f0b361f02cd5c02463e41a61
+pt,word_airplane.mp3,avião,,,,,6f03436ce60975fa82dda3b7b3dde80c40544e647ca43b6dcfce632cb33a1ba4
+pt,word_bicycle.mp3,bicicleta,,,,,ce36d42fd42524a53c60a3b70a43c385bceed3f44beb747e7e44ee1059e191ee
+pt,word_tractor.mp3,trator,,,,,7ad5a8f4ee9da952f7c89775ea4a686d8cab03cbd3010d580650ea20a3c22548
+pt,word_tree.mp3,árvore,,,,,44801f75a26d67b942f6a9cad884e0dc60037decb85060f684578142b71b0204
+pt,word_flower.mp3,flor,,,,,398686f4028ed9a557534092b2a23d8f112984133be305189fe94f713f2925c5
+pt,word_sun.mp3,sol,,,,,dcf60b4ecec7c4e7225688c8e779f1d8947b3f41d225576833796457d908a53e
+pt,word_moon.mp3,lua,,,,,6f923f4000bcac9d7ed4d9261d1b594f15e6fe8f9f0eddbdbe6d3f7db4ccca21
+pt,word_star.mp3,estrela,,,,,e4752abbdb51009e401ca7cf3996e64cf12417460a86af52fccc4478e76d9422
+pt,word_cloud.mp3,nuvem,,,,,511cefc61a78016db79246dfb4f5101169371ab8feba43af88c1c7aafada990c
+pt,word_rainbow.mp3,arco-íris,,,,,9bc8dd97a5d69524502b004bc8efe5003dcbda0521f8a061c8b0092718ba5f59
+pt,word_leaf.mp3,folha,,,,,bf369ba2684f25029560feb7ddc4f6a9f7f9bc297d080eb8bdf7179f651a5e61
+pt,word_mountain.mp3,montanha,,,,,b7204d04fb02acbd1dc9f2e8c62cde12333cd78b57a55dc6817b87bc111d45db
+pt,word_mushroom.mp3,cogumelo,,,,,26ed1391cef3da9828a5d9b3b3a859312d207a63de8dc31fe61ee50c69b63a7d
+pt,word_house.mp3,casa,,,,,4018f3a1851925aa2631f1b0e475c9b1b22f52dd267c95506198cd435d888bd9
+pt,word_book.mp3,livro,,,,,93b782bcc98085d45efcb18cc91e2decc9317e3494c8a6dc3a9198cc0ab94b64
+pt,word_pencil.mp3,lápis,,,,,a57fffe9e42caaed2ccce42c6ef3428453149b6cb2c57e5f86c2b2b79ca2421b
+pt,word_ball.mp3,bola,,,,,e5cc9fc913dc0bfb09ce6e3c1533cf74c80b6755806e8923fac728f5af68153b
+pt,word_kite.mp3,pipa,,,,,39a4854954aa4638741453a9135c12934b67bcaf0a5ecba8d4684ff8589e4558
+pt,word_umbrella.mp3,guarda-chuva,,,,,6f2573e28d8b3fbe87161261f7975b70e90ca910442db34c0989eeb01f9ce5e6
+pt,word_clock.mp3,relógio,,,,,d6cc4fa08ed9c785a2583701660f9a5a410967eb80ef801274d870c258510d06
+pt,word_key.mp3,chave,,,,,689e0f4a43d319b52b618d806ad5aac9b5dac8124b214db0798d66f99a7422fe
+pt,word_guitar.mp3,violão,,,,,137356ae571fbe18369212dae6606e7dce7843c43c6cac6b03e73acdc9026b6f
+pt,word_drum.mp3,tambor,,,,,9f9d3a3b1ad56dffee7345b3ad7d8358bda4f5bb03c0f7cf3482080c02b8fd56
+pt,word_piano.mp3,piano,,,,,49e34da8f37c6e8712f7d746bfd7c4895e366fc0b0fd7f2be57709750acb5467
+pt,word_bell.mp3,sino,,,,,4fb39229fa9b05a74682cfc6649af8cc2e168d3a2d26cb2af56daa137db044b0
+pt,great.mp3,Muito bem!,,,,,0b7ea94b760bb533f9c4458afb8a76e4cfa43766dfb619a3ecf14478df807e40
+pt,again.mp3,Tente de novo,,,,,8dd75f5c184fa812a0129db1c14ce9ac5da8fc2caa4c8d14150830ca93dbdf0c
+pt,welcome.mp3,Um pouco de magia todos os dias.,,,,,12d09fd7d5f0c7fc361af8151d7b4fddd97627d08e33399db4cc4c24fd53c80a
+pt,letter_0.mp3,A letra A.,,,,,f3b7659ed31dc9b812496800d552a3c0a2fd2d20fc95427bc84192c565f39625
+pt,letter_1.mp3,A letra B.,,,,,3745313a2ebacb3a82a9b59f6fd3375c8874543ca9f46490ceb9ea981afeae98
+pt,letter_2.mp3,A letra C.,,,,,44d29ff73f8da7aeeeb9f6e7b10772765d1414bfbfd639c1fcfc8935a5928e6f
+pt,letter_3.mp3,A letra D.,,,,,51c5e3bf2a0f4f8c60fc0dc1ad82bca92dc3e18c7575ed20e534770b95fc2076
+pt,letter_4.mp3,A letra E.,,,,,26b5f7a6ec93b1ba95c441f47d13be4424105f3610ea6e9f147e3a25658ac9da
+pt,letter_5.mp3,A letra F.,,,,,6b5dcce29205b389d8ae2c12c6351576fb851bd9d19fc869eaef1640055efb8d
+pt,letter_6.mp3,A letra G.,,,,,5b5ef47afc238ddea2ffeeb0864ed21c9fe3f11727c5a4396016b35981fa44e0
+pt,letter_7.mp3,A letra H.,,,,,c0443c06cf4d1e46f2a3c06bc092eec1fa7ee0fefbc0fff1a7ba0a3dea0539a2
+pt,letter_8.mp3,A letra I.,,,,,874e3965cb49b5a22631acdc72026ab2789a7e47394393d6ba8d5d0ec04ef99d
+pt,letter_9.mp3,A letra J.,,,,,5e759c3263e6e418146fbec7cb29f874e30152b80960a70a2973aeb0d2f776bf
+pt,letter_10.mp3,A letra K.,,,,,be97a525eb5c5a3b4d59ec88a45c9a2293b49c290c26b2b15165f51c825333b3
+pt,letter_11.mp3,A letra L.,,,,,45eb4592f9e49b0bae2f79e51f854870b0253f70c3cb1564344c295c47cda6f0
+pt,letter_12.mp3,A letra M.,,,,,86e917c78bce6129137a9575671658c592c174b2806cb4ad15fe09fd9993a6c8
+pt,letter_13.mp3,A letra N.,,,,,45e95df7172862895f62a8f58e6405db0298d67ecab2dccb1f87a7ba52d0154f
+pt,letter_14.mp3,A letra O.,,,,,2568a4e2444ceac68536e66c1dd1bd9910f292c854568e8ac2e984c264541a08
+pt,letter_15.mp3,A letra P.,,,,,f0761c2e00813973d56e547db8a5ad359b88ccae49daba6bc5345f711b5a897c
+pt,letter_16.mp3,A letra Q.,,,,,093fab373c125c8adb81a2842034c3b6bd1d88c540d679439ca1308282ea5c61
+pt,letter_17.mp3,A letra R.,,,,,f7792854cf8e37784eb0db2dffc68648b91c91916aa7094482536864321eff76
+pt,letter_18.mp3,A letra S.,,,,,21bb25412df3b84a5d265caeb2543e756097d917a95af32c0246af38902ed7c6
+pt,letter_19.mp3,A letra T.,,,,,28604b90977fec766ee5eb907ea23af39515f69457e58ba749e8ff4fd7ae1dfb
+pt,letter_20.mp3,A letra U.,,,,,a5ca26895dd0caf33bc75f9ea2f60297b91b52fd97f93604d923dfa8d8437e0c
+pt,letter_21.mp3,A letra V.,,,,,f37f5facbade7e0e6acde670102d7cf9b7828c08ba3fa4f9653b48cf1d193d99
+pt,letter_22.mp3,A letra W.,,,,,3d53f0f19907f14ec7515ccc19db8d6ba256b00d0ded9993e604abb51e0f606c
+pt,letter_23.mp3,A letra X.,,,,,178b20158cd167032e641d40d074e84b6f9b18457b6b38dc3ac69bdf5df4b382
+pt,letter_24.mp3,A letra Y.,,,,,57db9f70f53ee1d9598cf7cd3c76116e59a6791bb777b8faf0d989a22fc58b69
+pt,letter_25.mp3,A letra Z.,,,,,e790312e2dd61626b5ce2d4b1d22cb5ac0149e28e80af3235a553f3606b28941
+pt,letter_26.mp3,A letra Á.,,,,,80f18c295811f9c3bb07eb315f07cc5910d03283d4ddaf718cadd3c0096c281a
+pt,letter_27.mp3,A letra Ã.,,,,,b42104ef183f288f7dce4252bc54ecb067d375359e636a6a27436959a004633e
+pt,letter_28.mp3,A letra Ç.,,,,,4614007e9960425bbdd546d9dd2cf7963bcdd51d9c03bf57134ca42ab1928444
+pt,letter_29.mp3,A letra É.,,,,,e2d98bd8aeb05371f029e069d08eb76e14b984c916be8ab7837a0d4b5ae9f192
+pt,letter_30.mp3,A letra Ê.,,,,,9325f0904663f7943234196b55499609714b5d8bd57cd4695355f7cf47d30a45
+pt,letter_31.mp3,A letra Í.,,,,,7a281b54b8dd200611c91950313d23f95248bfbf1709b4129395f52c5c9cde56
+pt,letter_32.mp3,A letra Ó.,,,,,4f5c9ab2d4fd815f12353913b663fb12bed21b8df25adc18c9d19388b25dd7fc
+pt,letter_33.mp3,A letra Õ.,,,,,784090ac6918159d92f310cc9e3966fda4718ce0e2c0f04a6372113b0a452cb0
+pt,letter_34.mp3,A letra Ú.,,,,,41ca6663b9520a97f1a2986e97025ca677d15b45d497f5d04597940b230cd579

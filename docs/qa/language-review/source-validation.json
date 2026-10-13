@@ -1,0 +1,42 @@
+{
+  "checkedAtUTC": "2026-10-13T00:39:06.777848+00:00",
+  "passed": true,
+  "scope": "Packet coverage, exact source SHA bindings and local references; no media playback",
+  "locales": [
+    {
+      "locale": "en",
+      "recordings": 105,
+      "activities": 2400,
+      "interfaceTexts": 204
+    },
+    {
+      "locale": "fr",
+      "recordings": 109,
+      "activities": 2400,
+      "interfaceTexts": 204
+    },
+    {
+      "locale": "es",
+      "recordings": 106,
+      "activities": 2400,
+      "interfaceTexts": 204
+    },
+    {
+      "locale": "pt",
+      "recordings": 114,
+      "activities": 2400,
+      "interfaceTexts": 204
+    },
+    {
+      "locale": "ar",
+      "recordings": 214,
+      "activities": 2400,
+      "interfaceTexts": 204
+    }
+  ],
+  "distinctAdvertisedActivities": 2400,
+  "speechRecordings": 648,
+  "offlineReferencesValidated": true,
+  "humanApproval": false,
+  "releaseGatesChanged": false
+}

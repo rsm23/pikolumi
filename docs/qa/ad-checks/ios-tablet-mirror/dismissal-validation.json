@@ -1,0 +1,27 @@
+{
+  "checkedAtUTC": "2026-10-12T00:28:03.420593+00:00",
+  "platform": "ios-tablet-mirror",
+  "result": "passed; test body and teardown confirmed from native log",
+  "checks": {
+    "bannerLoaded": true,
+    "interstitialShown": true,
+    "dismissalCallback": true,
+    "frequencyApplied": true,
+    "soundRestoredMuted": true,
+    "libraryBannerRestored": true,
+    "testAdsOnly": true,
+    "catalogVersion": 3,
+    "store": "isolated memory; user progress and ad budget untouched",
+    "screenshots": []
+  },
+  "inputBridge": {
+    "initialDeviceHubShadowFlag": 1,
+    "repair": "serve-sim 0.1.47 repair-input scoped to target simulator",
+    "flagDuringQA": 0,
+    "originalFlagRestored": 1
+  },
+  "normalEntryPointRestored": true,
+  "savedDataCleared": false,
+  "productionDismissalTimingVerified": false,
+  "physicalIOSAcceptanceVerified": false
+}

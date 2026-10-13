@@ -1,0 +1,28 @@
+{
+  "locale": "ar",
+  "round": "2026-10-13-round3",
+  "exportedAt": "2026-10-12T22:16:08.330Z",
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "sha256": "c6748e3a9735ad25a4d9256c712fe009136c0156856cda87dcb29ba8514ad4a6",
+      "decision": "wrong",
+      "notes": ""
+    },
+    {
+      "file": "syllable_46.mp3",
+      "text": "ظِ",
+      "sha256": "56f72456ceefbf6af8da1dc4edd5083889946849aa0a88cac2602093821d0678",
+      "decision": "correct",
+      "notes": ""
+    },
+    {
+      "file": "syllable_72.mp3",
+      "text": "هَ",
+      "sha256": "37bd4008c45185447166c33f9681bc51ac329115ef75a1da33a7c1ee0452a31e",
+      "decision": "correct",
+      "notes": ""
+    }
+  ]
+}

@@ -227,6 +227,185 @@ void main() {
     app.dispose();
   });
   testWidgets(
+    'Arabic joined words and vowel strokes complete with directed gestures',
+    (tester) async {
+      final app = AppController(
+        catalog: catalog,
+        store: MemoryStore(),
+        audio: SilentAudio(),
+      );
+      await app.initialize();
+      await app.setLanguage('ar');
+      await app.setSound(false);
+      for (final index in [29, 55, 56, 57, 65, 79]) {
+        final activity = catalog.bySection['tracing']![index];
+        var completions = 0;
+        final engine = EngineContext(
+          activity: activity,
+          app: app,
+          complete: () => completions++,
+          resume: null,
+          save: (_) {},
+        );
+        await tester.pumpWidget(
+          MaterialApp(
+            home: Scaffold(
+              body: TraceActivity(key: ValueKey(index), engine: engine),
+            ),
+          ),
+        );
+        await tester.pump();
+        final area = tester.getRect(find.byKey(const ValueKey('trace-canvas')));
+        Offset physical(List<dynamic> point) =>
+            area.topLeft +
+            Offset(
+              (point[0] as num).toDouble() / 220 * area.width,
+              (point[1] as num).toDouble() / 220 * area.height,
+            );
+        for (final raw in engine.config['strokes']) {
+          final points = raw as List;
+          final gesture = await tester.startGesture(physical(points.first));
+          for (var i = 0; i < points.length - 1; i++) {
+            final from = physical(points[i]), to = physical(points[i + 1]);
+            final count = math.max(1, ((to - from).distance / 3).ceil());
+            for (var j = 1; j <= count; j++) {
+              await gesture.moveTo(Offset.lerp(from, to, j / count)!);
+              await tester.pump(const Duration(milliseconds: 1));
+            }
+          }
+          await gesture.up();
+          await tester.pump();
+        }
+        expect(completions, 1, reason: activity.id);
+        expect(tester.takeException(), isNull);
+      }
+      await tester.pumpWidget(const SizedBox());
+      app.dispose();
+    },
+  );
+  testWidgets('muted Arabic syllable has a visual cue and RTL form display', (
+    tester,
+  ) async {
+    final app = AppController(
+      catalog: catalog,
+      store: MemoryStore(),
+      audio: SilentAudio(),
+    );
+    await app.initialize();
+    await app.setLanguage('ar');
+    await app.setSound(false);
+    for (final index in [28, 79]) {
+      final activity = catalog.bySection['letters']![index];
+      var completions = 0;
+      final engine = EngineContext(
+        activity: activity,
+        app: app,
+        complete: () => completions++,
+        resume: null,
+        save: (_) {},
+      );
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: QuizActivity(key: ValueKey(index), engine: engine),
+          ),
+        ),
+      );
+      await tester.pump();
+      final cfg = engine.config;
+      if (index == 28) {
+        expect(
+          Directionality.of(tester.element(find.text(cfg['display']))),
+          TextDirection.rtl,
+        );
+      } else {
+        expect(find.text(cfg['visualCue']), findsWidgets);
+      }
+      await tester.tap(find.byKey(ValueKey('option-${cfg['correct']}')));
+      await tester.pump();
+      expect(completions, 1);
+      expect(tester.takeException(), isNull);
+    }
+    await tester.pumpWidget(const SizedBox());
+    app.dispose();
+  });
+  testWidgets(
+    'coloring controls support edge taps and accessible contrast on small phones',
+    (tester) async {
+      tester.view.physicalSize = const Size(320, 640);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      final semantics = tester.ensureSemantics();
+      final app = AppController(
+        catalog: catalog,
+        store: MemoryStore(),
+        audio: SilentAudio(),
+      );
+      await app.initialize();
+      await app.setSound(false);
+      for (final locale in ['en', 'ar']) {
+        await app.setLanguage(locale);
+        await tester.pumpWidget(
+          MaterialApp(
+            theme: ThemeData(
+              fontFamily: locale == 'ar' ? 'NotoSansArabic' : 'Nunito',
+            ),
+            home: Directionality(
+              textDirection: locale == 'ar'
+                  ? TextDirection.rtl
+                  : TextDirection.ltr,
+              child: Scaffold(
+                body: CanvasActivity(
+                  key: ValueKey(locale),
+                  activity: catalog.bySection['coloring']!.first,
+                  app: app,
+                  onComplete: () {},
+                ),
+              ),
+            ),
+          ),
+        );
+        await tester.pumpAndSettle();
+        await expectLater(tester, meetsGuideline(androidTapTargetGuideline));
+        for (final (index, color) in CanvasActivityState.colors.indexed) {
+          final swatch = find.bySemanticsLabel(
+            '${app.t('choose')} ${index + 1}',
+          );
+          await tester.ensureVisible(swatch);
+          await tester.pumpAndSettle();
+          final bounds = tester.getRect(swatch);
+          await tester.tapAt(bounds.topLeft + const Offset(2, 2));
+          await tester.pump();
+          expect(
+            tester
+                .state<CanvasActivityState>(find.byType(CanvasActivity))
+                .selected,
+            index,
+          );
+          final icon = tester.widget<Icon>(
+            find.descendant(of: swatch, matching: find.byIcon(Icons.check)),
+          );
+          final foreground = icon.color!.computeLuminance() + .05;
+          final background = Color(color).computeLuminance() + .05;
+          expect(
+            math.max(foreground, background) / math.min(foreground, background),
+            greaterThanOrEqualTo(3),
+          );
+        }
+        await tester.ensureVisible(find.text(app.t('brush')));
+        await tester.pumpAndSettle();
+        await tester.tap(find.text(app.t('brush')));
+        await tester.pumpAndSettle();
+        await expectLater(tester, meetsGuideline(androidTapTargetGuideline));
+        expect(tester.takeException(), isNull);
+      }
+      await tester.pumpWidget(const SizedBox());
+      app.dispose();
+      semantics.dispose();
+    },
+  );
+  testWidgets(
     'drawing undo/redo, pinch zoom without stray marks, and rotation retain logical strokes',
     (tester) async {
       tester.view.physicalSize = const Size(900, 900);

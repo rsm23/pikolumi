@@ -1,0 +1,285 @@
+file,script,approved,reviewer,date,notes,sourceSha256
+coloring.mp3,اِخْتَرْ لَوْنًا. اِلْمِسْ شَكْلًا أَوِ ارْسُمْ بِالفُرْشَاة.,,,,,51473033dd5253c9839a8ad91a01ae9df36b91b76388a7fb30443b1c3b429246
+drawing.mp3,اِتَّبِعِ الدَّلِيلَ، ثُمَّ ابْتَكِرْ رَسْمَكَ الخَاصّ.,,,,,bf23b34c3803a9749ca16a479bce606e163051d96c99919035c14484b3703b4b
+tracing.mp3,اِتَّبِعِ النِّقَاطَ بِالتَّرْتِيبِ، وَابْدَأْ مِنَ النُّقْطَةِ المُضِيئَة.,,,,,796e4e4f62dee99de2cbe27103975d2adef84d3ee67fb54c6a3f5fcf7197de6c
+letters.mp3,اِسْتَمِعْ وَانْظُرْ، ثُمَّ اخْتَرِ الحَرْفَ الصَّحِيح.,,,,,e0df779d83e8ac8d22076b6c39564a7b0626d679212b008c489c5b9aebaf43f8
+words.mp3,اُنْظُرْ إِلَى الصُّورَةِ وَتَعَلَّمِ اسْمَهَا.,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 6a1fa836278bb0202d4205e89ade71df336115b6df9deb49698229c97f56f31d.",6a1fa836278bb0202d4205e89ade71df336115b6df9deb49698229c97f56f31d
+counting.mp3,عُدَّ الأَشْيَاءَ، ثُمَّ اخْتَرِ العَدَد.,,,,,03795c7f433280105a8659bdbb43cd2c787b7cdc1d935bf3651057590060c97d
+math.mp3,حُلَّ المَسْأَلَةَ. يُمْكِنُكَ طَلَبُ تَلْمِيح.,,,,,6a4a5cb34a35a9351400c8efdfca646ade70faf7eaf064c1513ae679729c144e
+shapes.mp3,اُنْظُرْ جَيِّدًا، وَاخْتَرِ الشَّكْلَ أَوِ اللَّوْنَ المُنَاسِب.,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 14603f7d8cb316d16bd840928da4e97d811623d835a272a3e51e5d9303cad881.",14603f7d8cb316d16bd840928da4e97d811623d835a272a3e51e5d9303cad881
+sorting.mp3,اُنْقُلْ كُلَّ صُورَةٍ إِلَى مَجْمُوعَتِهَا المُنَاسِبَة.,,,,,5524bff895c936b95dee462ed2beebfd9e0b58ab066ad5a73fc5073a3939bfcd
+memory.mp3,اِقْلِبْ بِطَاقَتَيْنِ، وَاعْثُرْ عَلَى جَمِيعِ الأَزْوَاجِ المُتَطَابِقَة.,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 8d61ce4d0b6f6d67bc753894c626dfa72ebc2d0f2798ed0d6a1a4c0b6c2a9a4b.",8d61ce4d0b6f6d67bc753894c626dfa72ebc2d0f2798ed0d6a1a4c0b6c2a9a4b
+jigsaw.mp3,حَرِّكِ القِطَعَ لِتَكْوِينِ الصُّورَة.,,,,,c359eeb738c59f56ddd93391842cfe32f1d5f496cc627e2276fdfdb13e516f66
+patterns.mp3,اِكْتَشِفِ العُنْصُرَ التَّالِيَ فِي النَّمَط.,,,,,765545c79beaa3ad4f108db9f31e4c832ea2f811a45bf90385582beafc7c30ae
+mazes.mp3,سَاعِدْ بِيكُو فِي الوُصُولِ إِلَى النَّجْمَةِ دُونَ عُبُورِ الجُدْرَان.,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 71e939e7a8d330ad852c9ceccf60cef65394f50e76dd7d874fa47e828f108ef9.",71e939e7a8d330ad852c9ceccf60cef65394f50e76dd7d874fa47e828f108ef9
+nature.mp3,اِسْتَكْشِفِ الطَّبِيعَةَ، وَاخْتَرِ الإِجَابَةَ الصَّحِيحَة.,,,,,8edaff9dab44f86972da77f285107cdae343749b2db100db8daca610aa083bfb
+everyday.mp3,اُنْظُرْ وَفَكِّرْ، وَاكْتَشِفْ مَهَارَةً مِنَ الحَيَاةِ اليَوْمِيَّة.,,,,,781bd49b0acfdf7f0ecbe02233951a948970981b2c0d85bbd46746914d051039
+music.mp3,اِسْتَمِعْ إِلَى النَّغَمَاتِ، ثُمَّ اعْزِفْهَا بِالتَّرْتِيبِ نَفْسِه.,,,,,08ef4bc7868bdc35e7d5d9b5476e6460d2aabc2d3d264478fe0aab9582d6540e
+word_cat.mp3,قِطَّة,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 a732bb7b8bd89481276fc5e40595ee16cdd0cb2470f213e585748646ff13b595.",a732bb7b8bd89481276fc5e40595ee16cdd0cb2470f213e585748646ff13b595
+word_dog.mp3,كَلْب,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 e2ac1f17574b0d962c8f55f095689e44921c7253c3896448d1a93d04648b7c21.",e2ac1f17574b0d962c8f55f095689e44921c7253c3896448d1a93d04648b7c21
+word_rabbit.mp3,أَرْنَب,,,,,62ec97ff923d83cf48284a0f8902221aefbe4544fc49033c8699282bceaf889e
+word_fox.mp3,ثَعْلَب,,,,,4975a0afcd063bab691a334298fcd8a1a1eb225a4704173b298b33003a2116a3
+word_bear.mp3,دُبّ,yes,user,2026-10-12,"Dob
+Replacement review 496b0f02dda5: correct; candidate SHA-256 58f81846aee6a00f48415a147b40dfcac551719c5263c67e75a3f013fefbdb96.",58f81846aee6a00f48415a147b40dfcac551719c5263c67e75a3f013fefbdb96
+word_lion.mp3,أَسَد,,,,,0cdfc722115181528e3a0efe69cf733bb7efd0557ab04804fda359924f2f211c
+word_elephant.mp3,فِيل,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 cadc1f968d633f3539d9020c08d695b5883dd73d0f1263b3b50b8231f4819e83.",cadc1f968d633f3539d9020c08d695b5883dd73d0f1263b3b50b8231f4819e83
+word_giraffe.mp3,زَرَافَة,,,,,eb731a9cc9e6b1f038a4c69f5f68676c0d5372d9d1756131f125b4d0bc77f22e
+word_turtle.mp3,سُلَحْفَاة,,,,,af1afd52bf34499fdd83567b3c6f358b9e5d9db51f11ed5d2a1e89f13b6c87ce
+word_fish.mp3,سَمَكَة,,,,,291773db7bc4c8608c3be159cd02bedfbcd23fc6f387c5da25cb8d2cf2a4b4ec
+word_bird.mp3,طَائِر,,,,,deeba9ffe2e342dcc0b05755532ee013118d675c7841d5e5b001437c147e0806
+word_owl.mp3,بُومَة,,,,,fe371008bb6d6924cd9c52252e5438ea49036dee9c34a627a5b47bf906d7acdc
+word_penguin.mp3,بِطْرِيق,,,,,a20643aedf6e677b59a7febc50c99f499c197b4893ea8f539426b663fd2265b5
+word_butterfly.mp3,فَرَاشَة,,,,,50836816446fb066087135c496b8ce6e4970f5b199b825e07bd93efdb1e5eae4
+word_bee.mp3,نَحْلَة,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 83c855b810a0ca47c1f3efd7bf6f58508c513c5666d5022cc3aaefa1cf2dd7c8.",83c855b810a0ca47c1f3efd7bf6f58508c513c5666d5022cc3aaefa1cf2dd7c8
+word_snail.mp3,حَلَزُون,,,,,87f42cb301197ef51aaaa8e2b0d4e150536788f5e3d81fe0933cb37fd7c2c6c5
+word_octopus.mp3,أُخْطُبُوط,,,,,552ac0c1cf9bbcb21128aacca88a4669ea3db7112182b68cc44079a60642ac14
+word_whale.mp3,حُوت,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 16a0207350c50a664c5482b9572ae0f4947f3ce1c089d20c959a789eacff282f.",16a0207350c50a664c5482b9572ae0f4947f3ce1c089d20c959a789eacff282f
+word_frog.mp3,ضِفْدَع,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 b5f79022ee30da7face7cf65c50ab356e42b0fdf837832102e4edc76221c936e.",b5f79022ee30da7face7cf65c50ab356e42b0fdf837832102e4edc76221c936e
+word_hedgehog.mp3,قُنْفُذ,,,,,245955bb6bad7405af9e6e2a80f61124e7c410a72f88ba14b207ea77c395be9e
+word_apple.mp3,تُفَّاحَة,,,,,516a92096615381e186bc18c55564fc843e486c03f9790cd53551d006b1c9ebc
+word_pear.mp3,كُمَّثْرَى,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 82bee1d25259c9507ba518025136739c5a7b2f52ce0aa525e822177180b5493b.",82bee1d25259c9507ba518025136739c5a7b2f52ce0aa525e822177180b5493b
+word_banana.mp3,مَوْزَة,,,,,ae89a09cf0ca4ede51585816bd2eb96aeb0a398e8001925563e885c401b69245
+word_strawberry.mp3,فَرَاوْلَة,,,,,f30a558724929c9861ce67610c11e9af32b564d23bdb7b9b7aab9c8604f61dd2
+word_carrot.mp3,جَزَرَة,,,,,a84e189a8cde7ba8121cafa8c91584dbd87cba5a6c1ce1b970f4bc4baff798e4
+word_orange.mp3,بُرْتُقَالَة,,,,,1e1fe080cb10d1e53c0c3c4f2bca426aef83e89d95ea833404175293f4c3e22e
+word_watermelon.mp3,بِطِّيخَة,,,,,df17b3fee44950216d4c7c46b609e2c11b713dcbdcd4532bc458d5dd8988c743
+word_bread.mp3,خُبْز,,,,,608c409baf3f8a089546a724501658e8f055d29573d0c778c63b0c9bf7b8cba8
+word_cake.mp3,كَعْكَة,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 53d4a9db677cca846472cd5d89b48be96f3fb5554c7d53d2c1206b410951088d.",53d4a9db677cca846472cd5d89b48be96f3fb5554c7d53d2c1206b410951088d
+word_cup.mp3,كُوب,,,,,355741f27e660646e6d1aad53626b8fa734e8a8d53453cefb7ab71f7b36f5a0a
+word_car.mp3,سَيَّارَة,,,,,9a4c7c55d8f5514c4306cbd20d54e1474abc4d4cf7649c9bb38f6892d6d60bb9
+word_bus.mp3,حَافِلَة,,,,,93d07a6a5884f9cff1d99ccdf949f6a46b3a1fe879c4bb2ecb8c5472b13f5686
+word_train.mp3,قِطَار,,,,,6a1bdb457880023fafe447f4bb446ce9a4edc0368b481a7711453aa9f734f78d
+word_boat.mp3,قَارِب,,,,,6e264ba1733636beacb0eef50f3f87f7d8de709448ebf306a712c6340b9214d8
+word_rocket.mp3,صَارُوخ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 9485e9a1d1560cf7426e515d92f0e21aee233289806a73abb2440464affd3d5b.",9485e9a1d1560cf7426e515d92f0e21aee233289806a73abb2440464affd3d5b
+word_airplane.mp3,طَائِرَة,,,,,8818682ac91eb90764c006e30a9f7356cd79725e6f0bc161ae777d54c40b09eb
+word_bicycle.mp3,دَرَّاجَة,,,,,8a258a331e90d0aeb55e18ef66bae6aa226a5981ca48c0ff02848fcbece7142d
+word_tractor.mp3,جَرَّار,,,,,ca59ed4350f768caac941cb1d10527f9d1bdf8655e6f79f7a8f73f0a7280a2af
+word_tree.mp3,شَجَرَة,,,,,09aa30645867eecf07ac893e7a2a9996a043158b65f58e15cbe30716e8d822b6
+word_flower.mp3,زَهْرَة,,,,,85e564dab9e955473bb438202c8111044b574e7fdb20bc7007a7269986d7a1bb
+word_sun.mp3,شَمْس,,,,,8722308afe2113cdd9b38b2e8124bde9dc1bce65556ef97f47169af1ded8f148
+word_moon.mp3,قَمَر,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 80355c5685ebad99571f9b43f5eaed39cb690933f5ffcd2c25c788364094561f.",80355c5685ebad99571f9b43f5eaed39cb690933f5ffcd2c25c788364094561f
+word_star.mp3,نَجْمَة,,,,,4692333c5943747fc6b420df06973f40e47c3d5e27ed2d19ba37b5e5caf5e180
+word_cloud.mp3,سَحَابَة,,,,,9bdfb8ae9f59be02ecb6fa8a3065dae51dfcd7aacc28bbdc1df260086a60b3c1
+word_rainbow.mp3,قَوْس قُزَح,,,,,eec0d1a34082f04200ce4715bf56c4364e308aa5276dac8ba8c0dab7b1e45fa0
+word_leaf.mp3,وَرَقَة,,,,,d9ba785fc206758f897c2e7a79c074a240422ce9e70200df1403ab6963ebb4ec
+word_mountain.mp3,جَبَل,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 b97bf0b11e56f3bbd6bc8b6dd593c057f860b7a3445eaa45cbded2be5f8ce709.",b97bf0b11e56f3bbd6bc8b6dd593c057f860b7a3445eaa45cbded2be5f8ce709
+word_mushroom.mp3,فِطْر,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 b4df175261ee625adc2f867cab35f8f2db92ba015bef1b733a605b73f28f9971.",b4df175261ee625adc2f867cab35f8f2db92ba015bef1b733a605b73f28f9971
+word_house.mp3,بَيْت,,,,,8edeac6d411bc5e221dbb40acca9c8780997e2968a78887a6616554fc321ac99
+word_book.mp3,كِتَاب,,,,,655361a4e4b7d08d4d0fea5010a97c90d7b37e5a1253d32b75ffaaca10ceaab5
+word_pencil.mp3,قَلَم,,,,,dd4e8595d407e7ea1ac69954f381ca3cee124d3b7de618057db6182521f090a4
+word_ball.mp3,كُرَة,,,,,286fb0b96b8e10be80909febca7044c002f539e0a3c23a2ee60714dd22180c61
+word_kite.mp3,طَائِرَة وَرَقِيَّة,,,,,e62f0223c1b33c86f9c6141e60a66edd9d2294430f8d475b0bbf6fd008ed993f
+word_umbrella.mp3,مِظَلَّة,,,,,14da94aeb1bd5af59cfaa77ed0a0ab790280d4d1fd4f68b6692805a30d994a3b
+word_clock.mp3,سَاعَة,,,,,835774eac3298e7e001783fe7065ed77467d7fe552fd861146fd8c54d47835a1
+word_key.mp3,مِفْتَاح,,,,,cf97873b8b8f7695038871071a321525e97ae5710dd84c637a39d8aa67554e14
+word_guitar.mp3,غِيتَار,,,,,224431f88450e94a0c3983e6eae3c150b5738b0c9286b747fb75352445ce3619
+word_drum.mp3,طَبْل,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 a3a84f510f86e68fb8f035ff6e8845725aa97a099953a4383bed4ce715348ef4.",a3a84f510f86e68fb8f035ff6e8845725aa97a099953a4383bed4ce715348ef4
+word_piano.mp3,بِيَانُو,,,,,f73c8acdf5ca607ef484050f942e19cbc84c343bf4717f648e6fe2e9220e2ec4
+word_bell.mp3,جَرَس,,,,,5c4feb5c83dc61af4ba6aae89c67556c7583ede8c2e5a3f12ecfa39d8c63efd3
+great.mp3,أَحْسَنْتَ!,,,,,2a150016df2e578f44b8e830b3c8747f6ca199a5172b717ef3b3b9ae31733eb5
+again.mp3,جَرِّبْ طَرِيقَةً أُخْرَى.,,,,,bd5768d17ce397db46d9c352b27102118ef1632ee8e469484f519f9a96cbee4d
+welcome.mp3,قَلِيلٌ مِنَ الدَّهْشَةِ، كُلَّ يَوْم.,,,,,806941f7756775da0e2677ccd0b11644ffd4286ec84de5b4a8393ac5e3544eba
+letter_0.mp3,أَلِف,,,,,6afcfa26091b9dd4b61cc370bfcfa7ce3b3def1727b73836d75202fc0d22afc5
+letter_1.mp3,بَاء,,,,,5903bc93b6b80420a8a0a0ec3aaeb4d455a545469a33a34a64b8c5ed3f833c05
+letter_2.mp3,تَاء,,,,,5be4df30c7163d7a533b12eacf768379d9e726d41cd22f85e5c45e7074f60d04
+letter_3.mp3,ثَاء,,,,,64f3ec943fc5a9f3e079ee4e1da4d6fe332fe39c746957adbad113cc1963af41
+letter_4.mp3,جِيم,,,,,e9452b145e36d71884117cd6f1e610e0b85f8a62b658c45e539ea9dba9527603
+letter_5.mp3,حَاء,,,,,2b55085f072b9ac6d4b728d94b5a0162d25b9e4f4a851794a98db669a7df6c6a
+letter_6.mp3,خَاء,,,,,f15215b6f2326c0b845d3a83465c4f1cf230906f68748f21273689f0a9c9c527
+letter_7.mp3,دَال,yes,user,2026-10-12,"Del
+Replacement review 496b0f02dda5: correct; candidate SHA-256 4b3be4b2237f9e8846b6b703b86c410b6aca0129181f67951c0656db1336e316.",4b3be4b2237f9e8846b6b703b86c410b6aca0129181f67951c0656db1336e316
+letter_8.mp3,ذَال,yes,user,2026-10-12,"Thel
+Replacement review 496b0f02dda5: correct; candidate SHA-256 ab17b3b54d8ec3aecc164b524bfcc5e5956a0fecdaa1809e7e87afe61a5e1370.",ab17b3b54d8ec3aecc164b524bfcc5e5956a0fecdaa1809e7e87afe61a5e1370
+letter_9.mp3,رَاء,,,,,b9f3d234264e8663a17ad940de688921d0830811c624ee4ead001c188332f3f1
+letter_10.mp3,زَاي,yes,user,2026-10-12,"Zaa
+Replacement review 496b0f02dda5: correct; candidate SHA-256 a59475ebc8eadd29fc47993627e30b864aa6c51543adf1e47d6d6d9fa93a6a4b.",a59475ebc8eadd29fc47993627e30b864aa6c51543adf1e47d6d6d9fa93a6a4b
+letter_11.mp3,سِين,,,,,b52c57bd014d233daefcbefe6cc82eccefd07c70a515c716a9933fc25b7f8aa3
+letter_12.mp3,شِين,,,,,ea012c7fc85ee2e535ce4136183a889e759263993aa2d9249ef32039eca3fbeb
+letter_13.mp3,صَاد,,,,,b5a73ab1c8cfcf562a456daaae869f3c8804bf70a42254d28113e81b720574c3
+letter_14.mp3,ضَاد,,,,,cd20daeb5b7cabbcd4621e54fbc0d3dd18c8b6ed5ab0bdd035f5f95d41d3ff91
+letter_15.mp3,طَاء,,,,,ce738b570535b4a289e9622eb3e21a5a9ddbcc8d1970569a806b9ed4be4224ac
+letter_16.mp3,ظَاء,,,,,5c7736a035c281ec4842dc453a45715e9bf98590a21e249d035a1acfe3109655
+letter_17.mp3,عَيْن,,,,,2cfd97755be2adc77b3dfdb251a5f1ffa751bd7f665ee26d4fdef2eb93331906
+letter_18.mp3,غَيْن,,,,,90e0a67a71479e9901bfd1a01fb9844889b4f434c22424599ed648935693fa68
+letter_19.mp3,فَاء,,,,,fac9097445ed5953c88e7fc43802ba8f060055d102c4275b8324868779e2710d
+letter_20.mp3,قَاف,,,,,dbb93654d65bf73bdf6201efc07e12b96a6eb8335c0c7ed92b3188d91aa58e4c
+letter_21.mp3,كَاف,,,,,4c7c33aca6b8e4c3f14e7750fb5c1a966d73011e845cfb5b78ae851220fef909
+letter_22.mp3,لَام,,,,,c64785e54bd364958146c46d2891be4c2a2ab994987ae21abdc5c198ba29a1bf
+letter_23.mp3,مِيم,,,,,f359d11ce4d2fcf91ae60b2e1943a4da6df46759c065029cf040233b2c6bc978
+letter_24.mp3,نُون,,,,,f02e0102409fd9da9544a3ca6e35f4562e506d96168c4ff56dee60b6f482536d
+letter_25.mp3,هَاء,,,,,de4b41494e474e50fd1f6bf23f88726692d47db28d39a7752233913952e21a14
+letter_26.mp3,وَاو,,,,,026baaef90b98dc3e5d698a31d93e66d908bc2a73ac3a25351ce95cff9f768df
+letter_27.mp3,يَاء,,,,,e4ba27686ee0c716e79934ddec9eca423f5210298a49fdc80a9ee2b930c839ff
+syllable_0.mp3,بَ,,,,,1ab058f07bc714baf582fe3c04887a358111d487c268cceca5fc06513921d0fe
+syllable_1.mp3,بِ,,,,,e3fd50c4c1e8dd709bd3ac1b511bb408a5df435b9ad4c76a1a65114156e28623
+syllable_2.mp3,بُ,,,,,593cdb5ab3df242b91704f0b37ef3022a6e27f0494c7998de45731dbe28c5e23
+syllable_3.mp3,تَ,,,,,39c36b686040b88d1f617761ef1b9320b645b9407f142305812b4a6beba31f62
+syllable_4.mp3,تِ,,,,,b939abc6edbbd925856a0371aec75dbce285099c3ad2087a352e850cb6ab3536
+syllable_5.mp3,تُ,,,,,ba1e972694b27f8efbf31842ed9b747aa91264c02d5a17669e2d6860330a6784
+syllable_6.mp3,ثَ,yes,user,2026-10-12,"Thaa
+Replacement review 496b0f02dda5: correct; candidate SHA-256 8fb53d5eaa600b2317ff50e7f3d2b40dae54d461ed3391f6d9a7f3f0699aeb1f.",8fb53d5eaa600b2317ff50e7f3d2b40dae54d461ed3391f6d9a7f3f0699aeb1f
+syllable_7.mp3,ثِ,,,,,aa4ed79f7ed32ee368b85e25209919297daebb460841374c9d891230706ff255
+syllable_8.mp3,ثُ,,,,,db1f6619523f795256ec37439bb54cdd8c7ad1742992c35a7ba7b3c4939b2664
+syllable_9.mp3,جَ,,,,,21f28cec62d0efccd85cfa47be4599a45c18119f1b3a6a8a78ddaca410ea7baa
+syllable_10.mp3,جِ,yes,user,2026-10-12,"Ji
+Replacement review 496b0f02dda5: wrong; candidate SHA-256 0e0f9edc4cd86c3e2e49eb995162c263b925b8f95bb0b546d7f61b2867a8b96a.
+Replacement review d1bbed5e65bc: correct; candidate SHA-256 84ab2dbcc640f6f03385d7c5d08cbf11ce5e622fe06dcd753929308786ab55c5.",84ab2dbcc640f6f03385d7c5d08cbf11ce5e622fe06dcd753929308786ab55c5
+syllable_11.mp3,جُ,,,,,be86cf505eb6c61f3f276a1c312cb6d932c8469f795c8fa14b0a33272ef5f732
+syllable_12.mp3,حَ,yes,user,2026-10-12,"ha
+Replacement review 496b0f02dda5: correct; candidate SHA-256 55f6d338b6ea318ba445cff30c365272222133ab80ee79bce4411737b6d1a99b.",55f6d338b6ea318ba445cff30c365272222133ab80ee79bce4411737b6d1a99b
+syllable_13.mp3,حِ,yes,user,2026-10-12,"hi
+Replacement review 496b0f02dda5: wrong; candidate SHA-256 ae78dd43083bb297dd3e2401bc436a7981e1041d5409763468a2f0aa5f00aee1. Hi
+Replacement review d1bbed5e65bc: correct; candidate SHA-256 f01c5a0396123f5762cdc73f1e12de5139dae1ca914cd717415404256fe08dd9.",f01c5a0396123f5762cdc73f1e12de5139dae1ca914cd717415404256fe08dd9
+syllable_14.mp3,حُ,yes,user,2026-10-12,"ho
+Replacement review 496b0f02dda5: correct; candidate SHA-256 4a73fb84ec05bf8fd74e47d5453469ab6d18e253f4487011c836385d78109441.",4a73fb84ec05bf8fd74e47d5453469ab6d18e253f4487011c836385d78109441
+syllable_15.mp3,خَ,,,,,9a3f30eeb33b4e6f3daa3861ac0a657f69e033dc33ffcca8e0f60d884709eccf
+syllable_16.mp3,خِ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: wrong; candidate SHA-256 6de06bab4a7259f791d13148cb319ae6a246ee70d1fef2dc9c42f9d9333b086f. Khi
+Replacement review d1bbed5e65bc: correct; candidate SHA-256 cc9111b42cce5ac71008dc4137c905fb3b918fc246174efe83be6bbfeb2f7b75.",cc9111b42cce5ac71008dc4137c905fb3b918fc246174efe83be6bbfeb2f7b75
+syllable_17.mp3,خُ,,,,,0e56ea20ee7b85a70f92286904a01182636bbc008d3e16e3d0e80b37db9e01a7
+syllable_18.mp3,دَ,,,,,8c8860353ac93de8693b0a72d49b671a2349ee8e9320e37625f7e806b273aa8f
+syllable_19.mp3,دِ,,,,,272427883bb5052fc4c10cb2383148547728f741f4fe03f30e953d2c950603c5
+syllable_20.mp3,دُ,,,,,a5250fc9a8dd9e8f5b59b2a8fa8ab057d2bc49d6a44d6789ff69660658b6059f
+syllable_21.mp3,ذَ,yes,user,2026-10-12,"tha
+Replacement review 496b0f02dda5: correct; candidate SHA-256 8d24f040a0d4cfd373337d039b6487ca90685a9c39f675be518a506aef62d148.",8d24f040a0d4cfd373337d039b6487ca90685a9c39f675be518a506aef62d148
+syllable_22.mp3,ذِ,,,,,9b6dc7c72a44408cb082a98c421ac6747a7c5ef4455ffa1b5bf3108345b8d438
+syllable_23.mp3,ذُ,,,,,f59b164cca0c23d84ad3263a10973f46eab4edbbe01205c1f9ef56341827d7ff
+syllable_24.mp3,رَ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: wrong; candidate SHA-256 ddca2ac71f56a45b6c3ba5e16aede8ab27df24e5157adad92aa1edc3f79748ff. Ra
+Replacement review d1bbed5e65bc: correct; candidate SHA-256 ca627096ff9a879ed62db87c9d64d6d1909fab21b567151006b770aa2f61be30.",ca627096ff9a879ed62db87c9d64d6d1909fab21b567151006b770aa2f61be30
+syllable_25.mp3,رِ,,,,,0a5849b0c13c48268ea65ddc9e5ecb0520ef567c659300a2db5096d798d3d48e
+syllable_26.mp3,رُ,,,,,7083c91cd63ccd690d4527b8a5a16f83ef01a666917f4be768f2370a5ec6c2db
+syllable_27.mp3,زَ,,,,,5275bd047eaa1b42453c881fa1e54d703f115d094c77345cd72ff9c2140f52eb
+syllable_28.mp3,زِ,,,,,e53ee2d4479d853f927a514b8146e6cd28ce79b7bc0a3c7f7196ad6561af2b5b
+syllable_29.mp3,زُ,,,,,87aba061f09e12e785adf4fa123089b8f4c416fa87f7b560d706d21040c6cba0
+syllable_30.mp3,سَ,,,,,bb49b10d9be09c58b81a6534de6171cc450a4b471ff84d74f9db0a522b3f0382
+syllable_31.mp3,سِ,,,,,19e784e5052eadb3876fc5158ff988707b13e1e58e8e24df3c91205800558056
+syllable_32.mp3,سُ,,,,,ddf592bcf8d2ab4b3a3040b9ea40eac7613bfddddf048594958682df35bd3bd4
+syllable_33.mp3,شَ,,,,,6e7e71263f6651a54df0f8635b31b63dcfeb7e72657a640434e107769da414f6
+syllable_34.mp3,شِ,,,,,71c4addf7b8f7c6b7c10fde09a05e8c94bb58dd4b1f2cadaa3eef8aef83115ac
+syllable_35.mp3,شُ,,,,,0a03618661ab12085778650f1338eb3eb6f94df959f15c2d575be99171b0d2a9
+syllable_36.mp3,صَ,,,,,9133bee953b6686056419114a45e0c4122a56965a1ea35970da8208779362617
+syllable_37.mp3,صِ,no,user,2026-10-12,"si
+Replacement review 496b0f02dda5: wrong; candidate SHA-256 778d51c48ba4f0778bfe8cb37a4c61823c326df3a5b92465ba1c94d2a9d296b2. Si
+Replacement review d1bbed5e65bc: wrong; candidate SHA-256 45f22c01ebe6ed08421664cd919c36eb8631e4c1b70fa5827359ae2283865542. Si
+Replacement review 895845e856b9: wrong; candidate SHA-256 c6748e3a9735ad25a4d9256c712fe009136c0156856cda87dcb29ba8514ad4a6.
+Replacement review 99bfe7ec30a1: wrong; candidate SHA-256 9fed7d95bf8c38c7ddb43f8176536eda60053e013f60bcb40959ec873cebf6a7. the sound should be like ""Si""",5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612
+syllable_38.mp3,صُ,yes,user,2026-10-12,"so
+Replacement review 496b0f02dda5: correct; candidate SHA-256 ce4f60b49216958db2dcf24e1b39049d2cc3f6a99e96deac00045b29812bcc06.",ce4f60b49216958db2dcf24e1b39049d2cc3f6a99e96deac00045b29812bcc06
+syllable_39.mp3,ضَ,,,,,8b74196195c0a63ee6740851161d87010a0b18ee79dbe31deea72b4f6397dc5e
+syllable_40.mp3,ضِ,,,,,387f43292cbd9e6e5fb7c2a318d59cabacefc9c92a96777195bbc7d25ccc94ae
+syllable_41.mp3,ضُ,,,,,a8b360aa8f2d4950b88aee2b1461059250f5de6c6dce8dbd0888e7322b18f0b9
+syllable_42.mp3,طَ,,,,,6ad78734d6296f52fdd5ac1ca6d587584597e14dcf0ca85cf37840a24f26a536
+syllable_43.mp3,طِ,yes,user,2026-10-12,"Ti
+Replacement review 496b0f02dda5: wrong; candidate SHA-256 30a728c46ad3ba9337e982dc5fc5ca6e99cc196ece3534b35215c3c31ed74c37. Ti
+Replacement review d1bbed5e65bc: correct; candidate SHA-256 269adcbce4b3e09f0975052645b5b0568dbac9943e9e51fda74fa4d5f55137dc.",269adcbce4b3e09f0975052645b5b0568dbac9943e9e51fda74fa4d5f55137dc
+syllable_44.mp3,طُ,,,,,eb3c66b97e3071883c3a320ce96e3187cab37e0bf902a1dea6daa3fafe4ec464
+syllable_45.mp3,ظَ,yes,user,2026-10-12,"Tha
+Replacement review 496b0f02dda5: correct; candidate SHA-256 34f8c0b97b298f478fa59047e1f002b6df03aa4fd8b3c4124895819ec69bf35d.",34f8c0b97b298f478fa59047e1f002b6df03aa4fd8b3c4124895819ec69bf35d
+syllable_46.mp3,ظِ,yes,user,2026-10-12,"Thi
+Replacement review 496b0f02dda5: wrong; candidate SHA-256 762043b7144c6d7d511c39fc26dfe83f332c732be6249c56de6f6ec886dc8fa5.
+Replacement review d1bbed5e65bc: wrong; candidate SHA-256 1cec05542365597f45df5f7b1cd0d1d581f2ef40dbf083bf21b95f9bc3f62038. Thi
+Replacement review 895845e856b9: correct; candidate SHA-256 56f72456ceefbf6af8da1dc4edd5083889946849aa0a88cac2602093821d0678.",56f72456ceefbf6af8da1dc4edd5083889946849aa0a88cac2602093821d0678
+syllable_47.mp3,ظُ,yes,user,2026-10-12,"Tho
+Replacement review 496b0f02dda5: correct; candidate SHA-256 50dcd3fab4820c40d85603d9b33e3dc8f50a7dfcb7f8afcbf3d45096ea6604d3.",50dcd3fab4820c40d85603d9b33e3dc8f50a7dfcb7f8afcbf3d45096ea6604d3
+syllable_48.mp3,عَ,,,,,e88974482bfe87a83e684557a3828ae13713911ec39aee0ce573da059b35785c
+syllable_49.mp3,عِ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: wrong; candidate SHA-256 42c22d7c06777972aeeac49a548ef587aeaee89ac5432311c0cb6aaf4994a06a.
+Replacement review d1bbed5e65bc: correct; candidate SHA-256 acca46f381421afde2a59406b692f1f95fedaf225d8e314c011a3c4cb7f06988.",acca46f381421afde2a59406b692f1f95fedaf225d8e314c011a3c4cb7f06988
+syllable_50.mp3,عُ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 8dce2be15820ad5cee9d8aecab0698a84fb7ffe82df56c6f22e7731bc9d0a7ae.",8dce2be15820ad5cee9d8aecab0698a84fb7ffe82df56c6f22e7731bc9d0a7ae
+syllable_51.mp3,غَ,,,,,1eda4f5b7ee6efade80fcc815166ab21887b966e8d11330843e1fd2ae4b2c395
+syllable_52.mp3,غِ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: wrong; candidate SHA-256 ad8daaf6927f255a7a5202b523a55a4960e8f0c94eaf900c5e7f2e8e9028f528.
+Replacement review d1bbed5e65bc: correct; candidate SHA-256 1eea630264eb3d07f4bec3d048c62bb226c320b170c165c479e229e73ad930d6.",1eea630264eb3d07f4bec3d048c62bb226c320b170c165c479e229e73ad930d6
+syllable_53.mp3,غُ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 2bd3c8802f886d4bf9d2aa9359c18f6299145a199d93cddad62720c4a1daf4b7.",2bd3c8802f886d4bf9d2aa9359c18f6299145a199d93cddad62720c4a1daf4b7
+syllable_54.mp3,فَ,,,,,36dfefada0b0a0adf54b750cd0d09b2f2120ed8ac988f8bae194976cf8c82fe8
+syllable_55.mp3,فِ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 6780e8f2752c5c177d1617a4e40f44ea368100be7e35a3758932e6d668ebc355.",6780e8f2752c5c177d1617a4e40f44ea368100be7e35a3758932e6d668ebc355
+syllable_56.mp3,فُ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 54d3f52321e8c49ce87b02c5ba0071a3be532a188ffec3b341395ca0b64dbf0f.",54d3f52321e8c49ce87b02c5ba0071a3be532a188ffec3b341395ca0b64dbf0f
+syllable_57.mp3,قَ,,,,,1d0fa2c05d4b022973fd55b4442b6664e1e31a44ba39633df5a4611b59b059a4
+syllable_58.mp3,قِ,,,,,080e0c7b70b592f1b34ea61d85b93668a3db71331cd655c19a0def48b86d2b89
+syllable_59.mp3,قُ,,,,,678b19b0fb283996cd4d175542e05f27c026b87dd7d7b6b7acc670334be19189
+syllable_60.mp3,كَ,,,,,9e0923bdfc94818cefcc83d66a7a5655176e31948482eec20ec509e41d851824
+syllable_61.mp3,كِ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 ff23a91ee4a046909227826969789e02d872b5acdf0dd13ac85e302ce86ef24b.",ff23a91ee4a046909227826969789e02d872b5acdf0dd13ac85e302ce86ef24b
+syllable_62.mp3,كُ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 bad5c254392fe26abc7b85a9bb5113e9fbc64aff032e40ed6ebe7a05af8a57ba.",bad5c254392fe26abc7b85a9bb5113e9fbc64aff032e40ed6ebe7a05af8a57ba
+syllable_63.mp3,لَ,,,,,324d698ae827bdc1b4ebfa9a6594f6fd999ea102a0e8e6c34a3172a2345af415
+syllable_64.mp3,لِ,,,,,0606c358602310ec1ccd4b0492fee03c51863c40d45a53b45c5ce5bc36650fd8
+syllable_65.mp3,لُ,,,,,c8a745f854adf426492f6384f98b1ad60e9dd92fbb03426e7e010fb1e73153a0
+syllable_66.mp3,مَ,,,,,3be06fd3031857996a41d71ed462b49944434ce776df854b7f0371753a316121
+syllable_67.mp3,مِ,,,,,795ba5aa3cfe309476f3f53282f577bee53d0f55d90088e81f8776e52c455ba7
+syllable_68.mp3,مُ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 1ef932813b0b0f6a10a0cc47410e75bbb5f7071b83c3c76853897b3359e0c148.",1ef932813b0b0f6a10a0cc47410e75bbb5f7071b83c3c76853897b3359e0c148
+syllable_69.mp3,نَ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 254c16cd529592e7e20d72ecb5042d44497661505d62e9b2bffd982a99fa196e.",254c16cd529592e7e20d72ecb5042d44497661505d62e9b2bffd982a99fa196e
+syllable_70.mp3,نِ,,,,,26235128580fbb9498f1a5ae6d9d38457248bc822bb33c7ba0e9c255bfe886d7
+syllable_71.mp3,نُ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 3944c43691f55ecae0d2818f0563dc6ab6cb91d5bff76c5181fe10770aece4dd.",3944c43691f55ecae0d2818f0563dc6ab6cb91d5bff76c5181fe10770aece4dd
+syllable_72.mp3,هَ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: wrong; candidate SHA-256 0bf36c927df8071952a07a2da3b2c147dfdacc8a7ede91cf16b6fc035c0f76fb.
+Replacement review d1bbed5e65bc: wrong; candidate SHA-256 149d4daf23d86cbe31a883fcb2ed0c0c73e8a343e57014ed054127002cc68d47.
+Replacement review 895845e856b9: correct; candidate SHA-256 37bd4008c45185447166c33f9681bc51ac329115ef75a1da33a7c1ee0452a31e.",37bd4008c45185447166c33f9681bc51ac329115ef75a1da33a7c1ee0452a31e
+syllable_73.mp3,هِ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: wrong; candidate SHA-256 911fed8482b12fcdb3dc21f2122e1fa5c2564b2aec7a9408da4ed05d5afd7566.
+Replacement review d1bbed5e65bc: correct; candidate SHA-256 e1f1fffcd70b8028f89e51cab03f52d03358d264f4e4d7268e963a37433564eb.",e1f1fffcd70b8028f89e51cab03f52d03358d264f4e4d7268e963a37433564eb
+syllable_74.mp3,هُ,,,,,dc422cde84c3fb12df92f8e4d22dcd1120fe3c4c001bdbd0e1ffab04dd95f9d7
+syllable_75.mp3,وَ,,,,,ab21d2962e2c04a658632e174767a3f6e309d66776fec13c3c0716ca62bb1f96
+syllable_76.mp3,وِ,,,,,ab4fb3a6ac0876b22049988f613c16d07c9a3c420358a552e1bcdee5bfa6de83
+syllable_77.mp3,وُ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 0ae6cd86c5f7ff74fef58bad878e4fae5ab54e09627470ce1609867a1a9b4745.",0ae6cd86c5f7ff74fef58bad878e4fae5ab54e09627470ce1609867a1a9b4745
+syllable_78.mp3,يَ,,,,,28b5f33550e8282beb5ccb894291d45c977d1e7ad3c54665feceff27689f32eb
+syllable_79.mp3,يِ,,,,,f0adcc1e524124e10499fce39c5351d4a402585d1734bbc9b9bedf59e272b553
+syllable_80.mp3,يُ,,,,,f6b55c7e141672684c173c0353864f8df322f92f3019e40506d4255313209146
+trace_word_0.mp3,بَاب,,,,,f4611f0b322e0a17428c7cebb39528319d3e02dc578fef41127481379f37a322
+trace_word_1.mp3,بَيْت,,,,,4e4d6888083fa6644e01a5daabbae4b0d4ee5092fe03d791ad91411f4d2d7698
+trace_word_2.mp3,بِنْت,,,,,b066c2a5304b01ce19593b2fc5bf4f9202a7ab6ad29178304f934670178c6f2c
+trace_word_3.mp3,بَنَات,,,,,69f08e7ec5560bc05714292bfebaaedf633433adbba513b820284d4cdc6f7cf3
+trace_word_4.mp3,نَبَات,,,,,17ad88b50219456fbf8f88c8f8156039505d6400186f36ce4ce6df4c43f1b04e
+trace_word_5.mp3,ثَوْب,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 960d93c2daf5786b45d8639618fb72116be3f42a30b1b1bb68ebd84e098bd5f4.",960d93c2daf5786b45d8639618fb72116be3f42a30b1b1bb68ebd84e098bd5f4
+trace_word_6.mp3,تُوت,,,,,09b6b0650cf0fc1a3bfb865213aa1681ecd19cc0e8fc5b46148c7343b71a8a1c
+trace_word_7.mp3,تِين,,,,,05eda6595d556bde204f31bb822e45e10cb7bfd1bc15a2e8403aa1338cb10563
+trace_word_8.mp3,كَتَبَ,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 bdabea03c43f8f7a85b7fdcb547730ff43e3e87ebc28054c10ad0deb20403284.",bdabea03c43f8f7a85b7fdcb547730ff43e3e87ebc28054c10ad0deb20403284
+trace_word_9.mp3,كِتَاب,,,,,7be9cdc80a36614053af55d0a8938225941c548d710f1b007874e1e00ca55cc1
+trace_word_10.mp3,كَلْب,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 b7865f8b67b404157e2b95151176eb41a01ca318af36f4444efffc7ee4d8ac47.",b7865f8b67b404157e2b95151176eb41a01ca318af36f4444efffc7ee4d8ac47
+trace_word_11.mp3,لَبَن,,,,,5bff99152bd6915ee3e553ec6b1c4c8892c311b54fbe5133da37fab875761cbd
+trace_word_12.mp3,لَيْل,,,,,99483cb826ff512ba6643b3319c21339a7f1dd47845d7cdf6288b1281097ed7c
+trace_word_13.mp3,مَال,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 b6e2f38d2461489b7eeb082a995e274a56f0689f581f6411d688f643bb06501c.",b6e2f38d2461489b7eeb082a995e274a56f0689f581f6411d688f643bb06501c
+trace_word_14.mp3,نَمْل,,,,,5e9a6e793ce4f402ce6ce0242c4ab38efa77b7a420377cfb58423fd8f897e35d
+trace_word_15.mp3,نُور,,,,,cf19bd46b7b202a3f020ba37a0baf606a18ecfbdfd52d2a7097b9de6ea1e54bc
+trace_word_16.mp3,نَوْم,,,,,576c998338fe5cf3315b72638cc9ffae3e31b0479c9e2d4b0f4c6e390e2cd169
+trace_word_17.mp3,وَلَد,,,,,7170ba3f452ae7168a1776fc2f2c932107816980154a509914a8f3b97ebb63f1
+trace_word_18.mp3,وَرْد,,,,,fe1cbe7ad6e3f8a76409798c219b9fc2f52bcccdc7a42b10cc1ac83a3b8e2b24
+trace_word_19.mp3,دَرْس,,,,,575c5083f3175935589621d842d16ca427f0e0bb4cac4fe610ce143cad425c1d
+trace_word_20.mp3,بَرْد,,,,,92a478b74972c2bd1026549bbdd1843d64aa9f8e41770ea8136eb7a8f6fbd6e3
+trace_word_21.mp3,بَدَل,,,,,82c3d411c002338c049ed1bced235189f285a00e20687f3e290c1ab096d6dcee
+trace_word_22.mp3,تَمْر,,,,,cfde864da99af34dd17a23919ca9a4bb67d907e0f003ce4974f935c2f39d2b46
+trace_word_23.mp3,سَمَك,yes,user,2026-10-12,"Needs pronunciation correction.
+Replacement review 496b0f02dda5: correct; candidate SHA-256 473403caf3b1c24096f60e804ad0b115c2f6929b7b02501d7e8faee8446469f9.",473403caf3b1c24096f60e804ad0b115c2f6929b7b02501d7e8faee8446469f9
+lam_alif.mp3,لَام وَأَلِف. لَا.,,,,,365d4911fa8dde9070218120f63b6d770e23df1c2268a00ee98fa415f04c2f20
+long_alif.mp3,أَلِف مَدّ. آ.,yes,user,2026-10-12,"Alif madd ""Aa""
+Replacement review 496b0f02dda5: correct; candidate SHA-256 2f9bd74e225eacabfbea2344859616845ece61d8fe1685025602b3731dbe85a8.",2f9bd74e225eacabfbea2344859616845ece61d8fe1685025602b3731dbe85a8

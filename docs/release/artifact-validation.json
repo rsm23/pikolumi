@@ -1,10 +1,14 @@
 {
-  "androidApkSignature": "verified_v2",
+  "androidApkSignature": "verified",
   "androidBundleJarSignature": "verified",
   "bundletoolVersion": "1.18.3",
   "bundletoolValidation": "passed",
   "iosExportedIpaSignature": "verified_deep_strict",
   "artifactSha256": "verified",
-  "productionGate": "refused_as_expected",
-  "uploaded": false
+  "uploaded": false,
+  "checkedAtUTC": "2026-10-12T04:22:44.658248+00:00",
+  "sourceDigest": "332c7181c78b1e08f4c076a9abc0766628887d1ad8d2655c8d16cd90c9894949",
+  "bundledAssetsMatchSource": true,
+  "catalogVersion": 3,
+  "testAdsOnly": true
 }

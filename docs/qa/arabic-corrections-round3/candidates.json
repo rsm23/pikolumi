@@ -1,0 +1,89 @@
+{
+  "source": {
+    "model": [
+      "silma-ai/silma-tts",
+      "226dd7a65cadf51f9a6dbe3953fc89003b3844d5"
+    ],
+    "modelSha256": "f43256d0b78b8803c638aed0875da5a4b372b4a784690a0156e5baff14f7336c",
+    "vocoder": [
+      "charactr/vocos-mel-24khz",
+      "0feb3fdd929bcd6649e0e7c5a688cf7dd012ef21"
+    ],
+    "vocoderSha256": "97ec976ad1fd67a33ab2682d29c0ac7df85234fae875aefcc5fb215681a91b2a",
+    "reference": [
+      {
+        "file": "word_elephant.mp3",
+        "sha256": "cadc1f968d633f3539d9020c08d695b5883dd73d0f1263b3b50b8231f4819e83",
+        "text": "فِيل",
+        "origin": "existing AI-synthesized project audio; not a human reference"
+      },
+      {
+        "file": "trace_word_8.mp3",
+        "sha256": "bdabea03c43f8f7a85b7fdcb547730ff43e3e87ebc28054c10ad0deb20403284",
+        "text": "كَتَبَ",
+        "origin": "existing AI-synthesized project audio; not a human reference"
+      },
+      {
+        "file": "counting.mp3",
+        "sha256": "03795c7f433280105a8659bdbb43cd2c787b7cdc1d935bf3651057590060c97d",
+        "text": "عُدَّ الأَشْيَاءَ، ثُمَّ اخْتَرِ العَدَد.",
+        "origin": "existing AI-synthesized project audio; not a human reference"
+      }
+    ],
+    "referenceText": "فِيل كَتَبَ عُدَّ الأَشْيَاءَ، ثُمَّ اخْتَرِ العَدَد.",
+    "steps": 48,
+    "cfgStrength": 2,
+    "device": "mps",
+    "generatorSha256": "6e056eb2dc80e8b322fa9f6c9d2ae579beb2a8f6de2ba74257b09da054c4d006",
+    "normalization": "explicit Arabic text; no phonemizer; preserves consonants and vowel marks"
+  },
+  "pronunciationApproval": false,
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "originalSha256": "45f22c01ebe6ed08421664cd919c36eb8631e4c1b70fa5827359ae2283865542",
+      "bundledOriginalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "note": "Si",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "صِ",
+      "targetSeconds": 0.8,
+      "extraction": "direct vowel-marked sound; trimmed outer silence",
+      "durationSeconds": 0.5993333333333334,
+      "seed": 4191016305,
+      "sha256": "c6748e3a9735ad25a4d9256c712fe009136c0156856cda87dcb29ba8514ad4a6",
+      "status": "replacement candidate; native pronunciation approval pending"
+    },
+    {
+      "file": "syllable_46.mp3",
+      "text": "ظِ",
+      "originalSha256": "1cec05542365597f45df5f7b1cd0d1d581f2ef40dbf083bf21b95f9bc3f62038",
+      "bundledOriginalSha256": "6cd05116245a4118faa92951b7108b7c60d31df445322724b36c343050ef3d17",
+      "note": "Thi",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "ظِ",
+      "targetSeconds": 0.8,
+      "extraction": "direct vowel-marked sound; trimmed outer silence",
+      "durationSeconds": 0.53,
+      "seed": 1669715025,
+      "sha256": "56f72456ceefbf6af8da1dc4edd5083889946849aa0a88cac2602093821d0678",
+      "status": "replacement candidate; native pronunciation approval pending"
+    },
+    {
+      "file": "syllable_72.mp3",
+      "text": "هَ",
+      "originalSha256": "149d4daf23d86cbe31a883fcb2ed0c0c73e8a343e57014ed054127002cc68d47",
+      "bundledOriginalSha256": "a91cb87907f510508105e62fd1ae148ec68df670fb80382fcb03663deb314e32",
+      "note": "Needs pronunciation correction.",
+      "previousReviewDecision": "wrong",
+      "synthesisText": "هَ",
+      "targetSeconds": 0.8,
+      "extraction": "direct vowel-marked sound; trimmed outer silence",
+      "durationSeconds": 0.48933333333333334,
+      "seed": 3422185481,
+      "sha256": "37bd4008c45185447166c33f9681bc51ac329115ef75a1da33a7c1ee0452a31e",
+      "status": "replacement candidate; native pronunciation approval pending"
+    }
+  ],
+  "metadataCorrection": "Extraction label clarified after generation: reference clips are specified individually in source.reference; audio bytes unchanged."
+}

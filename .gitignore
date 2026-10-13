@@ -8,6 +8,11 @@ tmp/
 *.keystore
 android/key.properties
 config/production.local.json
+config/*.local.json
+*.p12
+*.pfx
+*.pem
+*.key
 ios/Pods/
 ios/.symlinks/
 ios/Flutter/ephemeral/
@@ -23,3 +28,10 @@ ios/Flutter/Generated.xcconfig
 ios/Flutter/flutter_export_environment.sh
 
 *.mobileprovision
+
+# The owner explicitly requested Android signing recovery in this private repo.
+!android/key.properties
+!signing/android/pikolumi-upload.jks
+!signing/android/pikolumi-upload.p12
+!signing/android/pikolumi-upload-certificate.pem
+!signing/android/pikolumi-upload-private-key-and-certificate.pem

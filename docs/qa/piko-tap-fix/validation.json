@@ -1,0 +1,99 @@
+{
+  "verifiedAt": "2026-10-12T21:26:36.084163+00:00",
+  "sourceHashes": {
+    "lib/ui/activity_encouragement.dart": "7ac04efcd9ac2d82a9db5f9f28c3044898a71a6b58904690204b23014c941d51",
+    "lib/ui/piko_speech_bubble.dart": "5e9cf0ae9018028a6be41bdfe5f83bf0457eef3b04786be8a54d5be95ec2fee7",
+    "lib/ui/activity_screen.dart": "7230668410f1922cf5e5a1b1068d2106daefd0df440585e032dfdf36390e30aa",
+    "lib/activities/learning.dart": "2a7e38629a9cdb728d60a6c7bf16b19d27c6fad80d5520b56bf6615e31a0e058",
+    "lib/activities/tracing_maze.dart": "71ecfe6646321a8271b4638ed2058da458faf5afd583c44d64061007ebe5d449",
+    "lib/activities/canvas_activity.dart": "3056b97ac54337cd0a7ea5c9d9f0dc00834708e76b8d0f54ba443c61a11bc1e9",
+    "lib/ui/piko_mascot.dart": "9a367049cff734c7e058f1ede40eab6741c08e2b8ae5a41eba2f9391edfd2865",
+    "lib/main.dart": "6c230c62cb1f121219a9a24c1895b9eaf61435401fe0e24e63e3fca5cd54d844",
+    "test/playful_interactions_test.dart": "63d439b6f92b9ab463fb22e8443f188fd34f62b54911fa3b90891996a2e7d88b",
+    "integration_test/playful_interactions_test.dart": "1a605c8f312bcc82f899b65eedc2ec318c80621d5c1e7624901bcda3c93f2e30",
+    "scripts/content_source.py": "1ecc3d14525bcd563e209ccb8761158df47b9ac8f2cd2bd21e83bd71184c69f2",
+    "assets/content/strings.json": "767c06a5c024d3a052aebd52029ad76357a00e742894692fe1b60acf32a52db9",
+    "integration_test/piko_tap_regression_test.dart": "118e25a83509cad9197d452f7233d30e3658ace2e283cddf2c74b55710791063",
+    "integration_test/capture.dart": "be0ae12a53ba66000849584dd783ee815072ca5ea44dfbc58eeeac16edf4d328",
+    "test/piko_tap_regression_test.dart": "b9f5d2f1a034e2a2e41803e88813e794aa4bd51f30cf759d403060c5ff3379ed",
+    "test/piko_mascot_test.dart": "aeb2f9c2a81822d7981c2eb322c76518d4c816d468a19366f09ba6f55f78b52e",
+    "assets/art/piko.png": "080c6d916890f5bb96d96f2339a80bdb01c74473f25801dad33054d3be477dde",
+    "assets/art/app-icon.png": "0b56e8aa0ef45809ea7d7464d72587280d6f707c1b2c0fec8f0474c6f08ff4a2",
+    "assets/art/piko_3d/poster.webp": "a4c090e5c4330f13ff4363065e206ec9673cc39f5746a9ccaba8de6d6c424a0d",
+    "assets/art/piko_3d/hop_0.webp": "6201e78c31aafe2befd2fea06ca751ac0699f19ba936be850c6ac5d174b67af1",
+    "assets/art/piko_3d/flutter_0.webp": "e2ca1065933bbae916c21993044b44847e51727ce5fae532f4b63672f863c189",
+    "assets/art/piko_3d/nod_0.webp": "49ae43b47c23b1a420b49dafd5cfd36b70312ac53a46133a9265bb20eb8c513e",
+    "assets/art/piko_3d/idle_1.webp": "f24fc5ee5296191f113e4302bce4cac7aa935a97c7d0f1dec3c2d50970401ca2",
+    "assets/art/piko_3d/idle_0.webp": "72ab77744e77a673d1a6eb78defdda38013d8efab52d414a81348e64b7b1d256",
+    "assets/art/piko_3d/manifest.json": "c4a215a495e50a55961fd81bf7ab48d2c24a462fa8a2f3a0d50f69dfcf97e58c",
+    "assets/art/piko_3d/crayon_0.webp": "27fead89a2e3e47434f0f220b55d4e17878796ac7c6281240e9998ad5faffb17",
+    "assets/art/piko_3d/wink_0.webp": "d80d2e4fbc28cc83ef4f436223ba634e1e143444d93660e8cf3c13f506cb329f",
+    "assets/art/piko_3d/bow_0.webp": "1a8ed81e4d9e466def0f8fc146461bc110a062df8da19b138afd1bec0d55eb19",
+    "assets/art/piko_3d/celebrate_0.webp": "f4be82058d625acbac8556d681333de156b83bf85f3895537942f56593c5b650",
+    "assets/art/piko_3d/wiggle_0.webp": "7791e779a55e5085ca85f437e754b598848398360312e32da7a295606eb03eea",
+    "assets/art/piko_3d/peek_0.webp": "035b53a33a0c201a268a83313241c17a75f938e331604ca4d3f4cdca77e48193",
+    "assets/art/piko_3d/stretch_0.webp": "1cd70440f3bd89e12b035dd8c799516496170822caeb87c89adc2626f6d421e2",
+    "assets/art/piko_3d/wave_0.webp": "e643268d029bef02cbc53f7fef5d45154ef048ea1077112e27e61364ee486201",
+    "assets/art/piko_3d/celebrate_1.webp": "0e0788fc76dc90cf6d7c1d1c79d35b4c9704db23c815e848cc33c79df61a0608"
+  },
+  "native": {
+    "android-emulator": {
+      "passed": true,
+      "mode": "profile",
+      "report": "docs/qa/piko-tap-fix/android-emulator/integration_response_data.json",
+      "sha256": "019b4876edf5978af02720b879fa63dc5ef412dedd612185cae1c68872ff4b0e",
+      "captures": {
+        "docs/qa/piko-tap-fix/android-emulator/hover-no-effect.png": "e022be271b112a4be1d11ddd7cd2ae49afd27ae3f00882aa85bd0678b93e8ddb",
+        "docs/qa/piko-tap-fix/android-emulator/pressed-no-effect.png": "e022be271b112a4be1d11ddd7cd2ae49afd27ae3f00882aa85bd0678b93e8ddb",
+        "docs/qa/piko-tap-fix/android-emulator/quiet-before-tap.png": "e022be271b112a4be1d11ddd7cd2ae49afd27ae3f00882aa85bd0678b93e8ddb",
+        "docs/qa/piko-tap-fix/android-emulator/tap-bow.png": "680bb02ec6a8371bd173f8997077dfb73b3c1e57cc3c7bfff86b999cbd3a1995",
+        "docs/qa/piko-tap-fix/android-emulator/tap-crayon.png": "680bb02ec6a8371bd173f8997077dfb73b3c1e57cc3c7bfff86b999cbd3a1995",
+        "docs/qa/piko-tap-fix/android-emulator/tap-flutter.png": "680bb02ec6a8371bd173f8997077dfb73b3c1e57cc3c7bfff86b999cbd3a1995",
+        "docs/qa/piko-tap-fix/android-emulator/tap-hop.png": "680bb02ec6a8371bd173f8997077dfb73b3c1e57cc3c7bfff86b999cbd3a1995",
+        "docs/qa/piko-tap-fix/android-emulator/tap-nod.png": "680bb02ec6a8371bd173f8997077dfb73b3c1e57cc3c7bfff86b999cbd3a1995",
+        "docs/qa/piko-tap-fix/android-emulator/tap-peek.png": "680bb02ec6a8371bd173f8997077dfb73b3c1e57cc3c7bfff86b999cbd3a1995",
+        "docs/qa/piko-tap-fix/android-emulator/tap-stretch.png": "680bb02ec6a8371bd173f8997077dfb73b3c1e57cc3c7bfff86b999cbd3a1995",
+        "docs/qa/piko-tap-fix/android-emulator/tap-wave.png": "680bb02ec6a8371bd173f8997077dfb73b3c1e57cc3c7bfff86b999cbd3a1995",
+        "docs/qa/piko-tap-fix/android-emulator/tap-wiggle.png": "680bb02ec6a8371bd173f8997077dfb73b3c1e57cc3c7bfff86b999cbd3a1995",
+        "docs/qa/piko-tap-fix/android-emulator/tap-wink.png": "680bb02ec6a8371bd173f8997077dfb73b3c1e57cc3c7bfff86b999cbd3a1995"
+      },
+      "normalEntryPointRestored": true
+    },
+    "ios-phone": {
+      "passed": true,
+      "mode": "debug",
+      "report": "docs/qa/piko-tap-fix/ios-phone/integration_response_data.json",
+      "sha256": "7edc93b0b9349d447b8fd4951968bcacd238858837130c78972707033178e113",
+      "captures": {
+        "docs/qa/piko-tap-fix/ios-phone/hover-no-effect.png": "7a13fca26546a9ed3f0697e1d2e742b8bc1a52f70bb316d6866efe2bb9c43db9",
+        "docs/qa/piko-tap-fix/ios-phone/pressed-no-effect.png": "7a13fca26546a9ed3f0697e1d2e742b8bc1a52f70bb316d6866efe2bb9c43db9",
+        "docs/qa/piko-tap-fix/ios-phone/quiet-before-tap.png": "7a13fca26546a9ed3f0697e1d2e742b8bc1a52f70bb316d6866efe2bb9c43db9",
+        "docs/qa/piko-tap-fix/ios-phone/tap-bow.png": "f0f454fc12f9150abcae7b44bfb7e6a3972858ddd11b7e82ac67953220493d17",
+        "docs/qa/piko-tap-fix/ios-phone/tap-crayon.png": "e933cb2cd6b962b9981614d1988b4726064eb6a3b7e8c2f6d5649172318835c6",
+        "docs/qa/piko-tap-fix/ios-phone/tap-flutter.png": "e933cb2cd6b962b9981614d1988b4726064eb6a3b7e8c2f6d5649172318835c6",
+        "docs/qa/piko-tap-fix/ios-phone/tap-hop.png": "f0f454fc12f9150abcae7b44bfb7e6a3972858ddd11b7e82ac67953220493d17",
+        "docs/qa/piko-tap-fix/ios-phone/tap-nod.png": "e933cb2cd6b962b9981614d1988b4726064eb6a3b7e8c2f6d5649172318835c6",
+        "docs/qa/piko-tap-fix/ios-phone/tap-peek.png": "f0f454fc12f9150abcae7b44bfb7e6a3972858ddd11b7e82ac67953220493d17",
+        "docs/qa/piko-tap-fix/ios-phone/tap-stretch.png": "e933cb2cd6b962b9981614d1988b4726064eb6a3b7e8c2f6d5649172318835c6",
+        "docs/qa/piko-tap-fix/ios-phone/tap-wave.png": "e933cb2cd6b962b9981614d1988b4726064eb6a3b7e8c2f6d5649172318835c6",
+        "docs/qa/piko-tap-fix/ios-phone/tap-wiggle.png": "f0f454fc12f9150abcae7b44bfb7e6a3972858ddd11b7e82ac67953220493d17",
+        "docs/qa/piko-tap-fix/ios-phone/tap-wink.png": "e933cb2cd6b962b9981614d1988b4726064eb6a3b7e8c2f6d5649172318835c6"
+      },
+      "normalEntryPointRestored": true
+    },
+    "ios-tablet": {
+      "normalEntryPointRestored": true
+    }
+  },
+  "packages": {
+    "output/qa/Pikolumi-Tap-Fix-QA.apk": "46dd4e0ab262e38c7553b97ba87ec5d9dbafd76faae976a19c91e9389f7afed3",
+    "output/qa/Pikolumi-Tap-Fix-Simulator.zip": "0d0a3bc62f16e1be8bdbedaefa7c5c7c1eaa55b9810d614f5e481a647ec1b4f0"
+  },
+  "sourceAssetsMatchedInBothPackages": 687,
+  "flutterTests": 78,
+  "pythonTests": 8,
+  "analyzer": "clean",
+  "physicalTesting": "User will test on Pixel after installation; physical iOS unavailable",
+  "audio": "SilentAudio, muted before mounting; emulator -no-audio; no system-volume or normal sound-preference changes",
+  "storeActionsPerformed": false
+}

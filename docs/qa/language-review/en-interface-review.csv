@@ -1,0 +1,205 @@
+key,locale,text,approved,reviewer,date,notes,sourceSha256
+tagline,en,"Color, Play & Learn",,,,,915a8b232f8e2ba9a7ba42bbf3f344fda99cefcdd8fb79b884c995a20d84add5
+pikoPlay,en,Play with Piko,,,,,fc2956ce505e757b9557007906159c26e0f957d0002a15313ec2ae61c223829d
+pikoInviteColor,en,Let’s add some color!,,,,,b733110767bcb784f6e1f66700190cef101a7be0f934a9bc1da3fafb29917ba6
+pikoInviteMemory,en,Ready to find pairs?,,,,,0bfe307b0e7ab9c8e9c45edd3e46d4df59b7913a33ce4410bcfdcaa3f79b143e
+pikoInvitePuzzle,en,Let’s solve a puzzle!,,,,,2ba53fd3d41c1cf2edf7d7da3d22fbb86ac77e8bbd60a895d7af530991913aba
+pikoInviteNumbers,en,Let’s count together!,,,,,d7663dc28f83d1908ad44aa2f0f7184e3e6d8c1fa3309e99e2130ee5da91ddf1
+pikoInviteDraw,en,What shall we draw?,,,,,d55ffcb24d055f4a8a8c63a125303c6733f1969b6f391c4c1dd93d1e19d799bc
+pikoTakeTime,en,Take your time. I’m here with you!,,,,,bc152079970273735f125d0a319418105176f429a5be592ad0db67af8eddaef4
+pikoTryStep,en,Try one small step. You can do it!,,,,,11e9daecb00dbe18951653556ef68c0bb5c379a9c5d468af15cf501a8e6991b2
+pikoTogether,en,Let’s look again and try together!,,,,,9d2e360c6ce42a5b811ebd1341e1b43154c93ec122ad0403acfee72bae30d87f
+pikoCreative,en,Your ideas make this picture special!,,,,,1ef2cb17c11548576570747d0bae854c0370cb7eee5ceed892b1cb3065c8c092
+pikoFinished,en,You did it! I loved playing with you!,,,,,6fd7857cae0855be13873a359ec83f8b2f4544b733e248292b83cbfee7659ae2
+hello,en,"A little wonder, every day.",,,,,541f0355dc0e7d438938a718d771f35178b798665e399a53ff09868c9c937654
+worlds,en,Explore your worlds,,,,,b1fe48beab50ddf4d891d14256f96af60cd757005df1919b58933917f27c51c2
+library,en,Play,,,,,efe6480b36f4246f8a13e125ab3c3ba50fe87a39dd0bfc9e8e0e693b2018345b
+gallery,en,My art,,,,,ac44386e1b05340e5d6d46ce6d7ade30f1be0bc5a6d5f4ea79a661206161a6b1
+stickers,en,Stickers,,,,,35ec247af333610cfe14a4a34bb874044f9f24d865826d905fb475f904ada338
+parents,en,Parents,,,,,85b3aa4c8a7406b3d2140f5b5da124d7db95519d5a3b2f7e4031f6cca5157caf
+all,en,All adventures,,,,,67f563c74da7152bb84546025e9a7280cf3d4567650e33d026fbc57b71ebdc65
+recommended,en,Just right for you,,,,,2534ec60e0c58be9ad3e3a94d6123c86205e784ab992b838ae64e4aab9641cbe
+favorites,en,Favorites,,,,,698cc50ca2260e075b4b3914686268ec08640960482428a0dcb08921699c354b
+activities,en,activities,,,,,c5db9238ce0440cb33e4ff4d3e85ebaa1d1f28f7c96d562f2d4452b33671b766
+offline,en,Ready to play offline,,,,,8a6f9b741788014ae04d0173142b1765ca99379c468714be87f97a9ab18ba626
+continue,en,Keep exploring,,,,,be99d7c1a4ab7547e8ae0353ecf9fabe8640a28a39f77976c34e611c741aa8d7
+done,en,Finished!,,,,,1e82eba333ae9fda403c24f57a993c958ffbf026317fefde47599354f5c807f5
+great,en,Wonderful work!,,,,,6e45d01d4cfb09f489abe8713a6ae3582936fd09e20a82f55244a824399f6a55
+again,en,Try another way,,,,,cfc81c8a62c8e360580a7d944a626e38e41cd2927c5a28140ba3bdf6e040a2d5
+hint,en,Hint,,,,,c9b5e207fccf733a01fd67cd670ea1e409a2d1580d9e82842818ed98301bf17a
+listen,en,Listen,,,,,5b9b7960ad8634626152bf490d2d163f15570d8c1f7d94ec6f0e9ad28d378f48
+back,en,Back,,,,,83620ab4783f8a8e8f76496a0e6dc68c780dac77888e6b2ac22ea2e10eaab4f8
+choose,en,Choose an adventure,,,,,b2b9bc21124d0a4c7e7f61b0ae19c51a4d9bbfcc12cdc6c19b6e20a4e5e8a4b1
+profile,en,Choose your explorer,,,,,a118d54630ba873c5b70776b2f0ad5a67c30fadee3fd1351c29389db808f14f1
+explorer,en,Explorer,,,,,e2fb49fa90d3aa195027bed3473935069ccce0d16a6d60477bc0f1231dda421a
+newProfile,en,Add an explorer,,,,,6c8ec9aad86bfa2905f5b64784be8586ea2ab003dbb4d3a5fa4924f00fb64383
+difficulty,en,Learning stage,,,,,c64222453f29bd5c0a27d072ac038ead2aa87d275eb41ae90d3d57657661280e
+stage0,en,Little discoveries · 2–4,,,,,384b1d998faf83fd2536305f328dacec1cea45f9cfa928db3dff16f4cfca8102
+stage1,en,Growing explorers · 5–6,,,,,b7a799ce52b492bfe1de6073c66d28227019d14ffe213216aa928cf5d8627aa6
+stage2,en,Curious thinkers · 7–8,,,,,145b84b717060651dabaebb082f1d61fb5ca9f25dbb385718e3d7daa404769cf
+stage3,en,Big adventures · 9–11,,,,,4d3f755765279d463fbb2ef4f4dcba98e095db413c1301a6d26fdbe72e7fac13
+stage4,en,Creative challenges,,,,,d687721d89daafe22a12ec85a3dd404ec002b747158d9e5d6b9d266a6ea1a4a2
+sound,en,Sound & voice,,,,,68ae4a44dd27b6f05c6df989f9e1d84e2374fc1d234521a91611d45e32370293
+soundOffHelp,en,Sound is off. Ask a grown-up to turn on Sound & voice in the parent area.,,,,,defe85897147176ad8d58983931f31ec5cc89617272a89a53df96138aa98f9fd
+motion,en,Reduce motion,,,,,b72a7f7d2642a38c1401b8b58f2ddf2da9d1b0ead2b5e67a615884061482e368
+language,en,Language,,,,,c6206cbc9462c23cd0472438b1285a1f50bfba1761bbf2ab1785463827ef2ca1
+save,en,Save,,,,,254048af43b4114743e795377555a15ba97a7c57f24bdde3a785966e12b73f08
+emptyGallery,en,Your masterpieces will appear here.,,,,,8ff5110fe8d21592702698f614503946df22df6185c22c4f06d406ad6ea2553d
+blank,en,A fresh canvas,,,,,968bd73fa51df18fd64940f02c313ed753593e88efeed32ba449259982ae4220
+fill,en,Fill,,,,,78ada0b4b0d7ce6de3d25bcf8c9ca9462ff8c8bf04d74e3336381edc5979b203
+brush,en,Brush,,,,,ed53734069370816523d2df5760614cc2fe5f53f2559711ca1c9d9dd091e6197
+brushType,en,Brush type,,,,,aabc99e798cfa51327ad549500ca1c3a249e3bf56fb59e27e52581fa61bc4903
+brush_round,en,Round,,,,,41e7e1f7a5d7dcf4502e20b993632bab444f7934df51c55d8ae2124fae21f612
+brush_pencil,en,Pencil,,,,,ba849bfe38d501bef7278ba0f7b6c56bf7e29dff754cbafc6431832dc78300bb
+brush_marker,en,Marker,,,,,f1aab3fb68af2598edf508b4a1ebd9e9eaf1f5a63ef7d365276a11bd30eddab9
+brush_crayon,en,Wax crayon,,,,,7bfd07422013cc2d3c0b421aa95dff9071bd136470b2998f555f3ac222029286
+colors,en,Colors,,,,,744ab4ef6c89a2b90c7f1c379ce73ec33d77a6546e9388f8ce09ccbdf99b2469
+allColors,en,All colors,,,,,1cb928ce8f1fd49b5a6ab45516a87b40c042a148a9f6243d200d62d633a9e9e5
+previousStep,en,Previous step,,,,,19dc4b80e3ccc0a304dfbaafff3b02f769a84323afef86eaa76196b57c3839df
+nextStep,en,Next step,,,,,72dc5680e775f64a9fa68a96349e6e6471e84d1c75f22d7b6e79d5e71122c4c3
+fullScreen,en,Full-screen canvas,,,,,507f26e9fadbb71c67b6c083a85b4f17e227f0921d4b57fa14ecc04ca55e5ef1
+exitFullScreen,en,Exit full screen,,,,,982aa6f507e44976c111b6e9786b2721413c2ae1d1e58d42ebc470d71bd9ebd8
+zoomIn,en,Zoom in,,,,,a1ccc8a21ddc8083fdd24b65e04796ad206955923dc8c2f2e8c19c5da9e1575e
+zoomOut,en,Zoom out,,,,,371f65bfac0a254eb42233a8db65d99362e85e390121b4e106ee0d4ef16bba9f
+resetDrawing,en,Reset drawing,,,,,48b4f222fe5a163236a8b477ffbc3384b510f8c68124fcb187dcf403b458a93c
+resetDrawingTitle,en,Start again?,,,,,83d1582de53f716b0cc9b5bb8aa89f2bb14e62e71ebba97bba7e6ecd828f0b46
+resetDrawingHelp,en,Clear your colors and brush marks and restart the drawing steps. You can use Undo before leaving this page.,,,,,5a498a956444de062893924e9ece50cc0fee5376711a11dbb6127696088f7c52
+cancel,en,Cancel,,,,,cd2d3247e5ba8647638a3f8f4c617c50c0d70d7952b5f764515d72865c86c90f
+erase,en,Eraser,,,,,448e31b97b51cc1747d941560be2786dc221dfabd714cadbd97cc124d5ce71d2
+undo,en,Undo,,,,,2a914414594eac91a8bce8b91f6e20a7de146315cc38279c183df7b9643f53f6
+redo,en,Redo,,,,,07f02f396536f7f84b5fef672bb2edf6b599b404f40548e26dd835a9e553bf60
+size,en,Brush size,,,,,703aa8742d14b6cefe24fc6ddfdbf75dcb86b3ff2d17e6b62de2dc31e3f6c391
+resetZoom,en,Fit picture,,,,,6b4a898593b98e00e0e3a4d9b1d1aab7585150e362914498c353d8bb3e92a250
+gateTitle,en,A grown-up moment,,,,,6e2ff7c6c831913bd95e9f71021ee353c1256d0f89ccc2b6a422369523e2aec0
+gateHelp,en,Ask a grown-up to unlock this area.,,,,,5624e30e146b60035880b96144cd5d92c5ec76ce1725169290cd15a107858a5c
+gateSetup,en,Create a parent PIN,,,,,15163b8401394d2414eaffd8f493aa560475977809d19993bd787e4669a3c0e0
+gatePin,en,Parent PIN,,,,,ba6bdd338ce59039a35509429d0f8f8f8db8a6bb9fe83d9ca4974970e4c9b3c0
+gateConfirm,en,Confirm PIN,,,,,83a30d71f716c72893d10eefc2208c10ba53ccc9b2c361ff107ed13e85181c83
+gateWrong,en,That code did not match.,,,,,ce54213a65cbe625bb0f2db1c28de9205f5059bf47c04448210c854015d7c084
+gateChallenge,en,Enter the answer to continue,,,,,710236f0f0b225df9dc585cf28e1c07fb595f0e86e6029147ac72b64a01bc323
+progress,en,Learning progress,,,,,4a0cd0c12627484a5b79b492b198389ff50f26d4fe713ade254d7a3ffdac94e5
+completed,en,completed,,,,,e5b2c3187a0a91d49b355488961e5434a88ee53b2653749c6038ac9c427365ba
+privacy,en,Privacy,,,,,6fc19833205444758be26390abc1ec374120b623b6876d2145baa04e71ec7d24
+export,en,Export picture,,,,,9610bc5de6a28144e199a92ea47d5f9b5e99526ab7d4d271341634915741dd39
+localPrivacy,en,"Profiles, progress and artwork stay on this device. Ads use Google Mobile Ads; advertising requests have child protections. No purchases, accounts or analytics. Voices are synthesized and bundled offline.",,,,,468cde79f39ff0cda6ea599130f79c6696e0aba5295296db79454174c94fcc00
+privacyOptions,en,Advertising privacy choices,,,,,0a8d7488cba7ffbc01ec8d334d8ee6a2dc28c30c8b2d9531d4f15bd34254b7bc
+support,en,Support & privacy policy,,,,,b3de7969acc42228a26148a5188bc11c54d4d21f620d0930a5d963d05bf9e7a7
+changePin,en,Change parent PIN,,,,,2447f769a0f7f278f841ed7e17b5375547ce41191ce7ff12016021820803904f
+listenAgain,en,Play the melody,,,,,3a71495c62b9d21a5a545cb8d6092cee7cb0b212f599ff11625cf91c7b79122a
+step,en,Step,,,,,8959a1cee0fcf4688a4d88122a01a9dbe2d0dd15a819e9ec550dd5d7548009ac
+ad,en,Advertisement,,,,,d5002881b8e1e77bfce4797c1fd415b830f021184ace3395837c1a4a3b426a58
+saved,en,Saved on this device,,,,,d941cb355ec0e0432f497f9a3774a410e297d265a8dd242f9bd4689bc3692b3b
+chooseExport,en,Choose artwork to export,,,,,6e90aee227ff9748574e5719b0af96de72f1cda6e7f887f57173214005876feb
+pinNote,en,"Keep this PIN safe. If forgotten, reinstalling resets local data.",,,,,92010fb0f7e49f3b959184f5fdfa6870338dd21e5e657f160123c1a84a76e719
+interfaceLanguage,en,Interface & questions,,,,,895d813396704b173e51282a3548c8aa71019d26427b0712542608ed433f00c4
+learningLanguage,en,Language to learn,,,,,7c41e7884bb1c03d583f7e82030cc8f1bbc9c1e6ba6061ac67e8ab5e9fb14613
+followInterface,en,Same as interface,,,,,57309eb49ad478e5089bda4ca97e2ac30233473770c0b0f53734d220573b9b91
+learningLanguageHelp,en,"Letters, vocabulary and handwriting use this language for this explorer. Instructions and questions use the interface language.",,,,,ea3142b2382b7c0e198a8459f247762b261e42cf32871601bc1881a78cdfbef9
+credits,en,Credits & licenses,,,,,d33ee7872bf63306e643743e1250964a47ed8cde21647ab0cbcbed40ec616614
+worldCount,en,worlds,,,,,366bb8dd7a77a4af39d04b85cdb215a23d0427eaceeb773655dfbc7ab6787846
+answer,en,Answer,,,,,6970ad504198f2daae94b23cee5d9932d721c662c33b76e88735c64b11151248
+pinLength,en,Use six digits and enter the same PIN twice.,,,,,822e8ed28330b6a2ac3f27c44ccf38030881750555c94ffd53f0093d542caa5b
+gateWait,en,"Wait a minute, then try again.",,,,,0745ab79f64f23d996004c0242e4e10d8b22ab4adcb0e85148acfe854ed29e03
+up,en,Up,,,,,e8c2e7d03e68b66b67a7952d7d60a42daab18d93ac1754fb5cea3fc48c76f78d
+down,en,Down,,,,,19c18db606f9fdbebf226794ce9957e779cbfa4e591414c20bf069a53322356d
+left,en,Left,,,,,a0ae29453f3eade387197a4a6d6590f6e8f704d197316c9f6f5a1f8f074b6817
+right,en,Right,,,,,1fc6ab39b8b924fd9d3b9fefae3af628f60512c9d13ef6a5712584036081dba2
+pikoFinished1,en,Challenge complete! Give yourself a little cheer.,,,,,837d12b722a1efce2537cd7b602fa78b550dde863c6751ee44781a2457a9c927
+pikoFinished2,en,Look what you finished. Well done!,,,,,1cb6b312d53ef6b76602c3d362f9454dd8e547119d8941ed51b7fe720b50607e
+pikoFinished3,en,"Another little adventure, all done!",,,,,cf5267eeb4a8bf62bc332ff57a916c57596558e183bc098b0b5544daafdeb994
+pikoFinished4,en,That deserves a happy little dance!,,,,,272a54b14bc8ee3cc40474dd067ab45d65f6443ccdfcceeed03c4ed62ada9c06
+pikoFinished5,en,You reached the finish. Hooray!,,,,,c06cd93d5e88f682a1f74c6fa1496518d9c26857ffce42b37b7a0686c9b2415f
+pikoFinished6,en,A big smile for your finished challenge!,,,,,d5137a11bc25e534d7f9c39a0bd3da1c19b96d795135dfc5a6d1686df542ff18
+pikoFinished7,en,Well done! This moment is yours to enjoy.,,,,,4d1cd2d3fd9bb5d62ef1b609e698f89a0c22ca52b273f97fb7c98f297bb6b284
+pikoFinished8,en,You finished! A wing high-five from Piko!,,,,,b5c908156fb057bf94d391d3edde3b93e1d156278b377643ca10e50fa618691a
+pikoFinished9,en,What a lovely way to finish our adventure!,,,,,d1c3a3a947b3fee2b69eca5e760b5f27dfb5e76ab1708116d4d015cda83d633c
+pikoFinished10,en,Your effort matters. Well done!,,,,,fc87eea9cf2e083af4eee2169639840248a7edd47455f3f82836a2c5df3956e7
+pikoFinished11,en,Trying is part of learning. You finished this step!,,,,,bbff861fc74d868b0e93ffd04a5304a1d985226076b7d3b98ca833a7fa0110c8
+pikoFinished12,en,A little effort can lead to a lovely finish!,,,,,1bd32021826338220e33c091e5f83f0b4e6cd1f365ce16c1482ada6b9949fd67
+pikoFinished13,en,Well done for taking part in this challenge!,,,,,e386195b82568ff078b9cadf3bbf1c3bd79b50394e27b99e1afbccff3705282a
+pikoFinished14,en,One step at a time is a great way to learn.,,,,,74a8594176e42b2976ee9c5c4f58639f64fbaaa059d7cbd737ddbeb3611b3374
+pikoFinished15,en,You gave this adventure a try. That's worth celebrating!,,,,,dae5e0eaf4b6b151343f20e35c2547382920dd1042a840e898233729ffcc7653
+pikoFinished16,en,Every attempt is a chance to learn something.,,,,,a61a396ed340b5faee9e48c32b659957edc5ee3b8ebcfe9220a875ae34b69448
+pikoFinished17,en,Your own pace is a good pace. Well done!,,,,,4f75729c92a841541e85d09a7fe7847f9fc450f8393112c1b29f8bd78bf6a9c9
+pikoFinished18,en,Take a moment to notice what you accomplished.,,,,,4d631f49799f85bba79e33ab9c003015d70d6209c29f89e5c8b3cd28c82e7149
+pikoFinished19,en,Small steps deserve a big smile!,,,,,9d5ee41898c7a4aab5d19ea43a0b6bc97460a3e0811ce67ae4718417171a7b1c
+pikoFinished20,en,Your curiosity is welcome here!,,,,,ee73f85fb603a89fce83756c2a12800951183c8a9969b84f6ccd850b95d51e95
+pikoFinished21,en,There are so many wonderful things to wonder about.,,,,,11ff043e4d4a25ad6a81827570712c01e0cf08ee2afb67759d63bf785f85a415
+pikoFinished22,en,Keep your questions close. They help you explore!,,,,,4af590bbafd6b066b3496bc52b1044d69b1d14974d71e8f9d563f482ef1dba9d
+pikoFinished23,en,Wondering how things work is a lovely beginning.,,,,,4a43f6eded1b91eac814072c35440e390322556f9d12df1a5e3725515e79c744
+pikoFinished24,en,"One finished adventure, so many possibilities!",,,,,48d0ccfc039be2dd05789b6e0508cb5166b345c51cc7f5cfb989a7e5ee1f3077
+pikoFinished25,en,I like exploring with you. Well done!,,,,,74d51cbf48ebbc6392545a2d57db31d5f1b1a270e5a9210650630c6e0cd0be97
+pikoFinished26,en,A little question can open a big adventure.,,,,,4671ac2cc2eafba65333c377e7ab6e500d12a2b3a40987906a7fe5fd163a2625
+pikoFinished27,en,You have room for all your wonderful ideas.,,,,,453ec55c52a7db3b5455254b8f8f4c1e61a05e024d6daecb75a605e373537d79
+pikoFinished28,en,Learning has lots of paths. You can explore your own.,,,,,7d6b0ab4ee4686ac58c432d83e7a00ad39df0ef0cf6fd405ae84be0e3ef24943
+pikoFinished29,en,This adventure is finished. Your curiosity can stay!,,,,,c94eeee5cd87f04fb27bbde409002bf24a79871d41c52b22addc6e4939dceff6
+pikoFinished30,en,Your ideas belong in our colorful world.,,,,,660e294c35da9c4ec8cafc97ea840a97a56f1e8ee3436b3c05a27116bafd554a
+pikoFinished31,en,Imagination has room to stretch here!,,,,,692d045d1855fb3c4430e47e5591c05e84001dc94e4d7df331e7e5bba622ec46
+pikoFinished32,en,You can be proud of what you finished.,,,,,483c047ba8562fb24714a59de46925544482a762808f484c09cc166c70fb3d34
+pikoFinished33,en,Your way of playing is welcome here.,,,,,da7d3d57de8ca833cf0a460f018513e4d221378c617edf246cc62c3a3e46421a
+pikoFinished34,en,What a lovely moment to celebrate your ideas!,,,,,5876c74b50579541fe24c5f0126cbb05849248cdcd66fa7ba78f8fd29e05725e
+pikoFinished35,en,Big ideas and little ideas both belong here.,,,,,a906f6d3655c04a9516fb558e2babd2037278d2b0faa29a2ff3375041594dad1
+pikoFinished36,en,There is more than one way to be creative.,,,,,f63a06489289ec16ee12884ac8ec554ec2bbed62dad5c465b0547e9187855e99
+pikoFinished37,en,You bring your own touch to every adventure.,,,,,ca30a660cda385f2e5e197033d3736c2b368ed02bbaee5892a6ea7c45f69e6b5
+pikoFinished38,en,"Your imagination is always welcome, little explorer.",,,,,3df03d16be8195fc2f324815c4f7a9faebc42930b1b0a45d4e22eeead13665fb
+pikoFinished39,en,Ideas can start small. Give yours room to grow!,,,,,5be5ad65db9d7cc3ca4384f1840d3e117f87141b4610ea33f8a6c7e24fedca2b
+pikoFinished40,en,Learning and playing go nicely together. Well done!,,,,,c8f9b3769c1c9d1432f8675c989cb1477de0aed267bad96f8b573f1e1ef80ab1
+pikoFinished41,en,You finished a little piece of your learning journey.,,,,,5c31248ae63e6fcb4e0822a00cd3a18bd06639f3ddc4f9f514bd3d824ed3121b
+pikoFinished42,en,Every finished challenge is a moment to celebrate.,,,,,98df3d64ff9325fb2127a97f9a058f39b684f42f651571e8cf5bd6e0b34ebdb2
+pikoFinished43,en,Well done! You can learn without rushing.,,,,,72cebf1003c774f52d378827d824f32486e179da340cfc2eb19bdeac17a5b113
+pikoFinished44,en,"There is always room to learn, even after a finish.",,,,,56df87723eebd110d837d6ccce964e95f8d752da6decae94ba496dd6ddbd8626
+pikoFinished45,en,A finished challenge and a cheerful Piko!,,,,,ae7c4cd0262fdf4dd3b177216644d42168b73e2c7709f16d6865fa3c3f084779
+pikoFinished46,en,Learning can happen in little moments like this.,,,,,138a2904ccd59e4dae16706d8a05277358714d0877d6acc3fcd6a5c4676c493c
+pikoFinished47,en,You made time for an adventure. Lovely!,,,,,47d814fbcaf730014326e31a02838326ae2f99fd5748b361031d829ed6f660f0
+pikoFinished48,en,Take your smile with you when you leave this challenge.,,,,,7165108ec7aaa1318b2bcd37682cf4cf0f5f2d068cd5a988a4b6921c64f35cd5
+pikoFinished49,en,This little finish is worth a happy flutter!,,,,,4b24e7b90cb1a0aecfdf0555e0a3db63d6a56d50ef49e926a3e0da8e84995092
+pikoFinished50,en,No need to hurry. You finished in your own time.,,,,,038971bbc5216d96958fd0e8b03baabfa645ae595b30bd2d6137898076dde169
+pikoFinished51,en,Trying something is a brave little beginning.,,,,,6a2d26e8dc53a6f97ed29a106b7be8c3f821faa6516a5250ae72c5a3740c0a4e
+pikoFinished52,en,You don't have to be perfect to enjoy learning.,,,,,f1638f3935d4c48aaf753f7377816063d3aab4a275635ac127394048a14484a6
+pikoFinished53,en,Mistakes can help us discover another way.,,,,,4ee536491462f5cbf9a081457c3e62d15d94e97370fa5f6cb022526afb97e5d3
+pikoFinished54,en,Well done! Asking for help is part of learning too.,,,,,669a5b2bd2e222d9c7435e171a5b4343f919b9a37dcfad2fdd70a625f033133e
+pikoFinished55,en,A new try can bring a new idea.,,,,,96ce3056d6f7ebf09bfd1724294d8e2f36c10e551456cac8501658e8c7d4dbd6
+pikoFinished56,en,"You can celebrate finishing, however you got here.",,,,,34cc55d3159e2a562c857e1182fb220d0afe10961919fe1a8ecb07c688d9aef3
+pikoFinished57,en,"Learning takes practice, and every try has a place.",,,,,be0b3f615cb48bd8a296614d893502bfb862558fba80673d35e170b04b08447d
+pikoFinished58,en,You are welcome to learn at your own speed.,,,,,96a56f21a93300358fe1774e092534da77eb9630eccde97a7277015ef2797fea
+pikoFinished59,en,"Your effort is worth noticing, little explorer.",,,,,b29cdc320e5a7410a2959f563e5b7822f7d681df9910b504cc7e0a4be65ea406
+pikoFinished60,en,Hooray! We reached the end of this challenge together.,,,,,21c5982f301da0b9d141b7cebabd5e2e47f55b0eea837b60a8fc16adf66b8d55
+pikoFinished61,en,Piko is doing a happy wing wiggle for you!,,,,,378d1811aceba37fbf4f9b147ee4b4283437cba0e4a1252a992d2a46655a5682
+pikoFinished62,en,A little bird cheer for your finished adventure!,,,,,82b3b5a17c4231c666cb5f759435c6a485296bf4e5d5e24024ad5636a045f9ab
+pikoFinished63,en,Well done! My feathers are fluttering with joy.,,,,,75124e557655e6265f2ee60df32f401d9a32ff31bce4ae8ddd47f219d6c305e4
+pikoFinished64,en,You finished! Piko is cheering beside you.,,,,,f1a9f4e20a7b0ea0efd955adc10a6729e201236445ab8ea63ea5668a1a8a3e30
+pikoFinished65,en,Our little adventure has a happy ending!,,,,,b778ff18e9459926e6ffecd8d582da1f699b2ba78d741ecffb99fabd8d2e8f03
+pikoFinished66,en,That was a lovely adventure to share with you.,,,,,f6c01e1300a1c1bf78349478bd4123d03557b85c224b6ff07d92da5b9083f006
+pikoFinished67,en,A cheerful chirp for a challenge well finished!,,,,,220e071acc94a49b2ac86e01ac2c7c703c51b592e10e170794420cf70ed507df
+pikoFinished68,en,I have a big bird smile for you. Well done!,,,,,a78890ada9ba68fd460f236097d0ce3af7e677ca6f983190bf5c754598fa7236
+pikoFinished69,en,Piko's wings are ready for a celebration!,,,,,11c3a776929d067dae45c8c1299d44c30d540814139aec07a2a0b5e3b03d593c
+pikoFinished70,en,Enjoy your finished challenge. The next choice is yours.,,,,,cb3fc947987754eb7b334210b893739f1f7689ee027f4b372ceb53cd432f9fa1
+pikoFinished71,en,Well done! A little rest is welcome too.,,,,,6434406f69bdacc6cf6caa3270ba8750dcdbc0f781be53f548e4321b7abfcb60
+pikoFinished72,en,You can pause and enjoy what you finished.,,,,,ac538e0a41e02b7803b2414dd3fea219f594b1b3582ec0ef675155795d9c2b84
+pikoFinished73,en,A happy finish! Choose your next step when you're ready.,,,,,a528bd0c61752d9c7fd1ba79e0d2de27804a711814bf08971c1f951c2c8d8f59
+pikoFinished74,en,You finished this adventure. A stretch might feel nice!,,,,,bc632f62e1a65587fe2d1988205f798899af6e44f9a0f528cd113c31364c62b9
+pikoFinished75,en,Celebrate in your own way. This finish is yours!,,,,,bb31f7bc25131268257822eafc25cc790ddbd5c9c92464ae0331be431a0a85cb
+pikoFinished76,en,You can share this happy moment with a grown-up.,,,,,3a779c968caeef5013a016047e1e120cceb5c2aa1c10fbaba220030841b0066b
+pikoFinished77,en,Well done! You can come back to playing another time.,,,,,6cb9ab3518e848006b5234990f4ca5553fed989c8ee37549801fe740c5def9b7
+pikoFinished78,en,Your adventure is finished. Enjoy a little happy pause.,,,,,5556185a5891fbbe4b351395ca9f1fb29611de2fb845035cdddcaf312bb77495
+pikoFinished79,en,Well done! You get to choose what feels fun next.,,,,,b0fecf6091279206edbde8e60abc9d48930aeb4522fdeb65e522bd19ac53cf0e
+pikoFinished80,en,"A little adventure completed, a little smile earned!",,,,,2309dd1c9459f3736adb1196053d46c2a9ff1f33d1a906f27ecbb1e9e2c18dc4
+pikoFinished81,en,"Well done, explorer! Your finish deserves a cheer.",,,,,9615108ded56e71459a448de82c5c7abbddf608b8ae1d030d780aabc4bccc00a
+pikoFinished82,en,You completed this challenge. Let's enjoy that moment.,,,,,7acaa513b8f8aa10e53afb6d44a1057793084b35ebb94cfe06543945a23f93aa
+pikoFinished83,en,A happy hooray for your learning adventure!,,,,,1b0ce16f4aa2f7cb475e5845c2890cdfd80bdba045c4f6fb9a349a4ba8b04dc6
+pikoFinished84,en,Another challenge finished. You can feel good about that.,,,,,2cb361d917cc36321d0372c4e741bee5adf45f24bd58f3b6374b003306d1f4f1
+pikoFinished85,en,You brought this adventure to its finish. Nice work!,,,,,b5f6020d53cd6b631e0ce2129257de06d70ef9a74c488ffd4042826a4fd9d901
+pikoFinished86,en,A little celebration for the work you put in!,,,,,752ce726b4232b642a1e6d2585fc25f458fcfb8a8c2348c9ed793d049275309d
+pikoFinished87,en,What you finished today is worth a smile.,,,,,0df70d107429193a82dff01b0f866871e9c3f09e2be239af4a063a19fa381700
+pikoFinished88,en,Well done! This adventure belongs in your happy memories.,,,,,10842c908b5ef23cb2f5b2fc974a4d0e1554070af4f3121cc25cc6d2cf7a3cec
+pikoFinished89,en,"A finish, a smile, and a cheerful little Piko!",,,,,ab88562304a4130c0145cb6f73854ba8508283147eae83eb37187c20591478e1
+pikoFinished90,en,Well done! There is room for your next idea whenever you want.,,,,,d3210e882669fbaad3c7d26236baf0470e0d96a7dc4a625051aee11f6a0937be
+pikoFinished91,en,Your ideas and questions make exploring interesting.,,,,,9c2f954d3d9ac0a476c4fc1fd5eb0e5813d80f8c7fa370dc8480b800f5a56256
+pikoFinished92,en,You finished this part. There's no rush for the next.,,,,,694df208ef230919a15980b16ec8b0de211f1cf734e4862358f62986695bdb0e
+pikoFinished93,en,A finished adventure can be the start of a new idea.,,,,,91e755e5c3f98014e5ece06d8ba9048f895af3b34a5b0c6561eef37b732af3ee
+pikoFinished94,en,Well done! Learning has space for fun and for breaks.,,,,,8973e6372e96e15acd16c51e9ad0f0a0acc73d3167eaedb361012b10cbff2ea2
+pikoFinished95,en,Your finished challenge is a lovely part of today.,,,,,6bf1291a7415c23e8c91a5ea42d7fb0dc24e87db8ae997e6d8dfd933da29dab1
+pikoFinished96,en,Thanks for sharing this adventure with me. Well done!,,,,,36fbeea6960cb698b4cdf00b53e1de500dea1cd0fad1727963de33e962f33f3d
+pikoFinished97,en,"You finished, little explorer. Enjoy your moment!",,,,,24b666d40f36eca80142a4fd86bd3e9cd2d5de3fa09fe1e0eb48233fd034dbed
+pikoFinished98,en,A warm little cheer from Piko for what you accomplished!,,,,,a1b83f6d21580242a90fecff11c23bd1d356f5519a440ca98a5df6f13f323f94
+pikoFinished99,en,Challenge finished! Your learning adventure is yours to enjoy.,,,,,503e14007025b855ed6ae92857d72ffd7f5ef71691a7e8acf6ab6497b19ae082

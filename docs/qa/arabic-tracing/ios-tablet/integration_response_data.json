@@ -1,0 +1,186 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "en-ui-ar-tracing-0005"
+    },
+    {
+      "screenshotName": "resumed-tracing-0005"
+    },
+    {
+      "screenshotName": "completed-tracing-0005"
+    },
+    {
+      "screenshotName": "en-ui-ar-tracing-0006"
+    },
+    {
+      "screenshotName": "en-ui-ar-tracing-0007"
+    },
+    {
+      "screenshotName": "en-ui-ar-tracing-0016"
+    },
+    {
+      "screenshotName": "completed-tracing-0016"
+    },
+    {
+      "screenshotName": "en-ui-ar-tracing-0017"
+    },
+    {
+      "screenshotName": "en-ui-ar-tracing-0026"
+    },
+    {
+      "screenshotName": "en-ui-ar-tracing-0033"
+    },
+    {
+      "screenshotName": "en-ui-ar-tracing-0034"
+    },
+    {
+      "screenshotName": "en-ui-ar-tracing-0065"
+    },
+    {
+      "screenshotName": "completed-tracing-0065"
+    },
+    {
+      "screenshotName": "en-ui-ar-tracing-0075"
+    },
+    {
+      "screenshotName": "en-ui-ar-tracing-0076"
+    },
+    {
+      "screenshotName": "legacy-checkpoint-tracing-0001"
+    },
+    {
+      "screenshotName": "completed-tracing-0056"
+    }
+  ],
+  "captureSizes": {
+    "en-ui-ar-tracing-0005": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "resumed-tracing-0005": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "completed-tracing-0005": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "en-ui-ar-tracing-0006": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "en-ui-ar-tracing-0007": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "en-ui-ar-tracing-0016": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "completed-tracing-0016": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "en-ui-ar-tracing-0017": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "en-ui-ar-tracing-0026": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "en-ui-ar-tracing-0033": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "en-ui-ar-tracing-0034": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "en-ui-ar-tracing-0065": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "completed-tracing-0065": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "en-ui-ar-tracing-0075": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "en-ui-ar-tracing-0076": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "legacy-checkpoint-tracing-0001": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    },
+    "completed-tracing-0056": {
+      "originalWidth": 2064,
+      "originalHeight": 2752,
+      "captureWidth": 1200,
+      "captureHeight": 1600
+    }
+  },
+  "capturedArabicGuides": [
+    "tracing-0005",
+    "tracing-0006",
+    "tracing-0007",
+    "tracing-0016",
+    "tracing-0017",
+    "tracing-0026",
+    "tracing-0033",
+    "tracing-0034",
+    "tracing-0065",
+    "tracing-0075",
+    "tracing-0076"
+  ],
+  "completedArabicGuides": [
+    "tracing-0005",
+    "tracing-0016",
+    "tracing-0065",
+    "tracing-0056"
+  ],
+  "modelMatchesPracticeGeometry": true,
+  "newCheckpointRestoredExactly": true,
+  "legacyCheckpointMigrated": true,
+  "interfaceLanguage": "en",
+  "learningLanguage": "ar",
+  "userPreferencesChanged": false,
+  "adSDKInitialized": false,
+  "audio": "SilentAudio, muted before mounting; in-memory preferences"
+}

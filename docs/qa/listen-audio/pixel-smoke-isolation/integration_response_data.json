@@ -1,0 +1,17 @@
+{
+  "activities": 2400,
+  "bundledAudioClips": 656,
+  "profileIsolation": true,
+  "nativeArtworkRecovery": true,
+  "learningCompletion": true,
+  "languageLayouts": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "ar"
+  ],
+  "productionAds": false,
+  "store": "isolated temporary SQLite; user preferences and artwork untouched",
+  "screenshots": []
+}

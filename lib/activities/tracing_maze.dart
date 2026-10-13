@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import 'learning.dart';
+import 'trace_geometry.dart';
 
 class TraceActivity extends StatefulWidget {
   final EngineContext engine;
@@ -16,35 +17,27 @@ class _TraceActivityState extends State<TraceActivity> {
   late List<List<Offset>> strokes;
   int stroke = 0, at = 0;
   bool finished = false, dragging = false;
+  Map<String, dynamic>? migration;
   @override
   void initState() {
     super.initState();
-    strokes = (e.config['strokes'] as List).map((raw) {
-      final vertices = (raw as List)
-          .map(
-            (p) => Offset((p[0] as num).toDouble(), (p[1] as num).toDouble()),
-          )
-          .toList();
-      final points = <Offset>[];
-      for (var i = 0; i < vertices.length - 1; i++) {
-        final n = math.max(
-          1,
-          ((vertices[i + 1] - vertices[i]).distance / 5).ceil(),
-        );
-        for (var j = 0; j < n; j++) {
-          points.add(Offset.lerp(vertices[i], vertices[i + 1], j / n)!);
-        }
-      }
-      points.add(vertices.last);
-      return points;
-    }).toList();
-    stroke = (e.resume?['stroke'] ?? 0).clamp(0, strokes.length - 1);
-    at = (e.resume?['at'] ?? 0).clamp(0, strokes[stroke].length - 1);
+    strokes = tracePoints(e.config['strokes'] as List);
+    final checkpoint = TraceCheckpoint.restore(e.config, strokes, e.resume);
+    stroke = checkpoint.stroke;
+    at = checkpoint.at;
+    migration = checkpoint.previous;
   }
+
+  void save() => e.save({
+    'stroke': stroke,
+    'at': at,
+    'traceRevision': e.config['traceRevision'] ?? 1,
+    if (migration != null) 'traceMigration': migration,
+  });
 
   void touch(Offset p, Size size) {
     if (finished) return;
-    final logical = Offset(p.dx / size.width * 220, p.dy / size.height * 220);
+    final logical = TraceViewport(size).logical(p);
     final points = strokes[stroke];
     final shortStroke = points.length <= 4;
     if (!dragging && (logical - points[at]).distance > 24) return;
@@ -64,7 +57,6 @@ class _TraceActivityState extends State<TraceActivity> {
     if (at >= points.length - 2) {
       if (stroke == strokes.length - 1) {
         finished = true;
-        e.complete();
       } else {
         setState(() {
           stroke++;
@@ -73,94 +65,187 @@ class _TraceActivityState extends State<TraceActivity> {
         });
       }
     }
-    e.save({'stroke': stroke, 'at': at});
+    e.onProgress?.call();
+    save();
+    if (finished) e.complete();
   }
 
   @override
-  Widget build(BuildContext context) => Column(
-    children: [
-      Padding(
+  Widget build(BuildContext context) => LayoutBuilder(
+    builder: (context, constraints) {
+      final landscape =
+          constraints.maxHeight < 300 &&
+          constraints.maxWidth > constraints.maxHeight;
+      final step = Padding(
         padding: const EdgeInsets.all(12),
         child: Text(
           '${e.app.t('step')} ${stroke + 1} / ${strokes.length}',
           style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
         ),
-      ),
-      if ((e.config['glyph'] ?? '').toString().isNotEmpty)
-        Text(
-          e.config['glyph'],
-          textDirection: e.config['direction'] == 'rtl'
-              ? TextDirection.rtl
-              : TextDirection.ltr,
-          style: const TextStyle(fontSize: 48, fontWeight: FontWeight.w800),
-        ),
-      Expanded(
-        child: Center(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 620),
-            child: AspectRatio(
-              aspectRatio: 1,
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(28),
-                  child: ColoredBox(
-                    color: Colors.white,
-                    child: LayoutBuilder(
-                      builder: (context, c) {
-                        return GestureDetector(
-                          key: const ValueKey('trace-canvas'),
-                          behavior: HitTestBehavior.opaque,
-                          onPanStart: (d) => touch(d.localPosition, c.biggest),
-                          onPanUpdate: (d) => touch(d.localPosition, c.biggest),
-                          onPanEnd: (_) => dragging = false,
-                          onTapUp: (d) => touch(d.localPosition, c.biggest),
-                          child: CustomPaint(
-                            painter: TracePainter(strokes, stroke, at),
-                            child: const SizedBox.expand(),
-                          ),
-                        );
-                      },
+      );
+      final Widget model = (e.config['glyph'] ?? '').toString().isEmpty
+          ? const SizedBox.shrink()
+          : (((e.config['traceRevision'] as int?) ?? 1) >= 2)
+          ? Semantics(
+              label: e.config['glyph'],
+              child: SizedBox(
+                width:
+                    (e.config['modelWidth'] as num?)?.toDouble() ??
+                    (e.config['arabicLesson'] == 'word' ? 180 : 92),
+                height: landscape ? 56 : 80,
+                child: RepaintBoundary(
+                  child: CustomPaint(
+                    key: const ValueKey('trace-model'),
+                    painter: TracePainter(
+                      strokes,
+                      stroke,
+                      at,
+                      guideWidth: (e.config['guideWidth'] as num).toDouble(),
+                      preview: true,
+                      kinds: (e.config['strokeKinds'] as List).cast<String>(),
                     ),
+                  ),
+                ),
+              ),
+            )
+          : Text(
+              e.config['glyph'],
+              textDirection: e.config['direction'] == 'rtl'
+                  ? TextDirection.rtl
+                  : TextDirection.ltr,
+              style: TextStyle(
+                fontSize: 48,
+                fontWeight: FontWeight.w800,
+                fontFamily: e.contentFont,
+              ),
+            );
+      final board = Center(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 620),
+          child: AspectRatio(
+            aspectRatio: 1,
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(28),
+                child: ColoredBox(
+                  color: Colors.white,
+                  child: LayoutBuilder(
+                    builder: (context, c) {
+                      return GestureDetector(
+                        key: const ValueKey('trace-canvas'),
+                        behavior: HitTestBehavior.opaque,
+                        onPanStart: (d) => touch(d.localPosition, c.biggest),
+                        onPanUpdate: (d) => touch(d.localPosition, c.biggest),
+                        onPanEnd: (_) => dragging = false,
+                        onTapUp: (d) => touch(d.localPosition, c.biggest),
+                        child: CustomPaint(
+                          painter: TracePainter(
+                            strokes,
+                            stroke,
+                            at,
+                            guideWidth:
+                                (e.config['guideWidth'] as num?)?.toDouble() ??
+                                13,
+                            kinds: (e.config['strokeKinds'] as List?)
+                                ?.cast<String>(),
+                          ),
+                          child: const SizedBox.expand(),
+                        ),
+                      );
+                    },
                   ),
                 ),
               ),
             ),
           ),
         ),
-      ),
-      TextButton.icon(
+      );
+      final reset = TextButton.icon(
         onPressed: () {
           setState(() {
             stroke = 0;
             at = 0;
             dragging = false;
+            finished = false;
           });
-          e.save({'stroke': 0, 'at': 0});
+          save();
         },
         icon: const Icon(Icons.replay),
         label: Text(e.app.t('again')),
-      ),
-    ],
+      );
+      if (landscape) {
+        return Row(
+          children: [
+            SizedBox(
+              width: math.min(280, constraints.maxWidth * .4),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [step, model, const SizedBox(height: 8), reset],
+                ),
+              ),
+            ),
+            Expanded(child: board),
+          ],
+        );
+      }
+      return Column(
+        children: [
+          step,
+          model,
+          Expanded(child: board),
+          reset,
+        ],
+      );
+    },
   );
 }
 
 class TracePainter extends CustomPainter {
   final List<List<Offset>> strokes;
   final int stroke, at;
-  TracePainter(this.strokes, this.stroke, this.at);
+  final double guideWidth;
+  final bool preview;
+  final List<String>? kinds;
+  TracePainter(
+    this.strokes,
+    this.stroke,
+    this.at, {
+    this.guideWidth = 13,
+    this.preview = false,
+    this.kinds,
+  });
   @override
   void paint(Canvas canvas, Size size) {
-    canvas.scale(size.width / 220, size.height / 220);
+    final viewport = TraceViewport(size);
+    if (preview) {
+      final points = strokes.expand((path) => path);
+      final bounds = Rect.fromLTRB(
+        points.map((p) => p.dx).reduce(math.min),
+        points.map((p) => p.dy).reduce(math.min),
+        points.map((p) => p.dx).reduce(math.max),
+        points.map((p) => p.dy).reduce(math.max),
+      ).inflate(guideWidth);
+      final scale = math.min(
+        size.width / bounds.width,
+        size.height / bounds.height,
+      );
+      canvas.translate(size.width / 2, size.height / 2);
+      canvas.scale(scale);
+      canvas.translate(-bounds.center.dx, -bounds.center.dy);
+    } else {
+      canvas.translate(viewport.origin.dx, viewport.origin.dy);
+      canvas.scale(viewport.scale);
+    }
     final guide = Paint()
-      ..color = const Color(0xFFE2DFEA)
-      ..strokeWidth = 13
+      ..color = preview ? const Color(0xFF344850) : const Color(0xFF9586A5)
+      ..strokeWidth = guideWidth
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
     final ink = Paint()
-      ..color = const Color(0xFF74BEC6)
-      ..strokeWidth = 9
+      ..color = const Color(0xFF328E9D)
+      ..strokeWidth = guideWidth * .7
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
@@ -173,12 +258,31 @@ class TracePainter extends CustomPainter {
     }
 
     for (var i = 0; i < strokes.length; i++) {
+      if (kinds?[i] == 'dot') {
+        final center = Offset.lerp(strokes[i].first, strokes[i].last, .5)!;
+        canvas.drawCircle(
+          center,
+          guideWidth * .58,
+          guide..style = PaintingStyle.fill,
+        );
+        guide.style = PaintingStyle.stroke;
+        if (!preview && i < stroke) {
+          canvas.drawCircle(
+            center,
+            guideWidth * .5,
+            ink..style = PaintingStyle.fill,
+          );
+          ink.style = PaintingStyle.stroke;
+        }
+        continue;
+      }
       canvas.drawPath(path(strokes[i]), guide);
-      if (i < stroke) canvas.drawPath(path(strokes[i]), ink);
-      if (i == stroke && at > 0) {
+      if (!preview && i < stroke) canvas.drawPath(path(strokes[i]), ink);
+      if (!preview && i == stroke && at > 0) {
         canvas.drawPath(path(strokes[i].take(at + 1).toList()), ink);
       }
     }
+    if (preview) return;
     final p = strokes[stroke][at];
     canvas.drawCircle(p, 12, Paint()..color = const Color(0xFFF3C65F));
     canvas.drawCircle(p, 4, Paint()..color = const Color(0xFF344850));
@@ -214,7 +318,11 @@ class TracePainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(TracePainter old) => old.stroke != stroke || old.at != at;
+  bool shouldRepaint(TracePainter old) =>
+      (!preview && (old.stroke != stroke || old.at != at)) ||
+      old.strokes != strokes ||
+      old.guideWidth != guideWidth ||
+      old.preview != preview;
 }
 
 class MazeActivity extends StatefulWidget {
@@ -246,6 +354,7 @@ class _MazeActivityState extends State<MazeActivity> {
       position = next;
       trail.add(next);
     });
+    e.onProgress?.call();
     e.save({'position': position, 'trail': trail});
     if (position == e.config['finish']) {
       finished = true;

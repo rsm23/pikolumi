@@ -1,0 +1,26 @@
+{
+  "simulators": [
+    {
+      "device": "308EF94F-8915-492D-A5EE-28BDD262C199",
+      "normalEntryPointRestored": true,
+      "runnerKernelAndStringsMatch": true,
+      "launchedForAudio": false
+    },
+    {
+      "device": "CEB65F35-4EC0-4272-B32A-2197F48DC60B",
+      "normalEntryPointRestored": true,
+      "runnerKernelAndStringsMatch": true,
+      "launchedForAudio": false
+    }
+  ],
+  "sourceAssetsMatchedInBothPackages": 677,
+  "simulatorPackage": {
+    "path": "output/qa/Pikolumi-Animated-Piko-Simulator.zip",
+    "sha256": "4208cf50bfd277c921bdf0faf944db100c37fbf934e19908b59e96f2e5976de0"
+  },
+  "androidPackage": {
+    "path": "output/qa/Pikolumi-Animated-Piko-QA.apk",
+    "sha256": "44fdeea91870d30c4eaf2e455aae370962fd3429b49e4c682060d1a674890df7"
+  },
+  "storeUploaded": false
+}

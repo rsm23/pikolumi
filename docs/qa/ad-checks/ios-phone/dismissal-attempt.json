@@ -1,0 +1,20 @@
+{
+  "checkedAtUTC": "2026-10-11T23:41:11.198574+00:00",
+  "platform": "iPhone 18 Pro iOS 27 simulator",
+  "testAdsOnly": true,
+  "sound": "disabled before SDK initialization",
+  "store": "isolated MemoryStore; production preferences and ad budget untouched",
+  "bannerLoaded": true,
+  "bannerHiddenDuringInterstitial": true,
+  "interstitialVisible": true,
+  "nativeCloseButtonVisible": true,
+  "dismissalCallbackVerified": false,
+  "attempts": [
+    "XcodeBuildMCP snapshot: close action not exposed as a tappable semantic target",
+    "Device Hub observed close-button coordinate click: no change",
+    "Device Hub exposed Cancel action: no change"
+  ],
+  "testResult": "failed: dismissal not observed within the 180-second wait",
+  "normalAppRestored": true,
+  "physicalDevicePolicyTimingVerified": false
+}

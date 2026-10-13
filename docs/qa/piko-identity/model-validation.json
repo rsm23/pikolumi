@@ -1,0 +1,101 @@
+{
+  "brandReferenceSha256": "080c6d916890f5bb96d96f2339a80bdb01c74473f25801dad33054d3be477dde",
+  "clips": {
+    "idle": {
+      "sourceSha256": "0cd239de79309c7ae551bd9060f6932ce32d1ee9a6ee6d4afc380875978fd26c",
+      "packedCanonicalTextureMatches": true,
+      "closedCurvedMeshes": {
+        "Large head \u2022 original eyes, blush and smiling beak": {
+          "vertices": 1256,
+          "closed": true,
+          "depth": 0.6813
+        },
+        "Left wing \u2022 scalloped feathers and coral tips": {
+          "vertices": 971,
+          "closed": true,
+          "depth": 0.29
+        },
+        "Orange foot -1 \u2022 three rounded toes": {
+          "vertices": 344,
+          "closed": true,
+          "depth": 0.24
+        },
+        "Orange foot 1 \u2022 three rounded toes": {
+          "vertices": 344,
+          "closed": true,
+          "depth": 0.24
+        },
+        "Plump body \u2022 feathered yellow belly": {
+          "vertices": 743,
+          "closed": true,
+          "depth": 0.48
+        },
+        "Right wing \u2022 large crayon and feather grip": {
+          "vertices": 1256,
+          "closed": true,
+          "depth": 0.3871
+        },
+        "Tail \u2022 layered turquoise feathers": {
+          "vertices": 629,
+          "closed": true,
+          "depth": 0.31
+        },
+        "Three broad swept lilac crest feathers": {
+          "vertices": 572,
+          "closed": true,
+          "depth": 0.24
+        }
+      },
+      "maxJointRotationStepRadians": 0.0017445921548642218,
+      "initialPoseRestoredAtThreeSeconds": true
+    },
+    "celebrate": {
+      "sourceSha256": "9db4cf5b87590081bbf3e21d3da1b518aecd9435431b5dddad74e84d7ab39a0e",
+      "packedCanonicalTextureMatches": true,
+      "closedCurvedMeshes": {
+        "Large head \u2022 original eyes, blush and smiling beak": {
+          "vertices": 1256,
+          "closed": true,
+          "depth": 0.6813
+        },
+        "Left wing \u2022 scalloped feathers and coral tips": {
+          "vertices": 971,
+          "closed": true,
+          "depth": 0.29
+        },
+        "Orange foot -1 \u2022 three rounded toes": {
+          "vertices": 344,
+          "closed": true,
+          "depth": 0.24
+        },
+        "Orange foot 1 \u2022 three rounded toes": {
+          "vertices": 344,
+          "closed": true,
+          "depth": 0.24
+        },
+        "Plump body \u2022 feathered yellow belly": {
+          "vertices": 743,
+          "closed": true,
+          "depth": 0.48
+        },
+        "Right wing \u2022 large crayon and feather grip": {
+          "vertices": 1256,
+          "closed": true,
+          "depth": 0.3871
+        },
+        "Tail \u2022 layered turquoise feathers": {
+          "vertices": 629,
+          "closed": true,
+          "depth": 0.31
+        },
+        "Three broad swept lilac crest feathers": {
+          "vertices": 572,
+          "closed": true,
+          "depth": 0.24
+        }
+      },
+      "maxJointRotationStepRadians": 0.022301350109046325,
+      "initialPoseRestoredAtThreeSeconds": true
+    }
+  }
+}

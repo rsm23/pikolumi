@@ -2,6 +2,7 @@ import 'dart:math';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -277,7 +278,7 @@ class _ParentAreaState extends ConsumerState<ParentArea>
               ),
             const Divider(),
             Text(
-              app.t('language'),
+              app.t('interfaceLanguage'),
               style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 12),
@@ -296,6 +297,39 @@ class _ParentAreaState extends ConsumerState<ParentArea>
                     label: Text(language.value),
                     selected: app.language == language.key,
                     onSelected: (_) => app.setLanguage(language.key),
+                  ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            Text(
+              app.t('learningLanguage'),
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
+            const SizedBox(height: 8),
+            Text(app.t('learningLanguageHelp')),
+            const SizedBox(height: 12),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                ChoiceChip(
+                  key: const ValueKey('learning-language-follow'),
+                  label: Text(app.t('followInterface')),
+                  selected: app.active.learningLanguage == null,
+                  onSelected: (_) => app.setLearningLanguage(null),
+                ),
+                for (final language in const {
+                  'en': 'English',
+                  'fr': 'Français',
+                  'es': 'Español',
+                  'pt': 'Português (Brasil)',
+                  'ar': 'العربية',
+                }.entries)
+                  ChoiceChip(
+                    key: ValueKey('learning-language-${language.key}'),
+                    label: Text(language.value),
+                    selected: app.active.learningLanguage == language.key,
+                    onSelected: (_) => app.setLearningLanguage(language.key),
                   ),
               ],
             ),
@@ -367,11 +401,20 @@ class _ParentAreaState extends ConsumerState<ParentArea>
             ),
             const SizedBox(height: 10),
             Text(app.t('localPrivacy'), style: const TextStyle(fontSize: 16)),
-            ListTile(
-              contentPadding: EdgeInsets.zero,
-              leading: const Icon(Icons.privacy_tip_outlined),
-              title: Text(app.t('privacyOptions')),
-              onTap: () => ads.privacyOptions(),
+            ListenableBuilder(
+              listenable: ads,
+              builder: (context, _) => ads.needsPrivacyAction
+                  ? ListTile(
+                      contentPadding: EdgeInsets.zero,
+                      leading: const Icon(Icons.privacy_tip_outlined),
+                      title: Text(app.t('privacyOptions')),
+                      onTap: () => ads.privacyOptions(
+                        canPresent: () =>
+                            context.mounted &&
+                            (ModalRoute.of(context)?.isCurrent ?? false),
+                      ),
+                    )
+                  : const SizedBox.shrink(),
             ),
             if (const String.fromEnvironment('SUPPORT_URL').isNotEmpty)
               ListTile(
@@ -384,6 +427,49 @@ class _ParentAreaState extends ConsumerState<ParentArea>
                 ),
               ),
             const SizedBox(height: 20),
+            ListTile(
+              contentPadding: EdgeInsets.zero,
+              leading: const Icon(Icons.info_outline),
+              title: Text(app.t('credits')),
+              onTap: () async {
+                final credits = await rootBundle.loadString(
+                  'assets/content/CREDITS.txt',
+                );
+                if (!context.mounted) return;
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => Scaffold(
+                      appBar: AppBar(title: Text(app.t('credits'))),
+                      body: Column(
+                        children: [
+                          Expanded(
+                            child: SingleChildScrollView(
+                              padding: const EdgeInsets.all(20),
+                              child: SelectableText(credits),
+                            ),
+                          ),
+                          SafeArea(
+                            top: false,
+                            child: TextButton(
+                              onPressed: () => showLicensePage(
+                                context: context,
+                                applicationName: 'Pikolumi',
+                                applicationVersion: '1.0.0',
+                              ),
+                              child: Text(
+                                MaterialLocalizations.of(context)
+                                    .licensesPageTitle,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
             const Text(
               'Pikolumi · 1.0.0',
               textAlign: TextAlign.center,
@@ -471,7 +557,10 @@ Future<void> exportPicture(
   final drawing = await app.artwork(id);
   if (drawing == null || !context.mounted) return;
   final image = await renderArtwork(
-    sceneFor(app.catalog.art, app.gallery[id]['scene']),
+    sceneFor(
+      app.catalog.artForRevision(drawing['artRevision'] ?? 2),
+      app.gallery[id]['scene'],
+    ),
     drawing,
   );
   final png = await image.toByteData(format: ui.ImageByteFormat.png);

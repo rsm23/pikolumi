@@ -1,0 +1,33 @@
+{
+  "checkedAtUTC": "2026-10-12T13:45:38.675Z",
+  "passed": true,
+  "method": "Isolated jsdom documents; no browser session, network resources or media playback",
+  "localeRecordingCounts": {
+    "en": 105,
+    "fr": 109,
+    "es": 106,
+    "pt": 114,
+    "ar": 214
+  },
+  "lessonLocales": 5,
+  "activitiesPerLocale": 2400,
+  "distinctAdvertisedActivities": 2400,
+  "audioPlaybackCalls": 0,
+  "networkRequests": 0,
+  "checks": [
+    "locale-specific copies and exports",
+    "separate saved selections across identical filenames",
+    "cross-locale import rejection without losing notes",
+    "recording reload persistence",
+    "full Arabic correction list with maximum-length Unicode notes",
+    "24-item lesson pagination",
+    "section and stage filters",
+    "activity search and empty state",
+    "stroke paths match the native 220-unit coordinate space",
+    "correct quiz choices",
+    "mathematics retains LTR direction",
+    "lesson pages contain no media"
+  ],
+  "visualBrowserVerification": "not performed; local file navigation is blocked by browser automation policy",
+  "humanApproval": false
+}

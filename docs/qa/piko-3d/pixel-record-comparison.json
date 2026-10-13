@@ -1,0 +1,41 @@
+{
+  "rawDatabaseBytesUnchanged": true,
+  "savedRecordsUnchanged": true,
+  "changedNamespaces": [],
+  "before": {
+    "rawSha256": "abe57d054e1ebbf474ad94d59d96c54fdaf0e9ff992c0aee27d34c76a2c2313b",
+    "recordsSha256": "5112ea0428904af96562d62fcd22f7b2580e28418f421010db813a93c75c03da",
+    "namespaceHashes": {
+      "ads": "a7042b33b26ec89c31a3ad9675248081abd749e38f1743018183999f8e14a469",
+      "artwork:explorer-1": "3889ab75c98e389b5c7b541010304c9a76a7943347c111f872c9fef77cb4b923",
+      "gallery:explorer-1": "fc752fad61f1a8716c99ffcbd23ee6a9aa509315f56675ec1644dcfb2ac93677",
+      "results:explorer-1": "59cb888e383fe58c9c2474a9247d97a20a7f1417d9b2f5551e02430575cef38d",
+      "settings": "d9373682c66ba540f514320723b7bb85bcdd41febb33a3e2f06baa54b4c7f3ae"
+    },
+    "recordCounts": {
+      "ads": 1,
+      "artwork:explorer-1": 4,
+      "gallery:explorer-1": 4,
+      "results:explorer-1": 16,
+      "settings": 1
+    }
+  },
+  "after": {
+    "rawSha256": "abe57d054e1ebbf474ad94d59d96c54fdaf0e9ff992c0aee27d34c76a2c2313b",
+    "recordsSha256": "5112ea0428904af96562d62fcd22f7b2580e28418f421010db813a93c75c03da",
+    "namespaceHashes": {
+      "ads": "a7042b33b26ec89c31a3ad9675248081abd749e38f1743018183999f8e14a469",
+      "artwork:explorer-1": "3889ab75c98e389b5c7b541010304c9a76a7943347c111f872c9fef77cb4b923",
+      "gallery:explorer-1": "fc752fad61f1a8716c99ffcbd23ee6a9aa509315f56675ec1644dcfb2ac93677",
+      "results:explorer-1": "59cb888e383fe58c9c2474a9247d97a20a7f1417d9b2f5551e02430575cef38d",
+      "settings": "d9373682c66ba540f514320723b7bb85bcdd41febb33a3e2f06baa54b4c7f3ae"
+    },
+    "recordCounts": {
+      "ads": 1,
+      "artwork:explorer-1": 4,
+      "gallery:explorer-1": 4,
+      "results:explorer-1": 16,
+      "settings": 1
+    }
+  }
+}

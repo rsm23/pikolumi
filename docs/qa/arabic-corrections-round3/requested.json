@@ -1,0 +1,30 @@
+{
+  "locale": "ar",
+  "round": "2026-10-13-round3",
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "originalSha256": "45f22c01ebe6ed08421664cd919c36eb8631e4c1b70fa5827359ae2283865542",
+      "bundledOriginalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "note": "Si",
+      "previousReviewDecision": "wrong"
+    },
+    {
+      "file": "syllable_46.mp3",
+      "text": "ظِ",
+      "originalSha256": "1cec05542365597f45df5f7b1cd0d1d581f2ef40dbf083bf21b95f9bc3f62038",
+      "bundledOriginalSha256": "6cd05116245a4118faa92951b7108b7c60d31df445322724b36c343050ef3d17",
+      "note": "Thi",
+      "previousReviewDecision": "wrong"
+    },
+    {
+      "file": "syllable_72.mp3",
+      "text": "هَ",
+      "originalSha256": "149d4daf23d86cbe31a883fcb2ed0c0c73e8a343e57014ed054127002cc68d47",
+      "bundledOriginalSha256": "a91cb87907f510508105e62fd1ae148ec68df670fb80382fcb03663deb314e32",
+      "note": "Needs pronunciation correction.",
+      "previousReviewDecision": "wrong"
+    }
+  ]
+}

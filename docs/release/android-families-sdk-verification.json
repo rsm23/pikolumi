@@ -1,0 +1,17 @@
+{
+  "checkedAtUTC": "2026-10-12T02:39:56.736784+00:00",
+  "sourceURL": "https://support.google.com/googleplay/android-developer/answer/12955712?hl=en",
+  "sourceType": "Live official Google Play Families self-certified SDK table",
+  "maven": "com.google.android.gms:play-services-ads",
+  "listedRange": "19.0.0 or later",
+  "resolvedVersion": "25.4.0",
+  "resolvedVersionSource": "Packaged play-services-ads.properties",
+  "artifact": "output/qa/Pikolumi-1.0.0-QA.apk",
+  "artifactSha256": "da8888c75e94ba2cc40a671419ebb94311b916e3f7de978c4706d517c43949b8",
+  "sourceDigest": "332c7181c78b1e08f4c076a9abc0766628887d1ad8d2655c8d16cd90c9894949",
+  "selfCertifiedRangeMatched": true,
+  "recheckBeforeSubmission": true,
+  "productionCreativeDismissalAndPrivacyVerified": false,
+  "sourceCheckedAtUTC": "2026-10-12T02:39:56.736784+00:00",
+  "artifactCheckedAtUTC": "2026-10-12T04:31:01.556756+00:00"
+}

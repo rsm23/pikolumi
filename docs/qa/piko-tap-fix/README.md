@@ -1,0 +1,15 @@
+# Piko tap and feedback correction
+
+The old mascot combined `MediaQuery.accessibleNavigation` with `disableAnimations`. Its reduced-motion tap branch had no animation and, inside a level, no invitation to display. An accessibility service could therefore block a deliberate tap while the parent's Reduce motion setting was off.
+
+The Pixel's inspected preferences were `reducedMotion: false`, `sound: true`; all three Android animation scales were 1.0. Accessibility services were enabled, with touch exploration disabled. The project's installed Flutter Android embedding sets ACCESSIBLE_NAVIGATION when its accessibility nodes are inspected (`AccessibilityBridge.createAccessibilityNodeInfo` calls `setAccessibleNavigation(true)`). No accessibility service, phone setting or app preference was modified.
+
+`test/piko_tap_regression_test.dart` reproduced the old ignored tap with accessible navigation enabled and animations allowed. The first run failed because a tap never loaded a reaction. The corrected widget separates those flags: idle stays quiet under assistive navigation, while deliberate taps and completion celebrations can animate. Explicit app/OS reduced motion continues to keep Piko static. Normal animation settings retain the full ten-gesture shuffle, background/offstage pause and original artwork.
+
+The mascot's Material/InkResponse/Tooltip surface is replaced by an opaque GestureDetector with semantic activation and a FocusableActionDetector. It retains touch, keyboard and screen-reader activation without drawing tooltip rectangles, ink highlights, hover circles or press ripples. Rendered-pixel comparisons assert that mouse hover and a held touch leave the image unchanged; keyboard activation is also tested.
+
+Native evidence in this folder exercises all ten real bundled reaction clips inside the activity header with accessible navigation enabled, compares hover/pressed images, and verifies return to a quiet idle. Android uses the profile configuration matching the installed QA build; iPhone uses the simulator debug configuration. QA uses MemoryStore and SilentAudio and disables sound before mounting. Original mascot frames, art, pronunciation audio and content remain unchanged.
+
+`validation.json` binds the source, local packages and simulator reports. `pixel-installation.json` records the compatible main-app update and fresh exact database-file/record fingerprints before and after installation. Physical playtesting remains with the user; the phone is being used, so automated playback tests run on simulators. No phone foreground navigation, audio playback, wake settings, system volume changes, app data clearing or store actions are part of the installation.
+
+The first iOS debug held-touch comparison caught the live test runner’s painted crosshair, rather than app feedback. The fixture now sends its held-touch through the device-event path, so native comparisons measure the actual app without that test overlay. The diagnostic captures are retained in ignored `tmp/piko-tap-ios-crosshair-diagnosis/`. Production app source and the installed Pixel package did not change for this fixture correction.

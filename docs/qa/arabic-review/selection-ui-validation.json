@@ -1,0 +1,22 @@
+{
+  "checkedAtUTC": "2026-10-12T02:33:53.202Z",
+  "passed": true,
+  "recordings": 214,
+  "audioPlaybackCalls": 0,
+  "method": "Isolated jsdom document tests; no browser session or network resources",
+  "checks": [
+    "checkboxes",
+    "optional Arabic notes",
+    "selected/category/search filters",
+    "empty states",
+    "copy and clipboard fallback",
+    "download JSON",
+    "reload persistence",
+    "storage unavailable fallback",
+    "unselect retains notes",
+    "changed audio requires re-selection",
+    "valid and invalid imports",
+    "all audio starts only on manual play"
+  ],
+  "visualBrowserVerification": "not performed; local file URLs are blocked by browser automation policy"
+}

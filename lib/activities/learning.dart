@@ -3,24 +3,35 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../ui/memory_card.dart';
+
 import '../core/controller.dart';
 import '../core/models.dart';
 import '../ui/vector_art.dart';
+import '../ui/listen.dart';
 
 class EngineContext {
   final Activity activity;
   final AppController app;
   final VoidCallback complete;
+  final VoidCallback? onMistake, onProgress;
   final Map<String, dynamic>? resume;
   final void Function(Map<String, dynamic>) save;
   EngineContext({
     required this.activity,
     required this.app,
     required this.complete,
+    this.onMistake,
+    this.onProgress,
     required this.resume,
     required this.save,
   });
-  Map<String, dynamic> get config => activity.config(app.language);
+  String get contentLanguage => app.activityLanguage(activity);
+  String get contentFont =>
+      contentLanguage == 'ar' ? 'NotoSansArabic' : 'Nunito';
+  TextDirection get contentDirection =>
+      contentLanguage == 'ar' ? TextDirection.rtl : TextDirection.ltr;
+  Map<String, dynamic> get config => activity.config(contentLanguage);
   Widget art(String id, {double size = 130}) => SizedBox(
     width: size,
     height: size,
@@ -47,6 +58,7 @@ class _QuizActivityState extends State<QuizActivity> {
       finished = true;
       e.complete();
     } else {
+      e.onMistake?.call();
       unawaited(e.app.audio.play(e.app.language, 'again.mp3'));
       reset?.cancel();
       reset = Timer(const Duration(milliseconds: 800), () {
@@ -120,11 +132,11 @@ class _QuizActivityState extends State<QuizActivity> {
             Padding(
               padding: const EdgeInsets.all(24),
               child: FilledButton.tonalIcon(
-                onPressed: () => e.app.audio.play(
-                  e.app.language,
-                  e.activity.cue(e.app.language) ?? e.activity.audio,
+                onPressed: () => listenToActivity(context, e.app, e.activity),
+                icon: Icon(
+                  e.app.sound ? Icons.volume_up : Icons.volume_off,
+                  size: 38,
                 ),
-                icon: const Icon(Icons.volume_up, size: 38),
                 label: Text(e.app.t('listen')),
               ),
             ),
@@ -134,15 +146,32 @@ class _QuizActivityState extends State<QuizActivity> {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 28),
               child: Directionality(
-                textDirection: TextDirection.ltr,
+                textDirection: cfg['direction'] == 'rtl'
+                    ? TextDirection.rtl
+                    : TextDirection.ltr,
                 child: Text(
                   cfg['display'],
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: cfg['display'].toString().length < 8 ? 48 : 32,
                     fontWeight: FontWeight.w900,
+                    fontFamily: e.contentFont,
                   ),
                 ),
+              ),
+            ),
+          if (cfg['spokenOnly'] == true &&
+              !e.app.sound &&
+              cfg['visualCue'] != null)
+            Text(
+              localized(cfg['visualCue'], e.contentLanguage),
+              textDirection: e.activity.languageLesson
+                  ? e.contentDirection
+                  : TextDirection.ltr,
+              style: TextStyle(
+                fontSize: 48,
+                fontWeight: FontWeight.w800,
+                fontFamily: e.contentFont,
               ),
             ),
           if (cfg['pictures'] != null)
@@ -173,7 +202,7 @@ class _QuizActivityState extends State<QuizActivity> {
                         width: (constraints.maxWidth - 12) / 2,
                         child: Semantics(
                           button: true,
-                          label: localized(option['label'], e.app.language),
+                          label: localized(option['label'], e.contentLanguage),
                           child: Material(
                             color: selected == option['value']
                                 ? (selected == cfg['correct']
@@ -205,14 +234,18 @@ class _QuizActivityState extends State<QuizActivity> {
                                     Text(
                                       localized(
                                         option['label'],
-                                        e.app.language,
+                                        e.contentLanguage,
                                       ),
+                                      textDirection: e.activity.languageLesson
+                                          ? e.contentDirection
+                                          : null,
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
                                         fontSize: option['art'] != null
                                             ? 18
                                             : 27,
                                         fontWeight: FontWeight.w800,
+                                        fontFamily: e.contentFont,
                                       ),
                                     ),
                                     if (selected == option['value'])
@@ -329,12 +362,14 @@ class _WordActivityState extends State<WordActivity> {
     if (finished) return;
     if (letter == letters[index]) {
       setState(() => index++);
+      e.onProgress?.call();
       e.save({'index': index});
       if (index == letters.length) {
         finished = true;
         e.complete();
       }
     } else {
+      e.onMistake?.call();
       setState(() => wrong = letter);
       reset?.cancel();
       reset = Timer(const Duration(milliseconds: 700), () {
@@ -361,11 +396,18 @@ class _WordActivityState extends State<WordActivity> {
           const SizedBox(height: 20),
           Text(
             letters.take(index).join(),
+            key: const ValueKey('word-progress'),
+            textDirection: e.contentDirection,
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 42, fontWeight: FontWeight.w900),
+            style: TextStyle(
+              fontSize: 42,
+              fontWeight: FontWeight.w900,
+              fontFamily: e.contentFont,
+            ),
           ),
           const SizedBox(height: 12),
           Wrap(
+            textDirection: e.contentDirection,
             spacing: 7,
             runSpacing: 7,
             alignment: WrapAlignment.center,
@@ -403,9 +445,11 @@ class _WordActivityState extends State<WordActivity> {
                       ? const Icon(Icons.space_bar)
                       : Text(
                           char,
-                          style: const TextStyle(
+                          textDirection: e.contentDirection,
+                          style: TextStyle(
                             fontSize: 30,
                             fontWeight: FontWeight.w800,
+                            fontFamily: e.contentFont,
                           ),
                         ),
                 ),
@@ -450,12 +494,14 @@ class _SortingActivityState extends State<SortingActivity> {
         sorted.add(id);
         selected = null;
       });
+      e.onProgress?.call();
       e.save({'sorted': sorted.toList()});
       if (sorted.length == items.length) {
         finished = true;
         e.complete();
       }
     } else {
+      e.onMistake?.call();
       unawaited(e.app.audio.play(e.app.language, 'again.mp3'));
     }
   }
@@ -612,15 +658,32 @@ class _MemoryActivityState extends State<MemoryActivity> {
     if (open.length == 2) {
       busy = true;
       timer = Timer(
-        Duration(milliseconds: deck[open[0]] == deck[open[1]] ? 350 : 900),
+        Duration(milliseconds: deck[open[0]] == deck[open[1]] ? 650 : 1300),
         () {
           if (!mounted) return;
+          final pair = deck[open[0]] == deck[open[1]];
           setState(() {
-            if (deck[open[0]] == deck[open[1]]) matched.addAll(open);
+            if (pair) matched.addAll(open);
             open.clear();
-            busy = false;
+            busy = !pair;
           });
-          e.save({'matched': matched.toList()});
+          if (!pair) {
+            final reduced =
+                MediaQuery.disableAnimationsOf(context) ||
+                MediaQuery.accessibleNavigationOf(context);
+            timer = Timer(
+              reduced ? Duration.zero : MemoryCard.turnDuration,
+              () {
+                if (mounted) setState(() => busy = false);
+              },
+            );
+          }
+          if (pair) {
+            e.onProgress?.call();
+            e.save({'matched': matched.toList()});
+          } else {
+            e.onMistake?.call();
+          }
           if (matched.length == deck.length) {
             finished = true;
             e.complete();
@@ -665,28 +728,14 @@ class _MemoryActivityState extends State<MemoryActivity> {
                   return Semantics(
                     label: '${e.app.t('step')} ${i + 1}',
                     button: true,
-                    child: Material(
-                      color: matched.contains(i)
-                          ? const Color(0xFFD5EBD7)
-                          : show
-                          ? Colors.white
-                          : const Color(0xFFAA9BDB),
-                      borderRadius: BorderRadius.circular(22),
-                      child: InkWell(
-                        key: ValueKey('memory-$i'),
-                        onTap: () => flip(i),
-                        borderRadius: BorderRadius.circular(22),
-                        child: Padding(
-                          padding: const EdgeInsets.all(12),
-                          child: show
-                              ? e.art(deck[i])
-                              : const Icon(
-                                  Icons.auto_awesome,
-                                  color: Colors.white,
-                                  size: 38,
-                                ),
-                        ),
-                      ),
+                    enabled: !busy && !finished && !show,
+                    onTap: !busy && !finished && !show ? () => flip(i) : null,
+                    child: MemoryCard(
+                      key: ValueKey('memory-$i'),
+                      faceUp: show,
+                      matched: matched.contains(i),
+                      face: e.art(deck[i]),
+                      onTap: !busy && !finished && !show ? () => flip(i) : null,
                     ),
                   );
                 },
@@ -712,9 +761,11 @@ class _JigsawActivityState extends State<JigsawActivity> {
   bool preview = false, finished = false;
   EngineContext get e => widget.engine;
   int get n => e.config['size'];
+  late int artRevision;
   @override
   void initState() {
     super.initState();
+    artRevision = e.resume == null ? 3 : e.resume!['artRevision'] ?? 2;
     order =
         (e.resume?['order'] as List?)?.cast<int>() ??
         List.generate(n * n, (i) => (i + 1) % (n * n));
@@ -728,7 +779,8 @@ class _JigsawActivityState extends State<JigsawActivity> {
       order[b] = old;
       selected = null;
     });
-    e.save({'order': order});
+    e.onProgress?.call();
+    e.save({'order': order, 'artRevision': artRevision});
     if (List.generate(order.length, (i) => i).every((i) => order[i] == i)) {
       finished = true;
       e.complete();
@@ -737,7 +789,12 @@ class _JigsawActivityState extends State<JigsawActivity> {
 
   @override
   Widget build(BuildContext context) {
-    final scene = sceneFor(e.app.catalog.art, e.config['scene'])!;
+    final scene = sceneFor(
+      e.app.catalog.artForRevision(artRevision),
+      artRevision < 3
+          ? e.config['legacyScene'] ?? e.config['scene']
+          : e.config['scene'],
+    )!;
     Widget tile(int i) => DragTarget<int>(
       onAcceptWithDetails: (d) => swap(d.data, i),
       builder: (context, candidates, rejected) => Draggable<int>(
@@ -747,7 +804,7 @@ class _JigsawActivityState extends State<JigsawActivity> {
           height: 100,
           child: CustomPaint(painter: TilePainter(scene, n, order[i])),
         ),
-        childWhenDragging: const ColoredBox(color: Color(0xFFE5DFD3)),
+        childWhenDragging: const ColoredBox(color: Color(0xFFE5EEF0)),
         child: Semantics(
           label: '${e.app.t('step')} ${order[i] + 1}',
           button: true,
@@ -760,59 +817,120 @@ class _JigsawActivityState extends State<JigsawActivity> {
                 swap(selected!, i);
               }
             },
-            child: Container(
+            child: AnimatedContainer(
+              duration: e.app.reducedMotion
+                  ? Duration.zero
+                  : const Duration(milliseconds: 140),
               decoration: BoxDecoration(
                 border: Border.all(
                   color: selected == i || candidates.isNotEmpty
                       ? const Color(0xFFF2B544)
-                      : Colors.white,
-                  width: 3,
+                      : const Color(0xFFF9F8F4),
+                  width: selected == i || candidates.isNotEmpty ? 3 : 1,
                 ),
-                borderRadius: BorderRadius.circular(5),
+                borderRadius: BorderRadius.circular(7),
               ),
-              child: CustomPaint(
-                painter: TilePainter(scene, n, order[i]),
-                child: const SizedBox.expand(),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(6),
+                child: CustomPaint(
+                  painter: TilePainter(scene, n, order[i]),
+                  child: const SizedBox.expand(),
+                ),
               ),
             ),
           ),
         ),
       ),
     );
-    return Column(
-      children: [
-        TextButton.icon(
-          onPressed: () => setState(() => preview = !preview),
-          icon: const Icon(Icons.image_outlined),
-          label: Text(e.app.t('hint')),
-        ),
-        Expanded(
-          child: Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 650),
-              child: AspectRatio(
-                aspectRatio: 1,
-                child: Padding(
-                  padding: const EdgeInsets.all(12),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final extent = math.min(
+          650.0,
+          math.min(
+            constraints.maxWidth - 32,
+            math.max(n * 54.0 + 24, constraints.maxHeight - 128),
+          ),
+        );
+        final placed = order.indexed.where((p) => p.$1 == p.$2).length;
+        return SizedBox(
+          width: constraints.maxWidth,
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(vertical: 12),
+            child: Column(
+              children: [
+                SizedBox(
+                  width: extent,
+                  child: Row(
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(12),
+                        child: SizedBox(
+                          width: 76,
+                          height: 76,
+                          child: ArtThumbnail(scene: scene),
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      TextButton.icon(
+                        onPressed: () => setState(() => preview = !preview),
+                        icon: Icon(
+                          preview
+                              ? Icons.grid_view_rounded
+                              : Icons.image_outlined,
+                        ),
+                        label: Text(e.app.t('hint')),
+                      ),
+                      const Spacer(),
+                      Text(
+                        '$placed / ${order.length}',
+                        textDirection: TextDirection.ltr,
+                        style: const TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Container(
+                  width: extent,
+                  height: extent,
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(
+                      color: const Color(0xFFDCE8E7),
+                      width: 2,
+                    ),
+                  ),
                   child: preview
-                      ? ArtThumbnail(scene: scene)
-                      : GridView.builder(
-                          physics: const NeverScrollableScrollPhysics(),
-                          gridDelegate:
-                              SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount: n,
-                                mainAxisSpacing: 4,
-                                crossAxisSpacing: 4,
-                              ),
-                          itemCount: order.length,
-                          itemBuilder: (context, i) => tile(i),
+                      ? ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: ArtThumbnail(scene: scene),
+                        )
+                      : Directionality(
+                          textDirection: TextDirection.ltr,
+                          child: GridView.builder(
+                            padding: EdgeInsets.zero,
+                            physics: const NeverScrollableScrollPhysics(),
+                            gridDelegate:
+                                SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: n,
+                                  mainAxisSpacing: 4,
+                                  crossAxisSpacing: 4,
+                                ),
+                            itemCount: order.length,
+                            itemBuilder: (context, i) => tile(i),
+                          ),
                         ),
                 ),
-              ),
+              ],
             ),
           ),
-        ),
-      ],
+        );
+      },
     );
   }
 }
@@ -823,10 +941,12 @@ class TilePainter extends CustomPainter {
   TilePainter(this.scene, this.n, this.index);
   @override
   void paint(Canvas canvas, Size size) {
+    canvas.save();
     canvas.clipRect(Offset.zero & size);
     canvas.translate(-(index % n) * size.width, -(index ~/ n) * size.height);
     VectorPainter(scene: scene)
         .drawScene(canvas, Size(size.width * n, size.height * n));
+    canvas.restore();
   }
 
   @override
@@ -878,6 +998,7 @@ class _MusicActivityState extends State<MusicActivity> {
     unawaited(e.app.audio.note(note));
     if (note == notes[at]) {
       setState(() => at++);
+      e.onProgress?.call();
       e.save({'at': at});
       if (at == notes.length) {
         finished = true;
@@ -885,6 +1006,7 @@ class _MusicActivityState extends State<MusicActivity> {
       }
     } else {
       setState(() => at = 0);
+      e.onMistake?.call();
       e.save({'at': 0});
     }
   }
@@ -900,7 +1022,9 @@ class _MusicActivityState extends State<MusicActivity> {
         children: [
           e.art('piano', size: 180),
           FilledButton.icon(
-            onPressed: playing ? null : play,
+            onPressed: playing
+                ? null
+                : () => listenWithFeedback(context, e.app, play),
             icon: const Icon(Icons.play_circle_outline),
             label: Text(e.app.t('listenAgain')),
           ),

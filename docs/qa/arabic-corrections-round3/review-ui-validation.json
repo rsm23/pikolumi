@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "recordings": 3,
+  "comparisonPlayers": 6,
+  "importedApprovalsShown": 2,
+  "approvalRequiresExplicitSelection": true,
+  "staleApprovalCleared": true,
+  "notesRetained": true,
+  "filtersAndExportVerified": true,
+  "playbackCalls": 0,
+  "networkCalls": 0
+}

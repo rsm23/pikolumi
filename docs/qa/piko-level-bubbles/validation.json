@@ -1,0 +1,103 @@
+{
+  "verifiedAt": "2026-10-12T20:47:22.243470+00:00",
+  "sourceHashes": {
+    "lib/ui/activity_encouragement.dart": "7ac04efcd9ac2d82a9db5f9f28c3044898a71a6b58904690204b23014c941d51",
+    "lib/ui/piko_speech_bubble.dart": "5e9cf0ae9018028a6be41bdfe5f83bf0457eef3b04786be8a54d5be95ec2fee7",
+    "lib/ui/activity_screen.dart": "7230668410f1922cf5e5a1b1068d2106daefd0df440585e032dfdf36390e30aa",
+    "lib/activities/learning.dart": "2a7e38629a9cdb728d60a6c7bf16b19d27c6fad80d5520b56bf6615e31a0e058",
+    "lib/activities/tracing_maze.dart": "71ecfe6646321a8271b4638ed2058da458faf5afd583c44d64061007ebe5d449",
+    "lib/activities/canvas_activity.dart": "3056b97ac54337cd0a7ea5c9d9f0dc00834708e76b8d0f54ba443c61a11bc1e9",
+    "lib/ui/piko_mascot.dart": "ed97d805caac115bfee2c39bc2dfef08b28a893f79f00c290ccc34a1bc83ebe1",
+    "lib/main.dart": "6c230c62cb1f121219a9a24c1895b9eaf61435401fe0e24e63e3fca5cd54d844",
+    "scripts/content_source.py": "1ecc3d14525bcd563e209ccb8761158df47b9ac8f2cd2bd21e83bd71184c69f2",
+    "assets/content/strings.json": "767c06a5c024d3a052aebd52029ad76357a00e742894692fe1b60acf32a52db9",
+    "integration_test/activity_encouragement_test.dart": "eff7d711e6a2ec3dd80cbc85220cc72dd5d99e79503911d9798b82a6aa6e7521",
+    "integration_test/capture.dart": "be0ae12a53ba66000849584dd783ee815072ca5ea44dfbc58eeeac16edf4d328",
+    "test/activity_encouragement_test.dart": "36007b4fa1b816523e97fbdf2656b36b13ef33d12e35f44c8d2415fa416d9972",
+    "assets/art/piko.png": "080c6d916890f5bb96d96f2339a80bdb01c74473f25801dad33054d3be477dde",
+    "assets/art/app-icon.png": "0b56e8aa0ef45809ea7d7464d72587280d6f707c1b2c0fec8f0474c6f08ff4a2",
+    "assets/art/piko_3d/poster.webp": "a4c090e5c4330f13ff4363065e206ec9673cc39f5746a9ccaba8de6d6c424a0d",
+    "assets/art/piko_3d/hop_0.webp": "6201e78c31aafe2befd2fea06ca751ac0699f19ba936be850c6ac5d174b67af1",
+    "assets/art/piko_3d/flutter_0.webp": "e2ca1065933bbae916c21993044b44847e51727ce5fae532f4b63672f863c189",
+    "assets/art/piko_3d/nod_0.webp": "49ae43b47c23b1a420b49dafd5cfd36b70312ac53a46133a9265bb20eb8c513e",
+    "assets/art/piko_3d/idle_1.webp": "f24fc5ee5296191f113e4302bce4cac7aa935a97c7d0f1dec3c2d50970401ca2",
+    "assets/art/piko_3d/idle_0.webp": "72ab77744e77a673d1a6eb78defdda38013d8efab52d414a81348e64b7b1d256",
+    "assets/art/piko_3d/manifest.json": "c4a215a495e50a55961fd81bf7ab48d2c24a462fa8a2f3a0d50f69dfcf97e58c",
+    "assets/art/piko_3d/crayon_0.webp": "27fead89a2e3e47434f0f220b55d4e17878796ac7c6281240e9998ad5faffb17",
+    "assets/art/piko_3d/wink_0.webp": "d80d2e4fbc28cc83ef4f436223ba634e1e143444d93660e8cf3c13f506cb329f",
+    "assets/art/piko_3d/bow_0.webp": "1a8ed81e4d9e466def0f8fc146461bc110a062df8da19b138afd1bec0d55eb19",
+    "assets/art/piko_3d/celebrate_0.webp": "f4be82058d625acbac8556d681333de156b83bf85f3895537942f56593c5b650",
+    "assets/art/piko_3d/wiggle_0.webp": "7791e779a55e5085ca85f437e754b598848398360312e32da7a295606eb03eea",
+    "assets/art/piko_3d/peek_0.webp": "035b53a33a0c201a268a83313241c17a75f938e331604ca4d3f4cdca77e48193",
+    "assets/art/piko_3d/stretch_0.webp": "1cd70440f3bd89e12b035dd8c799516496170822caeb87c89adc2626f6d421e2",
+    "assets/art/piko_3d/wave_0.webp": "e643268d029bef02cbc53f7fef5d45154ef048ea1077112e27e61364ee486201",
+    "assets/art/piko_3d/celebrate_1.webp": "0e0788fc76dc90cf6d7c1d1c79d35b4c9704db23c815e848cc33c79df61a0608"
+  },
+  "native": {
+    "android-emulator": {
+      "passed": true,
+      "report": "docs/qa/piko-level-bubbles/android-emulator/integration_response_data.json",
+      "sha256": "790bfa19d970fa6532cfca70e03e61cce61d3cd8a72b21ff6a50a6183562ea10",
+      "captures": {
+        "docs/qa/piko-level-bubbles/android-emulator/ar-completion-encouragement.png": "f0ed4ffbfcd65f17996340ef7a314146dd49c6b25cb6df301aa4b21100604205",
+        "docs/qa/piko-level-bubbles/android-emulator/ar-in-level-encouragement.png": "6ada47c612daf54040c3649fd09fa264421897492e2d90929c9ea156d5214635",
+        "docs/qa/piko-level-bubbles/android-emulator/en-completion-encouragement.png": "a66f42ec0bdaa09ca51a1fa9fa2fdf32f52b76e09eaf61b13b91ce2ec1972406",
+        "docs/qa/piko-level-bubbles/android-emulator/en-in-level-encouragement.png": "34b269be39d293181c79b817591e754d66853630691a4c80cb4646b6078cf07c",
+        "docs/qa/piko-level-bubbles/android-emulator/es-completion-encouragement.png": "d404df235f6613cabc9aac86ce1f01e654a109f86e5db2d124116a377a660629",
+        "docs/qa/piko-level-bubbles/android-emulator/es-in-level-encouragement.png": "f7cf439ad34e28ce3626fd06e0abab824751eddcbeae63f5e4bd14d637ba408a",
+        "docs/qa/piko-level-bubbles/android-emulator/fr-completion-encouragement.png": "015488650ca3feefd7215edf60f82b2159589beff42aa520b51142daf7d1ed40",
+        "docs/qa/piko-level-bubbles/android-emulator/fr-in-level-encouragement.png": "de5996a8b1cc88a925e59e9aa25495dfc3283b8fb0ca8afe189dc2fffbce5409",
+        "docs/qa/piko-level-bubbles/android-emulator/pt-completion-encouragement.png": "a99022bce6a2dc6b9f284702c6660e6242defc5bb2f9229a6c1f3ea21975e816",
+        "docs/qa/piko-level-bubbles/android-emulator/pt-in-level-encouragement.png": "1608bb4716b8651fb4c93a929b0f0b3f2b03823ddfec9b8e3692dc0be1302726"
+      },
+      "normalEntryPointRestored": true
+    },
+    "ios-phone": {
+      "passed": true,
+      "report": "docs/qa/piko-level-bubbles/ios-phone/integration_response_data.json",
+      "sha256": "c0a58563fed6232e3cc532dced0cd6be41e2fdac9c696329ffb8001e22bad2cc",
+      "captures": {
+        "docs/qa/piko-level-bubbles/ios-phone/ar-completion-encouragement.png": "b6b4fe6ea6673c594c89cf24e35a50244345c81936914d9e804a7696428f18ff",
+        "docs/qa/piko-level-bubbles/ios-phone/ar-in-level-encouragement.png": "31aeb1cd221f83b9b357a1c9b3fbc33e600cf1424532f4064311be58c66053c9",
+        "docs/qa/piko-level-bubbles/ios-phone/en-completion-encouragement.png": "3e1bd9ba06332d185f6965877c3ada71204692c38c7dbb186071504eb575163e",
+        "docs/qa/piko-level-bubbles/ios-phone/en-in-level-encouragement.png": "0673016edebd866aaba2008ba6001c025f98e65314777f3d9816eafc8325237f",
+        "docs/qa/piko-level-bubbles/ios-phone/es-completion-encouragement.png": "16b2ccf961dc0a44cda82f2ea6d07600553aa47f4e97e53988cf75579ef5c138",
+        "docs/qa/piko-level-bubbles/ios-phone/es-in-level-encouragement.png": "faf140e93b65236a35e4e33882c7fe2c1bea4efbeb5074bac75ba984b84c4dac",
+        "docs/qa/piko-level-bubbles/ios-phone/fr-completion-encouragement.png": "c24eb4be987e5b2d5378dabe48471c2f169baf792888962a78f9db10be3ba28c",
+        "docs/qa/piko-level-bubbles/ios-phone/fr-in-level-encouragement.png": "9374fc4eb31ad7fa3ccbcc921f79009340358a541e88968a4467a4b73af7e1a5",
+        "docs/qa/piko-level-bubbles/ios-phone/pt-completion-encouragement.png": "3a2d5e7285ba5b83507ebb06619fc88c2081c64522f846e393cc13b8847ed878",
+        "docs/qa/piko-level-bubbles/ios-phone/pt-in-level-encouragement.png": "c22028a234d78e885ced68562399f26f517226b5345ba1d0e139530ba6c146aa"
+      },
+      "normalEntryPointRestored": true
+    },
+    "ios-tablet": {
+      "passed": true,
+      "report": "docs/qa/piko-level-bubbles/ios-tablet/integration_response_data.json",
+      "sha256": "45592fab6b9c8b401c2eacb4cd53120b0a5ddf621ea0f18fac56a1753e5b1b02",
+      "captures": {
+        "docs/qa/piko-level-bubbles/ios-tablet/ar-completion-encouragement.png": "9fc9bfa55bf5009df5f9bfea7fa1fb36593fa5923b5a61376ee9e50be259a6bf",
+        "docs/qa/piko-level-bubbles/ios-tablet/ar-in-level-encouragement.png": "32fa83ecad1c98b4dc55297226d21b61cfa0153463a2a34dbf56073ea74f7691",
+        "docs/qa/piko-level-bubbles/ios-tablet/en-completion-encouragement.png": "bb046e9f3f8aadad7fbbe61b2d82fc4e9e5c0d43a888afb6ec3984faa2e40ee5",
+        "docs/qa/piko-level-bubbles/ios-tablet/en-in-level-encouragement.png": "c574f7fc603b74a2ae3074e2b3010ecc3f96c9ece9a02a026876588b5f80dddc",
+        "docs/qa/piko-level-bubbles/ios-tablet/es-completion-encouragement.png": "2e8441005c3ced0dab30fd79191e068b938dd82616513fab5858bee34c4aafbe",
+        "docs/qa/piko-level-bubbles/ios-tablet/es-in-level-encouragement.png": "7a971000b8d9dca56c8bed7b7c7013dbc2863edbdacdcf8f090c138ad51b34e3",
+        "docs/qa/piko-level-bubbles/ios-tablet/fr-completion-encouragement.png": "91a2ab7c6b38d16e3cd4a779a2c2518fcc457a9ff4b895dbb2909af7fc63a38a",
+        "docs/qa/piko-level-bubbles/ios-tablet/fr-in-level-encouragement.png": "ecd23267f8fbbd26bf846b2ad87dc618b0bc7b5b52f0abd16700756b6d1bfb42",
+        "docs/qa/piko-level-bubbles/ios-tablet/pt-completion-encouragement.png": "69452bdde00edeec35d98f587d4832f2b56981de41cdbed4c8f72da70aa6c91d",
+        "docs/qa/piko-level-bubbles/ios-tablet/pt-in-level-encouragement.png": "edb8977bb37abca1e174f53380e3a64722f0a9219bae2905e781ee8ceeed9734"
+      },
+      "normalEntryPointRestored": true
+    }
+  },
+  "packages": {
+    "output/qa/Pikolumi-Level-Bubbles-QA.apk": "dc0b60e4ac14961e0522866d76f73daf4c51c66a533bc99be55f422d9e79b7b8",
+    "output/qa/Pikolumi-Level-Bubbles-Simulator.zip": "4ed66b82cf6bcac5cff4ca2d3226be345397ffdcdaf5d8892f933723e5c2b7b1"
+  },
+  "sourceAssetsMatchedInBothPackages": 687,
+  "flutterTests": 75,
+  "pythonTests": 8,
+  "analyzer": "clean",
+  "physicalTesting": "User will test on Pixel after installation; physical iOS unavailable",
+  "audio": "SilentAudio, muted before mounting; emulator -no-audio; no system-volume or normal sound-preference changes",
+  "storeActionsPerformed": false
+}

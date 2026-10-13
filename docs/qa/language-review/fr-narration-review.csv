@@ -1,0 +1,110 @@
+locale,file,script,approved,reviewer,date,notes,sourceSha256
+fr,coloring.mp3,Choisis une couleur. Touche une forme ou utilise ton pinceau.,,,,,a29d79d53391c0914c168f1b0bfb8b0550d1800bf5af8ab0f4436d5ee0650f50
+fr,drawing.mp3,"Suis le modèle, puis invente ton dessin.",,,,,d9fbc69b20e731e82ab8110cd969e80f9e6b299dfadaafbf0c049c0ce3ccd5f0
+fr,tracing.mp3,"Suis les points dans l’ordre, en partant du point lumineux.",,,,,7abed9504f2ac16699a00b72445ee8a23746db4a9dd2f2d1fb97754d4aaaf813
+fr,letters.mp3,"Écoute, regarde et choisis la bonne lettre.",,,,,17ac8ce88083735e6bfcc2f236d6526324c2b67759b5b142e210a49f1d9082df
+fr,words.mp3,Regarde l’image et découvre son nom.,,,,,a4e0f4abe20b491f4699d27e6d3701189774e95b723a897bb126df100f75bcbd
+fr,counting.mp3,"Compte les objets, puis choisis le nombre.",,,,,a2a76999af5a094146821233357838a441978248f4136c179e9363d38cc8caca
+fr,math.mp3,Résous le calcul. Tu peux demander un indice.,,,,,40d07df136f8801940fffd8573961656011b1c4da6aa2697d35ca4f61d611a77
+fr,shapes.mp3,Observe bien et choisis la forme ou la couleur.,,,,,1af0e4ed934c012cfabd00bfd8c9e3877a67ab5f0350466c2325980fb65183b3
+fr,sorting.mp3,Déplace chaque image vers son groupe.,,,,,3ace3a127ce16e9bf63004a5f365e00139f1bac57904959306e8fc27a184138f
+fr,memory.mp3,Retourne deux cartes. Retrouve toutes les paires.,,,,,dcde53d19313848d29c8a95c4f951dda8e9654fa5db3d509b8929dabb3df6d8a
+fr,jigsaw.mp3,Déplace les pièces pour reconstruire l’image.,,,,,400713be037fbed668d064f464197fb055abc4d674ffc22f87ed677e436ff0f1
+fr,patterns.mp3,Trouve ce qui vient ensuite dans la suite.,,,,,21f87ff75c2f53a2b7ade7161f748f854054819be3939a6606bf86d2ad68ae1e
+fr,mazes.mp3,Guide Piko vers l’étoile sans traverser les murs.,,,,,5d5ed8de13cf1aa73546ad0daa753e2b98fe6b722ad9836959433069bd0c5389
+fr,nature.mp3,Explore la nature et choisis la bonne réponse.,,,,,f0bbd556a09cf328b9114113ab112a31c09e2e7f736d3079f9522203ee1a0947
+fr,everyday.mp3,"Observe, réfléchis et découvre un savoir du quotidien.",,,,,6e0ec8e275f3a95e37ee1332a1d63f83f0a6d9fa56a96875abfcda3b6448e75a
+fr,music.mp3,"Écoute les notes, puis rejoue-les dans le même ordre.",,,,,aa6e191f18c9a1911beb84e25c06b8d469da0ae03005359dba03ff6c3c8e6db3
+fr,word_cat.mp3,chat,,,,,8a07e49491e608324d1f0408cb7bedc816c26d6ef76dd5377c7b7a985a379a77
+fr,word_dog.mp3,chien,,,,,0c5aa221b684032c68a64ec995928b12b32fc32b56c9aef94f968c3c772b2140
+fr,word_rabbit.mp3,lapin,,,,,fbe9a33e531d5b16c3c29d5c32e1b3cafe716124ce51e9d7f8f5572b48b5857e
+fr,word_fox.mp3,renard,,,,,00a0b69f2f21ee96385bd3bace26c4506ce49a983a99d8505ed851e938860cea
+fr,word_bear.mp3,ours,,,,,874cc5c52979cfb3aff3feda92fa78861f20268626765eb53beafe53bbc5e219
+fr,word_lion.mp3,lion,,,,,b171f77b8f7308e6304cb080cf517360e0640377ae36566056e438c2feafb802
+fr,word_elephant.mp3,éléphant,,,,,ac195d8f04f2ec7b18829948eb5359cfe96c66d8e631cfcaa10871e1d63c9f85
+fr,word_giraffe.mp3,girafe,,,,,caf70a220d746080df8af830c83634dce500b72e8c52fe14c5f2528076643d5b
+fr,word_turtle.mp3,tortue,,,,,f4a8a7d8f0ed5651885f42e97094fb42f95f15098fd8fb6f7e2ea75d6138203e
+fr,word_fish.mp3,poisson,,,,,924c2de5088abfc4c17c0c6aa1b0c572005ac33cc1b0edcc46a2cdcdcddff7c3
+fr,word_bird.mp3,oiseau,,,,,503bd403d51bfe5da52dadced73a69ba526c137e3a19db722ce9a7f2f46d842b
+fr,word_owl.mp3,hibou,,,,,e1e1c0b8ac642f64fdea94a10a9634ed70ea383d55e24487c55882432d105c9b
+fr,word_penguin.mp3,pingouin,,,,,ee162344947b8ed869c8d3a9a847421d6f5bf8904078aac67a43f16669d5d1ee
+fr,word_butterfly.mp3,papillon,,,,,8d6dc8f88a67f5757c42184a4518ec678eadd89d09c2334da27a85fdb8566744
+fr,word_bee.mp3,abeille,,,,,a5882649dcfd3f50766b91bbd70d7c320c5dfa8b40753e6f548ffbd952bd95db
+fr,word_snail.mp3,escargot,,,,,6b4d7f56a587ec36c4ecf1481ed0b84761c663759e36c412dae6d661800044a7
+fr,word_octopus.mp3,pieuvre,,,,,bbfbff5027c57cd5aa5c1f85d6923e20822bc699799544385170053d1f887745
+fr,word_whale.mp3,baleine,,,,,f205a9ba38e1b91af3f21d73e24790014fc5a3ece75b2127e3ce4f5231e2b00b
+fr,word_frog.mp3,grenouille,,,,,053c576db1dfcca2d6af2941d32a54726c34d95fd157027acc69725a5d2078ed
+fr,word_hedgehog.mp3,hérisson,,,,,7633169f4ea31b8ed0eb31908fa80f9e8a5400e2b09a764ae811d77df350e89f
+fr,word_apple.mp3,pomme,,,,,a2b73ff01022cc0f457df82cb78b83dec0219ddd3b4e522ebc878bbdc4ac78e5
+fr,word_pear.mp3,poire,,,,,3f7a28ccff195937b375b7709c8caaf8378f68a4245da789139abcd053389b44
+fr,word_banana.mp3,banane,,,,,47e01eb481303e38e37094ea074302bbf58aeff0f93c5223d7528fd7e441daa9
+fr,word_strawberry.mp3,fraise,,,,,b3fe0c7d1dacf27553b116ee6b9a37139cfb275d0a6bd159e037c1158512af65
+fr,word_carrot.mp3,carotte,,,,,4646a60541ea79048f1c29cbfa5c0268f4ca8c84d268cc546e25fbd7d1399add
+fr,word_orange.mp3,orange,,,,,0814ec23e0937c428b4add3774cfeaf7700dde56885b090e4fb3822b1277358a
+fr,word_watermelon.mp3,pastèque,,,,,4f55f6931f84a8fea523080aacad5558c228ab88cd507da7919af780b0781399
+fr,word_bread.mp3,pain,,,,,6f35c4f4be265ad0f727a7b93b7196f7ecff16e72dad9ca2b4518b79312f8652
+fr,word_cake.mp3,gâteau,,,,,da1f7da67c58404ae4c6e5110c6c78dd355f15b9f591eb22678b366a98ea664f
+fr,word_cup.mp3,tasse,,,,,98eb679f9f0944f21c7730c900a8dd1585b18c7405f9e6025a183162cbfeedad
+fr,word_car.mp3,voiture,,,,,c6e4efdadcdfee0ceb8010f60fdf309e3a1cf1125a7dc5bf4242afc62c032955
+fr,word_bus.mp3,bus,,,,,23c960c91e6a4774f2991833e278456da56c4a7903dd6357839ace3f4aeead99
+fr,word_train.mp3,train,,,,,3eb2b51dedeeb2030536bd8732dc4ed3bf7b7e531b9be90a587db2c1046659e3
+fr,word_boat.mp3,bateau,,,,,cff882039ec4903421f3a6aa85b75dac29fef115518ee600096a49610015a7ad
+fr,word_rocket.mp3,fusée,,,,,5da83d3aa586db225c9089c2757c990b8a93282d45936fd62ee62caba868296c
+fr,word_airplane.mp3,avion,,,,,3f18f2c6d55cfbd6801238eabda0843d62120d1eddd673995115d920f77201bb
+fr,word_bicycle.mp3,vélo,,,,,8fc399cb8c30eb22a1f5d9187866440099328c4e195ea4317756de145abaff0e
+fr,word_tractor.mp3,tracteur,,,,,ad281980b103b40936667643f2dce4dafbceccba684b24270271c425c13dbaa3
+fr,word_tree.mp3,arbre,,,,,5db8df7de2320f94266f62f8d30b718bd3e3f8ed5b4c444e07b817b54651c302
+fr,word_flower.mp3,fleur,,,,,8ba7d36750933044b39a3ea2e7b82f9af350c5381d55a4eb40a09337f0990102
+fr,word_sun.mp3,soleil,,,,,0122930c0ae2fdb8ca65f206d39d585a3b9cb418fc0c72d86b14737921964f11
+fr,word_moon.mp3,lune,,,,,251e511516c549a833a5c9e49fda33c8d2b8237813e630f947b4d87b2b6bf561
+fr,word_star.mp3,étoile,,,,,a90a024e001582e7440ba64e8d33be49e63b2c77738a7ab38366a12fd0c1d476
+fr,word_cloud.mp3,nuage,,,,,c48264694e0cd3d0f85fa14e016d2f74c1bbeb15955ea8c75ead1e2718f9ed00
+fr,word_rainbow.mp3,arc-en-ciel,,,,,066cb4b5e6ceb66ff36d3cac7c0f42909f939543a4dd0f88ad64d3e74679e841
+fr,word_leaf.mp3,feuille,,,,,1bcef2a9dfe7a8a64a21779913b047c8e43a7d99e165e53cd22b0afaee0ecb85
+fr,word_mountain.mp3,montagne,,,,,dba992e42ca970d35c9766eb6fea22c3d0efe7db3567ef1791759c55d886a8ad
+fr,word_mushroom.mp3,champignon,,,,,c040bfe2c269e4c213efd9554f30701f404ed1a4c827e7c6f821a88daaa952d1
+fr,word_house.mp3,maison,,,,,c22c1d04f4765077ca47c222a6c657c894c2a0355cce8b02ad16e482a7fff61b
+fr,word_book.mp3,livre,,,,,60251e51d79fdf30eac4520457cb084ac24b596bd0fe43dd16631675d5fab520
+fr,word_pencil.mp3,crayon,,,,,214402a36dd069f03b3b81aebd555d23907bde84fe8e7af69fb8753fb8d4a57a
+fr,word_ball.mp3,ballon,,,,,319084a95f4c7a6c0a2d5d9863387aa59abfa8c39e9c3d4efb8118b5e8f77ada
+fr,word_kite.mp3,cerf-volant,,,,,23f64ab0adbcd9299eb02d39d343bde17cfb1d25a27f3b228de54c36cf2314b9
+fr,word_umbrella.mp3,parapluie,,,,,2c942f44aad2da37390474bddd054ba4cc0e2afbcc2ec4f674bc717ea637bc3a
+fr,word_clock.mp3,horloge,,,,,f06d54452511d23eaf099881772039cf657c35ec8a2c2982a27917f6f7611946
+fr,word_key.mp3,clé,,,,,398b555919a7640d8256cd7c3c41f931a5792ba3bc2c88f736c36abdcf3cd549
+fr,word_guitar.mp3,guitare,,,,,a9c0c6cbda9789467040fd9c1f1410183d4f1f0a68f111529e531760c7d87eb5
+fr,word_drum.mp3,tambour,,,,,025a70e9cf9b9ca0108874d9c62211e8ca387df11f58693d5bd927d3d11956df
+fr,word_piano.mp3,piano,,,,,95265e378d1b31dd80cc8d041414e65da2d0a291d28a74513568b4e5c0a041b8
+fr,word_bell.mp3,cloche,,,,,159332a5e1a6cba240910261b5253e6dc2b906ddf06b4af94b204feabdd73485
+fr,great.mp3,Bravo !,,,,,3d2d7b58aa09a64265bb8ef0e71bbcf3b6f587de278c2296708c2e99968d719f
+fr,again.mp3,Essaie autrement,,,,,434c7987f2fea8664f9d21f780abc321ddd6c2a24bbe0e477d891e93108fb895
+fr,welcome.mp3,"Un peu de merveilleux, chaque jour.",,,,,38fc39a02eb931478bd133e8993b91ff9d37b8ba76a65b3f0b2518af107d0554
+fr,letter_0.mp3,La lettre A.,,,,,983d696ab93d45eb502954aa8dcc3669ead26d2d163c277f625e08a06ae3f95e
+fr,letter_1.mp3,La lettre B.,,,,,bd457c0395e40feb55a97246344ac3f0769d9ae4bec244c428b67835584e0132
+fr,letter_2.mp3,La lettre C.,,,,,4d61e7d20d4e63019fe943c28f2a32edeea6ec37772791da50f961ba0282d0cb
+fr,letter_3.mp3,La lettre D.,,,,,c05c13f2faf982ed1dff460390f3df6bd79c84bb65b4422b4fad9d8c14d5ec99
+fr,letter_4.mp3,La lettre E.,,,,,700d0ac6feaadc265fd685e64511cad0af48eb51f822579528fde42675515d74
+fr,letter_5.mp3,La lettre F.,,,,,6d86af83a68ca52f1f37bb3acc7c68f47d0ee4ffb9c0cb729703fdb329c639db
+fr,letter_6.mp3,La lettre G.,,,,,a81f1bf466f68a1505d6befa476af6721fab4abba7e6e620317e7d86559e8cdc
+fr,letter_7.mp3,La lettre H.,,,,,9dd6b67ae1b3aee5b9b9f3d3bd17d93291452b111ee9ce653a9e5ed21dc09154
+fr,letter_8.mp3,La lettre I.,,,,,e59a2796a78a1b152acd84fa29ebf57b95803ad9e888ea65d32803400041e7bd
+fr,letter_9.mp3,La lettre J.,,,,,7b3de0a3452ba51a37f4cd11d197bc5454fe79eea37d8d00571d3faa66543e70
+fr,letter_10.mp3,La lettre K.,,,,,25d0ede01bad4c371c3b5192dc38a6c660dc4bbfe657401920c805c8396349d4
+fr,letter_11.mp3,La lettre L.,,,,,e64cab62a4c2c5649d258ab8ba8335248205d802f13efbd9797e422db4779a99
+fr,letter_12.mp3,La lettre M.,,,,,8197bd6f617b115a21bf4b43ba212efc73facc1f5a1fe23cf612d835c14a81f6
+fr,letter_13.mp3,La lettre N.,,,,,75331b0d7ab8f1f231678a2356db91459d5fb372e7cf99370fc73d936f340882
+fr,letter_14.mp3,La lettre O.,,,,,f872e530b5ff059ff102c4235bd7b9a92942a71cf0063bf13bf873c8e6579c40
+fr,letter_15.mp3,La lettre P.,,,,,e1eea13f2d5f3571c43e13a9e4ac75de0cb0a23e60aff07f1a6021f14e05f410
+fr,letter_16.mp3,La lettre Q.,,,,,f57c02aafe3c60ea8f32eb585346d0c6807d4e69676b78ac9dd28c1a4e7f519e
+fr,letter_17.mp3,La lettre R.,,,,,440837844da7e7bfc49db9c753944af6644f99cf644e770b3cad8cf68ec0b2ce
+fr,letter_18.mp3,La lettre S.,,,,,b01203d190f123cffa7260e8046a67d5da553af054b4b585422e958ea3c321af
+fr,letter_19.mp3,La lettre T.,,,,,2ca638039dfd094e61a2cfe1702dbbae7f5d4841d7e83b8eb440f32834bc6851
+fr,letter_20.mp3,La lettre U.,,,,,808834d5e1bed2b74b35ca173676c66238e38215d9a1694e75b261dea39e4e67
+fr,letter_21.mp3,La lettre V.,,,,,ec810a2f939a802a36408226c0db6c1ca0bca3cf96aaa51ce7a000007903cfa4
+fr,letter_22.mp3,La lettre W.,,,,,ab64b35d939ca078a5a76236e9ff34e1ed02f60f586b4494ad112deb5dd33f20
+fr,letter_23.mp3,La lettre X.,,,,,44a7340c7118620abc3585673f3a44cd7a134bb6eff9c0ab8d708ddef348528d
+fr,letter_24.mp3,La lettre Y.,,,,,9b88cbaac691fee36cf6d58840d05d87852df7a254db09da36a955746fddadb0
+fr,letter_25.mp3,La lettre Z.,,,,,1d9865c7bd2d2c420457e626d4da6ec73972a38537e4386d8eb9bcc7af5765ed
+fr,letter_26.mp3,La lettre É.,,,,,49b8d84abb29135914b870b70b100663e69019de4fd5b7bab8264782038a27f1
+fr,letter_27.mp3,La lettre È.,,,,,db312c85b616b0705aa35a95ed388f193e794e36fa90ba4de67785a0e0d4cfff
+fr,letter_28.mp3,La lettre Ê.,,,,,df417fd79be98612e863b58bbd5840f317e100bd8dd588de763f157e4ede3f5a
+fr,letter_29.mp3,La lettre Ç.,,,,,b6b5148d48c00377af70e4bf19a09e3970acd7f3d3fb46f98c7ee5bf7ad38f62

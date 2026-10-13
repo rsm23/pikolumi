@@ -1,0 +1,125 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "en-muted-listen-feedback"
+    },
+    {
+      "screenshotName": "ar-muted-listen-feedback"
+    }
+  ],
+  "decodedListenRequests": [
+    {
+      "section": "counting",
+      "interface": "en",
+      "spokenLanguage": "en",
+      "file": "counting.mp3",
+      "durationMs": 3120
+    },
+    {
+      "section": "letters",
+      "interface": "en",
+      "spokenLanguage": "fr",
+      "file": "letter_0.mp3",
+      "durationMs": 1704
+    },
+    {
+      "section": "words",
+      "interface": "en",
+      "spokenLanguage": "fr",
+      "file": "word_cat.mp3",
+      "durationMs": 1080
+    },
+    {
+      "section": "counting",
+      "interface": "fr",
+      "spokenLanguage": "fr",
+      "file": "counting.mp3",
+      "durationMs": 3120
+    },
+    {
+      "section": "letters",
+      "interface": "fr",
+      "spokenLanguage": "es",
+      "file": "letter_0.mp3",
+      "durationMs": 1296
+    },
+    {
+      "section": "words",
+      "interface": "fr",
+      "spokenLanguage": "es",
+      "file": "word_cat.mp3",
+      "durationMs": 864
+    },
+    {
+      "section": "counting",
+      "interface": "es",
+      "spokenLanguage": "es",
+      "file": "counting.mp3",
+      "durationMs": 2736
+    },
+    {
+      "section": "letters",
+      "interface": "es",
+      "spokenLanguage": "pt",
+      "file": "letter_0.mp3",
+      "durationMs": 1320
+    },
+    {
+      "section": "words",
+      "interface": "es",
+      "spokenLanguage": "pt",
+      "file": "word_cat.mp3",
+      "durationMs": 888
+    },
+    {
+      "section": "counting",
+      "interface": "pt",
+      "spokenLanguage": "pt",
+      "file": "counting.mp3",
+      "durationMs": 2544
+    },
+    {
+      "section": "letters",
+      "interface": "pt",
+      "spokenLanguage": "ar",
+      "file": "letter_0.mp3",
+      "durationMs": 792
+    },
+    {
+      "section": "words",
+      "interface": "pt",
+      "spokenLanguage": "ar",
+      "file": "word_cat.mp3",
+      "durationMs": 792
+    },
+    {
+      "section": "counting",
+      "interface": "ar",
+      "spokenLanguage": "ar",
+      "file": "counting.mp3",
+      "durationMs": 3408
+    },
+    {
+      "section": "letters",
+      "interface": "ar",
+      "spokenLanguage": "en",
+      "file": "letter_0.mp3",
+      "durationMs": 1824
+    },
+    {
+      "section": "words",
+      "interface": "ar",
+      "spokenLanguage": "en",
+      "file": "word_cat.mp3",
+      "durationMs": 1392
+    }
+  ],
+  "requests": 15,
+  "playerVolume": 0,
+  "systemVolumeChanged": false,
+  "mixedInterfaceAndLearningLanguages": true,
+  "mutedFeedbackVerified": true,
+  "userPreferencesChanged": false,
+  "store": "isolated memory",
+  "adSDKInitialized": false
+}

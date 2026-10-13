@@ -74,10 +74,26 @@ for name,scene in art.items():
  regions=set()
  for shape in scene['shapes']:
   check(shape['id'] not in regions,name+' duplicate coloring region');regions.add(shape['id'])
-  check(shape['kind'] in ['ellipse','rect','path','poly'],name+' invalid primitive')
+  check(shape['kind'] in ['ellipse','rect','path','poly','stroke'],name+' invalid primitive')
+  if shape['kind']=='stroke':check(shape.get('fillable') is False,name+' ink detail must not be a paint region')
   if shape['kind']=='path':check(shape['d'].strip().upper().endswith('Z'),name+' open coloring path')
 for lang,files in manifest.items():
- for file,text in files.items():check(bool(text.strip()) and (ROOT/f'assets/audio/{lang}/{file}').stat().st_size>100,lang+'/'+file+' missing audio')
+ for file,text in files.items():
+  path=ROOT/f'assets/audio/{lang}/{file}'
+  check(bool(text.strip()) and path.is_file() and path.stat().st_size>100,lang+'/'+file+' missing audio')
+provenance_path=ROOT/'assets/content/audio_provenance.json'
+check(provenance_path.is_file(),'missing narration provenance')
+if provenance_path.is_file():
+ provenance=json.loads(provenance_path.read_text())
+ for lang,files in manifest.items():
+  record=provenance['locales'].get(lang,{})
+  check(set(record.get('clips',{}))==set(files),lang+' incomplete narration provenance')
+  for file,text in files.items():
+   item=record.get('clips',{}).get(file,{})
+   check(item.get('text')==text,lang+'/'+file+' speech script mismatch')
+   path=ROOT/f'assets/audio/{lang}/{file}'
+   if path.is_file():check(hashlib.sha256(path.read_bytes()).hexdigest()==item.get('sha256'),lang+'/'+file+' narration hash mismatch')
+check((ROOT/'assets/content/CREDITS.txt').is_file(),'missing bundled attribution')
 check(counts=={s['id']:s['count'] for s in cat['sections']},'section counts mismatch');check(len(ids)==2400,'total mismatch')
 report={'catalogVersion':cat['version'],'activities':len(ids),'sections':dict(counts),'languages':languages,'vectors':len(art),'speechClips':sum(map(len,manifest.values())),'errors':errors,'passed':not errors,'manualReview':'pending; automated validation does not certify educational accuracy or pronunciation'}
 (ROOT/'docs/qa/catalog-validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')

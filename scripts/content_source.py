@@ -1,4 +1,6 @@
 """Human-authored curriculum and illustration primitives for the offline library."""
+from completion_messages import completion_strings
+
 LANGS = ['en', 'fr', 'es', 'pt', 'ar']
 
 def l(en, fr, es, pt, ar):
@@ -78,6 +80,17 @@ PROMPTS = {
 }
 UI = {
  'tagline':l('Color, Play & Learn','Colorier, jouer et apprendre','Colorea, juega y aprende','Colorir, brincar e aprender','لوّن والعب وتعلّم'),
+ 'pikoPlay':l('Play with Piko','Joue avec Piko','Juega con Piko','Brinque com Piko','العب مع بيكو'),
+ 'pikoInviteColor':l('Let’s add some color!','Ajoutons des couleurs !','¡Vamos a colorear!','Vamos colorir!','هيا نلوّن!'),
+ 'pikoInviteMemory':l('Ready to find pairs?','Trouvons les paires !','¡Busquemos parejas!','Vamos encontrar pares!','هل نجد الأزواج المتطابقة؟'),
+ 'pikoInvitePuzzle':l('Let’s solve a puzzle!','Résolvons un puzzle !','¡Resolvamos un rompecabezas!','Vamos montar um quebra-cabeça!','هيا نحل لغزًا!'),
+ 'pikoInviteNumbers':l('Let’s count together!','Comptons ensemble !','¡Contemos juntos!','Vamos contar juntos!','هيا نعدّ معًا!'),
+ 'pikoInviteDraw':l('What shall we draw?','Que va-t-on dessiner ?','¿Qué dibujamos?','O que vamos desenhar?','ماذا نرسم؟'),
+ 'pikoTakeTime':l('Take your time. I’m here with you!','Prends ton temps. Je suis avec toi !','¡Tómate tu tiempo! Estoy contigo.','Vá com calma. Estou com você!','خذ وقتك، أنا معك!'),
+ 'pikoTryStep':l('Try one small step. You can do it!','Essaie un petit pas. Tu peux y arriver !','¡Prueba un pasito! Tú puedes.','Tente um pequeno passo. Você consegue!','جرّب خطوة صغيرة، أنت تستطيع!'),
+ 'pikoTogether':l('Let’s look again and try together!','Regardons encore et essayons ensemble !','¡Miremos otra vez e intentémoslo juntos!','Vamos olhar de novo e tentar juntos!','هيا ننظر مرة أخرى ونحاول معًا!'),
+ 'pikoCreative':l('Your ideas make this picture special!','Tes idées rendent ce dessin unique !','¡Tus ideas hacen especial este dibujo!','Suas ideias tornam este desenho especial!','أفكارك تجعل هذه الرسمة مميزة!'),
+ 'pikoFinished':l('You did it! I loved playing with you!','Tu as réussi ! J’ai aimé jouer avec toi !','¡Lo lograste! Me encantó jugar contigo.','Você conseguiu! Adorei brincar com você!','لقد نجحت! سعدت باللعب معك!'),
  'hello':l('A little wonder, every day.','Un peu de merveilleux, chaque jour.','Un poquito de magia, cada día.','Um pouco de magia todos os dias.','قليل من الدهشة، كل يوم.'),
  'worlds':l('Explore your worlds','Explore tes univers','Explora tus mundos','Explore seus mundos','استكشف عوالمك'),
  'library':l('Play','Jouer','Jugar','Brincar','العب'), 'gallery':l('My art','Mes dessins','Mis dibujos','Minha arte','رسوماتي'),
@@ -98,11 +111,29 @@ UI = {
  'stage3':l('Big adventures · 9–11','Grandes aventures · 9–11','Grandes aventuras · 9–11','Grandes aventuras · 9–11','مغامرات كبيرة · ٩–١١'),
  'stage4':l('Creative challenges','Défis créatifs','Retos creativos','Desafios criativos','تحديات إبداعية'),
  'sound':l('Sound & voice','Sons et voix','Sonido y voz','Som e voz','الصوت والإرشاد'),
+ 'soundOffHelp':l('Sound is off. Ask a grown-up to turn on Sound & voice in the parent area.','Le son est désactivé. Demande à un adulte d’activer Sons et voix dans l’espace parents.','El sonido está desactivado. Pide a un adulto que active Sonido y voz en la sección para padres.','O som está desligado. Peça a um adulto para ativar Som e voz na área dos pais.','الصوت متوقف. اطلب من شخص بالغ تشغيل الصوت والإرشاد في منطقة الوالدين.'),
  'motion':l('Reduce motion','Réduire les animations','Reducir movimiento','Reduzir animações','تقليل الحركة'),
  'language':l('Language','Langue','Idioma','Idioma','اللغة'), 'save':l('Save','Enregistrer','Guardar','Salvar','حفظ'),
  'emptyGallery':l('Your masterpieces will appear here.','Tes chefs-d’œuvre apparaîtront ici.','Tus obras aparecerán aquí.','Suas obras vão aparecer aqui.','ستظهر إبداعاتك هنا.'),
  'blank':l('A fresh canvas','Une page blanche','Un lienzo en blanco','Uma tela em branco','لوحة فارغة'),
  'fill':l('Fill','Remplir','Rellenar','Preencher','ملء'), 'brush':l('Brush','Pinceau','Pincel','Pincel','فرشاة'),
+ 'brushType':l('Brush type','Type de pinceau','Tipo de pincel','Tipo de pincel','نوع الفرشاة'),
+ 'brush_round':l('Round','Rond','Redondo','Redondo','مستديرة'),
+ 'brush_pencil':l('Pencil','Crayon','Lápiz','Lápis','قلم رصاص'),
+ 'brush_marker':l('Marker','Feutre','Marcador','Marcador','قلم تلوين'),
+ 'brush_crayon':l('Wax crayon','Crayon de cire','Cera','Giz de cera','قلم شمعي'),
+ 'colors':l('Colors','Couleurs','Colores','Cores','الألوان'),
+ 'allColors':l('All colors','Toutes les couleurs','Todos los colores','Todas as cores','كل الألوان'),
+ 'previousStep':l('Previous step','Étape précédente','Paso anterior','Passo anterior','الخطوة السابقة'),
+ 'nextStep':l('Next step','Étape suivante','Paso siguiente','Próximo passo','الخطوة التالية'),
+ 'fullScreen':l('Full-screen canvas','Dessin en plein écran','Lienzo a pantalla completa','Tela de desenho cheia','لوحة بملء الشاشة'),
+ 'exitFullScreen':l('Exit full screen','Quitter le plein écran','Salir de pantalla completa','Sair da tela cheia','الخروج من ملء الشاشة'),
+ 'zoomIn':l('Zoom in','Agrandir','Acercar','Ampliar','تكبير'),
+ 'zoomOut':l('Zoom out','Réduire','Alejar','Reduzir','تصغير'),
+ 'resetDrawing':l('Reset drawing','Recommencer le dessin','Reiniciar dibujo','Recomeçar desenho','إعادة الرسم'),
+ 'resetDrawingTitle':l('Start again?','Recommencer ?','¿Empezar de nuevo?','Começar de novo?','هل تريد البدء من جديد؟'),
+ 'resetDrawingHelp':l('Clear your colors and brush marks and restart the drawing steps. You can use Undo before leaving this page.','Efface tes couleurs et tes traits et reprends les étapes du dessin. Tu peux annuler avant de quitter cette page.','Borra tus colores y trazos y vuelve al inicio del dibujo. Puedes deshacerlo antes de salir de esta página.','Apague suas cores e traços e recomece as etapas do desenho. Você pode desfazer antes de sair desta página.','امسح الألوان وخطوط الفرشاة وابدأ خطوات الرسم من جديد. يمكنك التراجع قبل مغادرة هذه الصفحة.'),
+ 'cancel':l('Cancel','Annuler','Cancelar','Cancelar','إلغاء'),
  'erase':l('Eraser','Gomme','Borrador','Borracha','ممحاة'), 'undo':l('Undo','Annuler','Deshacer','Desfazer','تراجع'), 'redo':l('Redo','Rétablir','Rehacer','Refazer','إعادة'),
  'size':l('Brush size','Taille du pinceau','Tamaño del pincel','Tamanho do pincel','حجم الفرشاة'), 'resetZoom':l('Fit picture','Ajuster l’image','Ajustar imagen','Ajustar imagem','ملاءمة الصورة'),
  'gateTitle':l('A grown-up moment','Un moment pour les parents','Un momento para adultos','Um momento para adultos','لحظة للوالدين'),
@@ -125,6 +156,11 @@ UI = {
 }
 
 UI.update({
+ 'interfaceLanguage':l('Interface & questions','Interface et questions','Interfaz y preguntas','Interface e perguntas','لغة الواجهة والأسئلة'),
+ 'learningLanguage':l('Language to learn','Langue à apprendre','Idioma para aprender','Idioma para aprender','اللغة التي تتعلمها'),
+ 'followInterface':l('Same as interface','Comme l’interface','Igual que la interfaz','Igual à interface','مثل لغة الواجهة'),
+ 'learningLanguageHelp':l('Letters, vocabulary and handwriting use this language for this explorer. Instructions and questions use the interface language.','Les lettres, le vocabulaire et l’écriture utilisent cette langue pour cet explorateur. Les consignes et questions restent dans la langue de l’interface.','Las letras, el vocabulario y la escritura usan este idioma para este explorador. Las instrucciones y preguntas usan el idioma de la interfaz.','Letras, vocabulário e escrita usam este idioma para este explorador. As instruções e perguntas usam o idioma da interface.','تستخدم دروس الحروف والمفردات والكتابة هذه اللغة لهذا المستكشف. أما التعليمات والأسئلة فتستخدم لغة الواجهة.'),
+ 'credits':l('Credits & licenses','Crédits et licences','Créditos y licencias','Créditos e licenças','المساهمات والتراخيص'),
  'worldCount':l('worlds','univers','mundos','mundos','عوالم'),
  'answer':l('Answer','Réponse','Respuesta','Resposta','الإجابة'),
  'pinLength':l('Use six digits and enter the same PIN twice.','Utilise six chiffres et confirme le même code.','Usa seis dígitos y confirma el mismo PIN.','Use seis dígitos e confirme o mesmo PIN.','استخدم ستة أرقام وأكد الرمز نفسه.'),
@@ -132,3 +168,5 @@ UI.update({
  'up':l('Up','Haut','Arriba','Cima','أعلى'), 'down':l('Down','Bas','Abajo','Baixo','أسفل'),
  'left':l('Left','Gauche','Izquierda','Esquerda','يسار'), 'right':l('Right','Droite','Derecha','Direita','يمين'),
 })
+
+UI.update(completion_strings())

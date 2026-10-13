@@ -1,0 +1,7 @@
+{
+  "normalDatabaseUnchangedByBothNativeFixtures": true,
+  "databaseSha256": "afb977437509ac2685be1cf6a9e9f8f4714dc2f18bcb7df4db87dc2dfddbaa77",
+  "arabicSQLiteBodyAndCleanup": "passed",
+  "smokeSQLiteBodyAndCleanup": "passed",
+  "previousMuteLeakPrevented": true
+}

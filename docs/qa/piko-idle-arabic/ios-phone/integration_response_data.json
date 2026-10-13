@@ -1,0 +1,167 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "quiet-before-tap"
+    },
+    {
+      "screenshotName": "hover-no-effect"
+    },
+    {
+      "screenshotName": "pressed-no-effect"
+    },
+    {
+      "screenshotName": "tap-crayon"
+    },
+    {
+      "screenshotName": "tap-wiggle"
+    },
+    {
+      "screenshotName": "tap-nod"
+    },
+    {
+      "screenshotName": "tap-hop"
+    },
+    {
+      "screenshotName": "tap-peek"
+    },
+    {
+      "screenshotName": "tap-wink"
+    },
+    {
+      "screenshotName": "tap-stretch"
+    },
+    {
+      "screenshotName": "tap-bow"
+    },
+    {
+      "screenshotName": "tap-flutter"
+    },
+    {
+      "screenshotName": "tap-wave"
+    },
+    {
+      "screenshotName": "fr-automatic-idle-chat"
+    },
+    {
+      "screenshotName": "ar-automatic-idle-chat"
+    }
+  ],
+  "captureSizes": {
+    "quiet-before-tap": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "hover-no-effect": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "pressed-no-effect": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-crayon": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-wiggle": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-nod": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-hop": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-peek": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-wink": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-stretch": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-bow": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-flutter": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "tap-wave": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "fr-automatic-idle-chat": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    },
+    "ar-automatic-idle-chat": {
+      "originalWidth": 1206,
+      "originalHeight": 2622,
+      "captureWidth": 1200,
+      "captureHeight": 2608
+    }
+  },
+  "gestures": [
+    "crayon",
+    "wiggle",
+    "nod",
+    "hop",
+    "peek",
+    "wink",
+    "stretch",
+    "bow",
+    "flutter",
+    "wave"
+  ],
+  "assistiveNavigationEnabled": true,
+  "disableAnimations": false,
+  "tenDeliberateAnimationsVerified": true,
+  "hoverPixelsUnchanged": true,
+  "pressedPixelsUnchanged": true,
+  "naturalIdleVerified": true,
+  "automaticIdleChatsVerified": [
+    "fr",
+    "ar"
+  ],
+  "approvedArabicBytesVerified": 52,
+  "userPreferencesChanged": false,
+  "adSDKInitialized": false,
+  "audio": "SilentAudio, muted before mounting; in-memory preferences"
+}

@@ -1,0 +1,30 @@
+{
+  "createdAtUTC": "2026-10-13T00:28:39.705589+00:00",
+  "package": "com.seifelmoulouk.pikolumi",
+  "files": {
+    "pikolumi-upload-certificate.pem": {
+      "bytes": 1904,
+      "sha256": "9ee6e17f2d617f48b4e87d7003317b8b291ef6f71baadedcbf5c12d093313353"
+    },
+    "ANDROID-SIGNING-RECOVERY.txt": {
+      "bytes": 1476,
+      "sha256": "51c4074b0c307522f0177904dad84e6fe6ed73d1dfdc3b30fcabc45d6d1f7744"
+    },
+    "pikolumi-upload.p12": {
+      "bytes": 4378,
+      "sha256": "03cf08adee1dc161767a1d0eb5f0cd5cb57206af6a361f2377223f8a6aef1137"
+    },
+    "pikolumi-upload-private-key-and-certificate.pem": {
+      "bytes": 5529,
+      "sha256": "391870d07d91aedb1aed973d10d5be6edcc31bce0cb84537f9928eea8309e912"
+    },
+    "pikolumi-upload.jks": {
+      "bytes": 4378,
+      "sha256": "a30aae38a7b7457b3d46ff073278009771c7842d2ec5b210704ceb81d316923d"
+    },
+    "key.properties": {
+      "bytes": 213,
+      "sha256": "3af982b7c547c28a7dd2a342f72d199cbcf9cb0e7decf43a40a4851c20d57ad0"
+    }
+  }
+}

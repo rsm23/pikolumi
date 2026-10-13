@@ -1,0 +1,6573 @@
+{
+  "checkedAt": "2026-10-13T00:28:59.139736+00:00",
+  "catalogVersion": 3,
+  "speechClips": 648,
+  "toneClips": 8,
+  "method": "Decoded MP3 files and inspected finite samples, duration, level and format; no playback",
+  "pronunciationApproval": false,
+  "repairedPeaks": [],
+  "errors": [],
+  "passed": true,
+  "clips": [
+    {
+      "file": "assets/audio/en/coloring.mp3",
+      "durationSeconds": 3.825,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35412,
+      "rms": 0.0443,
+      "sha256": "94340685500a23d6d413d682efdb1b509a020f77e0a3cc21b84291a4d2ce179d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/drawing.mp3",
+      "durationSeconds": 3.225,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.4255,
+      "rms": 0.04727,
+      "sha256": "82b794766f9f8655adf21b662b816e06f0d562fc4535884ab45c7b409f0a7953",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/tracing.mp3",
+      "durationSeconds": 3.7,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3979,
+      "rms": 0.04574,
+      "sha256": "bd30f7879169db4ddff4fb4d66191f2d25dafb193ef3bbd55648e5e551e3fe01",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letters.mp3",
+      "durationSeconds": 3.05,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34983,
+      "rms": 0.04583,
+      "sha256": "beebd2878f71c64a792a1af9e60f6401759b20857fb73b403b1e0626a04557df",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/words.mp3",
+      "durationSeconds": 3.05,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34228,
+      "rms": 0.04557,
+      "sha256": "1bb7d12938a1cfc0d21335a90e1f69bc88d12c97a83ae182366818ca10f25a22",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/counting.mp3",
+      "durationSeconds": 3.05,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28345,
+      "rms": 0.045,
+      "sha256": "f178324edaadec40de6c6b6b989138674cba1c41f2729f3e42c852f09c2b3fc0",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/math.mp3",
+      "durationSeconds": 2.875,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42403,
+      "rms": 0.04934,
+      "sha256": "9fc58e6de8ec2a9d844be322346067d4fc395bce75aa548659e601cf716c11fa",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/shapes.mp3",
+      "durationSeconds": 3.725,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34824,
+      "rms": 0.04573,
+      "sha256": "7eeaf9396db075833a21b163729977490be8e257b1b67afd6a6fb68c35a031ae",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/sorting.mp3",
+      "durationSeconds": 2.9,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.40897,
+      "rms": 0.0456,
+      "sha256": "e1e1deb9a951ddb239965c523bc7e68eeea233e167881c4d5aacb788b5db5af1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/memory.mp3",
+      "durationSeconds": 3.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42231,
+      "rms": 0.04597,
+      "sha256": "2f043827efd68350044c22efd643e338048a8a665a3dd7235a2c24a62ee45ce7",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/jigsaw.mp3",
+      "durationSeconds": 2.9,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34102,
+      "rms": 0.0453,
+      "sha256": "91f9823ae9026153beba8afa9ce55c67070f1ee1109d267df9c6a2da420479eb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/patterns.mp3",
+      "durationSeconds": 2.625,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41029,
+      "rms": 0.04476,
+      "sha256": "f84c0138019f01de1dd63466b774cdf3faf25456f6695c5feb8a146bc216b025",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/mazes.mp3",
+      "durationSeconds": 3.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36485,
+      "rms": 0.04269,
+      "sha256": "85bf1fca6bfbacbff0163561c68b5d0875211a928d089c771d1710f6bdfa0c02",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/nature.mp3",
+      "durationSeconds": 3.35,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38139,
+      "rms": 0.04592,
+      "sha256": "c6bcd29b28bc09b17c93a4fc5788a821c080c69baba24c0aaa8e02edff2815bc",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/everyday.mp3",
+      "durationSeconds": 3.3,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.47703,
+      "rms": 0.04563,
+      "sha256": "e03c22939d52d7270c4a8253da7da248009b3153f21e8c6151b1d6d9e6344e28",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/music.mp3",
+      "durationSeconds": 3.626,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3401,
+      "rms": 0.04506,
+      "sha256": "8004c7fde6c7955a63597b8961bb98cbf962436319451b6e20064ce5b7f24ea2",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_cat.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.25936,
+      "rms": 0.03683,
+      "sha256": "f0375f3e2ea614382714e8d2a7c4761f3f976b094f168cf0ae9d7dcc2caccd6c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_dog.mp3",
+      "durationSeconds": 1.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30481,
+      "rms": 0.04044,
+      "sha256": "7d008a68b8a6067c4baf4f1e9b7a1a9e030fff3bd5a5da9c4d97eba7a53061af",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_rabbit.mp3",
+      "durationSeconds": 1.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3188,
+      "rms": 0.0417,
+      "sha256": "764ea35ac6802e2599708998230c2a969b149ec3261fca084e09102a89ccce1f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_fox.mp3",
+      "durationSeconds": 1.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37045,
+      "rms": 0.0432,
+      "sha256": "febeb8717687068b1a3aa860372532d206997d96f9846a849eda1e619817ccf8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_bear.mp3",
+      "durationSeconds": 1.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37645,
+      "rms": 0.03857,
+      "sha256": "e8cd1f1a8f88d77d7248fb10111370ec68f030e1e0d2f76c1ec7595cd264b849",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_lion.mp3",
+      "durationSeconds": 1.55,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28757,
+      "rms": 0.04009,
+      "sha256": "aeef28ee63ff5428b699dff4629c208f239fa9d28bffcbf17d1cac10d828ee90",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_elephant.mp3",
+      "durationSeconds": 1.575,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.45216,
+      "rms": 0.0428,
+      "sha256": "c270bc4d8465010198eb07fd72fae8163b593d6dd9cbc6b01d6f5c29bdabf06c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_giraffe.mp3",
+      "durationSeconds": 1.425,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28488,
+      "rms": 0.04325,
+      "sha256": "0b331cb9be1e7d1f80e05c8b5052d73a8ab9bf89c412dd3b38e7d1c43b89ea70",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_turtle.mp3",
+      "durationSeconds": 1.525,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30946,
+      "rms": 0.04066,
+      "sha256": "bc03d7f1d84f67bc61f62277c8505276cd5c378a089abb250999355b9a2b2465",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_fish.mp3",
+      "durationSeconds": 1.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35442,
+      "rms": 0.04015,
+      "sha256": "aae5fea9dac5c3dd3a868121cb498744072cff2f173efba2e3eaa6584b3724d1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_bird.mp3",
+      "durationSeconds": 1.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30428,
+      "rms": 0.04237,
+      "sha256": "87234089fd69f6811f7511d5984bb16803cf7a240c431260b71eadb7f960cebd",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_owl.mp3",
+      "durationSeconds": 1.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39614,
+      "rms": 0.03648,
+      "sha256": "263958744e8521476b869fd9c82b9c43773f5a16815cd38f82adc0966688a301",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_penguin.mp3",
+      "durationSeconds": 1.5,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33635,
+      "rms": 0.04235,
+      "sha256": "8e61162460c13e835de5ac5147230e80b25db4c5a96d2d14b525af619da047af",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_butterfly.mp3",
+      "durationSeconds": 1.7,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38868,
+      "rms": 0.04245,
+      "sha256": "761fb9cdd604fa1cfc209525a0b2bc96801bf811429c4a64cc3643683d7ee774",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_bee.mp3",
+      "durationSeconds": 1.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33803,
+      "rms": 0.03642,
+      "sha256": "7a9a5559c88d4b9b22d74de43355bef044fb9c481e52091d35acaf4de6224ccb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_snail.mp3",
+      "durationSeconds": 1.6,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.25314,
+      "rms": 0.0397,
+      "sha256": "5362f7f56373655b31f0e8b75ccac0ea288d9a7e754871401f5cb1133904bcdc",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_octopus.mp3",
+      "durationSeconds": 1.7,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30648,
+      "rms": 0.04389,
+      "sha256": "4cb84b57cd7684f1784fe0a446124ba242181892dec89d235afc40c10ff9a135",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_whale.mp3",
+      "durationSeconds": 1.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28577,
+      "rms": 0.03906,
+      "sha256": "913fad6ef290e4a63c199ef634b75dedbbc4521447fe6e2eb94e483b381cf4a9",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_frog.mp3",
+      "durationSeconds": 1.15,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38336,
+      "rms": 0.0406,
+      "sha256": "510bbdee828a24abcfe60f930d1ac3fd8ecf7f390b242c344b9906f36e75f467",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_hedgehog.mp3",
+      "durationSeconds": 1.525,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36005,
+      "rms": 0.04045,
+      "sha256": "8fed49a793b08a3cd53f753fb06f9a94f16b9e19384ded607e53818c6deff0ac",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_apple.mp3",
+      "durationSeconds": 1.525,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33678,
+      "rms": 0.03798,
+      "sha256": "db36eb5202f4bd6c8867fa3a4359641586b15529d07b20ace5fdeb40b86cb896",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_pear.mp3",
+      "durationSeconds": 1.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28109,
+      "rms": 0.03736,
+      "sha256": "b06410870069f905154c52def25fbfb4eac6d3f04c52f615cef1d74f217e7c92",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_banana.mp3",
+      "durationSeconds": 1.65,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35184,
+      "rms": 0.04285,
+      "sha256": "871665c222c3e8763c9291dcd3c7df5926e3a93fc34db1f6110631c055dce5c2",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_strawberry.mp3",
+      "durationSeconds": 1.7,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38613,
+      "rms": 0.04484,
+      "sha256": "21ac685da58b5a832abc50a9dbfe7733ae9fe1e420da56020bd96a63409389df",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_carrot.mp3",
+      "durationSeconds": 1.425,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.25028,
+      "rms": 0.03977,
+      "sha256": "c6a3e0283d5aa00e04ac4171609c90f10e3995863af16de248d4960a96975262",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_orange.mp3",
+      "durationSeconds": 1.55,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36507,
+      "rms": 0.04367,
+      "sha256": "a587b4f13827ad967c220667f11d19e8274038926264a7e9cf80d47e6b15ddc4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_watermelon.mp3",
+      "durationSeconds": 1.725,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.31189,
+      "rms": 0.0419,
+      "sha256": "18dcd32a22a596dee6e244ecc56fda3b1578eb9175953642c6c239159f9a12e3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_bread.mp3",
+      "durationSeconds": 1.175,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30907,
+      "rms": 0.04135,
+      "sha256": "a7421c0f72faa14508401f0fe65603412f5216b574ae8cf1231ba1e1c3706fc2",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_cake.mp3",
+      "durationSeconds": 1.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30943,
+      "rms": 0.03947,
+      "sha256": "c1bb72a5b51b2d4a4d04fb95f2e594c0ca974a8c95a9ce032cdadaf856ea31c8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_cup.mp3",
+      "durationSeconds": 1.375,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33571,
+      "rms": 0.03979,
+      "sha256": "d4946cdfa1195faffd1b28779447b595720e73a586ed92fbe54387f650b28c7d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_car.mp3",
+      "durationSeconds": 1.375,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30061,
+      "rms": 0.03936,
+      "sha256": "ec84b5d28915b9e5ec0e720b3a2092c17b4b0976c9e77d96103b4c71809aba72",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_bus.mp3",
+      "durationSeconds": 1.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37569,
+      "rms": 0.04194,
+      "sha256": "5a4dafe0ad6f393a0f6b6ecfa22fd905cd4c7deffff1278390cb04faa8f91fce",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_train.mp3",
+      "durationSeconds": 1.6,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36111,
+      "rms": 0.04022,
+      "sha256": "7ad43a162b923cff121797cfdd91df615cbfe5a44d54b472e9fdfd2e2d9c0e1f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_boat.mp3",
+      "durationSeconds": 1.35,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33438,
+      "rms": 0.04275,
+      "sha256": "b380ac0f390d8d1b54737a8af1660038f4bc808afe1c89a867e1d1ba924932c9",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_rocket.mp3",
+      "durationSeconds": 1.6,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.4009,
+      "rms": 0.04294,
+      "sha256": "1a4015f13359c03a8fc5c316b228ae05b9b00771c9d2a7088d68eef9504571e5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_airplane.mp3",
+      "durationSeconds": 1.65,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30533,
+      "rms": 0.0401,
+      "sha256": "ae01f4b30b25e8464ff57db5dff5ca40006a66fd265cd8758fe19f5058df2d80",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_bicycle.mp3",
+      "durationSeconds": 1.625,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.47419,
+      "rms": 0.04214,
+      "sha256": "234fcb16be63a216d944b2e9602fd114a196aa064b0a971dfc1cbc0f97013d83",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_tractor.mp3",
+      "durationSeconds": 1.6,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34372,
+      "rms": 0.04189,
+      "sha256": "00432e735f087de247d8a8eddbbfdb7446aab60882c15b75a3715bc7e87654c3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_tree.mp3",
+      "durationSeconds": 1.525,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3721,
+      "rms": 0.03843,
+      "sha256": "0d21f831def57d3209560f4a522ec21f6098f3a30f774dbdc215b76a68d8decd",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_flower.mp3",
+      "durationSeconds": 1.525,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28089,
+      "rms": 0.04043,
+      "sha256": "f217a0de4f010e1df6091189b644b75674b821deabcbd71447f1211b62cca199",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_sun.mp3",
+      "durationSeconds": 1.525,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37142,
+      "rms": 0.03988,
+      "sha256": "2bbbaa4b6f244dd58cd118b543db70e444804a6c0bc2b851625aec984df6fb5d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_moon.mp3",
+      "durationSeconds": 1.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.24713,
+      "rms": 0.04087,
+      "sha256": "579f120fb2b9ed5d5f093c7dcb151772ae4c2a144caa6a0dde6801aa4557b7a3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_star.mp3",
+      "durationSeconds": 1.5,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28707,
+      "rms": 0.04099,
+      "sha256": "f7cf00aaaa62e2a8a293785f6e94846b7c7a463cd9c7f52e21bb6cae74d7e1e2",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_cloud.mp3",
+      "durationSeconds": 1.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.27443,
+      "rms": 0.03814,
+      "sha256": "6fb7bd807235d74d8f93068b3b8e08005151c0ee6328ec6626ee17c839508570",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_rainbow.mp3",
+      "durationSeconds": 1.65,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34187,
+      "rms": 0.04367,
+      "sha256": "cc23ac13da7bb9ea53137628f51436dd91bbb7571c6280ffd373f5b017edd8e7",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_leaf.mp3",
+      "durationSeconds": 1.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.31279,
+      "rms": 0.03988,
+      "sha256": "1c5486e59402675ead4373f51c80386712605f283444030bf7a0b072217139e4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_mountain.mp3",
+      "durationSeconds": 1.625,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42264,
+      "rms": 0.046,
+      "sha256": "c8764e7d7b73e8e7cf8aa4aa4fc220aba55b1a9f1f280557ee2c50781233a858",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_mushroom.mp3",
+      "durationSeconds": 1.675,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46693,
+      "rms": 0.04603,
+      "sha256": "2adbef26504f72cd5ceceaeb7122caa4816de50ecb519eb9500457aa7dd7241d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_house.mp3",
+      "durationSeconds": 1.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.31106,
+      "rms": 0.03927,
+      "sha256": "b1dd34a4bf94be6499f02d1e80aaa64689a4b6236a817a574f60868dc61e9aad",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_book.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39865,
+      "rms": 0.04458,
+      "sha256": "dae065191835f22cc176a076cf1234d21877b35e42b578ce1862328786333e63",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_pencil.mp3",
+      "durationSeconds": 1.525,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36264,
+      "rms": 0.04363,
+      "sha256": "0c91270dbbfa1bbe1044b5282a888c34978d99d2f58c92a0a53988585a100313",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_ball.mp3",
+      "durationSeconds": 1.425,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35319,
+      "rms": 0.04041,
+      "sha256": "10814a9f9663b02256cebf6f03aa63a884f98a144171187e368b341b9d6cba25",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_kite.mp3",
+      "durationSeconds": 1.375,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28219,
+      "rms": 0.03895,
+      "sha256": "3cd0619f2dc65b813caa432f8273e4e7f47bf2bc63bf5573ba0091354f242753",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_umbrella.mp3",
+      "durationSeconds": 1.625,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36755,
+      "rms": 0.0443,
+      "sha256": "4f08368bbefa0d418274a8676be7a8e71f430c53beca2bc18b473958f3e9b38c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_clock.mp3",
+      "durationSeconds": 1.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.31926,
+      "rms": 0.04212,
+      "sha256": "65b810939910e1fa270dc871b753b29418d75c5fb9ab3d5f3aa75529b48556a6",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_key.mp3",
+      "durationSeconds": 1.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42536,
+      "rms": 0.03719,
+      "sha256": "eda241ef790d6874c8f16f05cf52ccbd1535deb88fa05006b85b8f56bfd67317",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_guitar.mp3",
+      "durationSeconds": 1.575,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38296,
+      "rms": 0.04268,
+      "sha256": "45531414a8d83abfed9e11b39573849ba21e23afd406cc8dff841dee84a8aaf3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_drum.mp3",
+      "durationSeconds": 1.525,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36749,
+      "rms": 0.04232,
+      "sha256": "5104366eccfdfe7892ff73af59c1686a7a760a3ab521e622d4708eac83ce03ec",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_piano.mp3",
+      "durationSeconds": 1.55,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.27187,
+      "rms": 0.03943,
+      "sha256": "3dc80fee664052259926a5a914c3c1907fad8d4aba2eeb15b8ae7276fef6d8e3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/word_bell.mp3",
+      "durationSeconds": 1.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37375,
+      "rms": 0.03999,
+      "sha256": "fbe0e9fc84e7e9385306ebfb95e1cbce11144bcf71ca37bafb2f833ed050ac9a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/great.mp3",
+      "durationSeconds": 1.826,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36806,
+      "rms": 0.0448,
+      "sha256": "9d7b6df396418bb384ca49ce1d6dd766f43db08d7496d9052f30138e9cb1bd16",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/again.mp3",
+      "durationSeconds": 1.9,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.29389,
+      "rms": 0.04126,
+      "sha256": "d84dee6c922ea5c68d49ddecb16771036c4f281d0a505d5244768d6eff2e9270",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/welcome.mp3",
+      "durationSeconds": 2.5,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.51726,
+      "rms": 0.04431,
+      "sha256": "3e37853a2b14d2892b1181c9eb4bc0c8de5a0c538d409aac708a79392a78665b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_0.mp3",
+      "durationSeconds": 1.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28589,
+      "rms": 0.0417,
+      "sha256": "c6fc699e774e51cea700aac46b1572d5d60856190b392c37972fdc1d71e9f426",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_1.mp3",
+      "durationSeconds": 1.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34043,
+      "rms": 0.04339,
+      "sha256": "1cb769176d667175c9691f3f4e8bfcd046bc7b98cb4260b74b44bd71130c4d2f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_2.mp3",
+      "durationSeconds": 1.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35195,
+      "rms": 0.04584,
+      "sha256": "52c5e2090235a873458bcb6cbdd2ee8c95a87da41554f9dd729fafbd7847a133",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_3.mp3",
+      "durationSeconds": 1.75,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35666,
+      "rms": 0.04481,
+      "sha256": "7862d7dd8590ab64e494f1a5f2c855a42881a92e4d4f9193627f00dcddaac540",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_4.mp3",
+      "durationSeconds": 1.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34229,
+      "rms": 0.04383,
+      "sha256": "4d3289449bd8af8220ab6b4d6730a0de76d40f40f7bf6e70186ed7e7f4536ad1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_5.mp3",
+      "durationSeconds": 1.7,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35531,
+      "rms": 0.04285,
+      "sha256": "aadd9718f5c050cb7a6205128774034cccc44ed3ec2fb1c71578f9c8e6c853c3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_6.mp3",
+      "durationSeconds": 1.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3492,
+      "rms": 0.0445,
+      "sha256": "5415e5ba86f1aaadc4e76e8aad47bbf28393eb7f98c9703e55756b259913829e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_7.mp3",
+      "durationSeconds": 1.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32755,
+      "rms": 0.04425,
+      "sha256": "a91101554f54c8040e7d0feff8ba09ee987d8d00044af942d23afb3b0fc750eb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_8.mp3",
+      "durationSeconds": 1.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28455,
+      "rms": 0.04112,
+      "sha256": "d54e3b39cef82d889792b6fce8bef4c1061a67e9ddf4bd1cb970631cf23adbc6",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_9.mp3",
+      "durationSeconds": 1.875,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.31709,
+      "rms": 0.04285,
+      "sha256": "79c31fc4163cc3a32f131125e389a4ab250bae00fab551a3f5e34bad36d01977",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_10.mp3",
+      "durationSeconds": 1.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32898,
+      "rms": 0.04401,
+      "sha256": "3bab5726de72c94620aec7cfaeaa24d4751ae5ab7cd17ae109803ba53edd4827",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_11.mp3",
+      "durationSeconds": 1.625,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.25209,
+      "rms": 0.04169,
+      "sha256": "1b5b7c268614e87906d6a7bc940689c4608c692eb0adf48f793469a97cd80081",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_12.mp3",
+      "durationSeconds": 1.826,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36184,
+      "rms": 0.04117,
+      "sha256": "90fc20b58d731b0ae6569f9be141f5b73186bbcc2ef0e6eb332b4d6f3d9a1e07",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_13.mp3",
+      "durationSeconds": 1.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.29061,
+      "rms": 0.04148,
+      "sha256": "35c38f0ad5ba9571d370b1bedf2fbbf9e000d0d97c11f965c74e1a3c428aefc2",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_14.mp3",
+      "durationSeconds": 1.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.27832,
+      "rms": 0.04019,
+      "sha256": "3bb3c866af79f500ad9f528edca42becd6c04c4c3481c0bd637bb604f27ef22c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_15.mp3",
+      "durationSeconds": 1.875,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35601,
+      "rms": 0.04432,
+      "sha256": "f9105fb34303a895f29a651f0aaff12bd699ee798b0c94321eaf5b7b8f506a01",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_16.mp3",
+      "durationSeconds": 1.9,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3052,
+      "rms": 0.04422,
+      "sha256": "e5813e1228c8d50158d3bf4b2910f271de6b163e56928ef1f8707619a84d8c48",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_17.mp3",
+      "durationSeconds": 1.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30934,
+      "rms": 0.04225,
+      "sha256": "ab1c5bfc4ca59a2ad52b73cbbe2215d7d0187fcd8b6ca60387e89d6d57e0f8fe",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_18.mp3",
+      "durationSeconds": 1.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28127,
+      "rms": 0.04311,
+      "sha256": "d3039ed959d6493fca2f8456aeb707c6a6ca694f83a06f54359ebfb673caf2b7",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_19.mp3",
+      "durationSeconds": 1.875,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37328,
+      "rms": 0.04571,
+      "sha256": "6775146aaa0ecd085884647ef60bbdb1ba2205b0e4517e0626a8ce304e26ebb2",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_20.mp3",
+      "durationSeconds": 1.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28796,
+      "rms": 0.04224,
+      "sha256": "f48608d2be23c8f16ef7ddbef5a4006b64c08906c97cb098f7ef2a6b67dac9da",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_21.mp3",
+      "durationSeconds": 1.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3209,
+      "rms": 0.04387,
+      "sha256": "c70028cbaa388f4e1c5885d74a6586a4629d97964bde81b97f4484f06c29dc3f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_22.mp3",
+      "durationSeconds": 1.9,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30649,
+      "rms": 0.04245,
+      "sha256": "adfb72164f66dd85e5fcadf26683bf6adf6df97b88ee7e826f4d117e7fd7eb9f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_23.mp3",
+      "durationSeconds": 1.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33366,
+      "rms": 0.04417,
+      "sha256": "5ed7546ff7209643f258cf188dcab25fc308d1b49338b13d431758fc6649d787",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_24.mp3",
+      "durationSeconds": 1.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.26075,
+      "rms": 0.04093,
+      "sha256": "7226021759e64a1a8d1af27b283046047d34768acec503edc1b529495dff90b3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/en/letter_25.mp3",
+      "durationSeconds": 1.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33914,
+      "rms": 0.04528,
+      "sha256": "ea6e7cd0052109f7ecf73f0db7b83a102726415f12b335071c0010b1c923f25c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/coloring.mp3",
+      "durationSeconds": 4.1,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.54867,
+      "rms": 0.06938,
+      "sha256": "a29d79d53391c0914c168f1b0bfb8b0550d1800bf5af8ab0f4436d5ee0650f50",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/drawing.mp3",
+      "durationSeconds": 3.15,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.4242,
+      "rms": 0.0688,
+      "sha256": "d9fbc69b20e731e82ab8110cd969e80f9e6b299dfadaafbf0c049c0ce3ccd5f0",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/tracing.mp3",
+      "durationSeconds": 3.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.40658,
+      "rms": 0.06859,
+      "sha256": "7abed9504f2ac16699a00b72445ee8a23746db4a9dd2f2d1fb97754d4aaaf813",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letters.mp3",
+      "durationSeconds": 3.0,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39309,
+      "rms": 0.06629,
+      "sha256": "17ac8ce88083735e6bfcc2f236d6526324c2b67759b5b142e210a49f1d9082df",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/words.mp3",
+      "durationSeconds": 3.0,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.45392,
+      "rms": 0.06564,
+      "sha256": "a4e0f4abe20b491f4699d27e6d3701189774e95b723a897bb126df100f75bcbd",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/counting.mp3",
+      "durationSeconds": 3.05,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46998,
+      "rms": 0.06727,
+      "sha256": "a2a76999af5a094146821233357838a441978248f4136c179e9363d38cc8caca",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/math.mp3",
+      "durationSeconds": 3.65,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39342,
+      "rms": 0.06834,
+      "sha256": "40d07df136f8801940fffd8573961656011b1c4da6aa2697d35ca4f61d611a77",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/shapes.mp3",
+      "durationSeconds": 3.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.45825,
+      "rms": 0.06626,
+      "sha256": "1af0e4ed934c012cfabd00bfd8c9e3877a67ab5f0350466c2325980fb65183b3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/sorting.mp3",
+      "durationSeconds": 2.75,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39327,
+      "rms": 0.0658,
+      "sha256": "3ace3a127ce16e9bf63004a5f365e00139f1bac57904959306e8fc27a184138f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/memory.mp3",
+      "durationSeconds": 3.375,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42808,
+      "rms": 0.06675,
+      "sha256": "dcde53d19313848d29c8a95c4f951dda8e9654fa5db3d509b8929dabb3df6d8a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/jigsaw.mp3",
+      "durationSeconds": 3.3,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46686,
+      "rms": 0.06605,
+      "sha256": "400713be037fbed668d064f464197fb055abc4d674ffc22f87ed677e436ff0f1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/patterns.mp3",
+      "durationSeconds": 2.975,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.57208,
+      "rms": 0.06513,
+      "sha256": "21f87ff75c2f53a2b7ade7161f748f854054819be3939a6606bf86d2ad68ae1e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/mazes.mp3",
+      "durationSeconds": 3.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.47784,
+      "rms": 0.0673,
+      "sha256": "5d5ed8de13cf1aa73546ad0daa753e2b98fe6b722ad9836959433069bd0c5389",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/nature.mp3",
+      "durationSeconds": 3.425,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.45501,
+      "rms": 0.06747,
+      "sha256": "f0bbd556a09cf328b9114113ab112a31c09e2e7f736d3079f9522203ee1a0947",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/everyday.mp3",
+      "durationSeconds": 4.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.51217,
+      "rms": 0.06654,
+      "sha256": "6e0ec8e275f3a95e37ee1332a1d63f83f0a6d9fa56a96875abfcda3b6448e75a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/music.mp3",
+      "durationSeconds": 3.5,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36925,
+      "rms": 0.06515,
+      "sha256": "aa6e191f18c9a1911beb84e25c06b8d469da0ae03005359dba03ff6c3c8e6db3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_cat.mp3",
+      "durationSeconds": 1.025,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.47599,
+      "rms": 0.06471,
+      "sha256": "8a07e49491e608324d1f0408cb7bedc816c26d6ef76dd5377c7b7a985a379a77",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_dog.mp3",
+      "durationSeconds": 1.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.4672,
+      "rms": 0.06521,
+      "sha256": "0c5aa221b684032c68a64ec995928b12b32fc32b56c9aef94f968c3c772b2140",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_rabbit.mp3",
+      "durationSeconds": 1.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.44121,
+      "rms": 0.06509,
+      "sha256": "fbe9a33e531d5b16c3c29d5c32e1b3cafe716124ce51e9d7f8f5572b48b5857e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_fox.mp3",
+      "durationSeconds": 1.425,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39435,
+      "rms": 0.06755,
+      "sha256": "00a0b69f2f21ee96385bd3bace26c4506ce49a983a99d8505ed851e938860cea",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_bear.mp3",
+      "durationSeconds": 0.95,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41071,
+      "rms": 0.06701,
+      "sha256": "874cc5c52979cfb3aff3feda92fa78861f20268626765eb53beafe53bbc5e219",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_lion.mp3",
+      "durationSeconds": 1.226,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38214,
+      "rms": 0.06627,
+      "sha256": "b171f77b8f7308e6304cb080cf517360e0640377ae36566056e438c2feafb802",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_elephant.mp3",
+      "durationSeconds": 1.525,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36732,
+      "rms": 0.06529,
+      "sha256": "ac195d8f04f2ec7b18829948eb5359cfe96c66d8e631cfcaa10871e1d63c9f85",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_giraffe.mp3",
+      "durationSeconds": 1.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.40173,
+      "rms": 0.06832,
+      "sha256": "caf70a220d746080df8af830c83634dce500b72e8c52fe14c5f2528076643d5b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_turtle.mp3",
+      "durationSeconds": 1.175,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.57065,
+      "rms": 0.07118,
+      "sha256": "f4a8a7d8f0ed5651885f42e97094fb42f95f15098fd8fb6f7e2ea75d6138203e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_fish.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.61588,
+      "rms": 0.06854,
+      "sha256": "924c2de5088abfc4c17c0c6aa1b0c572005ac33cc1b0edcc46a2cdcdcddff7c3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_bird.mp3",
+      "durationSeconds": 1.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.50201,
+      "rms": 0.06861,
+      "sha256": "503bd403d51bfe5da52dadced73a69ba526c137e3a19db722ce9a7f2f46d842b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_owl.mp3",
+      "durationSeconds": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37925,
+      "rms": 0.06153,
+      "sha256": "e1e1c0b8ac642f64fdea94a10a9634ed70ea383d55e24487c55882432d105c9b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_penguin.mp3",
+      "durationSeconds": 1.375,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.44367,
+      "rms": 0.06704,
+      "sha256": "ee162344947b8ed869c8d3a9a847421d6f5bf8904078aac67a43f16669d5d1ee",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_butterfly.mp3",
+      "durationSeconds": 1.5,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.49548,
+      "rms": 0.06632,
+      "sha256": "8d6dc8f88a67f5757c42184a4518ec678eadd89d09c2334da27a85fdb8566744",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_bee.mp3",
+      "durationSeconds": 1.275,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36682,
+      "rms": 0.06424,
+      "sha256": "a5882649dcfd3f50766b91bbd70d7c320c5dfa8b40753e6f548ffbd952bd95db",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_snail.mp3",
+      "durationSeconds": 1.525,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41928,
+      "rms": 0.06582,
+      "sha256": "6b4d7f56a587ec36c4ecf1481ed0b84761c663759e36c412dae6d661800044a7",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_octopus.mp3",
+      "durationSeconds": 1.35,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39623,
+      "rms": 0.06375,
+      "sha256": "bbfbff5027c57cd5aa5c1f85d6923e20822bc699799544385170053d1f887745",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_whale.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.49925,
+      "rms": 0.06286,
+      "sha256": "f205a9ba38e1b91af3f21d73e24790014fc5a3ece75b2127e3ce4f5231e2b00b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_frog.mp3",
+      "durationSeconds": 1.55,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41536,
+      "rms": 0.06452,
+      "sha256": "053c576db1dfcca2d6af2941d32a54726c34d95fd157027acc69725a5d2078ed",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_hedgehog.mp3",
+      "durationSeconds": 1.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.44901,
+      "rms": 0.06561,
+      "sha256": "7633169f4ea31b8ed0eb31908fa80f9e8a5400e2b09a764ae811d77df350e89f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_apple.mp3",
+      "durationSeconds": 1.1,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.52605,
+      "rms": 0.06522,
+      "sha256": "a2b73ff01022cc0f457df82cb78b83dec0219ddd3b4e522ebc878bbdc4ac78e5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_pear.mp3",
+      "durationSeconds": 1.1,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.51162,
+      "rms": 0.06618,
+      "sha256": "3f7a28ccff195937b375b7709c8caaf8378f68a4245da789139abcd053389b44",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_banana.mp3",
+      "durationSeconds": 1.525,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.52784,
+      "rms": 0.06405,
+      "sha256": "47e01eb481303e38e37094ea074302bbf58aeff0f93c5223d7528fd7e441daa9",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_strawberry.mp3",
+      "durationSeconds": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38621,
+      "rms": 0.06142,
+      "sha256": "b3fe0c7d1dacf27553b116ee6b9a37139cfb275d0a6bd159e037c1158512af65",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_carrot.mp3",
+      "durationSeconds": 1.175,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.48012,
+      "rms": 0.06849,
+      "sha256": "4646a60541ea79048f1c29cbfa5c0268f4ca8c84d268cc546e25fbd7d1399add",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_orange.mp3",
+      "durationSeconds": 1.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37951,
+      "rms": 0.06443,
+      "sha256": "0814ec23e0937c428b4add3774cfeaf7700dde56885b090e4fb3822b1277358a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_watermelon.mp3",
+      "durationSeconds": 1.425,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.51435,
+      "rms": 0.0686,
+      "sha256": "4f55f6931f84a8fea523080aacad5558c228ab88cd507da7919af780b0781399",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_bread.mp3",
+      "durationSeconds": 1.05,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41668,
+      "rms": 0.06087,
+      "sha256": "6f35c4f4be265ad0f727a7b93b7196f7ecff16e72dad9ca2b4518b79312f8652",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_cake.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.56982,
+      "rms": 0.06783,
+      "sha256": "da1f7da67c58404ae4c6e5110c6c78dd355f15b9f591eb22678b366a98ea664f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_cup.mp3",
+      "durationSeconds": 1.025,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46419,
+      "rms": 0.06527,
+      "sha256": "98eb679f9f0944f21c7730c900a8dd1585b18c7405f9e6025a183162cbfeedad",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_car.mp3",
+      "durationSeconds": 1.55,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.60502,
+      "rms": 0.06872,
+      "sha256": "c6e4efdadcdfee0ceb8010f60fdf309e3a1cf1125a7dc5bf4242afc62c032955",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_bus.mp3",
+      "durationSeconds": 1.1,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.45184,
+      "rms": 0.06096,
+      "sha256": "23c960c91e6a4774f2991833e278456da56c4a7903dd6357839ace3f4aeead99",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_train.mp3",
+      "durationSeconds": 1.0,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41231,
+      "rms": 0.05929,
+      "sha256": "3eb2b51dedeeb2030536bd8732dc4ed3bf7b7e531b9be90a587db2c1046659e3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_boat.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43031,
+      "rms": 0.0679,
+      "sha256": "cff882039ec4903421f3a6aa85b75dac29fef115518ee600096a49610015a7ad",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_rocket.mp3",
+      "durationSeconds": 1.275,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42249,
+      "rms": 0.06502,
+      "sha256": "5da83d3aa586db225c9089c2757c990b8a93282d45936fd62ee62caba868296c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_airplane.mp3",
+      "durationSeconds": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34534,
+      "rms": 0.06345,
+      "sha256": "3f18f2c6d55cfbd6801238eabda0843d62120d1eddd673995115d920f77201bb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_bicycle.mp3",
+      "durationSeconds": 1.15,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3724,
+      "rms": 0.0626,
+      "sha256": "8fc399cb8c30eb22a1f5d9187866440099328c4e195ea4317756de145abaff0e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_tractor.mp3",
+      "durationSeconds": 1.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43416,
+      "rms": 0.06392,
+      "sha256": "ad281980b103b40936667643f2dce4dafbceccba684b24270271c425c13dbaa3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_tree.mp3",
+      "durationSeconds": 1.075,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3446,
+      "rms": 0.05983,
+      "sha256": "5db8df7de2320f94266f62f8d30b718bd3e3f8ed5b4c444e07b817b54651c302",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_flower.mp3",
+      "durationSeconds": 1.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46997,
+      "rms": 0.06725,
+      "sha256": "8ba7d36750933044b39a3ea2e7b82f9af350c5381d55a4eb40a09337f0990102",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_sun.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43114,
+      "rms": 0.06728,
+      "sha256": "0122930c0ae2fdb8ca65f206d39d585a3b9cb418fc0c72d86b14737921964f11",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_moon.mp3",
+      "durationSeconds": 1.226,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36687,
+      "rms": 0.06218,
+      "sha256": "251e511516c549a833a5c9e49fda33c8d2b8237813e630f947b4d87b2b6bf561",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_star.mp3",
+      "durationSeconds": 1.425,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38633,
+      "rms": 0.06561,
+      "sha256": "a90a024e001582e7440ba64e8d33be49e63b2c77738a7ab38366a12fd0c1d476",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_cloud.mp3",
+      "durationSeconds": 1.275,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.31414,
+      "rms": 0.06872,
+      "sha256": "c48264694e0cd3d0f85fa14e016d2f74c1bbeb15955ea8c75ead1e2718f9ed00",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_rainbow.mp3",
+      "durationSeconds": 1.75,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.44465,
+      "rms": 0.06869,
+      "sha256": "066cb4b5e6ceb66ff36d3cac7c0f42909f939543a4dd0f88ad64d3e74679e841",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_leaf.mp3",
+      "durationSeconds": 1.175,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46168,
+      "rms": 0.06625,
+      "sha256": "1bcef2a9dfe7a8a64a21779913b047c8e43a7d99e165e53cd22b0afaee0ecb85",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_mountain.mp3",
+      "durationSeconds": 1.425,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32163,
+      "rms": 0.06841,
+      "sha256": "dba992e42ca970d35c9766eb6fea22c3d0efe7db3567ef1791759c55d886a8ad",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_mushroom.mp3",
+      "durationSeconds": 1.65,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.482,
+      "rms": 0.06845,
+      "sha256": "c040bfe2c269e4c213efd9554f30701f404ed1a4c827e7c6f821a88daaa952d1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_house.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.47049,
+      "rms": 0.07081,
+      "sha256": "c22c1d04f4765077ca47c222a6c657c894c2a0355cce8b02ad16e482a7fff61b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_book.mp3",
+      "durationSeconds": 1.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32862,
+      "rms": 0.06148,
+      "sha256": "60251e51d79fdf30eac4520457cb084ac24b596bd0fe43dd16631675d5fab520",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_pencil.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3691,
+      "rms": 0.06223,
+      "sha256": "214402a36dd069f03b3b81aebd555d23907bde84fe8e7af69fb8753fb8d4a57a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_ball.mp3",
+      "durationSeconds": 1.275,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.40128,
+      "rms": 0.06612,
+      "sha256": "319084a95f4c7a6c0a2d5d9863387aa59abfa8c39e9c3d4efb8118b5e8f77ada",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_kite.mp3",
+      "durationSeconds": 1.575,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42001,
+      "rms": 0.06708,
+      "sha256": "23f64ab0adbcd9299eb02d39d343bde17cfb1d25a27f3b228de54c36cf2314b9",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_umbrella.mp3",
+      "durationSeconds": 1.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.50172,
+      "rms": 0.06865,
+      "sha256": "2c942f44aad2da37390474bddd054ba4cc0e2afbcc2ec4f674bc717ea637bc3a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_clock.mp3",
+      "durationSeconds": 1.3,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46606,
+      "rms": 0.0643,
+      "sha256": "f06d54452511d23eaf099881772039cf657c35ec8a2c2982a27917f6f7611946",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_key.mp3",
+      "durationSeconds": 1.075,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.4382,
+      "rms": 0.06567,
+      "sha256": "398b555919a7640d8256cd7c3c41f931a5792ba3bc2c88f736c36abdcf3cd549",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_guitar.mp3",
+      "durationSeconds": 1.5,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39613,
+      "rms": 0.06576,
+      "sha256": "a9c0c6cbda9789467040fd9c1f1410183d4f1f0a68f111529e531760c7d87eb5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_drum.mp3",
+      "durationSeconds": 1.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.58945,
+      "rms": 0.06768,
+      "sha256": "025a70e9cf9b9ca0108874d9c62211e8ca387df11f58693d5bd927d3d11956df",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_piano.mp3",
+      "durationSeconds": 1.226,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.47168,
+      "rms": 0.06725,
+      "sha256": "95265e378d1b31dd80cc8d041414e65da2d0a291d28a74513568b4e5c0a041b8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/word_bell.mp3",
+      "durationSeconds": 1.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.4305,
+      "rms": 0.06809,
+      "sha256": "159332a5e1a6cba240910261b5253e6dc2b906ddf06b4af94b204feabdd73485",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/great.mp3",
+      "durationSeconds": 1.525,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36425,
+      "rms": 0.06178,
+      "sha256": "3d2d7b58aa09a64265bb8ef0e71bbcf3b6f587de278c2296708c2e99968d719f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/again.mp3",
+      "durationSeconds": 1.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36804,
+      "rms": 0.06503,
+      "sha256": "434c7987f2fea8664f9d21f780abc321ddd6c2a24bbe0e477d891e93108fb895",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/welcome.mp3",
+      "durationSeconds": 2.5,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.31054,
+      "rms": 0.06375,
+      "sha256": "38fc39a02eb931478bd133e8993b91ff9d37b8ba76a65b3f0b2518af107d0554",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_0.mp3",
+      "durationSeconds": 1.65,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.40454,
+      "rms": 0.06496,
+      "sha256": "983d696ab93d45eb502954aa8dcc3669ead26d2d163c277f625e08a06ae3f95e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_1.mp3",
+      "durationSeconds": 1.675,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3858,
+      "rms": 0.0671,
+      "sha256": "bd457c0395e40feb55a97246344ac3f0769d9ae4bec244c428b67835584e0132",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_2.mp3",
+      "durationSeconds": 1.725,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.40282,
+      "rms": 0.06927,
+      "sha256": "4d61e7d20d4e63019fe943c28f2a32edeea6ec37772791da50f961ba0282d0cb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_3.mp3",
+      "durationSeconds": 1.65,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36428,
+      "rms": 0.06766,
+      "sha256": "c05c13f2faf982ed1dff460390f3df6bd79c84bb65b4422b4fad9d8c14d5ec99",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_4.mp3",
+      "durationSeconds": 1.625,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39393,
+      "rms": 0.06559,
+      "sha256": "700d0ac6feaadc265fd685e64511cad0af48eb51f822579528fde42675515d74",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_5.mp3",
+      "durationSeconds": 1.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3827,
+      "rms": 0.06553,
+      "sha256": "6d86af83a68ca52f1f37bb3acc7c68f47d0ee4ffb9c0cb729703fdb329c639db",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_6.mp3",
+      "durationSeconds": 1.7,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39853,
+      "rms": 0.06855,
+      "sha256": "a81f1bf466f68a1505d6befa476af6721fab4abba7e6e620317e7d86559e8cdc",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_7.mp3",
+      "durationSeconds": 1.826,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39756,
+      "rms": 0.06643,
+      "sha256": "9dd6b67ae1b3aee5b9b9f3d3bd17d93291452b111ee9ce653a9e5ed21dc09154",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_8.mp3",
+      "durationSeconds": 1.625,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.40892,
+      "rms": 0.06877,
+      "sha256": "e59a2796a78a1b152acd84fa29ebf57b95803ad9e888ea65d32803400041e7bd",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_9.mp3",
+      "durationSeconds": 1.7,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37211,
+      "rms": 0.06919,
+      "sha256": "7b3de0a3452ba51a37f4cd11d197bc5454fe79eea37d8d00571d3faa66543e70",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_10.mp3",
+      "durationSeconds": 1.725,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38747,
+      "rms": 0.06654,
+      "sha256": "25d0ede01bad4c371c3b5192dc38a6c660dc4bbfe657401920c805c8396349d4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_11.mp3",
+      "durationSeconds": 1.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38063,
+      "rms": 0.06289,
+      "sha256": "e64cab62a4c2c5649d258ab8ba8335248205d802f13efbd9797e422db4779a99",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_12.mp3",
+      "durationSeconds": 1.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3919,
+      "rms": 0.06227,
+      "sha256": "8197bd6f617b115a21bf4b43ba212efc73facc1f5a1fe23cf612d835c14a81f6",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_13.mp3",
+      "durationSeconds": 1.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37807,
+      "rms": 0.06381,
+      "sha256": "75331b0d7ab8f1f231678a2356db91459d5fb372e7cf99370fc73d936f340882",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_14.mp3",
+      "durationSeconds": 1.65,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39404,
+      "rms": 0.06506,
+      "sha256": "f872e530b5ff059ff102c4235bd7b9a92942a71cf0063bf13bf873c8e6579c40",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_15.mp3",
+      "durationSeconds": 1.675,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37552,
+      "rms": 0.06779,
+      "sha256": "e1eea13f2d5f3571c43e13a9e4ac75de0cb0a23e60aff07f1a6021f14e05f410",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_16.mp3",
+      "durationSeconds": 1.725,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36195,
+      "rms": 0.06775,
+      "sha256": "f57c02aafe3c60ea8f32eb585346d0c6807d4e69676b78ac9dd28c1a4e7f519e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_17.mp3",
+      "durationSeconds": 1.725,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38003,
+      "rms": 0.06425,
+      "sha256": "440837844da7e7bfc49db9c753944af6644f99cf644e770b3cad8cf68ec0b2ce",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_18.mp3",
+      "durationSeconds": 1.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36107,
+      "rms": 0.06671,
+      "sha256": "b01203d190f123cffa7260e8046a67d5da553af054b4b585422e958ea3c321af",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_19.mp3",
+      "durationSeconds": 1.7,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37816,
+      "rms": 0.06833,
+      "sha256": "2ca638039dfd094e61a2cfe1702dbbae7f5d4841d7e83b8eb440f32834bc6851",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_20.mp3",
+      "durationSeconds": 1.675,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38928,
+      "rms": 0.06786,
+      "sha256": "808834d5e1bed2b74b35ca173676c66238e38215d9a1694e75b261dea39e4e67",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_21.mp3",
+      "durationSeconds": 1.675,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37492,
+      "rms": 0.06806,
+      "sha256": "ec810a2f939a802a36408226c0db6c1ca0bca3cf96aaa51ce7a000007903cfa4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_22.mp3",
+      "durationSeconds": 1.925,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3777,
+      "rms": 0.06757,
+      "sha256": "ab64b35d939ca078a5a76236e9ff34e1ed02f60f586b4494ad112deb5dd33f20",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_23.mp3",
+      "durationSeconds": 1.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42166,
+      "rms": 0.07042,
+      "sha256": "44a7340c7118620abc3585673f3a44cd7a134bb6eff9c0ab8d708ddef348528d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_24.mp3",
+      "durationSeconds": 1.95,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37593,
+      "rms": 0.06782,
+      "sha256": "9b88cbaac691fee36cf6d58840d05d87852df7a254db09da36a955746fddadb0",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_25.mp3",
+      "durationSeconds": 1.925,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39144,
+      "rms": 0.06476,
+      "sha256": "1d9865c7bd2d2c420457e626d4da6ec73972a38537e4386d8eb9bcc7af5765ed",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_26.mp3",
+      "durationSeconds": 2.125,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39214,
+      "rms": 0.07019,
+      "sha256": "49b8d84abb29135914b870b70b100663e69019de4fd5b7bab8264782038a27f1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_27.mp3",
+      "durationSeconds": 2.125,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43148,
+      "rms": 0.06622,
+      "sha256": "db312c85b616b0705aa35a95ed388f193e794e36fa90ba4de67785a0e0d4cfff",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_28.mp3",
+      "durationSeconds": 2.6,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.44834,
+      "rms": 0.06914,
+      "sha256": "df417fd79be98612e863b58bbd5840f317e100bd8dd588de763f157e4ede3f5a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/fr/letter_29.mp3",
+      "durationSeconds": 2.125,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.47036,
+      "rms": 0.06835,
+      "sha256": "b6b5148d48c00377af70e4bf19a09e3970acd7f3d3fb46f98c7ee5bf7ad38f62",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/coloring.mp3",
+      "durationSeconds": 3.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3802,
+      "rms": 0.04308,
+      "sha256": "a9b81e80bf6d9fdc4b93884711d86ac6d3e8d7f0fffa6312eeea4994c6493104",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/drawing.mp3",
+      "durationSeconds": 3.225,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.54531,
+      "rms": 0.04566,
+      "sha256": "d06da89d204396983646b44f9e5496b2e89cbc18820fc35272a4d37c80360525",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/tracing.mp3",
+      "durationSeconds": 3.375,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.52284,
+      "rms": 0.04437,
+      "sha256": "0037b738dcff183a1936455ed8241deb53e304993db1c2a694addcba5542e1bf",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letters.mp3",
+      "durationSeconds": 3.0,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35112,
+      "rms": 0.04305,
+      "sha256": "8b6ddbf8a9410d44e0e98abd5c6ecf9dce82fc90ca98ca65a4f56fbe89aa003b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/words.mp3",
+      "durationSeconds": 2.725,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39298,
+      "rms": 0.04532,
+      "sha256": "5e5ee12be705be6fee7ab6af39ab4899723896ef0cef7524673ae29f07e185ee",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/counting.mp3",
+      "durationSeconds": 2.675,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.56598,
+      "rms": 0.04609,
+      "sha256": "dfcb8a23086deee57baafb9c1c754dd9e04c78c1d7ec494b2a01bf5008d922f5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/math.mp3",
+      "durationSeconds": 3.05,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.48945,
+      "rms": 0.04599,
+      "sha256": "5f5c3a7e7c0c541960991514cfca6d0c64eb8a5b287b8e4fa678929ccd0da839",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/shapes.mp3",
+      "durationSeconds": 3.35,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.4193,
+      "rms": 0.04416,
+      "sha256": "7d8d42a0d83c102eff779276a8e341559e0dd4498e1240b4d7215bd9965cfe7f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/sorting.mp3",
+      "durationSeconds": 2.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41364,
+      "rms": 0.04657,
+      "sha256": "4a3bea5e95012ebb6de5b61cf81ede858c748ce4b893046248b25230423f1ae3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/memory.mp3",
+      "durationSeconds": 3.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.52183,
+      "rms": 0.04648,
+      "sha256": "9f225ae0d76e3ab0340302b2760ff5ebc0b46530f7b368cb4605c5936162d53c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/jigsaw.mp3",
+      "durationSeconds": 2.9,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.47185,
+      "rms": 0.04681,
+      "sha256": "344c32c7b0e19cd0cf0cd24df0050ad77cd8cdf30e85ac9069e948bf120087db",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/patterns.mp3",
+      "durationSeconds": 2.175,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36558,
+      "rms": 0.045,
+      "sha256": "8c8b37192fbdfe42ef086859d268d346dd2ffec11f1f198152e968f8fa3bd652",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/mazes.mp3",
+      "durationSeconds": 3.075,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.373,
+      "rms": 0.04633,
+      "sha256": "85fcc222ff0e16c197345cf30b546049bfb9b217368461c44cd23cd1127c3981",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/nature.mp3",
+      "durationSeconds": 3.65,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.50457,
+      "rms": 0.04497,
+      "sha256": "1b5ff4a34e31a012eb90ffa07ca5064845d4371e06ff78a9cf720a2b278b6e9b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/everyday.mp3",
+      "durationSeconds": 3.6,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35701,
+      "rms": 0.04319,
+      "sha256": "cd6ee56cf32a8d45b7722be50b2e85a92b29dd77b09082324f101acba87938d0",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/music.mp3",
+      "durationSeconds": 3.3,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.44427,
+      "rms": 0.04348,
+      "sha256": "1e9c6bc11ba269abdd3ec90a9f624c1df63981e31d31bd2f543e225582f3ffcc",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_cat.mp3",
+      "durationSeconds": 0.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38896,
+      "rms": 0.0476,
+      "sha256": "4ee71a6ad21db382486aabe812ad0f88664b28441368cf76130bbdbd3981afd1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_dog.mp3",
+      "durationSeconds": 0.675,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.27793,
+      "rms": 0.0437,
+      "sha256": "477abfff1efe3ddcce6a15e58c7322a7afce03eb99e297f934ffc4d431f9f6f6",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_rabbit.mp3",
+      "durationSeconds": 0.925,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.29906,
+      "rms": 0.04408,
+      "sha256": "70e5ce09f578b8d68a21bfbe7125b3002a126fdd08ff0619e837a41ce5e7d8fd",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_fox.mp3",
+      "durationSeconds": 0.725,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28795,
+      "rms": 0.04371,
+      "sha256": "4cc7ce6e5021bbaa08e8d2b8cebff08e3cd738eaad6cbf8d7e9e43264db9090c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_bear.mp3",
+      "durationSeconds": 0.725,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35138,
+      "rms": 0.04302,
+      "sha256": "7893f02938047593664b2ad902db75dd44f3f5a19d04414471db36d438b35c1a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_lion.mp3",
+      "durationSeconds": 0.75,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.2481,
+      "rms": 0.04415,
+      "sha256": "559124afe8cdd6b5dc757aaf01276fe43b04281d7283bc5f3625894f3447fe90",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_elephant.mp3",
+      "durationSeconds": 1.15,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35771,
+      "rms": 0.04633,
+      "sha256": "3b78273659a0ed0c5a0d6e75c1a29a56a6a3cea756796c7724a33c2e14c42906",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_giraffe.mp3",
+      "durationSeconds": 0.9,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41796,
+      "rms": 0.04463,
+      "sha256": "aa9d9a9e81dc57448a5c62129073e908da834b3fe0709eaf907b606ad2010ef8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_turtle.mp3",
+      "durationSeconds": 1.0,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34244,
+      "rms": 0.04449,
+      "sha256": "3ee6b2f8cb9268d9e406b796b8a7b7997ab7350850d921e851d14f7d83798108",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_fish.mp3",
+      "durationSeconds": 0.626,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39055,
+      "rms": 0.04528,
+      "sha256": "b6b76b69407e05ab7559bf284629b4495377346d55e9c8620dede19b2fbe504f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_bird.mp3",
+      "durationSeconds": 0.875,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30137,
+      "rms": 0.04451,
+      "sha256": "9b4070aea0cda1af9697ec9336d8b5c9903a904f5c045cdfa06e926d528394b1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_owl.mp3",
+      "durationSeconds": 0.675,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30551,
+      "rms": 0.04506,
+      "sha256": "3f2439c008103fb8ecacc8087e7d8b0ed584fa860e8dad5813ec18c4135c33ae",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_penguin.mp3",
+      "durationSeconds": 1.0,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28543,
+      "rms": 0.04329,
+      "sha256": "7a1f4bdbf3634a4d33a6c40286e5654cb7b5319cbef2d24c0659971bb6359b5a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_butterfly.mp3",
+      "durationSeconds": 1.175,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46779,
+      "rms": 0.04503,
+      "sha256": "3e53fee130a907de0ca6d0fc7bcb072d67680459a972c351f50336d7f920277d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_bee.mp3",
+      "durationSeconds": 0.925,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35236,
+      "rms": 0.04412,
+      "sha256": "4ed23f0215e56cba633b075f88c45be920afdf8ddf4c505020636713d723d7dd",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_snail.mp3",
+      "durationSeconds": 0.95,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38768,
+      "rms": 0.04656,
+      "sha256": "9fbbe6deae23667e2541b6d704be751748eb33a054170e961f1511629e1641c8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_octopus.mp3",
+      "durationSeconds": 0.825,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.23848,
+      "rms": 0.0448,
+      "sha256": "a3f7e35893b13ba99572c80ca1540f5407825c063eda99e13323552616b99209",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_whale.mp3",
+      "durationSeconds": 0.975,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.47378,
+      "rms": 0.04591,
+      "sha256": "2deceac191c43ef2f0c1a32f00fe33d07d48fb3e77142167c11576b52f9c1392",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_frog.mp3",
+      "durationSeconds": 0.825,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33187,
+      "rms": 0.04024,
+      "sha256": "79d629346bcca3b459cfc7fc04c28fba7dcce121fe3b2c2292e18fb979bc860f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_hedgehog.mp3",
+      "durationSeconds": 0.9,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33758,
+      "rms": 0.04219,
+      "sha256": "09e40ebe5a2c8533c61af2812933ca5100379975fb695b83ab178080c1264cb8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_apple.mp3",
+      "durationSeconds": 1.05,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32164,
+      "rms": 0.04117,
+      "sha256": "e96a9760f1c84942bdbce62e75462149417e0421ad050297f5f2bda7d8ea5049",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_pear.mp3",
+      "durationSeconds": 0.7,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.26746,
+      "rms": 0.0451,
+      "sha256": "c6a1085b6f73f92e1cc9c1fb1603e7fa5bffa6b1e95e5eecaccdf490c7264f4f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_banana.mp3",
+      "durationSeconds": 0.95,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32,
+      "rms": 0.04183,
+      "sha256": "2cbb1f7d623b62d99e7a5fa056b9da4bee755867790ee195edf9c997abfd2e64",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_strawberry.mp3",
+      "durationSeconds": 0.85,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.26725,
+      "rms": 0.04338,
+      "sha256": "8cc2e911398d137e61422af4683733aef8ce95a37266d6f812110372e43afe57",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_carrot.mp3",
+      "durationSeconds": 1.05,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35466,
+      "rms": 0.04452,
+      "sha256": "db563e0831c07a9f0578b5c65ab27301fa1a639d7754bbe9cd18e3a7fc23b725",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_orange.mp3",
+      "durationSeconds": 0.95,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3958,
+      "rms": 0.0418,
+      "sha256": "c2d12c6bb985665460b614a76f39cc8045bc7fb132003a45e5c8e4fe90db3af1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_watermelon.mp3",
+      "durationSeconds": 0.925,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41745,
+      "rms": 0.04543,
+      "sha256": "ac4325fc3924bd006ccd87c288f8276a7660893423cc00af878db76453c7bc04",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_bread.mp3",
+      "durationSeconds": 0.675,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28358,
+      "rms": 0.04133,
+      "sha256": "f46d82a94ef710a02c01959675a3a23294f4f6a3b66849174d9e091983b178a7",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_cake.mp3",
+      "durationSeconds": 0.85,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35348,
+      "rms": 0.04831,
+      "sha256": "1338c493d84c396b0efbf30974d31042189150b8f673ba75955e52f6b2793d4b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_cup.mp3",
+      "durationSeconds": 0.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30276,
+      "rms": 0.04186,
+      "sha256": "6e685a2937bc9d8c100df64c1fb1851a36eb17fc5d8eaec1ec5e9551738803a8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_car.mp3",
+      "durationSeconds": 0.75,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34489,
+      "rms": 0.047,
+      "sha256": "978729025f14d9d345ca23fbfc8d5d964e148680dbf78da80767c0c56b3aee24",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_bus.mp3",
+      "durationSeconds": 1.05,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.52116,
+      "rms": 0.04748,
+      "sha256": "eef814a4be4839ddf7ea16b66e9d2fca4b218da3195bb9212e53d06ea29b8b96",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_train.mp3",
+      "durationSeconds": 0.7,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37435,
+      "rms": 0.04301,
+      "sha256": "9ce3e7bd042cefe7a1a5cd74c64459a7e4937cb62b6e8af3176092c29a3bd41a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_boat.mp3",
+      "durationSeconds": 0.825,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32262,
+      "rms": 0.04615,
+      "sha256": "b10c4a7ba4bcf9780704fea54f9852f767379ed2a14fc00711fcda64cb79bc6c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_rocket.mp3",
+      "durationSeconds": 0.9,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33741,
+      "rms": 0.04646,
+      "sha256": "bdf0896a84b94bed10061fbf44ca729e3e29daa762677a5970afe1d158874327",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_airplane.mp3",
+      "durationSeconds": 0.825,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39027,
+      "rms": 0.04373,
+      "sha256": "2625a6f192ae22fe75f45684bff21b18ccb4c094452b8cdbcf7a84cac1da0f91",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_bicycle.mp3",
+      "durationSeconds": 1.15,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37528,
+      "rms": 0.04581,
+      "sha256": "bd815eb4763b34029b26d723efe28f48ec49d7e2ec907a33cd47e9a428a4e183",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_tractor.mp3",
+      "durationSeconds": 0.875,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38232,
+      "rms": 0.04728,
+      "sha256": "33d293d8cd9fc57a964e6aae735082af407ec664e0327932036313eb00d114a6",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_tree.mp3",
+      "durationSeconds": 0.75,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33253,
+      "rms": 0.04491,
+      "sha256": "c246219111adfd421bcc5927c2017c9578de90c82916b6c28bc06ea51172974b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_flower.mp3",
+      "durationSeconds": 0.7,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35653,
+      "rms": 0.04687,
+      "sha256": "9db1f7c810d17f90a5fb8405afd57ae42aa512cde6582501a6ed58c4d1838ebb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_sun.mp3",
+      "durationSeconds": 0.626,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.29021,
+      "rms": 0.04752,
+      "sha256": "cd1895d41f0ef1eac14633cbd2fc4b72432f1c1db961bca2f9faf84d5e67e32d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_moon.mp3",
+      "durationSeconds": 0.75,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.31458,
+      "rms": 0.03988,
+      "sha256": "c9d1a52a887fdcd4c680588f701a8050a67fef905e5954c4f20b07aaeb6f431e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_star.mp3",
+      "durationSeconds": 1.0,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.27097,
+      "rms": 0.04263,
+      "sha256": "d42f164e3567f67d360791526a13a9f7afc73acd37b1fff0254036c7f32df635",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_cloud.mp3",
+      "durationSeconds": 0.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.27338,
+      "rms": 0.04185,
+      "sha256": "84e7cfac33132b621408536182e7e372d5671f067ec85a8ce163b2f8bcba940c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_rainbow.mp3",
+      "durationSeconds": 1.075,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.56361,
+      "rms": 0.05204,
+      "sha256": "f1f0356602898b495b88ef7a7315adc366783587619a202037a3266d194bf2f5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_leaf.mp3",
+      "durationSeconds": 0.725,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3187,
+      "rms": 0.04339,
+      "sha256": "20ed085e1b4da79aa701e443d38169faa66ce472e17ad42f0f2b7672b465925f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_mountain.mp3",
+      "durationSeconds": 1.15,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36617,
+      "rms": 0.04438,
+      "sha256": "7c48adb815e376d76c3849f8ae0defeac061c26fa46b18e9d31241d54f1cfb40",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_mushroom.mp3",
+      "durationSeconds": 0.725,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30433,
+      "rms": 0.04404,
+      "sha256": "7bc1f8436b78ea44d7987a8cc2ccaf798bf5cf51130c771b304e74e9c77e260f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_house.mp3",
+      "durationSeconds": 0.825,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33273,
+      "rms": 0.04088,
+      "sha256": "fc3e26fe2b108cfb73cabfb8ee38fbd9c27e37dcdffa5d1cf64d0a7d445b4739",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_book.mp3",
+      "durationSeconds": 0.875,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.29231,
+      "rms": 0.04247,
+      "sha256": "aacc492f500b59e2dec690136becd316fee853a5207909b4ca748af291d102cb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_pencil.mp3",
+      "durationSeconds": 0.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43854,
+      "rms": 0.04892,
+      "sha256": "2804bdd318ac92b81cc901fa6edb8bdc743f1109ab8dfbc012782cbd522cc21c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_ball.mp3",
+      "durationSeconds": 0.95,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36339,
+      "rms": 0.04455,
+      "sha256": "f914a202195ed7763206d010830bfac9e180ad61464069e47784c25c3d60e90e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_kite.mp3",
+      "durationSeconds": 0.925,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30059,
+      "rms": 0.04573,
+      "sha256": "c09e34585f3a555ce06ee7fcede3c1dd4f59cf5be0bdec34e9c8f00d53c26526",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_umbrella.mp3",
+      "durationSeconds": 1.0,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34951,
+      "rms": 0.04212,
+      "sha256": "35f41c3719bcff351be6ef4046b9615742799c9621c4ff323b3e59737c334ad5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_clock.mp3",
+      "durationSeconds": 0.875,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28769,
+      "rms": 0.04458,
+      "sha256": "764cd2455b212e8a9a0d2a42bb96804a5eb961f370d4dfa400487ea415af7c6d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_key.mp3",
+      "durationSeconds": 0.725,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.24901,
+      "rms": 0.04307,
+      "sha256": "cd59258d5d47ad9baf2a89f52a0c27e4738e1609a9a4b4a2dde0a689a535dd9f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_guitar.mp3",
+      "durationSeconds": 0.975,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32721,
+      "rms": 0.04059,
+      "sha256": "904ad1548a5f9d82f2189c7eaeed6d90213ce637facaa5c4c8b96ea8e168cfc4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_drum.mp3",
+      "durationSeconds": 0.9,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32106,
+      "rms": 0.04689,
+      "sha256": "cb7fec86723fb2860f619934125b674e877b3ac607bf5637290591899d7eed74",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_piano.mp3",
+      "durationSeconds": 0.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35198,
+      "rms": 0.04547,
+      "sha256": "7ae902c02e692321201a6fcb51ef3eee2480d1f432e044fe8320dbdb81dd5f4c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/word_bell.mp3",
+      "durationSeconds": 0.925,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30433,
+      "rms": 0.04274,
+      "sha256": "8953e92a6a73e8cedc91d492255d4f9e3c8313db753e49898ce4a286d67dd1d9",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/great.mp3",
+      "durationSeconds": 1.15,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.40732,
+      "rms": 0.04374,
+      "sha256": "ff2e13d2fe75149de82fcd1ca7006ebb0df441033ccad9b936220b654e97a395",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/again.mp3",
+      "durationSeconds": 1.425,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32068,
+      "rms": 0.04517,
+      "sha256": "a20bd97ba6e2d5e879bb6a8e0a9daadeb49bb25c33fc0e9326f7a8e1aa81d203",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/welcome.mp3",
+      "durationSeconds": 2.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36733,
+      "rms": 0.04634,
+      "sha256": "a53a4e190141bb01c9bea87a41eee1706ef97988ca604a331658209908f0223e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_0.mp3",
+      "durationSeconds": 1.226,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.31695,
+      "rms": 0.04508,
+      "sha256": "a10b0923b8ac6ab27b783834ebc478f5d9ae1ae02407bb5df4ae44a08bb2f2cc",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_1.mp3",
+      "durationSeconds": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41171,
+      "rms": 0.04641,
+      "sha256": "f84890345c6abd3ddb8c3950a15734862a1502feca22e327d8b5c32c010f4b1a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_2.mp3",
+      "durationSeconds": 1.226,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.44157,
+      "rms": 0.04663,
+      "sha256": "0804db00b56abab3b6711c3215d8904f82f068b9e1693679b2185ad221390f5b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_3.mp3",
+      "durationSeconds": 1.226,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.44622,
+      "rms": 0.04563,
+      "sha256": "aafe9e1f460f0f4660b02ded7568d9d2fae6d5233d41250d956b3090fa9f21ba",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_4.mp3",
+      "durationSeconds": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.40161,
+      "rms": 0.04448,
+      "sha256": "bd8ae6b994930ab92338ea3c03f5a1418a35e791a07d77bd52946742f27a80d5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_5.mp3",
+      "durationSeconds": 1.375,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3899,
+      "rms": 0.04351,
+      "sha256": "51ee49192eadc82a10aff125ff0a27de460bee79144341dc580a3988fe1274f7",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_6.mp3",
+      "durationSeconds": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.40869,
+      "rms": 0.04687,
+      "sha256": "7c5b037dbdb0e7ece2730e77b46ec53ec74b984866a637246d6ae4a218fec437",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_7.mp3",
+      "durationSeconds": 1.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33928,
+      "rms": 0.04442,
+      "sha256": "37f529509514580612fbb7916d036839ea0ae26a619bdd3ff1bb961c461bb655",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_8.mp3",
+      "durationSeconds": 1.175,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.44927,
+      "rms": 0.0466,
+      "sha256": "f8fefe07a8b9bee84ec37f9232540a6a4c10cd0b22be1666f702dcf2d6d0bae8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_9.mp3",
+      "durationSeconds": 1.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.50205,
+      "rms": 0.04575,
+      "sha256": "559046306223901eeeeab8706e672f95f6004b90bd2cb9288180790495ce1b2f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_10.mp3",
+      "durationSeconds": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38123,
+      "rms": 0.04533,
+      "sha256": "ab8c09ae0c8cc3c7a842af7ab57cd286aea43a5d23ed1e3f766a18c8ef321600",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_11.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41164,
+      "rms": 0.04294,
+      "sha256": "6dceae14ccbcffae91e871c2c9e79bd9025f37a6a7594d4af83f7c790c362d46",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_12.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.4098,
+      "rms": 0.04339,
+      "sha256": "e3159075f03e5379b2ebba1d4f3eca060bd6b1a423317b135ff7dabbed5de009",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_13.mp3",
+      "durationSeconds": 1.3,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.47788,
+      "rms": 0.045,
+      "sha256": "ec7ab9f8cb62be5a43a348a6ee35c3a34a3e194a09910c9206d57a3a2680d7ce",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_14.mp3",
+      "durationSeconds": 1.35,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46918,
+      "rms": 0.04409,
+      "sha256": "47b7d5cd17ae12d3e62c676e52f54d0d0a12cb34bc94bfb34366edc90a15015d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_15.mp3",
+      "durationSeconds": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41394,
+      "rms": 0.04385,
+      "sha256": "4158cd0e273f58f38c502a0a363596fdf566308e3ec359bfe02e7c2cd57cdd19",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_16.mp3",
+      "durationSeconds": 1.175,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41471,
+      "rms": 0.04616,
+      "sha256": "ad8b541ad8a622020aa4763c36ef4d8042c1ac055841f56368e399aa5fdf8f1c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_17.mp3",
+      "durationSeconds": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.54078,
+      "rms": 0.04594,
+      "sha256": "300b27736ef52f7f55a8ce54a355d6b8fe3587d83939bc637f0200cdd07ad320",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_18.mp3",
+      "durationSeconds": 1.35,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39454,
+      "rms": 0.04361,
+      "sha256": "7cbedbfa2e512826799844f70a2b94fe551d62e2b8a42f132f28bbe4da38bd8f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_19.mp3",
+      "durationSeconds": 1.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38352,
+      "rms": 0.0436,
+      "sha256": "2f10a885c3256f81151a15e86f9ed5641d79a7aa110dfce257828cc1f64eb554",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_20.mp3",
+      "durationSeconds": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46255,
+      "rms": 0.04709,
+      "sha256": "3163492f1b1a6b51bea24e3dc13e866f4f50f1b0e0205f30a2233f151a8f3a22",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_21.mp3",
+      "durationSeconds": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43215,
+      "rms": 0.04444,
+      "sha256": "e5b6636fe864a7a3ace8f3610f6c7df21904ca80b91b554afdc768e01a76d39a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_22.mp3",
+      "durationSeconds": 1.375,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.47717,
+      "rms": 0.04446,
+      "sha256": "f69fd902b21cabd484f92a5fc2560a72e490b9ce9d20552cd947fecd758985db",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_23.mp3",
+      "durationSeconds": 1.65,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.55142,
+      "rms": 0.04685,
+      "sha256": "d79b84caab630425a4cdbb8b749a2c147e05a95c833b45d4971c68ee096b1f2a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_24.mp3",
+      "durationSeconds": 1.375,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3733,
+      "rms": 0.04471,
+      "sha256": "f574eecc6dec2c95dc6cb1a23158c86d88061b177f67710d5e1461d4d2d4527c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_25.mp3",
+      "durationSeconds": 1.15,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.45872,
+      "rms": 0.04628,
+      "sha256": "5a790190a7fbf5cb2bdc13bf8cb3fb5d7d2c6036012ffb9b53cb83a23678bbb2",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/es/letter_26.mp3",
+      "durationSeconds": 1.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.49678,
+      "rms": 0.04571,
+      "sha256": "4902f629d9c78b56a97397de4f6180d6108adf5355a76f8ce16423f100f39b73",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/coloring.mp3",
+      "durationSeconds": 3.5,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37464,
+      "rms": 0.04578,
+      "sha256": "70e1e31c54491c77566f4d820ca399c154194d29d5c11973f7305fa2b32251c8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/drawing.mp3",
+      "durationSeconds": 2.875,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43619,
+      "rms": 0.04633,
+      "sha256": "65b0393561862c00addeb7b7dc336dd53902baea53898976d7ca28d728a056f8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/tracing.mp3",
+      "durationSeconds": 3.675,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.53245,
+      "rms": 0.04497,
+      "sha256": "c768ce907d241efb4ca7298508101b4388502818daa27d6a6cd6eff95c6d1f3a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letters.mp3",
+      "durationSeconds": 2.725,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35198,
+      "rms": 0.04556,
+      "sha256": "459cd3767c396df94730744fc55dd9c0a307f5303516ac5548a54b122326b690",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/words.mp3",
+      "durationSeconds": 2.65,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34687,
+      "rms": 0.0439,
+      "sha256": "3b508ddc543a32489d14918c776b184a5c37c338f3a2df9e7984767d5ad9e6a5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/counting.mp3",
+      "durationSeconds": 2.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42864,
+      "rms": 0.04548,
+      "sha256": "79979d648602cc357929ce2d8b5f6b30125b75aa844f08ef96dd3ec135ade745",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/math.mp3",
+      "durationSeconds": 3.1,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.56781,
+      "rms": 0.04888,
+      "sha256": "a15acbb99e4058694526ba052452ba6b227b3fe2588884e097fc274172784f17",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/shapes.mp3",
+      "durationSeconds": 2.925,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37967,
+      "rms": 0.0444,
+      "sha256": "b2387dd8001166a30f61b5482de19273b0c0470cad9aa129ad730f2e3d508ec3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/sorting.mp3",
+      "durationSeconds": 2.5,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39793,
+      "rms": 0.04667,
+      "sha256": "43bb74086d1635d3960de16075856af8c50043f78d3827133d45561eb1e0c8e1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/memory.mp3",
+      "durationSeconds": 3.175,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.539,
+      "rms": 0.04499,
+      "sha256": "5ccd30a135694b6a8b53b296cd54d29059a45e21bff096eec77133b2d1db22f6",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/jigsaw.mp3",
+      "durationSeconds": 2.625,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33552,
+      "rms": 0.04655,
+      "sha256": "ae85723b9ce20e6d7cd7a0dbc930478d023544cda452f7e77fbbd3a91647d0c4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/patterns.mp3",
+      "durationSeconds": 2.6,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42062,
+      "rms": 0.04539,
+      "sha256": "ac8d2958d7af50c8e999e595f995fe84c6e3895629ac9b83fa594496bf7f2baf",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/mazes.mp3",
+      "durationSeconds": 3.575,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.467,
+      "rms": 0.04329,
+      "sha256": "73ad61669276fb5ad6363c70b8ec6d01d490db961f6b87b129ab585ece66e74e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/nature.mp3",
+      "durationSeconds": 3.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.45306,
+      "rms": 0.04708,
+      "sha256": "b8eeca04ca5f0f755a43f8563c96bd38b6da4692eaac0162ed57167aac3bf268",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/everyday.mp3",
+      "durationSeconds": 3.15,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.48317,
+      "rms": 0.04576,
+      "sha256": "d3237daa22ce4d2400b77f9c1c4954d1dcf563bf2b7d84c19ad280ec8d8b9f42",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/music.mp3",
+      "durationSeconds": 3.026,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.4026,
+      "rms": 0.04339,
+      "sha256": "00289015c80b62d08b6f1053ae4890a98ae0d69bc1b4363e12245a6f6e870cb6",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_cat.mp3",
+      "durationSeconds": 0.825,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42745,
+      "rms": 0.04632,
+      "sha256": "7d2ce2556908ff1c19c39406ebadae0d5616f800a44b2cc85b9097fcdd061b5d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_dog.mp3",
+      "durationSeconds": 1.125,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41247,
+      "rms": 0.04718,
+      "sha256": "e9153a78399874d8259cba3f902df84cc2ca66e1c4b0838c2bd5baee4d0cb833",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_rabbit.mp3",
+      "durationSeconds": 0.9,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33824,
+      "rms": 0.04664,
+      "sha256": "d423bacc9314078a63eac463b3e3eb62ae5a4e468bb92ba3055191c8c7a9de12",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_fox.mp3",
+      "durationSeconds": 1.15,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.49935,
+      "rms": 0.04939,
+      "sha256": "c89cee2d1a93be81386d4e3f046c03dd15f0046cc0494b7cf0b44b0256612f70",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_bear.mp3",
+      "durationSeconds": 0.95,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28612,
+      "rms": 0.04426,
+      "sha256": "ec7a7fc4f0beb7b51c5a8a724c5b5ba2681acd93ffdcb566bfeaa6839e6c5a42",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_lion.mp3",
+      "durationSeconds": 1.0,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.49118,
+      "rms": 0.04188,
+      "sha256": "78995e1b65b524c9d7bc3a91ed70ec7e9c17c7c7a227b6472441b7ad89ebabea",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_elephant.mp3",
+      "durationSeconds": 1.175,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3538,
+      "rms": 0.04373,
+      "sha256": "c2bc82b5d65be9180f006e591812eec2e816ab4a01be17faeb9d03aa2644d593",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_giraffe.mp3",
+      "durationSeconds": 1.075,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43821,
+      "rms": 0.04335,
+      "sha256": "68a42d1bbcf3123f2c31660de6f5d786b378be78369d05a578d048a72d6ff32f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_turtle.mp3",
+      "durationSeconds": 1.226,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.53512,
+      "rms": 0.04636,
+      "sha256": "5f1ced95b02b3a951f65d902947c92f7c062c56e44e308a80b54e54fa0dede62",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_fish.mp3",
+      "durationSeconds": 0.85,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36169,
+      "rms": 0.0444,
+      "sha256": "9a4b2ff3569573affe20aac175ff2030188343a0e9c9f147f12590dc2d9563bd",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_bird.mp3",
+      "durationSeconds": 0.95,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37515,
+      "rms": 0.04532,
+      "sha256": "06404e811e400fa0b47a9bd3ce5124cf7f9f71b1e832b012f0747e067d07b28f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_owl.mp3",
+      "durationSeconds": 1.125,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36324,
+      "rms": 0.04731,
+      "sha256": "c4580ac116cf4dbfd5f183811b1191d9e7d46a1b7bbc23670dd8bf586f7607df",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_penguin.mp3",
+      "durationSeconds": 1.05,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32039,
+      "rms": 0.04301,
+      "sha256": "90d34d6247b514613ca45bb0fcbe10de4760a8c35a5512b692e4b0d7c6d54eb5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_butterfly.mp3",
+      "durationSeconds": 1.226,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.29655,
+      "rms": 0.04625,
+      "sha256": "de36786baa581003a880cf64145baddd07d1a07de33f3f6ef2363c7ccd50f10d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_bee.mp3",
+      "durationSeconds": 1.0,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.49649,
+      "rms": 0.05024,
+      "sha256": "fc04458ba9c62f75edcb15970c6529a81b57958793ddbc37655abc79ba593afe",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_snail.mp3",
+      "durationSeconds": 1.025,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34823,
+      "rms": 0.04389,
+      "sha256": "37fc2cb8c8cc4736e1ec99bc9207484c8ab2281d2bed4095a9add7f94371895c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_octopus.mp3",
+      "durationSeconds": 0.85,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32344,
+      "rms": 0.04784,
+      "sha256": "47b7005ae44d57758d719655cd4bb1f5caccbbd83fed64af1ce2d49e6a19c991",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_whale.mp3",
+      "durationSeconds": 0.975,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42738,
+      "rms": 0.04883,
+      "sha256": "d00e9d382814238d30b0d3fd61eb1d7a5451fc5ef1e88419d88e9e911ceae159",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_frog.mp3",
+      "durationSeconds": 0.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41333,
+      "rms": 0.04632,
+      "sha256": "0033fbecb31f10a04b085f85097da1fec7ee8adf819e8203a032e71145f39c9c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_hedgehog.mp3",
+      "durationSeconds": 1.125,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.48465,
+      "rms": 0.05043,
+      "sha256": "b74b533d5d7b6bb8db61599616c24535733c050db01f77320cd7f8b6b973ef91",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_apple.mp3",
+      "durationSeconds": 1.0,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3998,
+      "rms": 0.04409,
+      "sha256": "59da96ec2387f3db6427e26ae57153dee438007d9816a202bdb67d8d37c2f21b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_pear.mp3",
+      "durationSeconds": 0.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30616,
+      "rms": 0.04095,
+      "sha256": "604259d34d5b4d0d10e02f7e3662f611ab881332bbb4da263feded738876c597",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_banana.mp3",
+      "durationSeconds": 1.125,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.51472,
+      "rms": 0.04352,
+      "sha256": "a1627335cbcbf32ebdb5b23d6c1d29630386d8ce5f042affb9e06b69646945c5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_strawberry.mp3",
+      "durationSeconds": 1.025,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35833,
+      "rms": 0.04346,
+      "sha256": "b0f6e800670360eec1e3d19f3b12e65c35c43f2745704fc29d6056d4299653f9",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_carrot.mp3",
+      "durationSeconds": 1.0,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.31287,
+      "rms": 0.04481,
+      "sha256": "582fefcae4a8dcfefd4fa456ad8c874df3ed3f7a9fbe77f7ab70c96d3c652180",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_orange.mp3",
+      "durationSeconds": 1.125,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38934,
+      "rms": 0.04699,
+      "sha256": "3a513855b3ef6f21705b12d07233dd7d1dde91d47cb5f3a531c9006e2260bb67",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_watermelon.mp3",
+      "durationSeconds": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.40697,
+      "rms": 0.04378,
+      "sha256": "c5aa77ce14efef3e1087608b9e23861f82af8748afe51e35e45c5976d4167b06",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_bread.mp3",
+      "durationSeconds": 0.975,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.29133,
+      "rms": 0.03982,
+      "sha256": "2bba043cd0941280834d97a66da3155620228c253cf60598ec8fb2d89ecfc842",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_cake.mp3",
+      "durationSeconds": 0.825,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30924,
+      "rms": 0.0461,
+      "sha256": "7e031a00a5ecf06989db32a448cd442875764feef28bd3ad71cb44fc5b2e8376",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_cup.mp3",
+      "durationSeconds": 0.825,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.31491,
+      "rms": 0.04275,
+      "sha256": "f651c3303824041f7d07e5971cb6cb2499fcf7b3aadb30acc900ad0380168a9d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_car.mp3",
+      "durationSeconds": 0.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36893,
+      "rms": 0.04327,
+      "sha256": "ce3b9ef927c9509fceebacc9df1df71574fbe6c5e89a1b5fc6cd85206cee90e2",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_bus.mp3",
+      "durationSeconds": 0.95,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38479,
+      "rms": 0.04961,
+      "sha256": "cf4901ea036d8ebfff05d4ee882ef92471442639f6090775e30f45af02339661",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_train.mp3",
+      "durationSeconds": 0.775,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46436,
+      "rms": 0.04365,
+      "sha256": "425e886c248435eb850c700115b8baed6e6994850f8a4d2f410fc96c584bd05b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_boat.mp3",
+      "durationSeconds": 0.925,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37454,
+      "rms": 0.04577,
+      "sha256": "b1cccb7bd891a82f50c0b178ead19f1347a15edf4d9cb6463657872c5991f594",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_rocket.mp3",
+      "durationSeconds": 1.05,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37777,
+      "rms": 0.05171,
+      "sha256": "459a2c7a09e76b3bb981187f48a6bc5264830147f0b361f02cd5c02463e41a61",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_airplane.mp3",
+      "durationSeconds": 0.95,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37491,
+      "rms": 0.04652,
+      "sha256": "6f03436ce60975fa82dda3b7b3dde80c40544e647ca43b6dcfce632cb33a1ba4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_bicycle.mp3",
+      "durationSeconds": 1.226,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3126,
+      "rms": 0.04381,
+      "sha256": "ce36d42fd42524a53c60a3b70a43c385bceed3f44beb747e7e44ee1059e191ee",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_tractor.mp3",
+      "durationSeconds": 0.925,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.51274,
+      "rms": 0.04834,
+      "sha256": "7ad5a8f4ee9da952f7c89775ea4a686d8cab03cbd3010d580650ea20a3c22548",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_tree.mp3",
+      "durationSeconds": 0.95,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.40795,
+      "rms": 0.04564,
+      "sha256": "44801f75a26d67b942f6a9cad884e0dc60037decb85060f684578142b71b0204",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_flower.mp3",
+      "durationSeconds": 0.75,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30898,
+      "rms": 0.04561,
+      "sha256": "398686f4028ed9a557534092b2a23d8f112984133be305189fe94f713f2925c5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_sun.mp3",
+      "durationSeconds": 0.725,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.334,
+      "rms": 0.04522,
+      "sha256": "dcf60b4ecec7c4e7225688c8e779f1d8947b3f41d225576833796457d908a53e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_moon.mp3",
+      "durationSeconds": 0.75,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.27043,
+      "rms": 0.04301,
+      "sha256": "6f923f4000bcac9d7ed4d9261d1b594f15e6fe8f9f0eddbdbe6d3f7db4ccca21",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_star.mp3",
+      "durationSeconds": 1.025,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.27018,
+      "rms": 0.04262,
+      "sha256": "e4752abbdb51009e401ca7cf3996e64cf12417460a86af52fccc4478e76d9422",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_cloud.mp3",
+      "durationSeconds": 0.925,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41558,
+      "rms": 0.0425,
+      "sha256": "511cefc61a78016db79246dfb4f5101169371ab8feba43af88c1c7aafada990c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_rainbow.mp3",
+      "durationSeconds": 1.175,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43217,
+      "rms": 0.04737,
+      "sha256": "9bc8dd97a5d69524502b004bc8efe5003dcbda0521f8a061c8b0092718ba5f59",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_leaf.mp3",
+      "durationSeconds": 0.85,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32433,
+      "rms": 0.04859,
+      "sha256": "bf369ba2684f25029560feb7ddc4f6a9f7f9bc297d080eb8bdf7179f651a5e61",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_mountain.mp3",
+      "durationSeconds": 1.226,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3711,
+      "rms": 0.04388,
+      "sha256": "b7204d04fb02acbd1dc9f2e8c62cde12333cd78b57a55dc6817b87bc111d45db",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_mushroom.mp3",
+      "durationSeconds": 1.075,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36593,
+      "rms": 0.04477,
+      "sha256": "26ed1391cef3da9828a5d9b3b3a859312d207a63de8dc31fe61ee50c69b63a7d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_house.mp3",
+      "durationSeconds": 0.925,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3838,
+      "rms": 0.04224,
+      "sha256": "4018f3a1851925aa2631f1b0e475c9b1b22f52dd267c95506198cd435d888bd9",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_book.mp3",
+      "durationSeconds": 0.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.21866,
+      "rms": 0.03938,
+      "sha256": "93b782bcc98085d45efcb18cc91e2decc9317e3494c8a6dc3a9198cc0ab94b64",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_pencil.mp3",
+      "durationSeconds": 0.9,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46682,
+      "rms": 0.05096,
+      "sha256": "a57fffe9e42caaed2ccce42c6ef3428453149b6cb2c57e5f86c2b2b79ca2421b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_ball.mp3",
+      "durationSeconds": 0.825,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30094,
+      "rms": 0.04406,
+      "sha256": "e5cc9fc913dc0bfb09ce6e3c1533cf74c80b6755806e8923fac728f5af68153b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_kite.mp3",
+      "durationSeconds": 0.85,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35382,
+      "rms": 0.04323,
+      "sha256": "39a4854954aa4638741453a9135c12934b67bcaf0a5ecba8d4684ff8589e4558",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_umbrella.mp3",
+      "durationSeconds": 1.35,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.45988,
+      "rms": 0.04915,
+      "sha256": "6f2573e28d8b3fbe87161261f7975b70e90ca910442db34c0989eeb01f9ce5e6",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_clock.mp3",
+      "durationSeconds": 1.075,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.29076,
+      "rms": 0.04499,
+      "sha256": "d6cc4fa08ed9c785a2583701660f9a5a410967eb80ef801274d870c258510d06",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_key.mp3",
+      "durationSeconds": 0.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3418,
+      "rms": 0.04582,
+      "sha256": "689e0f4a43d319b52b618d806ad5aac9b5dac8124b214db0798d66f99a7422fe",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_guitar.mp3",
+      "durationSeconds": 1.125,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32763,
+      "rms": 0.0428,
+      "sha256": "137356ae571fbe18369212dae6606e7dce7843c43c6cac6b03e73acdc9026b6f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_drum.mp3",
+      "durationSeconds": 0.95,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.4153,
+      "rms": 0.04432,
+      "sha256": "9f9d3a3b1ad56dffee7345b3ad7d8358bda4f5bb03c0f7cf3482080c02b8fd56",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_piano.mp3",
+      "durationSeconds": 0.9,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34658,
+      "rms": 0.04314,
+      "sha256": "49e34da8f37c6e8712f7d746bfd7c4895e366fc0b0fd7f2be57709750acb5467",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/word_bell.mp3",
+      "durationSeconds": 0.825,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.24506,
+      "rms": 0.04004,
+      "sha256": "4fb39229fa9b05a74682cfc6649af8cc2e168d3a2d26cb2af56daa137db044b0",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/great.mp3",
+      "durationSeconds": 1.1,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3835,
+      "rms": 0.04714,
+      "sha256": "0b7ea94b760bb533f9c4458afb8a76e4cfa43766dfb619a3ecf14478df807e40",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/again.mp3",
+      "durationSeconds": 1.35,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38401,
+      "rms": 0.04552,
+      "sha256": "8dd75f5c184fa812a0129db1c14ce9ac5da8fc2caa4c8d14150830ca93dbdf0c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/welcome.mp3",
+      "durationSeconds": 2.675,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39989,
+      "rms": 0.04828,
+      "sha256": "12d09fd7d5f0c7fc361af8151d7b4fddd97627d08e33399db4cc4c24fd53c80a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_0.mp3",
+      "durationSeconds": 1.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3305,
+      "rms": 0.04343,
+      "sha256": "f3b7659ed31dc9b812496800d552a3c0a2fd2d20fc95427bc84192c565f39625",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_1.mp3",
+      "durationSeconds": 1.226,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41661,
+      "rms": 0.04694,
+      "sha256": "3745313a2ebacb3a82a9b59f6fd3375c8874543ca9f46490ceb9ea981afeae98",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_2.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42651,
+      "rms": 0.04885,
+      "sha256": "44d29ff73f8da7aeeeb9f6e7b10772765d1414bfbfd639c1fcfc8935a5928e6f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_3.mp3",
+      "durationSeconds": 1.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43766,
+      "rms": 0.04733,
+      "sha256": "51c5e3bf2a0f4f8c60fc0dc1ad82bca92dc3e18c7575ed20e534770b95fc2076",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_4.mp3",
+      "durationSeconds": 1.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41929,
+      "rms": 0.04766,
+      "sha256": "26b5f7a6ec93b1ba95c441f47d13be4424105f3610ea6e9f147e3a25658ac9da",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_5.mp3",
+      "durationSeconds": 1.375,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3255,
+      "rms": 0.04528,
+      "sha256": "6b5dcce29205b389d8ae2c12c6351576fb851bd9d19fc869eaef1640055efb8d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_6.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.45862,
+      "rms": 0.04928,
+      "sha256": "5b5ef47afc238ddea2ffeeb0864ed21c9fe3f11727c5a4396016b35981fa44e0",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_7.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33765,
+      "rms": 0.04404,
+      "sha256": "c0443c06cf4d1e46f2a3c06bc092eec1fa7ee0fefbc0fff1a7ba0a3dea0539a2",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_8.mp3",
+      "durationSeconds": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41646,
+      "rms": 0.04787,
+      "sha256": "874e3965cb49b5a22631acdc72026ab2789a7e47394393d6ba8d5d0ec04ef99d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_9.mp3",
+      "durationSeconds": 1.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.4064,
+      "rms": 0.04606,
+      "sha256": "5e759c3263e6e418146fbec7cb29f874e30152b80960a70a2973aeb0d2f776bf",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_10.mp3",
+      "durationSeconds": 1.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36846,
+      "rms": 0.04714,
+      "sha256": "be97a525eb5c5a3b4d59ec88a45c9a2293b49c290c26b2b15165f51c825333b3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_11.mp3",
+      "durationSeconds": 1.3,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.34561,
+      "rms": 0.04328,
+      "sha256": "45eb4592f9e49b0bae2f79e51f854870b0253f70c3cb1564344c295c47cda6f0",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_12.mp3",
+      "durationSeconds": 1.325,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42849,
+      "rms": 0.04703,
+      "sha256": "86e917c78bce6129137a9575671658c592c174b2806cb4ad15fe09fd9993a6c8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_13.mp3",
+      "durationSeconds": 1.3,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43134,
+      "rms": 0.04736,
+      "sha256": "45e95df7172862895f62a8f58e6405db0298d67ecab2dccb1f87a7ba52d0154f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_14.mp3",
+      "durationSeconds": 1.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38182,
+      "rms": 0.04508,
+      "sha256": "2568a4e2444ceac68536e66c1dd1bd9910f292c854568e8ac2e984c264541a08",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_15.mp3",
+      "durationSeconds": 1.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43478,
+      "rms": 0.04849,
+      "sha256": "f0761c2e00813973d56e547db8a5ad359b88ccae49daba6bc5345f711b5a897c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_16.mp3",
+      "durationSeconds": 1.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.4372,
+      "rms": 0.04898,
+      "sha256": "093fab373c125c8adb81a2842034c3b6bd1d88c540d679439ca1308282ea5c61",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_17.mp3",
+      "durationSeconds": 1.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38231,
+      "rms": 0.0464,
+      "sha256": "f7792854cf8e37784eb0db2dffc68648b91c91916aa7094482536864321eff76",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_18.mp3",
+      "durationSeconds": 1.4,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3384,
+      "rms": 0.04527,
+      "sha256": "21bb25412df3b84a5d265caeb2543e756097d917a95af32c0246af38902ed7c6",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_19.mp3",
+      "durationSeconds": 1.275,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43425,
+      "rms": 0.04881,
+      "sha256": "28604b90977fec766ee5eb907ea23af39515f69457e58ba749e8ff4fd7ae1dfb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_20.mp3",
+      "durationSeconds": 1.2,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39563,
+      "rms": 0.04461,
+      "sha256": "a5ca26895dd0caf33bc75f9ea2f60297b91b52fd97f93604d923dfa8d8437e0c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_21.mp3",
+      "durationSeconds": 1.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.40981,
+      "rms": 0.04734,
+      "sha256": "f37f5facbade7e0e6acde670102d7cf9b7828c08ba3fa4f9653b48cf1d193d99",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_22.mp3",
+      "durationSeconds": 1.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.28885,
+      "rms": 0.04467,
+      "sha256": "3d53f0f19907f14ec7515ccc19db8d6ba256b00d0ded9993e604abb51e0f606c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_23.mp3",
+      "durationSeconds": 1.375,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.45838,
+      "rms": 0.05054,
+      "sha256": "178b20158cd167032e641d40d074e84b6f9b18457b6b38dc3ac69bdf5df4b382",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_24.mp3",
+      "durationSeconds": 1.6,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.48512,
+      "rms": 0.04931,
+      "sha256": "57db9f70f53ee1d9598cf7cd3c76116e59a6791bb777b8faf0d989a22fc58b69",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_25.mp3",
+      "durationSeconds": 1.275,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43502,
+      "rms": 0.04883,
+      "sha256": "e790312e2dd61626b5ce2d4b1d22cb5ac0149e28e80af3235a553f3606b28941",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_26.mp3",
+      "durationSeconds": 1.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.31907,
+      "rms": 0.04405,
+      "sha256": "80f18c295811f9c3bb07eb315f07cc5910d03283d4ddaf718cadd3c0096c281a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_27.mp3",
+      "durationSeconds": 1.425,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39134,
+      "rms": 0.04635,
+      "sha256": "b42104ef183f288f7dce4252bc54ecb067d375359e636a6a27436959a004633e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_28.mp3",
+      "durationSeconds": 1.8,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.49938,
+      "rms": 0.04978,
+      "sha256": "4614007e9960425bbdd546d9dd2cf7963bcdd51d9c03bf57134ca42ab1928444",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_29.mp3",
+      "durationSeconds": 1.275,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42204,
+      "rms": 0.04692,
+      "sha256": "e2d98bd8aeb05371f029e069d08eb76e14b984c916be8ab7837a0d4b5ae9f192",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_30.mp3",
+      "durationSeconds": 1.925,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.47009,
+      "rms": 0.04867,
+      "sha256": "9325f0904663f7943234196b55499609714b5d8bd57cd4695355f7cf47d30a45",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_31.mp3",
+      "durationSeconds": 1.525,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.47031,
+      "rms": 0.04651,
+      "sha256": "7a281b54b8dd200611c91950313d23f95248bfbf1709b4129395f52c5c9cde56",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_32.mp3",
+      "durationSeconds": 1.25,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37588,
+      "rms": 0.04553,
+      "sha256": "4f5c9ab2d4fd815f12353913b663fb12bed21b8df25adc18c9d19388b25dd7fc",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_33.mp3",
+      "durationSeconds": 1.475,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38318,
+      "rms": 0.04751,
+      "sha256": "784090ac6918159d92f310cc9e3966fda4718ce0e2c0f04a6372113b0a452cb0",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/pt/letter_34.mp3",
+      "durationSeconds": 1.5,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42251,
+      "rms": 0.0461,
+      "sha256": "41ca6663b9520a97f1a2986e97025ca677d15b45d497f5d04597940b230cd579",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/coloring.mp3",
+      "durationSeconds": 4.992,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.82843,
+      "rms": 0.11295,
+      "sha256": "51473033dd5253c9839a8ad91a01ae9df36b91b76388a7fb30443b1c3b429246",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/drawing.mp3",
+      "durationSeconds": 4.501,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.70328,
+      "rms": 0.10531,
+      "sha256": "bf23b34c3803a9749ca16a479bce606e163051d96c99919035c14484b3703b4b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/tracing.mp3",
+      "durationSeconds": 6.144,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.78882,
+      "rms": 0.09623,
+      "sha256": "796e4e4f62dee99de2cbe27103975d2adef84d3ee67fb54c6a3f5fcf7197de6c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letters.mp3",
+      "durationSeconds": 4.501,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.85303,
+      "rms": 0.1025,
+      "sha256": "e0df779d83e8ac8d22076b6c39564a7b0626d679212b008c489c5b9aebaf43f8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/words.mp3",
+      "durationSeconds": 2.55,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.58362,
+      "rms": 0.12336,
+      "sha256": "6a1fa836278bb0202d4205e89ade71df336115b6df9deb49698229c97f56f31d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/counting.mp3",
+      "durationSeconds": 3.349,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.81607,
+      "rms": 0.11605,
+      "sha256": "03795c7f433280105a8659bdbb43cd2c787b7cdc1d935bf3651057590060c97d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/math.mp3",
+      "durationSeconds": 3.851,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.73069,
+      "rms": 0.1213,
+      "sha256": "6a4a5cb34a35a9351400c8efdfca646ade70faf7eaf064c1513ae679729c144e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/shapes.mp3",
+      "durationSeconds": 3.85,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.54918,
+      "rms": 0.10441,
+      "sha256": "14603f7d8cb316d16bd840928da4e97d811623d835a272a3e51e5d9303cad881",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/sorting.mp3",
+      "durationSeconds": 4.672,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.66024,
+      "rms": 0.11074,
+      "sha256": "5524bff895c936b95dee462ed2beebfd9e0b58ab066ad5a73fc5073a3939bfcd",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/memory.mp3",
+      "durationSeconds": 4.92,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.78738,
+      "rms": 0.10867,
+      "sha256": "8d61ce4d0b6f6d67bc753894c626dfa72ebc2d0f2798ed0d6a1a4c0b6c2a9a4b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/jigsaw.mp3",
+      "durationSeconds": 3.189,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.66389,
+      "rms": 0.10248,
+      "sha256": "c359eeb738c59f56ddd93391842cfe32f1d5f496cc627e2276fdfdb13e516f66",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/patterns.mp3",
+      "durationSeconds": 3.765,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.66367,
+      "rms": 0.09893,
+      "sha256": "765545c79beaa3ad4f108db9f31e4c832ea2f811a45bf90385582beafc7c30ae",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/mazes.mp3",
+      "durationSeconds": 4.1,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.61624,
+      "rms": 0.11143,
+      "sha256": "71e939e7a8d330ad852c9ceccf60cef65394f50e76dd7d874fa47e828f108ef9",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/nature.mp3",
+      "durationSeconds": 4.992,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.8096,
+      "rms": 0.09746,
+      "sha256": "8edaff9dab44f86972da77f285107cdae343749b2db100db8daca610aa083bfb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/everyday.mp3",
+      "durationSeconds": 5.739,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.61887,
+      "rms": 0.1079,
+      "sha256": "781bd49b0acfdf7f0ecbe02233951a948970981b2c0d85bbd46746914d051039",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/music.mp3",
+      "durationSeconds": 5.813,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.69929,
+      "rms": 0.11007,
+      "sha256": "08ef4bc7868bdc35e7d5d9b5476e6460d2aabc2d3d264478fe0aab9582d6540e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_cat.mp3",
+      "durationSeconds": 0.55,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.48956,
+      "rms": 0.09868,
+      "sha256": "a732bb7b8bd89481276fc5e40595ee16cdd0cb2470f213e585748646ff13b595",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_dog.mp3",
+      "durationSeconds": 0.38,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3909,
+      "rms": 0.10359,
+      "sha256": "e2ac1f17574b0d962c8f55f095689e44921c7253c3896448d1a93d04648b7c21",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_rabbit.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.84315,
+      "rms": 0.16269,
+      "sha256": "62ec97ff923d83cf48284a0f8902221aefbe4544fc49033c8699282bceaf889e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_fox.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.88195,
+      "rms": 0.12096,
+      "sha256": "4975a0afcd063bab691a334298fcd8a1a1eb225a4704173b298b33003a2116a3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_bear.mp3",
+      "durationSeconds": 0.549,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.53127,
+      "rms": 0.13863,
+      "sha256": "58f81846aee6a00f48415a147b40dfcac551719c5263c67e75a3f013fefbdb96",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_lion.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.90421,
+      "rms": 0.09262,
+      "sha256": "0cdfc722115181528e3a0efe69cf733bb7efd0557ab04804fda359924f2f211c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_elephant.mp3",
+      "durationSeconds": 0.49,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46243,
+      "rms": 0.13546,
+      "sha256": "cadc1f968d633f3539d9020c08d695b5883dd73d0f1263b3b50b8231f4819e83",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_giraffe.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.82827,
+      "rms": 0.14953,
+      "sha256": "eb731a9cc9e6b1f038a4c69f5f68676c0d5372d9d1756131f125b4d0bc77f22e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_turtle.mp3",
+      "durationSeconds": 0.811,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.84399,
+      "rms": 0.13366,
+      "sha256": "af1afd52bf34499fdd83567b3c6f358b9e5d9db51f11ed5d2a1e89f13b6c87ce",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_fish.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.74882,
+      "rms": 0.12293,
+      "sha256": "291773db7bc4c8608c3be159cd02bedfbcd23fc6f387c5da25cb8d2cf2a4b4ec",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_bird.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.90596,
+      "rms": 0.13358,
+      "sha256": "deeba9ffe2e342dcc0b05755532ee013118d675c7841d5e5b001437c147e0806",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_owl.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.5392,
+      "rms": 0.12633,
+      "sha256": "fe371008bb6d6924cd9c52252e5438ea49036dee9c34a627a5b47bf906d7acdc",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_penguin.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.73121,
+      "rms": 0.11113,
+      "sha256": "a20643aedf6e677b59a7febc50c99f499c197b4893ea8f539426b663fd2265b5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_butterfly.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.59328,
+      "rms": 0.12559,
+      "sha256": "50836816446fb066087135c496b8ce6e4970f5b199b825e07bd93efdb1e5eae4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_bee.mp3",
+      "durationSeconds": 0.59,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.51769,
+      "rms": 0.12158,
+      "sha256": "83c855b810a0ca47c1f3efd7bf6f58508c513c5666d5022cc3aaefa1cf2dd7c8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_snail.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.67827,
+      "rms": 0.15181,
+      "sha256": "87f42cb301197ef51aaaa8e2b0d4e150536788f5e3d81fe0933cb37fd7c2c6c5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_octopus.mp3",
+      "durationSeconds": 0.811,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.50268,
+      "rms": 0.13216,
+      "sha256": "552ac0c1cf9bbcb21128aacca88a4669ea3db7112182b68cc44079a60642ac14",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_whale.mp3",
+      "durationSeconds": 0.619,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.44283,
+      "rms": 0.11481,
+      "sha256": "16a0207350c50a664c5482b9572ae0f4947f3ce1c089d20c959a789eacff282f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_frog.mp3",
+      "durationSeconds": 0.619,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.70388,
+      "rms": 0.11643,
+      "sha256": "b5f79022ee30da7face7cf65c50ab356e42b0fdf837832102e4edc76221c936e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_hedgehog.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.71306,
+      "rms": 0.13786,
+      "sha256": "245955bb6bad7405af9e6e2a80f61124e7c410a72f88ba14b207ea77c395be9e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_apple.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.95831,
+      "rms": 0.15905,
+      "sha256": "516a92096615381e186bc18c55564fc843e486c03f9790cd53551d006b1c9ebc",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_pear.mp3",
+      "durationSeconds": 0.75,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.61672,
+      "rms": 0.12062,
+      "sha256": "82bee1d25259c9507ba518025136739c5a7b2f52ce0aa525e822177180b5493b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_banana.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.63091,
+      "rms": 0.1382,
+      "sha256": "ae89a09cf0ca4ede51585816bd2eb96aeb0a398e8001925563e885c401b69245",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_strawberry.mp3",
+      "durationSeconds": 0.811,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.9082,
+      "rms": 0.15037,
+      "sha256": "f30a558724929c9861ce67610c11e9af32b564d23bdb7b9b7aab9c8604f61dd2",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_carrot.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.9142,
+      "rms": 0.1219,
+      "sha256": "a84e189a8cde7ba8121cafa8c91584dbd87cba5a6c1ce1b970f4bc4baff798e4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_orange.mp3",
+      "durationSeconds": 0.971,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.7626,
+      "rms": 0.13009,
+      "sha256": "1e1fe080cb10d1e53c0c3c4f2bca426aef83e89d95ea833404175293f4c3e22e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_watermelon.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.68303,
+      "rms": 0.12181,
+      "sha256": "df17b3fee44950216d4c7c46b609e2c11b713dcbdcd4532bc458d5dd8988c743",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_bread.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.62992,
+      "rms": 0.09293,
+      "sha256": "608c409baf3f8a089546a724501658e8f055d29573d0c778c63b0c9bf7b8cba8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_cake.mp3",
+      "durationSeconds": 0.61,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.49577,
+      "rms": 0.10653,
+      "sha256": "53d4a9db677cca846472cd5d89b48be96f3fb5554c7d53d2c1206b410951088d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_cup.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.68293,
+      "rms": 0.12331,
+      "sha256": "355741f27e660646e6d1aad53626b8fa734e8a8d53453cefb7ab71f7b36f5a0a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_car.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.92377,
+      "rms": 0.16624,
+      "sha256": "9a4c7c55d8f5514c4306cbd20d54e1474abc4d4cf7649c9bb38f6892d6d60bb9",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_bus.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.86529,
+      "rms": 0.1391,
+      "sha256": "93d07a6a5884f9cff1d99ccdf949f6a46b3a1fe879c4bb2ecb8c5472b13f5686",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_train.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.72686,
+      "rms": 0.15132,
+      "sha256": "6a1bdb457880023fafe447f4bb446ce9a4edc0368b481a7711453aa9f734f78d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_boat.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.78915,
+      "rms": 0.12442,
+      "sha256": "6e264ba1733636beacb0eef50f3f87f7d8de709448ebf306a712c6340b9214d8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_rocket.mp3",
+      "durationSeconds": 0.722,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.68396,
+      "rms": 0.12606,
+      "sha256": "9485e9a1d1560cf7426e515d92f0e21aee233289806a73abb2440464affd3d5b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_airplane.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.88123,
+      "rms": 0.12957,
+      "sha256": "8818682ac91eb90764c006e30a9f7356cd79725e6f0bc161ae777d54c40b09eb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_bicycle.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.90488,
+      "rms": 0.16079,
+      "sha256": "8a258a331e90d0aeb55e18ef66bae6aa226a5981ca48c0ff02848fcbece7142d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_tractor.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.90322,
+      "rms": 0.15757,
+      "sha256": "ca59ed4350f768caac941cb1d10527f9d1bdf8655e6f79f7a8f73f0a7280a2af",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_tree.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.86461,
+      "rms": 0.11815,
+      "sha256": "09aa30645867eecf07ac893e7a2a9996a043158b65f58e15cbe30716e8d822b6",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_flower.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.68492,
+      "rms": 0.11171,
+      "sha256": "85e564dab9e955473bb438202c8111044b574e7fdb20bc7007a7269986d7a1bb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_sun.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.80616,
+      "rms": 0.12055,
+      "sha256": "8722308afe2113cdd9b38b2e8124bde9dc1bce65556ef97f47169af1ded8f148",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_moon.mp3",
+      "durationSeconds": 0.549,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.54132,
+      "rms": 0.15468,
+      "sha256": "80355c5685ebad99571f9b43f5eaed39cb690933f5ffcd2c25c788364094561f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_star.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.90301,
+      "rms": 0.12697,
+      "sha256": "4692333c5943747fc6b420df06973f40e47c3d5e27ed2d19ba37b5e5caf5e180",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_cloud.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.79581,
+      "rms": 0.1291,
+      "sha256": "9bdfb8ae9f59be02ecb6fa8a3065dae51dfcd7aacc28bbdc1df260086a60b3c1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_rainbow.mp3",
+      "durationSeconds": 0.885,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.90478,
+      "rms": 0.1245,
+      "sha256": "eec0d1a34082f04200ce4715bf56c4364e308aa5276dac8ba8c0dab7b1e45fa0",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_leaf.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.89315,
+      "rms": 0.11812,
+      "sha256": "d9ba785fc206758f897c2e7a79c074a240422ce9e70200df1403ab6963ebb4ec",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_mountain.mp3",
+      "durationSeconds": 0.589,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.5811,
+      "rms": 0.10605,
+      "sha256": "b97bf0b11e56f3bbd6bc8b6dd593c057f860b7a3445eaa45cbded2be5f8ce709",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_mushroom.mp3",
+      "durationSeconds": 0.439,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.40732,
+      "rms": 0.06806,
+      "sha256": "b4df175261ee625adc2f867cab35f8f2db92ba015bef1b733a605b73f28f9971",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_house.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.91025,
+      "rms": 0.11655,
+      "sha256": "8edeac6d411bc5e221dbb40acca9c8780997e2968a78887a6616554fc321ac99",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_book.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.66162,
+      "rms": 0.08616,
+      "sha256": "655361a4e4b7d08d4d0fea5010a97c90d7b37e5a1253d32b75ffaaca10ceaab5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_pencil.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.79797,
+      "rms": 0.104,
+      "sha256": "dd4e8595d407e7ea1ac69954f381ca3cee124d3b7de618057db6182521f090a4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_ball.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.73423,
+      "rms": 0.12155,
+      "sha256": "286fb0b96b8e10be80909febca7044c002f539e0a3c23a2ee60714dd22180c61",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_kite.mp3",
+      "durationSeconds": 1.547,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.84518,
+      "rms": 0.12869,
+      "sha256": "e62f0223c1b33c86f9c6141e60a66edd9d2294430f8d475b0bbf6fd008ed993f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_umbrella.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.88359,
+      "rms": 0.19082,
+      "sha256": "14da94aeb1bd5af59cfaa77ed0a0ab790280d4d1fd4f68b6692805a30d994a3b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_clock.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.87522,
+      "rms": 0.15381,
+      "sha256": "835774eac3298e7e001783fe7065ed77467d7fe552fd861146fd8c54d47835a1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_key.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.82472,
+      "rms": 0.12384,
+      "sha256": "cf97873b8b8f7695038871071a321525e97ae5710dd84c637a39d8aa67554e14",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_guitar.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.89055,
+      "rms": 0.14234,
+      "sha256": "224431f88450e94a0c3983e6eae3c150b5738b0c9286b747fb75352445ce3619",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_drum.mp3",
+      "durationSeconds": 0.55,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.53027,
+      "rms": 0.12393,
+      "sha256": "a3a84f510f86e68fb8f035ff6e8845725aa97a099953a4383bed4ce715348ef4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_piano.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.78825,
+      "rms": 0.17418,
+      "sha256": "f73c8acdf5ca607ef484050f942e19cbc84c343bf4717f648e6fe2e9220e2ec4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/word_bell.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.81764,
+      "rms": 0.13858,
+      "sha256": "5c4feb5c83dc61af4ba6aae89c67556c7583ede8c2e5a3f12ecfa39d8c63efd3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/great.mp3",
+      "durationSeconds": 0.885,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.92126,
+      "rms": 0.10937,
+      "sha256": "2a150016df2e578f44b8e830b3c8747f6ca199a5172b717ef3b3b9ae31733eb5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/again.mp3",
+      "durationSeconds": 2.123,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.88979,
+      "rms": 0.09586,
+      "sha256": "bd5768d17ce397db46d9c352b27102118ef1632ee8e469484f519f9a96cbee4d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/welcome.mp3",
+      "durationSeconds": 3.104,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.68135,
+      "rms": 0.11197,
+      "sha256": "806941f7756775da0e2677ccd0b11644ffd4286ec84de5b4a8393ac5e3544eba",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_0.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.86859,
+      "rms": 0.09933,
+      "sha256": "6afcfa26091b9dd4b61cc370bfcfa7ce3b3def1727b73836d75202fc0d22afc5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_1.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.89772,
+      "rms": 0.1509,
+      "sha256": "5903bc93b6b80420a8a0a0ec3aaeb4d455a545469a33a34a64b8c5ed3f833c05",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_2.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.87606,
+      "rms": 0.12946,
+      "sha256": "5be4df30c7163d7a533b12eacf768379d9e726d41cd22f85e5c45e7074f60d04",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_3.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.80551,
+      "rms": 0.12091,
+      "sha256": "64f3ec943fc5a9f3e079ee4e1da4d6fe332fe39c746957adbad113cc1963af41",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_4.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.58155,
+      "rms": 0.17081,
+      "sha256": "e9452b145e36d71884117cd6f1e610e0b85f8a62b658c45e539ea9dba9527603",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_5.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.83881,
+      "rms": 0.11455,
+      "sha256": "2b55085f072b9ac6d4b728d94b5a0162d25b9e4f4a851794a98db669a7df6c6a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_6.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.89823,
+      "rms": 0.10241,
+      "sha256": "f15215b6f2326c0b845d3a83465c4f1cf230906f68748f21273689f0a9c9c527",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_7.mp3",
+      "durationSeconds": 0.58,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.75897,
+      "rms": 0.17502,
+      "sha256": "4b3be4b2237f9e8846b6b703b86c410b6aca0129181f67951c0656db1336e316",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_8.mp3",
+      "durationSeconds": 0.551,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.52626,
+      "rms": 0.12371,
+      "sha256": "ab17b3b54d8ec3aecc164b524bfcc5e5956a0fecdaa1809e7e87afe61a5e1370",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_9.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.91239,
+      "rms": 0.1807,
+      "sha256": "b9f3d234264e8663a17ad940de688921d0830811c624ee4ead001c188332f3f1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_10.mp3",
+      "durationSeconds": 0.571,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.67157,
+      "rms": 0.14568,
+      "sha256": "a59475ebc8eadd29fc47993627e30b864aa6c51543adf1e47d6d6d9fa93a6a4b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_11.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.81441,
+      "rms": 0.14232,
+      "sha256": "b52c57bd014d233daefcbefe6cc82eccefd07c70a515c716a9933fc25b7f8aa3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_12.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.67056,
+      "rms": 0.19073,
+      "sha256": "ea012c7fc85ee2e535ce4136183a889e759263993aa2d9249ef32039eca3fbeb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_13.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.76139,
+      "rms": 0.11987,
+      "sha256": "b5a73ab1c8cfcf562a456daaae869f3c8804bf70a42254d28113e81b720574c3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_14.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.74281,
+      "rms": 0.13953,
+      "sha256": "cd20daeb5b7cabbcd4621e54fbc0d3dd18c8b6ed5ab0bdd035f5f95d41d3ff91",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_15.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.6167,
+      "rms": 0.11927,
+      "sha256": "ce738b570535b4a289e9622eb3e21a5a9ddbcc8d1970569a806b9ed4be4224ac",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_16.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.82324,
+      "rms": 0.14454,
+      "sha256": "5c7736a035c281ec4842dc453a45715e9bf98590a21e249d035a1acfe3109655",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_17.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.56158,
+      "rms": 0.15027,
+      "sha256": "2cfd97755be2adc77b3dfdb251a5f1ffa751bd7f665ee26d4fdef2eb93331906",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_18.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.82219,
+      "rms": 0.12667,
+      "sha256": "90e0a67a71479e9901bfd1a01fb9844889b4f434c22424599ed648935693fa68",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_19.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.73906,
+      "rms": 0.13605,
+      "sha256": "fac9097445ed5953c88e7fc43802ba8f060055d102c4275b8324868779e2710d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_20.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.92425,
+      "rms": 0.13497,
+      "sha256": "dbb93654d65bf73bdf6201efc07e12b96a6eb8335c0c7ed92b3188d91aa58e4c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_21.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.83645,
+      "rms": 0.11168,
+      "sha256": "4c7c33aca6b8e4c3f14e7750fb5c1a966d73011e845cfb5b78ae851220fef909",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_22.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.86144,
+      "rms": 0.1357,
+      "sha256": "c64785e54bd364958146c46d2891be4c2a2ab994987ae21abdc5c198ba29a1bf",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_23.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.64556,
+      "rms": 0.19505,
+      "sha256": "f359d11ce4d2fcf91ae60b2e1943a4da6df46759c065029cf040233b2c6bc978",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_24.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.54728,
+      "rms": 0.15487,
+      "sha256": "f02e0102409fd9da9544a3ca6e35f4562e506d96168c4ff56dee60b6f482536d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_25.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.74935,
+      "rms": 0.12547,
+      "sha256": "de4b41494e474e50fd1f6bf23f88726692d47db28d39a7752233913952e21a14",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_26.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.83979,
+      "rms": 0.16892,
+      "sha256": "026baaef90b98dc3e5d698a31d93e66d908bc2a73ac3a25351ce95cff9f768df",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/letter_27.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.85836,
+      "rms": 0.14933,
+      "sha256": "e4ba27686ee0c716e79934ddec9eca423f5210298a49fdc80a9ee2b930c839ff",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_0.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.7855,
+      "rms": 0.13004,
+      "sha256": "1ab058f07bc714baf582fe3c04887a358111d487c268cceca5fc06513921d0fe",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_1.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.48844,
+      "rms": 0.12368,
+      "sha256": "e3fd50c4c1e8dd709bd3ac1b511bb408a5df435b9ad4c76a1a65114156e28623",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_2.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.56312,
+      "rms": 0.12286,
+      "sha256": "593cdb5ab3df242b91704f0b37ef3022a6e27f0494c7998de45731dbe28c5e23",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_3.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.73752,
+      "rms": 0.10418,
+      "sha256": "39c36b686040b88d1f617761ef1b9320b645b9407f142305812b4a6beba31f62",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_4.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.53474,
+      "rms": 0.10569,
+      "sha256": "b939abc6edbbd925856a0371aec75dbce285099c3ad2087a352e850cb6ab3536",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_5.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.63055,
+      "rms": 0.09832,
+      "sha256": "ba1e972694b27f8efbf31842ed9b747aa91264c02d5a17669e2d6860330a6784",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_6.mp3",
+      "durationSeconds": 0.389,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36382,
+      "rms": 0.12368,
+      "sha256": "8fb53d5eaa600b2317ff50e7f3d2b40dae54d461ed3391f6d9a7f3f0699aeb1f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_7.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.4211,
+      "rms": 0.1068,
+      "sha256": "aa4ed79f7ed32ee368b85e25209919297daebb460841374c9d891230706ff255",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_8.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.48709,
+      "rms": 0.11769,
+      "sha256": "db1f6619523f795256ec37439bb54cdd8c7ad1742992c35a7ba7b3c4939b2664",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_9.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.75041,
+      "rms": 0.09409,
+      "sha256": "21f28cec62d0efccd85cfa47be4599a45c18119f1b3a6a8a78ddaca410ea7baa",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_10.mp3",
+      "durationSeconds": 0.47,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.27512,
+      "rms": 0.07445,
+      "sha256": "84ab2dbcc640f6f03385d7c5d08cbf11ce5e622fe06dcd753929308786ab55c5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_11.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.96425,
+      "rms": 0.10679,
+      "sha256": "be86cf505eb6c61f3f276a1c312cb6d932c8469f795c8fa14b0a33272ef5f732",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_12.mp3",
+      "durationSeconds": 0.44,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.50211,
+      "rms": 0.07956,
+      "sha256": "55f6d338b6ea318ba445cff30c365272222133ab80ee79bce4411737b6d1a99b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_13.mp3",
+      "durationSeconds": 0.44,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.29692,
+      "rms": 0.09284,
+      "sha256": "f01c5a0396123f5762cdc73f1e12de5139dae1ca914cd717415404256fe08dd9",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_14.mp3",
+      "durationSeconds": 0.44,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35563,
+      "rms": 0.06679,
+      "sha256": "4a73fb84ec05bf8fd74e47d5453469ab6d18e253f4487011c836385d78109441",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_15.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.79725,
+      "rms": 0.13778,
+      "sha256": "9a3f30eeb33b4e6f3daa3861ac0a657f69e033dc33ffcca8e0f60d884709eccf",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_16.mp3",
+      "durationSeconds": 0.49,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.32113,
+      "rms": 0.08529,
+      "sha256": "cc9111b42cce5ac71008dc4137c905fb3b918fc246174efe83be6bbfeb2f7b75",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_17.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.68949,
+      "rms": 0.11352,
+      "sha256": "0e56ea20ee7b85a70f92286904a01182636bbc008d3e16e3d0e80b37db9e01a7",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_18.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.90168,
+      "rms": 0.13791,
+      "sha256": "8c8860353ac93de8693b0a72d49b671a2349ee8e9320e37625f7e806b273aa8f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_19.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.42979,
+      "rms": 0.11585,
+      "sha256": "272427883bb5052fc4c10cb2383148547728f741f4fe03f30e953d2c950603c5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_20.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.59951,
+      "rms": 0.12575,
+      "sha256": "a5250fc9a8dd9e8f5b59b2a8fa8ab057d2bc49d6a44d6789ff69660658b6059f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_21.mp3",
+      "durationSeconds": 0.569,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.5763,
+      "rms": 0.11514,
+      "sha256": "8d24f040a0d4cfd373337d039b6487ca90685a9c39f675be518a506aef62d148",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_22.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.52327,
+      "rms": 0.13894,
+      "sha256": "9b6dc7c72a44408cb082a98c421ac6747a7c5ef4455ffa1b5bf3108345b8d438",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_23.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.69369,
+      "rms": 0.08974,
+      "sha256": "f59b164cca0c23d84ad3263a10973f46eab4edbbe01205c1f9ef56341827d7ff",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_24.mp3",
+      "durationSeconds": 0.43,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.49584,
+      "rms": 0.08078,
+      "sha256": "ca627096ff9a879ed62db87c9d64d6d1909fab21b567151006b770aa2f61be30",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_25.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.6356,
+      "rms": 0.1179,
+      "sha256": "0a5849b0c13c48268ea65ddc9e5ecb0520ef567c659300a2db5096d798d3d48e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_26.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.5679,
+      "rms": 0.10091,
+      "sha256": "7083c91cd63ccd690d4527b8a5a16f83ef01a666917f4be768f2370a5ec6c2db",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_27.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.72022,
+      "rms": 0.10505,
+      "sha256": "5275bd047eaa1b42453c881fa1e54d703f115d094c77345cd72ff9c2140f52eb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_28.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.6182,
+      "rms": 0.08843,
+      "sha256": "e53ee2d4479d853f927a514b8146e6cd28ce79b7bc0a3c7f7196ad6561af2b5b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_29.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.79792,
+      "rms": 0.13939,
+      "sha256": "87aba061f09e12e785adf4fa123089b8f4c416fa87f7b560d706d21040c6cba0",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_30.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.79401,
+      "rms": 0.12536,
+      "sha256": "bb49b10d9be09c58b81a6534de6171cc450a4b471ff84d74f9db0a522b3f0382",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_31.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.92268,
+      "rms": 0.13963,
+      "sha256": "19e784e5052eadb3876fc5158ff988707b13e1e58e8e24df3c91205800558056",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_32.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.83019,
+      "rms": 0.15036,
+      "sha256": "ddf592bcf8d2ab4b3a3040b9ea40eac7613bfddddf048594958682df35bd3bd4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_33.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.58016,
+      "rms": 0.1034,
+      "sha256": "6e7e71263f6651a54df0f8635b31b63dcfeb7e72657a640434e107769da414f6",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_34.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.50791,
+      "rms": 0.10431,
+      "sha256": "71c4addf7b8f7c6b7c10fde09a05e8c94bb58dd4b1f2cadaa3eef8aef83115ac",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_35.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.56525,
+      "rms": 0.09774,
+      "sha256": "0a03618661ab12085778650f1338eb3eb6f94df959f15c2d575be99171b0d2a9",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_36.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.91206,
+      "rms": 0.12691,
+      "sha256": "9133bee953b6686056419114a45e0c4122a56965a1ea35970da8208779362617",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_37.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.92015,
+      "rms": 0.13363,
+      "sha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_38.mp3",
+      "durationSeconds": 0.55,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33791,
+      "rms": 0.07873,
+      "sha256": "ce4f60b49216958db2dcf24e1b39049d2cc3f6a99e96deac00045b29812bcc06",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_39.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.83384,
+      "rms": 0.12072,
+      "sha256": "8b74196195c0a63ee6740851161d87010a0b18ee79dbe31deea72b4f6397dc5e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_40.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.65372,
+      "rms": 0.13001,
+      "sha256": "387f43292cbd9e6e5fb7c2a318d59cabacefc9c92a96777195bbc7d25ccc94ae",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_41.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.57754,
+      "rms": 0.11292,
+      "sha256": "a8b360aa8f2d4950b88aee2b1461059250f5de6c6dce8dbd0888e7322b18f0b9",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_42.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.70068,
+      "rms": 0.12362,
+      "sha256": "6ad78734d6296f52fdd5ac1ca6d587584597e14dcf0ca85cf37840a24f26a536",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_43.mp3",
+      "durationSeconds": 0.36,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.36516,
+      "rms": 0.12565,
+      "sha256": "269adcbce4b3e09f0975052645b5b0568dbac9943e9e51fda74fa4d5f55137dc",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_44.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.44866,
+      "rms": 0.0828,
+      "sha256": "eb3c66b97e3071883c3a320ce96e3187cab37e0bf902a1dea6daa3fafe4ec464",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_45.mp3",
+      "durationSeconds": 0.479,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.68015,
+      "rms": 0.14233,
+      "sha256": "34f8c0b97b298f478fa59047e1f002b6df03aa4fd8b3c4124895819ec69bf35d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_46.mp3",
+      "durationSeconds": 0.53,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.27999,
+      "rms": 0.06568,
+      "sha256": "56f72456ceefbf6af8da1dc4edd5083889946849aa0a88cac2602093821d0678",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_47.mp3",
+      "durationSeconds": 0.49,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39259,
+      "rms": 0.09812,
+      "sha256": "50dcd3fab4820c40d85603d9b33e3dc8f50a7dfcb7f8afcbf3d45096ea6604d3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_48.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.90857,
+      "rms": 0.17196,
+      "sha256": "e88974482bfe87a83e684557a3828ae13713911ec39aee0ce573da059b35785c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_49.mp3",
+      "durationSeconds": 0.51,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.31328,
+      "rms": 0.09486,
+      "sha256": "acca46f381421afde2a59406b692f1f95fedaf225d8e314c011a3c4cb7f06988",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_50.mp3",
+      "durationSeconds": 0.479,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.39602,
+      "rms": 0.13078,
+      "sha256": "8dce2be15820ad5cee9d8aecab0698a84fb7ffe82df56c6f22e7731bc9d0a7ae",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_51.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.86525,
+      "rms": 0.13263,
+      "sha256": "1eda4f5b7ee6efade80fcc815166ab21887b966e8d11330843e1fd2ae4b2c395",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_52.mp3",
+      "durationSeconds": 0.41,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.3497,
+      "rms": 0.1143,
+      "sha256": "1eea630264eb3d07f4bec3d048c62bb226c320b170c165c479e229e73ad930d6",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_53.mp3",
+      "durationSeconds": 0.489,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.38247,
+      "rms": 0.10379,
+      "sha256": "2bd3c8802f886d4bf9d2aa9359c18f6299145a199d93cddad62720c4a1daf4b7",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_54.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.72367,
+      "rms": 0.09396,
+      "sha256": "36dfefada0b0a0adf54b750cd0d09b2f2120ed8ac988f8bae194976cf8c82fe8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_55.mp3",
+      "durationSeconds": 0.439,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43048,
+      "rms": 0.18894,
+      "sha256": "6780e8f2752c5c177d1617a4e40f44ea368100be7e35a3758932e6d668ebc355",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_56.mp3",
+      "durationSeconds": 0.38,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.43253,
+      "rms": 0.10112,
+      "sha256": "54d3f52321e8c49ce87b02c5ba0071a3be532a188ffec3b341395ca0b64dbf0f",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_57.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.8522,
+      "rms": 0.1264,
+      "sha256": "1d0fa2c05d4b022973fd55b4442b6664e1e31a44ba39633df5a4611b59b059a4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_58.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.47108,
+      "rms": 0.09561,
+      "sha256": "080e0c7b70b592f1b34ea61d85b93668a3db71331cd655c19a0def48b86d2b89",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_59.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.49803,
+      "rms": 0.0817,
+      "sha256": "678b19b0fb283996cd4d175542e05f27c026b87dd7d7b6b7acc670334be19189",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_60.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46596,
+      "rms": 0.0818,
+      "sha256": "9e0923bdfc94818cefcc83d66a7a5655176e31948482eec20ec509e41d851824",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_61.mp3",
+      "durationSeconds": 0.44,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.33839,
+      "rms": 0.12464,
+      "sha256": "ff23a91ee4a046909227826969789e02d872b5acdf0dd13ac85e302ce86ef24b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_62.mp3",
+      "durationSeconds": 0.35,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.50513,
+      "rms": 0.11542,
+      "sha256": "bad5c254392fe26abc7b85a9bb5113e9fbc64aff032e40ed6ebe7a05af8a57ba",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_63.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.83702,
+      "rms": 0.13884,
+      "sha256": "324d698ae827bdc1b4ebfa9a6594f6fd999ea102a0e8e6c34a3172a2345af415",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_64.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.48984,
+      "rms": 0.12466,
+      "sha256": "0606c358602310ec1ccd4b0492fee03c51863c40d45a53b45c5ce5bc36650fd8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_65.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.64583,
+      "rms": 0.1401,
+      "sha256": "c8a745f854adf426492f6384f98b1ad60e9dd92fbb03426e7e010fb1e73153a0",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_66.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.77906,
+      "rms": 0.13786,
+      "sha256": "3be06fd3031857996a41d71ed462b49944434ce776df854b7f0371753a316121",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_67.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.48147,
+      "rms": 0.11309,
+      "sha256": "795ba5aa3cfe309476f3f53282f577bee53d0f55d90088e81f8776e52c455ba7",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_68.mp3",
+      "durationSeconds": 0.46,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37494,
+      "rms": 0.15181,
+      "sha256": "1ef932813b0b0f6a10a0cc47410e75bbb5f7071b83c3c76853897b3359e0c148",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_69.mp3",
+      "durationSeconds": 0.489,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.50393,
+      "rms": 0.12148,
+      "sha256": "254c16cd529592e7e20d72ecb5042d44497661505d62e9b2bffd982a99fa196e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_70.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.66683,
+      "rms": 0.15677,
+      "sha256": "26235128580fbb9498f1a5ae6d9d38457248bc822bb33c7ba0e9c255bfe886d7",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_71.mp3",
+      "durationSeconds": 0.44,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.37022,
+      "rms": 0.16317,
+      "sha256": "3944c43691f55ecae0d2818f0563dc6ab6cb91d5bff76c5181fe10770aece4dd",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_72.mp3",
+      "durationSeconds": 0.489,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.48636,
+      "rms": 0.14157,
+      "sha256": "37bd4008c45185447166c33f9681bc51ac329115ef75a1da33a7c1ee0452a31e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_73.mp3",
+      "durationSeconds": 0.35,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.20952,
+      "rms": 0.05059,
+      "sha256": "e1f1fffcd70b8028f89e51cab03f52d03358d264f4e4d7268e963a37433564eb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_74.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.63404,
+      "rms": 0.12381,
+      "sha256": "dc422cde84c3fb12df92f8e4d22dcd1120fe3c4c001bdbd0e1ffab04dd95f9d7",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_75.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.89217,
+      "rms": 0.16399,
+      "sha256": "ab21d2962e2c04a658632e174767a3f6e309d66776fec13c3c0716ca62bb1f96",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_76.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.65844,
+      "rms": 0.14005,
+      "sha256": "ab4fb3a6ac0876b22049988f613c16d07c9a3c420358a552e1bcdee5bfa6de83",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_77.mp3",
+      "durationSeconds": 0.449,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.35542,
+      "rms": 0.10692,
+      "sha256": "0ae6cd86c5f7ff74fef58bad878e4fae5ab54e09627470ce1609867a1a9b4745",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_78.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.7477,
+      "rms": 0.1162,
+      "sha256": "28b5f33550e8282beb5ccb894291d45c977d1e7ad3c54665feceff27689f32eb",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_79.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.30367,
+      "rms": 0.05767,
+      "sha256": "f0adcc1e524124e10499fce39c5351d4a402585d1734bbc9b9bedf59e272b553",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/syllable_80.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.46915,
+      "rms": 0.12289,
+      "sha256": "f6b55c7e141672684c173c0353864f8df322f92f3019e40506d4255313209146",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_0.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.89132,
+      "rms": 0.10466,
+      "sha256": "f4611f0b322e0a17428c7cebb39528319d3e02dc578fef41127481379f37a322",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_1.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.9051,
+      "rms": 0.11799,
+      "sha256": "4e4d6888083fa6644e01a5daabbae4b0d4ee5092fe03d791ad91411f4d2d7698",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_2.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.81519,
+      "rms": 0.13193,
+      "sha256": "b066c2a5304b01ce19593b2fc5bf4f9202a7ab6ad29178304f934670178c6f2c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_3.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.89334,
+      "rms": 0.15029,
+      "sha256": "69f08e7ec5560bc05714292bfebaaedf633433adbba513b820284d4cdc6f7cf3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_4.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.76684,
+      "rms": 0.14279,
+      "sha256": "17ad88b50219456fbf8f88c8f8156039505d6400186f36ce4ce6df4c43f1b04e",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_5.mp3",
+      "durationSeconds": 0.47,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.48505,
+      "rms": 0.10039,
+      "sha256": "960d93c2daf5786b45d8639618fb72116be3f42a30b1b1bb68ebd84e098bd5f4",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_6.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.71726,
+      "rms": 0.11234,
+      "sha256": "09b6b0650cf0fc1a3bfb865213aa1681ecd19cc0e8fc5b46148c7343b71a8a1c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_7.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.55333,
+      "rms": 0.13845,
+      "sha256": "05eda6595d556bde204f31bb822e45e10cb7bfd1bc15a2e8403aa1338cb10563",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_8.mp3",
+      "durationSeconds": 0.619,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.41835,
+      "rms": 0.08925,
+      "sha256": "bdabea03c43f8f7a85b7fdcb547730ff43e3e87ebc28054c10ad0deb20403284",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_9.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.68762,
+      "rms": 0.10093,
+      "sha256": "7be9cdc80a36614053af55d0a8938225941c548d710f1b007874e1e00ca55cc1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_10.mp3",
+      "durationSeconds": 0.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.52338,
+      "rms": 0.11863,
+      "sha256": "b7865f8b67b404157e2b95151176eb41a01ca318af36f4444efffc7ee4d8ac47",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_11.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.90057,
+      "rms": 0.13879,
+      "sha256": "5bff99152bd6915ee3e553ec6b1c4c8892c311b54fbe5133da37fab875761cbd",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_12.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.90731,
+      "rms": 0.12073,
+      "sha256": "99483cb826ff512ba6643b3319c21339a7f1dd47845d7cdf6288b1281097ed7c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_13.mp3",
+      "durationSeconds": 0.619,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.60943,
+      "rms": 0.17372,
+      "sha256": "b6e2f38d2461489b7eeb082a995e274a56f0689f581f6411d688f643bb06501c",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_14.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.86316,
+      "rms": 0.15843,
+      "sha256": "5e9a6e793ce4f402ce6ce0242c4ab38efa77b7a420377cfb58423fd8f897e35d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_15.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.70155,
+      "rms": 0.18195,
+      "sha256": "cf19bd46b7b202a3f020ba37a0baf606a18ecfbdfd52d2a7097b9de6ea1e54bc",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_16.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.72141,
+      "rms": 0.12821,
+      "sha256": "576c998338fe5cf3315b72638cc9ffae3e31b0479c9e2d4b0f4c6e390e2cd169",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_17.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.79332,
+      "rms": 0.14475,
+      "sha256": "7170ba3f452ae7168a1776fc2f2c932107816980154a509914a8f3b97ebb63f1",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_18.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.63298,
+      "rms": 0.11337,
+      "sha256": "fe1cbe7ad6e3f8a76409798c219b9fc2f52bcccdc7a42b10cc1ac83a3b8e2b24",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_19.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.75813,
+      "rms": 0.1149,
+      "sha256": "575c5083f3175935589621d842d16ca427f0e0bb4cac4fe610ce143cad425c1d",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_20.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.86419,
+      "rms": 0.12466,
+      "sha256": "92a478b74972c2bd1026549bbdd1843d64aa9f8e41770ea8136eb7a8f6fbd6e3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_21.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.89848,
+      "rms": 0.13036,
+      "sha256": "82c3d411c002338c049ed1bced235189f285a00e20687f3e290c1ab096d6dcee",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_22.mp3",
+      "durationSeconds": 0.736,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.87102,
+      "rms": 0.09745,
+      "sha256": "cfde864da99af34dd17a23919ca9a4bb67d907e0f003ce4974f935c2f39d2b46",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/trace_word_23.mp3",
+      "durationSeconds": 0.62,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.51687,
+      "rms": 0.09775,
+      "sha256": "473403caf3b1c24096f60e804ad0b115c2f6929b7b02501d7e8faee8446469f9",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/lam_alif.mp3",
+      "durationSeconds": 1.461,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.85427,
+      "rms": 0.14298,
+      "sha256": "365d4911fa8dde9070218120f63b6d770e23df1c2268a00ee98fa415f04c2f20",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/ar/long_alif.mp3",
+      "durationSeconds": 1.909,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.74782,
+      "rms": 0.105,
+      "sha256": "2f9bd74e225eacabfbea2344859616845ece61d8fe1685025602b3731dbe85a8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/note_0.mp3",
+      "durationSeconds": 0.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.66782,
+      "rms": 0.21052,
+      "sha256": "fa6bc8b3acf53616882fc15992fc545f434abcdfe45bed99405bb7399612a599",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/note_1.mp3",
+      "durationSeconds": 0.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.67242,
+      "rms": 0.21048,
+      "sha256": "d499174d018166991a356f7422d16a2e4207e945275dfd18db1901a8f8478fa3",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/note_2.mp3",
+      "durationSeconds": 0.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.6816,
+      "rms": 0.21058,
+      "sha256": "a5a3dfbbe582f356f2bb260b78ec9e7705a5a649d8deb841a9323f31346c39e0",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/note_3.mp3",
+      "durationSeconds": 0.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.6746,
+      "rms": 0.21061,
+      "sha256": "66fe8880ecd053da3df6ebe5a431fd15137b397e759fb80dbad2ce319659f6e8",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/note_4.mp3",
+      "durationSeconds": 0.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.67148,
+      "rms": 0.21044,
+      "sha256": "d9bddc57816c6f7f2f84634750ee227464bcd919b0f025bcef98859bb753647b",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/note_5.mp3",
+      "durationSeconds": 0.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.67416,
+      "rms": 0.2105,
+      "sha256": "7b18dde4a273fc0c285109642b8ef4d2f0be347ba1bdb2c0ad168114cca7a3c5",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/note_6.mp3",
+      "durationSeconds": 0.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.67788,
+      "rms": 0.21045,
+      "sha256": "80ff40190b0eb8304d740617a8175a91a9ccd301d866c54ecbacf5bcd9d12d8a",
+      "passed": true
+    },
+    {
+      "file": "assets/audio/note_7.mp3",
+      "durationSeconds": 0.45,
+      "sampleRate": 24000,
+      "channels": 1,
+      "peak": 0.6771,
+      "rms": 0.21122,
+      "sha256": "6aa29779c76fdf7454dc5e23d3ddedfdeb49ec0b182929aca0754fe509a0709e",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "checkedAtUTC": "2026-10-12T03:11:20.886453+00:00",
+  "platform": "physical Pixel 9 Pro XL",
+  "sdkVersion": "25.4.0",
+  "nativeTestBodyAndTeardown": "passed",
+  "silent": true,
+  "result": {
+    "publisherFirstPartyIdDisablementPersisted": true,
+    "nativeChildTreatment": true,
+    "nativeMaximumRatingG": true,
+    "testAdsOnly": true,
+    "audioPlayback": false,
+    "store": "isolated memory; user profiles and artwork untouched",
+    "runtimeTrafficInspection": false,
+    "screenshots": []
+  },
+  "fixtureApk": "tmp/android-publisher-id-native.apk",
+  "fixtureApkSha256": "7f65f533f12e6d4432100830eac5b0b2d16653e18ac6e9eaa707b4fd05bcf49c",
+  "sourceSha256": {
+    "lib/services/ads.dart": "7788babb92c50bf72ea7f5209f64d0370132207606dce77e0f8ca3d4b5c3402f",
+    "android/app/src/main/kotlin/com/seifelmoulouk/pikolumi/MainActivity.kt": "46e7a1221acdba87cf5f565fd70e6cce611a5401695a359500612e2a33bd3d17",
+    "integration_test/android_ads_privacy_test.dart": "a32ac77fa2984910f2db913ba30073b6fb84ee286de726924ead6339e531a7e1"
+  },
+  "finalPrivacyDeclarationsApproved": false
+}

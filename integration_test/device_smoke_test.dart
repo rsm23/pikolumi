@@ -1,5 +1,8 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
+
+import 'package:drift/native.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -8,6 +11,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 import 'package:pikolumi/main.dart' as production;
 import 'package:pikolumi/core/controller.dart';
+import 'package:pikolumi/core/models.dart';
+import 'package:pikolumi/services/audio.dart';
+import 'package:pikolumi/services/ads.dart';
+import 'package:pikolumi/services/store_native.dart';
 import 'package:pikolumi/ui/library.dart';
 import 'package:pikolumi/ui/activity_screen.dart';
 import 'package:pikolumi/ui/vector_art.dart';
@@ -17,12 +24,38 @@ void main() {
   testWidgets(
     'native offline bundle, coloring save/reopen, learning and sibling isolation',
     (tester) async {
-      await production.main();
-      await tester.pumpAndSettle();
-      final state = tester.state<ConsumerState>(find.byType(LibraryHome));
-      final app = state.ref.read(appProvider);
+      final directory = await Directory.systemTemp.createTemp(
+        'pikolumi-smoke-qa-',
+      );
+      final store = NativeRecordStore(
+        NativeDatabase(File('${directory.path}/qa.sqlite')),
+      );
+      final audioService = AudioService();
+      await audioService.voice.setVolume(0);
+      await audioService.notes.setVolume(0);
+      final app = AppController(
+        catalog: await Catalog.load(),
+        store: store,
+        audio: audioService,
+      );
+      await app.initialize();
       await app.setSound(false);
-      final ads = tester.widget<LibraryHome>(find.byType(LibraryHome)).ads;
+      final ads = AdsService(store, app.audio);
+      runApp(
+        ProviderScope(
+          overrides: [appProvider.overrideWith((ref) => app)],
+          child: production.PikolumiApp(ads: ads),
+        ),
+      );
+      addTearDown(() async {
+        await tester.pumpWidget(const SizedBox());
+        await app.flush();
+        ads.dispose();
+        await store.close();
+        await directory.delete(recursive: true);
+      });
+      await ads.initialize();
+      await tester.pumpAndSettle();
       await ads.synchronizeSound();
       final original = app.active;
       await app.addProfile(0, 1);
@@ -145,6 +178,8 @@ void main() {
         'learningCompletion': true,
         'languageLayouts': ['en', 'fr', 'es', 'pt', 'ar'],
         'productionAds': false,
+        'store':
+            'isolated temporary SQLite; user preferences and artwork untouched',
       };
       expect(tester.takeException(), isNull);
     },

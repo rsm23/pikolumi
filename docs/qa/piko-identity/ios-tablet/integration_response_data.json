@@ -1,0 +1,64 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "library-3d-piko"
+    },
+    {
+      "screenshotName": "en-activity-3d-piko"
+    },
+    {
+      "screenshotName": "en-completion-3d-piko"
+    },
+    {
+      "screenshotName": "fr-activity-3d-piko"
+    },
+    {
+      "screenshotName": "fr-completion-3d-piko"
+    },
+    {
+      "screenshotName": "es-activity-3d-piko"
+    },
+    {
+      "screenshotName": "es-completion-3d-piko"
+    },
+    {
+      "screenshotName": "pt-activity-3d-piko"
+    },
+    {
+      "screenshotName": "pt-completion-3d-piko"
+    },
+    {
+      "screenshotName": "ar-activity-3d-piko"
+    },
+    {
+      "screenshotName": "ar-completion-3d-piko"
+    },
+    {
+      "screenshotName": "reduced-motion-static-piko"
+    }
+  ],
+  "locales": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "ar"
+  ],
+  "animations": [
+    "idle",
+    "celebrate"
+  ],
+  "renderer": "Blender-rendered 3D, shared WebP atlases, 30 fps poses",
+  "animatedFrameAdvanceVerified": true,
+  "completionAndProgressVerified": true,
+  "canvasFullScreenPreserved": true,
+  "reducedMotionVerified": true,
+  "adSDKInitialized": false,
+  "audio": "SilentAudio; muted isolated MemoryStore",
+  "userPreferencesChanged": false,
+  "frameTimings": {
+    "samples": 399,
+    "rasterP95Ms": 3.119,
+    "buildP95Ms": 22.187
+  }
+}

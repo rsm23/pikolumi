@@ -33,6 +33,7 @@ flutter:
   assets:
     - assets/content/
     - assets/art/
+    - assets/art/piko_3d/
     - assets/audio/
     - assets/audio/en/
     - assets/audio/fr/

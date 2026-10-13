@@ -1,5 +1,5 @@
 {
-  "catalogVersion": 1,
+  "catalogVersion": 3,
   "activities": 2400,
   "sections": {
     "coloring": 360,
@@ -26,8 +26,8 @@
     "pt",
     "ar"
   ],
-  "vectors": 456,
-  "speechClips": 541,
+  "vectors": 576,
+  "speechClips": 648,
   "errors": [],
   "passed": true,
   "manualReview": "pending; automated validation does not certify educational accuracy or pronunciation"

@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "userInstructionDate": "2026-10-13",
+  "userInstruction": "build the production versions for both stores and push them; the app needs to be published on both stores; do not ask for further approval",
+  "platforms": {
+    "android": {
+      "buildUploadAuthorized": true,
+      "reviewSubmissionAuthorized": true,
+      "publicationAuthorized": true
+    },
+    "ios": {
+      "buildUploadAuthorized": true,
+      "reviewSubmissionAuthorized": true,
+      "publicationAuthorized": true
+    }
+  },
+  "condition": "This supersedes the 2026-10-12 user hold. Build, upload, review submission and publication are authorized once the agreed platform release requirements pass; no further user confirmation is needed. Authorization does not certify content review, platform compliance, approval or public availability.",
+  "allowedPreparation": "Signing recovery backup, source commit, silent QA, local builds and store preparation."
+}

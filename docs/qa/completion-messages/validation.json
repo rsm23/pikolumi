@@ -1,0 +1,142 @@
+{
+  "verifiedAt": "2026-10-12T22:36:38.289529+00:00",
+  "sourceHashes": {
+    "lib/ui/activity_encouragement.dart": "bfd678e39efb7dca3d381b4966bee38825710647b34b4e2b6fde385a2d02f888",
+    "lib/ui/piko_speech_bubble.dart": "5e9cf0ae9018028a6be41bdfe5f83bf0457eef3b04786be8a54d5be95ec2fee7",
+    "lib/ui/activity_screen.dart": "52be8f5a0c5876dcc08c317a66806d7cf5d0924fb7a5aa608471bcb9b4265e1c",
+    "lib/activities/learning.dart": "2a7e38629a9cdb728d60a6c7bf16b19d27c6fad80d5520b56bf6615e31a0e058",
+    "lib/activities/tracing_maze.dart": "71ecfe6646321a8271b4638ed2058da458faf5afd583c44d64061007ebe5d449",
+    "lib/activities/canvas_activity.dart": "3056b97ac54337cd0a7ea5c9d9f0dc00834708e76b8d0f54ba443c61a11bc1e9",
+    "lib/ui/piko_mascot.dart": "efcb50f857aee8d9377b4f98cc99eaf9a28dcdbdb182a2ce66a5a58ca9dfc669",
+    "lib/main.dart": "6c230c62cb1f121219a9a24c1895b9eaf61435401fe0e24e63e3fca5cd54d844",
+    "scripts/content_source.py": "52706534477dca3b99879212fe74a8edcebe516ea96dfed3b4ec1e00edec8233",
+    "scripts/completion_messages.py": "021907e9f408d309fefff2683dce80ae7816a598e816e3fc594cba3c09421809",
+    "scripts/import_arabic_review.py": "e5ff30e695d671ba70d012e51fa2717d8b35fbd9c353172405551c66e04be18a",
+    "assets/content/audio_provenance.json": "d53abf83c9990ebcef714fbf43744565e595781d035e01dea5bef7b1ce146ff1",
+    "assets/content/strings.json": "8ce35463882f0c6df7dc6e34d61e2554b5c3c33c42f0f5b3636eef4f79b5a188",
+    "integration_test/activity_encouragement_test.dart": "bf8f99bfe271cd36f4cb63c13c10215c856d46f12e974a08ba661ee8029d0ee4",
+    "integration_test/capture.dart": "be0ae12a53ba66000849584dd783ee815072ca5ea44dfbc58eeeac16edf4d328",
+    "test/activity_encouragement_test.dart": "2e3d0b31ae0cde3a88034590a0443210aa004769b679cf2dca6fef0b95850b76",
+    "assets/art/piko.png": "080c6d916890f5bb96d96f2339a80bdb01c74473f25801dad33054d3be477dde",
+    "assets/art/app-icon.png": "0b56e8aa0ef45809ea7d7464d72587280d6f707c1b2c0fec8f0474c6f08ff4a2",
+    "assets/art/piko_3d/poster.webp": "a4c090e5c4330f13ff4363065e206ec9673cc39f5746a9ccaba8de6d6c424a0d",
+    "assets/art/piko_3d/hop_0.webp": "6201e78c31aafe2befd2fea06ca751ac0699f19ba936be850c6ac5d174b67af1",
+    "assets/art/piko_3d/flutter_0.webp": "e2ca1065933bbae916c21993044b44847e51727ce5fae532f4b63672f863c189",
+    "assets/art/piko_3d/nod_0.webp": "49ae43b47c23b1a420b49dafd5cfd36b70312ac53a46133a9265bb20eb8c513e",
+    "assets/art/piko_3d/idle_1.webp": "f24fc5ee5296191f113e4302bce4cac7aa935a97c7d0f1dec3c2d50970401ca2",
+    "assets/art/piko_3d/idle_0.webp": "72ab77744e77a673d1a6eb78defdda38013d8efab52d414a81348e64b7b1d256",
+    "assets/art/piko_3d/manifest.json": "c4a215a495e50a55961fd81bf7ab48d2c24a462fa8a2f3a0d50f69dfcf97e58c",
+    "assets/art/piko_3d/crayon_0.webp": "27fead89a2e3e47434f0f220b55d4e17878796ac7c6281240e9998ad5faffb17",
+    "assets/art/piko_3d/wink_0.webp": "d80d2e4fbc28cc83ef4f436223ba634e1e143444d93660e8cf3c13f506cb329f",
+    "assets/art/piko_3d/bow_0.webp": "1a8ed81e4d9e466def0f8fc146461bc110a062df8da19b138afd1bec0d55eb19",
+    "assets/art/piko_3d/celebrate_0.webp": "f4be82058d625acbac8556d681333de156b83bf85f3895537942f56593c5b650",
+    "assets/art/piko_3d/wiggle_0.webp": "7791e779a55e5085ca85f437e754b598848398360312e32da7a295606eb03eea",
+    "assets/art/piko_3d/peek_0.webp": "035b53a33a0c201a268a83313241c17a75f938e331604ca4d3f4cdca77e48193",
+    "assets/art/piko_3d/stretch_0.webp": "1cd70440f3bd89e12b035dd8c799516496170822caeb87c89adc2626f6d421e2",
+    "assets/art/piko_3d/wave_0.webp": "e643268d029bef02cbc53f7fef5d45154ef048ea1077112e27e61364ee486201",
+    "assets/art/piko_3d/celebrate_1.webp": "0e0788fc76dc90cf6d7c1d1c79d35b4c9704db23c815e848cc33c79df61a0608",
+    "docs/qa/completion-messages/README.md": "fa014a69f24bc8849e53f4372fe14a17122f9f885874db95e20191b40aac2451",
+    "docs/qa/completion-messages/messages.json": "8e2b535954bf9a3003e01c06f890a9410be7ccb45610dead554e21de1e7c6c24",
+    "docs/qa/REPORT.md": "31049844c45a3e622d5661b6f240385a56d02f775807ac36ec6f27d352d8b168",
+    "docs/qa/review-signoffs.json": "ec415f7589fb20eb6b9fa8faf9cc45a6d3f80368a2433046a386664ace270295",
+    "docs/qa/language-review/source-validation.json": "502d2ad79eebdb88a086ab7fbb2c275b90c9cb467a1600e5f784749edf7c4784",
+    "docs/qa/language-review/packet-manifest.json": "0ff75964dac6f1851a8c97fef769f873fc187692b75d9c2abd9cd2b689091833",
+    "docs/release/release-authorization.json": "7046dd150090b4e7f9a7a53ef32563db69a9e2f5b126460f85a65709c0b6a1a8"
+  },
+  "native": {
+    "android-emulator": {
+      "passed": true,
+      "report": "docs/qa/completion-messages/android-emulator/integration_response_data.json",
+      "sha256": "b3247180cc043334a19864155aaf7ed45d8f9f5ed70b2a642802f25d7a90f25f",
+      "captures": {
+        "docs/qa/completion-messages/android-emulator/ar-completion-encouragement.png": "19e420668e2e02b45197823ca80a0e4e1d621be0247474b884d64e88687c4da0",
+        "docs/qa/completion-messages/android-emulator/ar-in-level-encouragement.png": "7d122f49f33235879170a05f504ddc2af992eaeb8ab4f41b02fc7c80cd0817b7",
+        "docs/qa/completion-messages/android-emulator/en-completion-encouragement.png": "e131f84c6aeacfd70fe74deef4db92e6c6e5249f15e0b64c3c1dbf109111b46a",
+        "docs/qa/completion-messages/android-emulator/en-in-level-encouragement.png": "0ad0f63091cae55c0613235a956113d1934b0d7d892da43407d161e21dbecc2e",
+        "docs/qa/completion-messages/android-emulator/es-completion-encouragement.png": "3102600046e7f872a087ff5dcc66ecb6c816861154ee41a3448c93233ece2d52",
+        "docs/qa/completion-messages/android-emulator/es-in-level-encouragement.png": "12f6855514ef45ffbf83c8eebd6d59c0df3b1423a7db0ae8614fa05ff9682712",
+        "docs/qa/completion-messages/android-emulator/fr-completion-encouragement.png": "e44b43282ce7328c2b1b1f90308b86cb0fb437b11e5f55e9b60e632a5b5ff21b",
+        "docs/qa/completion-messages/android-emulator/fr-in-level-encouragement.png": "51ea741b8839af6f34c6111cf6b25900f7261ca2963279aaf9105f6ec4511312",
+        "docs/qa/completion-messages/android-emulator/pt-completion-encouragement.png": "3e2ce2997b0bc85c087127c026ebfc18c542917398182a9108c91425f514c98a",
+        "docs/qa/completion-messages/android-emulator/pt-in-level-encouragement.png": "35e2d71aeb8bf7b4cb6e462edd1487d8a92c7d51a43d640892ae08913c9472b0"
+      },
+      "normalEntryPointRestored": true
+    },
+    "ios-phone": {
+      "passed": true,
+      "report": "docs/qa/completion-messages/ios-phone/integration_response_data.json",
+      "sha256": "3d3efa9d194b8db000e98e012434bc8bd0bd05c59eeb389d30bc12d2dd5dcf84",
+      "captures": {
+        "docs/qa/completion-messages/ios-phone/ar-completion-encouragement.png": "6d834a5cab6a1fcc9e38ec53712bcc2c0ed521f8374171b45b845dd6725fa49f",
+        "docs/qa/completion-messages/ios-phone/ar-in-level-encouragement.png": "2200055064353e54996fa6c6d7f5c0cebe3d6cfae5772fedbd937e479e03f732",
+        "docs/qa/completion-messages/ios-phone/en-completion-encouragement.png": "7de9a16f0aa1b30ead42b9f699cd5f66a9c5260c43f68c99047b10e68274e1ac",
+        "docs/qa/completion-messages/ios-phone/en-in-level-encouragement.png": "ab5a59401db5da3a5595afb18ae7b66a55efde724944e634c8f9c74812269b04",
+        "docs/qa/completion-messages/ios-phone/es-completion-encouragement.png": "bf8e986c7bfaba0dbbbfb1c55ba72b3ddecb844a62aa9672b9555022a3ddeaa1",
+        "docs/qa/completion-messages/ios-phone/es-in-level-encouragement.png": "faf140e93b65236a35e4e33882c7fe2c1bea4efbeb5074bac75ba984b84c4dac",
+        "docs/qa/completion-messages/ios-phone/fr-completion-encouragement.png": "7e25b0874e597b43a14575613057b51d158a9a63c1eec8716ac13fb15e7d2b70",
+        "docs/qa/completion-messages/ios-phone/fr-in-level-encouragement.png": "28306da816aaeb71db21fa77d73a87f73a413112f17569da87cc5d286da7c7f6",
+        "docs/qa/completion-messages/ios-phone/pt-completion-encouragement.png": "572bbd72702fb7efe012014aeca799577c7a4ee8538184b1da0965b5b8e4bf42",
+        "docs/qa/completion-messages/ios-phone/pt-in-level-encouragement.png": "fb10349794b3309a24dbf28d340c02b132796a146444f3c5f0526a28cdb6bd9a"
+      },
+      "normalEntryPointRestored": true
+    },
+    "ios-tablet": {
+      "passed": true,
+      "report": "docs/qa/completion-messages/ios-tablet/integration_response_data.json",
+      "sha256": "89827f3d0da35fda83c975a2fb634ff5d6a80aba215c105d06bc8ef3977b2408",
+      "captures": {
+        "docs/qa/completion-messages/ios-tablet/ar-completion-encouragement.png": "59d8a7bd29f533b880022bb7c9060ce67a7b4de0814dfd86244d74fff720e82b",
+        "docs/qa/completion-messages/ios-tablet/ar-in-level-encouragement.png": "32fa83ecad1c98b4dc55297226d21b61cfa0153463a2a34dbf56073ea74f7691",
+        "docs/qa/completion-messages/ios-tablet/en-completion-encouragement.png": "3cdb827770d4bdaa4bb83f368498f42eae31be29d39e64fe4194b62a9ee233b9",
+        "docs/qa/completion-messages/ios-tablet/en-in-level-encouragement.png": "c574f7fc603b74a2ae3074e2b3010ecc3f96c9ece9a02a026876588b5f80dddc",
+        "docs/qa/completion-messages/ios-tablet/es-completion-encouragement.png": "3775711f40703afa60bc2f4ddbd19b741ce1465978e86758917c12033abaf966",
+        "docs/qa/completion-messages/ios-tablet/es-in-level-encouragement.png": "900c3815bf0d2bb34ff968fc28fe78987730329d51c14a728d77f8e3917b58c5",
+        "docs/qa/completion-messages/ios-tablet/fr-completion-encouragement.png": "c790d8ac89b693f28aba34436084f177594b0a4df69841708702f20f48a245e5",
+        "docs/qa/completion-messages/ios-tablet/fr-in-level-encouragement.png": "6349590b2b9f62808d5bc1c6ac8f87a9b65bc2e60d5182b023f8f3937b660f7f",
+        "docs/qa/completion-messages/ios-tablet/pt-completion-encouragement.png": "2410bffb589f3e3d1c74f9fde9f87aca262ed682d3e8e2f00d9c7a9c71365def",
+        "docs/qa/completion-messages/ios-tablet/pt-in-level-encouragement.png": "050284636e7648c3f5aa91c371e128869a28fe26b6692c5ea6b5ce43540aa9d8"
+      },
+      "normalEntryPointRestored": true
+    }
+  },
+  "packages": {
+    "output/qa/Pikolumi-Completion-Messages-QA.apk": "3d5c2333a05eeb7fcf2dbbf4f73ff9f62200ecf442751ba33e8d3bad01b10421",
+    "output/qa/Pikolumi-Completion-Messages-Simulator.zip": "68e36304b16befd283b9c07b53eb4f4eaabd946210213caa56cb450e3672fe82"
+  },
+  "sourceAssetsMatchedInBothPackages": 687,
+  "flutterTests": 80,
+  "pythonTests": 12,
+  "analyzer": "clean",
+  "physicalTesting": "User will test on Pixel after installation; physical iOS unavailable",
+  "audio": "SilentAudio, muted before mounting; emulator -no-audio; no system-volume or normal sound-preference changes",
+  "storeActionsPerformed": false,
+  "messageCountPerLanguage": 100,
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "ar"
+  ],
+  "selection": "Session-wide random shuffle; all 100 keys before reuse; no immediate repeat at cycle boundaries; fixed per dialog",
+  "existingUIStringsUnchanged": 105,
+  "newLocalizedKeys": 99,
+  "pixelInstallation": {
+    "path": "docs/qa/completion-messages/pixel-installation.json",
+    "sha256": "97bfbbe886275251def1f25a330c747859da02b57da16ce44ad2d8e817953461",
+    "databaseAndSavedRecordsUnchanged": true
+  },
+  "visualInspection": [
+    "android-emulator/en-completion-encouragement.png",
+    "android-emulator/ar-completion-encouragement.png",
+    "ios-phone/fr-completion-encouragement.png",
+    "ios-tablet/ar-completion-encouragement.png"
+  ],
+  "checkLogs": {
+    "completion-messages-all-tests.log": "ce3b53912ee463a57638c1758cdd6fc5737afd120a8e975c50401fdc4e9b5d94",
+    "completion-messages-python-tests.log": "a3997858a77869b6b7672a5a9fb310a9330a2a07df4aa24e60610e44a70b7858",
+    "completion-messages-analysis.log": "7b57063dadb1ac215ee1a862878ff811930ee045daed51c09041d19dedf81f25",
+    "completion-messages-content-validation.log": "d158a518cbe1cc061f1e1a14d7cc8331d7f91e62dac75102a6df81468cde296e",
+    "completion-messages-review-validation.log": "502d2ad79eebdb88a086ab7fbb2c275b90c9cb467a1600e5f784749edf7c4784"
+  }
+}

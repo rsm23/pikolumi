@@ -1,0 +1,64 @@
+{
+  "catalogVersion": 3,
+  "locales": [
+    {
+      "locale": "en",
+      "name": "English",
+      "recordings": 105,
+      "activities": 2400,
+      "interfaceTexts": 204,
+      "humanApproval": "pending",
+      "narrationChecklist": "en-narration-review.csv",
+      "activityChecklist": "en-activity-review.csv",
+      "interfaceChecklist": "en-interface-review.csv"
+    },
+    {
+      "locale": "fr",
+      "name": "French",
+      "recordings": 109,
+      "activities": 2400,
+      "interfaceTexts": 204,
+      "humanApproval": "pending",
+      "narrationChecklist": "fr-narration-review.csv",
+      "activityChecklist": "fr-activity-review.csv",
+      "interfaceChecklist": "fr-interface-review.csv"
+    },
+    {
+      "locale": "es",
+      "name": "Spanish",
+      "recordings": 106,
+      "activities": 2400,
+      "interfaceTexts": 204,
+      "humanApproval": "pending",
+      "narrationChecklist": "es-narration-review.csv",
+      "activityChecklist": "es-activity-review.csv",
+      "interfaceChecklist": "es-interface-review.csv"
+    },
+    {
+      "locale": "pt",
+      "name": "Brazilian Portuguese",
+      "recordings": 114,
+      "activities": 2400,
+      "interfaceTexts": 204,
+      "humanApproval": "pending",
+      "narrationChecklist": "pt-narration-review.csv",
+      "activityChecklist": "pt-activity-review.csv",
+      "interfaceChecklist": "pt-interface-review.csv"
+    },
+    {
+      "locale": "ar",
+      "name": "Modern Standard Arabic",
+      "recordings": 214,
+      "activities": 2400,
+      "interfaceTexts": 204,
+      "humanApproval": "pending",
+      "narrationChecklist": "../arabic-review/arabic-narration-review.csv",
+      "activityChecklist": "ar-activity-review.csv",
+      "interfaceChecklist": "ar-interface-review.csv"
+    }
+  ],
+  "distinctActivities": 2400,
+  "essentialSpeechRecordings": 648,
+  "humanApproval": "pending",
+  "autoplay": false
+}
