@@ -1,0 +1,37 @@
+{
+  "checkedAtUTC": "2026-10-13T07:13:50.989120+00:00",
+  "device": "Pikolumi_QA_API36 emulator-5554",
+  "physicalDevice": false,
+  "package": "com.seifelmoulouk.pikolumi.qa",
+  "fixture": "integration_test/ad_test.dart",
+  "fixtureSha256": "8bd3d6038a132d92dc0f74a51b7e6b48102d12f5ed66e724ab2c22d40d2f60e7",
+  "store": "isolated MemoryStore",
+  "testAdsOnly": true,
+  "audioDisabled": "emulator -no-audio plus app sound false and SDK mute synchronization",
+  "bannerLoaded": true,
+  "interstitialLoaded": true,
+  "interstitialPresented": true,
+  "presentationAtUTC": "2026-10-13T07:07:00.930265Z",
+  "nativeActivityVerified": "com.seifelmoulouk.pikolumi.qa/com.google.android.gms.ads.AdActivity",
+  "dismissalVerified": false,
+  "testPassed": false,
+  "failedAssertion": "ad_test.dart:81 returned must be true; false after 180-second wait",
+  "failureExplanation": "No native close action was performed. Emulator UI unavailable to CUA; this timeout does not prove creative close controls or callbacks are defective.",
+  "frequencyAndAudioRestorationVerified": false,
+  "networkBefore": {
+    "airplane": 0,
+    "wifi": 1
+  },
+  "networkAfter": {
+    "airplane": 0,
+    "wifi": 1
+  },
+  "networkChanged": false,
+  "ownedEmulatorClosed": true,
+  "physicalPixelUntouched": true,
+  "physicalPixelObservation": "connected but locked",
+  "normalPackageReinstalled": false,
+  "uninstallOrDataClearPerformed": false,
+  "releaseGateChanged": false,
+  "log": "output/release-verification/android-dismissal-drive.log"
+}

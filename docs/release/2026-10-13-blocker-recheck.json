@@ -1,0 +1,22 @@
+{
+  "checkedAtUTC": "2026-10-13T07:13:50.989120+00:00",
+  "previousGoalTurn": "progress: child certifications, Data Safety, Advertising ID, Android draft/availability and iOS age/privacy draft saved",
+  "thisGoalTurn": "native SDK presentation evidence and clarified follow-up; cannot verify native dismissal through unavailable UI surface",
+  "publisherMailboxVerified": true,
+  "supportSearch": "after:2026/10/11 (AdMob OR Pikolumi) -in:trash -in:spam",
+  "supportReplyFound": false,
+  "pixelConnected": true,
+  "pixelLocked": true,
+  "physicalIOSAvailable": false,
+  "humanContentAndPronunciationApprovalsAvailable": false,
+  "appleExceptionEvidenceAvailable": false,
+  "productionBinaryUploaded": false,
+  "reviewSubmitted": false,
+  "nextExternalRequirements": [
+    "Unlocked accessible Android device for full acceptance and native ad close checks",
+    "Physical iPhone/iPad for required QA",
+    "Human editorial and pronunciation approvals, including Arabic syllable_37.mp3",
+    "Google public Kids human creative-review practices and exact residual child-mode data clarification"
+  ],
+  "nativeEvidence": "docs/qa/ad-checks/android-emulator/dismissal-attempt.json"
+}

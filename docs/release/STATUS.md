@@ -74,3 +74,7 @@ Fresh iPhone/iPad capture runs passed native test bodies and teardown in all fiv
 ## Latest audience follow-up evidence
 
 `audience-package-audit.json` records the rebuilt signed test-ad AAB/IPA, 687 assets per platform and exact SDK privacy manifests. All 89 Flutter tests pass after the stable-ID routine change. No device was installed, reset, unlocked or reconfigured during this follow-up; the wireless Pixel was locked and physical iOS remained unavailable. Release commands still correctly refuse production builds for the remaining human content/pronunciation, physical/device-family and ad-dismissal gates; iOS also requires final privacy and the Apple Kids ad exception.
+
+## Android native dismissal follow-up
+
+The dedicated API36 emulator loaded a test banner and displayed a native test interstitial from an isolated `.qa` package with sound disabled. CUA could not access the emulator window, so no native close action was performed; the harness timed out waiting for dismissal. This is neither a dismissal pass nor evidence of a defective creative. The owned emulator was closed, its unchanged network settings were verified, and the locked physical Pixel was untouched. Evidence: `docs/qa/ad-checks/android-emulator/dismissal-attempt.json`. No release gate was changed. Google has not replied in the verified publisher mailbox; current-version identifier/performance questions are prepared in the existing support draft, without sending another message.

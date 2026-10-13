@@ -37,3 +37,17 @@ Contact: rahmani@seifelmoulouk.com
 Thank you,
 
 Pikolumi development
+
+## Current package follow-up — prepared, not sent (2026-10-13)
+
+Android is now pinned to GMA 25.5.0 with UMP 4.0.0; iOS remains GMA 13.11.0 / UMP 3.1.0. This does not rewrite the historical request submitted with Android 25.4.0. Both exact signed test-ad packages have been audited; see `audience-package-audit.json`. Google Play child/ads certifications and Data Safety are saved. iOS production remains held.
+
+The exact iOS manifest marks device identifiers as linked and tracking-related, despite the app's child-directed, G-rated, non-personalized requests, publisher-ID disablement and absence of an ATT request. Please clarify residual IDFV/app-scoped or SDK identifiers in this mode, collection during initialization, linkage, recipients and cross-app measurement. IDFA disablement alone does not answer these questions.
+
+The exact GMA 13.11.0 privacy manifest marks performance data as not linked, while the current public iOS data-disclosure page calls it user-associated. UMP 3.1.0 also lists performance data for app functionality. Please clarify the correct App Privacy linkage for the precise child-directed configuration before we publish the privacy label. Six of seven category handling cards are staged in App Store Connect; the device-ID card and final review remain open.
+
+Public sources rechecked:
+- [Apple §1.3](https://developer.apple.com/app-store/review/guidelines/#kids-category): limited contextual-ad exception requires publicly documented Kids practices including human age review of creatives; permitted data handling must also be established.
+- [Google iOS disclosure](https://developers.google.com/admob/ios/privacy/data-disclosure): documents residual app/developer-bounded identifiers and user-associated performance data; it does not establish a Kids-specific absence of those data.
+
+No support reply was found in the verified publisher mailbox using `after:2026/10/11 (AdMob OR Pikolumi) -in:trash -in:spam` on this follow-up. No second message has been sent.
