@@ -1,0 +1,24 @@
+{
+  "verifiedAtUTC": "2026-10-13T00:54:16.183312+00:00",
+  "repository": "https://github.com/rsm23/pikolumi",
+  "private": true,
+  "verifiedCommit": "4c00f9030cb45857f8dca87ee9b21b007161a74c",
+  "remoteMatchesLocal": true,
+  "freshClone": {
+    "path": "tmp/private-clone-release-2026-10-13",
+    "pubGetOfflinePassed": true,
+    "signedAndroidBuildPassed": true,
+    "buildMode": "release",
+    "entryPoint": "lib/main.dart",
+    "testAdsOnly": true,
+    "bundledAssetFilesMatched": 687,
+    "uploadCertificateMatchesOriginal": true,
+    "aabBytes": 89320070,
+    "aabSha256": "635c3512d7d4c75aeae0b97774b5608aaf86b7f663ba2426b19b8b7391e3735e"
+  },
+  "androidSigningRecoveryFilesInGit": 8,
+  "androidSigningCredentialsExplicitlyAuthorized": true,
+  "otherCredentialAndPhoneScan": "passed; no unrelated credentials or reviewer phone in versioned files",
+  "worktreeCleanAtFirstPush": true,
+  "publicStoreSubmissionPerformed": false
+}
