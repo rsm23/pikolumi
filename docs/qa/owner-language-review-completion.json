@@ -1,0 +1,20 @@
+{
+  "recordedAtUTC": "2026-10-13T11:26:22.419755+00:00",
+  "source": "Direct owner reply: All five languages reviewed",
+  "question": "Which language/content reviews have you completed? The ledger still had editorial and overall pronunciation review unfinished; the question explicitly covered the whole five-language library.",
+  "locales": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "ar"
+  ],
+  "catalogActivities": 2400,
+  "catalogSha256": "dac9bfdb118cec18d980d2effc15dbfbc060d86624b121f29c03fda85e37f323",
+  "stringsSha256": "0a6b6a1eea3b3ec06295a87580bb75570529a62432aa7bd27b6b84d5042049ef",
+  "audioProvenanceSha256": "372f99d8ed67051ca804cfd224a2333ad12865d6488bb7fd7ba466be66a1086a",
+  "arabicFlaggedCorrectionsResolved": 55,
+  "arabicReferenceReplacement": "docs/qa/arabic-corrections-round10/commercial-permission.json",
+  "reviewerNamesBeyondOwnerNotProvided": true,
+  "method": "Owner-level review completion attestation; individual historical clip approvals remain separate and unchanged."
+}

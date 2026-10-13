@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-13T00:28:59.139736+00:00",
+  "checkedAt": "2026-10-13T11:21:44.251331+00:00",
   "catalogVersion": 3,
   "speechClips": 648,
   "toneClips": 8,
@@ -5791,12 +5791,12 @@
     },
     {
       "file": "assets/audio/ar/syllable_37.mp3",
-      "durationSeconds": 0.736,
+      "durationSeconds": 0.758,
       "sampleRate": 24000,
       "channels": 1,
-      "peak": 0.92015,
-      "rms": 0.13363,
-      "sha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "peak": 0.47424,
+      "rms": 0.04925,
+      "sha256": "62c636f483a3fe0f9a091a15cb8ed67f19c9774f6aa203117a8101ea25df90be",
       "passed": true
     },
     {

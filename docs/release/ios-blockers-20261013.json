@@ -1,0 +1,34 @@
+{
+  "checkedAtUTC": "2026-10-13T12:22:36.485141+00:00",
+  "platform": "ios",
+  "productionEnabled": false,
+  "submitted": false,
+  "publicAvailability": false,
+  "appleKidsAdExceptionVerified": false,
+  "physicalDeviceAvailable": false,
+  "googleSupportRequest": "docs/release/google-admob-support-request.json",
+  "publisherMailboxVerified": true,
+  "publisherMailbox": "cool2309@gmail.com",
+  "supportReplyFound": false,
+  "queries": [
+    "after:2026/10/12 (\"Pikolumi\" OR \"3316613733634147\")",
+    "after:2026/10/12 (AdMob OR \"Google Mobile Ads\" OR \"creative review\") -in:trash -in:spam"
+  ],
+  "unresolved": [
+    "Public human age-appropriate review of creatives before serving and restricted child-data practices for Apple Kids exception",
+    "Exact residual iOS identifiers and generic performance-linkage disclosure versus GMA 13.11.0 manifest",
+    "Physical iPhone/iPad acceptance and ad dismissal QA"
+  ],
+  "ascSession": "signed out",
+  "previousDraft": "docs/release/apple-privacy-draft.json",
+  "newIOSArtifactBuilt": false,
+  "latestArabicReplacementInNewIOSArtifact": false,
+  "outboundFollowUpSent": false,
+  "adsRemovedOrAudienceChanged": false,
+  "sources": [
+    "https://developer.apple.com/app-store/review/guidelines/#kids-category",
+    "https://developers.google.com/admob/ios/privacy/data-disclosure",
+    "https://developers.google.com/admob/ios/targeting",
+    "https://support.google.com/admob/answer/3480906?hl=en"
+  ]
+}

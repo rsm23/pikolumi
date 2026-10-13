@@ -1,0 +1,46 @@
+{
+  "checkedAtUTC": "2026-10-13T11:36:00.726071+00:00",
+  "status": "all 320 case completions covered on physical Pixel; interrupted prefix plus successful final continuation",
+  "completedCases": 320,
+  "firstRunCompleted": 113,
+  "secondRunCompleted": 55,
+  "finalRunCompleted": 152,
+  "finalRunTeardown": "passed",
+  "catalogSha256": "dac9bfdb118cec18d980d2effc15dbfbc060d86624b121f29c03fda85e37f323",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "ar"
+  ],
+  "sections": [
+    "coloring",
+    "drawing",
+    "tracing",
+    "letters",
+    "words",
+    "counting",
+    "math",
+    "shapes",
+    "sorting",
+    "memory",
+    "jigsaw",
+    "patterns",
+    "mazes",
+    "nature",
+    "everyday",
+    "music"
+  ],
+  "nativeSQLite": "second-connection readback verified; prior interruption/recovery evidence remains separate",
+  "artworkPersisted": true,
+  "siblingIsolation": true,
+  "audioPlayback": false,
+  "adsRequestedInCurriculumRun": false,
+  "sourceReports": [
+    "phone-partial-cases.json",
+    "phone-remaining/integration_response_data.json",
+    "tablet-curriculum/integration_response_data.json"
+  ],
+  "audioNote": "Curriculum fixture used the pre-replacement sound bundle and SilentAudio; the new reference clip is checked separately in the native ad/audio harness."
+}

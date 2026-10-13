@@ -1,0 +1,14 @@
+{
+  "sdkShownAtUTC": "2026-10-13T11:36:31.845Z",
+  "deviceCaptureBeforeMs": 1791891394196,
+  "deviceCaptureAfterMs": 1791891397777,
+  "captureEndElapsedMs": 5932,
+  "sameDeviceClock": true,
+  "foreground": "isolated QA package / Google AdActivity",
+  "screenshot": "native-close-control.png",
+  "closeControlVisible": null,
+  "closeControlEnabled": null,
+  "nativeCreative": "Google official test interstitial; production requests disabled",
+  "automaticClick": false,
+  "audioPlayback": false
+}

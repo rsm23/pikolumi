@@ -1,5 +1,17 @@
 # SDK privacy review — 2026-10-13
 
+## Latest Android acceptance and production audit
+
+The physical continuation passed all remaining 152 cases and teardown, covering all 320 planned cases with the earlier prefix. The landscape Android tablet passed 320/320. Owner-level whole-library review completion and commercial permission for the supplied صِ clip are recorded; all 55 flagged Arabic corrections are resolved. Native decoding verified the replacement with playback disabled.
+
+The final recorded test creative exposes its X within a conservative 4.906-second upper bound; actual dismissal, frequency limits, muted audio and banner restoration passed. First-visible-frame enabled state was not independently measured; this representative test is not a guarantee of every future production creative. See `../qa/pixel-final-qa/ad-recording/dismissal-timing-validation.json`.
+
+The signed **production Android** AAB passed platform release gates, official bundletool validation, signature and exact-package audit. All 687 assets match source; correct production AdMob app/units, SDK 25.5.0, min 24/target 36, not debuggable, backup/cleartext disabled and forbidden permissions absent. See `android-production-package-audit.json`. Its audit's `submitted: false` describes the audit time; subsequent Google Play submission is recorded in `google-play-production-submission.json`.
+
+Google Play production 1.0.0 (1), all five listings, child audience and privacy declarations were submitted. Publishing overview shows Changes in review after automated checks completed; approval/public availability remain unverified. Managed publishing is Off. No iOS production artifact or submission was made. The iOS Kids exception, residual-identifier/performance-linkage answers and physical QA remain unresolved; see `ios-blockers-20261013.json`.
+
+The sections below retain earlier technical inventories and interrupted attempts. Their pending Android/content/pronunciation statements are superseded by the evidence above; iOS restrictions still apply.
+
 The source-level privacy fixes, native Android settings check and signed-package audit are complete. This review does not establish the Apple Kids advertising exception, human content approval, physical-device acceptance or store approval.
 
 ## Exact inventory

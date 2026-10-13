@@ -19,6 +19,12 @@ The reference is an original synthetic Kokoro af_heart utterance, not a
 recording of an identifiable person. SILMA character inference uses explicit
 Arabic vowel marks.
 
+Arabic short-vowel clip صِ (syllable_37.mp3):
+ElevenLabs-generated recording supplied by the app owner, who confirmed
+commercial-use permission and authorized its inclusion on 2026-10-13.
+Resampled to the app audio format; no voice cloning. Other Arabic clips use
+the SILMA/Vocos sources described above.
+
 Vocos vocoder: Hubert Siuzdak / Charactr Inc., MIT License.
 https://huggingface.co/charactr/vocos-mel-24khz
 

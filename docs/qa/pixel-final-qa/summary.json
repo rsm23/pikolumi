@@ -1,17 +1,18 @@
 {
-  "verifiedAtUTC": "2026-10-13T11:05:36.312086+00:00",
+  "verifiedAtUTC": "2026-10-13T12:23:53.254373+00:00",
   "catalogSha256": "dac9bfdb118cec18d980d2effc15dbfbc060d86624b121f29c03fda85e37f323",
   "appSourceChangedInThisTurn": false,
   "physicalPixel": {
     "model": "Pixel 9 Pro XL",
-    "curriculumCompleted": 168,
+    "curriculumCompleted": 320,
     "planned": 320,
-    "status": "partial",
-    "nextStartCase": 168,
-    "finalReportAndTeardown": false,
+    "status": "completed across interrupted prefix and passing final continuation",
+    "nextStartCase": null,
+    "finalReportAndTeardown": true,
     "testAdCallbackPass": true,
-    "adCloseControlWithinFiveSecondsVerified": false,
-    "screenSettingsRestored": true
+    "adCloseControlWithinFiveSecondsVerified": true,
+    "screenSettingsRestored": true,
+    "firstVisibleCloseUpperBoundMs": 4906
   },
   "landscapeTablet": {
     "type": "owned Android API 36 emulator; Pixel Tablet profile",
@@ -38,39 +39,50 @@
   "normalUserData": {
     "artworkAndProgressPreserved": true,
     "profileIdsPreserved": true,
-    "otherAppSettingsPreserved": true,
-    "observedChanges": [
-      "ad state",
-      "profile learningLanguage"
-    ],
-    "userChangesOverwritten": false,
-    "normalAppReinstalled": false,
-    "dataCleared": false
+    "allSQLiteRecordsIdenticalBeforeAfterUpdate": true,
+    "normalAppUpdatedInPlace": true,
+    "normalAppLaunchedByUpdateAudit": false,
+    "dataCleared": false,
+    "evidence": "normal-app-update.json",
+    "historicalObservedChanges": "See historical summary; no backup restored over user changes."
   },
   "arabic": {
     "rounds5through8Rejected": true,
-    "round6Reason": "\u0635 sounds like \u0633",
+    "round6Reason": "ص sounds like س",
     "round7Reason": "Ssss; missing vowel",
     "round8Reason": "sis",
-    "approvedReplacementsRemainBundled": 54,
-    "syllable37Unresolved": true,
-    "bundledClipSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
-    "newTakesPromoted": 0
+    "approvedReplacementsRemainBundled": 55,
+    "syllable37Unresolved": false,
+    "bundledClipSha256": "62c636f483a3fe0f9a091a15cb8ed67f19c9774f6aa203117a8101ea25df90be",
+    "newTakesPromoted": 1,
+    "round9Rejected": true,
+    "round9Reason": "missing i",
+    "source": "Owner-supplied ElevenLabs recording, normalized format without phoneme/pitch/time edits",
+    "commercialPermission": "Other commercial permission; explicit owner use authorization",
+    "overallFiveLanguageReview": "Owner attestation recorded separately"
   },
   "checks": {
     "flutterAnalysis": "pass",
-    "pythonTests": 21
+    "pythonTests": 21,
+    "flutterTests": 89,
+    "catalogActivities": 2400,
+    "audioFiles": 656,
+    "productionPackageAudit": "pass"
   },
   "storeSubmission": {
-    "android": false,
+    "android": true,
+    "androidStatus": "Changes in review; automated quick checks completed",
     "ios": false,
-    "publicAvailability": false
+    "androidPublicAvailability": false,
+    "iosPublicAvailability": false
   },
   "sourceHashes": {
     "integration_test/android_acceptance_test.dart": "7d436dfd11e90b9ca8b98eac8fcb0275ed6ef3a7fef0d7fd7626ab8bc67d4b7e",
-    "integration_test/ad_test.dart": "1b3ad1e539a9450935bf47647f49400cb118f6d11034eca7bf1b6dab8d4f2595",
+    "integration_test/ad_test.dart": "a16c8527822792995fb3b8d0154b6480f3d347c845dc9ae7386f0e072c034d80",
     "docs/qa/pixel-final-qa/tablet-curriculum/integration_response_data.json": "ed2ad431797d484311e334137dee1ef5cfb6871adfd9a33d5bd59b2f2d102764",
-    "docs/qa/pixel-final-qa/ad-dismissal/integration_response_data.json": "82ea0683d3b52c209d331b5cd0478405da2f582b49ef3b04a367fd70c70afda9"
+    "docs/qa/pixel-final-qa/ad-dismissal/integration_response_data.json": "82ea0683d3b52c209d331b5cd0478405da2f582b49ef3b04a367fd70c70afda9",
+    "docs/qa/pixel-final-qa/phone-remaining/integration_response_data.json": "7a793d821270fd9031f1598131451b49d02a6b97f37920036c2b99c173f147be",
+    "docs/qa/pixel-final-qa/ad-recording/integration_response_data.json": "10e564d7477cd0e9d5220a0bec609c4a923cd72ebfca0ab138b679f5e943c967"
   },
   "executedQAArtifacts": {
     "Curriculum-Isolated-QA.apk": "3b05cce1469c9588158742abfff6bdf923bd6a669c5cd5f106a265403c22556c",
@@ -78,14 +90,26 @@
   },
   "harnessSubsequentChange": "Added a start-offset range assertion after the captured runs; product source and case selection unchanged.",
   "consoleRecheck": {
-    "googlePlay": "Changes not yet submitted for review; Send app for review disabled",
-    "appStoreConnect": "Signed out; previous saved draft not newly verified",
-    "atUTC": "2026-10-13T11:08:23.130153+00:00"
+    "googlePlay": "Changes in review; managed publishing Off",
+    "appStoreConnect": "Signed out; saved draft preserved but not newly verified",
+    "atUTC": "2026-10-13T12:23:53.254373+00:00"
   },
   "iosEvidenceSources": [
     "https://developer.apple.com/app-store/review/guidelines/#kids-category",
     "https://developers.google.com/admob/ios/privacy/data-disclosure",
     "https://developers.google.com/admob/ios/targeting",
     "https://support.google.com/admob/answer/3480906?hl=en"
+  ],
+  "historicalSummary": "summary-before-final-continuation.json",
+  "bundledAssetsChangedInThisTurn": [
+    "assets/audio/ar/syllable_37.mp3",
+    "assets/content/CREDITS.txt",
+    "assets/content/audio_provenance.json"
+  ],
+  "finalEvidence": [
+    "physical-curriculum-complete.json",
+    "ad-recording/dismissal-timing-validation.json",
+    "normal-app-update.json",
+    "remaining-settings-restored.json"
   ]
 }

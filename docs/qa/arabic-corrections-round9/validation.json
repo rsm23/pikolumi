@@ -1,0 +1,17 @@
+{
+  "candidateSha256": "f6d55666441cd36a00949e72923a90c1c042c39fd5fc84fca62471ec2b6a38aa",
+  "referenceSha256": "ca28fbd26f6a9a04b41c97a031a7f6b943c59f5a0206417a4a94758b3edc6897",
+  "candidateDurationSeconds": 0.39,
+  "referenceDurationSeconds": 0.7575510204081632,
+  "candidateRate": 24000,
+  "channels": 1,
+  "finiteSamples": true,
+  "peak": 0.7368945479393005,
+  "voicedFrameCount": 13,
+  "userReferenceUsedForConditioning": false,
+  "userReferenceBundled": false,
+  "voice": "am_michael built-in Kokoro conditioning, Arabic SILMA synthesis",
+  "nativePronunciationApproved": false,
+  "audioPlayback": false,
+  "scope": "Signal and provenance checks only; native comparison required."
+}

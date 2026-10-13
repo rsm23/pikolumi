@@ -1,0 +1,49 @@
+{
+  "checkedAtUTC": "2026-10-13T11:50:22.618702+00:00",
+  "bundleIdentifier": "com.seifelmoulouk.pikolumi",
+  "testAdsOnly": false,
+  "productionConfigSha256": "cb901db297fd4088e963d16b92618457b91c042daf2caa90eab696fb3c646d0d",
+  "platformsAudited": [
+    "android"
+  ],
+  "submitted": false,
+  "android": {
+    "path": "output/release/android/Pikolumi-1.0.0-1-Production.aab",
+    "bytes": 89331427,
+    "sha256": "a042eedcbd36df7adbc657518686632775bf525eeee5fa314110df7e8dbddc4c",
+    "bundledAssetFilesVerified": 687,
+    "googleMobileAdsVersion": "25.5.0",
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.INTERNET",
+      "android.permission.WAKE_LOCK",
+      "com.seifelmoulouk.pikolumi.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ],
+    "advertisingIdAndLocationPermissionsAbsent": true,
+    "backupDisabled": true,
+    "cleartextTrafficDisabled": true,
+    "minimumSDK": "24",
+    "targetSDK": "36",
+    "admobAppId": "ca-app-pub-3316613733634147~3372582372",
+    "versionCode": "1",
+    "versionName": "1.0.0",
+    "uploadCertificateSha256": "52e5d5ac066139747b91bae9d0ab25d6f2503bd918624ab03dbe94531e1dc134",
+    "jarSignatureVerified": true,
+    "bundletoolValidated": true,
+    "productionAdUnitStringsPresentInAllAppAbis": true,
+    "signatureWarnings": [
+      "Self-signed upload certificate and no timestamp (normal Android upload key characteristics)",
+      "Java 25 JarInputStream versus JarFile manifest-order warning; signed JarFile entries and official bundletool validation pass"
+    ]
+  },
+  "ios": null,
+  "runtimeTrafficInspected": false,
+  "appleKidsAdvertisingExceptionVerified": false,
+  "sources": [
+    "https://developers.google.com/admob/android/privacy/play-data-disclosure",
+    "https://developers.google.com/admob/ios/privacy/data-disclosure?hl=en",
+    "https://support.google.com/googleplay/android-developer/answer/12955712?hl=en",
+    "https://developer.apple.com/app-store/review/guidelines/#kids-category"
+  ]
+}

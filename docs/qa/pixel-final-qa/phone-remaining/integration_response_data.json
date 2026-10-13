@@ -1,0 +1,1316 @@
+{
+  "screenshots": [
+    {
+      "screenshotName": "ar-coloring-band-0"
+    },
+    {
+      "screenshotName": "ar-drawing-band-0"
+    },
+    {
+      "screenshotName": "ar-tracing-band-0"
+    },
+    {
+      "screenshotName": "ar-letters-band-0"
+    },
+    {
+      "screenshotName": "ar-words-band-0"
+    },
+    {
+      "screenshotName": "ar-counting-band-0"
+    },
+    {
+      "screenshotName": "ar-math-band-1"
+    },
+    {
+      "screenshotName": "ar-shapes-band-0"
+    },
+    {
+      "screenshotName": "ar-sorting-band-0"
+    },
+    {
+      "screenshotName": "ar-memory-band-0"
+    },
+    {
+      "screenshotName": "ar-jigsaw-band-0"
+    },
+    {
+      "screenshotName": "ar-patterns-band-0"
+    },
+    {
+      "screenshotName": "ar-mazes-band-0"
+    },
+    {
+      "screenshotName": "ar-nature-band-0"
+    },
+    {
+      "screenshotName": "ar-everyday-band-1"
+    },
+    {
+      "screenshotName": "ar-music-band-0"
+    }
+  ],
+  "captureSizes": {
+    "ar-coloring-band-0": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-drawing-band-0": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-tracing-band-0": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-letters-band-0": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-words-band-0": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-counting-band-0": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-math-band-1": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-shapes-band-0": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-sorting-band-0": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-memory-band-0": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-jigsaw-band-0": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-patterns-band-0": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-mazes-band-0": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-nature-band-0": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-everyday-band-1": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    },
+    "ar-music-band-0": {
+      "originalWidth": 1344,
+      "originalHeight": 2992,
+      "captureWidth": 1200,
+      "captureHeight": 2671
+    }
+  },
+  "completedCases": [
+    {
+      "id": "jigsaw-0031",
+      "section": "jigsaw",
+      "band": 1,
+      "language": "es",
+      "engine": "jigsaw"
+    },
+    {
+      "id": "jigsaw-0061",
+      "section": "jigsaw",
+      "band": 2,
+      "language": "es",
+      "engine": "jigsaw"
+    },
+    {
+      "id": "jigsaw-0091",
+      "section": "jigsaw",
+      "band": 3,
+      "language": "es",
+      "engine": "jigsaw"
+    },
+    {
+      "id": "patterns-0001",
+      "section": "patterns",
+      "band": 0,
+      "language": "es",
+      "engine": "quiz"
+    },
+    {
+      "id": "patterns-0041",
+      "section": "patterns",
+      "band": 1,
+      "language": "es",
+      "engine": "quiz"
+    },
+    {
+      "id": "patterns-0081",
+      "section": "patterns",
+      "band": 2,
+      "language": "es",
+      "engine": "quiz"
+    },
+    {
+      "id": "patterns-0121",
+      "section": "patterns",
+      "band": 3,
+      "language": "es",
+      "engine": "quiz"
+    },
+    {
+      "id": "mazes-0001",
+      "section": "mazes",
+      "band": 0,
+      "language": "es",
+      "engine": "maze"
+    },
+    {
+      "id": "mazes-0025",
+      "section": "mazes",
+      "band": 1,
+      "language": "es",
+      "engine": "maze"
+    },
+    {
+      "id": "mazes-0049",
+      "section": "mazes",
+      "band": 2,
+      "language": "es",
+      "engine": "maze"
+    },
+    {
+      "id": "mazes-0073",
+      "section": "mazes",
+      "band": 3,
+      "language": "es",
+      "engine": "maze"
+    },
+    {
+      "id": "mazes-0097",
+      "section": "mazes",
+      "band": 4,
+      "language": "es",
+      "engine": "maze"
+    },
+    {
+      "id": "nature-0001",
+      "section": "nature",
+      "band": 0,
+      "language": "es",
+      "engine": "quiz"
+    },
+    {
+      "id": "nature-0061",
+      "section": "nature",
+      "band": 2,
+      "language": "es",
+      "engine": "quiz"
+    },
+    {
+      "id": "nature-0081",
+      "section": "nature",
+      "band": 1,
+      "language": "es",
+      "engine": "quiz"
+    },
+    {
+      "id": "nature-0111",
+      "section": "nature",
+      "band": 3,
+      "language": "es",
+      "engine": "quiz"
+    },
+    {
+      "id": "everyday-0001",
+      "section": "everyday",
+      "band": 1,
+      "language": "es",
+      "engine": "quiz"
+    },
+    {
+      "id": "everyday-0013",
+      "section": "everyday",
+      "band": 3,
+      "language": "es",
+      "engine": "quiz"
+    },
+    {
+      "id": "everyday-0091",
+      "section": "everyday",
+      "band": 2,
+      "language": "es",
+      "engine": "quiz"
+    },
+    {
+      "id": "everyday-0098",
+      "section": "everyday",
+      "band": 0,
+      "language": "es",
+      "engine": "quiz"
+    },
+    {
+      "id": "music-0001",
+      "section": "music",
+      "band": 0,
+      "language": "es",
+      "engine": "music"
+    },
+    {
+      "id": "music-0021",
+      "section": "music",
+      "band": 1,
+      "language": "es",
+      "engine": "music"
+    },
+    {
+      "id": "music-0041",
+      "section": "music",
+      "band": 2,
+      "language": "es",
+      "engine": "music"
+    },
+    {
+      "id": "music-0061",
+      "section": "music",
+      "band": 3,
+      "language": "es",
+      "engine": "music"
+    },
+    {
+      "id": "coloring-0001",
+      "section": "coloring",
+      "band": 0,
+      "language": "pt",
+      "engine": "canvas"
+    },
+    {
+      "id": "coloring-0004",
+      "section": "coloring",
+      "band": 1,
+      "language": "pt",
+      "engine": "canvas"
+    },
+    {
+      "id": "coloring-0007",
+      "section": "coloring",
+      "band": 2,
+      "language": "pt",
+      "engine": "canvas"
+    },
+    {
+      "id": "coloring-0010",
+      "section": "coloring",
+      "band": 3,
+      "language": "pt",
+      "engine": "canvas"
+    },
+    {
+      "id": "drawing-0001",
+      "section": "drawing",
+      "band": 0,
+      "language": "pt",
+      "engine": "canvas"
+    },
+    {
+      "id": "drawing-0002",
+      "section": "drawing",
+      "band": 1,
+      "language": "pt",
+      "engine": "canvas"
+    },
+    {
+      "id": "drawing-0003",
+      "section": "drawing",
+      "band": 2,
+      "language": "pt",
+      "engine": "canvas"
+    },
+    {
+      "id": "drawing-0004",
+      "section": "drawing",
+      "band": 3,
+      "language": "pt",
+      "engine": "canvas"
+    },
+    {
+      "id": "tracing-0001",
+      "section": "tracing",
+      "band": 0,
+      "language": "pt",
+      "engine": "trace"
+    },
+    {
+      "id": "tracing-0029",
+      "section": "tracing",
+      "band": 1,
+      "language": "pt",
+      "engine": "trace"
+    },
+    {
+      "id": "tracing-0057",
+      "section": "tracing",
+      "band": 2,
+      "language": "pt",
+      "engine": "trace"
+    },
+    {
+      "id": "tracing-0151",
+      "section": "tracing",
+      "band": 3,
+      "language": "pt",
+      "engine": "trace"
+    },
+    {
+      "id": "letters-0001",
+      "section": "letters",
+      "band": 0,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "letters-0041",
+      "section": "letters",
+      "band": 1,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "letters-0081",
+      "section": "letters",
+      "band": 2,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "letters-0121",
+      "section": "letters",
+      "band": 3,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "words-0001",
+      "section": "words",
+      "band": 0,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "words-0002",
+      "section": "words",
+      "band": 1,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "words-0003",
+      "section": "words",
+      "band": 2,
+      "language": "pt",
+      "engine": "sequence"
+    },
+    {
+      "id": "counting-0001",
+      "section": "counting",
+      "band": 0,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "counting-0011",
+      "section": "counting",
+      "band": 1,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "counting-0021",
+      "section": "counting",
+      "band": 2,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "counting-0031",
+      "section": "counting",
+      "band": 3,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "math-0001",
+      "section": "math",
+      "band": 1,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "math-0051",
+      "section": "math",
+      "band": 2,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "math-0101",
+      "section": "math",
+      "band": 3,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "math-0201",
+      "section": "math",
+      "band": 4,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "shapes-0001",
+      "section": "shapes",
+      "band": 0,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "shapes-0037",
+      "section": "shapes",
+      "band": 1,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "shapes-0073",
+      "section": "shapes",
+      "band": 2,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "shapes-0109",
+      "section": "shapes",
+      "band": 3,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "sorting-0001",
+      "section": "sorting",
+      "band": 0,
+      "language": "pt",
+      "engine": "sort"
+    },
+    {
+      "id": "sorting-0041",
+      "section": "sorting",
+      "band": 1,
+      "language": "pt",
+      "engine": "sort"
+    },
+    {
+      "id": "sorting-0081",
+      "section": "sorting",
+      "band": 2,
+      "language": "pt",
+      "engine": "sort"
+    },
+    {
+      "id": "memory-0001",
+      "section": "memory",
+      "band": 0,
+      "language": "pt",
+      "engine": "memory"
+    },
+    {
+      "id": "memory-0021",
+      "section": "memory",
+      "band": 1,
+      "language": "pt",
+      "engine": "memory"
+    },
+    {
+      "id": "memory-0041",
+      "section": "memory",
+      "band": 2,
+      "language": "pt",
+      "engine": "memory"
+    },
+    {
+      "id": "memory-0061",
+      "section": "memory",
+      "band": 3,
+      "language": "pt",
+      "engine": "memory"
+    },
+    {
+      "id": "memory-0081",
+      "section": "memory",
+      "band": 4,
+      "language": "pt",
+      "engine": "memory"
+    },
+    {
+      "id": "jigsaw-0001",
+      "section": "jigsaw",
+      "band": 0,
+      "language": "pt",
+      "engine": "jigsaw"
+    },
+    {
+      "id": "jigsaw-0031",
+      "section": "jigsaw",
+      "band": 1,
+      "language": "pt",
+      "engine": "jigsaw"
+    },
+    {
+      "id": "jigsaw-0061",
+      "section": "jigsaw",
+      "band": 2,
+      "language": "pt",
+      "engine": "jigsaw"
+    },
+    {
+      "id": "jigsaw-0091",
+      "section": "jigsaw",
+      "band": 3,
+      "language": "pt",
+      "engine": "jigsaw"
+    },
+    {
+      "id": "patterns-0001",
+      "section": "patterns",
+      "band": 0,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "patterns-0041",
+      "section": "patterns",
+      "band": 1,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "patterns-0081",
+      "section": "patterns",
+      "band": 2,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "patterns-0121",
+      "section": "patterns",
+      "band": 3,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "mazes-0001",
+      "section": "mazes",
+      "band": 0,
+      "language": "pt",
+      "engine": "maze"
+    },
+    {
+      "id": "mazes-0025",
+      "section": "mazes",
+      "band": 1,
+      "language": "pt",
+      "engine": "maze"
+    },
+    {
+      "id": "mazes-0049",
+      "section": "mazes",
+      "band": 2,
+      "language": "pt",
+      "engine": "maze"
+    },
+    {
+      "id": "mazes-0073",
+      "section": "mazes",
+      "band": 3,
+      "language": "pt",
+      "engine": "maze"
+    },
+    {
+      "id": "mazes-0097",
+      "section": "mazes",
+      "band": 4,
+      "language": "pt",
+      "engine": "maze"
+    },
+    {
+      "id": "nature-0001",
+      "section": "nature",
+      "band": 0,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "nature-0061",
+      "section": "nature",
+      "band": 2,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "nature-0081",
+      "section": "nature",
+      "band": 1,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "nature-0111",
+      "section": "nature",
+      "band": 3,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "everyday-0001",
+      "section": "everyday",
+      "band": 1,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "everyday-0013",
+      "section": "everyday",
+      "band": 3,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "everyday-0091",
+      "section": "everyday",
+      "band": 2,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "everyday-0098",
+      "section": "everyday",
+      "band": 0,
+      "language": "pt",
+      "engine": "quiz"
+    },
+    {
+      "id": "music-0001",
+      "section": "music",
+      "band": 0,
+      "language": "pt",
+      "engine": "music"
+    },
+    {
+      "id": "music-0021",
+      "section": "music",
+      "band": 1,
+      "language": "pt",
+      "engine": "music"
+    },
+    {
+      "id": "music-0041",
+      "section": "music",
+      "band": 2,
+      "language": "pt",
+      "engine": "music"
+    },
+    {
+      "id": "music-0061",
+      "section": "music",
+      "band": 3,
+      "language": "pt",
+      "engine": "music"
+    },
+    {
+      "id": "coloring-0001",
+      "section": "coloring",
+      "band": 0,
+      "language": "ar",
+      "engine": "canvas"
+    },
+    {
+      "id": "coloring-0004",
+      "section": "coloring",
+      "band": 1,
+      "language": "ar",
+      "engine": "canvas"
+    },
+    {
+      "id": "coloring-0007",
+      "section": "coloring",
+      "band": 2,
+      "language": "ar",
+      "engine": "canvas"
+    },
+    {
+      "id": "coloring-0010",
+      "section": "coloring",
+      "band": 3,
+      "language": "ar",
+      "engine": "canvas"
+    },
+    {
+      "id": "drawing-0001",
+      "section": "drawing",
+      "band": 0,
+      "language": "ar",
+      "engine": "canvas"
+    },
+    {
+      "id": "drawing-0002",
+      "section": "drawing",
+      "band": 1,
+      "language": "ar",
+      "engine": "canvas"
+    },
+    {
+      "id": "drawing-0003",
+      "section": "drawing",
+      "band": 2,
+      "language": "ar",
+      "engine": "canvas"
+    },
+    {
+      "id": "drawing-0004",
+      "section": "drawing",
+      "band": 3,
+      "language": "ar",
+      "engine": "canvas"
+    },
+    {
+      "id": "tracing-0001",
+      "section": "tracing",
+      "band": 0,
+      "language": "ar",
+      "engine": "trace"
+    },
+    {
+      "id": "tracing-0029",
+      "section": "tracing",
+      "band": 1,
+      "language": "ar",
+      "engine": "trace"
+    },
+    {
+      "id": "tracing-0057",
+      "section": "tracing",
+      "band": 2,
+      "language": "ar",
+      "engine": "trace"
+    },
+    {
+      "id": "tracing-0151",
+      "section": "tracing",
+      "band": 3,
+      "language": "ar",
+      "engine": "trace"
+    },
+    {
+      "id": "letters-0001",
+      "section": "letters",
+      "band": 0,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "letters-0041",
+      "section": "letters",
+      "band": 1,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "letters-0081",
+      "section": "letters",
+      "band": 2,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "letters-0121",
+      "section": "letters",
+      "band": 3,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "words-0001",
+      "section": "words",
+      "band": 0,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "words-0002",
+      "section": "words",
+      "band": 1,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "words-0003",
+      "section": "words",
+      "band": 2,
+      "language": "ar",
+      "engine": "sequence"
+    },
+    {
+      "id": "counting-0001",
+      "section": "counting",
+      "band": 0,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "counting-0011",
+      "section": "counting",
+      "band": 1,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "counting-0021",
+      "section": "counting",
+      "band": 2,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "counting-0031",
+      "section": "counting",
+      "band": 3,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "math-0001",
+      "section": "math",
+      "band": 1,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "math-0051",
+      "section": "math",
+      "band": 2,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "math-0101",
+      "section": "math",
+      "band": 3,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "math-0201",
+      "section": "math",
+      "band": 4,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "shapes-0001",
+      "section": "shapes",
+      "band": 0,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "shapes-0037",
+      "section": "shapes",
+      "band": 1,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "shapes-0073",
+      "section": "shapes",
+      "band": 2,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "shapes-0109",
+      "section": "shapes",
+      "band": 3,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "sorting-0001",
+      "section": "sorting",
+      "band": 0,
+      "language": "ar",
+      "engine": "sort"
+    },
+    {
+      "id": "sorting-0041",
+      "section": "sorting",
+      "band": 1,
+      "language": "ar",
+      "engine": "sort"
+    },
+    {
+      "id": "sorting-0081",
+      "section": "sorting",
+      "band": 2,
+      "language": "ar",
+      "engine": "sort"
+    },
+    {
+      "id": "memory-0001",
+      "section": "memory",
+      "band": 0,
+      "language": "ar",
+      "engine": "memory"
+    },
+    {
+      "id": "memory-0021",
+      "section": "memory",
+      "band": 1,
+      "language": "ar",
+      "engine": "memory"
+    },
+    {
+      "id": "memory-0041",
+      "section": "memory",
+      "band": 2,
+      "language": "ar",
+      "engine": "memory"
+    },
+    {
+      "id": "memory-0061",
+      "section": "memory",
+      "band": 3,
+      "language": "ar",
+      "engine": "memory"
+    },
+    {
+      "id": "memory-0081",
+      "section": "memory",
+      "band": 4,
+      "language": "ar",
+      "engine": "memory"
+    },
+    {
+      "id": "jigsaw-0001",
+      "section": "jigsaw",
+      "band": 0,
+      "language": "ar",
+      "engine": "jigsaw"
+    },
+    {
+      "id": "jigsaw-0031",
+      "section": "jigsaw",
+      "band": 1,
+      "language": "ar",
+      "engine": "jigsaw"
+    },
+    {
+      "id": "jigsaw-0061",
+      "section": "jigsaw",
+      "band": 2,
+      "language": "ar",
+      "engine": "jigsaw"
+    },
+    {
+      "id": "jigsaw-0091",
+      "section": "jigsaw",
+      "band": 3,
+      "language": "ar",
+      "engine": "jigsaw"
+    },
+    {
+      "id": "patterns-0001",
+      "section": "patterns",
+      "band": 0,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "patterns-0041",
+      "section": "patterns",
+      "band": 1,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "patterns-0081",
+      "section": "patterns",
+      "band": 2,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "patterns-0121",
+      "section": "patterns",
+      "band": 3,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "mazes-0001",
+      "section": "mazes",
+      "band": 0,
+      "language": "ar",
+      "engine": "maze"
+    },
+    {
+      "id": "mazes-0025",
+      "section": "mazes",
+      "band": 1,
+      "language": "ar",
+      "engine": "maze"
+    },
+    {
+      "id": "mazes-0049",
+      "section": "mazes",
+      "band": 2,
+      "language": "ar",
+      "engine": "maze"
+    },
+    {
+      "id": "mazes-0073",
+      "section": "mazes",
+      "band": 3,
+      "language": "ar",
+      "engine": "maze"
+    },
+    {
+      "id": "mazes-0097",
+      "section": "mazes",
+      "band": 4,
+      "language": "ar",
+      "engine": "maze"
+    },
+    {
+      "id": "nature-0001",
+      "section": "nature",
+      "band": 0,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "nature-0061",
+      "section": "nature",
+      "band": 2,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "nature-0081",
+      "section": "nature",
+      "band": 1,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "nature-0111",
+      "section": "nature",
+      "band": 3,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "everyday-0001",
+      "section": "everyday",
+      "band": 1,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "everyday-0013",
+      "section": "everyday",
+      "band": 3,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "everyday-0091",
+      "section": "everyday",
+      "band": 2,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "everyday-0098",
+      "section": "everyday",
+      "band": 0,
+      "language": "ar",
+      "engine": "quiz"
+    },
+    {
+      "id": "music-0001",
+      "section": "music",
+      "band": 0,
+      "language": "ar",
+      "engine": "music"
+    },
+    {
+      "id": "music-0021",
+      "section": "music",
+      "band": 1,
+      "language": "ar",
+      "engine": "music"
+    },
+    {
+      "id": "music-0041",
+      "section": "music",
+      "band": 2,
+      "language": "ar",
+      "engine": "music"
+    },
+    {
+      "id": "music-0061",
+      "section": "music",
+      "band": 3,
+      "language": "ar",
+      "engine": "music"
+    }
+  ],
+  "startCase": 168,
+  "plannedCases": 320,
+  "activityIds": [
+    "coloring-0001",
+    "coloring-0004",
+    "coloring-0007",
+    "coloring-0010",
+    "drawing-0001",
+    "drawing-0002",
+    "drawing-0003",
+    "drawing-0004",
+    "tracing-0001",
+    "tracing-0029",
+    "tracing-0057",
+    "tracing-0151",
+    "letters-0001",
+    "letters-0041",
+    "letters-0081",
+    "letters-0121",
+    "words-0001",
+    "words-0002",
+    "words-0003",
+    "counting-0001",
+    "counting-0011",
+    "counting-0021",
+    "counting-0031",
+    "math-0001",
+    "math-0051",
+    "math-0101",
+    "math-0201",
+    "shapes-0001",
+    "shapes-0037",
+    "shapes-0073",
+    "shapes-0109",
+    "sorting-0001",
+    "sorting-0041",
+    "sorting-0081",
+    "memory-0001",
+    "memory-0021",
+    "memory-0041",
+    "memory-0061",
+    "memory-0081",
+    "jigsaw-0001",
+    "jigsaw-0031",
+    "jigsaw-0061",
+    "jigsaw-0091",
+    "patterns-0001",
+    "patterns-0041",
+    "patterns-0081",
+    "patterns-0121",
+    "mazes-0001",
+    "mazes-0025",
+    "mazes-0049",
+    "mazes-0073",
+    "mazes-0097",
+    "nature-0001",
+    "nature-0061",
+    "nature-0081",
+    "nature-0111",
+    "everyday-0001",
+    "everyday-0013",
+    "everyday-0091",
+    "everyday-0098",
+    "music-0001",
+    "music-0021",
+    "music-0041",
+    "music-0061"
+  ],
+  "allSections": [
+    "coloring",
+    "drawing",
+    "tracing",
+    "letters",
+    "words",
+    "counting",
+    "math",
+    "shapes",
+    "sorting",
+    "memory",
+    "jigsaw",
+    "patterns",
+    "mazes",
+    "nature",
+    "everyday",
+    "music"
+  ],
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "ar"
+  ],
+  "nativeSQLiteReopen": true,
+  "siblingIsolation": true,
+  "artworkPersisted": true,
+  "audioPlayback": false,
+  "adsRequestedInCurriculumRun": false,
+  "humanEditorialApproval": false,
+  "store": "isolated temporary SQLite; user app databases not accessed"
+}

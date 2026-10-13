@@ -1,0 +1,12 @@
+{
+  "normalPackage": "com.seifelmoulouk.pikolumi",
+  "installedByUpdateNotUninstall": true,
+  "allSQLiteRecordsIdentical": true,
+  "normalAppLaunchedByTest": false,
+  "dataCleared": false,
+  "testAdsOnly": true,
+  "signerSha256": "5af5c5ae90d22f172ac7038e2234bfe784342a0c74d9bf4d43807c4516bffb6a",
+  "apkSha256": "bfe0a95146ce9aa373cf982a2da3df70ecb64223c399be24c6c6e9e36923a6bf",
+  "arabicClipSha256": "62c636f483a3fe0f9a091a15cb8ed67f19c9774f6aa203117a8101ea25df90be",
+  "privateUserDataPrinted": false
+}

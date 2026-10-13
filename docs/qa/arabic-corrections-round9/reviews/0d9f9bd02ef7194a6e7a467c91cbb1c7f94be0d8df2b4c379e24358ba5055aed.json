@@ -1,0 +1,15 @@
+{
+  "locale": "ar",
+  "round": "2026-10-13-round9",
+  "exportedAt": "2026-10-13T11:19:52.412475+00:00",
+  "source": "Direct user reply: it is missing the i",
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "sha256": "f6d55666441cd36a00949e72923a90c1c042c39fd5fc84fca62471ec2b6a38aa",
+      "decision": "wrong",
+      "notes": "User hears no i vowel in the new male-voice take."
+    }
+  ]
+}

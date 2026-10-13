@@ -47,13 +47,19 @@ def check_assets(archive, prefix):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--aab', type=Path, required=True)
-    parser.add_argument('--ipa', type=Path, required=True)
+    parser.add_argument('--ipa', type=Path)
+    parser.add_argument('--android-only', action='store_true')
+    parser.add_argument('--production-config', type=Path)
     parser.add_argument('--bundletool', type=Path, required=True)
     parser.add_argument('--java', default='java')
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
-    config = json.loads((ROOT / 'config/ads.json').read_text())
-    assert config['ADS_PRODUCTION'] is False
+    if not args.android_only and args.ipa is None:
+        parser.error('--ipa is required unless --android-only is selected')
+    if args.production_config and not args.android_only:
+        parser.error('Production auditing is enabled only for the Android-only workflow')
+    config = json.loads((args.production_config or ROOT / 'config/ads.json').read_text())
+    assert config['ADS_PRODUCTION'] is bool(args.production_config)
     assert config['IOS_KIDS_ADS_VERIFIED'] is False
     android = artifact(args.aab)
     xml = subprocess.run([
@@ -66,6 +72,7 @@ def main():
                           manifest.findall('uses-permission')})
     assert not (set(permissions) & FORBIDDEN_PERMISSIONS)
     application = manifest.find('application')
+    assert application.get(ANDROID + 'debuggable', 'false') == 'false'
     assert application.get(ANDROID + 'allowBackup') == 'false'
     assert application.get(ANDROID + 'usesCleartextTraffic', 'false') == 'false'
     metadata = {e.get(ANDROID + 'name'): e.get(ANDROID + 'value')
@@ -85,9 +92,13 @@ def main():
         'minimumSDK': manifest.find('uses-sdk').get(ANDROID + 'minSdkVersion'),
         'targetSDK': manifest.find('uses-sdk').get(ANDROID + 'targetSdkVersion'),
         'admobAppId': metadata['com.google.android.gms.ads.APPLICATION_ID'],
+        'versionCode': manifest.get(ANDROID + 'versionCode'),
+        'versionName': manifest.get(ANDROID + 'versionName'),
     })
-    ios = artifact(args.ipa)
-    with zipfile.ZipFile(args.ipa) as archive:
+    ios = None
+    if not args.android_only:
+      ios = artifact(args.ipa)
+      with zipfile.ZipFile(args.ipa) as archive:
         main_info = next(n for n in archive.namelist() if
                          n.startswith('Payload/') and n.count('/') == 2 and n.endswith('/Info.plist'))
         app_prefix = main_info.removesuffix('Info.plist')
@@ -107,7 +118,7 @@ def main():
             archive.extractall(folder)
             subprocess.run(['codesign', '--verify', '--deep', '--strict',
                             str(Path(folder) / app_prefix)], check=True, capture_output=True)
-    ios.update({'sdkVersions': versions, 'privacyManifests': privacy,
+      ios.update({'sdkVersions': versions, 'privacyManifests': privacy,
                 'admobAppId': info['GADApplicationIdentifier'],
                 'trackingUsageDescriptionAbsent': True,
                 'measurementInitializationDelayed': True,
@@ -115,7 +126,9 @@ def main():
     report = {
         'checkedAtUTC': datetime.now(timezone.utc).isoformat(),
         'bundleIdentifier': IDENTIFIER,
-        'testAdsOnly': True,
+        'testAdsOnly': not bool(args.production_config),
+        'productionConfigSha256': hashlib.sha256(args.production_config.read_bytes()).hexdigest() if args.production_config else None,
+        'platformsAudited': ['android'] if args.android_only else ['android', 'ios'],
         'submitted': False,
         'android': android,
         'ios': ios,
@@ -129,7 +142,8 @@ def main():
         ],
     }
     args.output.write_text(json.dumps(report, indent=2) + '\n')
-    print('Exact package versions, privacy manifests, permissions, assets and iOS signature audited.')
+    print('Exact Android SDK version, permissions and bundled assets audited.' if args.android_only else
+          'Exact package versions, privacy manifests, permissions, assets and iOS signature audited.')
 
 
 if __name__ == '__main__':

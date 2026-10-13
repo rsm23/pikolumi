@@ -1,0 +1,50 @@
+{
+  "source": {
+    "model": [
+      "silma-ai/silma-tts",
+      "226dd7a65cadf51f9a6dbe3953fc89003b3844d5"
+    ],
+    "modelSha256": "f43256d0b78b8803c638aed0875da5a4b372b4a784690a0156e5baff14f7336c",
+    "vocoder": [
+      "charactr/vocos-mel-24khz",
+      "0feb3fdd929bcd6649e0e7c5a688cf7dd012ef21"
+    ],
+    "vocoderSha256": "97ec976ad1fd67a33ab2682d29c0ac7df85234fae875aefcc5fb215681a91b2a",
+    "reference": [
+      {
+        "voice": "am_michael",
+        "model": [
+          "hexgrad/Kokoro-82M",
+          "f3ff3571791e39611d31c381e3a41a3af07b4987"
+        ],
+        "modelSha256": "496dba118d1a58f5f3db2efc88dbdc216e0483fc89fe6e47ee1f2c53f18ad1e4",
+        "voiceSha256": "9a443b79a4b22489a5b0ab7c651a0bcd1a30bef675c28333f06971abbd47bd37",
+        "text": "Welcome to our colorful garden. Let us explore, draw, and learn together.",
+        "origin": "licensed built-in Kokoro synthetic voice; not the user-supplied pronunciation reference"
+      }
+    ],
+    "referenceText": "Welcome to our colorful garden. Let us explore, draw, and learn together.",
+    "steps": 48,
+    "cfgStrength": 2,
+    "device": "mps",
+    "generatorSha256": "97f88f21151b515ab405f10cbd01d4fdd6cd93d756792e0275cdcab50cc8dec5",
+    "normalization": "explicit Arabic text; no phonemizer; preserves consonants and vowel marks"
+  },
+  "pronunciationApproval": false,
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "originalSha256": "dcdf2a5911f7c4d853ae04b2477bdfd14b0269c7e5c5575f8ee18d0dd2b83972",
+      "bundledOriginalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "note": "Different licensed built-in male voice (am_michael); compare against the user-supplied صِ pronunciation reference. Do not clone the reference voice or promote without native review.",
+      "synthesisText": "صِ",
+      "targetSeconds": 0.65,
+      "extraction": "direct vowel-marked sound; trimmed outer silence",
+      "durationSeconds": 0.39,
+      "seed": 1511475785,
+      "sha256": "f6d55666441cd36a00949e72923a90c1c042c39fd5fc84fca62471ec2b6a38aa",
+      "status": "replacement candidate; native pronunciation approval pending"
+    }
+  ]
+}

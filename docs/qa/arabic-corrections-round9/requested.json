@@ -1,0 +1,18 @@
+{
+  "locale": "ar",
+  "round": "2026-10-13-round9",
+  "comparisonReference": {
+    "fileName": "ElevenLabs_Text_to_Speech_audio.mp3",
+    "sha256": "ca28fbd26f6a9a04b41c97a031a7f6b943c59f5a0206417a4a94758b3edc6897",
+    "source": "user-supplied ElevenLabs pronunciation reference; not bundled or used for voice conditioning"
+  },
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "originalSha256": "dcdf2a5911f7c4d853ae04b2477bdfd14b0269c7e5c5575f8ee18d0dd2b83972",
+      "bundledOriginalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "note": "Different licensed built-in male voice (am_michael); compare against the user-supplied صِ pronunciation reference. Do not clone the reference voice or promote without native review."
+    }
+  ]
+}

@@ -5136,10 +5136,43 @@
           "seed": 4081645175
         },
         "syllable_37.mp3": {
-          "inputSha256": "367d17657aa437d993b1b72d6e66220b91edae116fc869455cf6ff25eddd7817",
-          "sha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+          "inputSha256": "0a9d4d0e30b7762a2eae63469c4689804551063568ece4ebc8e30037cf98a664",
+          "sha256": "62c636f483a3fe0f9a091a15cb8ed67f19c9774f6aa203117a8101ea25df90be",
           "text": "صِ",
-          "seed": 3146562033
+          "seed": null,
+          "replacement": {
+            "source": {
+              "source": "ElevenLabs-generated clip supplied by user",
+              "originalSourceSha256": "ca28fbd26f6a9a04b41c97a031a7f6b943c59f5a0206417a4a94758b3edc6897",
+              "sourceFile": "source/syllable_37.mp3",
+              "commercialPermission": "Direct user reply: I have other commercial permission; use it",
+              "permissionRecordedAtUTC": "2026-10-13T11:21:43.599860+00:00",
+              "paidElevenLabsPlanClaimed": false,
+              "voiceCloned": false,
+              "sourceTerms": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform",
+              "masterCommand": "ffmpeg -i SOURCE -ar 24000 -ac 1 -codec:a libmp3lame -b:a 48k TARGET",
+              "referencePronunciationEvidence": "User supplied this file as the pronunciation reference for صِ, then authorized use in the app."
+            },
+            "synthesisText": "صِ",
+            "extraction": "full user-provided clip; 44.1 kHz to 24 kHz mono MP3 at 48 kbps; no slicing or voice cloning",
+            "targetSeconds": 0.7575,
+            "previousClip": {
+              "inputSha256": "367d17657aa437d993b1b72d6e66220b91edae116fc869455cf6ff25eddd7817",
+              "sha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+              "text": "صِ",
+              "seed": 3146562033
+            },
+            "originalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612"
+          },
+          "nativeReview": {
+            "decision": "correct",
+            "reviewer": "user",
+            "reviewFile": "docs/qa/arabic-corrections-round10/reviews/3d70f7a0809b240cc0199e62fe26161b6ade70764da9cd40a55f9e2b8f2753b0.json",
+            "reviewFileSha256": "3d70f7a0809b240cc0199e62fe26161b6ade70764da9cd40a55f9e2b8f2753b0",
+            "reviewedSha256": "62c636f483a3fe0f9a091a15cb8ed67f19c9774f6aa203117a8101ea25df90be",
+            "exportedAt": "2026-10-13T11:21:43.599860+00:00",
+            "notes": "Correct source reference supplied by the user; authorized for the app. Only resampled and encoded to the bundle format."
+          }
         },
         "syllable_38.mp3": {
           "inputSha256": "1a18416e10125393f5cd75f598f7b1dba8529c57099134540e90f9481047c654",
@@ -6917,7 +6950,12 @@
           }
         }
       },
-      "pronunciationReview": "partial: 54 replacement takes approved; other recordings remain pending or rejected"
+      "pronunciationReview": "complete per owner five-language review confirmation; 55 flagged replacement takes individually accepted"
     }
+  },
+  "overallReview": {
+    "status": "complete per owner confirmation on 2026-10-13",
+    "receipt": "docs/qa/owner-language-review-completion.json",
+    "scope": "Five-language content and pronunciation review completion; per-clip correction receipts remain separate."
   }
 }

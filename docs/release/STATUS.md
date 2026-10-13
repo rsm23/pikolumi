@@ -1,6 +1,24 @@
 # Pikolumi release status — 2026-10-13
 
-**Implemented QA app. Neither store has received a submission.** The public launch requirements are not yet satisfied; test ads remain enabled in every generated QA package.
+**Android 1.0.0 (1) is submitted to Google Play production.** Publishing overview shows **Changes in review**, after automated quick checks completed. Managed publishing is Off: the approved release is configured for automatic publication. Approval and public availability are not established. iOS remains held and has not been submitted.
+
+## Latest verified result
+
+- All remaining **152 Pixel cases passed**, including final teardown. Combined with the earlier 168, all 320 planned physical cases are covered across 16 sections, five languages and available skill bands. The landscape Android tablet also passed 320/320. See `../qa/pixel-final-qa/physical-curriculum-complete.json`.
+- The native Google test creative's X is visible within a conservative **4.906-second** bound. Actual dismissal, frequency limits, muted audio and banner restoration passed. First-frame enabled state was not independently measured; this sample does not guarantee every future creative. See `../qa/pixel-final-qa/ad-recording/dismissal-timing-validation.json`.
+- The supplied **صِ** recording is bundled under the owner's explicit commercial-permission attestation. Other 54 accepted replacements remain unchanged; all 55 flagged corrections are resolved. Native decoding verified the exact replacement with playback disabled. The owner also confirmed **All five languages reviewed** for the entire library. Individual clip receipts and overall attestation are separate evidence; see `../qa/owner-language-review-completion.json`.
+- The normal Pixel test-ad app was updated without uninstall/clear. Every SQLite record is identical before/after; original timeout 60000 ms and keep-awake setting 0 restored. The normal app was not launched by the update audit. Private databases remain excluded from Git.
+- **Production AAB** `output/release/android/Pikolumi-1.0.0-1-Production.aab`, SHA-256 `a042eedcbd36df7adbc657518686632775bf525eeee5fa314110df7e8dbddc4c`, passed the release gates, signature and bundletool validation. All 687 bundled source assets match; correct production AdMob IDs/units, GMA 25.5.0, min 24/target 36, release not debuggable, backup/cleartext disabled, advertising-ID/AdServices/location/camera/microphone permissions absent. See `android-production-package-audit.json`.
+- Google processed the bundle as Enhanced, version code 1/name 1.0.0, with three ABIs and mapping/native symbols. All 15 pending changes were sent for review, including five listings, child audience, Data Safety, ratings and full rollout in 177 regions plus rest of world. Proof: `google-play/in-review-20261013.png`, its DOM snapshot and `google-play-production-submission.json`.
+- 89 Flutter tests, 21 Python tests, analysis, 2,400-entry catalog and all 656 audio-file checks passed. Development and Pixel builds still use official test ads; production Android uses the dedicated units in the verified publisher account. AdMob readiness/serving still depends on published-store linking and review.
+
+## Current iOS blockers
+
+Apple Kids guideline 1.3's publicly documented human creative-review and restricted child-data practices are still unestablished. No resolving support reply was found in the verified publisher mailbox today. Exact residual identifier handling and the generic-performance linkage discrepancy versus the GMA 13.11.0 manifest remain unresolved. Physical iPhone/iPad QA is unavailable; simulator checks do not satisfy that agreed requirement. App Store Connect is signed out; previous saved metadata/privacy drafts remain, with no binary uploaded or review submitted. The latest Arabic replacement has not been incorporated into a new iOS artifact. Production iOS ads remain disabled, and neither audience nor ad requirements were changed. See `ios-blockers-20261013.json`.
+
+## Historical preparation and interrupted attempts
+
+The following records predate the completed Android continuation and submission above. Their pending Android/content/pronunciation statements are historical, superseded by the latest evidence and `readiness.json`. iOS holds still apply.
 
 **Release authorized, 2026-10-13:** the user explicitly authorized production builds, uploads, submission and publication on both stores, superseding the previous hold. No further ordinary publishing approval is required. The agreed release requirements remain incomplete; this is an evidence/compliance hold, not the earlier user hold. See `release-authorization.json` and `2026-10-13-release-attempt.json`.
 

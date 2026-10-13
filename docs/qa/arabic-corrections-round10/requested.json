@@ -1,0 +1,20 @@
+{
+  "locale": "ar",
+  "round": "2026-10-13-round10",
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "originalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "bundledOriginalSha256": "5de5970da63d5a8dddca1c43389512f4512d0e1ccfea04b0ec9233f02eedd612",
+      "sha256": "62c636f483a3fe0f9a091a15cb8ed67f19c9774f6aa203117a8101ea25df90be",
+      "note": "User-supplied pronunciation reference. User confirmed other commercial permission and explicitly authorized use in Pikolumi. Resampled to 24 kHz mono MP3; no pitch, timing or phoneme edits.",
+      "synthesisText": "صِ",
+      "seed": null,
+      "targetSeconds": 0.7575,
+      "durationSeconds": 0.7575416666666667,
+      "extraction": "full user-provided clip; 44.1 kHz to 24 kHz mono MP3 at 48 kbps; no slicing or voice cloning",
+      "status": "user-authorized reference replacement"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "source": "ElevenLabs-generated clip supplied by user",
+  "originalSourceSha256": "ca28fbd26f6a9a04b41c97a031a7f6b943c59f5a0206417a4a94758b3edc6897",
+  "sourceFile": "source/syllable_37.mp3",
+  "commercialPermission": "Direct user reply: I have other commercial permission; use it",
+  "permissionRecordedAtUTC": "2026-10-13T11:21:43.599860+00:00",
+  "paidElevenLabsPlanClaimed": false,
+  "voiceCloned": false,
+  "sourceTerms": "https://help.elevenlabs.io/hc/en-us/articles/13313564601361-Can-I-publish-the-content-I-generate-on-the-platform",
+  "masterCommand": "ffmpeg -i SOURCE -ar 24000 -ac 1 -codec:a libmp3lame -b:a 48k TARGET",
+  "referencePronunciationEvidence": "User supplied this file as the pronunciation reference for صِ, then authorized use in the app."
+}

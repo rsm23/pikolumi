@@ -1,0 +1,15 @@
+{
+  "bannerLoaded": true,
+  "interstitialShown": true,
+  "dismissalCallback": true,
+  "frequencyApplied": true,
+  "soundRestoredMuted": true,
+  "libraryBannerRestored": true,
+  "testAdsOnly": true,
+  "arabicReferenceClipSha256": "62c636f483a3fe0f9a091a15cb8ed67f19c9774f6aa203117a8101ea25df90be",
+  "arabicReferenceNativeDurationMs": 816,
+  "referenceClipPlayback": false,
+  "catalogVersion": 3,
+  "store": "isolated memory; user progress and ad budget untouched",
+  "screenshots": []
+}

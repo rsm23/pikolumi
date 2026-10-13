@@ -17,7 +17,7 @@ from silma_tts.model import CFM, DiT
 from silma_tts.model.utils import get_tokenizer
 from vocos import Vocos
 
-from build_audio import ROOT, AR, VOCODER, fetch, digest, encode
+from build_audio import ROOT, AR, VOCODER, BASE, REFERENCE_TEXT, fetch, digest, encode
 from arabic_curriculum import bare
 
 
@@ -77,6 +77,7 @@ def main():
     parser.add_argument('--seed-round', default='ar-correction-v1-')
     parser.add_argument('--anchored', action='store_true')
     parser.add_argument('--reference-files', nargs='+')
+    parser.add_argument('--reference-voice', choices=['am_michael', 'bm_george'])
     parser.add_argument('--short-duration', type=float)
     parser.add_argument('--direct', action='store_true')
     parser.add_argument('--contextual-cv', action='store_true')
@@ -92,15 +93,30 @@ def main():
     original = folder / 'originals'
     output.mkdir(exist_ok=True)
     original.mkdir(exist_ok=True)
-    reference_files = args.reference_files or (['word_elephant.mp3', 'trace_word_8.mp3', 'counting.mp3'] if args.anchored else ['counting.mp3', 'welcome.mp3'])
     reference_parts, reference_records = [], []
-    for filename in reference_files:
-        path = ROOT / 'assets/audio/ar' / filename
-        data, rate = sf.read(path, dtype='float32')
-        assert rate == 24000 and data.ndim == 1
-        reference_parts.extend([data, np.zeros(2400, dtype=np.float32)])
-        reference_records.append({'file': filename, 'sha256': digest(path), 'text': manifest[filename],
-                                  'origin': 'existing AI-synthesized project audio; not a human reference'})
+    if args.reference_voice:
+        if args.reference_files:
+            raise ValueError('Choose a built-in voice or project reference files, not both')
+        from kokoro import KModel, KPipeline
+        model_path, model_config = fetch(BASE, 'kokoro-v1_0.pth'), fetch(BASE, 'config.json')
+        voice_path = fetch(BASE, f'voices/{args.reference_voice}.pt')
+        kokoro = KModel(repo_id=BASE[0], config=str(model_config), model=str(model_path)).eval()
+        pipeline = KPipeline(lang_code='b' if args.reference_voice.startswith('b') else 'a', repo_id=BASE[0], model=kokoro)
+        voice = torch.load(voice_path, map_location='cpu', weights_only=True)
+        reference_parts = [part.cpu().numpy() for _, _, part in pipeline(REFERENCE_TEXT, voice=voice, speed=1.)]
+        reference_records.append({'voice': args.reference_voice, 'model': BASE,
+                                  'modelSha256': digest(model_path), 'voiceSha256': digest(voice_path),
+                                  'text': REFERENCE_TEXT, 'origin': 'licensed built-in Kokoro synthetic voice; not the user-supplied pronunciation reference'})
+        del kokoro, pipeline, voice
+    else:
+        reference_files = args.reference_files or (['word_elephant.mp3', 'trace_word_8.mp3', 'counting.mp3'] if args.anchored else ['counting.mp3', 'welcome.mp3'])
+        for filename in reference_files:
+            path = ROOT / 'assets/audio/ar' / filename
+            data, rate = sf.read(path, dtype='float32')
+            assert rate == 24000 and data.ndim == 1
+            reference_parts.extend([data, np.zeros(2400, dtype=np.float32)])
+            reference_records.append({'file': filename, 'sha256': digest(path), 'text': manifest[filename],
+                                      'origin': 'existing AI-synthesized project audio; not a human reference'})
     reference = np.concatenate(reference_parts)
     reference_text = ' '.join(r['text'] for r in reference_records)
     config = yaml.safe_load(fetch(AR, 'config.yaml').read_text())

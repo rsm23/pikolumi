@@ -1,0 +1,15 @@
+{
+  "locale": "ar",
+  "round": "2026-10-13-round10",
+  "exportedAt": "2026-10-13T11:21:43.599860+00:00",
+  "source": "User identified the supplied clip as the correct صِ pronunciation reference and explicitly authorized its use with commercial permission. Master preserves voice and pronunciation.",
+  "recordings": [
+    {
+      "file": "syllable_37.mp3",
+      "text": "صِ",
+      "sha256": "62c636f483a3fe0f9a091a15cb8ed67f19c9774f6aa203117a8101ea25df90be",
+      "decision": "correct",
+      "notes": "Correct source reference supplied by the user; authorized for the app. Only resampled and encoded to the bundle format."
+    }
+  ]
+}
