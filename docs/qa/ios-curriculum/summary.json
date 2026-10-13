@@ -1,0 +1,116 @@
+{
+  "checkedAtUTC": "2026-10-13T16:16:15.715747+00:00",
+  "runs": [
+    {
+      "device": "iPhone 18 Pro iOS 27.0",
+      "report": "iphone/integration_response_data.json",
+      "completedCases": 320,
+      "uniqueActivityIDs": 64,
+      "screenshots": 32,
+      "logicalSize": [
+        402.0,
+        874.0
+      ],
+      "testBodyAndTeardownPassed": true,
+      "driverExitCode": 0,
+      "executedHarness": {
+        "harnessSha256": "be51d84af007eed938501ab04c31d12e734034b6fd8dfc397d232e8fe4d64888",
+        "startCase": 0,
+        "landscapeRequired": false
+      }
+    },
+    {
+      "device": "iPad Pro 13-inch (M5) iPadOS 27.0",
+      "report": "ipad-landscape/integration_response_data.json",
+      "completedCases": 320,
+      "uniqueActivityIDs": 64,
+      "screenshots": 32,
+      "logicalSize": [
+        1376.0,
+        1032.0
+      ],
+      "testBodyAndTeardownPassed": true,
+      "driverExitCode": 0,
+      "executedHarness": {
+        "harnessSha256": "b25a44616933aea847ce056c1814ebfd475da5b80abc6ddfec7b00e619280907",
+        "startCase": 0,
+        "landscapeRequired": true,
+        "orientationSetup": "Device Hub Controls Rotate Left; landscape hardware observed before launch"
+      }
+    }
+  ],
+  "totalExecutionCases": 640,
+  "distinctActivitySampleIDs": 64,
+  "locales": [
+    "en",
+    "fr",
+    "es",
+    "pt",
+    "ar"
+  ],
+  "sections": [
+    "coloring",
+    "drawing",
+    "tracing",
+    "letters",
+    "words",
+    "counting",
+    "math",
+    "shapes",
+    "sorting",
+    "memory",
+    "jigsaw",
+    "patterns",
+    "mazes",
+    "nature",
+    "everyday",
+    "music"
+  ],
+  "engines": [
+    "canvas",
+    "jigsaw",
+    "maze",
+    "memory",
+    "music",
+    "quiz",
+    "sequence",
+    "sort",
+    "trace"
+  ],
+  "caseOrderMatchesAndroidTabletAcceptance": true,
+  "database": "isolated temporary native SQLite, deleted during teardown; user app databases not accessed",
+  "persistenceScope": "Sibling isolation and artwork readback through a second SQLite connection; not a process-death or upgrade test",
+  "audioPlayback": false,
+  "adsInitializedOrRequested": false,
+  "hostAudioSettingsChanged": false,
+  "physicalIOSQA": false,
+  "iosAdDismissalQA": false,
+  "humanEditorialReviewEstablishedByThisRun": false,
+  "visualReview": [
+    "iphone/ar-tracing-band-0.png",
+    "iphone/en-tracing-band-0.png",
+    "iphone/en-drawing-band-0.png",
+    "ipad-landscape/ar-tracing-band-0.png",
+    "ipad-landscape/en-jigsaw-band-0.png"
+  ],
+  "captureLimit": "Some captures retain a thin navigation-transition edge; these are QA captures, not store listing assets. No Flutter exceptions or overflows were detected by the harness.",
+  "startupAttempt": {
+    "report": "ipad-landscape-startup-attempt.json",
+    "completedCases": 0,
+    "result": "Failed landscape startup assertion after iPadOS windowing rejected programmatic rotation; cleanup ran. Hardware rotation fixed the test setup before the complete retry."
+  },
+  "restoration": {
+    "normalMainBuilt": true,
+    "normalMainReinstalledBothSimulators": true,
+    "launchedAfterRestoration": false,
+    "uninstallOrDataClear": false,
+    "ipadHardwarePortraitRestored": true,
+    "deviceHubOriginalIPhoneSelectionRestored": true,
+    "xcodeBuildMCPOriginalDefaultsRestored": true
+  },
+  "physicalInventory": {
+    "connectedPhysicalIOS": 0,
+    "simulatedDevicesExcluded": true
+  },
+  "committedHarnessSha256": "b25a44616933aea847ce056c1814ebfd475da5b80abc6ddfec7b00e619280907"
+}

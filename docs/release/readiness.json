@@ -5,7 +5,7 @@
   "assetRightsVerified": true,
   "physicalAndroidQA": true,
   "physicalIOSQA": false,
-  "phoneTabletQA": false,
+  "phoneTabletQA": true,
   "privacyDeclarationsReviewed": false,
   "supportPagesPublished": true,
   "adDismissalVerified": false,
@@ -21,7 +21,7 @@
   "physicalAndroidSmoke": true,
   "freshAndroidOfflineQA": true,
   "androidPhoneTabletQA": true,
-  "iosPhoneTabletQA": false,
+  "iosPhoneTabletQA": true,
   "androidPrivacyDeclarationsReviewed": true,
   "iosPrivacyDeclarationsReviewed": false,
   "androidAdDismissalVerified": true,
@@ -44,5 +44,9 @@
   "androidPhysicalAdCallbackQA": true,
   "androidTabletCurriculumQA": true,
   "androidPhysicalCurriculumQA": true,
-  "iosNativeSDKPrivacyQA": true
+  "iosNativeSDKPrivacyQA": true,
+  "iosPhoneSimulatorCurriculumQA": true,
+  "iosTabletLandscapeCurriculumQA": true,
+  "iosPhoneTabletQAEvidence": "docs/qa/ios-curriculum/summary.json",
+  "iosPhoneTabletQAScope": "Native iPhone and landscape iPad simulators; physicalIOSQA remains a separate false gate"
 }

@@ -1,0 +1,12 @@
+{
+  "completedCases": 0,
+  "passed": false,
+  "reason": "iPadOS 27 windowing mode rejected programmatic orientation request; landscape assertion correctly failed before activity cases",
+  "observedLogicalSize": [
+    1032,
+    1376
+  ],
+  "nativeError": "UISceneErrorDomain 101",
+  "teardownExecuted": true,
+  "retry": "Hardware rotated through Device Hub Controls; retain landscape assertion and rerun"
+}

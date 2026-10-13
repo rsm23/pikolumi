@@ -1,5 +1,5 @@
 {
-  "checkedAtUTC": "2026-10-13T14:33:55.060125+00:00",
+  "checkedAtUTC": "2026-10-13T16:17:29.760572+00:00",
   "platform": "ios",
   "productionEnabled": false,
   "submitted": false,
@@ -18,7 +18,7 @@
     "Exact residual iOS identifiers and generic performance-linkage disclosure versus GMA 13.11.0 manifest",
     "Physical iPhone/iPad acceptance and ad dismissal QA"
   ],
-  "ascSession": "Existing App Store Connect tabs are at login; previous draft not freshly verified",
+  "ascSession": "Authenticated session restored by owner; release, privacy and pricing drafts freshly read. No website fields changed, build uploaded or review submitted.",
   "previousDraft": "docs/release/apple-privacy-draft.json",
   "newIOSArtifactBuilt": true,
   "latestArabicReplacementInNewIOSArtifact": true,
@@ -32,7 +32,7 @@
   ],
   "substantiveSupportReplyFound": false,
   "supportCaseId": "0-5962000041930",
-  "supportReplyFolder": "SPAM",
+  "supportReplyFolder": "INBOX (replacement acknowledgement); SPAM (original automation)",
   "followUpEvidence": "docs/release/google-admob-ios-followup-20261013.json",
   "newIOSArtifactTestAdsOnly": true,
   "packageAudit": "docs/release/ios-followup-package-audit.json",
@@ -42,5 +42,10 @@
   "supportMigrationEvidence": "docs/release/google-admob-case-00484140.json",
   "supportCaseAssociationExplicitlyConfirmed": false,
   "supportStatus": "New authenticated acknowledgement says a specialist is investigating; no substantive Kids/privacy answer",
-  "nativeSDKPrivacyQA": "docs/qa/ios-sdk-privacy/summary.json"
+  "nativeSDKPrivacyQA": "docs/qa/ios-sdk-privacy/summary.json",
+  "nativeCurriculumQA": "docs/qa/ios-curriculum/summary.json",
+  "appStoreDraftRecheck": "docs/release/apple-draft-rechecked-20261013.json",
+  "encryptionAssessment": "docs/release/IOS-ENCRYPTION-ASSESSMENT.md",
+  "connectedPhysicalIOS": 0,
+  "lastMailboxCheckedAtUTC": "2026-10-13T16:18:15.837884+00:00"
 }

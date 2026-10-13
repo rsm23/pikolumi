@@ -16,5 +16,9 @@
   "status": "acknowledged; specialist investigating",
   "responseAim": "within two business days; not a guaranteed deadline",
   "substantiveKidsOrPrivacyAnswer": false,
-  "additionalEmailSent": false
+  "additionalEmailSent": false,
+  "lastCheckedAtUTC": "2026-10-13T16:17:29.760572+00:00",
+  "lastSearch": "in:anywhere after:2026/10/13 (\"00484140\" OR \"0-5962000041930\" OR from:sellside-support-team@google.com OR from:admob-publisher-support@google.com)",
+  "newSubstantiveReplyFound": false,
+  "lastMailboxCheckedAtUTC": "2026-10-13T16:18:15.837884+00:00"
 }

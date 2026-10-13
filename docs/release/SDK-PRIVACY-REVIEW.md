@@ -1,5 +1,13 @@
 # SDK privacy review — 2026-10-13
 
+## Current continuation
+
+Case 00484140 still contains only the authenticated automated acknowledgement; the latest search included Spam and found no substantive Kids/privacy answer. No additional message was sent after the escalation already acknowledged today.
+
+App Store Connect sign-in is restored. Its saved release, privacy and free-pricing drafts were freshly read without changing/publishing answers: device identifiers remain unconfigured, performance remains unlinked in the draft, and Publish is disabled. The generic-manifest/public-disclosure questions remain mapped in `IOS-PRIVACY-RESOLUTION.md`; see `apple-draft-rechecked-20261013.json`.
+
+Native curriculum acceptance now passed 320 cases on iPhone and 320 on landscape iPad, all 16 sections and five languages, with isolated SQLite/sibling/artwork checks. No ads initialized/requested or audio played; this adds no new identifier, physical-device or dismissal evidence. Normal builds and temporary simulator state were restored. See `../qa/ios-curriculum/summary.json`.
+
 ## iOS support escalation and refreshed package
 
 Subsequent check: Google sent a new authenticated acknowledgement under **00484140** shortly after our reply. It appears to be the migrated support workflow, but the acknowledgement does not explicitly name the old case; both identifiers are retained. A specialist is investigating, with a two-business-day response aim. No substantive technical or Kids-practices clarification is supplied. See `google-admob-case-00484140.json`.

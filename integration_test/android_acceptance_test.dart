@@ -38,23 +38,10 @@ void main() {
     await app.initialize();
     await app.setSound(false);
     await app.setMotion(true);
+    const landscape = bool.fromEnvironment('PIKOLUMI_QA_LANDSCAPE');
     final ads = AdsService(store, app.audio);
     final container = ProviderContainer(
       overrides: [appProvider.overrideWith((ref) => app)],
-    );
-    await tester.pumpWidget(
-      UncontrolledProviderScope(
-        container: container,
-        child: PikolumiApp(ads: ads),
-      ),
-    );
-    await tester.pumpAndSettle();
-    if (Platform.isAndroid) {
-      await binding.convertFlutterSurfaceToImage();
-      await tester.pumpAndSettle();
-    }
-    final navigator = tester.state<NavigatorState>(
-      find.byType(Navigator).first,
     );
     addTearDown(() async {
       await SystemChrome.setPreferredOrientations(DeviceOrientation.values);
@@ -65,6 +52,27 @@ void main() {
       await store.close();
       await directory.delete(recursive: true);
     });
+    // Hardware rotation is controlled outside this harness; windowed iPadOS
+    // scenes can reject programmatic orientation requests.
+    await tester.pumpWidget(
+      UncontrolledProviderScope(
+        container: container,
+        child: PikolumiApp(ads: ads),
+      ),
+    );
+    await tester.pumpAndSettle();
+    if (landscape) {
+      final logicalSize =
+          tester.view.physicalSize / tester.view.devicePixelRatio;
+      expect(logicalSize.width, greaterThan(logicalSize.height));
+    }
+    if (Platform.isAndroid) {
+      await binding.convertFlutterSurfaceToImage();
+      await tester.pumpAndSettle();
+    }
+    final navigator = tester.state<NavigatorState>(
+      find.byType(Navigator).first,
+    );
     final completed = <Map<String, dynamic>>[];
     const startCase = int.fromEnvironment('PIKOLUMI_QA_START_CASE');
     var caseIndex = 0;
@@ -282,6 +290,12 @@ void main() {
       'audioPlayback': false,
       'adsRequestedInCurriculumRun': false,
       'humanEditorialApproval': false,
+      'platform': Platform.operatingSystem,
+      'landscapeRequired': landscape,
+      'logicalWidth':
+          tester.view.physicalSize.width / tester.view.devicePixelRatio,
+      'logicalHeight':
+          tester.view.physicalSize.height / tester.view.devicePixelRatio,
       'store': 'isolated temporary SQLite; user app databases not accessed',
     };
   }, timeout: const Timeout(Duration(minutes: 45)));

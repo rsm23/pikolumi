@@ -1,0 +1,36 @@
+{
+  "checkedAtUTC": "2026-10-13T16:17:29.760572+00:00",
+  "appId": "6821776826",
+  "authenticated": true,
+  "version": "1.0.0",
+  "status": "Prepare for Submission",
+  "buildUploadedOrSelected": false,
+  "submitted": false,
+  "automaticReleaseAfterApproval": true,
+  "releaseDraftFieldsIntact": true,
+  "englishSupportURL": "https://seifelmoulouk.com/pikolumi/en.html",
+  "privacyDraft": {
+    "dataTypes": 7,
+    "deviceIdentifierConfigured": false,
+    "performanceCurrentlyLinked": false,
+    "finalAnswersReviewed": false,
+    "publishButtonDisabled": true,
+    "englishPolicyURL": "https://seifelmoulouk.com/pikolumi/en.html"
+  },
+  "pricing": {
+    "baseTerritory": "USA",
+    "basePriceUSD": 0,
+    "currentSchedule": "AUTO_FREE",
+    "territoriesSelected": 175,
+    "publicDistribution": true,
+    "macOptIn": false,
+    "visionProOptIn": false,
+    "selectedTerritoriesAreNotPublicAvailability": true
+  },
+  "websiteFieldsChanged": false,
+  "proof": [
+    "store-proof/apple-privacy-rechecked-20261013.png",
+    "store-proof/apple-free-pricing-rechecked-20261013.png"
+  ],
+  "remainingVendorDecisions": "IOS-PRIVACY-RESOLUTION.md"
+}
