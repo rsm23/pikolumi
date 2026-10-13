@@ -1,0 +1,58 @@
+{
+  "verifiedAtUTC": "2026-10-13T03:40:27.767527+00:00",
+  "playAppId": "4975864234191950633",
+  "package": "com.seifelmoulouk.pikolumi",
+  "termsAccepted": true,
+  "termsURL": "https://web.iarcservices.com/terms",
+  "authorization": "User confirmed: Yes, accept IARC terms and complete the rating",
+  "category": "Game",
+  "contactEmail": "rahmani@seifelmoulouk.com",
+  "questionnaireSubmitted": true,
+  "status": "Completed",
+  "certificateId": null,
+  "certificateNote": "The completed console displays a dash for the certificate ID; no certificate identifier is claimed.",
+  "consoleSubmittedText": "October 13, 2026, 5:37 AM",
+  "answers": {
+    "violenceBloodGoryImages": false,
+    "fear": false,
+    "sexualitySuggestivenessDating": false,
+    "gambling": false,
+    "offensiveLanguage": false,
+    "controlledSubstances": false,
+    "crudeHumor": false,
+    "digitalPurchasesCashRewardsNFTs": false,
+    "nativeUserCommunication": false,
+    "preciseLocationSharedWithUsers": false,
+    "naziSymbolsPropaganda": false,
+    "antiNationalKoreanContent": false,
+    "terrorismAdvocacy": false,
+    "realisticCriminalTechniques": false
+  },
+  "nativeCommunicationRationale": "No native user communication or content exchange. Parent artwork export opens the external OS share sheet.",
+  "ratings": {
+    "Australia": "General",
+    "Brazil": "All ages",
+    "North America": "Everyone",
+    "South Korea": "All ages",
+    "Taiwan": "General Public",
+    "Saudi Arabia": "3",
+    "Europe": "PEGI 3",
+    "Germany": "USK: All ages",
+    "Rest of world": "Rated for 3+",
+    "Russia": "Rated for 3+"
+  },
+  "proof": "output/release-verification/play-iarc-completed.png",
+  "audienceDraft": {
+    "selectedBands": [
+      "5 and under",
+      "6-8",
+      "9-12"
+    ],
+    "saved": false,
+    "certificationChecked": false,
+    "blocker": "Step 2 requires certification of compliance with all applicable children's laws for the app, APIs, SDKs and ads. Exact SDK data handling and privacy declarations remain unverified; the certificate was not checked. Clicking Next confirms this declaration is required.",
+    "proof": "output/release-verification/play-child-certification-blocker.png"
+  },
+  "appReviewSubmitted": false,
+  "appPubliclyAvailable": false
+}

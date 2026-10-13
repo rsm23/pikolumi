@@ -1,5 +1,5 @@
 {
-  "verifiedAtUTC": "2026-10-13T01:36:15.966745+00:00",
+  "verifiedAtUTC": "2026-10-13T03:40:27.767527+00:00",
   "version": "1.0.0",
   "build": 1,
   "package": "com.seifelmoulouk.pikolumi",
@@ -123,9 +123,9 @@
         "financialFeatures": false,
         "healthFeatures": false
       },
-      "iarcTermsAccepted": false,
-      "iarcLegalConfirmation": "Requested separately at acceptance time under browser confirmation policy; no answer received yet",
-      "audienceDeclaration": "Pending IARC rating; under-13 choices disabled until rating exists",
+      "iarcTermsAccepted": true,
+      "iarcLegalConfirmation": "User confirmed: Yes, accept IARC terms and complete the rating",
+      "audienceDeclaration": "Child bands selected in an unsaved draft; required app/API/SDK/ad children-law compliance certification remains unchecked pending privacy evidence.",
       "dataSafetyDeclaration": "Not submitted; exact-build data review pending",
       "listingAssetsManifest": "docs/release/screenshots/google/manifest.json",
       "fiveLocalizedTextsAndFortyScreenshotsVerifiedAfterReload": true,
@@ -134,7 +134,11 @@
       "listingState": "Ready to send for review",
       "listingSavedToPublishingOverview": true,
       "aiAssistedVisualsDeclared": 42,
-      "proof": "output/release-verification/play-listing-ready.png"
+      "proof": "output/release-verification/play-listing-ready.png",
+      "iarcStatus": "Completed",
+      "contentRatingRecord": "docs/release/play-content-rating.json",
+      "audienceSaved": false,
+      "childComplianceCertificationVerified": false
     },
     "ios": {
       "storeId": "6821776826",
