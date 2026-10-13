@@ -1,0 +1,15 @@
+{
+  "nativeSDKVersion": "13.11.0",
+  "nativeChildTreatment": true,
+  "nativeMaximumRatingG": true,
+  "appPrivacySetupReturnedSuccessfully": true,
+  "publisherIdPersistedStateIndependentlyMeasured": false,
+  "testAdUnitsOnly": true,
+  "productionKidsGateRemainsFalse": true,
+  "nativeAdPresented": false,
+  "audioPlayback": false,
+  "store": "isolated memory; app profiles and artwork untouched",
+  "runtimeTrafficInspected": false,
+  "appleKidsAdExceptionVerified": false,
+  "screenshots": []
+}

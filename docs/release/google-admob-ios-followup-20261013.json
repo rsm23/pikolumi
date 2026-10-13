@@ -15,5 +15,7 @@
   "humanSupportEscalationRequested": true,
   "attachments": [],
   "requirementsResolved": false,
-  "mailURL": "https://mail.google.com/mail/u/?authuser=cool2309%40gmail.com#all/1a12e65c8ab920c0"
+  "mailURL": "https://mail.google.com/mail/u/?authuser=cool2309%40gmail.com#all/1a12e65c8ab920c0",
+  "acknowledgementEvidence": "docs/release/google-admob-case-00484140.json",
+  "apparentReplacementCaseId": "00484140"
 }

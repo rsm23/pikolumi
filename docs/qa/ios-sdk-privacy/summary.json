@@ -1,0 +1,48 @@
+{
+  "checkedAtUTC": "2026-10-13T14:33:55.060125+00:00",
+  "devices": [
+    "iPhone 18 Pro simulator iOS 27.0",
+    "iPad Pro 13-inch (M5) simulator iOS 27.0"
+  ],
+  "reports": {
+    "iphone": {
+      "nativeSDKVersion": "13.11.0",
+      "nativeChildTreatment": true,
+      "nativeMaximumRatingG": true,
+      "appPrivacySetupReturnedSuccessfully": true,
+      "publisherIdPersistedStateIndependentlyMeasured": false,
+      "testAdUnitsOnly": true,
+      "productionKidsGateRemainsFalse": true,
+      "nativeAdPresented": false,
+      "audioPlayback": false,
+      "store": "isolated memory; app profiles and artwork untouched",
+      "runtimeTrafficInspected": false,
+      "appleKidsAdExceptionVerified": false,
+      "screenshots": []
+    },
+    "ipad": {
+      "nativeSDKVersion": "13.11.0",
+      "nativeChildTreatment": true,
+      "nativeMaximumRatingG": true,
+      "appPrivacySetupReturnedSuccessfully": true,
+      "publisherIdPersistedStateIndependentlyMeasured": false,
+      "testAdUnitsOnly": true,
+      "productionKidsGateRemainsFalse": true,
+      "nativeAdPresented": false,
+      "audioPlayback": false,
+      "store": "isolated memory; app profiles and artwork untouched",
+      "runtimeTrafficInspected": false,
+      "appleKidsAdExceptionVerified": false,
+      "screenshots": []
+    }
+  },
+  "bodiesAndTeardownPassed": true,
+  "normalEntryPointRestoredOnBoth": true,
+  "normalAppLaunchedAfterRestore": false,
+  "appUninstalledOrDataCleared": false,
+  "hostVolumeChanged": false,
+  "xcodeBuildDefaultsRestored": true,
+  "connectedPhysicalIOSDevices": 0,
+  "testSourceSha256": "21820e37821bbd421ece180c961309c91dff5409dc32101d0430b9aa3e8980e2",
+  "scope": "Native SDK configuration and successful application privacy setup; no persisted publisher-ID getter, exact network inspection, Apple Kids certification or physical acceptance."
+}

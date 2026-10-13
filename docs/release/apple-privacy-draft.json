@@ -79,5 +79,14 @@
     "https://developers.google.com/admob/ios/privacy/data-disclosure",
     "https://developer.apple.com/app-store/app-privacy-details/"
   ],
-  "proof": "output/release-verification/apple-privacy-draft.png"
+  "proof": "output/release-verification/apple-privacy-draft.png",
+  "needsVendorReview": [
+    "device_identifiers: residual child-mode IDs, linkage, tracking and recipients",
+    "performance_data: exact manifest versus public disclosure linkage"
+  ],
+  "resolutionMatrix": "docs/release/IOS-PRIVACY-RESOLUTION.md",
+  "currentSupportCaseIds": [
+    "0-5962000041930",
+    "00484140"
+  ]
 }

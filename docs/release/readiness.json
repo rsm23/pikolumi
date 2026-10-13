@@ -43,5 +43,6 @@
   "playAdvertisingIdSaved": true,
   "androidPhysicalAdCallbackQA": true,
   "androidTabletCurriculumQA": true,
-  "androidPhysicalCurriculumQA": true
+  "androidPhysicalCurriculumQA": true,
+  "iosNativeSDKPrivacyQA": true
 }

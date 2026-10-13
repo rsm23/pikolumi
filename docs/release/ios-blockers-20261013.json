@@ -1,5 +1,5 @@
 {
-  "checkedAtUTC": "2026-10-13T14:20:53.159400+00:00",
+  "checkedAtUTC": "2026-10-13T14:33:55.060125+00:00",
   "platform": "ios",
   "productionEnabled": false,
   "submitted": false,
@@ -11,7 +11,7 @@
   "publisherMailbox": "cool2309@gmail.com",
   "supportReplyFound": true,
   "queries": [
-    "in:anywhere after:2026/10/11 (AdMob OR Pikolumi OR \"Google Mobile Ads\")"
+    "in:anywhere after:2026/10/11 (\"0-5962000041930\" OR \"00484140\" OR Pikolumi OR from:admob-publisher-support@google.com OR from:sellside-support-team@google.com)"
   ],
   "unresolved": [
     "Public human age-appropriate review of creatives before serving and restricted child-data practices for Apple Kids exception",
@@ -37,5 +37,10 @@
   "newIOSArtifactTestAdsOnly": true,
   "packageAudit": "docs/release/ios-followup-package-audit.json",
   "nativeSilentAudioQA": "docs/qa/ios-followup/summary.json",
-  "historicalSearchNote": "Earlier searches excluded Spam and missed Google automated response from October 12. Response contains no substantive Kids/privacy clarification."
+  "historicalSearchNote": "Earlier searches excluded Spam and missed Google automated response from October 12. Response contains no substantive Kids/privacy clarification.",
+  "supportPossibleReplacementCaseId": "00484140",
+  "supportMigrationEvidence": "docs/release/google-admob-case-00484140.json",
+  "supportCaseAssociationExplicitlyConfirmed": false,
+  "supportStatus": "New authenticated acknowledgement says a specialist is investigating; no substantive Kids/privacy answer",
+  "nativeSDKPrivacyQA": "docs/qa/ios-sdk-privacy/summary.json"
 }
