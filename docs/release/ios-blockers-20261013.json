@@ -1,5 +1,5 @@
 {
-  "checkedAtUTC": "2026-10-13T16:31:50.911742+00:00",
+  "checkedAtUTC": "2026-10-14T12:25:10.064410+00:00",
   "platform": "ios",
   "productionEnabled": false,
   "submitted": false,
@@ -14,11 +14,12 @@
     "in:anywhere after:2026/10/11 (\"0-5962000041930\" OR \"00484140\" OR Pikolumi OR from:admob-publisher-support@google.com OR from:sellside-support-team@google.com)"
   ],
   "unresolved": [
-    "Public human age-appropriate review of creatives before serving and restricted child-data practices for Apple Kids exception",
-    "Exact residual iOS identifiers and generic performance-linkage disclosure versus GMA 13.11.0 manifest",
+    "Public Kids policy expressly documenting human age-appropriate creative review for applicable AdMob demand",
+    "Exact residual iOS identifiers, recipients, linkage and tracking with child treatment and publisher first-party ID disabled",
+    "Supported parental-gate interception before banner/interstitial external navigation; notifications do not expose cancellation",
     "Physical iPhone/iPad acceptance and ad dismissal QA"
   ],
-  "ascSession": "Authenticated original Rahmani Chrome profile; all five saved Privacy Choices links verified with screenshots. Earlier apparent sign-out was a browser-profile mapping mistake, not established expiry of the original session.",
+  "ascSession": "Authenticated original Chrome profile; linked performance disclosure saved; identifier card remains unconfigured and privacy Publish disabled.",
   "previousDraft": "docs/release/apple-privacy-draft.json",
   "newIOSArtifactBuilt": true,
   "latestArabicReplacementInNewIOSArtifact": true,
@@ -30,7 +31,7 @@
     "https://developers.google.com/admob/ios/targeting",
     "https://support.google.com/admob/answer/3480906?hl=en"
   ],
-  "substantiveSupportReplyFound": false,
+  "substantiveSupportReplyFound": true,
   "supportCaseId": "0-5962000041930",
   "supportReplyFolder": "INBOX (replacement acknowledgement); SPAM (original automation)",
   "followUpEvidence": "docs/release/google-admob-ios-followup-20261013.json",
@@ -41,7 +42,7 @@
   "supportPossibleReplacementCaseId": "00484140",
   "supportMigrationEvidence": "docs/release/google-admob-case-00484140.json",
   "supportCaseAssociationExplicitlyConfirmed": false,
-  "supportStatus": "New authenticated acknowledgement says a specialist is investigating; no substantive Kids/privacy answer",
+  "supportStatus": "Birpal replied on October 14 with general protections/disclosure guidance and no built-in click gate. A specific implementation/policy/identifier follow-up is sent and verified.",
   "nativeSDKPrivacyQA": "docs/qa/ios-sdk-privacy/summary.json",
   "nativeCurriculumQA": "docs/qa/ios-curriculum/summary.json",
   "appStoreDraftRecheck": "docs/release/apple-draft-rechecked-20261013.json",
@@ -59,5 +60,8 @@
     "appleKidsAdExceptionVerified"
   ],
   "releasePreflightAttemptedBuildOrUpload": false,
-  "privacyChoicesVerifiedAllLocales": true
+  "privacyChoicesVerifiedAllLocales": true,
+  "latestSupportResponse": "docs/release/sellside-response-actions-20261014.json",
+  "performanceDraftLinked": true,
+  "performanceDraftReason": "Conservative disclosure follows the current iOS page expressly endorsed by Sellside; SDK manifest remains unmodified and its generic linkage difference is recorded."
 }

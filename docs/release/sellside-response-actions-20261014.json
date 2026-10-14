@@ -1,0 +1,45 @@
+{
+  "messageId": "1a13a54908c2b55c",
+  "threadId": "1a139ced69b63fa2",
+  "from": "sellside-support-team@google.com",
+  "date": "2026-10-14T12:12:59Z",
+  "author": "Birpal",
+  "authentication": {
+    "dkim": "pass",
+    "spf": "pass",
+    "dmarc": "pass"
+  },
+  "mailURL": "https://mail.google.com/mail/u/?authuser=cool2309%40gmail.com#all/1a13a54908c2b55c",
+  "case": "00484140",
+  "receivedIn": "INBOX",
+  "substantiveResponse": true,
+  "summary": {
+    "childSettings": "Recommends child-directed requests and maximum G content rating; the current app already implements the supported child age treatment equivalent.",
+    "android": "Recommends API 33+ and no AD_ID permission; unchanged signed Android bundle targets 36 with the permission absent. Its AAID explanation does not answer publisher first-party ID initialization timing.",
+    "disclosures": "Endorses current official platform data-disclosure pages, confirms collection of IP/interactions/diagnostics/identifiers and TLS. Does not give configuration-specific residual iOS identifiers or tracking answer.",
+    "kidsReview": "States no specific external certificate of human age review is published, points to Families controls and claims typical Apple acceptance. Does not supply a public policy explicitly documenting the required human review.",
+    "navigation": "Confirms no built-in parental click gate and recommends custom interception/UI layers. Provides no supported cancel/resume API or code."
+  },
+  "actions": {
+    "existingProtectionAndSignedAndroidArtifactVerified": true,
+    "performanceDataDraftChangedToLinked": true,
+    "trackingAnswerUnchangedAsFalsePerSDKManifest": true,
+    "privacyLabelPublished": false,
+    "identifierCardUnconfigured": true,
+    "noUnsupportedAdInterceptionImplemented": true,
+    "audienceOrAdFormatsChanged": false,
+    "productionGateOverridden": false,
+    "followUpSent": true,
+    "performanceLinkageVerifiedAfterReload": true
+  },
+  "followUp": {
+    "messageId": "1a13a5cfbc76c404",
+    "threadId": "1a139ced69b63fa2",
+    "to": "sellside-support-team@google.com",
+    "sentUTC": "2026-10-14T12:22:14Z",
+    "sentVerified": true,
+    "body": "SELLSIDE-IMPLEMENTATION-FOLLOWUP-20261014.md",
+    "uses": "Gmail plugin under the owner's current implementation/follow-up authorization; no attachments, credentials or child data sent"
+  },
+  "proof": "store-proof/performance-linked-20261014.png"
+}

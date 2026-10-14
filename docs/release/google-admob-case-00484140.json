@@ -13,12 +13,20 @@
     "spf": "pass",
     "dmarc": "pass"
   },
-  "status": "acknowledged; specialist investigating",
+  "status": "Human technical reply received; supported protections verified and performance-linkage draft corrected; parental-gate API, public human-review policy and residual iOS identifier questions escalated",
   "responseAim": "within two business days; not a guaranteed deadline",
-  "substantiveKidsOrPrivacyAnswer": false,
-  "additionalEmailSent": false,
-  "lastCheckedAtUTC": "2026-10-13T16:17:29.760572+00:00",
+  "substantiveKidsOrPrivacyAnswer": true,
+  "additionalEmailSent": true,
+  "lastCheckedAtUTC": "2026-10-14T12:25:10.064410+00:00",
   "lastSearch": "in:anywhere after:2026/10/13 (\"00484140\" OR \"0-5962000041930\" OR from:sellside-support-team@google.com OR from:admob-publisher-support@google.com)",
-  "newSubstantiveReplyFound": false,
-  "lastMailboxCheckedAtUTC": "2026-10-13T16:24:25.807258+00:00"
+  "newSubstantiveReplyFound": true,
+  "lastMailboxCheckedAtUTC": "2026-10-14T12:25:10.064410+00:00",
+  "latestReply": {
+    "messageId": "1a13a54908c2b55c",
+    "threadId": "1a139ced69b63fa2",
+    "author": "Birpal",
+    "receivedUTC": "2026-10-14T12:12:59Z"
+  },
+  "responseActions": "docs/release/sellside-response-actions-20261014.json",
+  "allIOSReleaseQuestionsResolved": false
 }

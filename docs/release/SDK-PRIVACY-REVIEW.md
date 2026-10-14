@@ -1,6 +1,12 @@
-# SDK privacy review — 2026-10-13
+# SDK privacy review — 2026-10-14
 
-## Current continuation
+## October 14 human support response
+
+Sellside Birpal's substantive reply endorses current official disclosure pages, confirms general data/TLS practices and recommends child/G plus API33+/no-AD_ID protections. These protections were already implemented; the signed API36/no-AD_ID artifact still matches its audited hash. Performance-data linkage was corrected in the App Store draft using the support-endorsed public guidance; SDK manifests and the no-tracking performance answer remain intact. Identifiers are still unconfigured, and the overall label is held.
+
+The reply's Android identifier examples do not establish exact child-mode iOS identifiers or tracking. It provides no public policy expressly documenting human creative review and no supported custom parental-click interception code. A follow-up with the documented notification-only API details was sent/verified in the same case. See `sellside-response-actions-20261014.json` and `SELLSIDE-IMPLEMENTATION-FOLLOWUP-20261014.md`. No unsupported interception or production-gate override occurred.
+
+## Historical October 13 continuation
 
 Case 00484140 still contains only the authenticated automated acknowledgement; the latest search included Spam and found no substantive Kids/privacy answer. No additional message was sent after the escalation already acknowledged today.
 

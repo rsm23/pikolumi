@@ -1,6 +1,14 @@
-# Pikolumi release status — 2026-10-13
+# Pikolumi release status — 2026-10-14
 
 **Android 1.0.0 (1) is submitted to Google Play production.** Publishing overview shows **Changes in review**, after automated quick checks completed. Managed publishing is Off: the approved release is configured for automatic publication. Approval and public availability are not established. iOS remains held and has not been submitted.
+
+## Sellside response applied — October 14
+
+A human reply from Birpal in case **00484140** was received at **14:12:59 Paris time**. The earlier acknowledgement-only status is superseded. Current child treatment/G rating are already implemented; the signed Android production bundle was rehashed and still matches the audited API 36/no-AD_ID artifact. Following the official iOS disclosure page expressly endorsed by support, the App Store performance-data draft now discloses linkage. The SDK manifests are unchanged, no label was published and the identifier card remains unconfigured. See `sellside-response-actions-20261014.json`.
+
+Sellside confirms no built-in parent gate for ad clicks but gives no supported cancel/resume implementation. Native/Flutter SDK review found only click/presentation notifications for these formats, without a veto/resume result. The reply does not provide a public policy expressly documenting human review of Kids creatives; it discusses certificates and typical acceptance, which do not establish the agreed Apple exception. A targeted implementation/public-policy/residual-iOS-ID follow-up was sent in the same case and verified in Sent at **14:22:14 Paris time**. No unsupported SDK interception, ad overlay, audience change or production override was implemented.
+
+A fresh inventory found zero connected physical iOS devices. Release preflight still holds at physical iOS, final privacy declarations, iOS dismissal and Apple Kids exception. No build/upload/submission occurred. The sections below preserve the earlier Android submission and iOS preparation evidence; their acknowledgement-only statements are historical.
 
 ## Latest verified result
 
