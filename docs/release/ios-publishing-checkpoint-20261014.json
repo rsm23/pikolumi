@@ -1,0 +1,45 @@
+{
+  "checkedAtUTC": "2026-10-14T12:57:58.052286+00:00",
+  "platform": "ios",
+  "appStoreID": "6821776826",
+  "bundleID": "com.seifelmoulouk.pikolumi",
+  "googleSupport": {
+    "case": "00484140",
+    "lastReceivedMessageID": "1a13a54908c2b55c",
+    "engineeringFollowUpSentMessageID": "1a13a5cfbc76c404",
+    "newReplyToEngineeringFollowUpFound": false,
+    "duplicateMessageSent": false
+  },
+  "physicalDeviceInventory": {
+    "checkedAtUTC": "2026-10-14T12:53:30.804560+00:00",
+    "connectedPhysicalIOS": 0,
+    "countsOnlyPhysicalAndConnected": true
+  },
+  "signedQAArtifact": {
+    "path": "output/release-verification/ios-followup/Pikolumi-1.0.0-CorrectedArabic-TestAds.ipa",
+    "sha256": "753aa9040936ab4dc40589b426f5c0fa202f9f74c02f451ac51bef4fa4974471",
+    "testAdsOnly": true,
+    "productionUploadEligible": false
+  },
+  "appleClarification": {
+    "status": "prepared_awaiting_message_authorization",
+    "sent": false,
+    "draft": "docs/release/APPLE-KIDS-CLARIFICATION-DRAFT.md",
+    "proof": "docs/release/store-proof/apple-kids-clarification-prepared.png",
+    "formURL": "https://developer.apple.com/contact/topic/SC1103/subtopic/30023/solution/CONTACT.EML.GEN/details",
+    "newRecipient": "Apple Developer / App Review Support"
+  },
+  "productionPreflight": {
+    "missing": [
+      "physicalIOSQA",
+      "iosPrivacyDeclarationsReviewed",
+      "iosAdDismissalVerified",
+      "appleKidsAdExceptionVerified"
+    ],
+    "attemptedBuildOrUpload": false
+  },
+  "uploaded": false,
+  "submitted": false,
+  "publiclyAvailable": false,
+  "audienceOrAdPlacementChanged": false
+}

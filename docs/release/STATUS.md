@@ -2,6 +2,12 @@
 
 **Android 1.0.0 (1) is submitted to Google Play production.** Publishing overview shows **Changes in review**, after automated quick checks completed. Managed publishing is Off: the approved release is configured for automatic publication. Approval and public availability are not established. iOS remains held and has not been submitted.
 
+## iOS publishing continuation — October 14
+
+The latest mailbox check still contains Birpal's substantive response and the verified engineering follow-up, with no later answer. The exact distribution-signed test-ad IPA was rehashed unchanged; it is not a production upload artifact. The fresh CoreDevice inventory again has zero connected physical iOS devices. The release preflight refuses a production build at the same four evidence gates, without attempting a build or upload. See `ios-publishing-checkpoint-20261014.json`.
+
+A focused Apple Kids-category clarification is prepared in the official App Review Support email form, covering public human creative-review evidence, ad external-navigation parental gates and compatible SDK data practices. It is **not sent** and awaits authorization to contact this new support recipient; publication remains authorized. The form is preserved for continuation. See `APPLE-KIDS-CLARIFICATION-DRAFT.md` and `store-proof/apple-kids-clarification-prepared.png`. No SDK, audience or ad-placement change was made.
+
 ## Sellside response applied — October 14
 
 A human reply from Birpal in case **00484140** was received at **14:12:59 Paris time**. The earlier acknowledgement-only status is superseded. Current child treatment/G rating are already implemented; the signed Android production bundle was rehashed and still matches the audited API 36/no-AD_ID artifact. Following the official iOS disclosure page expressly endorsed by support, the App Store performance-data draft now discloses linkage. The SDK manifests are unchanged, no label was published and the identifier card remains unconfigured. See `sellside-response-actions-20261014.json`.
@@ -30,7 +36,7 @@ A fresh CoreDevice inventory again found zero connected physical iOS devices. Th
 
 ## Current iOS blockers
 
-Apple Kids guideline 1.3's publicly documented human creative-review and restricted child-data practices are still unestablished. Exact residual identifier handling and the generic-performance linkage discrepancy versus the GMA 13.11.0 manifest remain unresolved. Physical iPhone/iPad QA is unavailable; simulator checks do not satisfy that agreed requirement. Release, privacy and free-pricing drafts were verified in the earlier authenticated session: 175 territories selected, no binary uploaded or review submitted. The later Privacy Choices URL update is now verified in all five locales; the original Chrome session is authenticated. Device identifiers remain unconfigured and final privacy answers await vendor clarification. See `apple-draft-rechecked-20261013.json` and the continuation above. Production iOS ads remain disabled, and neither audience nor ad requirements were changed. See `ios-blockers-20261013.json`.
+Apple Kids guideline 1.3's publicly documented human creative-review and restricted child-data practices are still unestablished. Exact residual identifier handling and the generic-performance linkage discrepancy versus the GMA 13.11.0 manifest remain unresolved; the saved performance draft now follows the public page by marking data linked. Physical iPhone/iPad QA is unavailable; simulator checks do not satisfy that agreed requirement. Release, privacy and free-pricing drafts were verified in the earlier authenticated session: 175 territories selected, no binary uploaded or review submitted. The later Privacy Choices URL update is now verified in all five locales; the original Chrome session is authenticated. Device identifiers remain unconfigured and final privacy answers await vendor clarification. See `apple-draft-rechecked-20261013.json` and the continuation above. Production iOS ads remain disabled, and neither audience nor ad requirements were changed. See `ios-blockers-20261013.json`.
 
 ## Native iOS curriculum acceptance
 
