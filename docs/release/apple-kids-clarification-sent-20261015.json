@@ -1,0 +1,22 @@
+{
+  "caseID": "102996845545",
+  "appStoreID": "6821776826",
+  "appName": "Pikolumi: Color & Learn",
+  "platform": "iOS",
+  "sent": true,
+  "verifiedAtUTC": "2026-10-14T23:13:07.526818+00:00",
+  "verifiedDateParis": "2026-10-15",
+  "authorizedBy": "Direct owner request: Send the prepared clarification to Apple",
+  "recipient": "Apple Developer / App Review Support",
+  "formURL": "https://developer.apple.com/contact/topic/SC1103/subtopic/30023/solution/CONTACT.EML.GEN/details",
+  "confirmationURL": "https://developer.apple.com/contact/topic/SC1103/subtopic/30023/solution/CONTACT.EML.GEN/submit",
+  "messageSource": "docs/release/APPLE-KIDS-CLARIFICATION-DRAFT.md",
+  "submittedBodySHA256": "daa6ac7b315582cec3c7f4d9b322ee34edb60e2ddced35a701b0c1ae18205beb",
+  "proof": "docs/release/store-proof/apple-kids-clarification-sent-20261015.png",
+  "confirmationText": "Merci de nous avoir contact\u00e9s. Votre num\u00e9ro de dossier pour cette conversation est le 102996845545.",
+  "firstAttempt": "Expired session redirected to authentication; no delivery established. Cancel returned an authenticated fresh blank form.",
+  "successfulRetry": "Exact prepared body restored and submitted; case confirmation observed.",
+  "attachmentsSent": false,
+  "signingCredentialsOrChildDataSent": false,
+  "publicationApprovalGranted": false
+}

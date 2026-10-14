@@ -28,5 +28,31 @@
     "receivedUTC": "2026-10-14T12:12:59Z"
   },
   "responseActions": "docs/release/sellside-response-actions-20261014.json",
-  "allIOSReleaseQuestionsResolved": false
+  "allIOSReleaseQuestionsResolved": false,
+  "latestStatusReply": {
+    "case": "00484140",
+    "messageID": "1a13a955e42451b1",
+    "threadID": "1a139ced69b63fa2",
+    "receivedUTC": "2026-10-14T13:23:48Z",
+    "receivedParis": "2026-10-14T15:23:48+02:00",
+    "checkedAtUTC": "2026-10-14T23:13:07.526818+00:00",
+    "from": "sellside-support-team@google.com",
+    "author": "Birpal",
+    "authentication": {
+      "dkim": "pass",
+      "spf": "pass",
+      "dmarc": "pass"
+    },
+    "mailURL": "https://mail.google.com/mail/u/?authuser=cool2309%40gmail.com#all/1a13a955e42451b1",
+    "responseToEngineeringFollowUp": true,
+    "substantiveTechnicalResolution": false,
+    "summary": "Partner solution team is investigating parental-gate implementation, public policy evidence and iOS identifiers. Detailed update promised by next business day.",
+    "expectedUpdateDateParis": "2026-10-15",
+    "expectationIsNotGuaranteedDeadline": true,
+    "publicHumanReviewPolicyProvided": false,
+    "supportedCancelResumeAPIProvided": false,
+    "exactChildModeIdentifiersProvided": false,
+    "newOutboundGoogleMessageSent": false
+  },
+  "latestCheckedAtUTC": "2026-10-14T23:13:07.526818+00:00"
 }

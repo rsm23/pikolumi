@@ -1,6 +1,14 @@
-# Pikolumi release status — 2026-10-14
+# Pikolumi release status — 2026-10-15
 
 **Android 1.0.0 (1) is submitted to Google Play production.** Publishing overview shows **Changes in review**, after automated quick checks completed. Managed publishing is Off: the approved release is configured for automatic publication. Approval and public availability are not established. iOS remains held and has not been submitted.
+
+## October 15 continuation: Apple case sent and Google investigation update
+
+The owner explicitly authorized sending the prepared Apple clarification. The first send encountered an expired authentication session; after cancelling that redirect, the exact prepared body was restored in the authenticated fresh form and successfully submitted. Apple confirms **case 102996845545**, with screenshot and message hash in `apple-kids-clarification-sent-20261015.json`. No attachments, signing credentials or child data were sent. This is a support request, not an app submission or Apple advertising approval.
+
+A new Google response to the engineering follow-up was found and read: Birpal's October 14 15:23:48 Paris email says the partner solution team is investigating the parental gate, policy evidence and iOS identifiers, with an update expected by the next business day (October 15). It supplies no cancel/resume API, public human creative-review policy or exact identifier answer. No duplicate follow-up was sent. See `google-case-00484140-status-20261015.json`.
+
+The authenticated App Store **Add for Review** check now lists only a missing selected build and final App Privacy. Content rights are saved and no longer listed as a blocker. A fresh device inventory still has zero connected physical iOS devices. Production preflight retains the four unresolved evidence gates; no production build/upload/review submission occurred. See `ios-publishing-continuation-20261015.json`. Earlier sections describing an unsent Apple request, no reply to the engineering follow-up or the locked Mac are historical and superseded by this continuation.
 
 ## Explicit Publish request — October 14
 

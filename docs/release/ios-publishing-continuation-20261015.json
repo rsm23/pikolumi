@@ -1,0 +1,29 @@
+{
+  "checkedAtUTC": "2026-10-14T23:13:07.526818+00:00",
+  "appStoreID": "6821776826",
+  "version": "1.0.0",
+  "appleCase": "102996845545",
+  "appleRequestSent": true,
+  "googleNewStatusReplyFound": true,
+  "googleTechnicalQuestionsResolved": false,
+  "storeSessionAuthenticated": true,
+  "contentRightsBlockerResolved": true,
+  "addForReviewAttempted": true,
+  "validationErrors": [
+    "Choose a build",
+    "Administrator must complete App Privacy"
+  ],
+  "validationProof": "docs/release/store-proof/apple-submission-validation-20261015.png",
+  "productionPreflightMissing": [
+    "physicalIOSQA",
+    "iosPrivacyDeclarationsReviewed",
+    "iosAdDismissalVerified",
+    "appleKidsAdExceptionVerified"
+  ],
+  "connectedPhysicalIOS": 0,
+  "productionBuildOrUploadAttempted": false,
+  "submittedForReview": false,
+  "published": false,
+  "audienceOrAdsChanged": false,
+  "signedQAArtifactTestAdsOnly": true
+}
