@@ -1,0 +1,41 @@
+{
+  "checkedAtUTC": "2026-10-14T13:20:34.622779+00:00",
+  "appStoreID": "6821776826",
+  "version": "1.0.0",
+  "publicationAuthorized": true,
+  "addForReviewAttempted": true,
+  "firstValidationErrors": [
+    "Choose a build",
+    "Configure content rights",
+    "Administrator must complete App Privacy"
+  ],
+  "contentRights": {
+    "saved": true,
+    "verifiedAfterReload": true,
+    "thirdPartyContentRightsDeclared": true,
+    "basis": [
+      "docs/release/ASSETS.md",
+      "docs/qa/arabic-corrections-round10/commercial-permission.json"
+    ],
+    "proof": "store-proof/apple-content-rights-20261014.png"
+  },
+  "firstSubmissionValidationProof": "store-proof/apple-submission-validation-20261014.png",
+  "secondValidationAttemptedAfterRightsFix": true,
+  "secondValidationResultVerified": false,
+  "secondValidationVerificationBlocker": "Browser timeout; fresh inventory reports Mac locked. No second submission success confirmed.",
+  "googleSupportCase": "00484140",
+  "newGoogleReplyFound": false,
+  "connectedPhysicalIOS": 0,
+  "productionPreflightMissing": [
+    "physicalIOSQA",
+    "iosPrivacyDeclarationsReviewed",
+    "iosAdDismissalVerified",
+    "appleKidsAdExceptionVerified"
+  ],
+  "productionBuildAttempted": false,
+  "uploaded": false,
+  "submitted": false,
+  "published": false,
+  "appleClarificationSent": false,
+  "appleClarificationStatus": "Prepared; explicit authorization to send to this new recipient remains pending."
+}

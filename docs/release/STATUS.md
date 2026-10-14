@@ -2,6 +2,12 @@
 
 **Android 1.0.0 (1) is submitted to Google Play production.** Publishing overview shows **Changes in review**, after automated quick checks completed. Managed publishing is Off: the approved release is configured for automatic publication. Approval and public availability are not established. iOS remains held and has not been submitted.
 
+## Explicit Publish request — October 14
+
+App Store Connect's **Add for Review** validation was attempted. Apple listed a missing selected build, content-rights information and final App Privacy. The content-rights declaration is now saved as having the necessary rights to third-party content, based on bundled source licenses and the owner's commercial permission for the supplied clip; persistence was verified after reload. A repeat validation was initiated, but browser recovery timed out and the fresh surface inventory reported the Mac locked, so no second validation success or review submission is inferred. See `apple-publish-attempt-20261014.json` and its two screenshots.
+
+The production preflight still holds at the same four evidence gates, and no connected physical iOS device is available. The existing signed IPA remains a test-ad build. No later answer to the Google engineering follow-up was found. Publication remains authorized; iOS is not uploaded, submitted or public. No gate was marked passed without evidence.
+
 ## iOS publishing continuation — October 14
 
 The latest mailbox check still contains Birpal's substantive response and the verified engineering follow-up, with no later answer. The exact distribution-signed test-ad IPA was rehashed unchanged; it is not a production upload artifact. The fresh CoreDevice inventory again has zero connected physical iOS devices. The release preflight refuses a production build at the same four evidence gates, without attempting a build or upload. See `ios-publishing-checkpoint-20261014.json`.

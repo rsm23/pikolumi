@@ -48,5 +48,7 @@
   "iosPhoneSimulatorCurriculumQA": true,
   "iosTabletLandscapeCurriculumQA": true,
   "iosPhoneTabletQAEvidence": "docs/qa/ios-curriculum/summary.json",
-  "iosPhoneTabletQAScope": "Native iPhone and landscape iPad simulators; physicalIOSQA remains a separate false gate"
+  "iosPhoneTabletQAScope": "Native iPhone and landscape iPad simulators; physicalIOSQA remains a separate false gate",
+  "appleContentRightsSaved": true,
+  "appleContentRightsEvidence": "docs/release/apple-publish-attempt-20261014.json"
 }
