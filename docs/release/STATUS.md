@@ -10,7 +10,7 @@ The corrected bundle is accepted by Play, the old bundle is not included, all fi
 
 Sellside case **00484140** now has a substantive October 15 11:58 Paris technical answer. Standard AdMob banners/interstitials cannot pause/cancel external navigation for a mandatory parent gate; intercepting overlays and simulated clicks are not supported. Support supplies no public guarantee of human age review of Kids creatives. Child mode with publisher first-party ID disabled does not collect/transmit IDFA, but IP, diagnostics and SDK operation signals remain; the exact residual identifier inventory is not enumerated. Apple makes the final acceptance decision. See `sellside-technical-response-20261015.json`.
 
-Apple case **102996845545** has only an acknowledgement so far. An owner decision on a free ad-free iOS alternative is pending; no ads, audience or purchase requirements were changed. The four iOS evidence gates remain false. The historical sections below describe earlier states and are superseded by this section.
+Apple case **102996845545** has only an acknowledgement so far. The owner chose **Keep iOS ads; wait for Apple**. An ad-free iOS release is not authorized; keep the current monetization and hold submission pending Apple’s guidance. No ads, audience or purchase requirements were changed. The four iOS evidence gates remain false. The historical sections below describe earlier states and are superseded by this section.
 
 ## October 15 continuation: Apple case sent and Google investigation update
 

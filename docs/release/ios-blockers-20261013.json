@@ -137,5 +137,14 @@
     "appleClarificationCase": "102996845545",
     "mailURL": "https://mail.google.com/mail/u/?authuser=cool2309%40gmail.com#all/1a13eff5ddaf7e47"
   },
-  "adFreeIOSDecision": "Requested from owner; unanswered. No monetization change implemented."
+  "adFreeIOSDecision": "Owner chose: Keep iOS ads; wait for Apple. Do not prepare an ad-free iOS release.",
+  "ownerMonetizationDecision": {
+    "recordedAtUTC": "2026-10-15T17:26:15.633539+00:00",
+    "response": "Keep iOS ads; wait for Apple",
+    "iosAdsRetained": true,
+    "adFreeIOSAuthorized": false,
+    "purchasesAuthorized": false,
+    "appleCaseID": "102996845545",
+    "iosSubmissionHeld": true
+  }
 }

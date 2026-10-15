@@ -44,5 +44,10 @@
     "androidMonetizationChanged": false
   },
   "appleClarificationCase": "102996845545",
-  "mailURL": "https://mail.google.com/mail/u/?authuser=cool2309%40gmail.com#all/1a13eff5ddaf7e47"
+  "mailURL": "https://mail.google.com/mail/u/?authuser=cool2309%40gmail.com#all/1a13eff5ddaf7e47",
+  "ownerDecision": {
+    "response": "Keep iOS ads; wait for Apple",
+    "adFreeIOSAuthorized": false,
+    "iosProductionHoldRetained": true
+  }
 }
