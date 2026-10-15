@@ -1,6 +1,8 @@
 # Pikolumi release status — 2026-10-15
 
-**Android 1.0.1 (2) has been resubmitted to Google Play production.** Publishing overview shows **Changes in review**, with automated quick checks still running. Version 1.0.0 (1) was rejected for a startup crash and is excluded from the replacement release. Managed publishing is Off; approval and public availability are not established. iOS is still held and has not been submitted.
+**Android 1.0.1 (2) has been resubmitted to Google Play production.** Publishing overview shows **Changes in review**, with automated quick checks finished and the console stating “Your changes are now in review.” Version 1.0.0 (1) was rejected for a startup crash and is excluded from the replacement release. Managed publishing is Off; approval and public availability are not established. iOS is still held and has not been submitted.
+
+Latest check at **19:29 Paris / 17:29 UTC**: Apple has no substantive response to case 102996845545; only its acknowledgement is present. Refreshed Play Console still lists 1.0.1 (2) in review, with no approval or public release. See `review-status-check-20261015-1729.json`.
 
 ## October 15: Android crash fixed and Sellside technical answer received
 

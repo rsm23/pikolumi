@@ -1,0 +1,22 @@
+{
+  "checkedAtUTC": "2026-10-15T17:29:04.265874+00:00",
+  "apple": {
+    "caseID": "102996845545",
+    "substantiveReplyFound": false,
+    "latestMessageID": "1a13cb10906d2301",
+    "latestMessageType": "Support acknowledgement",
+    "searchIncludesSpamAndTrash": true,
+    "iosHoldRetained": true,
+    "adsRetainedPerOwnerDecision": true
+  },
+  "android": {
+    "version": "1.0.1 (2)",
+    "consoleState": "Changes in review",
+    "consoleText": "Your changes are now in review. We may find additional issues when reviewing your app.",
+    "quickChecksRunning": false,
+    "approval": "pending",
+    "publicAvailability": false,
+    "proof": "docs/release/google-play/review-status-20261015-1729.png",
+    "consoleURL": "https://play.google.com/console/u/0/developers/7865573294164372045/app/4975864234191950633/publishing"
+  }
+}
