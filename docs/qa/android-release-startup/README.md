@@ -6,7 +6,7 @@ The regression went red on the submitted optimized application. The fixed AAB is
 
 ## Evidence
 
-- `submitted-red.json` and `submitted-crash.log`: actual production startup failure.
+- `submitted-red.json` and `submitted-crash.txt`: actual production startup failure.
 - `fixed-4k-three-launches.json`: three 15-second cold launches, no fatal exception, live PID and resumed activity.
 - `fixed-4k-avd-verified.json`: explicit AVD and actual 4096-byte page-size verification.
 - `fixed-16k-three-launches.json`: three 30-second cold launches on verified `pace-ledger-16k`, actual 16384-byte pages, no fatal exception, live PID and resumed activity. `fixed-16k-screen.png` shows the rendered library.
