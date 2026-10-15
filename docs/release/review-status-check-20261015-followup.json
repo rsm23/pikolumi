@@ -1,0 +1,25 @@
+{
+  "checkedAtUTC": "2026-10-15T18:31:16.105120+00:00",
+  "apple": {
+    "originalCaseID": "102996845545",
+    "followUpCaseID": "102997740106",
+    "followUpSent": true,
+    "substantiveReplyFound": false,
+    "searchIncludesSpamAndTrash": true,
+    "onlyEmailMessageID": "1a13cb10906d2301",
+    "followUpEvidence": "docs/release/apple-kids-followup-sent-20261015.json",
+    "iosHoldRetained": true,
+    "adsRetainedPerOwnerDecision": true
+  },
+  "android": {
+    "version": "1.0.1 (2)",
+    "consoleState": "Changes in review",
+    "consoleText": "Your changes are now in review. We may find additional issues when reviewing your app.",
+    "approval": "pending",
+    "publicAvailability": false,
+    "managedPublishing": "Off",
+    "proof": "docs/release/google-play/review-status-20261015-followup.png",
+    "domProof": "docs/release/google-play/review-status-20261015-followup-dom.txt",
+    "consoleURL": "https://play.google.com/console/u/0/developers/7865573294164372045/app/4975864234191950633/publishing"
+  }
+}

@@ -1,0 +1,250 @@
+- text:  
+- navigation "Global":
+  - list:
+    - link "Apple Developer":
+      - /url: /
+    - list:
+      - link "Get Started":
+        - /url: /get-started/
+        - generic: Get Started
+      - button "Get Started menu":
+    - list:
+      - link "Platforms":
+        - /url: /platforms/
+        - generic: Platforms
+      - button "Platforms menu":
+    - list:
+      - link "Technologies":
+        - /url: /technologies/
+        - generic: Technologies
+      - button "Technologies menu":
+    - list:
+      - link "Community":
+        - /url: /community/
+        - generic: Community
+      - button "Community menu":
+    - list:
+      - link "Documentation":
+        - /url: /documentation/
+        - generic: Documentation
+      - button "Documentation menu":
+    - list:
+      - link "Downloads":
+        - /url: /download/
+        - generic: Downloads
+      - button "Downloads menu":
+    - list:
+      - link "Support":
+        - /url: /support/
+        - generic: Support
+      - button "Support menu":
+    - button "Search":
+    - link "Account":
+      - /url: /account/
+- navigation:
+  - heading "Contactez-nous" [level=2]:
+    - link "Contactez-nous":
+      - /url: /contact/
+      - generic: Contactez-nous
+- banner:
+  - strong:
+    - generic: 􀁢
+    - text: Vérification des apps
+  - heading "Autres questions liées à la vérification des apps" [level=3]
+- main:
+  - generic: 􀁣
+  - heading "Merci de nous avoir contactés." [level=2]
+  - paragraph:
+    - text: Votre numéro de dossier pour cette conversation est le
+    - strong: "102997740106"
+    - text: .
+  - paragraph: Nous lirons votre message et vous répondrons dans les meilleurs délais.
+- contentinfo "Pied de page Developer":
+  - heading "Pied de page Developer" [level=2]
+  - navigation "Breadcrumbs":
+    - link "Apple":
+      - /url: https://www.apple.com/
+      - generic: 
+      - generic: Apple
+    - list:
+      - link "Developer":
+        - /url: /
+      - listitem: Contactez-nous
+  - navigation "Apple Developer Directory":
+    - heading "Platforms" [level=3]
+    - list:
+      - link "iOS":
+        - /url: /ios/
+      - link "iPadOS":
+        - /url: /ipados/
+      - link "macOS":
+        - /url: /macos/
+      - link "tvOS":
+        - /url: /tvos/
+      - link "visionOS":
+        - /url: /visionos/
+      - link "watchOS":
+        - /url: /watchos/
+      - link "App Store":
+        - /url: /app-store/
+    - heading "Tools" [level=3]
+    - list:
+      - link "Swift":
+        - /url: /swift/
+      - link "SwiftUI":
+        - /url: /swiftui/
+      - link "Swift Playground":
+        - /url: /swift-playground/
+      - link "TestFlight":
+        - /url: /testflight/
+      - link "Xcode":
+        - /url: /xcode/
+      - link "Xcode Cloud":
+        - /url: /xcode-cloud/
+      - link "Icon Composer":
+        - /url: /icon-composer/
+      - link "SF Symbols":
+        - /url: /sf-symbols/
+    - heading "Technologies" [level=3]
+    - list:
+      - link "Accessibility":
+        - /url: /documentation/accessibility/
+      - link "Accessories":
+        - /url: /accessories/
+      - link "AI & Machine Learning":
+        - /url: /machine-learning/
+      - link "Apple In-App Purchase":
+        - /url: /in-app-purchase/
+      - link "Apple Intelligence":
+        - /url: /apple-intelligence/
+      - link "Audio & Video":
+        - /url: /audio/
+      - link "Augmented Reality":
+        - /url: /augmented-reality/
+      - link "Business":
+        - /url: /business/
+      - link "Design":
+        - /url: /design/
+      - link "Distribution":
+        - /url: /distribute/
+      - link "Education":
+        - /url: /education/
+      - link "Games":
+        - /url: /games/
+      - link "Health & Fitness":
+        - /url: /health-fitness/
+      - link "Localization":
+        - /url: /localization/
+      - link "Maps & Location":
+        - /url: /maps/
+      - link "Security":
+        - /url: /security/
+      - link "Safari & Web":
+        - /url: /safari/
+    - heading "Resources" [level=3]
+    - list:
+      - link "Documentation":
+        - /url: /documentation/
+      - link "Downloads":
+        - /url: /download/
+      - link "Sample Code":
+        - /url: /documentation/samplecode/
+      - link "Videos":
+        - /url: /videos/
+      - link "Documentation Archive":
+        - /url: /library/archive/navigation/
+    - heading "Support" [level=3]
+    - list:
+      - link "Help Guides & Articles":
+        - /url: /help/
+      - link "Contact Us":
+        - /url: /contact/
+      - link "Forums":
+        - /url: /forums/
+      - link "Feedback & Bug Reporting":
+        - /url: /bug-reporting/
+      - link "System Status":
+        - /url: /system-status/
+    - heading "Account" [level=3]
+    - list:
+      - link "Apple Developer":
+        - /url: /account/
+      - link "App Store Connect":
+        - /url: https://appstoreconnect.apple.com/
+      - link "Certificates, IDs, & Profiles":
+        - /url: /account/ios/certificate/
+      - link "Feedback Assistant":
+        - /url: https://feedbackassistant.apple.com/
+    - heading "Programs" [level=3]
+    - list:
+      - link "Apple Developer Program":
+        - /url: /programs/
+      - link "Apple Developer Enterprise Program":
+        - /url: /programs/enterprise/
+      - link "App Store Small Business Program":
+        - /url: /app-store/small-business-program/
+      - link "MFi Program":
+        - /url: https://mfi.apple.com/
+      - link "Mini Apps Partner Program":
+        - /url: /programs/mini-apps-partner/
+      - link "News Partner Program":
+        - /url: /programs/news-partner/
+      - link "Video Partner Program":
+        - /url: /programs/video-partner/
+      - link "Security Bounty Program":
+        - /url: /security-bounty/
+      - link "Security Research Device Program":
+        - /url: /programs/security-research-device/
+    - heading "Events" [level=3]
+    - list:
+      - link "Meet with Apple":
+        - /url: /events/
+      - link "Apple Developer Centers":
+        - /url: /events/developer-centers/
+      - link "App Store Awards":
+        - /url: /app-store/app-store-awards/
+      - link "Apple Design Awards":
+        - /url: /design/awards/
+      - link "Apple Developer Academies":
+        - /url: /academies/
+      - link "WWDC":
+        - /url: /wwdc/
+  - text: Read the
+  - link "latest news":
+    - /url: /news/
+  - text: .
+  - text: Get the
+  - link "Apple Developer app":
+    - /url: https://apps.apple.com/us/app/apple-developer/id640199958
+  - text: .
+  - text: Follow us on
+  - link "bilibili":
+    - /url: https://space.bilibili.com/429911174
+  - text: ","
+  - link "LinkedIn":
+    - /url: https://www.linkedin.com/showcase/appledeveloper/
+  - text: ","
+  - link "WeChat":
+    - /url: https://mp.weixin.qq.com/s/slhQ1RBYUpJ71gwEUlwSTg
+  - text: ", and"
+  - link "YouTube":
+    - /url: https://www.youtube.com/@AppleDeveloper
+  - text: .
+  - radiogroup "Select a color scheme preference":
+    - radio "Light"
+    - generic: Light
+    - radio "Dark"
+    - generic: Dark
+    - radio "Auto" [checked]
+    - generic: Auto
+  - text: 
+  - text: Copyright © 2026
+  - link "Apple Inc.":
+    - /url: https://www.apple.com
+  - text: All rights reserved.
+  - link "Terms of Use":
+    - /url: https://www.apple.com/legal/internet-services/terms/site.html
+  - link "Privacy Policy":
+    - /url: https://www.apple.com/legal/privacy/
+  - link "Agreements and Guidelines":
+    - /url: /support/terms/
