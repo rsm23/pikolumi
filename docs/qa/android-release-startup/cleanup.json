@@ -1,0 +1,21 @@
+{
+  "emulators": [
+    {
+      "serial": "emulator-5580",
+      "avd": "pace-ledger-api36",
+      "stopped": true,
+      "readOnlyAVD": true,
+      "snapshotSaved": false
+    },
+    {
+      "serial": "emulator-5590",
+      "avd": "pace-ledger-16k",
+      "stopped": true,
+      "readOnlyAVD": true,
+      "snapshotSaved": false
+    }
+  ],
+  "otherEmulatorsStopped": false,
+  "physicalDevicesChanged": false,
+  "hostAudioSettingsChanged": false
+}

@@ -1,0 +1,48 @@
+{
+  "case": "00484140",
+  "messageID": "1a13eff5ddaf7e47",
+  "receivedUTC": "2026-10-15T09:58:00Z",
+  "author": "Birpal",
+  "authentication": {
+    "dkim": "pass",
+    "spf": "pass",
+    "dmarc": "pass"
+  },
+  "technicalResponse": true,
+  "adNavigation": {
+    "preNavigationCancelResumeAPIAvailable": false,
+    "notificationCallbacksOccurAfterNavigation": true,
+    "touchInterceptingOverlayPermitted": false,
+    "simulatedClickAfterGatePermitted": false,
+    "standardFormatsCannotMeetMandatoryPreNavigationGate": true
+  },
+  "humanCreativeReview": {
+    "publicPolicyOrGuaranteeProvided": false,
+    "automatedFamiliesControlsAndPublisherReviewOffered": true
+  },
+  "childModeData": {
+    "idfaCollectedOrTransmitted": false,
+    "publisherFirstPartyIDDisabled": true,
+    "remainingSignals": [
+      "IP address",
+      "crash and performance metrics",
+      "SDK operation signals"
+    ],
+    "purposesStated": [
+      "contextual delivery",
+      "frequency capping",
+      "fraud detection"
+    ],
+    "exactResidualIdentifierInventoryStillUnspecified": true,
+    "appleMakesFinalTrackingDetermination": true
+  },
+  "actions": {
+    "unsupportedInterceptionNotAdded": true,
+    "iosProductionHoldRetained": true,
+    "adFreeIOSDecisionRequested": true,
+    "purchasesAdded": false,
+    "androidMonetizationChanged": false
+  },
+  "appleClarificationCase": "102996845545",
+  "mailURL": "https://mail.google.com/mail/u/?authuser=cool2309%40gmail.com#all/1a13eff5ddaf7e47"
+}

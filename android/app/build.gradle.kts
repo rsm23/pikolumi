@@ -56,7 +56,10 @@ android {
                 versionNameSuffix = "-qa"
             }
         }
-        release { signingConfig = signingConfigs.getByName("release") }
+        release {
+            signingConfig = signingConfigs.getByName("release")
+            proguardFiles("proguard-rules.pro")
+        }
     }
 
 }

@@ -1,0 +1,21 @@
+{
+  "serial": "emulator-5580",
+  "avd": "pace-ledger-api36",
+  "sdk": "36",
+  "pageSize": "4096",
+  "secondsPerLaunch": 15,
+  "appDataCleared": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pid": "4111",
+      "resumed": [
+        "topResumedActivity=ActivityRecord{16390868 u0 com.seifelmoulouk.pikolumi/.MainActivity t16}",
+        "ResumedActivity: ActivityRecord{16390868 u0 com.seifelmoulouk.pikolumi/.MainActivity t16}"
+      ],
+      "fatal": false,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

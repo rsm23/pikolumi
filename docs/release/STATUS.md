@@ -1,6 +1,16 @@
 # Pikolumi release status — 2026-10-15
 
-**Android 1.0.0 (1) is submitted to Google Play production.** Publishing overview shows **Changes in review**, after automated quick checks completed. Managed publishing is Off: the approved release is configured for automatic publication. Approval and public availability are not established. iOS remains held and has not been submitted.
+**Android 1.0.1 (2) has been resubmitted to Google Play production.** Publishing overview shows **Changes in review**, with automated quick checks still running. Version 1.0.0 (1) was rejected for a startup crash and is excluded from the replacement release. Managed publishing is Off; approval and public availability are not established. iOS is still held and has not been submitted.
+
+## October 15: Android crash fixed and Sellside technical answer received
+
+The exact submitted optimized Android bundle reproduced a pre-Flutter crash in AndroidX Startup: WorkManager could not create its Room database. R8 had removed the reflected `WorkDatabase_Impl` no-argument constructor. A narrow keep rule preserves Room subclass constructors without disabling optimization. The corrected upload-signed AAB passed bundle validation and signature verification, retains all 687 source assets and the same AdMob setup, and passed three repeated cold starts on actual 4 KB and 16 KB API 36 systems. The 16 KB run checks both AVD identity and actual page size; an earlier port-colliding 4 KB run is excluded. See `../qa/android-release-startup/README.md` and `android-production-1.0.1-package-audit.json`.
+
+The corrected bundle is accepted by Play, the old bundle is not included, all five localized fix notes are saved, and the full rollout plus the 14 retained listing/declaration changes were resubmitted. No supported devices were lost. This is a resubmission pending Google checks and review, not approval or a live release. See `google-play/resubmission-20261015.json` and its screenshot.
+
+Sellside case **00484140** now has a substantive October 15 11:58 Paris technical answer. Standard AdMob banners/interstitials cannot pause/cancel external navigation for a mandatory parent gate; intercepting overlays and simulated clicks are not supported. Support supplies no public guarantee of human age review of Kids creatives. Child mode with publisher first-party ID disabled does not collect/transmit IDFA, but IP, diagnostics and SDK operation signals remain; the exact residual identifier inventory is not enumerated. Apple makes the final acceptance decision. See `sellside-technical-response-20261015.json`.
+
+Apple case **102996845545** has only an acknowledgement so far. An owner decision on a free ad-free iOS alternative is pending; no ads, audience or purchase requirements were changed. The four iOS evidence gates remain false. The historical sections below describe earlier states and are superseded by this section.
 
 ## October 15 continuation: Apple case sent and Google investigation update
 

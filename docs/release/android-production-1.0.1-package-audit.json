@@ -1,0 +1,29 @@
+{
+  "artifact": "output/release/android/Pikolumi-1.0.1-2-Production.aab",
+  "sha256": "e267da3c9d04977fcf678703990322a32a6f72d78e0c2854ee60d1db74a1b873",
+  "bytes": 89406601,
+  "package": "com.seifelmoulouk.pikolumi",
+  "versionName": "1.0.1",
+  "versionCode": 2,
+  "minSDK": "24",
+  "targetSDK": "36",
+  "debuggable": false,
+  "backupAllowed": false,
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.WAKE_LOCK",
+    "com.seifelmoulouk.pikolumi.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "bundledAssetsIdenticalToSubmitted": 687,
+  "uploadCertificateMatchesSubmitted": true,
+  "uploadCertificateSHA256": "52e5d5ac066139747b91bae9d0ab25d6f2503bd918624ab03dbe94531e1dc134",
+  "androidProductionAdUnitsPresent": true,
+  "adsSDKProperties": "version=25.5.0\nclient=play-services-ads\nplay-services-ads_client=25.5.0\n",
+  "r8WorkDatabaseConstructorRetained": true,
+  "sourceChange": "RoomDatabase subclass no-arg constructor keep rule; app/content logic unchanged",
+  "bundletoolValidateExitCode": 0,
+  "jarsignerVerified": true,
+  "jarsignerWarnings": "Self-signed upload certificate, no timestamp, ZIP manifest order/JarInputStream notices; JarFile signature verified; Google Play accepted artifact processing."
+}

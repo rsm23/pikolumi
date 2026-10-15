@@ -1,5 +1,5 @@
 {
-  "checkedAtUTC": "2026-10-14T23:13:07.526818+00:00",
+  "checkedAtUTC": "2026-10-15T17:04:53.861115+00:00",
   "platform": "ios",
   "productionEnabled": false,
   "submitted": false,
@@ -14,9 +14,9 @@
     "in:anywhere after:2026/10/11 (\"0-5962000041930\" OR \"00484140\" OR Pikolumi OR from:admob-publisher-support@google.com OR from:sellside-support-team@google.com)"
   ],
   "unresolved": [
-    "Public Kids policy expressly documenting human age-appropriate creative review for applicable AdMob demand",
-    "Exact residual iOS identifiers, recipients, linkage and tracking with child treatment and publisher first-party ID disabled",
-    "Supported parental-gate interception before banner/interstitial external navigation; notifications do not expose cancellation",
+    "Apple guidance on compatibility of standard AdMob navigation with Kids parental-gate requirements; vendor confirms no supported interception API",
+    "Public Kids human age-appropriate creative-review practices; vendor supplies no such public guarantee",
+    "Exact residual iOS identifier inventory and final App Privacy; IDFA noncollection confirmed for child mode with publisher first-party ID disabled",
     "Physical iPhone/iPad acceptance and ad dismissal QA"
   ],
   "ascSession": "Authenticated original Rahmani Chrome profile. Add for Review lists only missing build and App Privacy; content-rights requirement is resolved.",
@@ -42,7 +42,7 @@
   "supportPossibleReplacementCaseId": "00484140",
   "supportMigrationEvidence": "docs/release/google-admob-case-00484140.json",
   "supportCaseAssociationExplicitlyConfirmed": false,
-  "supportStatus": "Birpal is investigating with the partner solution team and expects an update by the next business day (October 15). No new technical resolution yet.",
+  "supportStatus": "Technical response received: standard AdMob formats cannot meet a mandatory pre-navigation parent gate; no public human creative-review guarantee supplied. Apple guidance pending.",
   "nativeSDKPrivacyQA": "docs/qa/ios-sdk-privacy/summary.json",
   "nativeCurriculumQA": "docs/qa/ios-curriculum/summary.json",
   "appStoreDraftRecheck": "docs/release/apple-draft-rechecked-20261013.json",
@@ -61,7 +61,7 @@
   ],
   "releasePreflightAttemptedBuildOrUpload": false,
   "privacyChoicesVerifiedAllLocales": true,
-  "latestSupportResponse": "docs/release/google-case-00484140-status-20261015.json",
+  "latestSupportResponse": "docs/release/sellside-technical-response-20261015.json",
   "performanceDraftLinked": true,
   "performanceDraftReason": "Conservative disclosure follows the current iOS page expressly endorsed by Sellside; SDK manifest remains unmodified and its generic linkage difference is recorded.",
   "newReplyToEngineeringFollowUpFound": true,
@@ -88,30 +88,54 @@
     "publicationApprovalGranted": false
   },
   "publishingCheckpoint": "docs/release/ios-publishing-continuation-20261015.json",
-  "newSubstantiveReplyFoundScope": "Birpal substantive reply already received October 14; no later answer to the engineering follow-up at this check.",
+  "newSubstantiveReplyFoundScope": "October 15 technical response to engineering follow-up",
   "latestGoogleStatus": {
     "case": "00484140",
-    "messageID": "1a13a955e42451b1",
-    "threadID": "1a139ced69b63fa2",
-    "receivedUTC": "2026-10-14T13:23:48Z",
-    "receivedParis": "2026-10-14T15:23:48+02:00",
-    "checkedAtUTC": "2026-10-14T23:13:07.526818+00:00",
-    "from": "sellside-support-team@google.com",
+    "messageID": "1a13eff5ddaf7e47",
+    "receivedUTC": "2026-10-15T09:58:00Z",
     "author": "Birpal",
     "authentication": {
       "dkim": "pass",
       "spf": "pass",
       "dmarc": "pass"
     },
-    "mailURL": "https://mail.google.com/mail/u/?authuser=cool2309%40gmail.com#all/1a13a955e42451b1",
-    "responseToEngineeringFollowUp": true,
-    "substantiveTechnicalResolution": false,
-    "summary": "Partner solution team is investigating parental-gate implementation, public policy evidence and iOS identifiers. Detailed update promised by next business day.",
-    "expectedUpdateDateParis": "2026-10-15",
-    "expectationIsNotGuaranteedDeadline": true,
-    "publicHumanReviewPolicyProvided": false,
-    "supportedCancelResumeAPIProvided": false,
-    "exactChildModeIdentifiersProvided": false,
-    "newOutboundGoogleMessageSent": false
-  }
+    "technicalResponse": true,
+    "adNavigation": {
+      "preNavigationCancelResumeAPIAvailable": false,
+      "notificationCallbacksOccurAfterNavigation": true,
+      "touchInterceptingOverlayPermitted": false,
+      "simulatedClickAfterGatePermitted": false,
+      "standardFormatsCannotMeetMandatoryPreNavigationGate": true
+    },
+    "humanCreativeReview": {
+      "publicPolicyOrGuaranteeProvided": false,
+      "automatedFamiliesControlsAndPublisherReviewOffered": true
+    },
+    "childModeData": {
+      "idfaCollectedOrTransmitted": false,
+      "publisherFirstPartyIDDisabled": true,
+      "remainingSignals": [
+        "IP address",
+        "crash and performance metrics",
+        "SDK operation signals"
+      ],
+      "purposesStated": [
+        "contextual delivery",
+        "frequency capping",
+        "fraud detection"
+      ],
+      "exactResidualIdentifierInventoryStillUnspecified": true,
+      "appleMakesFinalTrackingDetermination": true
+    },
+    "actions": {
+      "unsupportedInterceptionNotAdded": true,
+      "iosProductionHoldRetained": true,
+      "adFreeIOSDecisionRequested": true,
+      "purchasesAdded": false,
+      "androidMonetizationChanged": false
+    },
+    "appleClarificationCase": "102996845545",
+    "mailURL": "https://mail.google.com/mail/u/?authuser=cool2309%40gmail.com#all/1a13eff5ddaf7e47"
+  },
+  "adFreeIOSDecision": "Requested from owner; unanswered. No monetization change implemented."
 }

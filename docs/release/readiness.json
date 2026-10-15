@@ -12,7 +12,7 @@
   "appleKidsAdExceptionVerified": false,
   "iosSigningReady": true,
   "supportURL": "https://seifelmoulouk.com/pikolumi/en.html",
-  "androidSubmission": "in_review",
+  "androidSubmission": "submitted_quick_checks_running",
   "iosSubmission": "not_submitted",
   "androidApproval": "pending",
   "iosApproval": "not_reviewed",
@@ -50,5 +50,9 @@
   "iosPhoneTabletQAEvidence": "docs/qa/ios-curriculum/summary.json",
   "iosPhoneTabletQAScope": "Native iPhone and landscape iPad simulators; physicalIOSQA remains a separate false gate",
   "appleContentRightsSaved": true,
-  "appleContentRightsEvidence": "docs/release/apple-publish-attempt-20261014.json"
+  "appleContentRightsEvidence": "docs/release/apple-publish-attempt-20261014.json",
+  "androidReleaseStartupVerified": true,
+  "androidReleaseStartupBundleSHA256": "e267da3c9d04977fcf678703990322a32a6f72d78e0c2854ee60d1db74a1b873",
+  "androidReleaseStartupEvidence": "docs/qa/android-release-startup/README.md",
+  "androidVersion": "1.0.1 (2)"
 }

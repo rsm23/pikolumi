@@ -1,0 +1,41 @@
+{
+  "serial": "emulator-5590",
+  "avd": "pace-ledger-16k",
+  "sdk": "36",
+  "pageSize": "16384",
+  "secondsPerLaunch": 30,
+  "appDataCleared": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pid": "3702",
+      "resumed": [
+        "topResumedActivity=ActivityRecord{61156891 u0 com.seifelmoulouk.pikolumi/.MainActivity t43}",
+        "ResumedActivity: ActivityRecord{61156891 u0 com.seifelmoulouk.pikolumi/.MainActivity t43}"
+      ],
+      "fatal": false,
+      "passed": true
+    },
+    {
+      "attempt": 2,
+      "pid": "3818",
+      "resumed": [
+        "topResumedActivity=ActivityRecord{242199486 u0 com.seifelmoulouk.pikolumi/.MainActivity t44}",
+        "ResumedActivity: ActivityRecord{242199486 u0 com.seifelmoulouk.pikolumi/.MainActivity t44}"
+      ],
+      "fatal": false,
+      "passed": true
+    },
+    {
+      "attempt": 3,
+      "pid": "3934",
+      "resumed": [
+        "topResumedActivity=ActivityRecord{11356885 u0 com.seifelmoulouk.pikolumi/.MainActivity t45}",
+        "ResumedActivity: ActivityRecord{11356885 u0 com.seifelmoulouk.pikolumi/.MainActivity t45}"
+      ],
+      "fatal": false,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

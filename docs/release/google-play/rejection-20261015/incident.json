@@ -1,0 +1,25 @@
+{
+  "messageID": "1a13ebce7d72e6ee",
+  "receivedUTC": "2026-10-15T08:45:29Z",
+  "package": "com.seifelmoulouk.pikolumi",
+  "version": "1.0.0 (1)",
+  "status": "rejected",
+  "policy": "Broken Functionality",
+  "finding": "App opens but keeps crashing",
+  "reviewerScreenshot": "IN_APP_EXPERIENCE-9753.png",
+  "locallyReproduced": true,
+  "reproduction": "python3 scripts/check_android_release_startup.py --serial emulator-5580 --seconds 5 --attempts 1 --output output/release-verification/android-crash-20261015/red --expected-avd pace-ledger-api36 --expected-page-size 4096",
+  "failure": "Unable to get provider androidx.startup.InitializationProvider; Failed to create an instance of androidx.work.impl.WorkDatabase",
+  "sourceBundleSHA256": "a042eedcbd36df7adbc657518686632775bf525eeee5fa314110df7e8dbddc4c",
+  "packaging": "Universal APK derived by bundletool from submitted production AAB, debug-signed for isolated emulator installation; application release code unchanged",
+  "optimizerEvidence": "Submitted R8 usage report lists public WorkDatabase_Impl.<init>() as removed; map id matches crash.",
+  "fixCandidate": "Preserve public no-argument RoomDatabase subclass constructors in release R8 rules",
+  "resubmitted": true,
+  "policyRowsVerified": [
+    "4987406452578993281",
+    "4989531052626207636"
+  ],
+  "bothFindings": "Startup crashes; second issue references English listing description but reports same crash",
+  "replacementVersion": "1.0.1 (2)",
+  "resubmissionEvidence": "docs/release/google-play/resubmission-20261015.json"
+}

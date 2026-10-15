@@ -1,0 +1,17 @@
+{
+  "serial": "emulator-5580",
+  "sdk": "36",
+  "pageSize": "4096",
+  "secondsPerLaunch": 5,
+  "appDataCleared": false,
+  "attempts": [
+    {
+      "attempt": 1,
+      "pid": "",
+      "resumed": [],
+      "fatal": true,
+      "passed": false
+    }
+  ],
+  "passed": false
+}
