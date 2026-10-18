@@ -1,0 +1,34 @@
+{
+  "checkedAtUTC": "2026-10-18T19:47:47.570691+00:00",
+  "device": "Pixel 9 Pro XL",
+  "physical": true,
+  "package": "com.seifelmoulouk.pikolumi",
+  "version": "1.0.1 (2)",
+  "installed": true,
+  "apkSHA256": "208bffcf306716c8f1480e2c0dc6f7dbb4d7719551cf368fe20be5413886ad4d",
+  "installedAPKMatches": true,
+  "compatibleDevelopmentCertificatePreviouslyVerified": true,
+  "normalEntryPoint": "lib/main.dart",
+  "build": "Development build with official test ads",
+  "before": {
+    "recordsSHA256": "495baafcaa637d776e18fb904088420e8d5b018268e14fe081e4a708d07e84c5",
+    "recordCount": 85,
+    "profileCount": 1,
+    "soundPreference": true
+  },
+  "after": {
+    "recordsSHA256": "495baafcaa637d776e18fb904088420e8d5b018268e14fe081e4a708d07e84c5",
+    "recordCount": 85,
+    "profileCount": 1,
+    "soundPreference": true
+  },
+  "allStoredRecordsIdentical": true,
+  "profilesArtworkProgressAndSettingsPreserved": true,
+  "uninstalled": false,
+  "dataCleared": false,
+  "systemVolumeChanged": false,
+  "phoneWakeSettingsChanged": false,
+  "launchedForPlayback": false,
+  "nativeAudioEvidence": "docs/qa/tracing-audio-native/android-native.json",
+  "privateSnapshotsExcludedFromGit": true
+}

@@ -1,0 +1,14 @@
+{
+  "normalEntryPoint": "lib/main.dart",
+  "apkSHA256": "208bffcf306716c8f1480e2c0dc6f7dbb4d7719551cf368fe20be5413886ad4d",
+  "catalogMatchesSource": true,
+  "allTraceAudioBytesMatchSource": true,
+  "tracingAudioFiles": 198,
+  "filesPerLanguage": {
+    "en": 26,
+    "fr": 30,
+    "es": 27,
+    "pt": 35,
+    "ar": 80
+  }
+}
