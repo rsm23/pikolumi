@@ -49,6 +49,13 @@ class Activity {
 
   String? cue(String lang) =>
       data['cue'] == null ? null : localized(data['cue'], lang);
+
+  List<String> traceCues(String lang) {
+    final files = config(lang)['traceCues'];
+    if (files is List) return files.cast<String>();
+    final file = cue(lang);
+    return file == null || file.isEmpty ? const [] : [file];
+  }
 }
 
 class Catalog {

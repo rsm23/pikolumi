@@ -7,6 +7,17 @@ class LatinHandwritingTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
   cls.traces=[e for e in json.loads((ROOT/'assets/content/catalog.json').read_text())['activities'] if e['section']=='tracing']
+ def test_every_model_has_complete_ordered_offline_narration(self):
+  audio=json.loads((ROOT/'assets/content/audio_manifest.json').read_text())
+  alphabets={lang:[e['config']['locales'][lang]['glyph'] for e in self.traces[:80] if len(e['config']['locales'][lang]['glyph'].split())==1] for lang in ['en','fr','es','pt']}
+  for activity in self.traces[:80]:
+   for lang,cfg in activity['config']['locales'].items():
+    cues=cfg.get('traceCues',[activity['cue'][lang]])
+    if lang!='ar':
+     self.assertEqual(cues,[f'letter_{alphabets[lang].index(glyph)}.mp3' for glyph in cfg['glyph'].split()])
+    for cue in cues:
+     self.assertIn(cue,audio[lang])
+     self.assertTrue((ROOT/'assets/audio'/lang/cue).is_file())
  def test_a_has_two_downstrokes_then_crossbar(self):
   for lang in ['en','fr','es','pt']:
    cfg=self.traces[0]['config']['locales'][lang];p=cfg['strokes']

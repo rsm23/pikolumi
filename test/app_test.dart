@@ -42,6 +42,8 @@ class MemoryStore implements RecordStore {
 
 class SilentAudio extends AudioService {
   @override
+  Future<void> playSequence(String language, List<String> files) async {}
+  @override
   Future<void> play(String language, String file) async {}
   @override
   Future<void> note(int number) async {}

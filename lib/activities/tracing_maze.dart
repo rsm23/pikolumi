@@ -1,7 +1,9 @@
+import 'dart:async';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../ui/listen.dart';
 import 'learning.dart';
 import 'trace_geometry.dart';
 
@@ -170,6 +172,7 @@ class _TraceActivityState extends State<TraceActivity> {
             finished = false;
           });
           save();
+          unawaited(playActivityPrompt(e.app, e.activity));
         },
         icon: const Icon(Icons.replay),
         label: Text(e.app.t('again')),

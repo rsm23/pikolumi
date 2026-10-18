@@ -139,6 +139,7 @@ for i in range(80):
   cfg[lang]={'glyph':' '.join(glyphs),'strokes':sequence_strokes(glyphs,AR_STROKES if lang=='ar' else LATIN_STROKES,lang=='ar'),'direction':'rtl' if lang=='ar' else 'ltr'}
   if lang != 'ar':
    cfg[lang]=latin.trace(glyphs,cfg[lang]['strokes'])
+   cfg[lang]['traceCues']=[f'letter_{alphabet.index(glyph)}.mp3' for glyph in glyphs]
   titles[lang]=' '.join(glyphs)
   cues[lang]=f'letter_{i%len(TRACE_ALPHABETS[lang])}.mp3'
  cfg['ar'],cues['ar']=arabic.tracing(i,AR_STROKES,sequence_strokes)

@@ -21,11 +21,19 @@ Future<void> listenToActivity(
   BuildContext context,
   AppController app,
   Activity activity,
-) => listenWithFeedback(context, app, () {
+) => listenWithFeedback(context, app, () => playActivityPrompt(app, activity));
+
+Future<void> playActivityPrompt(AppController app, Activity activity) {
   final language = app.activityLanguage(activity);
+  final traceCues = activity.engine == 'trace'
+      ? activity.traceCues(language)
+      : const <String>[];
+  if (traceCues.isNotEmpty) {
+    return app.audio.playSequence(language, traceCues);
+  }
   final cue = activity.cue(language);
   return app.audio.play(
     cue == null ? app.language : language,
     cue ?? activity.audio,
   );
-});
+}

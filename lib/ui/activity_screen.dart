@@ -79,8 +79,12 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen>
         ready = true;
       });
       synchronizeEncouragement();
+      unawaited(
+        widget.activity.engine == 'trace'
+            ? playActivityPrompt(app, widget.activity)
+            : app.audio.play(app.language, widget.activity.audio),
+      );
     }
-    unawaited(app.audio.play(app.language, widget.activity.audio));
   }
 
   @override
@@ -104,7 +108,14 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen>
     await widget.ads.activityCompleted();
     if (!mounted) return;
     final completionKey = ActivityEncouragement.completions.nextKey();
-    unawaited(app.audio.play(app.language, 'great.mp3'));
+    if (widget.activity.engine == 'trace' &&
+        widget.activity
+            .traceCues(app.activityLanguage(widget.activity))
+            .isNotEmpty) {
+      unawaited(playActivityPrompt(app, widget.activity));
+    } else {
+      unawaited(app.audio.play(app.language, 'great.mp3'));
+    }
     await showDialog<void>(
       context: context,
       barrierDismissible: false,
